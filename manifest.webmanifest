@@ -1,0 +1,14 @@
+{
+  "name": "OLYCITY Games",
+  "short_name": "OLY Games",
+  "description": "Catalogue coop, soirées et jeux maison du Discord OLYCITY.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0a0c10",
+  "theme_color": "#0a0c10",
+  "icons": [
+    { "src": "/assets/pwa-icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/assets/pwa-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "reflexe",
+    "name": "Réflexe",
+    "tagline": "Le feu passe au vert : le premier qui clique gagne la manche.",
+    "players": [2, 10],
+    "status": "beta",
+    "accent": "#3fcfcf",
+    "tags": ["Lobby", "Temps réel"]
+  },
+  {
+    "slug": "doublage",
+    "name": "Doublage Party",
+    "tagline": "Réinventez la bande-son d'une vidéo. Le public tranche.",
+    "players": [2, 8],
+    "status": "soon",
+    "accent": "#a87fff",
+    "tags": ["Micro", "Votes"]
+  }
+]

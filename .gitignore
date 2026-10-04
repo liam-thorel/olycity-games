@@ -1,0 +1,5 @@
+_site/
+node_modules/
+games/*/dist/
+games/*/.angular/
+.DS_Store

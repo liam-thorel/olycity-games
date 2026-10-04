@@ -1,0 +1,78 @@
+/* OLYCITY Games · base commune au portail et aux jeux.
+   Mêmes jetons que le hub et le tracker (OLYVALO/css/tokens.css).
+   Un jeu peut l'inclure avec <link rel="stylesheet" href="/sdk/olycity.css">
+   et ne garder que ses propres styles. */
+
+:root {
+  --red:#ff4656; --red-low:rgba(255,70,86,.12); --red-mid:rgba(255,70,86,.3);
+  --violet:#a87fff; --cyan:#3fcfcf; --gold:#f5c842; --green:#4bd07b;
+  --bg:#0a0c10; --surf:#10131a; --surf2:#151922; --surf3:#1f2330;
+  --border:rgba(255,255,255,.075); --border2:rgba(255,255,255,.14);
+  --text:#e2e5ee; --muted:#9298ab; --dim:#62697e;
+  --radius:10px;
+  --font-display:'Tomorrow', sans-serif;
+  --font-body:'DM Sans', system-ui, sans-serif;
+  color-scheme:dark;
+}
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  min-height:100vh; min-height:100dvh; display:flex; flex-direction:column;
+  background:var(--bg); color:var(--text);
+  font:15px/1.5 var(--font-body); overflow-x:hidden;
+}
+a { color:inherit; }
+img { max-width:100%; }
+[hidden] { display:none !important; }
+button, input, select, textarea { font:inherit; color:inherit; }
+:focus-visible { outline:2px solid var(--cyan); outline-offset:2px; }
+
+.bg { position:fixed; inset:0; pointer-events:none; z-index:0; overflow:hidden; }
+.bg::before {
+  content:''; position:absolute; inset:0;
+  background-image:linear-gradient(var(--border) 1px, transparent 1px), linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size:60px 60px; opacity:.35;
+  mask-image:radial-gradient(ellipse at 50% 20%, #000 0%, transparent 70%);
+  -webkit-mask-image:radial-gradient(ellipse at 50% 20%, #000 0%, transparent 70%);
+}
+.glow { position:absolute; border-radius:50%; filter:blur(50px); }
+.glow.a { top:-220px; left:-180px; width:620px; height:620px; background:radial-gradient(circle, rgba(63,207,207,.1), transparent 65%); }
+.glow.b { bottom:-240px; right:-200px; width:720px; height:720px; background:radial-gradient(circle, rgba(168,127,255,.09), transparent 60%); }
+
+.btn {
+  display:inline-flex; align-items:center; justify-content:center; gap:8px; min-height:42px; padding:0 16px;
+  border:1px solid var(--border2); border-radius:8px; background:transparent; color:var(--text);
+  font:600 13px var(--font-body); text-decoration:none; cursor:pointer; transition:background .2s, border-color .2s, filter .2s;
+}
+.btn:hover { border-color:var(--text); background:rgba(255,255,255,.04); }
+.btn:disabled { opacity:.5; cursor:wait; }
+.btn-primary { border-color:transparent; background:var(--cyan); color:#071413; font-family:var(--font-display); letter-spacing:.6px; text-transform:uppercase; font-size:12px; }
+.btn-primary:hover { border-color:transparent; background:var(--cyan); filter:brightness(1.1); }
+
+.badge {
+  display:inline-flex; align-items:center; gap:6px; flex-shrink:0; padding:3px 9px; border:1px solid var(--border2); border-radius:999px;
+  color:var(--muted); font-size:11px; font-weight:700;
+}
+.badge::before { content:''; width:6px; height:6px; border-radius:50%; background:currentColor; }
+.badge[data-state="live"] { color:var(--green); }
+.badge[data-state="beta"] { color:var(--cyan); }
+.badge[data-state="soon"] { color:var(--gold); }
+.badge[data-state="dev"] { color:var(--violet); }
+
+.tags { display:flex; flex-wrap:wrap; gap:6px; }
+.tags span { padding:3px 9px; border:1px solid var(--border2); border-radius:999px; color:var(--muted); font-size:11.5px; font-weight:600; }
+
+.field { display:grid; gap:6px; }
+.field label { color:var(--muted); font-size:12px; font-weight:600; }
+.input {
+  width:100%; min-height:44px; padding:0 12px; border:1px solid var(--border2); border-radius:8px;
+  background:var(--surf); color:var(--text); outline:none;
+}
+.input:focus { border-color:var(--cyan); box-shadow:0 0 0 3px rgba(63,207,207,.12); }
+
+.card { border:1px solid var(--border); border-radius:var(--radius); background:var(--surf); }
+
+@media (prefers-reduced-motion:reduce) {
+  *, *::before, *::after { animation:none !important; transition:none !important; scroll-behavior:auto !important; }
+}
