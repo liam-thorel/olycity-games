@@ -4,6 +4,6 @@
 export const CONFIG = {
   GAME_CATALOG_ENDPOINT: 'https://olycity-game-catalog.skybreaker04400.workers.dev',
   // Worker workers/videos (hébergement R2 des vidéos de The Imitation Game).
-  // Vide tant qu'il n'est pas déployé : seuls les extraits YouTube sont alors proposés.
-  VIDEO_ENDPOINT: '',
+  // Vide = pas d'hébergement : seuls les extraits YouTube sont alors proposés.
+  VIDEO_ENDPOINT: 'https://olycity-videos.olycity.workers.dev',
 };

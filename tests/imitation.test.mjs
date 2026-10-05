@@ -1,5 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import {
   MAX_CLIP_SECONDS, applyVote, awardTrophies, buildClip, everyoneDone, formatTime, mergeStats, parseTime, parseYouTube, shuffle, tallyRound,
 } from '../games/imitation/rules.mjs';
@@ -15,6 +16,26 @@ test('Video worker: the list only returns videos, across pages', async () => {
   assert.deepEqual((await listVideos(bucket)).map(video => video.key), ['videos/a.mp4', 'b.webm']);
   assert.equal(titleFromKey('videos/3f9c2a7b1e4d4c6f8a0b1c2d3e4f5a6b.mp4', 2), 'Vidéo importée 2');
   assert.equal(titleFromKey('videos/scene_du_diner.mp4'), 'scene du diner');
+  assert.equal(titleFromKey('5b0d1dee-ee38-4ef5-a39f-6c35ffed50c8/8a422065-9177-4fbf-bb30-e7fc20915df2-du_bist_gut_genug.mp4'), 'du bist gut genug');
+  assert.equal(titleFromKey('a/8a422065-9177-4fbf-bb30-e7fc20915df2.mp4', 3), 'Vidéo importée 3');
+});
+
+// Les modules du jeu importent « /sdk/… » (chemin du site) : Node ne peut pas les charger.
+// On vérifie donc au moins que chaque nom importé par un module est bien exporté par sa cible.
+test('Imitation: every imported name exists in the module it comes from', () => {
+  const dir = new URL('../games/imitation/', import.meta.url);
+  const sdk = new URL('../sdk/', import.meta.url);
+  const exportsOf = file => new Set([...readFileSync(file, 'utf8').matchAll(/export\s+(?:async\s+)?(?:function|const|let|class)\s+(\w+)/g)].map(match => match[1]));
+  for (const name of ['game.mjs', 'library.mjs', 'media.mjs', 'rules.mjs']) {
+    const source = readFileSync(new URL(name, dir), 'utf8');
+    for (const [, names, from] of source.matchAll(/import\s*\{([^}]+)\}\s*from\s*'([^']+)'/g)) {
+      const target = from.startsWith('/sdk/') ? new URL(from.slice(5), sdk) : new URL(from, new URL(name, dir));
+      const available = exportsOf(target);
+      names.split(',').map(item => item.trim()).filter(Boolean).forEach(item => {
+        assert.ok(available.has(item), `${name} importe ${item} depuis ${from}, qui ne l'exporte pas`);
+      });
+    }
+  }
 });
 
 test('Imitation: times are read in every usual notation', () => {
