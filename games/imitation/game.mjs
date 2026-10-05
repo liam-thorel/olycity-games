@@ -9,7 +9,7 @@ import {
   startRecording, videoFileDuration,
 } from './media.mjs';
 import {
-  addToLibrary, deleteLobbyAudio, deleteRoundAudio, listHostedVideos, listLibrary, loadTake, removeFromLibrary,
+  addToLibrary, deleteHostedVideo, deleteLobbyAudio, deleteRoundAudio, listHostedVideos, listLibrary, loadTake, removeFromLibrary,
   renameInLibrary, saveTake, savedUploadToken, sweepOrphanAudio, thumbnailOf, uploadVideo,
   videoEndpoint, youtubeTitle,
 } from './library.mjs';
@@ -174,7 +174,7 @@ function clipCard(clip, manager) {
     </button>
     ${manager ? `<div class="clip-tools">
       <button type="button" data-rename="${escapeHTML(clip.id)}" aria-label="Renommer ${escapeHTML(clip.title)}">✎</button>
-      <button type="button" class="is-danger" data-remove="${escapeHTML(clip.id)}" aria-label="Retirer ${escapeHTML(clip.title)} de la bibliothèque">×</button>
+      <button type="button" class="is-danger" data-remove="${escapeHTML(clip.id)}" aria-label="${clip.kind === 'file' && clip.key ? 'Supprimer définitivement' : 'Retirer de la bibliothèque'} : ${escapeHTML(clip.title)}" title="${clip.kind === 'file' && clip.key ? 'Supprimer définitivement' : 'Retirer de la bibliothèque'}">×</button>
     </div>` : ''}
   </article>`;
 }
@@ -448,9 +448,28 @@ function bindBody(state, players) {
   }));
   body.querySelectorAll('[data-remove]').forEach(button => button.addEventListener('click', async () => {
     const clip = library?.find(item => item.id === button.dataset.remove);
-    if (!clip || !window.confirm(`Retirer « ${clip.title} » de la bibliothèque ?`)) return;
+    if (!clip) return;
+    const hosted = clip.kind === 'file' && clip.key;
+    const question = hosted
+      ? `Supprimer définitivement « ${clip.title} » ?\n\nLe fichier vidéo sera effacé de l’hébergement et ne pourra pas être récupéré.`
+      : `Retirer « ${clip.title} » de la bibliothèque ?\n\n(La vidéo reste sur YouTube.)`;
+    if (!window.confirm(question)) return;
+    if (hosted) {
+      const token = savedUploadToken() || window.prompt('Code d’envoi (nécessaire pour supprimer une vidéo hébergée)')?.trim();
+      if (!token) return;
+      button.disabled = true;
+      try {
+        // Le fichier d'abord : en cas d'échec, l'extrait reste dans la bibliothèque.
+        await deleteHostedVideo(clip.key, token);
+      } catch (error) {
+        button.disabled = false;
+        window.alert(error.message);
+        return;
+      }
+    }
     await removeFromLibrary(clip.id);
     library = library.filter(item => item.id !== clip.id);
+    importNote = hosted ? `« ${clip.title} » a été supprimée définitivement.` : '';
     rerender();
   }));
   body.querySelectorAll('[data-rename]').forEach(button => button.addEventListener('click', async () => {

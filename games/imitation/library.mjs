@@ -34,6 +34,23 @@ export function removeFromLibrary(id) {
   return db.remove(`${LIBRARY_PATH}/${id}`);
 }
 
+/**
+ * Supprime définitivement le fichier d'une vidéo hébergée sur R2.
+ * Lève une erreur (code incorrect, réseau…) sans rien toucher à la bibliothèque.
+ */
+export async function deleteHostedVideo(key, token) {
+  const endpoint = await videoEndpoint();
+  if (!endpoint) throw new Error('L’hébergement vidéo n’est pas branché.');
+  const path = String(key).split('/').map(encodeURIComponent).join('/');
+  const response = await fetch(`${endpoint}/v/${path}`, { method:'DELETE', headers:{ Authorization:`Bearer ${token}` } });
+  if (response.status === 401) {
+    try { localStorage.removeItem(TOKEN_KEY); } catch { /* stockage indisponible */ }
+    throw new Error('Code d’envoi incorrect : la vidéo n’a pas été supprimée.');
+  }
+  if (!response.ok) throw new Error(`Suppression refusée (HTTP ${response.status}).`);
+  try { localStorage.setItem(TOKEN_KEY, token); } catch { /* stockage indisponible */ }
+}
+
 export function renameInLibrary(id, title) {
   return db.update(`${LIBRARY_PATH}/${id}`, { title });
 }

@@ -129,6 +129,17 @@ test('Video worker: uploads need the token and a video type', async () => {
   assert.equal(read.headers.get('Accept-Ranges'), 'bytes');
 });
 
+test('Video worker: deleting a file needs the token and really removes it', async () => {
+  const env = { BUCKET:fakeBucket(), UPLOAD_TOKEN:'secret-code' };
+  env.BUCKET.files.set('dossier/vieille-video.mp4', { body:'x', type:'video/mp4' });
+  const remove = token => handleRequest(new Request('https://w.dev/v/dossier/vieille-video.mp4', { method:'DELETE', headers:token ? { Authorization:`Bearer ${token}` } : {} }), env);
+  assert.equal((await remove()).status, 401);
+  assert.equal((await remove('mauvais')).status, 401);
+  assert.ok(env.BUCKET.files.has('dossier/vieille-video.mp4'));
+  assert.equal((await remove('secret-code')).status, 204);
+  assert.equal(env.BUCKET.files.has('dossier/vieille-video.mp4'), false);
+});
+
 test('Video worker: keys from the old version are accepted, path tricks are not', async () => {
   const env = { BUCKET:fakeBucket(), UPLOAD_TOKEN:'t' };
   assert.equal((await handleRequest(new Request('https://w.dev/v/..%2Fsecret.mp4'), env)).status, 404);
