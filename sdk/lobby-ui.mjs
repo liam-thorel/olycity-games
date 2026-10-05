@@ -6,7 +6,10 @@
  *   mountLobbyGame({
  *     slug:'mon-jeu', title:'Mon jeu', intro:'Le principe en une phrase.',
  *     minPlayers:2,
- *     initialState:players => ({ manche:1 }),   // au lancement et à « Rejouer »
+ *     options:[{ key:'mode', label:'Mode', default:'a', choices:[      // réglages choisis par l'hôte
+ *       { value:'a', label:'Mode A', hint:'…' }, { value:'b', label:'Mode B', hint:'…' },
+ *     ] }],                                     // lus ensuite dans lobby.data.settings
+ *     initialState:(players, lobby) => ({ manche:1 }),   // au lancement et à « Rejouer »
  *     render(data, lobby, ui) { … },            // status 'playing' ou 'ended'
  *   });
  *
@@ -29,18 +32,21 @@ export function playersMarkup(data, players, extra = () => '') {
 }
 
 export function mountLobbyGame({
-  slug, title, intro = '', minPlayers = 2, settings = {},
+  slug, title, intro = '', minPlayers = 2, settings = {}, options = [],
   initialState = () => ({}), render,
   app = document.getElementById('app'),
   codeBadge = document.getElementById('lobby-code'),
 }) {
   const isLocal = /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
   let lobby = null;
+  const defaults = Object.fromEntries(options.map(option => [option.key, option.default ?? option.choices[0]?.value]));
 
   const ui = {
     get lobby() { return lobby; },
     /** Relance une partie avec les joueurs présents (hôte). */
     restart:() => lobby.start(initialState(lobby.players, lobby)),
+    /** Revient à la salle d'attente pour changer les réglages (hôte). */
+    backToLobby:() => lobby.update({ status:'waiting', state:null }),
     async leave() {
       await lobby?.leave();
       lobby = null;
@@ -61,7 +67,7 @@ export function mountLobbyGame({
       </form>
       <p class="error">${escapeHTML(error)}</p>
     </section>`;
-    app.querySelector('[data-create]').addEventListener('click', () => enter(() => createLobby(slug, { settings })));
+    app.querySelector('[data-create]').addEventListener('click', () => enter(() => createLobby(slug, { settings:{ ...defaults, ...settings } })));
     app.querySelector('[data-join]').addEventListener('submit', event => {
       event.preventDefault();
       const code = new FormData(event.currentTarget).get('code');
@@ -100,6 +106,7 @@ export function mountLobbyGame({
     app.innerHTML = `<section class="panel card">
       <div><h1>Salle d’attente</h1><p>Partage le code <strong>${escapeHTML(lobby.code)}</strong> ou le lien de la partie.</p></div>
       ${playersMarkup(data, players)}
+      ${optionsMarkup(data)}
       <div class="row">
         <button class="btn" data-copy>Copier le lien</button>
         ${lobby.isHost
@@ -112,6 +119,21 @@ export function mountLobbyGame({
       navigator.clipboard?.writeText(link).then(() => { event.target.textContent = 'Lien copié ✓'; });
     });
     app.querySelector('[data-start]')?.addEventListener('click', ui.restart);
+    app.querySelectorAll('[data-option]').forEach(button => button.addEventListener('click', () => {
+      void lobby.update({ [`settings/${button.dataset.option}`]:button.dataset.value });
+    }));
+  }
+
+  function optionsMarkup(data) {
+    return options.map(option => {
+      const current = data.settings?.[option.key] ?? defaults[option.key];
+      return `<fieldset class="lobby-option"><legend>${escapeHTML(option.label)}</legend><div class="lobby-choices">
+        ${option.choices.map(choice => `<button type="button" class="lobby-choice${choice.value === current ? ' is-active' : ''}"
+          ${lobby.isHost ? `data-option="${escapeHTML(option.key)}" data-value="${escapeHTML(choice.value)}"` : 'disabled'} aria-pressed="${choice.value === current}">
+          <strong>${escapeHTML(choice.label)}</strong>${choice.hint ? `<small>${escapeHTML(choice.hint)}</small>` : ''}
+        </button>`).join('')}
+      </div></fieldset>`;
+    }).join('');
   }
 
   renderHome();

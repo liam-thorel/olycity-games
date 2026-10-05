@@ -48,6 +48,23 @@ export function drawCard(used = [], random = Math.random) {
   return pool[Math.floor(random() * pool.length)];
 }
 
+export const MODES = { cards:'cards', custom:'custom' };
+const LABEL_MAX = 40;
+
+/** Spectre écrit par le médium : deux extrémités non vides et différentes, ou null. */
+export function normalizeSpectrum(left = '', right = '') {
+  const clean = value => String(value || '').replace(/\s+/g, ' ').trim().slice(0, LABEL_MAX);
+  const spectrum = { left:clean(left), right:clean(right) };
+  if (!spectrum.left || !spectrum.right) return null;
+  if (spectrum.left.toLocaleLowerCase('fr') === spectrum.right.toLocaleLowerCase('fr')) return null;
+  return spectrum;
+}
+
+export function cardSpectrum(index) {
+  const [left, right] = CARDS[index] || CARDS[0];
+  return { left, right };
+}
+
 export function allGuessed(guesses = {}, guesserIds = []) {
   return guesserIds.length > 0 && guesserIds.every(id => Number.isFinite(guesses[id]));
 }

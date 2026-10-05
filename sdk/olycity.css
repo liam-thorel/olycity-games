@@ -92,6 +92,15 @@ button, input, select, textarea { font:inherit; color:inherit; }
 .player strong { overflow:hidden; font-size:14px; text-overflow:ellipsis; white-space:nowrap; }
 .player small { margin-left:auto; color:var(--gold); font:700 13px var(--font-display); }
 .player.is-host strong::after { content:' ★'; color:var(--gold); }
+.lobby-option { display:grid; gap:8px; border:0; }
+.lobby-option legend { margin-bottom:8px; color:var(--muted); font:700 11px var(--font-display); letter-spacing:2px; text-transform:uppercase; }
+.lobby-choices { display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:8px; }
+.lobby-choice { display:grid; gap:3px; padding:12px 14px; border:1px solid var(--border2); border-radius:8px; background:transparent; text-align:left; cursor:pointer; }
+.lobby-choice small { color:var(--muted); font-size:12px; }
+.lobby-choice.is-active { border-color:var(--cyan); background:rgba(63,207,207,.1); }
+.lobby-choice.is-active strong { color:var(--cyan); }
+.lobby-choice:disabled { cursor:default; }
+.lobby-choice:disabled:not(.is-active) { opacity:.5; }
 .round { color:var(--muted); font:700 12px var(--font-display); letter-spacing:2px; text-transform:uppercase; }
 .results { display:grid; gap:6px; }
 .results li { display:flex; justify-content:space-between; gap:12px; padding:8px 12px; border-radius:6px; background:var(--surf2); list-style:none; }

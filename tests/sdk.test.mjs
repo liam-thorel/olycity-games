@@ -49,11 +49,12 @@ test('only recently seen players count as present, oldest first', () => {
 test('lobbies nobody has touched for an hour are swept, active ones stay', () => {
   const now = 10 * STALE_LOBBY_MS;
   const codes = staleLobbyCodes({
-    OLD:{ createdAt:0, players:{ a:{ lastSeen:now - STALE_LOBBY_MS - 1 } } },
-    LIVE:{ createdAt:0, players:{ a:{ lastSeen:now - 1_000 } } },
-    EMPTY:{ createdAt:now - 5_000 },
+    OLD:{ game:'x', createdAt:0, players:{ a:{ lastSeen:now - STALE_LOBBY_MS - 1 } } },
+    LIVE:{ game:'x', createdAt:0, players:{ a:{ lastSeen:now - 1_000 } } },
+    EMPTY:{ game:'x', createdAt:now - 5_000 },
+    GHOST:{ hostId:'a', players:{ a:{ lastSeen:now } } },
   }, now);
-  assert.deepEqual(codes, ['OLD']);
+  assert.deepEqual(codes, ['OLD', 'EMPTY', 'GHOST']);
 });
 
 test('only https URLs, optionally from allowed hosts, are kept', () => {

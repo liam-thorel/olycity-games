@@ -34,6 +34,15 @@ test('Télépathe: guessers score their needle, the psychic gets their average',
   assert.equal(telepathe.allGuessed({ b:1, c:0 }, ['b', 'c']), true);
 });
 
+test('Télépathe: a custom theme needs two distinct, trimmed ends', () => {
+  const { normalizeSpectrum, cardSpectrum, CARDS } = telepathe;
+  assert.deepEqual(normalizeSpectrum('  Pas   drôle ', 'Hilarant'), { left:'Pas drôle', right:'Hilarant' });
+  assert.equal(normalizeSpectrum('Chaud', ''), null);
+  assert.equal(normalizeSpectrum('Nul', 'nul'), null);
+  assert.equal(normalizeSpectrum('x'.repeat(80), 'y').left.length, 40);
+  assert.deepEqual(cardSpectrum(0), { left:CARDS[0][0], right:CARDS[0][1] });
+});
+
 test('Télépathe: dial angle conversions round-trip and cards do not repeat', () => {
   assert.equal(telepathe.angleToValue(telepathe.valueToAngle(37.5)), 37.5);
   assert.equal(telepathe.angleToValue(Math.PI), 0);

@@ -362,6 +362,8 @@ export class Lobby {
     this.stopStream?.();
     this.stopStream = db.subscribe(this.path, data => {
       this.data = data;
+      // Lobby supprimé : continuer à signaler sa présence le recréerait en fantôme.
+      if (!data) clearInterval(this.presenceTimer);
       callback(data, this);
     });
     this.startPresence();
@@ -371,6 +373,7 @@ export class Lobby {
   startPresence() {
     clearInterval(this.presenceTimer);
     this.presenceTimer = setInterval(() => {
+      if (!this.data?.game) return;
       db.set(`${this.path}/players/${this.me.id}/lastSeen`, Date.now()).catch(() => {});
       // Un hôte parti sans quitter (onglet fermé) : le plus ancien présent prend la main.
       const players = this.players;
@@ -410,9 +413,13 @@ export class Lobby {
 
 export const STALE_LOBBY_MS = 60 * 60_000;
 
-/** Codes des lobbies où plus personne n'a donné signe de vie depuis `STALE_LOBBY_MS`. */
+/**
+ * Codes des lobbies à supprimer : sans jeu (fantôme), sans joueur (tout le
+ * monde est parti en même temps), ou sans signe de vie depuis `STALE_LOBBY_MS`.
+ */
 export function staleLobbyCodes(lobbies = {}, now = Date.now()) {
   return Object.entries(lobbies || {}).filter(([, lobby]) => {
+    if (!lobby?.game || !Object.keys(lobby.players || {}).length) return true;
     const seen = Math.max(Number(lobby?.createdAt) || 0, ...Object.values(lobby?.players || {}).map(player => Number(player?.lastSeen) || 0));
     return now - seen > STALE_LOBBY_MS;
   }).map(([code]) => code);
