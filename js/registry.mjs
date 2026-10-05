@@ -28,7 +28,7 @@ export function gameCard(game) {
   const tag = status.playable ? 'a' : 'div';
   const href = status.playable ? ` href="games/${encodeURIComponent(game.slug)}/"` : ' aria-disabled="true"';
   return `<${tag} class="game-card is-${escapeHTML(game.status)}"${href} style="--accent:${accent}">
-    <div class="game-card-art" aria-hidden="true"><span>${escapeHTML(game.name.slice(0, 1))}</span></div>
+    <div class="game-card-art" aria-hidden="true">${gameIllustration(game.slug)}</div>
     <div class="game-card-body">
       <div class="game-card-top"><h3>${escapeHTML(game.name)}</h3><span class="badge" data-state="${escapeHTML(game.status)}">${status.label}</span></div>
       <p>${escapeHTML(game.tagline)}</p>
@@ -46,4 +46,13 @@ export async function renderRegistry(root) {
   } catch {
     root.innerHTML = '<p class="empty">Impossible de charger la liste des jeux.</p>';
   }
+}
+
+function gameIllustration(slug) {
+  const art = {
+    reflexe:'<rect x="58" y="10" width="44" height="100" rx="16"/><circle cx="80" cy="30" r="9" opacity=".25"/><circle cx="80" cy="60" r="9" opacity=".45"/><circle cx="80" cy="90" r="10" fill="currentColor"/>',
+    'lost-in-translation':'<path d="M25 95a55 55 0 0 1 110 0"/><path d="M80 95l28-42"/><circle cx="80" cy="95" r="5" fill="currentColor"/><path d="M35 80l8-3m9-28 6 7m22-22v10m28 5-6 7m24 24-8-3"/>',
+    imitation:'<rect x="66" y="20" width="28" height="50" rx="14"/><path d="M56 55v8a24 24 0 0 0 48 0v-8M80 88v17M65 105h30M24 48v24m12-35v46m88-46v46m12-35v24"/>',
+  };
+  return `<svg viewBox="0 0 160 120" width="160" height="120" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" style="color:var(--accent)">${art[slug] || '<path d="M45 40h70v50H45zM60 55v20m-10-10h20M100 60h1m-1 10h1"/>'}</svg>`;
 }

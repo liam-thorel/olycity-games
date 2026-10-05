@@ -14,6 +14,8 @@
  *   const olycity = await import(/* @vite-ignore *\/ '/sdk/olycity.mjs');
  */
 
+import { sharedProfileId, rememberSharedProfile } from './shared-profile.mjs';
+
 export const FIREBASE_ROOT = 'https://realtime-database-5bb9f-default-rtdb.europe-west1.firebasedatabase.app';
 export const TRACKER_ORIGIN = 'https://tracker.olycity.fr';
 export const LOBBY_ROOT = 'olygames/lobbies';
@@ -206,10 +208,13 @@ export function loadMembers({ force = false } = {}) {
 
 /** Profil courant, ou null tant que personne n'a été choisi (l'invité compte comme personne). */
 export async function currentProfile() {
+  const sharedId = sharedProfileId();
+  if (sharedId === 'guest') return null;
   const id = storage()?.getItem(PROFILE_ID_KEY) || '';
   const name = storage()?.getItem(PROFILE_NAME_KEY) || '';
-  if (!id && !name) return null;
+  if (!id && !name && !sharedId) return null;
   const members = await loadMembers();
+  if (sharedId) return members.find(member => member.id === sharedId) || null;
   return members.find(member => member.id === id) || members.find(member => member.name === name) || null;
 }
 
@@ -219,6 +224,7 @@ export function isManager(profile) {
 
 export function setProfile(profile) {
   const next = profile || { id:'guest', name:'Guest' };
+  rememberSharedProfile(next.id);
   storage()?.setItem(PROFILE_ID_KEY, next.id);
   storage()?.setItem(PROFILE_NAME_KEY, next.name);
   globalThis.dispatchEvent?.(new CustomEvent('olycity:profile-change', { detail:profile || null }));

@@ -1,6 +1,6 @@
 import { db, escapeHTML, isManager, pickProfile, safeHttpsUrl } from '../../sdk/olycity.mjs';
 import {
-  groupNightCalendar, groupNightDateLabel, groupNightVoteSummary, localDateKey,
+  confirmedTonightCount, groupNightCalendar, groupNightDateLabel, groupNightVoteSummary, localDateKey,
   nightResponseKey, normalizeGroupNight, responseCounts,
 } from './night-utils.mjs';
 
@@ -30,6 +30,7 @@ function personAvatar(person, status = '') {
 }
 
 function renderPlan() {
+  document.dispatchEvent(new CustomEvent('olycity:night-updated'));
   const root = document.getElementById('night-content');
   const open = document.getElementById('night-open');
   if (!root || !open) return;
@@ -48,6 +49,10 @@ function renderPlan() {
       <span class="night-people">${people.map(item => personAvatar(item, item.status)).join('') || '<span class="night-empty">En attente des réponses</span>'}</span>
     </div>
     <time class="night-time" datetime="${escapeHTML(`${plan.date}T${plan.time}`)}">${escapeHTML(plan.time)}</time>`;
+}
+
+export function tonightParticipantCount() {
+  return confirmedTonightCount(plan);
 }
 
 function setStatus(message = '', error = false) {

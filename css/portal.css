@@ -4,6 +4,12 @@
   padding:10px max(16px, calc((100% - 1220px) / 2)); border-bottom:1px solid var(--border);
   background:rgba(10,12,16,.82); backdrop-filter:blur(12px);
 }
+@media (max-width:600px) {
+  .topbar { flex-wrap:wrap; gap:8px; }
+  .topbar .brand { flex:1; }
+  .topbar .topnav { order:3; width:100%; margin-left:0; }
+  .topbar .oly-site-switcher nav { left:auto; right:0; }
+}
 .brand { display:flex; align-items:center; gap:10px; text-decoration:none; }
 .brand span { font:700 16px var(--font-display); letter-spacing:3px; }
 .brand b { color:var(--red); font-weight:700; }

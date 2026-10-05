@@ -100,6 +100,19 @@ export function responseCounts(plan = null) {
   return counts;
 }
 
+export function confirmedTonightCount(plan, today = localDateKey()) {
+  if (!plan) return 0;
+  const slot = plan.final?.optionId
+    ? plan.options?.find(option => option.id === plan.final.optionId)
+    : plan.options?.find(option => option.date === today);
+  if (slot && slot.date !== today) return 0;
+  if (!slot && plan.date !== today) return 0;
+  return Object.values(plan.responses || {}).filter(response => {
+    if (response.availability && slot) return response.availability[slot.id] === 'yes';
+    return response.status === 'yes';
+  }).length;
+}
+
 export function nightResponseKey(value) {
   return String(value || "").toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu, "").replace(/[^a-z0-9_-]/g, "_");
 }

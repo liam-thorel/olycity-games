@@ -2,6 +2,7 @@ import { currentProfile, escapeHTML, loadMembers, onProfileChange, pickProfile }
 import { coopGames, initCoopPage, setCoopProfile } from './coop/coop-page.mjs';
 import { initNightPanel, setNightProfile } from './night/night-panel.mjs';
 import { renderRegistry } from './registry.mjs';
+import { initSiteSwitcher } from './site-switcher.mjs';
 
 function renderProfileChip(profile) {
   const chip = document.getElementById('profile-chip');
@@ -12,6 +13,7 @@ function renderProfileChip(profile) {
 }
 
 async function boot() {
+  initSiteSwitcher(document.querySelector('.topbar'));
   void renderRegistry(document.getElementById('games-grid'));
   const [members, profile] = await Promise.all([loadMembers(), currentProfile()]);
   renderProfileChip(profile);

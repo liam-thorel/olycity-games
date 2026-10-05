@@ -1,3 +1,5 @@
+import { genreLabel, visibleGenre } from './genre-labels.mjs';
+import { tonightParticipantCount } from '../night/night-panel.mjs';
 import {
   canDeleteCoopGame,
   catalogFields,
@@ -41,6 +43,11 @@ let syncNotice = null;
 let recoveryAttempts = 0;
 let recoveryTimer = null;
 const filters = { search: '', players: 0, genre:'all', status: 'all', sort: 'recent' };
+let compatibleTonight = false;
+function effectiveFilters() {
+  const count = tonightParticipantCount();
+  return compatibleTonight && count ? { ...filters, players:count } : filters;
+}
 
 function readGamesCache() {
   try {
@@ -117,7 +124,7 @@ function gameCard(game) {
   const steamUrl = safeHttpsUrl(game.steamUrl, ['steampowered.com']);
   const sourceUrl = steamUrl || safeHttpsUrl(game.sourceUrl, ['igdb.com']);
   const sourceLabel = steamUrl ? 'Steam ↗' : sourceUrl ? 'IGDB ↗' : '';
-  const tags = game.tags.map(tag => `<span>${escapeHTML(tag)}</span>`).join('');
+  const tags = game.tags.filter(visibleGenre).map(tag => `<span>${escapeHTML(genreLabel(tag))}</span>`).join('');
   const statusOptions = STATUS_ORDER.map(status => `<button type="button" data-action="set-status" data-status="${status}" role="menuitemradio" aria-checked="${game.status === status}">
     <span class="coop-status-option-dot coop-status-${status}"></span><span><strong>${STATUS_META[status].label}</strong><small>${STATUS_META[status].description}</small></span>${game.status === status ? '<b>✓</b>' : ''}
   </button>`).join('');
@@ -164,7 +171,7 @@ function statusCounts(filteredGames) {
 }
 
 function renderStatusTabs() {
-  const base = filterCoopGames(games, { ...filters, status:'all' });
+  const base = filterCoopGames(games, { ...effectiveFilters(), status:'all' });
   const counts = statusCounts(base);
   document.querySelectorAll('[data-coop-status]').forEach(button => {
     const active = button.dataset.coopStatus === filters.status;
@@ -179,9 +186,9 @@ function syncGenreOptions() {
   const select = document.getElementById('coop-genre');
   if (!select) return;
   const current = filters.genre;
-  const genres = [...new Set(games.flatMap(game => game.tags || []).map(tag => String(tag).trim()).filter(Boolean))]
+  const genres = [...new Set(games.flatMap(game => game.tags || []).map(tag => String(tag).trim()).filter(tag => tag && visibleGenre(tag)))]
     .sort((left, right) => left.localeCompare(right, 'fr', { sensitivity:'base' }));
-  select.innerHTML = `<option value="all">Tous les genres</option>${genres.map(genre => `<option value="${escapeHTML(genre)}">${escapeHTML(genre)}</option>`).join('')}`;
+  select.innerHTML = `<option value="all">Tous les genres</option>${genres.map(genre => `<option value="${escapeHTML(genre)}">${escapeHTML(genreLabel(genre))}</option>`).join('')}`;
   select.value = [...select.options].some(option => option.value === current) ? current : 'all';
   filters.genre = select.value;
 }
@@ -212,7 +219,12 @@ function render() {
   if (!root) return;
   const profile = selectedProfile();
   if (identity) identity.textContent = profile ? `Tu votes en tant que ${profile.name}` : 'Choisis d’abord ton profil';
-  const visible = filterCoopGames(games, filters);
+  const confirmed = tonightParticipantCount();
+  const tonightLabel = document.getElementById('coop-tonight-label');
+  if (tonightLabel) tonightLabel.textContent = confirmed ? `Pour les ${confirmed} présents ce soir` : 'Ce soir : aucune présence confirmée';
+  const tonightToggle = document.getElementById('coop-tonight');
+  if (tonightToggle) tonightToggle.disabled = !confirmed;
+  const visible = filterCoopGames(games, effectiveFilters());
   renderStatusTabs();
   if (count) count.textContent = `${visible.length} jeu${visible.length > 1 ? 'x' : ''}`;
   const grouped = filters.status === 'all' && !filters.search;
@@ -636,6 +648,8 @@ function bindControls() {
     }
     if (!event.target.closest('[data-coop-reset]')) return;
     Object.assign(filters, { search:'', players:0, genre:'all', status:'all', sort:'recent' });
+    compatibleTonight = false;
+    document.getElementById('coop-tonight').checked = false;
     const search = document.getElementById('coop-search');
     const players = document.getElementById('coop-players');
     const genre = document.getElementById('coop-genre');
@@ -652,6 +666,8 @@ function bindControls() {
     document.querySelectorAll('[data-action="status-menu"]').forEach(button => button.setAttribute('aria-expanded', 'false'));
   });
   document.getElementById('coop-search')?.addEventListener('input', event => { filters.search = event.target.value; render(); });
+  document.getElementById('coop-tonight')?.addEventListener('change', event => { compatibleTonight = event.target.checked; render(); });
+  document.addEventListener('olycity:night-updated', render);
   document.getElementById('coop-players')?.addEventListener('change', event => { filters.players = Number(event.target.value); render(); });
   document.getElementById('coop-genre')?.addEventListener('change', event => { filters.genre = event.target.value; render(); });
   document.querySelectorAll('[data-coop-status]').forEach(button => button.addEventListener('click', () => { filters.status = button.dataset.coopStatus; render(); }));
