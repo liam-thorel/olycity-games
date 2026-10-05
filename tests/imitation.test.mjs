@@ -3,7 +3,19 @@ import assert from 'node:assert/strict';
 import {
   MAX_CLIP_SECONDS, applyVote, awardTrophies, buildClip, everyoneDone, formatTime, mergeStats, parseTime, parseYouTube, shuffle, tallyRound,
 } from '../games/imitation/rules.mjs';
-import { handleRequest, isValidKey, tokenMatches } from '../workers/videos/worker.mjs';
+import { handleRequest, isValidKey, listVideos, tokenMatches } from '../workers/videos/worker.mjs';
+import { titleFromKey } from '../games/imitation/rules.mjs';
+
+test('Video worker: the list only returns videos, across pages', async () => {
+  const pages = [
+    { objects:[{ key:'videos/a.mp4', size:1, httpMetadata:{ contentType:'video/mp4' } }, { key:'thumbs/a.jpg', size:1, httpMetadata:{ contentType:'image/jpeg' } }], truncated:true, cursor:'c' },
+    { objects:[{ key:'b.webm', size:2 }], truncated:false },
+  ];
+  const bucket = { list:async ({ cursor }) => pages[cursor ? 1 : 0] };
+  assert.deepEqual((await listVideos(bucket)).map(video => video.key), ['videos/a.mp4', 'b.webm']);
+  assert.equal(titleFromKey('videos/3f9c2a7b1e4d4c6f8a0b1c2d3e4f5a6b.mp4', 2), 'Vidéo importée 2');
+  assert.equal(titleFromKey('videos/scene_du_diner.mp4'), 'scene du diner');
+});
 
 test('Imitation: times are read in every usual notation', () => {
   assert.equal(parseTime('83'), 83);
@@ -96,10 +108,17 @@ test('Video worker: uploads need the token and a video type', async () => {
   assert.equal(read.headers.get('Accept-Ranges'), 'bytes');
 });
 
-test('Video worker: unknown keys and path tricks are rejected', async () => {
+test('Video worker: keys from the old version are accepted, path tricks are not', async () => {
   const env = { BUCKET:fakeBucket(), UPLOAD_TOKEN:'t' };
-  assert.equal((await handleRequest(new Request('https://w.dev/v/..%2Fsecret'), env)).status, 404);
+  assert.equal((await handleRequest(new Request('https://w.dev/v/..%2Fsecret.mp4'), env)).status, 404);
   assert.equal((await handleRequest(new Request('https://w.dev/v/abcdefgh.mp4'), env)).status, 404);
+  assert.ok(isValidKey('videos/3f2a-uuid/clip_final.mp4'));
+  assert.ok(!isValidKey('/etc/passwd.mp4'));
+  assert.ok(!isValidKey('a/../b.mp4'));
+  env.BUCKET.files.set('videos/old clip.mp4', { body:'x', type:'video/mp4' });
+  assert.equal((await handleRequest(new Request('https://w.dev/v/videos/old%20clip.mp4'), env)).status, 404);
+  env.BUCKET.files.set('videos/old-clip.mp4', { body:'x', type:'video/mp4' });
+  assert.equal((await handleRequest(new Request('https://w.dev/v/videos/old-clip.mp4'), env)).status, 200);
   assert.equal(tokenMatches('abc', 'abc'), true);
   assert.equal(tokenMatches('abd', 'abc'), false);
   assert.equal(tokenMatches('anything', ''), false);

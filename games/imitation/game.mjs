@@ -2,15 +2,16 @@ import { escapeHTML, isManager, safeHttpsUrl } from '/sdk/olycity.mjs';
 import { avatarMarkup, mountLobbyGame, playersMarkup } from '/sdk/lobby-ui.mjs';
 import {
   MAX_CLIP_SECONDS, MIN_PLAYERS, SUPER_LIKE, TROPHIES, applyVote, awardTrophies, buildClip, everyoneDone,
-  formatTime, mergeStats, parseTime, parseYouTube, shuffle, tallyRound,
+  formatTime, mergeStats, parseTime, parseYouTube, shuffle, tallyRound, titleFromKey,
 } from './rules.mjs';
 import {
   base64ToObjectUrl, blobToBase64, createClipPlayer, getMicrophone, playDub, releaseMicrophone,
   startRecording, videoFileDuration,
 } from './media.mjs';
 import {
-  addToLibrary, deleteLobbyAudio, deleteRoundAudio, listLibrary, loadTake, removeFromLibrary, saveTake,
-  savedUploadToken, sweepOrphanAudio, thumbnailOf, uploadVideo, videoEndpoint, youtubeTitle,
+  addToLibrary, deleteLobbyAudio, deleteRoundAudio, listHostedVideos, listLibrary, loadTake, removeFromLibrary,
+  renameInLibrary, saveTake, savedUploadToken, sweepOrphanAudio, thumbnailOf, uploadVideo,
+  videoEndpoint, youtubeTitle,
 } from './library.mjs';
 
 const app = document.getElementById('app');
@@ -35,6 +36,7 @@ let audioCache = new Map();  // `${round}:${id}` → URL de la prise
 let playbackSeen = '';
 let currentDub = null;
 let needsSoundUnlock = false;
+let importNote = '';
 
 const nameOf = (players, id) => players.find(player => player.id === id)?.name || 'Un joueur';
 const scoreOf = data => player => `<small>${data.state?.scores?.[player.id] || 0}</small>`;
@@ -170,7 +172,10 @@ function clipCard(clip, manager) {
       <span class="clip-thumb">${thumb ? `<img src="${escapeHTML(thumb)}" alt="" loading="lazy">` : '<span aria-hidden="true">▶</span>'}<em>${clipLength(clip)}</em></span>
       <span class="clip-copy"><strong>${escapeHTML(clip.title)}</strong><small>${clip.kind === 'youtube' ? 'YouTube' : 'Vidéo hébergée'}${clip.addedBy ? ` · ${escapeHTML(clip.addedBy)}` : ''}</small></span>
     </button>
-    ${manager ? `<button type="button" class="clip-remove" data-remove="${escapeHTML(clip.id)}" aria-label="Retirer ${escapeHTML(clip.title)} de la bibliothèque">×</button>` : ''}
+    ${manager ? `<div class="clip-tools">
+      <button type="button" data-rename="${escapeHTML(clip.id)}" aria-label="Renommer ${escapeHTML(clip.title)}">✎</button>
+      <button type="button" class="is-danger" data-remove="${escapeHTML(clip.id)}" aria-label="Retirer ${escapeHTML(clip.title)} de la bibliothèque">×</button>
+    </div>` : ''}
   </article>`;
 }
 
@@ -187,7 +192,9 @@ function pickMarkup(players, state) {
     ? library.length ? `<div class="clip-grid">${library.map(clip => clipCard(clip, manager)).join('')}</div>` : '<p class="hint">La bibliothèque est vide : ajoute un premier extrait ci-dessous.</p>'
     : '<p class="hint">Chargement de la bibliothèque…</p>';
   return `<div class="pick">
-    <h2>Choisis l’extrait à doubler</h2>
+    <div class="pick-head"><h2>Choisis l’extrait à doubler</h2>
+      ${manager ? '<button type="button" class="btn btn-small" data-import hidden>Importer les vidéos hébergées</button>' : ''}</div>
+    <p class="hint" data-import-status>${escapeHTML(importNote)}</p>
     ${list}
     <details class="add-clip" ${library && !library.length ? 'open' : ''}>
       <summary>Ajouter un extrait YouTube</summary>
@@ -446,6 +453,15 @@ function bindBody(state, players) {
     library = library.filter(item => item.id !== clip.id);
     rerender();
   }));
+  body.querySelectorAll('[data-rename]').forEach(button => button.addEventListener('click', async () => {
+    const clip = library?.find(item => item.id === button.dataset.rename);
+    const title = clip && window.prompt('Nouveau titre de l’extrait', clip.title)?.replace(/\s+/g, ' ').trim().slice(0, 80);
+    if (!title) return;
+    await renameInLibrary(clip.id, title);
+    clip.title = title;
+    rerender();
+  }));
+  bindImport(body);
   bindAddForms(body);
 
   body.querySelector('[data-original]')?.addEventListener('change', event => { withOriginal = event.target.checked; });
@@ -477,6 +493,51 @@ function bindBody(state, players) {
   }));
   body.querySelector('[data-voted]')?.addEventListener('click', () => {
     void lobby.setState({ [`voted/${lobby.me.id}`]:true });
+  });
+}
+
+/**
+ * Vidéos déjà hébergées sur R2 mais absentes de la bibliothèque (celles de
+ * l'ancienne version du jeu, ou envoyées autrement) : ajoutées en un clic,
+ * extrait = début de la vidéo, 45 s au plus.
+ */
+async function bindImport(body) {
+  const button = body.querySelector('[data-import]');
+  if (!button) return;
+  let hosted = [];
+  try { hosted = await listHostedVideos(); } catch { return; }
+  const known = new Set((library || []).map(clip => clip.key || clip.url));
+  const fresh = hosted.filter(video => !known.has(video.key) && !known.has(video.url));
+  if (!fresh.length || !button.isConnected) return;
+  button.hidden = false;
+  button.textContent = `Importer les vidéos hébergées (${fresh.length})`;
+  button.addEventListener('click', async () => {
+    button.disabled = true;
+    const status = body.querySelector('[data-import-status]');
+    let added = 0;
+    for (const [index, video] of fresh.entries()) {
+      status.textContent = `Import ${index + 1} / ${fresh.length}…`;
+      const duration = await videoUrlDuration(video.url);
+      const result = buildClip({ kind:'file', title:titleFromKey(video.key, (library?.length || 0) + index + 1), url:video.url, start:0, duration });
+      if (result.error) continue;
+      const entry = await addToLibrary({ ...result.clip, key:video.key }, lobby.me);
+      library = [entry, ...(library || [])];
+      added += 1;
+    }
+    importNote = `${added} vidéo${added > 1 ? 's' : ''} importée${added > 1 ? 's' : ''}. Renomme-les avec ✎.`;
+    rerender();
+  }, { once:true });
+}
+
+function videoUrlDuration(url) {
+  return new Promise(resolve => {
+    const video = document.createElement('video');
+    video.preload = 'metadata';
+    const done = value => { video.removeAttribute('src'); video.load(); resolve(value); };
+    video.onloadedmetadata = () => done(Number.isFinite(video.duration) ? video.duration : null);
+    video.onerror = () => done(null);
+    setTimeout(() => done(null), 15_000);
+    video.src = url;
   });
 }
 

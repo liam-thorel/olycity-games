@@ -32,8 +32,11 @@
 .clip-copy { display:grid; gap:2px; padding:8px 10px 10px; }
 .clip-copy strong { overflow:hidden; font-size:13px; text-overflow:ellipsis; white-space:nowrap; }
 .clip-copy small { color:var(--muted); font-size:11px; }
-.clip-remove { position:absolute; top:6px; right:6px; display:grid; place-items:center; width:28px; height:28px; border:0; border-radius:50%; background:rgba(0,0,0,.7); color:#fff; cursor:pointer; }
-.clip-remove:hover { background:var(--red); }
+.clip-tools { position:absolute; top:6px; right:6px; display:flex; gap:4px; }
+.clip-tools button { display:grid; place-items:center; width:28px; height:28px; border:0; border-radius:50%; background:rgba(0,0,0,.7); color:#fff; cursor:pointer; }
+.clip-tools button:hover { background:var(--violet); }
+.clip-tools button.is-danger:hover { background:var(--red); }
+.pick-head { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:10px; }
 
 .add-clip { border:1px solid var(--border); border-radius:10px; background:var(--surf2); }
 .add-clip summary { padding:12px 14px; font-weight:700; font-size:14px; cursor:pointer; }

@@ -42,8 +42,32 @@ export function tokenMatches(given = '', expected = '') {
   return diff === 0;
 }
 
+/**
+ * Clés acceptées : celles créées ici, mais aussi celles de l'ancienne version
+ * (Doublage Party), rangées en dossiers. Pas de « .. », pas de chemin absolu.
+ */
 export function isValidKey(key = '') {
-  return /^[a-z0-9]{6,40}\.(mp4|webm|mov|ogv)$/.test(key);
+  return key.length <= 300 && !key.includes('..') && /^[A-Za-z0-9][A-Za-z0-9/_.-]*\.[A-Za-z0-9]{2,5}$/.test(key);
+}
+
+export function isVideoKey(key = '', contentType = '') {
+  return /^video\//.test(contentType) || /\.(mp4|webm|mov|m4v|ogv)$/i.test(key);
+}
+
+/** Toutes les vidéos du bucket (les miniatures et autres fichiers sont ignorés). */
+export async function listVideos(bucket) {
+  const videos = [];
+  let cursor;
+  do {
+    const page = await bucket.list({ cursor, limit:1000, include:['httpMetadata'] });
+    page.objects.forEach(object => {
+      if (isVideoKey(object.key, object.httpMetadata?.contentType)) {
+        videos.push({ key:object.key, size:object.size, uploaded:object.uploaded });
+      }
+    });
+    cursor = page.truncated ? page.cursor : undefined;
+  } while (cursor);
+  return videos;
 }
 
 function authorized(request, env) {
@@ -68,9 +92,16 @@ export async function handleRequest(request, env) {
     return json({ key, url:`${url.origin}/v/${key}` }, 201, cors);
   }
 
-  const match = url.pathname.match(/^\/v\/([^/]+)$/);
+  // Liste publique : les vidéos sont de toute façon lisibles par tous.
+  if (url.pathname === '/list' && request.method === 'GET') {
+    const videos = await listVideos(env.BUCKET);
+    return json({ videos:videos.map(video => ({ ...video, url:`${url.origin}/v/${video.key.split('/').map(encodeURIComponent).join('/')}` })) }, 200, cors);
+  }
+
+  const match = url.pathname.match(/^\/v\/(.+)$/);
   if (match) {
-    const key = match[1];
+    let key;
+    try { key = decodeURIComponent(match[1]); } catch { return json({ error:'Vidéo introuvable.' }, 404, cors); }
     if (!isValidKey(key)) return json({ error:'Vidéo introuvable.' }, 404, cors);
     if (request.method === 'DELETE') {
       if (!authorized(request, env)) return json({ error:'Code d’envoi incorrect.' }, 401, cors);

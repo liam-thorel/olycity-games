@@ -7,6 +7,7 @@ SITE_ORIGIN = "https://games.olycity.fr"
 
 [[r2_buckets]]
 binding = "BUCKET"
-bucket_name = "olycity-videos"
+# Bucket de la première version (Doublage Party), réutilisé avec ses vidéos.
+bucket_name = "la-regie-videos"
 
 # Secret à définir une fois : npx wrangler secret put UPLOAD_TOKEN
