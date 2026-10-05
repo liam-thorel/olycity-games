@@ -125,7 +125,7 @@ Firebase supprime les champs `null` et les objets vides : relire un champ absent
 comme `undefined` (par exemple `scores` tant que personne n'a marqué).
 
 Tout l'état du lobby est lisible par les joueurs (il n'y a pas de serveur) :
-une information secrète, comme la cible de Télépathe, n'est cachée que par
+une information secrète, comme la cible de Lost in Translation, n'est cachée que par
 l'interface. Ça suffit entre amis ; pas pour un jeu avec enjeu.
 
 Les lobbies sont supprimés quand le dernier joueur part (y compris en fermant
