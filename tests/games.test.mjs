@@ -3,6 +3,46 @@ import assert from 'node:assert/strict';
 import { gameBuilds, readRegistry, validateRegistry } from '../scripts/build.mjs';
 import { visibleGames } from '../js/registry.mjs';
 import { everyoneAnswered, randomDelay, resolveRound } from '../games/reflexe/rules.mjs';
+import * as telepathe from '../games/telepathe/rules.mjs';
+
+test('Télépathe: points by band around the target', () => {
+  const { scoreGuess } = telepathe;
+  assert.equal(scoreGuess(50, 50), 4);
+  assert.equal(scoreGuess(52.5, 50), 4);
+  assert.equal(scoreGuess(55, 50), 3);
+  assert.equal(scoreGuess(62.5, 50), 2);
+  assert.equal(scoreGuess(63, 50), 0);
+});
+
+test('Télépathe: targets keep the whole scoring zone on the dial', () => {
+  assert.equal(telepathe.pickTarget(() => 0), 12.5);
+  assert.equal(telepathe.pickTarget(() => 0.9999), 87.5);
+});
+
+test('Télépathe: the psychic rotates and skips players who left', () => {
+  const order = ['a', 'b', 'c'];
+  assert.equal(telepathe.psychicFor(1, order, order), 'a');
+  assert.equal(telepathe.psychicFor(4, order, order), 'a');
+  assert.equal(telepathe.psychicFor(2, order, ['a', 'c']), 'c');
+  assert.equal(telepathe.psychicFor(1, order, ['d']), 'd');
+});
+
+test('Télépathe: guessers score their needle, the psychic gets their average', () => {
+  const points = telepathe.scoreRound({ target:40, guesses:{ b:40, c:47 }, psychic:'a', guesserIds:['b', 'c', 'd'] });
+  assert.deepEqual(points, { b:4, c:3, d:0, a:2 });
+  assert.equal(telepathe.allGuessed({ b:1 }, ['b', 'c']), false);
+  assert.equal(telepathe.allGuessed({ b:1, c:0 }, ['b', 'c']), true);
+});
+
+test('Télépathe: dial angle conversions round-trip and cards do not repeat', () => {
+  assert.equal(telepathe.angleToValue(telepathe.valueToAngle(37.5)), 37.5);
+  assert.equal(telepathe.angleToValue(Math.PI), 0);
+  assert.equal(telepathe.angleToValue(-1), 100);
+  const all = telepathe.CARDS.map((_, index) => index);
+  assert.equal(telepathe.drawCard(all.slice(1)), 0);
+  assert.ok(telepathe.CARDS.every(card => card.length === 2 && card.every(Boolean)));
+  assert.equal(new Set(telepathe.CARDS.map(card => card.join('|'))).size, telepathe.CARDS.length);
+});
 
 test('the game registry is valid and every playable game has a folder', () => {
   assert.deepEqual(validateRegistry(readRegistry(), gameBuilds()), []);

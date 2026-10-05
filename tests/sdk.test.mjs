@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  PRESENCE_TIMEOUT_MS, activePlayers, generateLobbyCode, memberId, mergeMemberProfiles,
+  PRESENCE_TIMEOUT_MS, STALE_LOBBY_MS, activePlayers, staleLobbyCodes, generateLobbyCode, memberId, mergeMemberProfiles,
   mergeRealtimeEvent, normalizeLobbyCode, safeHttpsUrl,
 } from '../sdk/olycity.mjs';
 
@@ -44,6 +44,16 @@ test('only recently seen players count as present, oldest first', () => {
     gone:{ name:'C', joinedAt:5, lastSeen:now - PRESENCE_TIMEOUT_MS - 1 },
   } }, now);
   assert.deepEqual(players.map(player => player.id), ['first', 'late']);
+});
+
+test('lobbies nobody has touched for an hour are swept, active ones stay', () => {
+  const now = 10 * STALE_LOBBY_MS;
+  const codes = staleLobbyCodes({
+    OLD:{ createdAt:0, players:{ a:{ lastSeen:now - STALE_LOBBY_MS - 1 } } },
+    LIVE:{ createdAt:0, players:{ a:{ lastSeen:now - 1_000 } } },
+    EMPTY:{ createdAt:now - 5_000 },
+  }, now);
+  assert.deepEqual(codes, ['OLD']);
 });
 
 test('only https URLs, optionally from allowed hosts, are kept', () => {

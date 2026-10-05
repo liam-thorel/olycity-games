@@ -9,6 +9,15 @@
     "tags": ["Lobby", "Temps réel"]
   },
   {
+    "slug": "telepathe",
+    "name": "Télépathe",
+    "tagline": "Un indice, un spectre, une cible cachée : tourne l'aiguille au bon endroit.",
+    "players": [2, 12],
+    "status": "beta",
+    "accent": "#ff8a5c",
+    "tags": ["Lobby", "Indices", "Ambiance"]
+  },
+  {
     "slug": "doublage",
     "name": "Doublage Party",
     "tagline": "Réinventez la bande-son d'une vidéo. Le public tranche.",

@@ -1,0 +1,30 @@
+.round-head { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:10px; }
+.psychic { display:flex; align-items:center; gap:8px; color:var(--muted); font-size:13px; }
+.psychic img, .psychic .initial { display:grid; place-items:center; width:26px; height:26px; border-radius:50%; object-fit:cover; background:var(--surf3); font-size:11px; font-weight:700; }
+.psychic strong { color:var(--violet); }
+
+.spectrum { display:flex; justify-content:space-between; gap:16px; font:700 clamp(15px,3vw,19px)/1.2 var(--font-display); }
+.spectrum span:first-child { color:#ff8fb1; }
+.spectrum span:last-child { color:var(--cyan); text-align:right; }
+
+.clue { margin:0 auto; padding:10px 18px; border-radius:999px; background:rgba(168,127,255,.12); color:var(--text) !important; font:700 clamp(18px,4vw,26px) var(--font-display); text-align:center; }
+.hint { text-align:center; font-size:14px; }
+
+.dial { display:block; width:100%; max-width:560px; margin:0 auto; overflow:visible; touch-action:none; user-select:none; }
+.dial.is-interactive { cursor:grab; }
+.dial.is-interactive:active { cursor:grabbing; }
+.dial:focus-visible { outline:2px solid var(--cyan); outline-offset:6px; border-radius:8px; }
+.dial-face { fill:#1b4a46; }
+.dial-rim { fill:none; stroke:#2c3140; stroke-width:4; }
+.dial-hub { fill:#e2e5ee; stroke:#10131a; stroke-width:2; }
+.bands path { stroke:#10131a; stroke-width:.6; }
+.bands.is-reveal { animation:bands-in .6s cubic-bezier(.22,1,.36,1) both; transform-origin:100px 100px; }
+@keyframes bands-in { from { opacity:0; transform:scale(.6); } to { opacity:1; transform:none; } }
+.band-label { fill:#fff; font:700 8px var(--font-display); text-anchor:middle; }
+
+.needle line { stroke:var(--needle); stroke-width:3.2; stroke-linecap:round; }
+.needle circle { fill:var(--needle); stroke:#10131a; stroke-width:1.5; }
+.needle text { fill:#10131a; font:700 7px var(--font-display); text-anchor:middle; pointer-events:none; }
+
+.row .input { flex:1; min-width:180px; }
+.host-row { justify-content:flex-end; margin-top:12px; }

@@ -29,13 +29,33 @@ que le registre.
 
 ## 2a. Jeu en HTML natif (le plus simple)
 
-Copier `games/reflexe/` comme point de départ. Aucun build : le dossier est
-publié tel quel.
+Copier `games/reflexe/` (le plus court) ou `games/telepathe/` (phases, rôles
+tournants, cadran interactif) comme point de départ. Aucun build : le dossier
+est publié tel quel.
 
 ```html
 <link rel="stylesheet" href="/sdk/olycity.css">
 <script type="module" src="./game.mjs"></script>
 ```
+
+L'accueil (créer / rejoindre par code), la salle d'attente, le lien à partager
+et la fermeture du lobby sont fournis par `/sdk/lobby-ui.mjs` : le jeu ne
+décrit que la partie.
+
+```js
+import { mountLobbyGame, playersMarkup } from '/sdk/lobby-ui.mjs';
+
+mountLobbyGame({
+  slug:'mon-jeu', title:'Mon jeu', intro:'Le principe en une phrase.', minPlayers:2,
+  initialState:players => ({ manche:1 }),   // au lancement et à « Rejouer »
+  render(data, lobby, ui) {                 // status 'playing' ou 'ended'
+    // ui.restart() relance une partie, ui.leave() quitte le lobby
+  },
+});
+```
+
+Les règles pures (points, tirages, rotation des rôles) vont dans un
+`rules.mjs` séparé, testé dans `tests/games.test.mjs`.
 
 ## 2b. Jeu compilé (Vite, Angular, React…)
 
@@ -101,7 +121,16 @@ Bon modèle pour un jeu à plusieurs : **l'hôte fait avancer la partie**
 (minuteurs, changement de phase, calcul des scores), les autres écrivent
 seulement leurs propres actions. Voir `reflexe/game.mjs`.
 
-Firebase supprime les champs `null` : relire un champ absent comme `undefined`.
+Firebase supprime les champs `null` et les objets vides : relire un champ absent
+comme `undefined` (par exemple `scores` tant que personne n'a marqué).
+
+Tout l'état du lobby est lisible par les joueurs (il n'y a pas de serveur) :
+une information secrète, comme la cible de Télépathe, n'est cachée que par
+l'interface. Ça suffit entre amis ; pas pour un jeu avec enjeu.
+
+Les lobbies sont supprimés quand le dernier joueur part (y compris en fermant
+l'onglet), et ceux où personne n'a été vu depuis une heure sont nettoyés à la
+création d'un nouveau lobby.
 
 ## Migrer une ébauche existante
 

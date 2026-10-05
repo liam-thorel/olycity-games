@@ -68,7 +68,7 @@ export function mergeRealtimeEvent(current = {}, message = {}) {
   return next;
 }
 
-async function request(path, { method = 'GET', body, timeoutMs = 8_000, signal, query = '' } = {}) {
+async function request(path, { method = 'GET', body, timeoutMs = 8_000, signal, query = '', keepalive = false } = {}) {
   const attempts = method === 'POST' || method === 'DELETE' ? 1 : 2;
   let lastError = null;
   for (let attempt = 1; attempt <= attempts; attempt += 1) {
@@ -80,6 +80,7 @@ async function request(path, { method = 'GET', body, timeoutMs = 8_000, signal, 
     try {
       const response = await fetch(`${FIREBASE_ROOT}/${path}.json${query}`, {
         method,
+        keepalive,
         cache:'no-store',
         signal:controller.signal,
         headers:{ 'Content-Type':'application/json' },
@@ -390,19 +391,45 @@ export class Lobby {
     return db.update(this.path, { status:'playing', startedAt:Date.now(), state });
   }
 
-  async leave() {
+  /**
+   * Quitte le lobby (et le supprime s'il est vide). `keepalive` laisse le
+   * navigateur finir les requêtes après la fermeture de la page : c'est ce
+   * qu'il faut passer depuis un `pagehide`.
+   */
+  leave({ keepalive = false } = {}) {
     clearInterval(this.presenceTimer);
     this.stopStream?.();
     const others = this.players.filter(player => player.id !== this.me.id);
-    if (!others.length) return db.remove(this.path);
-    await db.remove(`${this.path}/players/${this.me.id}`);
-    if (this.isHost) await db.update(this.path, { hostId:others[0].id });
+    if (!others.length) return request(this.path, { method:'DELETE', keepalive });
+    // Une seule écriture multi-chemins : une page qui se ferme n'en enverrait pas deux à la suite.
+    const patch = { [`players/${this.me.id}`]:null };
+    if (this.isHost) patch.hostId = others[0].id;
+    return request(this.path, { method:'PATCH', body:patch, keepalive });
   }
+}
+
+export const STALE_LOBBY_MS = 60 * 60_000;
+
+/** Codes des lobbies où plus personne n'a donné signe de vie depuis `STALE_LOBBY_MS`. */
+export function staleLobbyCodes(lobbies = {}, now = Date.now()) {
+  return Object.entries(lobbies || {}).filter(([, lobby]) => {
+    const seen = Math.max(Number(lobby?.createdAt) || 0, ...Object.values(lobby?.players || {}).map(player => Number(player?.lastSeen) || 0));
+    return now - seen > STALE_LOBBY_MS;
+  }).map(([code]) => code);
+}
+
+/** Supprime les lobbies abandonnés (onglet tué, téléphone en veille…). Sans conséquence si ça échoue. */
+async function sweepStaleLobbies() {
+  try {
+    const codes = staleLobbyCodes(await db.get(LOBBY_ROOT, { timeoutMs:4_000 }));
+    if (codes.length) await db.update(LOBBY_ROOT, Object.fromEntries(codes.map(code => [code, null])));
+  } catch { /* le ménage attendra la prochaine création */ }
 }
 
 export async function createLobby(gameSlug, { profile, settings = {} } = {}) {
   const me = profile || await requireProfile();
   if (!me) throw new Error('Choisis un profil pour créer un lobby.');
+  void sweepStaleLobbies();
   let code = '';
   for (let attempt = 0; attempt < 6 && !code; attempt += 1) {
     const candidate = generateLobbyCode();

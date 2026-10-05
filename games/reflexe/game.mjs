@@ -1,101 +1,23 @@
-import { createLobby, escapeHTML, joinLobby, normalizeLobbyCode, requireProfile } from '/sdk/olycity.mjs';
+import { escapeHTML } from '/sdk/olycity.mjs';
+import { mountLobbyGame, playersMarkup } from '/sdk/lobby-ui.mjs';
 import { MIN_PLAYERS, ROUNDS, everyoneAnswered, randomDelay, resolveRound } from './rules.mjs';
 
-const GAME = 'reflexe';
 const app = document.getElementById('app');
-const codeBadge = document.getElementById('lobby-code');
-const isLocal = /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
 
 let lobby = null;
 let goSeen = { round:0, at:0 };
 let hostTask = '';
 let hostTimer = null;
 
-function avatar(player) {
-  return player.avatar
-    ? `<img src="${escapeHTML(player.avatar)}" alt="">`
-    : `<span class="initial">${escapeHTML(String(player.name || '?').slice(0, 1))}</span>`;
-}
+// Firebase ne garde pas un objet vide : `scores` est absent tant que personne n'a marqué.
+const scoreOf = data => player => `<small>${data.state?.scores?.[player.id] || 0}</small>`;
 
-function playersMarkup(data, players) {
-  const scores = data.state?.scores || {};
-  return `<div class="players">${players.map(player => `<div class="player${player.id === data.hostId ? ' is-host' : ''}">
-    ${avatar(player)}<strong>${escapeHTML(player.name)}</strong>${data.status === 'playing' || data.status === 'ended' ? `<small>${scores[player.id] || 0}</small>` : ''}
-  </div>`).join('')}</div>`;
-}
-
-/* ─── Accueil : créer ou rejoindre ─── */
-
-function renderHome(error = '') {
-  codeBadge.hidden = true;
-  const prefill = normalizeLobbyCode(new URLSearchParams(location.search).get('code'));
-  app.innerHTML = `<section class="panel card">
-    <div><h1>Réflexe</h1><p>Attends le vert, puis clique le plus vite possible. Trop tôt, et la manche est perdue. ${ROUNDS} manches, le meilleur score gagne.</p></div>
-    <button class="btn btn-primary" data-create>Créer une partie</button>
-    <form class="row" data-join>
-      <input class="input" name="code" maxlength="6" placeholder="CODE" value="${escapeHTML(prefill)}" aria-label="Code du lobby" autocomplete="off">
-      <button class="btn" type="submit">Rejoindre</button>
-    </form>
-    <p class="error">${escapeHTML(error)}</p>
-  </section>`;
-  app.querySelector('[data-create]').addEventListener('click', () => enter(() => createLobby(GAME, { settings:{ rounds:ROUNDS } })));
-  app.querySelector('[data-join]').addEventListener('submit', event => {
-    event.preventDefault();
-    const code = new FormData(event.currentTarget).get('code');
-    enter(() => joinLobby(code, { gameSlug:GAME }));
-  });
-}
-
-async function enter(open) {
-  const profile = await requireProfile({ subtitle:'Choisis ton profil pour jouer.' });
-  if (!profile) return renderHome('Un profil est nécessaire pour jouer.');
-  try {
-    lobby = await open();
-  } catch (error) {
-    return renderHome(error.message);
-  }
-  history.replaceState(null, '', `?code=${lobby.code}`);
-  codeBadge.textContent = lobby.code;
-  codeBadge.hidden = false;
-  lobby.subscribe(render);
-  addEventListener('pagehide', () => { void lobby?.leave(); }, { once:true });
-}
-
-/* ─── Rendu selon l'état du lobby ─── */
-
-function render(data) {
-  if (!data) {
-    lobby = null;
-    history.replaceState(null, '', location.pathname);
-    return renderHome('Le lobby a été fermé.');
-  }
+function render(data, current, ui) {
+  lobby = current;
   const players = lobby.players;
   if (lobby.isHost) driveHost(data, players);
-  if (data.status === 'waiting') return renderWaiting(data, players);
-  if (data.status === 'ended') return renderEnd(data, players);
+  if (data.status === 'ended') return renderEnd(data, players, ui);
   renderRound(data, players);
-}
-
-function renderWaiting(data, players) {
-  const canStart = lobby.isHost && (players.length >= MIN_PLAYERS || isLocal);
-  const link = `${location.origin}${location.pathname}?code=${lobby.code}`;
-  app.innerHTML = `<section class="panel card">
-    <div><h1>Salle d’attente</h1><p>Partage le code <strong>${escapeHTML(lobby.code)}</strong> ou le lien de la partie.</p></div>
-    ${playersMarkup(data, players)}
-    <div class="row">
-      <button class="btn" data-copy>Copier le lien</button>
-      ${lobby.isHost
-        ? `<button class="btn btn-primary" data-start ${canStart ? '' : 'disabled'}>Lancer (${players.length} joueur${players.length > 1 ? 's' : ''})</button>`
-        : '<p>L’hôte va lancer la partie…</p>'}
-    </div>
-    ${lobby.isHost && !canStart ? `<p>Il faut au moins ${MIN_PLAYERS} joueurs.</p>` : ''}
-  </section>`;
-  app.querySelector('[data-copy]').addEventListener('click', event => {
-    navigator.clipboard?.writeText(link).then(() => { event.target.textContent = 'Lien copié ✓'; });
-  });
-  app.querySelector('[data-start]')?.addEventListener('click', () => {
-    lobby.start({ round:1, phase:'wait', clicks:null, scores:{}, last:null });
-  });
 }
 
 function renderRound(data, players) {
@@ -115,14 +37,14 @@ function renderRound(data, players) {
       <span class="round">Manche ${state.round} / ${ROUNDS}</span>
       <h1>${state.last?.winner ? `${escapeHTML(names[state.last.winner] || '?')} gagne la manche` : 'Personne ne marque'}</h1>
       <ol class="results">${ranking.map(entry => `<li class="${entry.id === state.last?.winner ? 'is-winner' : ''}"><span>${escapeHTML(names[entry.id] || entry.id)}</span><span>${Number.isFinite(entry.ms) ? `${entry.ms} ms` : escapeHTML(entry.note)}</span></li>`).join('')}</ol>
-      ${playersMarkup(data, players)}
+      ${playersMarkup(data, players, scoreOf(data))}
     </section>`;
     return;
   }
   app.innerHTML = `<section class="panel">
     <span class="round">Manche ${state.round} / ${ROUNDS}</span>
     <button class="arena" data-phase="${phase}" data-arena>${label}<small>${detail}</small></button>
-    ${playersMarkup(data, players)}
+    ${playersMarkup(data, players, scoreOf(data))}
   </section>`;
   app.querySelector('[data-arena]').addEventListener('pointerdown', () => {
     if (mine) return;
@@ -133,7 +55,7 @@ function renderRound(data, players) {
   });
 }
 
-function renderEnd(data, players) {
+function renderEnd(data, players, ui) {
   const scores = data.state?.scores || {};
   const ranked = [...players].sort((left, right) => (scores[right.id] || 0) - (scores[left.id] || 0));
   app.innerHTML = `<section class="panel card">
@@ -145,15 +67,8 @@ function renderEnd(data, players) {
       <button class="btn" data-leave>Quitter</button>
     </div>
   </section>`;
-  app.querySelector('[data-again]')?.addEventListener('click', () => {
-    lobby.start({ round:1, phase:'wait', clicks:null, scores:{}, last:null });
-  });
-  app.querySelector('[data-leave]').addEventListener('click', async () => {
-    await lobby.leave();
-    lobby = null;
-    history.replaceState(null, '', location.pathname);
-    renderHome();
-  });
+  app.querySelector('[data-again]')?.addEventListener('click', ui.restart);
+  app.querySelector('[data-leave]').addEventListener('click', ui.leave);
 }
 
 /* ─── Logique de l'hôte : c'est lui qui fait avancer la partie ─── */
@@ -193,4 +108,12 @@ function driveHost(data, players) {
   }
 }
 
-renderHome();
+mountLobbyGame({
+  slug:'reflexe',
+  title:'Réflexe',
+  intro:`Attends le vert, puis clique le plus vite possible. Trop tôt, et la manche est perdue. ${ROUNDS} manches, le meilleur score gagne.`,
+  minPlayers:MIN_PLAYERS,
+  settings:{ rounds:ROUNDS },
+  initialState:() => ({ round:1, phase:'wait', scores:{} }),
+  render,
+});
