@@ -3,10 +3,10 @@ import assert from 'node:assert/strict';
 import { gameBuilds, readRegistry, validateRegistry } from '../scripts/build.mjs';
 import { visibleGames } from '../js/registry.mjs';
 import { everyoneAnswered, randomDelay, resolveRound } from '../games/reflexe/rules.mjs';
-import * as telepathe from '../games/telepathe/rules.mjs';
+import * as lost from '../games/lost-in-translation/rules.mjs';
 
 test('Lost in Translation: points by band around the target', () => {
-  const { scoreGuess } = telepathe;
+  const { scoreGuess } = lost;
   assert.equal(scoreGuess(50, 50), 4);
   assert.equal(scoreGuess(52.5, 50), 4);
   assert.equal(scoreGuess(55, 50), 3);
@@ -15,27 +15,27 @@ test('Lost in Translation: points by band around the target', () => {
 });
 
 test('Lost in Translation: targets keep the whole scoring zone on the dial', () => {
-  assert.equal(telepathe.pickTarget(() => 0), 12.5);
-  assert.equal(telepathe.pickTarget(() => 0.9999), 87.5);
+  assert.equal(lost.pickTarget(() => 0), 12.5);
+  assert.equal(lost.pickTarget(() => 0.9999), 87.5);
 });
 
 test('Lost in Translation: the psychic rotates and skips players who left', () => {
   const order = ['a', 'b', 'c'];
-  assert.equal(telepathe.psychicFor(1, order, order), 'a');
-  assert.equal(telepathe.psychicFor(4, order, order), 'a');
-  assert.equal(telepathe.psychicFor(2, order, ['a', 'c']), 'c');
-  assert.equal(telepathe.psychicFor(1, order, ['d']), 'd');
+  assert.equal(lost.psychicFor(1, order, order), 'a');
+  assert.equal(lost.psychicFor(4, order, order), 'a');
+  assert.equal(lost.psychicFor(2, order, ['a', 'c']), 'c');
+  assert.equal(lost.psychicFor(1, order, ['d']), 'd');
 });
 
 test('Lost in Translation: guessers score their needle, the psychic gets their average', () => {
-  const points = telepathe.scoreRound({ target:40, guesses:{ b:40, c:47 }, psychic:'a', guesserIds:['b', 'c', 'd'] });
+  const points = lost.scoreRound({ target:40, guesses:{ b:40, c:47 }, psychic:'a', guesserIds:['b', 'c', 'd'] });
   assert.deepEqual(points, { b:4, c:3, d:0, a:2 });
-  assert.equal(telepathe.allGuessed({ b:1 }, ['b', 'c']), false);
-  assert.equal(telepathe.allGuessed({ b:1, c:0 }, ['b', 'c']), true);
+  assert.equal(lost.allGuessed({ b:1 }, ['b', 'c']), false);
+  assert.equal(lost.allGuessed({ b:1, c:0 }, ['b', 'c']), true);
 });
 
 test('Lost in Translation: a custom theme needs two distinct, trimmed ends', () => {
-  const { normalizeSpectrum, cardSpectrum, CARDS } = telepathe;
+  const { normalizeSpectrum, cardSpectrum, CARDS } = lost;
   assert.deepEqual(normalizeSpectrum('  Pas   drôle ', 'Hilarant'), { left:'Pas drôle', right:'Hilarant' });
   assert.equal(normalizeSpectrum('Chaud', ''), null);
   assert.equal(normalizeSpectrum('Nul', 'nul'), null);
@@ -44,13 +44,13 @@ test('Lost in Translation: a custom theme needs two distinct, trimmed ends', () 
 });
 
 test('Lost in Translation: dial angle conversions round-trip and cards do not repeat', () => {
-  assert.equal(telepathe.angleToValue(telepathe.valueToAngle(37.5)), 37.5);
-  assert.equal(telepathe.angleToValue(Math.PI), 0);
-  assert.equal(telepathe.angleToValue(-1), 100);
-  const all = telepathe.CARDS.map((_, index) => index);
-  assert.equal(telepathe.drawCard(all.slice(1)), 0);
-  assert.ok(telepathe.CARDS.every(card => card.length === 2 && card.every(Boolean)));
-  assert.equal(new Set(telepathe.CARDS.map(card => card.join('|'))).size, telepathe.CARDS.length);
+  assert.equal(lost.angleToValue(lost.valueToAngle(37.5)), 37.5);
+  assert.equal(lost.angleToValue(Math.PI), 0);
+  assert.equal(lost.angleToValue(-1), 100);
+  const all = lost.CARDS.map((_, index) => index);
+  assert.equal(lost.drawCard(all.slice(1)), 0);
+  assert.ok(lost.CARDS.every(card => card.length === 2 && card.every(Boolean)));
+  assert.equal(new Set(lost.CARDS.map(card => card.join('|'))).size, lost.CARDS.length);
 });
 
 test('the game registry is valid and every playable game has a folder', () => {

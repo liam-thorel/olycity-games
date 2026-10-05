@@ -29,7 +29,7 @@ que le registre.
 
 ## 2a. Jeu en HTML natif (le plus simple)
 
-Copier `games/reflexe/` (le plus court) ou `games/telepathe/` (phases, rôles
+Copier `games/reflexe/` (le plus court) ou `games/lost-in-translation/` (phases, rôles
 tournants, cadran interactif) comme point de départ. Aucun build : le dossier
 est publié tel quel.
 

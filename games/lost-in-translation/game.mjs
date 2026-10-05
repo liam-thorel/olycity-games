@@ -390,7 +390,7 @@ function driveHost(data, players) {
 }
 
 mountLobbyGame({
-  slug:'telepathe',
+  slug:'lost-in-translation',
   title:'Lost in Translation',
   intro:'Chaque manche, un médium choisit un thème, fait tourner la roue, puis voit seul où se cache la cible et donne un indice. Les autres placent leur aiguille : plus on tombe près, plus on marque. On joue autant de manches qu’on veut.',
   minPlayers:MIN_PLAYERS,
