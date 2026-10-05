@@ -1,0 +1,12 @@
+name = "olycity-videos"
+main = "worker.mjs"
+compatibility_date = "2026-10-01"
+
+[vars]
+SITE_ORIGIN = "https://games.olycity.fr"
+
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "olycity-videos"
+
+# Secret à définir une fois : npx wrangler secret put UPLOAD_TOKEN

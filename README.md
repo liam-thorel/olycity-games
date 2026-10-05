@@ -77,3 +77,15 @@ node scripts/build.mjs
 | `coopGames/<id>` | jeux proposés, votes (`interests`), statut |
 | `groupNight/current` | soirée planifiée, créneaux, votes, choix final |
 | `olygames/lobbies/<CODE>` | `game`, `hostId`, `status` (`waiting`/`playing`/`ended`), `players`, `settings`, `state` (propre au jeu) |
+| `olygames/imitation/library/<id>` | extraits de The Imitation Game (YouTube ou vidéo hébergée), partagés entre les parties |
+| `olygames/imitation/audio/<CODE>/<manche>/<joueur>` | prises audio (Opus en base64), supprimées à la manche suivante et en fin de partie |
+
+## Hébergement des vidéos
+
+Les vidéos envoyées depuis The Imitation Game sont stockées sur Cloudflare R2
+par le Worker [`workers/videos`](workers/videos/README.md) (10 Go et bande
+passante gratuits). Tant qu'il n'est pas déployé et renseigné dans
+`VIDEO_ENDPOINT` (`config.js`), seuls les extraits YouTube sont proposés.
+
+Le micro n'est autorisé par les navigateurs que sur une page **https** (ou en
+local) : The Imitation Game a besoin du certificat de games.olycity.fr.

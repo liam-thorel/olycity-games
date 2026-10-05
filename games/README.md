@@ -134,10 +134,12 @@ création d'un nouveau lobby.
 
 ## Migrer une ébauche existante
 
-- **olygames** (Angular 21 + Supabase, Doublage Party) : déposer le projet dans
-  `games/doublage/`, appliquer la section 2b, puis passer `doublage` de `soon`
-  à `dev` dans le registre. Les comptes Supabase peuvent être remplacés par
-  `requireProfile()`, et les lobbies Supabase par ceux du SDK si tu veux tout
-  sur Firebase ; garder Supabase et R2 pour l'audio et les vidéos marche aussi.
-- **multiplayer-dub-game** (dépôt `olycity`, React + Vite) : même chose, base
-  Vite via `OLYCITY_BASE`.
+Exemple déjà fait : **The Imitation Game** (`games/imitation/`) reprend
+Doublage Party (dépôt `la-regie`, Angular + Supabase). Son projet Supabase
+n'existant plus, le jeu a été réécrit sur le SDK : profils OLYCITY au lieu des
+comptes, lobbies Firebase, prises audio dans Firebase, vidéos sur YouTube ou
+sur R2 via `workers/videos`. Les règles (super like unique, votes publics,
+trophées) sont dans `games/imitation/rules.mjs`.
+
+Pour une ébauche compilée (React, Vite…), la section 2b suffit : base via
+`OLYCITY_BASE`, routage par hash, SDK chargé à l'exécution.

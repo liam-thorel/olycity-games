@@ -18,12 +18,12 @@
     "tags": ["Lobby", "Indices", "Ambiance"]
   },
   {
-    "slug": "doublage",
-    "name": "Doublage Party",
-    "tagline": "Réinventez la bande-son d'une vidéo. Le public tranche.",
-    "players": [2, 8],
-    "status": "soon",
+    "slug": "imitation",
+    "name": "The Imitation Game",
+    "tagline": "Refais la bande-son d'un extrait au micro. Le groupe vote pour le meilleur doublage.",
+    "players": [2, 10],
+    "status": "beta",
     "accent": "#a87fff",
-    "tags": ["Micro", "Votes"]
+    "tags": ["Micro", "Vidéo", "Votes"]
   }
 ]
