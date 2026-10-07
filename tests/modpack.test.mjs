@@ -1,0 +1,19 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+const read = file => readFileSync(new URL(file,import.meta.url),'utf8');
+test('OLYCITY V1 has a static download and installation guide independent of Firebase', () => {
+  const page = read('../index.html');
+  const pack = JSON.parse(read('../assets/modpacks/olycity-v1.json'));
+  assert.match(page,/id="modpacks"/);
+  assert.match(page,/href="#modpacks"/);
+  assert.match(page,/id="modpack-install"/);
+  assert.ok(page.includes(`href="${pack.downloadUrl}"`));
+  assert.equal(pack.modCount,156);
+  assert.match(pack.sha256,/^[a-f0-9]{64}$/);
+  assert.ok(pack.bytes < 2 * 1024 ** 3);
+  assert.ok(page.includes(`Forge <strong>${pack.loader.replace('forge-','')}</strong>`));
+  assert.match(page,/Version de test/);
+  assert.match(page,/n’ont pas été testés ici/);
+  assert.match(page,/modpacks\.css\?v=20261007-v1/);
+});

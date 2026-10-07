@@ -1,0 +1,12 @@
+{
+  "name": "OLYCITY V1",
+  "releaseTag": "olycity-v1",
+  "sourceFilename": "OLYCITY-PACK-Test-Mathis.zip",
+  "sourceVersion": "2026.10.07-test-essential",
+  "minecraft": "1.20.1",
+  "loader": "forge-47.4.10",
+  "modCount": 156,
+  "bytes": 1206308981,
+  "sha256": "357c1abfeb1c2a2fdc574ec55c99fe949edf96eb7391a324d73cb751d922a97b",
+  "downloadUrl": "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1/OLYCITY-PACK-Test-Mathis.zip"
+}

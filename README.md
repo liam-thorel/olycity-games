@@ -41,6 +41,10 @@ Les membres et leurs avatars sont lus depuis le tracker
 qu'une liste à tenir à jour. Le profil choisi est partagé par le portail et
 tous les jeux (même origine, mêmes clés `localStorage` que le tracker).
 
+## Modpack OLYCITY V1
+
+La section `#modpacks` propose le pack Minecraft et un guide d’import CurseForge / Essential. Elle est statique et reste accessible même si Firebase ne répond pas. Le ZIP (1,21 Go) est une pièce jointe de la release GitHub `olycity-v1`, jamais un fichier Git ou Pages. Les métadonnées et l’empreinte sont dans `assets/modpacks/olycity-v1.json` ; voir `docs/olycity-v1-release.md` pour la publication.
+
 ## Développement local
 
 ```bash

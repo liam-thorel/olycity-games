@@ -1,0 +1,30 @@
+.modpacks-section,.modpack-install { scroll-margin-top:88px; }
+.modpack-card { display:grid; grid-template-columns:200px minmax(0,1fr); overflow:hidden; border:1px solid var(--border2); border-radius:var(--radius); background:var(--surf); }
+.modpack-art { display:flex; flex-direction:column; justify-content:center; align-items:center; gap:6px; padding:26px; background:linear-gradient(145deg,#192f23,#101a16); border-right:1px solid var(--border); }
+.modpack-art svg { width:116px; height:116px; }
+.modpack-art span { margin-top:8px; font:700 18px var(--font-display); letter-spacing:2px; color:#b8d5b4; }
+.modpack-art small { color:#92b292; font-weight:700; letter-spacing:3px; }
+.modpack-body { display:grid; gap:14px; padding:24px; min-width:0; }
+.modpack-heading { display:flex; align-items:center; flex-wrap:wrap; gap:12px; justify-content:space-between; }
+.modpack-eyebrow { color:#a4c49b; font-size:11px; font-weight:700; letter-spacing:1.2px; text-transform:uppercase; }
+.modpack-heading h3 { margin-top:4px; font:700 clamp(23px,3vw,30px)/1.2 var(--font-display); }
+.modpack-body p { max-width:640px; color:var(--muted); }
+.modpack-specs { display:flex; flex-wrap:wrap; gap:8px 20px; list-style:none; color:var(--muted); font-size:13px; }
+.modpack-specs strong { color:var(--text); }
+.modpack-actions { display:flex; flex-wrap:wrap; gap:10px; }
+.modpack-actions .btn { min-height:48px; }
+.modpack-download { background:#a7cf98; color:#132014; border-color:#a7cf98; font-weight:700; }
+.modpack-download span { font-size:11px; font-weight:500; }
+.modpack-download:hover { background:#bbdfad; border-color:#bbdfad; }
+.modpack-note { color:var(--muted); font-size:12px; }
+.modpack-install { margin-top:12px; border:1px solid var(--border); border-radius:var(--radius); background:var(--surf); }
+.modpack-install summary { padding:16px 20px; min-height:48px; cursor:pointer; font-weight:600; }
+.modpack-guide { display:grid; grid-template-columns:1fr 1fr; gap:32px; padding:4px 24px 20px; }
+.modpack-guide h3 { font-size:16px; margin-bottom:12px; }
+.modpack-guide ol { padding-left:20px; color:var(--muted); }
+.modpack-guide li { padding-left:4px; margin-bottom:12px; }
+.modpack-guide strong { color:var(--text); }
+.modpack-guide p { margin-top:12px; color:var(--muted); font-size:13px; }
+.modpack-guide a { text-underline-offset:3px; color:#b8d5b4; }
+.modpack-caveat { padding:14px 24px; border-top:1px solid var(--border); color:var(--muted); font-size:12px; }
+@media(max-width:600px) { .modpack-card { grid-template-columns:1fr; } .modpack-art { flex-direction:row; justify-content:flex-start; gap:16px; padding:16px 20px; border-right:0; border-bottom:1px solid var(--border); } .modpack-art svg { width:48px; height:48px; } .modpack-art span { margin:0; } .modpack-body { padding:20px; } .modpack-guide { grid-template-columns:1fr; gap:20px; padding:4px 20px 20px; } .modpack-actions { flex-direction:column; } .modpack-download { flex-wrap:wrap; gap:4px 10px; } }
