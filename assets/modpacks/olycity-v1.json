@@ -1,14 +1,14 @@
 {
   "name": "OLYCITY V1",
-  "releaseTag": "olycity-v1-20261008",
-  "sourceFilename": "OLYCITY V1.zip",
+  "releaseTag": "olycity-packwiz-v1-20261008",
+  "sourceFilename": "OLYCITY V1 - Prism.zip",
   "sourceVersion": "1.0.0",
   "minecraft": "1.20.1",
   "loader": "forge-47.4.10",
   "modCount": 165,
-  "bytes": 1167042059,
-  "sha256": "3ef2ae545fa7902568749522badc11a9540cc2d085f543c06ca848470285a79d",
-  "downloadUrl": "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1-20261008/OLYCITY.V1.zip",
+  "bytes": 1684219,
+  "sha256": "45fbc8e52374a20500bdaf99cb6e454ffb88d9bd3fedf8faaa756ac9e6f61235",
+  "downloadUrl": "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/OLYCITY.V1.-.Prism.zip",
   "essential": false,
   "server": {
     "sourceFilename": "OLYCITY V1 - Serveur.zip",
@@ -16,6 +16,22 @@
     "bytes": 1207558505,
     "sha256": "f7d08ee11c780ed105b01939eab9acddee82ce0542c90312c59a04505a5642bd",
     "downloadUrl": "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1-20261008/OLYCITY.V1.-.Serveur.zip",
-    "guideUrl": "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1-20261008/Instructions-Romain-OLYCITY-V1.md"
+    "guideUrl": "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1-20261008/Instructions-Romain-OLYCITY-V1.md",
+    "updateKitUrl": "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/OLYCITY.V1.-.Mise.a.jour.Crafty.zip",
+    "updateGuideUrl": "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/OLYCITY-Packwiz-Romain.md"
+  },
+  "manualDownload": {
+    "downloadUrl": "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1-20261008/OLYCITY.V1.zip",
+    "sourceFilename": "OLYCITY V1.zip",
+    "bytes": 1167042059,
+    "sha256": "3ef2ae545fa7902568749522badc11a9540cc2d085f543c06ca848470285a79d",
+    "releaseTag": "olycity-v1-20261008"
+  },
+  "updates": {
+    "type": "packwiz",
+    "version": "1.0.0",
+    "stableUrl": "https://games.olycity.fr/assets/modpacks/updates/stable/pack.toml",
+    "testUrl": "https://games.olycity.fr/assets/modpacks/updates/test/pack.toml",
+    "firstDownloadApproxBytes": 1167042059
   }
 }
