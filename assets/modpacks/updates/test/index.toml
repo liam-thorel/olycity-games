@@ -881,16 +881,6 @@ hash = "73d412bef25b1815b11ba486456cf3e8d0559a7a8cc139873e012c298344c323"
 metafile = true
 
 [[files]]
-file = "config/fml.toml.pw.toml"
-hash = "3feb6a3005a8c8f2d5f8f1c348d8ebd8c94ab9bf1bc78bc14caef3557e6b250a"
-metafile = true
-
-[[files]]
-file = "config/fml.toml.server.pw.toml"
-hash = "571de76802ccb4397c5cccff33e6f5351a4145c733d22294ff5ddd3b4608ea99"
-metafile = true
-
-[[files]]
 file = "config/ftbbackups2.json.pw.toml"
 hash = "36d0f9fcc5734ed9d7e0dd3b5ad8f549d94081cbf8d6eb3ae11ea7c24eacb80b"
 metafile = true
