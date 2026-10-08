@@ -1,0 +1,10 @@
+{
+  "replace": true,
+  "required": false,
+  "values": [
+    {
+      "id": "rats:ratlantis",
+      "required": false
+    }
+  ]
+}

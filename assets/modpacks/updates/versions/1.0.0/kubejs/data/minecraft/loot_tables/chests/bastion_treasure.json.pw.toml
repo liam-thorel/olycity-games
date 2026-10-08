@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/bastion_treasure.json"
+filename = "bastion_treasure.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/acb458ab3a825060f66cc959c2e33ee472002e0a8ec20740cfe9c41ca22043b4"
+hash-format = "sha256"
+hash = "acb458ab3a825060f66cc959c2e33ee472002e0a8ec20740cfe9c41ca22043b4"

@@ -1,0 +1,8 @@
+name = "config/custom_chickens.toml"
+filename = "custom_chickens.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/c12e46118b77f2fa24c5f772d6e51693b3afd0660f153268e7a8dbc4828a7999"
+hash-format = "sha256"
+hash = "c12e46118b77f2fa24c5f772d6e51693b3afd0660f153268e7a8dbc4828a7999"

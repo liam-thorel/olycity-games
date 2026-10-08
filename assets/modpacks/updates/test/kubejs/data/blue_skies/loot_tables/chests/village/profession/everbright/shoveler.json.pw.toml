@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/village/profession/everbright/shoveler.json"
+filename = "shoveler.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/c25ef68a0271c5b294bd5c4ddfe4faabb775d3026b970f7fc4d2e5f4c22ddd6a"
+hash-format = "sha256"
+hash = "c25ef68a0271c5b294bd5c4ddfe4faabb775d3026b970f7fc4d2e5f4c22ddd6a"

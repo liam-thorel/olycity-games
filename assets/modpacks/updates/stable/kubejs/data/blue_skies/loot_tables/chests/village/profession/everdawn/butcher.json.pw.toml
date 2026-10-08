@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/village/profession/everdawn/butcher.json"
+filename = "butcher.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/14966b48a3d60ae6201ee7554b3b1b6a170b590495eb64f6da3a75cc35aaab26"
+hash-format = "sha256"
+hash = "14966b48a3d60ae6201ee7554b3b1b6a170b590495eb64f6da3a75cc35aaab26"

@@ -1,0 +1,8 @@
+name = "config/pneumaticcraft/thirdparty.cfg"
+filename = "thirdparty.cfg"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/8a456f5bdac4e667bea52c6b0027aa43aa13401b8783b4a95d2ae28bdbee7ced"
+hash-format = "sha256"
+hash = "8a456f5bdac4e667bea52c6b0027aa43aa13401b8783b4a95d2ae28bdbee7ced"

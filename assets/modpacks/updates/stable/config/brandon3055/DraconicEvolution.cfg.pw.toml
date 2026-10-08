@@ -1,0 +1,8 @@
+name = "config/brandon3055/DraconicEvolution.cfg"
+filename = "DraconicEvolution.cfg"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/b89891153feaa8641b85c9def1b72332d7a93b3fc11ff4c8d51bc88ecc129f4f"
+hash-format = "sha256"
+hash = "b89891153feaa8641b85c9def1b72332d7a93b3fc11ff4c8d51bc88ecc129f4f"

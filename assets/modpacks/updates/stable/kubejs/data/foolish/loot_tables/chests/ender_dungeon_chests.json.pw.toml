@@ -1,0 +1,8 @@
+name = "kubejs/data/foolish/loot_tables/chests/ender_dungeon_chests.json"
+filename = "ender_dungeon_chests.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/52c6e7a4868afce7b79322706d80650057a7d6d6824344a18b3532f750fa7fbc"
+hash-format = "sha256"
+hash = "52c6e7a4868afce7b79322706d80650057a7d6d6824344a18b3532f750fa7fbc"

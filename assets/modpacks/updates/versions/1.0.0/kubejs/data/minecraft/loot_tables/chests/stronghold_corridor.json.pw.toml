@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/stronghold_corridor.json"
+filename = "stronghold_corridor.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/2beb780fc659174f6ba3b19d796d9e34ae8f0cb87054477f28d792aceeeca604"
+hash-format = "sha256"
+hash = "2beb780fc659174f6ba3b19d796d9e34ae8f0cb87054477f28d792aceeeca604"

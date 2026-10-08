@@ -1,0 +1,8 @@
+name = "kubejs/data/foolish/loot_tables/chests/berserker_base_chests.json"
+filename = "berserker_base_chests.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/59e6f1148659471b44278397e81a63461c5c30a38199d9f87c79dfce7273066d"
+hash-format = "sha256"
+hash = "59e6f1148659471b44278397e81a63461c5c30a38199d9f87c79dfce7273066d"

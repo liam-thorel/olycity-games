@@ -1,0 +1,10 @@
+{
+  "replace": true,
+  "values": [
+    "foolish:emberlight_valley",
+    {
+      "id": "foolish_biomes:emberlight_valley",
+      "required": false
+    }
+  ]
+}

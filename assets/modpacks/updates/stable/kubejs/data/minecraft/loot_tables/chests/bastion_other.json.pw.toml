@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/bastion_other.json"
+filename = "bastion_other.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/0c2627bec40fee874dafff400916beff1462b481a4770f38cc2b13043e8270d4"
+hash-format = "sha256"
+hash = "0c2627bec40fee874dafff400916beff1462b481a4770f38cc2b13043e8270d4"

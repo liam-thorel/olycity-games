@@ -1,0 +1,232 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 4.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:emerald"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Stick:\"blue_skies:frostbright_stick\"}"
+            }
+          ],
+          "name": "blue_skies:aquite_shovel",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "blue_skies:falsite_ingot"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "blue_skies:frostbright_stick",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 2.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:snowball",
+          "weight": 6
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 8.0,
+        "min": 3.0
+      }
+    },
+    {
+      "name": "olycity_relics_v1",
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.08
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:ticket_romain",
+          "weight": 550,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.05
+                }
+              ],
+              "tag": "{\"olycity_collector\": 1, \"CustomModelData\": 1, \"display\": {\"Name\": \"{\\\"text\\\": \\\"Ticket de Romain — Dossier classé\\\", \\\"color\\\": \\\"gold\\\", \\\"italic\\\": false}\", \"Lore\": [\"{\\\"text\\\": \\\"Édition de collection • mêmes pouvoirs\\\", \\\"color\\\": \\\"gray\\\", \\\"italic\\\": false}\"]}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:joint_rayhan",
+          "weight": 250,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.05
+                }
+              ],
+              "tag": "{\"olycity_collector\": 1, \"CustomModelData\": 1, \"display\": {\"Name\": \"{\\\"text\\\": \\\"Joint de Rayhan — Purple Haze\\\", \\\"color\\\": \\\"gold\\\", \\\"italic\\\": false}\", \"Lore\": [\"{\\\"text\\\": \\\"Édition de collection • mêmes pouvoirs\\\", \\\"color\\\": \\\"gray\\\", \\\"italic\\\": false}\"]}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:verre_nico",
+          "weight": 150,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.05
+                }
+              ],
+              "tag": "{\"olycity_collector\": 1, \"CustomModelData\": 1, \"display\": {\"Name\": \"{\\\"text\\\": \\\"Verre de Nico — Dernière tournée\\\", \\\"color\\\": \\\"gold\\\", \\\"italic\\\": false}\", \"Lore\": [\"{\\\"text\\\": \\\"Édition de collection • mêmes pouvoirs\\\", \\\"color\\\": \\\"gray\\\", \\\"italic\\\": false}\"]}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:longue_vue_neron",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:cerveau_liam",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.05
+                }
+              ],
+              "tag": "{\"olycity_collector\": 1, \"CustomModelData\": 1, \"display\": {\"Name\": \"{\\\"text\\\": \\\"Cerveau de Liam — Édition génie\\\", \\\"color\\\": \\\"gold\\\", \\\"italic\\\": false}\", \"Lore\": [\"{\\\"text\\\": \\\"Édition de collection • mêmes pouvoirs\\\", \\\"color\\\": \\\"gray\\\", \\\"italic\\\": false}\"]}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:pendentif_mathis",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.05
+                }
+              ],
+              "tag": "{\"olycity_collector\": 1, \"CustomModelData\": 1, \"display\": {\"Name\": \"{\\\"text\\\": \\\"Pendentif de Mathis — Édition Immortal\\\", \\\"color\\\": \\\"gold\\\", \\\"italic\\\": false}\", \"Lore\": [\"{\\\"text\\\": \\\"Édition de collection • mêmes pouvoirs\\\", \\\"color\\\": \\\"gray\\\", \\\"italic\\\": false}\"]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "olycity_pasteque_v1",
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.0001
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:pasteque_solidarite"
+        }
+      ]
+    },
+    {
+      "name": "olycity_wtf_v1",
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.0045
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:facture_impayee",
+          "weight": 60
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 30
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:baton_rh",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:poisson_chantier",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:patate_secours",
+          "weight": 2
+        }
+      ]
+    }
+  ],
+  "random_sequence": "blue_skies:chests/village/profession/everbright/shoveler"
+}

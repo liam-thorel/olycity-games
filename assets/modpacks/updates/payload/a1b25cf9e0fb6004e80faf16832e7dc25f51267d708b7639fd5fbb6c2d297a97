@@ -1,0 +1,260 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "01_bienvenue"
+	group: ""
+	icon: "ftbquests:book"
+	id: "44E93BC1FDEEC53E"
+	order_index: 0
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Ce pack est une boîte à aventures : construisez votre base, choisissez vos mods et partez explorer ensemble."
+				"Les quêtes sont facultatives. Elles ne changent pas les recettes."
+				"Les étapes avec une case à cocher se valident à la main ; les étapes d’objets les détectent dans votre inventaire. Aucun objet demandé n’est consommé."
+			]
+			icon: "ftbquests:book"
+			id: "0037A6F7F69A24BA"
+			rewards: [{
+				count: 8
+				id: "279397E987783A19"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C7E4F7AB0E5A568"
+				title: "J’ai réalisé cette étape"
+				type: "checkmark"
+			}]
+			title: "Bienvenue à OLYCITY !"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0037A6F7F69A24BA"]
+			description: [
+				"Dans l’inventaire, cherche un objet dans JEI. Survole-le puis utilise le raccourci Recette (R par défaut) et Utilisations (U)."
+				"Controlling aide à rechercher les touches et leurs conflits."
+				"Teste avec une pioche en fer, puis coche cette étape."
+			]
+			icon: "ftbquests:book"
+			id: "4C3D90AA2DCE9624"
+			rewards: [{
+				id: "419A2EC65E1CBCC5"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "5DF93CD125AACA94"
+				title: "J’ai réalisé cette étape"
+				type: "checkmark"
+			}]
+			title: "Trouver une recette"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0037A6F7F69A24BA"]
+			description: [
+				"Récupère quelques bûches et transforme-les en planches. Les bois des biomes moddés conviennent aussi."
+				"Cette étape est manuelle pour ne pas t’imposer du chêne."
+			]
+			icon: "ftbquests:book"
+			id: "197A734AB44A6266"
+			rewards: [{
+				count: 16
+				id: "12CE9DD3E5BF4CAF"
+				item: "minecraft:stick"
+				type: "item"
+			}]
+			tasks: [{
+				id: "63A3CA8F5ACBD168"
+				title: "J’ai réalisé cette étape"
+				type: "checkmark"
+			}]
+			title: "Du bois, n’importe lequel"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["197A734AB44A6266"]
+			description: ["Fabrique un établi. JEI t’indique les recettes des outils et machines du pack."]
+			icon: "minecraft:crafting_table"
+			id: "5F5F049EEEA203AC"
+			rewards: [{
+				count: 16
+				id: "11F98D60FA393D3C"
+				item: "minecraft:torch"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "7748E8EEB1669588"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			title: "Le premier établi"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F5F049EEEA203AC"]
+			description: ["Prépare des outils de pierre et de quoi manger. FTB Ultimine permet de creuser plusieurs blocs : vérifie la forme indiquée avant de miner."]
+			icon: {
+				Count: 1
+				id: "minecraft:stone_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "19D52593C495BC2C"
+			rewards: [{
+				count: 4
+				id: "1FAA51F04DC9DCB0"
+				item: "minecraft:cooked_beef"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "1571A56837E7F3B6"
+				item: {
+					Count: 1
+					id: "minecraft:stone_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Une pioche de pierre"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			description: ["Fabrique une pioche en fer. Garde une réserve de fer : sacs, machines et outils en auront besoin."]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2C1F0E3F810F82B6"
+			rewards: [{
+				count: 8
+				id: "4CF1D5A5AD737D42"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "09617D90E9DDDC00"
+				item: {
+					Count: 1
+					id: "minecraft:iron_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Prêt pour les minerais"
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5F5F049EEEA203AC"]
+			description: [
+				"Installe un lit, du rangement et un éclairage. Ouvre aussi le manuel de FTB Chunks pour comprendre les protections."
+				"Avant de construire une grande usine, choisissez un espace où vous pourrez l’agrandir."
+				"Valide après avoir installé ton premier coin de vie."
+			]
+			icon: "ftbquests:book"
+			id: "270B5B13E673B689"
+			rewards: [{
+				count: 16
+				id: "1327EFB133236033"
+				item: "minecraft:glass"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2542C37CE83973B4"
+				title: "J’ai réalisé cette étape"
+				type: "checkmark"
+			}]
+			title: "Une base qui vous ressemble"
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2C1F0E3F810F82B6"]
+			description: ["Fabrique un sac Sophisticated Backpacks. Il peut être équipé d’améliorations : commence simplement, le livre/JEI montre les recettes."]
+			icon: "sophisticatedbackpacks:backpack"
+			id: "5E85CFED1760A38D"
+			rewards: [{
+				count: 4
+				id: "54EB642180BA1D38"
+				item: "minecraft:leather"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "262E5ACB82C5DF54"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			title: "Le sac d’exploration"
+			x: 7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["270B5B13E673B689"]
+			description: [
+				"Trouve ou fabrique une Waystone, active-la et repère le chemin de retour à votre base."
+				"La téléportation de la carte est réservée aux joueurs autorisés à utiliser les commandes ; les Waystones servent à tout le groupe."
+			]
+			icon: "ftbquests:book"
+			id: "533ADD03F649AB4E"
+			rewards: [{
+				count: 4
+				id: "67B25139186BADC6"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			tasks: [{
+				id: "449DE73021F1AB00"
+				title: "J’ai réalisé cette étape"
+				type: "checkmark"
+			}]
+			title: "Retrouver la maison"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0037A6F7F69A24BA"]
+			description: [
+				"Les Chroniques d’OLYCITY racontent les rumeurs sur les reliques du pack."
+				"Ouvre le carnet et lis la section « Les archives scellées », puis coche cette étape."
+				"/oly livre permet de récupérer le carnet."
+			]
+			icon: "ftbquests:book"
+			id: "53DCB36F15217F16"
+			rewards: [{
+				id: "664EDD391AF62BCB"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "1B2AC5AECB6C59D9"
+				title: "J’ai réalisé cette étape"
+				type: "checkmark"
+			}]
+			title: "&dLes archives scellées&r"
+			x: 2.5d
+			y: 5.0d
+		}
+	]
+	title: "&6Bienvenue à OLYCITY&r"
+}

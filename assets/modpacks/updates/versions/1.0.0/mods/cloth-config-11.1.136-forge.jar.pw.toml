@@ -1,0 +1,8 @@
+name = "mods/cloth-config-11.1.136-forge.jar"
+filename = "cloth-config-11.1.136-forge.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/1e895e85cf5b1e1905ef3178ec155c8badfe22a1577b92c09143a5aa1f4ce0f2.jar"
+hash-format = "sha256"
+hash = "1e895e85cf5b1e1905ef3178ec155c8badfe22a1577b92c09143a5aa1f4ce0f2"

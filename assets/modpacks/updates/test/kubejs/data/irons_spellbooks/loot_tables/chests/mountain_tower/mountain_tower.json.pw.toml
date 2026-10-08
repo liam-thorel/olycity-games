@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/mountain_tower/mountain_tower.json"
+filename = "mountain_tower.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/7ee867472f5f57273d38a77fe1c2003aaecda2991d0699bae5c67b324bf4efab"
+hash-format = "sha256"
+hash = "7ee867472f5f57273d38a77fe1c2003aaecda2991d0699bae5c67b324bf4efab"

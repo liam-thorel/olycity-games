@@ -1,0 +1,8 @@
+name = "config/ftbquests/quests/chapters/01_bienvenue.snbt"
+filename = "01_bienvenue.snbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/a1b25cf9e0fb6004e80faf16832e7dc25f51267d708b7639fd5fbb6c2d297a97"
+hash-format = "sha256"
+hash = "a1b25cf9e0fb6004e80faf16832e7dc25f51267d708b7639fd5fbb6c2d297a97"

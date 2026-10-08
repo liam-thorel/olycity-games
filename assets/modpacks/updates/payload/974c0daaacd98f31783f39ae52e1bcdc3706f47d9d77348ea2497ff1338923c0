@@ -1,0 +1,13 @@
+
+[MobSpawning]
+	#All Overworld Mobs
+	"Overworld - master" = true
+	#All Overworld Monsters
+	"Overworld - monsters" = true
+	#All Overworld Animals
+	"Overworld - animals" = true
+	#All Nether Mobs
+	"Nether - master" = true
+	#All End Mobs
+	"End - master" = true
+

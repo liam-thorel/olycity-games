@@ -1,0 +1,8 @@
+name = "kubejs/data/alexscaves/loot_tables/chests/gingerbread_town.json"
+filename = "gingerbread_town.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/359eecd6cfc5cad84231188beb6d7dada4218b7d88eb4de28e4504532fb50da3"
+hash-format = "sha256"
+hash = "359eecd6cfc5cad84231188beb6d7dada4218b7d88eb4de28e4504532fb50da3"

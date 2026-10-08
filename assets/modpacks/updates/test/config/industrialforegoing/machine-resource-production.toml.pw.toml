@@ -1,0 +1,8 @@
+name = "config/industrialforegoing/machine-resource-production.toml"
+filename = "machine-resource-production.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/dc91a7505fcbd3e8b1d1b62178de59faf7be529fcd0e97a0bb12991601ec4013"
+hash-format = "sha256"
+hash = "dc91a7505fcbd3e8b1d1b62178de59faf7be529fcd0e97a0bb12991601ec4013"

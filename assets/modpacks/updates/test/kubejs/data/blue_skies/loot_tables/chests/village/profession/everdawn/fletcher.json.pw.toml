@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/village/profession/everdawn/fletcher.json"
+filename = "fletcher.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/5d2ae6ec77837c4b242c34df609a75fd8264071366970e38a331cde51ba93b8b"
+hash-format = "sha256"
+hash = "5d2ae6ec77837c4b242c34df609a75fd8264071366970e38a331cde51ba93b8b"

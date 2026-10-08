@@ -1,0 +1,8 @@
+name = "kubejs/config/common.properties"
+filename = "common.properties"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/468f04f3c2bccfe442ff63137c6cfe95556bce1cb50a64260c8488eb6f817642"
+hash-format = "sha256"
+hash = "468f04f3c2bccfe442ff63137c6cfe95556bce1cb50a64260c8488eb6f817642"

@@ -1,0 +1,8 @@
+name = "kubejs/assets/kubejs/models/item/patate_secours.json"
+filename = "patate_secours.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/a7ada47f90151b11c8869b63c0b8a5b854c5344fbf0f77cef1d69d003e4d51be"
+hash-format = "sha256"
+hash = "a7ada47f90151b11c8869b63c0b8a5b854c5344fbf0f77cef1d69d003e4d51be"

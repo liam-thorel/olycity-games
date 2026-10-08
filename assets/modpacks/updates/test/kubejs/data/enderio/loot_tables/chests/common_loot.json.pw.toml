@@ -1,0 +1,8 @@
+name = "kubejs/data/enderio/loot_tables/chests/common_loot.json"
+filename = "common_loot.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/24c329106524f0f2746fe1448352f7268bfb31fd64ce123d26b63ac9f065e500"
+hash-format = "sha256"
+hash = "24c329106524f0f2746fe1448352f7268bfb31fd64ce123d26b63ac9f065e500"

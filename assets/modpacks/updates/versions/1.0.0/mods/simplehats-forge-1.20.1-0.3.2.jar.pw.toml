@@ -1,0 +1,8 @@
+name = "mods/simplehats-forge-1.20.1-0.3.2.jar"
+filename = "simplehats-forge-1.20.1-0.3.2.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/86758bd8151a2b8ee95151abdc442250fe359c63aa1702cee2b71ce086a32a93.jar"
+hash-format = "sha256"
+hash = "86758bd8151a2b8ee95151abdc442250fe359c63aa1702cee2b71ce086a32a93"

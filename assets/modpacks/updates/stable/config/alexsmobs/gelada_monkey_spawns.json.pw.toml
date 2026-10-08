@@ -1,0 +1,8 @@
+name = "config/alexsmobs/gelada_monkey_spawns.json"
+filename = "gelada_monkey_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/cdd0380bfa9b754856150966a042f807ac48d2f9409f4f2b543be19e87f4c41f"
+hash-format = "sha256"
+hash = "cdd0380bfa9b754856150966a042f807ac48d2f9409f4f2b543be19e87f4c41f"

@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/village/village_desert_house.json"
+filename = "village_desert_house.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/007789c7f5549308aed71078e73a9ba95066f89db2a6bf74b4aaed7e2f7b849c"
+hash-format = "sha256"
+hash = "007789c7f5549308aed71078e73a9ba95066f89db2a6bf74b4aaed7e2f7b849c"

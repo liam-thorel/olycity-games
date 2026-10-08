@@ -1,0 +1,8 @@
+name = "kubejs/data/the_bumblezone/loot_tables/structures/candle_parkour_top.json"
+filename = "candle_parkour_top.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/9766250c8cc8ddd0631be37222cde7ee50256be164e5469a494af6f51314beac"
+hash-format = "sha256"
+hash = "9766250c8cc8ddd0631be37222cde7ee50256be164e5469a494af6f51314beac"

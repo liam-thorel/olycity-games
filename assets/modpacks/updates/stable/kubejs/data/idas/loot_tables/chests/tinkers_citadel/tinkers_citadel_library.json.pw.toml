@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/tinkers_citadel/tinkers_citadel_library.json"
+filename = "tinkers_citadel_library.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/b68ea153563ea07c826d6791abcf1c5d48df9fc6947b03b34a030c5f101aec39"
+hash-format = "sha256"
+hash = "b68ea153563ea07c826d6791abcf1c5d48df9fc6947b03b34a030c5f101aec39"

@@ -1,0 +1,44 @@
+{
+  "name": "Du minerai aux machines",
+  "icon": "mekanism:metallurgic_infuser",
+  "category": "patchouli:liam",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Il y a plusieurs écoles à l’atelier. Aucune ne demande de tout construire le premier soir.$(br2)Commence par une chaîne qui fonctionne, puis choisis ce que tu veux approfondir."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "mekanism:enrichment_chamber",
+      "title": "Mekanism",
+      "text": "Énergie, traitement des minerais, outils et machines. Les faces d’entrée et de sortie comptent autant que les câbles.",
+      "link_recipe": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "ae2:crafting_terminal",
+      "title": "Applied Energistics 2",
+      "text": "Un réseau de rangement, puis de l’autocraft. Le guide intégré explique cellules, alimentation et canaux. Refined Storage reste une autre option.",
+      "link_recipe": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "industrialforegoing:fluid_extractor",
+      "title": "Industrial Foregoing",
+      "text": "Commence par latex, traitement et plastique. Choisis ensuite une automatisation de récolte, d’élevage ou de ressources.",
+      "link_recipe": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "thermal:machine_pulverizer",
+      "title": "Thermal Expansion",
+      "text": "Une ligne électrique de traitement. JEI montre les entrées et sous-produits ; prévois de quoi les ranger.",
+      "link_recipe": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(#205f64)Ender IO$()$(br2)Des conduits et des machines pour relier l’atelier.$(br2)$(#205f64)Immersive Engineering$()$(br2)Des câbles et de grands multiblocs. L’Engineer’s Manual montre les structures."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+name = "mods/polymorph-forge-0.49.11+1.20.1.jar"
+filename = "polymorph-forge-0.49.11+1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/cb633f3a3220ccfd00efbb57fb37bf7be44b5266195103af26add462fa71d86a.jar"
+hash-format = "sha256"
+hash = "cb633f3a3220ccfd00efbb57fb37bf7be44b5266195103af26add462fa71d86a"

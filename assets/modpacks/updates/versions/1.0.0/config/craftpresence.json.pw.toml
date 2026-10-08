@@ -1,0 +1,8 @@
+name = "config/craftpresence.json"
+filename = "craftpresence.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/e8b3cd916b7607be06950ab687bf184bb139eade1c74e3ac66e014ee596150c2"
+hash-format = "sha256"
+hash = "e8b3cd916b7607be06950ab687bf184bb139eade1c74e3ac66e014ee596150c2"

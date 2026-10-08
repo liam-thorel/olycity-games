@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/jungle_temple_dispenser.json"
+filename = "jungle_temple_dispenser.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/29739bcdbd2cdfe203859141939dd05c1029fc1a61620a596332d0a45749a6f7"
+hash-format = "sha256"
+hash = "29739bcdbd2cdfe203859141939dd05c1029fc1a61620a596332d0a45749a6f7"

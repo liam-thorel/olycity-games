@@ -1,0 +1,14 @@
+[
+  {
+    "user": {
+      "type": "other",
+      "name": "Console"
+    },
+    "time": 1791372274233,
+    "type": "Profiler",
+    "data": {
+      "type": "file",
+      "value": "C:\\Users\\Skybreaker\\curseforge\\minecraft\\Instances\\Entre potes - V1 locale\\config\\spark\\profile-2026-10-07_13.24.34.sparkprofile"
+    }
+  }
+]

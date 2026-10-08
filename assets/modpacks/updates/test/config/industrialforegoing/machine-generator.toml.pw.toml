@@ -1,0 +1,8 @@
+name = "config/industrialforegoing/machine-generator.toml"
+filename = "machine-generator.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/e9084cb592caa6318f721c31c521c657ea689b56ccb0508fc8c81cdbe9a503cc"
+hash-format = "sha256"
+hash = "e9084cb592caa6318f721c31c521c657ea689b56ccb0508fc8c81cdbe9a503cc"

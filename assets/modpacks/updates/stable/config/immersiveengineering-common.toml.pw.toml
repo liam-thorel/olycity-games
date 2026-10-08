@@ -1,0 +1,8 @@
+name = "config/immersiveengineering-common.toml"
+filename = "immersiveengineering-common.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/728dcca3a45c8350e379078da02812cca77acb7e7a2d36011ddf5fe861b29bdb"
+hash-format = "sha256"
+hash = "728dcca3a45c8350e379078da02812cca77acb7e7a2d36011ddf5fe861b29bdb"

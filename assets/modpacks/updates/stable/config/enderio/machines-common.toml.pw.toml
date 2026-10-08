@@ -1,0 +1,8 @@
+name = "config/enderio/machines-common.toml"
+filename = "machines-common.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/c62ee1febcb9e8354a35e9f69a66787419d6d889ca848f7fd138a4c63cfed99f"
+hash-format = "sha256"
+hash = "c62ee1febcb9e8354a35e9f69a66787419d6d889ca848f7fd138a4c63cfed99f"

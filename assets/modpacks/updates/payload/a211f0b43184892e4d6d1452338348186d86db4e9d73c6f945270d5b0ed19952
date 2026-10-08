@@ -1,0 +1,29 @@
+{
+  "name": "Le début des chroniques",
+  "icon": "minecraft:lantern",
+  "category": "kubejs:village",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(#205f64)Bienvenue à OLYCITY.$()$(br2)Ce village n’a pas encore de légende. Il possède mieux : des habitants prêts à en écrire une. Une maison, une usine, une porte étrange… chacun trouvera sa place."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "kubejs:textures/book/village.png"
+      ],
+      "title": "Un foyer à inventer",
+      "border": false,
+      "text": "Une vision d’OLYCITY, à bâtir à votre manière."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Ce carnet conserve nos récits et les conseils utiles à la route.$(br2)Le livre $(l:village/objectifs)Quêtes OLYCITY$(/l) rassemble les objectifs. Ici, vous pouvez simplement lire et feuilleter."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(#934957)La charte du village$()$(br2)Prévenez avant une expérience dangereuse. Partagez les découvertes. Gardez une route pour rentrer.$(br2)Une base où l’on aime rester vaut autant qu’un trophée."
+    }
+  ]
+}

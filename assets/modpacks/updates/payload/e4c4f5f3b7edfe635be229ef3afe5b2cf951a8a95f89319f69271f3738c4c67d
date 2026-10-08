@@ -1,0 +1,88 @@
+// Admin test helper for the installed New TARDIS Mod 1.1.6.
+// Creates a fresh native TARDIS; never prepares an existing interior.
+var olyTardisPending = {}, olyTardisLast = {}, olyTardisJobs = [], olyTardisTick = 0
+
+function olyTardisSpot(level, x, y, z) {
+  for (var dx = -1; dx <= 1; dx++) for (var dz = -1; dz <= 1; dz++) {
+    var floor = String(level.getBlock(x + dx, y - 1, z + dz).id)
+    if (floor === 'minecraft:air' || floor === 'minecraft:water' || floor === 'minecraft:lava') return false
+    for (var dy = 0; dy < 5; dy++) {
+      var id = String(level.getBlock(x + dx, y + dy, z + dz).id)
+      if (id !== 'minecraft:air' && id !== 'minecraft:cave_air' && id !== 'minecraft:void_air') return false
+    }
+  }
+  return true
+}
+
+function olyTardisCreate(p) {
+  var uuid = String(p.getUuid()), now = Date.now()
+  if (olyTardisPending[uuid]) { p.tell('§7La cabine est déjà en cours de création.'); return 0 }
+  if (olyTardisLast[uuid] && now - olyTardisLast[uuid] < 60000) { p.tell('§7Attends une minute avant de créer une autre cabine de test.'); return 0 }
+  var x = Math.floor(p.x), y = Math.floor(p.y), z = Math.floor(p.z), level = p.level
+  var offsets = [[4,0],[-4,0],[0,4],[0,-4]], spot = null
+  for (var i = 0; i < offsets.length; i++) {
+    var sx = x + offsets[i][0], sz = z + offsets[i][1]
+    if (olyTardisSpot(level, sx, y, sz)) { spot = [sx,y,sz]; break }
+  }
+  if (!spot) { p.tell('§ePlace-toi sur un terrain plat et dégagé : la cabine demande un espace libre de 3×3 blocs et 5 blocs de haut.'); return 0 }
+  var b = level.getBlock(spot[0],spot[1],spot[2])
+  try {
+    b.set('tardis:steam_broken_exterior')
+    var tile = b.getEntity()
+    if (!tile || String(b.id) !== 'tardis:steam_broken_exterior') throw new Error('Broken exterior initialization failed')
+    // Verified public native API. It queues generation and transfers loyalty.
+    tile.modLoyalty(p, 200)
+    olyTardisPending[uuid] = true
+    olyTardisLast[uuid] = now
+    olyTardisJobs.push({uuid:uuid, player:p, server:p.server, level:level, pos:spot, attempts:0, at:olyTardisTick+20})
+    p.tell('§6OLYCITY §7— création de ton TARDIS à '+spot.join(', ')+'. Patiente quelques instants.')
+    return 1
+  } catch (e) {
+    console.error('[OLYCITY TARDIS] Creation failed: '+e)
+    p.tell('§cLa création n’a pas abouti. Le détail est enregistré dans les logs ; ne relance pas en boucle.')
+    return 0
+  }
+}
+
+ServerEvents.commandRegistry(event => {
+  var c = event.commands
+  event.register(c.literal('oly').then(c.literal('tardis')
+    .requires(s => s.hasPermission(2) && !!s.player)
+    .executes(ctx => olyTardisCreate(ctx.source.player))))
+})
+
+ServerEvents.tick(event => {
+  olyTardisTick++
+  var keep = []
+  olyTardisJobs.forEach(job => {
+    if (job.server !== event.server || job.at > olyTardisTick) { keep.push(job); return }
+    job.at = olyTardisTick + 20
+    job.attempts++
+    try {
+      var b = job.level.getBlock(job.pos[0],job.pos[1],job.pos[2])
+      if (String(b.id) === 'tardis:steam_exterior') {
+        var tile = b.getEntity()
+        if (tile) {
+          var linked = tile.getTardis()
+          if (linked.isPresent()) {
+            var tardis = linked.get(), dim = String(tardis.getLevel().dimension)
+            // Native setup fills fuel and installs the flight subsystems.
+            var result = job.server.runCommandSilent('tardis debug '+dim+' setup')
+            if (result < 1) throw new Error('Native setup command failed for '+dim)
+            delete olyTardisPending[job.uuid]
+            job.player.give('tardis:manual')
+            job.player.tell('§aTon TARDIS de test est créé, équipé et rempli de carburant. Entre par sa porte : '+job.pos.join(', ')+'.')
+            return
+          }
+        }
+      }
+      if (job.attempts < 120) { keep.push(job); return }
+      throw new Error('Generation timed out at '+job.pos.join(', '))
+    } catch (e) {
+      delete olyTardisPending[job.uuid]
+      console.error('[OLYCITY TARDIS] Preparation failed: '+e)
+      job.player.tell('§cLa préparation du TARDIS n’a pas abouti. Je pourrai vérifier les logs ; la cabine créée est conservée.')
+    }
+  })
+  olyTardisJobs = keep
+})

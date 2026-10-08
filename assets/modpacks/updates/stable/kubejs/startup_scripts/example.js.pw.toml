@@ -1,0 +1,8 @@
+name = "kubejs/startup_scripts/example.js"
+filename = "example.js"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/395c96d3ddd178821db851f387e91560e606ea752177f66d2016f12bd0542b8f"
+hash-format = "sha256"
+hash = "395c96d3ddd178821db851f387e91560e606ea752177f66d2016f12bd0542b8f"

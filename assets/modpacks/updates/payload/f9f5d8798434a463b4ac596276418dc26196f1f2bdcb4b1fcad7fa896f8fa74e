@@ -1,0 +1,16 @@
+{
+  "name": "Le projet de l’apprenti",
+  "icon": "minecraft:oak_planks",
+  "category": "kubejs:romain",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Une pièce aménagée, un plat préparé, une poule découverte ou une petite roue qui tourne : le premier projet appartient à celui qui le choisit."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Cherche une recette, réalise ton projet avec un ami et montre-le au groupe.$(br2)Ensuite, ouvre les autres carnets à ton rythme. Les pages de Liam peuvent attendre ; les explications resteront ici."
+    }
+  ]
+}

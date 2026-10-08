@@ -1,0 +1,32 @@
+// Separate quest objectives and an illustrated Patchouli journal.
+function olycityQuestBook(player) {
+  player.give(Item.of('ftbquests:book', {
+    display: { Name: JSON.stringify({ text: 'Quêtes OLYCITY', color: 'gold', italic: false }) }
+  }))
+}
+function olycityChronicles(player) {
+  player.give(Item.of('patchouli:guide_book', { 'patchouli:book': 'patchouli:chroniques_olycity' }))
+}
+PlayerEvents.loggedIn(event => {
+  var p = event.player
+  if (!p.persistentData.olycity_quest_book_v1) {
+    if (p.inventory.count('ftbquests:book') === 0) olycityQuestBook(p)
+    p.persistentData.olycity_quest_book_v1 = true
+  }
+  // Rename only the old OLYCITY quest book; do not alter unrelated books or notes.
+  for(var i=0;i<p.inventory.getSlots();i++) {
+    var s=p.inventory.getStackInSlot(i)
+    if(s.id==='ftbquests:book' && s.nbt && s.nbt.display &&
+       String(s.nbt.display.Name).indexOf('Guide OLYCITY PACK')!==-1) {
+      s.nbt.display.Name=JSON.stringify({text:'Quêtes OLYCITY',color:'gold',italic:false})
+    }
+  }
+  var key='olycity_chroniques_given_'+p.getUuid()
+  if(!p.server.persistentData.getBoolean(key)) {
+    olycityChronicles(p)
+    p.server.persistentData.putBoolean(key,true)
+    p.tell('§6Les Chroniques d’OLYCITY t’attendent. /oly livre redonne le carnet ; /oly quetes redonne les objectifs.')
+  }
+})
+global.olyGiveQuestBook=olycityQuestBook
+global.olyGiveChronicles=olycityChronicles

@@ -1,0 +1,39 @@
+// Built-in KubeJS 2001 JEI integration. Relics remain loot-only, with no cheap recipe.
+JEIEvents.addItems(event => {
+  ['ticket_romain','joint_rayhan','verre_nico','longue_vue_neron','cerveau_liam','pendentif_mathis'].forEach(id=>event.add('kubejs:'+id))
+})
+JEIEvents.information(event => {
+  var where='Butin des coffres d’exploration : mines, donjons, ruines et dimensions. Les coffres de joueurs et les récompenses de progression ne sont pas modifiés. Pas de recette de fabrication.'
+  var entries=[
+    ['ticket_romain','Peu commun. Tiens le ticket et fais clic droit, puis écris ton rapport après /oly bug. Consommé à l’envoi. Analyse, validation et résolution prennent environ 6 s. Romain a sa propre idée du service après-vente…','Chance par coffre concerné : 4,4 % ; 5,4 % dans les tables dangereuses.'],
+    ['joint_rayhan','Rare. Maintiens le clic droit pour l’utiliser. Bonus aléatoire et effets secondaires. Perfect high possible, bad trip possible. Mathis peut subir une mauvaise game s’il est proche. Recharge par joueur : 75 s.','Chance : 2 % ; 3 % dans les tables dangereuses.'],
+    ['verre_nico','Rare. Maintiens le clic droit pour boire. Force, résistance et vitesse pendant 45 s ; certaines soirées durent plus longtemps. Le verre de trop peut provoquer un bref coma. Recharge par joueur : 90 s.','Chance : 1,2 % ; 2,4 % dans les tables dangereuses.'],
+    ['longue_vue_neron','Épique. Maintiens le clic droit pendant 1 s, puis relâche pour tirer. Zoom, viseur et signal sonore lorsque le tir est prêt. Recharge : 4 s. Les murs, armures et protections des boss restent pris en compte.','Chance : 0,32 % ; 0,96 % dans les tables dangereuses.'],
+    ['cerveau_liam','Légendaire. Clic droit : roulette d’un objet enchanté. 60 % de lots absurdes, 30 % utilitaires, 10 % de bons lots. Enchantements vanilla et moddés modestes. Réutilisable, une activation par joueur toutes les 2 h réelles.','Chance : 0,048 % ; 0,144 % dans les tables dangereuses.'],
+    ['pendentif_mathis','Légendaire. Équipe-le dans un emplacement Curios collier/curio : +4 cœurs. Intercepte un coup mortel et se brise, puis laisse faiblesse et lenteur pendant 40 s. Ne protège pas du vide ni de /kill.','Chance : 0,032 % ; 0,096 % dans les tables dangereuses.']
+  ]
+  entries.forEach(row=>event.addItem('kubejs:'+row[0],[row[1],where,row[2],'Ces pourcentages concernent un tirage dans une table compatible, pas tous les coffres du monde. Les coffres déjà ouverts ne sont pas remplis à nouveau.']))
+})
+
+JEIEvents.addItems(event=>event.add('kubejs:pendentif_mathis_brise'))
+JEIEvents.information(event=>event.addItem('kubejs:pendentif_mathis_brise',['Souvenir laissé par un pendentif qui s’est brisé en sauvant son porteur. Aucun bonus, aucune protection et aucune recharge.']))
+JEIEvents.addItems(event=>{
+event.add(Item.of('kubejs:ticket_romain',{"olycity_collector": 1, "CustomModelData": 1, "display": {"Name": "{\"text\": \"Ticket de Romain — Dossier classé\", \"color\": \"gold\", \"italic\": false}"}}))
+event.add(Item.of('kubejs:joint_rayhan',{"olycity_collector": 1, "CustomModelData": 1, "display": {"Name": "{\"text\": \"Joint de Rayhan — Purple Haze\", \"color\": \"gold\", \"italic\": false}"}}))
+event.add(Item.of('kubejs:verre_nico',{"olycity_collector": 1, "CustomModelData": 1, "display": {"Name": "{\"text\": \"Verre de Nico — Dernière tournée\", \"color\": \"gold\", \"italic\": false}"}}))
+event.add(Item.of('kubejs:cerveau_liam',{"olycity_collector": 1, "CustomModelData": 1, "display": {"Name": "{\"text\": \"Cerveau de Liam — Édition génie\", \"color\": \"gold\", \"italic\": false}"}}))
+event.add(Item.of('kubejs:pendentif_mathis',{"olycity_collector": 1, "CustomModelData": 1, "display": {"Name": "{\"text\": \"Pendentif de Mathis — Édition Immortal\", \"color\": \"gold\", \"italic\": false}"}}))
+})
+JEIEvents.subtypes(event=>{['ticket_romain','joint_rayhan','verre_nico','cerveau_liam','pendentif_mathis'].forEach(id=>event.useNBTKey('kubejs:'+id,'CustomModelData'))})
+JEIEvents.information(event=>{event.addItem('kubejs:verre_nico',['Pour trinquer : bois à moins de 4 blocs d’un ami qui tient un verre en main. Petit bonus de chance commun. Le toast ne consomme pas son verre.']);event.addItem('kubejs:cerveau_liam',['La roulette ralentit et révèle le lot à la fin. Une déconnexion conserve le lot réservé.']);['ticket_romain','joint_rayhan','verre_nico','cerveau_liam','pendentif_mathis'].forEach(id=>event.addItem('kubejs:'+id,['Une édition de collection peut apparaître : 5 % des drops de cet objet. Nom doré et étoile sur l’icône, pouvoirs et recharges identiques.']))})
+
+JEIEvents.addItems(event=>{['pasteque_solidarite','facture_impayee','baton_rh','poisson_chantier','patate_secours'].forEach(id=>event.add('kubejs:'+id))})
+JEIEvents.information(event=>{
+ event.addItem('kubejs:pasteque_solidarite',['Très rare : 0,01 % par table de coffre compatible ; 0,03 % dans les tables dangereuses.','Clic droit : 8 vraies tranches à chacun des joueurs vivants dans les 6 blocs. Objet infini, sans consommation ni cooldown.','Aucune recette. Les coffres déjà ouverts ne sont pas remplis à nouveau.'])
+ event.addItem('kubejs:facture_impayee',['Invoque un huissier décoratif pendant 10 s. Il réclame une patate, sans saisir ton inventaire. Usage unique.'])
+ event.addItem('kubejs:baton_rh',['Repousse légèrement les petits mobs dans les 4 blocs. Aucun dégât, aucun effet sur les joueurs ou les boss. Recharge partagée des lots absurdes : 20 s.'])
+ event.addItem('kubejs:poisson_chantier',['Crée jusqu’à 4 marches invisibles, marquées de particules, devant toi. Seulement dans l’air, disparaissent après 10 s. Recharge partagée : 20 s. Ne reste pas dessus !'])
+ event.addItem('kubejs:patate_secours',['Pendant 30 s, ta prochaine vraie chute est amortie et te fait rebondir. Aucun effet contre les autres dégâts. Recharge partagée : 20 s.'])
+ event.addItem('kubejs:joint_rayhan',['Pendant 35 s, regarde un poulet, un cochon, une vache ou un mouton à moins de 12 blocs : tu peux comprendre ses pensées. Seul le consommateur les entend.'])
+ event.addItem('kubejs:verre_nico',['Le coma peut ouvrir une scène de rêve locale pendant 6 s. Ton personnage reste à sa place dans le monde.'])
+})

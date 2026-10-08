@@ -1,0 +1,28 @@
+{
+  "teleportation": {
+    "home": {
+      "enabled": true,
+      "max": 1,
+      "cooldown": 60,
+      "warmup": 3
+    },
+    "tpa": {
+      "enabled": true,
+      "cooldown": 30,
+      "warmup": 3
+    },
+    "spawn": {
+      "enabled": true,
+      "cooldown": 60,
+      "warmup": 3
+    },
+    "back": {
+      "enabled": true,
+      "cooldown": 120,
+      "warmup": 3
+    },
+    "rtp": {
+      "enabled": false
+    }
+  }
+}

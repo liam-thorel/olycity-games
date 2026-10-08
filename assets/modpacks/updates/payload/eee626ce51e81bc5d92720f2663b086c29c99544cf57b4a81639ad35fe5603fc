@@ -1,0 +1,31 @@
+{
+  "name": "Sous les marches",
+  "icon": "minecraft:iron_sword",
+  "category": "patchouli:routes",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "On descend souvent pour quelques coffres. On remonte parfois avec une histoire.$(br2)Ne confondez jamais une entrée calme avec un donjon sans danger."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:shield",
+      "title": "Préparer une expédition",
+      "text": "Prenez nourriture, torches, blocs et bouclier. Gardez de la place pour le butin et marquez le chemin.",
+      "link_recipe": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Dungeon Crawl déroule ses longs couloirs sous terre. IDAS ajoute des lieux, des pièges et des labyrinthes. YUNG transforme donjons et mines abandonnées.$(br2)Vous n’avez pas besoin de tout nettoyer d’un coup."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(#205f64)Un trésor pour chacun$()$(br2)Les coffres Lootr donnent un butin propre à chaque joueur. Certains barils ou variantes n’ont pas l’apparence jaune classique. Chacun doit ouvrir son coffre."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Cataclysm et Bosses’Rise proposent des adversaires plus ambitieux.$(br2)Observez, équipez-vous et prévoyez une sortie. Les gros boss peuvent attendre ; une retraite réussie fait aussi partie de l’aventure."
+    }
+  ]
+}

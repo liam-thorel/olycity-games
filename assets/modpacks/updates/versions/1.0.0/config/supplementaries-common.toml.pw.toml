@@ -1,0 +1,8 @@
+name = "config/supplementaries-common.toml"
+filename = "supplementaries-common.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/0ec0c0ef3729d1135c51135fd7275807f72e293d20edafa30646040ac17773ad"
+hash-format = "sha256"
+hash = "0ec0c0ef3729d1135c51135fd7275807f72e293d20edafa30646040ac17773ad"

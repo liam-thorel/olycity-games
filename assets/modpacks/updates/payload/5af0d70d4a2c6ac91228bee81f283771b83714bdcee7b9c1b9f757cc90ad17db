@@ -1,0 +1,24 @@
+{
+  "type": "foolish:trinity_starforge_jei",
+  "ingredients": [
+    {
+      "item": "foolish:stellar_catalyst"
+    },
+    {
+      "item": "foolish:stellar_catalyst"
+    },
+    {
+      "item": "foolish:stellar_catalyst"
+    }
+  ],
+  "output": {
+    "item": "foolish_ad_astra:astral_key",
+    "count": 1
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "foolish_ad_astra"
+    }
+  ]
+}

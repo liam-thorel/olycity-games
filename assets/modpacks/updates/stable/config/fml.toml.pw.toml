@@ -1,0 +1,8 @@
+name = "config/fml.toml"
+filename = "fml.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/506f0c4c714bf1528d45ab8202f303bde6ba5f9e53778c92a679efbc185afb12"
+hash-format = "sha256"
+hash = "506f0c4c714bf1528d45ab8202f303bde6ba5f9e53778c92a679efbc185afb12"

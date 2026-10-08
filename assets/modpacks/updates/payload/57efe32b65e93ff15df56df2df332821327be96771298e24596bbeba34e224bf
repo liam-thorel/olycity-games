@@ -1,0 +1,162 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "11_village"
+	group: ""
+	icon: "minecraft:painting"
+	id: "57CBE172ACBD515A"
+	order_index: 10
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Découvre /report bug <description> et /report idee <suggestion>. Ne crée pas un faux signalement pour valider : cette quête confirme uniquement que tu connais la commande."]
+			icon: "minecraft:book"
+			id: "4E7EC4EECF2ADBE4"
+			rewards: [{
+				id: "3CC4F79EAF9A9B5D"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "664A02ECE4BE1DFD"
+				title: "J’ai réalisé cette étape"
+				type: "checkmark"
+			}]
+			title: "Le bureau des idées"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: ["Aménage une taverne avec une table, des sièges, de la musique et votre brasserie. Les verres OLYCITY restent des trouvailles rares."]
+			icon: "minecraft:book"
+			id: "33907CBE5B2FAD90"
+			rewards: [
+				{
+					id: "4F1B7A94D50A6093"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 4
+					id: "01BB7DE0982DDEE7"
+					item: "minecraft:flower_pot"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3E9A6670ADBAF82E"
+				title: "J’ai réalisé cette étape"
+				type: "checkmark"
+			}]
+			title: "Une salle pour se retrouver"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			description: ["Construisez une grande roue commune avec Create, ou une version décorative. Testez la rotation loin des bâtiments avant de l’intégrer au village."]
+			icon: "minecraft:book"
+			id: "1D0107AEDED7E5FE"
+			rewards: [
+				{
+					id: "54FBFDDD051C2CDD"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 8
+					id: "231723566D5C774A"
+					item: "minecraft:glowstone"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2E68C46D978E687D"
+				title: "J’ai réalisé cette étape"
+				type: "checkmark"
+			}]
+			title: "Le symbole d’OLYCITY"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			description: ["ISEVEN_7 choisit une recette, construit son premier dispositif et explique son fonctionnement à quelqu’un. Le parcours débutant existant reste disponible."]
+			icon: "minecraft:book"
+			id: "6989C7C8511458E9"
+			rewards: [
+				{
+					id: "0204ABC6BF710454"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 8
+					id: "255C23C7DAE1EFE7"
+					item: "minecraft:bread"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3D0D8FA190086351"
+				title: "J’ai réalisé cette étape"
+				type: "checkmark"
+			}]
+			title: "Romain guide à son tour"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			description: ["Construis un espace sûr pour les animaux de Liam. Prévois nourriture, stockage et une sortie sans laisser les compagnons dans les machines."]
+			icon: "minecraft:book"
+			id: "0C6A635B1038A440"
+			rewards: [
+				{
+					id: "7E27F943318F1870"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 2
+					id: "14703A951F98F83B"
+					item: "minecraft:lead"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "346327E8C8084AEC"
+				title: "J’ai réalisé cette étape"
+				type: "checkmark"
+			}]
+			title: "Des pensionnaires bien installés"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			description: ["Réalise un rituel d’Occultism ou de Goety, puis indique dans ton atelier les ingrédients et son utilité. Choisis une branche au lieu de tout recommencer."]
+			icon: "minecraft:book"
+			id: "097034EA835986BC"
+			rewards: [
+				{
+					id: "508A86234E26ACB4"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 8
+					id: "7C12292752D03331"
+					item: "minecraft:candle"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "4CD8FDE3FB167A4D"
+				title: "J’ai réalisé cette étape"
+				type: "checkmark"
+			}]
+			title: "Un rituel documenté"
+			x: 2.5d
+			y: 2.0d
+		}
+	]
+	title: "&dVie du village et grande roue&r"
+}

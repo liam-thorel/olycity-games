@@ -1,0 +1,8 @@
+name = "mods/thermal_foundation-1.20.1-11.0.6.70.jar"
+filename = "thermal_foundation-1.20.1-11.0.6.70.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/8cb610abb3c835b47f9b4ec19be6a54104d1f61230b67a9d5bfd097c5ac45823.jar"
+hash-format = "sha256"
+hash = "8cb610abb3c835b47f9b4ec19be6a54104d1f61230b67a9d5bfd097c5ac45823"

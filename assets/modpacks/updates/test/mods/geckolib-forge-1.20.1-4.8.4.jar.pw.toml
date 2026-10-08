@@ -1,0 +1,8 @@
+name = "mods/geckolib-forge-1.20.1-4.8.4.jar"
+filename = "geckolib-forge-1.20.1-4.8.4.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/4518779a31b6c2abb92c98b5ad17ef3d60177df68626bfc86c44de2764913c2b.jar"
+hash-format = "sha256"
+hash = "4518779a31b6c2abb92c98b5ad17ef3d60177df68626bfc86c44de2764913c2b"

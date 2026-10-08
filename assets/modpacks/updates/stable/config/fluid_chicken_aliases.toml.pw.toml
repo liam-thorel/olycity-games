@@ -1,0 +1,8 @@
+name = "config/fluid_chicken_aliases.toml"
+filename = "fluid_chicken_aliases.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/edb1184dd743a3a11ef310ac9b4c2acdbd35eb227bcc67a5035ffe417c6e7486"
+hash-format = "sha256"
+hash = "edb1184dd743a3a11ef310ac9b4c2acdbd35eb227bcc67a5035ffe417c6e7486"

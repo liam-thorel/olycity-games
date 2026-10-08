@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/village/profession/everdawn/shepherd.json"
+filename = "shepherd.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/2cc30b088f5c3232837b690e2128897c4bff1fa4d2da20feb5fb19f1041c5ba3"
+hash-format = "sha256"
+hash = "2cc30b088f5c3232837b690e2128897c4bff1fa4d2da20feb5fb19f1041c5ba3"

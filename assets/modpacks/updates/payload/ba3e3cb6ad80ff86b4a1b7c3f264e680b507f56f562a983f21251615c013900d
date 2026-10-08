@@ -1,0 +1,23 @@
+{
+  "name": "Le chemin du retour",
+  "icon": "minecraft:compass",
+  "category": "kubejs:refuge",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Un aventurier prudent prépare son retour avant son départ.$(br2)Les routes d’OLYCITY sont longues ; parfois, elles changent même de ciel."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:compass",
+      "title": "Une adresse sur la carte",
+      "text": "Créez un repère Xaero pour la maison. Activez vos Waystones et retenez votre point d’entrée dans chaque dimension.",
+      "link_recipe": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "La téléportation administrative de la carte est réservée aux joueurs autorisés à utiliser les commandes.$(br2)Pour le groupe, les Waystones et les trajets préparés restent les moyens ordinaires de rentrer."
+    }
+  ]
+}

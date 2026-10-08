@@ -1,0 +1,8 @@
+name = "kubejs/data/aether/loot_tables/chests/dungeon/bronze/bronze_dungeon.json"
+filename = "bronze_dungeon.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/b8a4a62af5377c9383945131453d570e3d6da30ac3df8d429cab3f180ac833a2"
+hash-format = "sha256"
+hash = "b8a4a62af5377c9383945131453d570e3d6da30ac3df8d429cab3f180ac833a2"

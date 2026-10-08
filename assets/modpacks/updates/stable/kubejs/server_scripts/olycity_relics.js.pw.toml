@@ -1,0 +1,8 @@
+name = "kubejs/server_scripts/olycity_relics.js"
+filename = "olycity_relics.js"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/0c9478ceedaed79d989b3952dd3231a685f18b58ac4a06074ae5893e62ac4477"
+hash-format = "sha256"
+hash = "0c9478ceedaed79d989b3952dd3231a685f18b58ac4a06074ae5893e62ac4477"

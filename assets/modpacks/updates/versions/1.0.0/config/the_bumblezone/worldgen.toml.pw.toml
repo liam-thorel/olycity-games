@@ -1,0 +1,8 @@
+name = "config/the_bumblezone/worldgen.toml"
+filename = "worldgen.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/86eb795daf1747fbb6afd2cb7c6c08be2168f5c387f09551a61d3aa4856b51bc"
+hash-format = "sha256"
+hash = "86eb795daf1747fbb6afd2cb7c6c08be2168f5c387f09551a61d3aa4856b51bc"

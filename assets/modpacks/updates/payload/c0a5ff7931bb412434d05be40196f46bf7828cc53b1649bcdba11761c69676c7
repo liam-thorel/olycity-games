@@ -1,0 +1,27 @@
+{
+  "name": "L’ingénieur du village",
+  "icon": "create:mechanical_press",
+  "category": "patchouli:liam",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(#205f64)Liam,$()$(br2)Le conseil t’a réservé un terrain. Les habitants demandent du fer, de la nourriture et des outils. Ils te font confiance pour inventer le reste."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "create:water_wheel",
+      "title": "Commencer par un besoin",
+      "text": "Choisis une production utilisée par le groupe. Construis une petite chaîne, vérifie ses sorties, puis agrandis-la.",
+      "link_recipe": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Une roue qui tourne est un début. Une production qui arrive dans les réserves est une usine.$(br2)Ajoute une limite de stock et un arrêt. Les ressources ne gagnent rien à déborder sur le sol."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Create travaille avec la rotation. Mekanism, Thermal et les autres systèmes utilisent notamment l’énergie électrique.$(br2)Ne suppose pas que tous les réseaux se branchent directement les uns aux autres."
+    }
+  ]
+}

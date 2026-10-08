@@ -1,0 +1,58 @@
+
+# Modern Chickens Configuration
+# Global gameplay and machine options live in this file.
+# Per-chicken data and custom chicken definitions live in custom_chickens.toml.
+# Edit the file while Minecraft is stopped, then restart to apply changes.
+[general]
+	roostDropCount = 64
+	# Fixed Mechanical Nest horizontal aura range; Range Upgrades do not apply.
+	mechanicalNestRange = 5
+	endSpawnChance = 0.015
+	enableChemicalChickens = true
+	roosterAuraRange = 4
+	allowAllLiquidChemicalDousing = true
+	alwaysShowStats = false
+	avianFluidConverterEffectsEnabled = true
+	breederSpeed = 1.0
+	incubatorCapacity = 100000
+	mechanicalNestEnergyPerRoostPerTick = 1000
+	avianChemicalConverterEffectsEnabled = true
+	avianFluxCapacity = 50000
+	avianFluxEffectsEnabled = true
+	incubatorEnergyCost = 10000
+	maxBroodSize = 2
+	enableFluidChickens = true
+	# Added energy-cost multiplier per installed Speed Upgrade (5 upgrades = 2.75x).
+	mechanicalNestEnergyCostSpeedIncrease = 0.35
+	avianFluidConverterCapacity = 8000
+	roosterAuraMultiplier = 1.25
+	overworldSpawnChance = 0.02
+	nestMaxRoosters = 1
+	autoRegisterFluidChickens = false
+	avianFluxMaxReceive = 4000
+	scalingDrops = true
+	# Preserves the existing 15% compounded Mechanical Roost Speed Upgrade cost increase.
+	mechanicalRoostEnergyCostSpeedIncrease = 0.15
+	fluxEggCapacityMultiplier = 1.0
+	collectorScanRange = 4
+	spawnProbability = 10
+	nestSeedDurationTicks = 1200
+	minBroodSize = 1
+	roostSpeed = 1.0
+	# Cost for one operation with a full slot of 16 chickens at these tier endpoints.
+	mechanicalRoostTier1EnergyCost = 12500
+	avianFluxMaxExtract = 4000
+	avianChemicalConverterCapacity = 8000
+	enableGasChickens = true
+	avianChemicalConverterTransferRate = 2000
+	disableEggLaying = false
+	# Mechanical Nest drains this base amount plus the per-roost amount every tick
+	# while it is actively boosting at least one roost.
+	mechanicalNestBaseEnergyPerTick = 500
+	netherSpawnChanceMultiplier = 1.0
+	avianFluidConverterTransferRate = 2000
+	incubatorMaxReceive = 4000
+	netherSpawnChance = 0.05
+	mechanicalRoostTier10EnergyCost = 650000
+	liquidEggHazardsEnabled = true
+

@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/pyromancer_tower/fire_ale_cask.json"
+filename = "fire_ale_cask.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/eb970a7297aa24c8f8e1ef257a83ac46759accae5080d30f379df8f8072a11c8"
+hash-format = "sha256"
+hash = "eb970a7297aa24c8f8e1ef257a83ac46759accae5080d30f379df8f8072a11c8"

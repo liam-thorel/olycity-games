@@ -1,0 +1,27 @@
+{
+  "name": "Le registre des objectifs",
+  "icon": "ftbquests:book",
+  "category": "kubejs:village",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Le conseil tient un second registre : $(bold)Quêtes OLYCITY$(). Ses objectifs sont facultatifs. Ils indiquent une direction sans imposer votre aventure."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "ftbquests:book",
+      "title": "Deux livres, deux usages",
+      "text": "Les Chroniques se lisent. Le registre des quêtes sert à suivre les objectifs et récupérer les récompenses.",
+      "link_recipe": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(#205f64)Retrouver les livres$()$(br2)$(bold)/olybook$() redonne ces Chroniques.$(br2)$(bold)/olyquests$() redonne le livre de quêtes.$(br2)Les objectifs demandés ne consomment pas vos objets."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Les membres d’une même équipe FTB Teams peuvent partager leur progression.$(br2)Les pages dédiées à Liam et Romain restent accessibles à tous : chacun peut venir apprendre dans leur carnet."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+name = "kubejs/assets/kubejs/models/item/chroniques_olycity.json"
+filename = "chroniques_olycity.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/0c6e43e17cd2d1f7c380591297cfa6d73875890f30cfdead11056f4c0c8acbbb"
+hash-format = "sha256"
+hash = "0c6e43e17cd2d1f7c380591297cfa6d73875890f30cfdead11056f4c0c8acbbb"

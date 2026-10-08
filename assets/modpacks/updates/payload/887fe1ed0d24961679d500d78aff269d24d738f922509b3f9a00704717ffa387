@@ -1,0 +1,8 @@
+{
+  "type": "room",
+  "canBeRemoved": true,
+  "extra_unlocks": [],
+  "generates_naturally": false,
+  "roomLocation": "ars-expanded:rooms/tardis_grid_gallivanter",
+  "y_offset": -1
+}

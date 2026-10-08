@@ -1,0 +1,8 @@
+name = "kubejs/data/ars-expanded/tardis/ars_room/rooms/tardis_grid_zero.json"
+filename = "tardis_grid_zero.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/548fdf0c258f4a3f581cb2eeabc4a336bd281917df143dafb9bafa5b64b05ef1"
+hash-format = "sha256"
+hash = "548fdf0c258f4a3f581cb2eeabc4a336bd281917df143dafb9bafa5b64b05ef1"

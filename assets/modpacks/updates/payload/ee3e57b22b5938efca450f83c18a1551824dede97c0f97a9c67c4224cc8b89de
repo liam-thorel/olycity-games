@@ -1,0 +1,30 @@
+{
+  "name": "Trois portes à la magie",
+  "icon": "hexerei:book_of_shadows",
+  "category": "kubejs:magie",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "La bibliothèque d’OLYCITY conserve trois clefs. L’une sent les herbes, l’autre l’encre des grimoires, la dernière demeure sous un tissu sombre."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "hexerei:book_of_shadows",
+      "title": "Hexerei",
+      "text": "Sorcellerie, ingrédients et balais. Le Livre des ombres explique les pratiques : commence par une recette simple.",
+      "link_recipe": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "irons_spellbooks:iron_spell_book",
+      "title": "Iron’s Spells",
+      "text": "Des grimoires, du mana et des sorts de combat. Apprends à équiper un sort avant de courir dans les catacombes.",
+      "link_recipe": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(#934957)Goety$()$(br2)La magie sombre et les rituels ont leur progression. Consulte son livre et réserve un espace pour les pratiques.$(br2)Choisis une première école ; les autres ne vont pas disparaître."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "La taverne de Liam",
+  "icon": "brewinandchewin:keg",
+  "category": "kubejs:liam",
+  "sortnum": 6,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Après les mines, l’atelier et les détours par d’autres mondes, OLYCITY réclame une table où raconter la journée."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "brewinandchewin:keg",
+      "title": "Brewin’ and Chewin’",
+      "text": "Le tonneau fermente ingrédients et boissons. Vérifie les températures et recettes dans JEI, avec les cultures de Farmer’s Delight.",
+      "link_recipe": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Une brasserie peut donner un débouché aux récoltes et aux chaînes de cuisine.$(br2)Les recettes personnalisées BuzzBall et Vody restent des idées pour une prochaine page du carnet."
+    }
+  ]
+}

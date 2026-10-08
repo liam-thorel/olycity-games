@@ -1,0 +1,9 @@
+{
+  "type": "corridor",
+  "parent": "ars-expanded:corridor/tardis_grid_barracks",
+  "canBeRemoved": true,
+  "extra_unlocks": [],
+  "generates_naturally": true,
+  "roomLocation": "ars-expanded:corridor/tardis_grid_barracks_abandoned",
+  "y_offset": 0
+}

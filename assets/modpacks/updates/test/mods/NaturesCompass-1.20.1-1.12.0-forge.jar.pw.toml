@@ -1,0 +1,8 @@
+name = "mods/NaturesCompass-1.20.1-1.12.0-forge.jar"
+filename = "NaturesCompass-1.20.1-1.12.0-forge.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/bc3601e9e050802569647de843fe9d3160934c5f31412cba62ca2ea8c1485197.jar"
+hash-format = "sha256"
+hash = "bc3601e9e050802569647de843fe9d3160934c5f31412cba62ca2ea8c1485197"

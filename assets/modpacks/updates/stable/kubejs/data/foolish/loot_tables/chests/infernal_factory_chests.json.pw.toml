@@ -1,0 +1,8 @@
+name = "kubejs/data/foolish/loot_tables/chests/infernal_factory_chests.json"
+filename = "infernal_factory_chests.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/1d291bc43f0f631a5f3b39b839a5bd5e21dff1dac4eff63c876999ca8c74aeae"
+hash-format = "sha256"
+hash = "1d291bc43f0f631a5f3b39b839a5bd5e21dff1dac4eff63c876999ca8c74aeae"

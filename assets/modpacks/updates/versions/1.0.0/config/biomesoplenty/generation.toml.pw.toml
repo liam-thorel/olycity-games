@@ -1,0 +1,8 @@
+name = "config/biomesoplenty/generation.toml"
+filename = "generation.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/9de600b6c85029f74a7549a6f7074065ac55310666c54bebd4c3bf573b0379d7"
+hash-format = "sha256"
+hash = "9de600b6c85029f74a7549a6f7074065ac55310666c54bebd4c3bf573b0379d7"

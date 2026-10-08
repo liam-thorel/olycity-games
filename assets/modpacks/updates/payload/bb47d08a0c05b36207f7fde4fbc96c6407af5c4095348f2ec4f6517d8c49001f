@@ -1,0 +1,16 @@
+{
+  "name": "Quand une sortie tourne mal",
+  "icon": "minecraft:stone_sword",
+  "category": "patchouli:refuge",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Le village préfère un appel à l’aide à dix expéditions de secours ratées.$(br2)Si vous tombez, rassemblez de quoi survivre avant de retourner sur les lieux."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Corpse conserve l’inventaire dans un corps à récupérer.$(br2)Repérez le lieu, préparez nourriture et outils, puis demandez une escorte si l’endroit est dangereux. Le corps n’exige pas de se précipiter sans équipement."
+    }
+  ]
+}

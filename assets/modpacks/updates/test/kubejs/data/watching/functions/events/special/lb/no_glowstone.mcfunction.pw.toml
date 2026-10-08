@@ -1,0 +1,8 @@
+name = "kubejs/data/watching/functions/events/special/lb/no_glowstone.mcfunction"
+filename = "no_glowstone.mcfunction"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/8620c293345fccf42b21934983faf127e30c050052b1cb7ee233b4313b418fb6"
+hash-format = "sha256"
+hash = "8620c293345fccf42b21934983faf127e30c050052b1cb7ee233b4313b418fb6"

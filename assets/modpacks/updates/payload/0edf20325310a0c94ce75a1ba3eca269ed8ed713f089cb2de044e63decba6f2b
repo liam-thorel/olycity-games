@@ -1,0 +1,248 @@
+{
+  "pools": [
+    {
+      "name": "library",
+      "rolls": {
+        "min": 8,
+        "max": 14
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 3,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ink_sac",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:feather",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 3,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:writable_book",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 3,
+                "max": 6
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cobweb",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 8,
+                "max": 14
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:book",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "dungeoncrawl:enchanted_book",
+              "loot_level": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "olycity_relics_v1",
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.12
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:ticket_romain",
+          "weight": 450,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.05
+                }
+              ],
+              "tag": "{\"olycity_collector\": 1, \"CustomModelData\": 1, \"display\": {\"Name\": \"{\\\"text\\\": \\\"Ticket de Romain — Dossier classé\\\", \\\"color\\\": \\\"gold\\\", \\\"italic\\\": false}\", \"Lore\": [\"{\\\"text\\\": \\\"Édition de collection • mêmes pouvoirs\\\", \\\"color\\\": \\\"gray\\\", \\\"italic\\\": false}\"]}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:joint_rayhan",
+          "weight": 250,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.05
+                }
+              ],
+              "tag": "{\"olycity_collector\": 1, \"CustomModelData\": 1, \"display\": {\"Name\": \"{\\\"text\\\": \\\"Joint de Rayhan — Purple Haze\\\", \\\"color\\\": \\\"gold\\\", \\\"italic\\\": false}\", \"Lore\": [\"{\\\"text\\\": \\\"Édition de collection • mêmes pouvoirs\\\", \\\"color\\\": \\\"gray\\\", \\\"italic\\\": false}\"]}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:verre_nico",
+          "weight": 200,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.05
+                }
+              ],
+              "tag": "{\"olycity_collector\": 1, \"CustomModelData\": 1, \"display\": {\"Name\": \"{\\\"text\\\": \\\"Verre de Nico — Dernière tournée\\\", \\\"color\\\": \\\"gold\\\", \\\"italic\\\": false}\", \"Lore\": [\"{\\\"text\\\": \\\"Édition de collection • mêmes pouvoirs\\\", \\\"color\\\": \\\"gray\\\", \\\"italic\\\": false}\"]}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:longue_vue_neron",
+          "weight": 80
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:cerveau_liam",
+          "weight": 12,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.05
+                }
+              ],
+              "tag": "{\"olycity_collector\": 1, \"CustomModelData\": 1, \"display\": {\"Name\": \"{\\\"text\\\": \\\"Cerveau de Liam — Édition génie\\\", \\\"color\\\": \\\"gold\\\", \\\"italic\\\": false}\", \"Lore\": [\"{\\\"text\\\": \\\"Édition de collection • mêmes pouvoirs\\\", \\\"color\\\": \\\"gray\\\", \\\"italic\\\": false}\"]}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:pendentif_mathis",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.05
+                }
+              ],
+              "tag": "{\"olycity_collector\": 1, \"CustomModelData\": 1, \"display\": {\"Name\": \"{\\\"text\\\": \\\"Pendentif de Mathis — Édition Immortal\\\", \\\"color\\\": \\\"gold\\\", \\\"italic\\\": false}\", \"Lore\": [\"{\\\"text\\\": \\\"Édition de collection • mêmes pouvoirs\\\", \\\"color\\\": \\\"gray\\\", \\\"italic\\\": false}\"]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "olycity_pasteque_v1",
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.0003
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:pasteque_solidarite"
+        }
+      ]
+    },
+    {
+      "name": "olycity_wtf_v1",
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.009
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:facture_impayee",
+          "weight": 60
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 30
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:baton_rh",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:poisson_chantier",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:patate_secours",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

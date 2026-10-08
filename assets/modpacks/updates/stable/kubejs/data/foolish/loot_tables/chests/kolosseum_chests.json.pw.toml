@@ -1,0 +1,8 @@
+name = "kubejs/data/foolish/loot_tables/chests/kolosseum_chests.json"
+filename = "kolosseum_chests.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/97e0146ad4b57b45b2aeed644159dafb0003bea0c395711ec5d414ebe9a8bc3f"
+hash-format = "sha256"
+hash = "97e0146ad4b57b45b2aeed644159dafb0003bea0c395711ec5d414ebe9a8bc3f"

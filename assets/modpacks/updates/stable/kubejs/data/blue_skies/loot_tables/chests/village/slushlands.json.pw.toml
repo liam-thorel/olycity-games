@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/village/slushlands.json"
+filename = "slushlands.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/7c40d6df68b3e69866f4dcdb031bf01e1f87039e8a6a515427850322e1d68e44"
+hash-format = "sha256"
+hash = "7c40d6df68b3e69866f4dcdb031bf01e1f87039e8a6a515427850322e1d68e44"

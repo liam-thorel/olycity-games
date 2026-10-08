@@ -1,0 +1,8 @@
+name = "kubejs/data/alexscaves/loot_tables/chests/abyssal_ruins.json"
+filename = "abyssal_ruins.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/1e12d80f8ce1a5a0b28cc95b6a147c14e19743e11a0efb5da7f109302b493dbe"
+hash-format = "sha256"
+hash = "1e12d80f8ce1a5a0b28cc95b6a147c14e19743e11a0efb5da7f109302b493dbe"

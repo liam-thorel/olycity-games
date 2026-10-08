@@ -1,0 +1,8 @@
+name = "mods/etched-3.0.4.jar"
+filename = "etched-3.0.4.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/051828ac6264c4a217a86d0373b3b4a6fb3f182fbb85f650c831641fcab6069c.jar"
+hash-format = "sha256"
+hash = "051828ac6264c4a217a86d0373b3b4a6fb3f182fbb85f650c831641fcab6069c"

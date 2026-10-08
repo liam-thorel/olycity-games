@@ -1,0 +1,8 @@
+name = "config/goety_cataclysm/goety_cataclysm-mobs.toml"
+filename = "goety_cataclysm-mobs.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/e7914bde5fe910cacf7e268ebbca138b5f0c036ac596201e8e5ef5e3183b0388"
+hash-format = "sha256"
+hash = "e7914bde5fe910cacf7e268ebbca138b5f0c036ac596201e8e5ef5e3183b0388"

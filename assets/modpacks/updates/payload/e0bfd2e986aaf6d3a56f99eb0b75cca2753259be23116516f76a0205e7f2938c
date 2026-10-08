@@ -1,0 +1,51 @@
+{
+  "structurePlacementLogging": {
+    "structurePlacementLogging": false
+  },
+  "structureSearchTimeout": {
+    "structureSearchTimeout": 50
+  },
+  "useFastStructureLookup": {
+    "useFastStructureLookup": true
+  },
+  "warnMissingRegistryEntry": {
+    "warnMissingRegistryEntry": true
+  },
+  "disableLegacyRandomCrashes": {
+    "disableLegacyRandomCrashes": true
+  },
+  "mapSearchRadius": {
+    "mapSearchRadius": 40
+  },
+  "globalSearchRadius": {
+    "globalSearchRadius": 70
+  },
+  "locateSearchRadius": {
+    "locateSearchRadius": 110
+  },
+  "spacingSeparationModifier": {
+    "spacingSeparationModifier": 1.0
+  },
+  "logDuplicatedSalt": {
+    "logDuplicatedSalt": true
+  },
+  "minimumStructureDistance": {
+    "minimumStructureDistance": 64,
+    "enabled": true,
+    "logOverlaps": false
+  },
+  "autoBiomeCompat": {
+    "enableBiomeCompat": false,
+    "enableLogging": false,
+    "strictness": {
+      "autoBiomeCompatStrictness": 1.2
+    },
+    "dimensionWhitelist": {
+      "dimensions": [
+        "minecraft:overworld",
+        "minecraft:the_nether",
+        "minecraft:the_end"
+      ]
+    }
+  }
+}

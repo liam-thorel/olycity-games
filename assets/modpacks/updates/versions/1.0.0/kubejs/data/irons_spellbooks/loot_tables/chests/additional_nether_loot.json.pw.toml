@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/additional_nether_loot.json"
+filename = "additional_nether_loot.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/3f1510d877b3eff17ef5004e602c10838f0038a314aae0bcee5bdca7f3a9c412"
+hash-format = "sha256"
+hash = "3f1510d877b3eff17ef5004e602c10838f0038a314aae0bcee5bdca7f3a9c412"

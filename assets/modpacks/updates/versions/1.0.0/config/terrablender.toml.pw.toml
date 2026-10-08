@@ -1,0 +1,8 @@
+name = "config/terrablender.toml"
+filename = "terrablender.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/11ef4c2666fa094b456310710c2b5cb8babbd71982d4d187c9a80ad4011d8014"
+hash-format = "sha256"
+hash = "11ef4c2666fa094b456310710c2b5cb8babbd71982d4d187c9a80ad4011d8014"

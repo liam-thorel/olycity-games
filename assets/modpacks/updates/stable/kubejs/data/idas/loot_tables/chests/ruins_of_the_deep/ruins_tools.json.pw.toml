@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/ruins_of_the_deep/ruins_tools.json"
+filename = "ruins_tools.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/7e68a914095510f581bada800a194e9c97d9bd2811e1106de3f37fdf0239636c"
+hash-format = "sha256"
+hash = "7e68a914095510f581bada800a194e9c97d9bd2811e1106de3f37fdf0239636c"

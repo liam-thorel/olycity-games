@@ -1,0 +1,8 @@
+name = "config/mcef/mcef.properties"
+filename = "mcef.properties"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/82e2777ff78d2e1071409f321d7b04b59a8287778ec738e59eae14c02e07e681"
+hash-format = "sha256"
+hash = "82e2777ff78d2e1071409f321d7b04b59a8287778ec738e59eae14c02e07e681"

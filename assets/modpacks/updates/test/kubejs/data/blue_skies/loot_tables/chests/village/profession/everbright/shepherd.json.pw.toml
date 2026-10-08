@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/village/profession/everbright/shepherd.json"
+filename = "shepherd.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/a1ca299aa10c45fa45768b42031f50f37af6e3fae864cc89d03e2753505acc78"
+hash-format = "sha256"
+hash = "a1ca299aa10c45fa45768b42031f50f37af6e3fae864cc89d03e2753505acc78"

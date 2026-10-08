@@ -1,0 +1,67 @@
+// Registry and native event listeners require a full restart.
+StartupEvents.registry('item', event => {
+  event.create('longue_vue_neron').displayName('La longue-vue de Neron').rarity('epic').unstackable()
+    .tooltip('§5Épique • Vise 1 s, relâche pour tirer. Recharge : 4 s.')
+    .tooltip('§725 % de chance de nausée. Les boss gardent leurs protections.')
+    .useAnimation('spyglass').useDuration(s => 72000).use((l,p,h) => true)
+  event.create('cerveau_liam').displayName('Le gros cerveau de Liam').rarity('epic').unstackable()
+    .tooltip('§6Légendaire • Roulette : objets absurdes, utilitaires et rares bons lots.')
+    .tooltip('§7Une utilisation par joueur toutes les 2 h réelles. Objet réutilisable.')
+    .useAnimation('none').useDuration(s => 1).use((l,p,h) => true)
+    .finishUsing((s,l,p) => { if (!l.clientSide && p.player) global.olyBrain(p); return s })
+  event.create('pendentif_mathis').displayName('Pendentif Immortal de Mathis').rarity('epic').unstackable()
+    .tag('curios:necklace').tag('curios:curio')
+    .tooltip('§6Légendaire • Équipé en Curios : +4 cœurs.')
+    .tooltip('§7Sauve d’un coup mortel, puis se brise. Faiblesse et lenteur : 40 s.')
+  event.create('pendentif_mathis_brise').displayName('Pendentif brisé de Mathis').unstackable()
+    .tooltip('§7Souvenir du coup qui aurait dû être fatal. Aucun pouvoir, aucune recharge.')
+  event.create('ticket_romain').displayName('Ticket de signalement de bug de Romain').rarity('uncommon').maxStackSize(16)
+    .tooltip('§aPeu commun • Clic droit : écrire un faux rapport. Usage unique après envoi.')
+    .useAnimation('none').useDuration(s => 1).use((l,p,h) => true)
+    .finishUsing((s,l,p) => { if (!l.clientSide && p.player) global.olyTicketOpen(p); return s })
+  event.create('joint_rayhan').displayName('Le joint de Rayhan').rarity('rare').maxStackSize(16)
+    .tooltip('§9Rare • Bonus temporaire, effets secondaires… et une mauvaise game pour Mathis.')
+    .useAnimation('eat').useDuration(s => 32).use((l,p,h) => true)
+    .finishUsing((s,l,p) => { if (!l.clientSide && p.player && global.olyRayhan(p)) s.shrink(1); return s })
+  event.create('verre_nico').displayName('Le verre de trop de Nico').rarity('rare').maxStackSize(16)
+    .tooltip('§9Rare • 45 s de puissance. Le réveil risque d’être compliqué.')
+    .useAnimation('drink').useDuration(s => 32).use((l,p,h) => true)
+    .finishUsing((s,l,p) => { if (!l.clientSide && p.player && global.olyNico(p)) s.shrink(1); return s })
+  event.create('pasteque_solidarite').displayName('La Pastèque de solidarité').rarity('epic').unstackable().tooltip('§7Très rare • Donne 8 tranches aux amis à 6 blocs. Infini, sans recharge.').useAnimation('none').useDuration(s=>1).use((l,p,h)=>true).finishUsing((s,l,p)=>{if(!l.clientSide && p.player){var ok=global.olyMelon(p);}return s})
+  event.create('facture_impayee').displayName('Facture').rarity('uncommon').unstackable().tooltip('§7Un huissier vient réclamer une patate. Usage unique.').useAnimation('none').useDuration(s=>1).use((l,p,h)=>true).finishUsing((s,l,p)=>{if(!l.clientSide && p.player){var ok=global.olyInvoice(p);if(ok)s.shrink(1);}return s})
+  event.create('baton_rh').displayName('Bâton de recul').rarity('uncommon').unstackable().tooltip('§7Repousse les petits mobs. Recharge 20 s.').useAnimation('none').useDuration(s=>1).use((l,p,h)=>true).finishUsing((s,l,p)=>{if(!l.clientSide && p.player){var ok=global.olyJunk(p,s.id);}return s})
+  event.create('poisson_chantier').displayName('Pont temporaire').rarity('uncommon').unstackable().tooltip('§7Passage temporaire devant toi : 10 s. Recharge 20 s.').useAnimation('none').useDuration(s=>1).use((l,p,h)=>true).finishUsing((s,l,p)=>{if(!l.clientSide && p.player){var ok=global.olyJunk(p,s.id);}return s})
+  event.create('patate_secours').displayName('Amortisseur de chute').rarity('rare').unstackable().tooltip('§7Arme un rebond pour la prochaine chute dans les 30 s.').useAnimation('none').useDuration(s=>1).use((l,p,h)=>true).finishUsing((s,l,p)=>{if(!l.clientSide && p.player){var ok=global.olyJunk(p,s.id);}return s})
+})
+// Protect before HP is subtracted, without entering/cancelling the death pipeline.
+ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingDamageEvent', event => {
+  if (typeof global.olyPendantDamage === 'function') global.olyPendantDamage(event)
+})
+if (Platform.isClientEnvironment()) {
+  ForgeEvents.onEvent('net.minecraftforge.client.event.ViewportEvent$ComputeFov', event => {
+    const p = Client.player
+    if (p && p.isUsingItem() && p.getUseItem().id === 'kubejs:longue_vue_neron') {
+      event.setFOV(event.getFOV() * 0.10)
+    }
+  })
+  ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingEvent$LivingJumpEvent', event => {
+    const p=Client.player
+    if(p && String(event.getEntity().getUuid())===String(p.getUuid()) &&
+       (Date.now()<(global.olyClientNoJumpUntil || 0) || Date.now()<(global.olyClientComaUntil || 0))) {
+      p.motionY=0
+    }
+  })
+}
+
+// Hide only the vanilla bottom HUD and duplicate crosshair while using Neron.
+if(Platform.isClientEnvironment()) {
+  var OLY_SCOPE_HIDDEN={hotbar:true,player_health:true,armor_level:true,food_level:true,air_level:true,mount_health:true,jump_bar:true,experience_bar:true,item_name:true,crosshair:true,record_overlay:true}
+  ForgeEvents.onEvent('net.minecraftforge.client.event.RenderGuiOverlayEvent$Pre',event=>{
+    var p=Client.player
+    if(!p || !p.isUsingItem() || p.getUseItem().id!=='kubejs:longue_vue_neron')return
+    var id=String(event.getOverlay().id())
+    if(id.indexOf('minecraft:')===0 && OLY_SCOPE_HIDDEN[id.slice(10)])event.setCanceled(true)
+  })
+}
+
+ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingFallEvent',event=>{var entity=event.getEntity();if(!entity || !entity.player || entity.level.clientSide || !entity.server)return;if(typeof global.olyPotatoFall==='function')global.olyPotatoFall(event)})

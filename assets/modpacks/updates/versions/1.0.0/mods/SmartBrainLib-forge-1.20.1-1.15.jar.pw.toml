@@ -1,0 +1,8 @@
+name = "mods/SmartBrainLib-forge-1.20.1-1.15.jar"
+filename = "SmartBrainLib-forge-1.20.1-1.15.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/dc1f5497e1a175397fa10ea84170d8311c71b592976128700fb008139dde55d4.jar"
+hash-format = "sha256"
+hash = "dc1f5497e1a175397fa10ea84170d8311c71b592976128700fb008139dde55d4"

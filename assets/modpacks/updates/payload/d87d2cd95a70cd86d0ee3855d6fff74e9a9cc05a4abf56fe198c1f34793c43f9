@@ -1,0 +1,389 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 8.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "undergarden:cloggrum_nugget",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 8.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "undergarden:froststeel_nugget",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 4.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "undergarden:utheric_shard",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 4.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "undergarden:regalium_crystal",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 8.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "undergarden:slop_bowl",
+          "weight": 40
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 5.0,
+        "min": 2.0
+      }
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:uniform",
+                "max": 20.0,
+                "min": 15.0
+              },
+              "treasure": false
+            },
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.9,
+                "min": 0.6
+              },
+              "function": "minecraft:set_damage"
+            }
+          ],
+          "name": "undergarden:cloggrum_sword",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:uniform",
+                "max": 20.0,
+                "min": 15.0
+              },
+              "treasure": false
+            },
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.9,
+                "min": 0.6
+              },
+              "function": "minecraft:set_damage"
+            }
+          ],
+          "name": "undergarden:cloggrum_axe",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:uniform",
+                "max": 30.0,
+                "min": 25.0
+              },
+              "treasure": true
+            },
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.5,
+                "min": 0.2
+              },
+              "function": "minecraft:set_damage"
+            }
+          ],
+          "name": "undergarden:cloggrum_sword",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "type": "minecraft:uniform",
+                "max": 30.0,
+                "min": 25.0
+              },
+              "treasure": true
+            },
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.5,
+                "min": 0.2
+              },
+              "function": "minecraft:set_damage"
+            }
+          ],
+          "name": "undergarden:cloggrum_axe",
+          "weight": 10
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "undergarden:music_disc_mammoth",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "undergarden:music_disc_relict",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "undergarden:forgotten_upgrade_smithing_template",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "undergarden:forgotten_nugget"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "name": "olycity_relics_v1",
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.08
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:ticket_romain",
+          "weight": 550,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.05
+                }
+              ],
+              "tag": "{\"olycity_collector\": 1, \"CustomModelData\": 1, \"display\": {\"Name\": \"{\\\"text\\\": \\\"Ticket de Romain — Dossier classé\\\", \\\"color\\\": \\\"gold\\\", \\\"italic\\\": false}\", \"Lore\": [\"{\\\"text\\\": \\\"Édition de collection • mêmes pouvoirs\\\", \\\"color\\\": \\\"gray\\\", \\\"italic\\\": false}\"]}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:joint_rayhan",
+          "weight": 250,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.05
+                }
+              ],
+              "tag": "{\"olycity_collector\": 1, \"CustomModelData\": 1, \"display\": {\"Name\": \"{\\\"text\\\": \\\"Joint de Rayhan — Purple Haze\\\", \\\"color\\\": \\\"gold\\\", \\\"italic\\\": false}\", \"Lore\": [\"{\\\"text\\\": \\\"Édition de collection • mêmes pouvoirs\\\", \\\"color\\\": \\\"gray\\\", \\\"italic\\\": false}\"]}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:verre_nico",
+          "weight": 150,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.05
+                }
+              ],
+              "tag": "{\"olycity_collector\": 1, \"CustomModelData\": 1, \"display\": {\"Name\": \"{\\\"text\\\": \\\"Verre de Nico — Dernière tournée\\\", \\\"color\\\": \\\"gold\\\", \\\"italic\\\": false}\", \"Lore\": [\"{\\\"text\\\": \\\"Édition de collection • mêmes pouvoirs\\\", \\\"color\\\": \\\"gray\\\", \\\"italic\\\": false}\"]}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:longue_vue_neron",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:cerveau_liam",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.05
+                }
+              ],
+              "tag": "{\"olycity_collector\": 1, \"CustomModelData\": 1, \"display\": {\"Name\": \"{\\\"text\\\": \\\"Cerveau de Liam — Édition génie\\\", \\\"color\\\": \\\"gold\\\", \\\"italic\\\": false}\", \"Lore\": [\"{\\\"text\\\": \\\"Édition de collection • mêmes pouvoirs\\\", \\\"color\\\": \\\"gray\\\", \\\"italic\\\": false}\"]}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:pendentif_mathis",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.05
+                }
+              ],
+              "tag": "{\"olycity_collector\": 1, \"CustomModelData\": 1, \"display\": {\"Name\": \"{\\\"text\\\": \\\"Pendentif de Mathis — Édition Immortal\\\", \\\"color\\\": \\\"gold\\\", \\\"italic\\\": false}\", \"Lore\": [\"{\\\"text\\\": \\\"Édition de collection • mêmes pouvoirs\\\", \\\"color\\\": \\\"gray\\\", \\\"italic\\\": false}\"]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "olycity_pasteque_v1",
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.0001
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:pasteque_solidarite"
+        }
+      ]
+    },
+    {
+      "name": "olycity_wtf_v1",
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.0045
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:facture_impayee",
+          "weight": 60
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 30
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:baton_rh",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:poisson_chantier",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:patate_secours",
+          "weight": 2
+        }
+      ]
+    }
+  ],
+  "random_sequence": "undergarden:chests/catacombs"
+}

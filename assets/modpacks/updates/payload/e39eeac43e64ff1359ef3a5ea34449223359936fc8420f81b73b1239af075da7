@@ -1,0 +1,339 @@
+{
+  "pools": [
+    {
+      "name": "toxic_ruins",
+      "rolls": {
+        "min": 8,
+        "max": 10
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "alexscaves:cave_tablet",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{CaveBiome:\"alexscaves:toxic_caves\"}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bone",
+          "weight": 30,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "alexscaves:spelunkie",
+          "weight": 25,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "alexscaves:slam",
+          "weight": 30,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "alexscaves:green_soylent",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "alexscaves:cinder_brick",
+          "weight": 50,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 12
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:poisonous_potato",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:rotten_flesh",
+          "weight": 15,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "alexscaves:waste_drum",
+          "weight": 7
+        },
+        {
+          "type": "item",
+          "name": "minecraft:music_disc_11",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "alexscaves:uranium_rod",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "alexscaves:radon_bottle",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 3
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "alexscaves:cinder_block",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "alexscaves:hazmat_mask",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "alexscaves:hazmat_chestplate",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "alexscaves:hazmat_leggings",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "alexscaves:hazmat_boots",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "name": "olycity_relics_v1",
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.08
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:ticket_romain",
+          "weight": 550,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.05
+                }
+              ],
+              "tag": "{\"olycity_collector\": 1, \"CustomModelData\": 1, \"display\": {\"Name\": \"{\\\"text\\\": \\\"Ticket de Romain — Dossier classé\\\", \\\"color\\\": \\\"gold\\\", \\\"italic\\\": false}\", \"Lore\": [\"{\\\"text\\\": \\\"Édition de collection • mêmes pouvoirs\\\", \\\"color\\\": \\\"gray\\\", \\\"italic\\\": false}\"]}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:joint_rayhan",
+          "weight": 250,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.05
+                }
+              ],
+              "tag": "{\"olycity_collector\": 1, \"CustomModelData\": 1, \"display\": {\"Name\": \"{\\\"text\\\": \\\"Joint de Rayhan — Purple Haze\\\", \\\"color\\\": \\\"gold\\\", \\\"italic\\\": false}\", \"Lore\": [\"{\\\"text\\\": \\\"Édition de collection • mêmes pouvoirs\\\", \\\"color\\\": \\\"gray\\\", \\\"italic\\\": false}\"]}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:verre_nico",
+          "weight": 150,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.05
+                }
+              ],
+              "tag": "{\"olycity_collector\": 1, \"CustomModelData\": 1, \"display\": {\"Name\": \"{\\\"text\\\": \\\"Verre de Nico — Dernière tournée\\\", \\\"color\\\": \\\"gold\\\", \\\"italic\\\": false}\", \"Lore\": [\"{\\\"text\\\": \\\"Édition de collection • mêmes pouvoirs\\\", \\\"color\\\": \\\"gray\\\", \\\"italic\\\": false}\"]}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:longue_vue_neron",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:cerveau_liam",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.05
+                }
+              ],
+              "tag": "{\"olycity_collector\": 1, \"CustomModelData\": 1, \"display\": {\"Name\": \"{\\\"text\\\": \\\"Cerveau de Liam — Édition génie\\\", \\\"color\\\": \\\"gold\\\", \\\"italic\\\": false}\", \"Lore\": [\"{\\\"text\\\": \\\"Édition de collection • mêmes pouvoirs\\\", \\\"color\\\": \\\"gray\\\", \\\"italic\\\": false}\"]}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:pendentif_mathis",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.05
+                }
+              ],
+              "tag": "{\"olycity_collector\": 1, \"CustomModelData\": 1, \"display\": {\"Name\": \"{\\\"text\\\": \\\"Pendentif de Mathis — Édition Immortal\\\", \\\"color\\\": \\\"gold\\\", \\\"italic\\\": false}\", \"Lore\": [\"{\\\"text\\\": \\\"Édition de collection • mêmes pouvoirs\\\", \\\"color\\\": \\\"gray\\\", \\\"italic\\\": false}\"]}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "olycity_pasteque_v1",
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.0001
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:pasteque_solidarite"
+        }
+      ]
+    },
+    {
+      "name": "olycity_wtf_v1",
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.0045
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:facture_impayee",
+          "weight": 60
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 30
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:baton_rh",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:poisson_chantier",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:patate_secours",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

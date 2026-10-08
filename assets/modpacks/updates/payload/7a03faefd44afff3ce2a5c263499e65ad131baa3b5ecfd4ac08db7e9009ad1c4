@@ -1,0 +1,40 @@
+{
+  "name": "Quand le ciel se fâche",
+  "icon": "weather2:weather_deflector",
+  "category": "kubejs:refuge",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(#934957)Avis de tempête$()$(br2)Le vent ne respecte pas le temps passé à construire. Hors d’une zone protégée, une tornade peut emporter des blocs.$(br2)Préparez le refuge avant de bâtir grand."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "weather2:weather_deflector",
+      "title": "Le déflecteur météo",
+      "text": "Cherchez sa recette dans JEI. Posez le déflecteur près du centre de votre zone habitée. Dans un coffre, il ne protège rien.",
+      "link_recipe": false
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "kubejs:textures/book/deflecteur.png"
+      ],
+      "title": "Une portée limitée",
+      "border": false,
+      "text": "150 blocs configurés : portée de retrait du centre des tempêtes."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Le déflecteur retire les tempêtes concernées lorsque leur centre entre à portée. $(#934957)Ce n’est pas une bulle d’invulnérabilité.$()$(br2)Laissez une marge autour des constructions et gardez la zone chargée."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Pour une grande base, répartissez plusieurs déflecteurs.$(br2)La pluie ordinaire reste possible. Une revendication de terrain n’est pas une garantie contre la météo.$(br2)Ne testez pas une tornade sur votre vraie maison."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(#205f64)Si une tornade approche$()$(br2)Prévenez le groupe, évitez sa trajectoire et rejoignez un abri. La protection des bâtiments ne dispense pas les aventuriers de regarder le ciel."
+    }
+  ]
+}

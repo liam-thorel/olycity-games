@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/frozen_crypt/frozen_crypt.json"
+filename = "frozen_crypt.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/85cbb3ef930b3f3c1dee08cb53cbcf66b312dacea9da14642571e524c9f96a84"
+hash-format = "sha256"
+hash = "85cbb3ef930b3f3c1dee08cb53cbcf66b312dacea9da14642571e524c9f96a84"

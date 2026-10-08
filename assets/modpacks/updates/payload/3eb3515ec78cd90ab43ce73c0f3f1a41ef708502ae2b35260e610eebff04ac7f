@@ -1,0 +1,24 @@
+{
+  "name": "La page sans signature",
+  "icon": "minecraft:amethyst_shard",
+  "category": "kubejs:archives",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Un détail familier, un nom étrange, une histoire que seuls quelques compagnons comprennent.$(br2)Certains objets semblent avoir conservé des souvenirs qui n’auraient jamais dû devenir des pouvoirs."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "On parle d’un regard qui porte loin, d’un bijou qui refuse la défaite et d’un esprit qui répond aux questions à sa façon.$(br2)Les témoins se contredisent. Le bibliothécaire préfère laisser ces lignes ouvertes."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Des traces ont été signalées dans les trésors du monde. Les reliques les plus puissantes sont les plus difficiles à trouver.$(br2)$(#934957)Aucun coffre ne promet une découverte.$()"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Quelques reliques feront rire la taverne. D’autres mériteront un écrin.$(br2)Toutes ne s’utilisent pas sans repos, et certaines ne donnent leur aide qu’une fois.$(br2)La page suivante attend encore son auteur."
+    }
+  ]
+}

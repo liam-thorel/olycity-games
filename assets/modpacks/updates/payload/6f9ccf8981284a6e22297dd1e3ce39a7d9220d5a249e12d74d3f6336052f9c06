@@ -1,0 +1,371 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "08_romain"
+	group: ""
+	icon: {
+		Count: 1
+		id: "minecraft:wooden_pickaxe"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "3EBCA1600BB70827"
+	order_index: 7
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Ce parcours avance doucement : survivre, trouver les recettes, se repérer, puis découvrir un premier mod avec un ami."
+				"Tu peux lire chaque étape sans tout connaître. Les étapes avec une case se cochent quand tu les as vraiment essayées ; aucun chronomètre."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:wooden_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "68FD9B7A1922CD84"
+			rewards: [{
+				count: 4
+				id: "4E9FC93A407F68A0"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			tasks: [{
+				id: "48518CCCA12D695D"
+				title: "J’ai réalisé cette étape"
+				type: "checkmark"
+			}]
+			title: "&6Bienvenue, Romain&r"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Ouvre Options → Contrôles → Assignation des touches. Cherche les commandes de la carte, du sac, du livre et de tri. Controlling permet de rechercher les touches et les conflits."
+				"Ne mémorise pas toutes les commandes d’un coup : repère surtout celles dont tu as besoin. Une touche peut être utilisée par plusieurs mods selon le contexte."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:wooden_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "54E1319F1943FABD"
+			rewards: [{
+				id: "3760E57F1E55DF00"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "158AF5A4A59B01D8"
+				title: "J’ai réalisé cette étape"
+				type: "checkmark"
+			}]
+			title: "Trouver ses commandes"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Dans l’inventaire, écris pioche dans la recherche JEI. Survole un résultat et ouvre sa recette avec R, puis ses utilisations avec U si ces touches sont disponibles."
+				"Essaie aussi de rechercher @create pour afficher les objets de ce mod. Rien n’est consommé en regardant une recette."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:wooden_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7E3AD36BE695B014"
+			rewards: [{
+				id: "1FB1E031839442CB"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "599B93C50E303514"
+				title: "J’ai réalisé cette étape"
+				type: "checkmark"
+			}]
+			title: "Le livre de recettes invisible"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"Ramasse du bois, fabrique un établi et construis un petit abri éclairé. Installe un lit et un coffre."
+				"Une simple cabane suffit. Place tes réserves dans le coffre et garde nourriture et outils sur toi."
+				"La grande maison pourra venir après les premières expéditions."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:wooden_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "33B7C1289B1CC677"
+			rewards: [{
+				count: 8
+				id: "46812AFD0637B1FA"
+				item: "minecraft:torch"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4668ACE51D89891D"
+				title: "J’ai réalisé cette étape"
+				type: "checkmark"
+			}]
+			title: "Passer la première nuit"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["33B7C1289B1CC677"]
+			description: [
+				"La faim sert aussi à récupérer la vie. Emporte des aliments et regarde la barre de faim avant de partir."
+				"Prépare une nourriture cuite dans un four ou avec les recettes disponibles. Pour cette étape, essaie simplement de cuisiner et de manger un repas."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:wooden_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "32DC12958C2CAEBC"
+			rewards: [{
+				id: "4A1E0E8E558BB387"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "147A135E7E3E71E5"
+				title: "J’ai réalisé cette étape"
+				type: "checkmark"
+			}]
+			title: "Manger avant de partir"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			description: [
+				"Fabrique une pioche de pierre. Emporte des torches, des blocs et de la nourriture."
+				"Ne creuse pas directement sous tes pieds. Éclaire et marque le chemin. Les énormes réseaux souterrains du pack peuvent attendre une sortie en groupe."
+				"Ultimine peut casser plusieurs blocs à la fois : regarde son mode avant d’utiliser sa touche."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:stone_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "175B3D88E2C48097"
+			rewards: [{
+				count: 4
+				id: "6228F8984827DF62"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: false
+				id: "0CD3D07CAEB37DDF"
+				item: {
+					Count: 1
+					id: "minecraft:stone_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Miner sans se perdre"
+			x: 2.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["175B3D88E2C48097"]
+			description: [
+				"Fabrique un bouclier et équipe-le dans la seconde main. Entraîne-toi à le lever loin d’un groupe d’ennemis."
+				"Le bouclier aide contre de nombreuses attaques, mais ne bloque pas toutes les capacités des boss. Pour la première sortie, laisse un ami te montrer le rythme du combat."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:shield"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "50DFAC116FAFF709"
+			rewards: [{
+				id: "113D062E002139D5"
+				type: "xp"
+				xp: 35
+			}]
+			tasks: [{
+				consume_items: false
+				id: "5C7FF37DCD1E3185"
+				item: {
+					Count: 1
+					id: "minecraft:shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Se protéger avant d’attaquer"
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["33B7C1289B1CC677"]
+			description: [
+				"Ouvre la carte Xaero et crée un repère pour la maison. Repère le bouton ou la touche dans les commandes plutôt que de supposer que toutes les touches sont libres."
+				"Les Waystones permettent de voyager entre points activés. La téléportation administrative sur la carte ne remplace pas les moyens de retour des joueurs ordinaires."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:wooden_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1EBC4E6ACBD2A59C"
+			rewards: [{
+				id: "57D918310982E3A2"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "2B0566710434778A"
+				title: "J’ai réalisé cette étape"
+				type: "checkmark"
+			}]
+			title: "Retrouver la base"
+			x: 7.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["50DFAC116FAFF709"]
+			description: [
+				"Pars avec un ami, ouvre un coffre Lootr et reviens à la base. Chaque joueur possède son propre loot dans ces coffres."
+				"Annonce si tu es perdu ou à court de nourriture. Vous n’avez pas besoin de finir le donjon pour réussir cette première sortie."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:wooden_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "331881D54B6D0956"
+			rewards: [{
+				count: 4
+				id: "450E7A91627AE31F"
+				item: "minecraft:cooked_beef"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7FE8910BEA030283"
+				title: "J’ai réalisé cette étape"
+				type: "checkmark"
+			}]
+			title: "Mon premier trésor"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			description: [
+				"Le mod Corpse laisse un corps avec ton inventaire à récupérer. Note le lieu de ta mort ou repère-le sur la carte si un marqueur apparaît."
+				"N’enchaîne pas les retours sans équipement dans un endroit dangereux : demande une escorte et prépare un chemin."
+				"Cette étape est une lecture à cocher, pas une demande de mourir."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:wooden_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "20156354973582F9"
+			rewards: [{
+				id: "7A564234883D5B2B"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "1E46A2856C9085F5"
+				title: "J’ai réalisé cette étape"
+				type: "checkmark"
+			}]
+			title: "Si je meurs, je fais quoi ?"
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["33B7C1289B1CC677"]
+			description: [
+				"&cSi une tornade approche, ne reste pas dehors à la regarder.&r"
+				"Rejoins un abri, évite sa trajectoire et préviens le groupe. Un déflecteur doit être installé pour limiter les tempêtes près des constructions ; consulte le chapitre Protéger le village."
+				"Une maison seule, même jolie, ne garantit pas de résister à une tornade."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:wooden_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5B901B938D52F007"
+			rewards: [{
+				id: "6FCE5A8F016A24D3"
+				type: "xp"
+				xp: 15
+			}]
+			tasks: [{
+				id: "4316CA088D83DE95"
+				title: "J’ai réalisé cette étape"
+				type: "checkmark"
+			}]
+			title: "Le ciel n’est pas toujours gentil"
+			x: 5.0d
+			y: 5.0d
+		}
+		{
+			description: [
+				"Avec un ami, choisis un projet court : aménager une pièce, découvrir une poule à ressources, préparer un plat ou faire tourner une petite roue Create."
+				"Cherche une recette dans JEI, réalise le projet et montre-le au groupe. Ensuite tu peux suivre les autres chapitres à ton rythme."
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:wooden_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "03C4163F847E4026"
+			rewards: [{
+				id: "2A824DCB681852EC"
+				item: "minecraft:golden_apple"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4315B88F5CA444FB"
+				title: "J’ai réalisé cette étape"
+				type: "checkmark"
+			}]
+			title: "Mon premier projet moddé"
+			x: 7.5d
+			y: 5.0d
+		}
+	]
+	title: "&aRomain — Mes premiers pas&r"
+}

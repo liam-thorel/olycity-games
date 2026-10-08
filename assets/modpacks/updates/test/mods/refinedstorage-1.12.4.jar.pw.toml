@@ -1,0 +1,8 @@
+name = "mods/refinedstorage-1.12.4.jar"
+filename = "refinedstorage-1.12.4.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/afda49a01e5ac8e20706032eb80699cc3b50d3b346478324ead62503cb774acd.jar"
+hash-format = "sha256"
+hash = "afda49a01e5ac8e20706032eb80699cc3b50d3b346478324ead62503cb774acd"

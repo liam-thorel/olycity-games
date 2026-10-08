@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/train_ruins/train_ruins_create.json"
+filename = "train_ruins_create.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/d728c79a1d0caeabe882200239235543c51ca473516f950daee948e1d8537f41"
+hash-format = "sha256"
+hash = "d728c79a1d0caeabe882200239235543c51ca473516f950daee948e1d8537f41"

@@ -1,0 +1,8 @@
+name = "OLYCITY-version.txt"
+filename = "OLYCITY-version.txt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/5d5e16d863098b2336cbe2293aae12b6bd1e3a9d18ee061b656e4459049cd416"
+hash-format = "sha256"
+hash = "5d5e16d863098b2336cbe2293aae12b6bd1e3a9d18ee061b656e4459049cd416"

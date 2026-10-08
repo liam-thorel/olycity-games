@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/hermits_hollow/hollow_bedroom.json"
+filename = "hollow_bedroom.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/118b0faff589e0cbb1284581b67ead50e38108df4c0850bb7e1a171f14f51a33"
+hash-format = "sha256"
+hash = "118b0faff589e0cbb1284581b67ead50e38108df4c0850bb7e1a171f14f51a33"

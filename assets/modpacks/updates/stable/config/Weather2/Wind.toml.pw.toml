@@ -1,0 +1,8 @@
+name = "config/Weather2/Wind.toml"
+filename = "Wind.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/fcf642ba7de5937fc4583d99f51f99d11b9577c237e4bccbccf7f945b3365353"
+hash-format = "sha256"
+hash = "fcf642ba7de5937fc4583d99f51f99d11b9577c237e4bccbccf7f945b3365353"

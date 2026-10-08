@@ -1,0 +1,45 @@
+{
+  "name": "Le poulailler impossible",
+  "icon": "chickens:roost",
+  "category": "kubejs:liam",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Le fermier assure que certaines poules pondent ce que les mineurs vont chercher sous terre.$(br2)Cette fois, le village demande à Liam de vérifier la rumeur."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:chicken",
+      "name": "Modern Chickens",
+      "scale": 0.9,
+      "rotate": true,
+      "text": "Collecte les espèces de départ. Les poules du mod produisent des ressources ; la reproduction ouvre la progression."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "chickens:analyzer",
+      "title": "Choisir les parents",
+      "text": "L’analyseur révèle Growth, Gain et Strength. Compare les individus avant de garder tes reproducteurs.",
+      "link_recipe": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "chickens:breeder",
+      "title": "Faire un croisement",
+      "text": "JEI montre les parents et les résultats. Le Breeder utilise les graines prévues. Garde tes bonnes lignées et recommence si le résultat ne convient pas.",
+      "link_recipe": false
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "chickens:roost",
+      "title": "Produire et ranger",
+      "text": "Installe tes poules dans des Roosts. Le Collector récupère la production à portée ; les tuyaux ou entonnoirs l’acheminent ensuite.",
+      "link_recipe": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(#205f64)La première livraison$()$(br2)Choisis une ressource dont l’atelier manque. Fais-la arriver automatiquement dans un rangement utilisé par le groupe. Pas besoin de collectionner toutes les espèces pour être utile."
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+name = "config/alexsmobs/komodo_dragon_spawns.json"
+filename = "komodo_dragon_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/695a3eb4d61a8208cc634871c237b0e6efc980ac668793f4686848e32cda0907"
+hash-format = "sha256"
+hash = "695a3eb4d61a8208cc634871c237b0e6efc980ac668793f4686848e32cda0907"

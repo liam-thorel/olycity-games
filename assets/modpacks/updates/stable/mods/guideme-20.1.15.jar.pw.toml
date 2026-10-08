@@ -1,0 +1,8 @@
+name = "mods/guideme-20.1.15.jar"
+filename = "guideme-20.1.15.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/cf8052ab3da121012efc59a20e731c24bfe7488dfa556c9b88809f42dea3b24a.jar"
+hash-format = "sha256"
+hash = "cf8052ab3da121012efc59a20e731c24bfe7488dfa556c9b88809f42dea3b24a"

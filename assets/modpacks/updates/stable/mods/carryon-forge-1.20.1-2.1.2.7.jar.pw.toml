@@ -1,0 +1,8 @@
+name = "mods/carryon-forge-1.20.1-2.1.2.7.jar"
+filename = "carryon-forge-1.20.1-2.1.2.7.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/d7470921fc5ff988788d43409083f62478aecc91f4b81d7e6b63c80c933d4613.jar"
+hash-format = "sha256"
+hash = "d7470921fc5ff988788d43409083f62478aecc91f4b81d7e6b63c80c933d4613"

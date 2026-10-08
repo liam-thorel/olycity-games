@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/sewer_loot.json"
+filename = "sewer_loot.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/d00661d77d55e93acef6957daf63fd30b0d8d8a68e6262657b714958bfe4d953"
+hash-format = "sha256"
+hash = "d00661d77d55e93acef6957daf63fd30b0d8d8a68e6262657b714958bfe4d953"

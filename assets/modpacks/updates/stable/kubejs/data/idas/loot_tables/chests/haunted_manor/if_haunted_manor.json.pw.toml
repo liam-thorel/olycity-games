@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/haunted_manor/if_haunted_manor.json"
+filename = "if_haunted_manor.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/813fd399931d59565b8a3e22c7750beaf51336c0acf2f0b0e2275687853d7c73"
+hash-format = "sha256"
+hash = "813fd399931d59565b8a3e22c7750beaf51336c0acf2f0b0e2275687853d7c73"

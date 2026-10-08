@@ -1,0 +1,8 @@
+name = "mods/ImmersiveEngineering-1.20.1-10.2.0-183.jar"
+filename = "ImmersiveEngineering-1.20.1-10.2.0-183.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/061dd0e8e066dc39277736d5607a47a18fee4aff428de3363882f96e5c405aaa.jar"
+hash-format = "sha256"
+hash = "061dd0e8e066dc39277736d5607a47a18fee4aff428de3363882f96e5c405aaa"

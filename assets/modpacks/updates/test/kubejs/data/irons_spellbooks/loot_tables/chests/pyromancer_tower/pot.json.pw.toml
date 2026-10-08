@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/pyromancer_tower/pot.json"
+filename = "pot.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/2d68571065df3938b1a4d0bb71d401728776fb510db26ef2448d2da29aadffda"
+hash-format = "sha256"
+hash = "2d68571065df3938b1a4d0bb71d401728776fb510db26ef2448d2da29aadffda"

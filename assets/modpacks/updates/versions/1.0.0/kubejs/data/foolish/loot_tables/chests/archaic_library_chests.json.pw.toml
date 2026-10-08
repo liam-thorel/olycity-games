@@ -1,0 +1,8 @@
+name = "kubejs/data/foolish/loot_tables/chests/archaic_library_chests.json"
+filename = "archaic_library_chests.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/1dddcbfe5afa76f2db8524f73f046f5e9387a2ee06f4b3e72110300336ab60a3"
+hash-format = "sha256"
+hash = "1dddcbfe5afa76f2db8524f73f046f5e9387a2ee06f4b3e72110300336ab60a3"

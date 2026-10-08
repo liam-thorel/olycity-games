@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aca",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:diamond"
+    },
+    "b": {
+      "item": "foolish:machine_armor_trim"
+    },
+    "c": {
+      "item": "foolish:infernal_alloy_block"
+    }
+  },
+  "result": {
+    "item": "foolish:machine_armor_trim",
+    "count": 2
+  },
+  "conditions": [
+    {
+      "type": "forge:item_exists",
+      "item": "foolish:machine_armor_trim"
+    }
+  ]
+}

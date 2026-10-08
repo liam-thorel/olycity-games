@@ -1,0 +1,27 @@
+{
+  "name": "Une place au village",
+  "icon": "minecraft:crafting_table",
+  "category": "patchouli:romain",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(#205f64)Romain,$()$(br2)OLYCITY ne demande pas un expert. Il lui faut un habitant qui ose poser une question, essayer un projet et raconter son premier retour de donjon."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:crafting_table",
+      "title": "Commencer simplement",
+      "text": "Bois, établi, abri, lit et lumière. La grande maison viendra après. Garde nourriture et outils sur toi.",
+      "link_recipe": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Dans JEI, cherche un objet puis consulte recette et utilisations. R et U sont les raccourcis habituels, si ces touches sont disponibles.$(br2)Controlling aide à rechercher les commandes et leurs conflits."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Crée un repère de carte pour la maison. Apprends d’abord la carte, le sac et le livre.$(br2)Tu n’as pas besoin de mémoriser les commandes de tous les mods pour commencer."
+    }
+  ]
+}

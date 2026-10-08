@@ -1,0 +1,8 @@
+name = "mods/pneumaticcraft-repressurized-6.0.23+mc1.20.1.jar"
+filename = "pneumaticcraft-repressurized-6.0.23+mc1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/8d5117f18a3f80eb6670cfb04f0a42a103195972bfdf429d2181587958ec4c38.jar"
+hash-format = "sha256"
+hash = "8d5117f18a3f80eb6670cfb04f0a42a103195972bfdf429d2181587958ec4c38"

@@ -1,0 +1,174 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "10_expeditions"
+	group: ""
+	icon: "minecraft:compass"
+	id: "755748B507F417D1"
+	order_index: 9
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Rassemble 16 torches, de la nourriture, une arme et un moyen de revenir."]
+			icon: "minecraft:torch"
+			id: "66F7889B19CFC745"
+			rewards: [
+				{
+					id: "7B04FEAEDABDEDA0"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 4
+					id: "60CF1FF7295F40B6"
+					item: "minecraft:cooked_beef"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 16L
+				id: "6BCA0C411D85B350"
+				item: "minecraft:torch"
+				type: "item"
+			}]
+			title: "Préparer le départ"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["66F7889B19CFC745"]
+			description: ["Explore un Dungeon Crawl et ramène un trésor. Faites une carte de sortie pour Romain ; les coffres Lootr sont personnels."]
+			icon: "minecraft:book"
+			id: "0DD827DB65CA90DF"
+			rewards: [
+				{
+					id: "02CF602034E6763F"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 16
+					id: "3DE428553FC8A60E"
+					item: "minecraft:arrow"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "446AEBAC1E094A9A"
+				title: "J’ai réalisé cette étape"
+				type: "checkmark"
+			}]
+			title: "Cartographier un donjon"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["66F7889B19CFC745"]
+			description: ["Construis puis traverse un portail vers l’Aether. Notez le point de retour avant l’exploration."]
+			icon: "minecraft:book"
+			id: "6969DCA0BC1B1539"
+			rewards: [
+				{
+					id: "064E5830380F9A70"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 8
+					id: "1205D82C147AC37A"
+					item: "minecraft:feather"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5FF6C55E9F94840D"
+				title: "J’ai réalisé cette étape"
+				type: "checkmark"
+			}]
+			title: "Une porte dans le ciel"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["66F7889B19CFC745"]
+			description: ["Atteins l’Undergarden et prépare un refuge près du portail. Le voyage reste un choix, pas une obligation de grind."]
+			icon: "minecraft:book"
+			id: "14C70E6C0C721F13"
+			rewards: [
+				{
+					id: "1207EAA58482A3D0"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 4
+					id: "1487B1C9CB576D6E"
+					item: "minecraft:lantern"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "141261587D7B22F9"
+				title: "J’ai réalisé cette étape"
+				type: "checkmark"
+			}]
+			title: "Sous le monde"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0DD827DB65CA90DF"]
+			description: ["Choisissez un boss, préparez ses protections et battez-le ensemble. Chaque joueur doit participer : ce contrat est déclaré manuellement."]
+			icon: "minecraft:book"
+			id: "3803AC007B0B9EB3"
+			rewards: [
+				{
+					id: "24A56D6B3D5379AA"
+					type: "xp"
+					xp: 15
+				}
+				{
+					id: "06D8324916CB9A34"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "014961E87567054D"
+				title: "J’ai réalisé cette étape"
+				type: "checkmark"
+			}]
+			title: "Un boss, un plan"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			description: ["Exposez à la base un souvenir, une carte ou une photo de votre sortie. Une aventure a aussi une place dans la maison."]
+			icon: "minecraft:book"
+			id: "36803F8CAC44CF6C"
+			rewards: [
+				{
+					id: "3B98E283BF754716"
+					type: "xp"
+					xp: 15
+				}
+				{
+					count: 4
+					id: "66B834BFEC7404CC"
+					item: "minecraft:item_frame"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "7700EC8C0DD2D2EE"
+				title: "J’ai réalisé cette étape"
+				type: "checkmark"
+			}]
+			title: "Le récit de l’expédition"
+			x: 2.5d
+			y: 2.0d
+		}
+	]
+	title: "&bExpéditions et contrats&r"
+}

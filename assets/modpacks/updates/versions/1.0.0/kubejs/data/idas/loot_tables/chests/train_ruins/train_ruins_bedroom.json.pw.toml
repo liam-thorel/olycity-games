@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/train_ruins/train_ruins_bedroom.json"
+filename = "train_ruins_bedroom.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/0eb3baa7beb9842bb57f7fa5c05367418717f986125193a4a6ba5ef9c01decc7"
+hash-format = "sha256"
+hash = "0eb3baa7beb9842bb57f7fa5c05367418717f986125193a4a6ba5ef9c01decc7"

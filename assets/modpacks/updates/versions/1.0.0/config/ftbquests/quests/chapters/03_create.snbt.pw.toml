@@ -1,0 +1,8 @@
+name = "config/ftbquests/quests/chapters/03_create.snbt"
+filename = "03_create.snbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/27cbc759797d31694e32a65caa063834f1545b5f90cb8ef32b9ba6c926379aa7"
+hash-format = "sha256"
+hash = "27cbc759797d31694e32a65caa063834f1545b5f90cb8ef32b9ba6c926379aa7"

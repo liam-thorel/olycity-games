@@ -1,0 +1,8 @@
+name = "config/simplyswords/gui.toml"
+filename = "gui.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/d34c7814baa027aa67fde721f3a437bcb6b3e9a89f0245970fd1489525ef5620"
+hash-format = "sha256"
+hash = "d34c7814baa027aa67fde721f3a437bcb6b3e9a89f0245970fd1489525ef5620"

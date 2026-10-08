@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/sunken_ship/sunken_ship_treasure.json"
+filename = "sunken_ship_treasure.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/d4e8b6e2c0454f60722e2e44bb1d826b14899a28b4c8488743c10fb3b0bea157"
+hash-format = "sha256"
+hash = "d4e8b6e2c0454f60722e2e44bb1d826b14899a28b4c8488743c10fb3b0bea157"

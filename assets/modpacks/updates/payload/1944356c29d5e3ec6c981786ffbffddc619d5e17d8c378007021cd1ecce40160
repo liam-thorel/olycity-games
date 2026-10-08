@@ -1,0 +1,20 @@
+{
+  "name": "La porte qui voyage",
+  "icon": "minecraft:iron_door",
+  "category": "kubejs:routes",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Une cabine bleue a été aperçue près des chemins. Certains jurent qu’elle est plus grande à l’intérieur.$(br2)Le conseil demande seulement de ne pas la garer dans la cuisine."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Le TARDIS est une aventure à côté du village. Découvrez un extérieur abandonné et apprenez son fonctionnement grâce au guide du mod.$(br2)Prenez le temps de maîtriser un premier trajet et son retour."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Les extensions présentes enrichissent cette aventure et les intérieurs.$(br2)Le village reste votre foyer : la cabine sert aux escapades, pas à remplacer toutes les étapes de votre progression."
+    }
+  ]
+}

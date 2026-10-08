@@ -1,0 +1,8 @@
+name = "kubejs/data/enderio/loot_tables/chests/alloy_loot.json"
+filename = "alloy_loot.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/6a4532640c94325610298d80cd6654c0f8bb157d19ffae6042f23d516170e25d"
+hash-format = "sha256"
+hash = "6a4532640c94325610298d80cd6654c0f8bb157d19ffae6042f23d516170e25d"

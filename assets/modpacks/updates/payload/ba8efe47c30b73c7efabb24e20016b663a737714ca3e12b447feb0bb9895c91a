@@ -1,0 +1,20 @@
+var OlyBrainCinematic=Java.loadClass('fr.olycity.visuals.BrainCinematic')
+NetworkEvents.dataReceived('olycity_brain_animation',event=>{
+  var phase=String(event.data.phase)
+  if(phase==='start')OlyBrainCinematic.start(String(event.data.prize))
+  else if(phase==='reveal')OlyBrainCinematic.reveal()
+  else if(phase==='stop')OlyBrainCinematic.stop()
+})
+NetworkEvents.dataReceived('olycity_visual_options',event=>OlyBrainCinematic.setReducedMotion(Number(event.data.reduced)===1))
+ClientEvents.loggedOut(event=>OlyBrainCinematic.stop())
+
+var OlyRelicCinematic=Java.loadClass('fr.olycity.visuals.RelicCinematic')
+NetworkEvents.dataReceived('olycity_relic_animation',event=>OlyRelicCinematic.start(String(event.data.item),String(event.data.label),String(event.data.color),Number(event.data.duration)))
+ClientEvents.loggedOut(event=>OlyRelicCinematic.stop())
+NetworkEvents.dataReceived('olycity_state',event=>{if(Number(event.data.clearMovement)===1)OlyRelicCinematic.stop()})
+
+NetworkEvents.dataReceived('olycity_dream',event=>OlyRelicCinematic.dream())
+ClientEvents.loggedOut(event=>OlyRelicCinematic.clearDream())
+NetworkEvents.dataReceived('olycity_state',event=>{if(Number(event.data.clearMovement)===1)OlyRelicCinematic.clearDream()})
+
+NetworkEvents.dataReceived('olycity_bounce',event=>{if(Client.player && Client.player.isAlive())Client.player.motionY=.75})

@@ -1,0 +1,8 @@
+name = "config/goety_cataclysm/goety_cataclysm-attributes.toml"
+filename = "goety_cataclysm-attributes.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/c9097238f2ad575c8de7f9a461f8720d21a9ec48efd8827790b34c40625b2383"
+hash-format = "sha256"
+hash = "c9097238f2ad575c8de7f9a461f8720d21a9ec48efd8827790b34c40625b2383"

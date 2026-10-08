@@ -1,0 +1,8 @@
+name = "kubejs/data/the_bumblezone/loot_tables/structures/bee_dungeon.json"
+filename = "bee_dungeon.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/683ca35d13a91c89f6be50130326d2c052c8ebf1ac5043e907175b53381ac42f"
+hash-format = "sha256"
+hash = "683ca35d13a91c89f6be50130326d2c052c8ebf1ac5043e907175b53381ac42f"

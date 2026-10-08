@@ -1,0 +1,27 @@
+{
+  "name": "Un lieu où revenir",
+  "icon": "minecraft:oak_door",
+  "category": "kubejs:village",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "On raconte qu’un foyer devient réel le jour où quelqu’un revient d’une mauvaise expédition et trouve une lumière à la fenêtre.$(br2)Avant le palais, construisez ce premier refuge."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:lantern",
+      "title": "Habiter OLYCITY",
+      "text": "Un lit, du rangement, de la nourriture et une pièce éclairée. Laissez de la place pour les futurs ateliers.",
+      "link_recipe": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Handcrafted et Chipped permettent de meubler et de varier les matériaux.$(br2)Etched apporte la musique ; les écrans et le navigateur ouvrent d’autres possibilités. Certaines sources en ligne dépendent de leur service."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(#205f64)Conseil de bâtisseur$()$(br2)Préparez une salle commune et un espace technique séparé. Les machines seront plus faciles à agrandir, et les expérimentations moins proches des chambres."
+    }
+  ]
+}

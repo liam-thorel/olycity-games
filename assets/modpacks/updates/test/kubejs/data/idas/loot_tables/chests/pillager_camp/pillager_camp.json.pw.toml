@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/pillager_camp/pillager_camp.json"
+filename = "pillager_camp.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/8d8024f54ba9423b2e288a27b3761bd6f9ed52a95cf59a8a84a116b3c6fa087c"
+hash-format = "sha256"
+hash = "8d8024f54ba9423b2e288a27b3761bd6f9ed52a95cf59a8a84a116b3c6fa087c"

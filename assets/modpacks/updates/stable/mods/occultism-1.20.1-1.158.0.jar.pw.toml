@@ -1,0 +1,8 @@
+name = "mods/occultism-1.20.1-1.158.0.jar"
+filename = "occultism-1.20.1-1.158.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/21449cefa0a64ab6a8750cdbf1e0f90408366f6e90497cf4d0367c98b2159754.jar"
+hash-format = "sha256"
+hash = "21449cefa0a64ab6a8750cdbf1e0f90408366f6e90497cf4d0367c98b2159754"

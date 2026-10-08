@@ -1,0 +1,8 @@
+name = "config/brewinandchewin-common.toml"
+filename = "brewinandchewin-common.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/8ebeb27f31aa49b530e2689679ca8096887847d7e4d93a87d9d50143f5957f77"
+hash-format = "sha256"
+hash = "8ebeb27f31aa49b530e2689679ca8096887847d7e4d93a87d9d50143f5957f77"

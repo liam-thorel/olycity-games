@@ -1,0 +1,8 @@
+name = "kubejs/data/watching/functions/check.mcfunction"
+filename = "check.mcfunction"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/feda3faf11623a7445638d73958bda358ab02c44c5b0a9c67472031c14e9ebad"
+hash-format = "sha256"
+hash = "feda3faf11623a7445638d73958bda358ab02c44c5b0a9c67472031c14e9ebad"

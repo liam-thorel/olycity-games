@@ -1,0 +1,8 @@
+name = "config/goety/goety-attributes.toml"
+filename = "goety-attributes.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/a67a21b2cbb47c0cf68ee81adc1e2a2c58598f2742625892bfa01425c104850c"
+hash-format = "sha256"
+hash = "a67a21b2cbb47c0cf68ee81adc1e2a2c58598f2742625892bfa01425c104850c"

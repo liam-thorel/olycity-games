@@ -1,0 +1,8 @@
+name = "config/create_central_kitchen-common.toml"
+filename = "create_central_kitchen-common.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/f94307edd006e1f48e2d9b0fdd74a792186972bc405de9dfe668adcf335426a7"
+hash-format = "sha256"
+hash = "f94307edd006e1f48e2d9b0fdd74a792186972bc405de9dfe668adcf335426a7"

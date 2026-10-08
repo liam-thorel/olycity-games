@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/village/profession/everbright/wrangler.json"
+filename = "wrangler.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/9ba11a699720734238003bbc6f9cec329b34dbbcdb8ddbb5e187f7dd75c264ad"
+hash-format = "sha256"
+hash = "9ba11a699720734238003bbc6f9cec329b34dbbcdb8ddbb5e187f7dd75c264ad"

@@ -1,0 +1,2 @@
+# Packwiz verifies exact bytes; never normalize managed metadata or payloads.
+assets/modpacks/updates/** -text

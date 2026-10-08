@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "dungeoncrawl:dungeon",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "salt": 10387313,
+    "spacing": 40,
+    "separation": 15,
+    "type": "minecraft:random_spread"
+  }
+}

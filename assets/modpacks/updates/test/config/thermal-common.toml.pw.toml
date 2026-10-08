@@ -1,0 +1,8 @@
+name = "config/thermal-common.toml"
+filename = "thermal-common.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/04cad12aeec270f08e1bba6751a8e466f12b0ab6102814c80eb910f0cb26a353"
+hash-format = "sha256"
+hash = "04cad12aeec270f08e1bba6751a8e466f12b0ab6102814c80eb910f0cb26a353"

@@ -1,0 +1,8 @@
+name = "kubejs/data/rats/loot_tables/chest/pet_shop_upstairs.json"
+filename = "pet_shop_upstairs.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/6524eac265022ff46693742ce1091b6d9d8cc73447a0e23cb76de99ecff3ed1e"
+hash-format = "sha256"
+hash = "6524eac265022ff46693742ce1091b6d9d8cc73447a0e23cb76de99ecff3ed1e"

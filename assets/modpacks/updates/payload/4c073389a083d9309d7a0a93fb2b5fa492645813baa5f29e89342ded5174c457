@@ -1,0 +1,20 @@
+{
+  "name": "Les couleurs du trésor",
+  "icon": "minecraft:gold_ingot",
+  "category": "patchouli:archives",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Le conseil a confié quatre couleurs au registre des reliques. Elles annoncent leur rareté, pas la fin de votre progression."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(#248545)Peu commun$() : de petites surprises.$(br2)$(#315DA0)Rare$() : des effets remarquables.$(br2)$(#873D97)Épique$() : une découverte à garder.$(br2)$(#9A6B16)Légendaire$() : un trésor exceptionnel."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Les couleurs ne révèlent ni toutes les conséquences ni toutes les limites.$(br2)Lisez la description de l’objet, essayez-le prudemment et gardez un peu de place pour l’inattendu."
+    }
+  ]
+}

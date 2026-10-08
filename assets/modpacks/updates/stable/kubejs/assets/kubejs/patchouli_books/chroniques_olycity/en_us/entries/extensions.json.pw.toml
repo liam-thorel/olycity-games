@@ -1,0 +1,8 @@
+name = "kubejs/assets/kubejs/patchouli_books/chroniques_olycity/en_us/entries/extensions.json"
+filename = "extensions.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/7934e38c0ce566c8ac4aac707e51db116ab653b3e25d1c6758b9ef65e36b1814"
+hash-format = "sha256"
+hash = "7934e38c0ce566c8ac4aac707e51db116ab653b3e25d1c6758b9ef65e36b1814"

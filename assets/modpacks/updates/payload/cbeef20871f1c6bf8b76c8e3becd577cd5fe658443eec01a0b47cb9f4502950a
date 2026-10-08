@@ -1,0 +1,10 @@
+{
+  "replace": true,
+  "required": false,
+  "values": [
+    {
+      "id": "ad_astra:lunar_wastelands",
+      "required": false
+    }
+  ]
+}

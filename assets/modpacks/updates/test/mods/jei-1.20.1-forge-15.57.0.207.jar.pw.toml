@@ -1,0 +1,8 @@
+name = "mods/jei-1.20.1-forge-15.57.0.207.jar"
+filename = "jei-1.20.1-forge-15.57.0.207.jar"
+side = "client"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/5c6e36534f58aaa2bc9f7ed5dec0076fabb889ec10f0ca4270ab6146d9b73a4d.jar"
+hash-format = "sha256"
+hash = "5c6e36534f58aaa2bc9f7ed5dec0076fabb889ec10f0ca4270ab6146d9b73a4d"

@@ -1,0 +1,6 @@
+{
+	disable_protection: true
+	force_load_mode: "never"
+	max_force_loaded_chunks: 25
+	hard_team_force_limit: 25
+}

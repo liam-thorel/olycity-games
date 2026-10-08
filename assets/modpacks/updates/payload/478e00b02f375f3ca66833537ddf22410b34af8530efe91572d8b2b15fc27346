@@ -1,0 +1,27 @@
+{
+  "name": "Quand l’atelier grandit",
+  "icon": "mekanism:atomic_disassembler",
+  "category": "kubejs:liam",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "L’ingénieur promet une centrale. Le conseil promet de lui trouver un terrain assez loin des maisons.$(br2)L’énergie a de la valeur lorsqu’elle fait travailler les outils et les usines."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "mekanism:atomic_disassembler",
+      "title": "Une énergie qui sert",
+      "text": "L’Atomic Disassembler et les outils Redstone Arsenal se rechargent. Le Digital Miner aide à cibler les ressources : vérifie les filtres loin de la base.",
+      "link_recipe": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Mekanism Generators ouvre plusieurs moyens de produire l’énergie.$(br2)Pour la fission, apprends refroidissement, combustible, déchets et arrêt automatique avant de préparer un réacteur."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Draconic Evolution est un horizon avancé, pas un ticket obligatoire pour démarrer.$(br2)Ses équipements et projets énergétiques demandent une préparation. Son réacteur mérite un site séparé et une vraie compréhension."
+    }
+  ]
+}

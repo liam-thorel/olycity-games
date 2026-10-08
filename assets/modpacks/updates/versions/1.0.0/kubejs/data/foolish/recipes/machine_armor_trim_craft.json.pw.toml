@@ -1,0 +1,8 @@
+name = "kubejs/data/foolish/recipes/machine_armor_trim_craft.json"
+filename = "machine_armor_trim_craft.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/5193677a3ee6c9fe736210f692e4ddb22b64b0fae821ef25f41ae8742b39cbbe"
+hash-format = "sha256"
+hash = "5193677a3ee6c9fe736210f692e4ddb22b64b0fae821ef25f41ae8742b39cbbe"

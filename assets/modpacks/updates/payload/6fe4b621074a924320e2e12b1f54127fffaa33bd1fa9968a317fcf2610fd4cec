@@ -1,0 +1,126 @@
+// OLYCITY PACK — black Neron relic. Custom model, client FOV and scope overlay.
+// Ordinary spyglasses are never affected. Legacy prototypes are migrated on login.
+const NERON = {
+  chargeTicks: 20,
+  cooldownTicks: 80,
+  range: 80,
+  damage: 24,
+  nauseaChance: 0.25,
+  nauseaTicks: 160
+}
+const neronPlayers = {}
+global.olyResetNeron = p => {
+  delete neronPlayers[String(p.getUuid())]
+  if(p.isUsingItem() && isNeron(p.getUseItem()))p.stopUsingItem()
+  neronScope(p,false)
+}
+
+function neronItem() {
+  return Item.of('kubejs:longue_vue_neron', {olycity_neron:1})
+}
+function neronScope(p,on) {
+  if(!on) {p.paint({neron_scope:{type:'rectangle',visible:false,w:0,h:0},neron_left:{type:'rectangle',visible:false,w:0,h:0},neron_right:{type:'rectangle',visible:false,w:0,h:0},neron_cross:{type:'text',visible:false,w:0,h:0,text:''}});return}
+  p.paint({
+    neron_scope:{type:'rectangle',visible:true,texture:'minecraft:textures/misc/spyglass_scope.png',x:0,y:0,w:'$screenH',h:'$screenH',alignX:'center',alignY:'center',draw:'ingame'},
+    neron_left:{type:'rectangle',visible:true,color:'black',x:0,y:0,w:'($screenW-$screenH)/2',h:'$screenH',draw:'ingame'},
+    neron_right:{type:'rectangle',visible:true,color:'black',x:0,y:0,w:'($screenW-$screenH)/2',h:'$screenH',alignX:'right',draw:'ingame'},
+    neron_cross:{type:'text',visible:true,text:'+',color:'white',centered:true,scale:2,w:0,h:0,x:0,y:-9,alignX:'center',alignY:'center',draw:'ingame'}
+  })
+}
+PlayerEvents.loggedIn(event => {
+ const p=event.player
+ for(let i=0;i<p.inventory.getSlots();i++) {
+   const s=p.inventory.getStackInSlot(i)
+   if(s.id==='minecraft:spyglass' && s.nbt && Number(s.nbt.olycity_neron)===1) {
+     p.inventory.setStackInSlot(i,Item.of('kubejs:longue_vue_neron',s.nbt))
+   }
+ }
+})
+
+function isNeron(stack) {
+  return stack && (stack.id === 'kubejs:longue_vue_neron' || (stack.id === 'minecraft:spyglass' && stack.nbt && Number(stack.nbt.olycity_neron) === 1))
+}
+
+// Relics are found through loot; the cheap prototype recipe is retired.
+
+PlayerEvents.loggedOut(event => {
+  delete neronPlayers[String(event.player.getUuid())]
+})
+
+PlayerEvents.tick(event => {
+  const p = event.player
+  const key = String(p.getUuid())
+  const usingNeron = p.isUsingItem() && isNeron(p.getUseItem())
+  let state = neronPlayers[key]
+  if (!state && !usingNeron) return
+  if (!state) state = neronPlayers[key] = { charge: 0, cooldown: Math.max(0,Math.ceil((Number(p.server.persistentData.getLong('olycity_neron_next_'+key))-Date.now())/50)), dimension: '', scope:false }
+  if (state.cooldown > 0) state.cooldown--
+
+  if (!p.isAlive() || p.isSpectator()) {
+    state.charge = 0
+
+    state.ready = false
+    if(state.scope){neronScope(p,false);state.scope=false}
+    return
+  }
+  const dimension = String(p.level.dimension)
+  if (usingNeron) {
+    if (state.cooldown > 0) {
+      state.charge = 0
+
+      state.ready = false
+      p.stopUsingItem()
+      p.setStatusMessage('§7Recharge : ' + Math.ceil(state.cooldown / 20) + ' s')
+      return
+    }
+    if (state.charge > 0 && state.dimension !== dimension) {
+      state.charge = 0
+
+      state.ready = false
+      p.stopUsingItem()
+      return
+    }
+    if(!state.scope && p.getUseItem().id==='kubejs:longue_vue_neron'){neronScope(p,true);state.scope=true;p.runCommandSilent('playsound minecraft:item.spyglass.use player @s ~ ~ ~ 0.7 0.8')}
+    state.dimension = dimension
+    state.charge = Math.min(state.charge + 1, NERON.chargeTicks)
+    if (state.charge === NERON.chargeTicks) {
+      if (!state.ready) {p.setStatusMessage('§aNeron : prêt à tirer !');p.runCommandSilent('playsound minecraft:block.note_block.pling player @s ~ ~ ~ 0.35 1.8')}
+      p.paint({neron_cross:{type:'text',visible:true,text:'+',color:'#79EBC8',centered:true,scale:2,w:0,h:0,x:0,y:-9,alignX:'center',alignY:'center',draw:'ingame'}})
+      state.ready = true
+    } else if (state.charge % 5 === 0) {
+      p.setStatusMessage('§eVisée : ' + Math.floor(state.charge * 100 / NERON.chargeTicks) + ' %')
+    }
+    return
+  }
+
+  if(state.scope){neronScope(p,false);state.scope=false}
+  const charged = state.charge >= NERON.chargeTicks
+  state.charge = 0
+  state.ready = false
+  // Switching away or crossing a dimension cancels the shot.
+  if (!charged || state.cooldown > 0 || state.dimension !== dimension) return
+  if (!isNeron(p.mainHandItem) && !isNeron(p.offHandItem)) return
+  state.cooldown = NERON.cooldownTicks
+  p.server.persistentData.putLong('olycity_neron_next_'+key,Date.now()+NERON.cooldownTicks*50)
+
+  // Installed KubeJS rayTrace tests blocks first and limits entity hits to that
+  // distance, using vanilla ProjectileUtil. No hits through walls or portals.
+  const hit = p.rayTrace(NERON.range, false)
+  const target = hit.entity
+  let message = '§7Neron : tir manqué.'
+  if (target && target.living && target.health > 0) {
+    // Limit high-health targets to 20% of their maximum HP per shot. Damage
+    // remains vanilla player damage: armor, shields and boss immunity apply.
+    const damage = target.maxHealth >= 80 ? Math.min(NERON.damage, target.maxHealth * 0.20) : NERON.damage
+    const result = p.server.runCommandSilent('damage ' + target.getUuid() + ' ' + damage + ' minecraft:player_attack by ' + p.getUuid())
+    message = result > 0 ? '§6Neron : touché !' : '§7Neron : cible protégée ou invulnérable.'
+  }
+  p.runCommandSilent('playsound minecraft:entity.firework_rocket.blast player @a[distance=..32] ~ ~ ~ 0.5 0.6')
+  if(typeof global.olyNeronShotFx==='function')global.olyNeronShotFx(p)
+  p.runCommandSilent('particle minecraft:crit ^ ^1.5 ^1 0.05 0.05 0.05 0.1 8 force')
+  if (Math.random() < NERON.nauseaChance) {
+    p.potionEffects.add('minecraft:nausea', NERON.nauseaTicks, 0)
+    message += ' §dNeron a encore trop bu…'
+  }
+  p.setStatusMessage(message)
+})

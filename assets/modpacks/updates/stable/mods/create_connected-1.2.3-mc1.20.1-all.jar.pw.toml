@@ -1,0 +1,8 @@
+name = "mods/create_connected-1.2.3-mc1.20.1-all.jar"
+filename = "create_connected-1.2.3-mc1.20.1-all.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/5f584f118f2bda3dfeed8b8fc9198ea143c6988e2f6f04eb63f42c0da8b50e63.jar"
+hash-format = "sha256"
+hash = "5f584f118f2bda3dfeed8b8fc9198ea143c6988e2f6f04eb63f42c0da8b50e63"

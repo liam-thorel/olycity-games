@@ -1,0 +1,8 @@
+name = "config/goety_cataclysm/goety_cataclysm-spells.toml"
+filename = "goety_cataclysm-spells.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/b3195cc59521cc1cba462a3b5cc24d7aead11a91dc7e670ac442bd0ef3fb5463"
+hash-format = "sha256"
+hash = "b3195cc59521cc1cba462a3b5cc24d7aead11a91dc7e670ac442bd0ef3fb5463"

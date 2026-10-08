@@ -1,0 +1,35 @@
+// Real reports, separate from Romain's fictional /oly bug ticket.
+var OLY_REPORT_KEY='olycity_reports_v1',olyReportTicks=0
+function olyReports(server){return JSON.parse(String(server.persistentData.getString(OLY_REPORT_KEY) || '[]'))}
+function olyReportSubmit(p,type,message){
+ if(!p){console.info('[OLYCITY] Les signalements doivent être envoyés par un joueur.');return 0}
+ var body=String(message).replace(/[\u0000-\u001f\u007f§]/g,' ').trim()
+ if(body.length<8 || body.length>1000){p.tell('§eÉcris entre 8 et 1000 caractères pour expliquer le problème ou l’idée.');return 0}
+ var now=Date.now(),key='olycity_report_next_'+p.getUuid()
+ if(Number(p.server.persistentData.getLong(key))>now){p.tell('§7Attends 30 secondes entre deux signalements.');return 0}
+ var rows=olyReports(p.server)
+ if(rows.length>=1000){p.tell('§cLe registre est plein. Préviens un administrateur.');return 0}
+ var report={id:rows.length+1,type:type,text:body,player:String(p.profile.name),uuid:String(p.getUuid()),date:new Date(now).toISOString(),dimension:String(p.level.dimension),position:[Math.floor(p.x),Math.floor(p.y),Math.floor(p.z)],pack:'OLYCITY V1'}
+ rows.push(report);p.server.persistentData.putString(OLY_REPORT_KEY,JSON.stringify(rows))
+ p.server.persistentData.putLong(key,now+30000)
+ // World data is authoritative; this additional export is convenient for the server owner.
+ try{JsonIO.write('kubejs/reports/olycity-reports.json',{reports:rows})}catch(error){console.error('[OLYCITY REPORT] Export impossible, rapport conservé dans le monde : '+error)}
+ console.info('[OLYCITY REPORT] '+JSON.stringify(report))
+ p.tell('§aSignalement #'+report.id+' enregistré. Merci !');return 1
+}
+function olyReportReply(ctx,text){if(ctx.source.player)ctx.source.player.tell(text);else console.info(text)}
+ServerEvents.commandRegistry(event=>{
+ var c=event.commands,a=event.arguments
+ event.register(c.literal('report')
+  .executes(ctx=>{olyReportReply(ctx,'§6/report bug <description> • /report idee <suggestion>');return 1})
+  .then(c.literal('bug').then(c.argument('texte',a.GREEDY_STRING.create(event)).executes(ctx=>olyReportSubmit(ctx.source.player,'bug',a.GREEDY_STRING.getResult(ctx,'texte')))))
+  .then(c.literal('idee').then(c.argument('texte',a.GREEDY_STRING.create(event)).executes(ctx=>olyReportSubmit(ctx.source.player,'idee',a.GREEDY_STRING.getResult(ctx,'texte')))))
+  .then(c.literal('list').requires(s=>s.hasPermission(2)).executes(ctx=>{var rows=olyReports(ctx.source.server);olyReportReply(ctx,'§6'+rows.length+' signalement(s). Les 5 derniers :');rows.slice(-5).forEach(r=>olyReportReply(ctx,'§7#'+r.id+' ['+r.type+'] '+r.player+' : '+r.text.substring(0,160)));return rows.length}))
+  .then(c.literal('show').requires(s=>s.hasPermission(2)).then(c.argument('numero',a.INTEGER.create(event)).executes(ctx=>{var id=a.INTEGER.getResult(ctx,'numero'),r=olyReports(ctx.source.server).filter(r=>r.id===id)[0];if(!r){olyReportReply(ctx,'§cSignalement introuvable.');return 0}olyReportReply(ctx,'§6#'+r.id+' '+r.type+' — '+r.player+' — '+r.date);olyReportReply(ctx,'§7'+r.dimension+' '+r.position.join(' / '));olyReportReply(ctx,r.text);return 1})))
+  .then(c.argument('texte',a.GREEDY_STRING.create(event)).executes(ctx=>olyReportSubmit(ctx.source.player,'bug',a.GREEDY_STRING.getResult(ctx,'texte')))))
+})
+ServerEvents.tick(event=>{
+ if(++olyReportTicks<36000)return
+ olyReportTicks=0
+ if(event.server.players.size()>0)event.server.tell('§6OLYCITY §7— Un bug ou une idée ? §e/report bug <description> §7ou §e/report idee <suggestion>§7. Les signalements sont enregistrés pour les admins.')
+})

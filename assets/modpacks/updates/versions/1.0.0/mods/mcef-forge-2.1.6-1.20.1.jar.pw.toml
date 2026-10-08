@@ -1,0 +1,8 @@
+name = "mods/mcef-forge-2.1.6-1.20.1.jar"
+filename = "mcef-forge-2.1.6-1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/5c462342264ac89597891d5d4bcdf6b8134ce4cc5dd97894dbd87ecc197f0cb3.jar"
+hash-format = "sha256"
+hash = "5c462342264ac89597891d5d4bcdf6b8134ce4cc5dd97894dbd87ecc197f0cb3"

@@ -1,0 +1,8 @@
+name = "mods/structureessentials-1.20.1-5.0.jar"
+filename = "structureessentials-1.20.1-5.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/602c8f17f6d805458c3da679b28183b0dfb4987457fd8a365de339d127f22831.jar"
+hash-format = "sha256"
+hash = "602c8f17f6d805458c3da679b28183b0dfb4987457fd8a365de339d127f22831"

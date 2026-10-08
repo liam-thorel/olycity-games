@@ -1,0 +1,20 @@
+{
+  "name": "L’atelier de Create",
+  "icon": "create:mechanical_mixer",
+  "category": "kubejs:liam",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "L’atelier de rotation a ses spécialistes. Le conseil accepte les expériences tant que le canon ne vise pas les chambres."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Crafts & Additions ajoute des possibilités autour de l’énergie.$(br2)Central Kitchen rapproche les chaînes de cuisine.$(br2)Enchantment Industry propose des projets autour de l’expérience et des enchantements."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Copycats intègre les machines aux constructions. Hypertubes aide aux déplacements. Big Cannons apporte les gros canons.$(br2)Consulte les démonstrations Create et JEI pour le projet choisi."
+    }
+  ]
+}

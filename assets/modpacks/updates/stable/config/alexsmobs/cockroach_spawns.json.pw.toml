@@ -1,0 +1,8 @@
+name = "config/alexsmobs/cockroach_spawns.json"
+filename = "cockroach_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/97a67afb52f1398f2c55e2a74001e5b893394e28d3f0eb00695f049bdd19f204"
+hash-format = "sha256"
+hash = "97a67afb52f1398f2c55e2a74001e5b893394e28d3f0eb00695f049bdd19f204"

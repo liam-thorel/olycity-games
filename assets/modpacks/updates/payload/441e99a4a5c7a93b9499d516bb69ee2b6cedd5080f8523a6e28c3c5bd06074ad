@@ -1,0 +1,27 @@
+{
+  "name": "La première expédition",
+  "icon": "minecraft:shield",
+  "category": "patchouli:romain",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Le premier contrat de l’apprenti est simple : partir accompagné et revenir.$(br2)Le conseil n’a jamais demandé de vaincre un boss avant le dîner."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:shield",
+      "title": "Préparer son sac",
+      "text": "Nourriture, torches, blocs, outils et bouclier. Essaie de lever le bouclier avant de rencontrer un groupe d’ennemis.",
+      "link_recipe": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Éclaire et marque le chemin. Ne mine pas directement sous tes pieds.$(br2)Ultimine peut casser plusieurs blocs : regarde sa forme avant d’utiliser la touche. Les immenses tunnels attendront."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Ouvre un coffre Lootr puis retourne à la maison. Chaque joueur a son butin.$(br2)Si tu es perdu ou mal équipé, préviens ton compagnon. Tu n’as pas besoin de finir le donjon pour réussir cette sortie."
+    }
+  ]
+}

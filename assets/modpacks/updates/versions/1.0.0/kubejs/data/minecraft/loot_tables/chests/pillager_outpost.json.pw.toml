@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/pillager_outpost.json"
+filename = "pillager_outpost.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/a3448a9caba5965d8d2191d065a9a96efda3f77f98745672362e79d43afe04d9"
+hash-format = "sha256"
+hash = "a3448a9caba5965d8d2191d065a9a96efda3f77f98745672362e79d43afe04d9"

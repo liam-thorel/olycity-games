@@ -1,0 +1,17 @@
+const OlyChatScreen = Java.loadClass('net.minecraft.client.gui.screens.ChatScreen')
+NetworkEvents.dataReceived('olycity_ticket', event => {
+  // Open vanilla chat with a safe command prefix; the submitted text is data only.
+  Client.currentScreen = new OlyChatScreen('/oly bug ')
+})
+NetworkEvents.dataReceived('olycity_state', event => {
+  if(Number(event.data.clearMovement)===1){global.olyClientNoJumpUntil=0;global.olyClientComaUntil=0;return}
+  if(event.data.noJumpMs)global.olyClientNoJumpUntil=Date.now()+Number(event.data.noJumpMs)
+  if(event.data.comaMs)global.olyClientComaUntil=Date.now()+Number(event.data.comaMs)
+})
+ClientEvents.tick(event => {
+  const p=Client.player
+  if(!p)return
+  if(Date.now()<(global.olyClientComaUntil || 0)) {p.motionX=0;p.motionZ=0;if(p.motionY>0)p.motionY=0}
+  if(Date.now()<(global.olyClientNoJumpUntil || 0) && p.motionY>0 && !p.isFallFlying() && !p.isInWater())p.motionY=0
+})
+ClientEvents.loggedOut(event => {global.olyClientNoJumpUntil=0;global.olyClientComaUntil=0})

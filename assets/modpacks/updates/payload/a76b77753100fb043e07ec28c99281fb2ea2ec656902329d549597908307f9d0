@@ -1,0 +1,19 @@
+{
+  "name": "OLYCITY",
+  "landing_text": "$(#205f64)Un village, des routes impossibles et des histoires qui commencent à peine.$()$(br2)Ces pages appartiennent à ceux qui bâtissent, explorent et reviennent raconter leurs aventures.",
+  "subtitle": "Les Chroniques",
+  "version": "0",
+  "use_resource_pack": false,
+  "book_texture": "patchouli:textures/gui/book_cyan.png",
+  "model": "kubejs:chroniques_olycity",
+  "text_color": "35291F",
+  "header_color": "205F64",
+  "nameplate_color": "E6B75F",
+  "link_color": "246E79",
+  "link_hover_color": "934957",
+  "show_progress": false,
+  "show_toasts": false,
+  "pause_game": false,
+  "text_overflow_mode": "resize",
+  "creative_tab": "minecraft:tools_and_utilities"
+}

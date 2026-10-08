@@ -1,0 +1,8 @@
+{
+  "type": "room",
+  "canBeRemoved": true,
+  "extra_unlocks": [],
+  "generates_naturally": false,
+  "roomLocation": "ars-expanded:rooms/tardis_grid_zero",
+  "y_offset": -1
+}

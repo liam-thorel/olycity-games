@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/mountain_tower/ice_barrel.json"
+filename = "ice_barrel.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/d5271f4980fa10715ee13a1246bb2a1e0a67943a96c70a134e8945cf2e1cc735"
+hash-format = "sha256"
+hash = "d5271f4980fa10715ee13a1246bb2a1e0a67943a96c70a134e8945cf2e1cc735"

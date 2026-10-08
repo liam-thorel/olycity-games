@@ -1,0 +1,39 @@
+{
+  "name": "Les autres ciels",
+  "icon": "minecraft:ender_pearl",
+  "category": "kubejs:routes",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Le ciel d’OLYCITY n’est qu’une page de l’atlas.$(br2)D’autres mondes ont leurs minerais, leurs règles et leurs habitants. Emportez toujours de quoi retrouver votre porte."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:glowstone",
+      "title": "Le Nether et l’Aether",
+      "text": "Le Nether réclame préparation et résistance au danger. L’Aether ouvre un monde de nuages, d’équipements propres et de donjons : consultez son guide.",
+      "link_recipe": false
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(#205f64)Blue Skies$()$(br2)Everbright et Everdawn possèdent leur progression. Les équipements extérieurs peuvent être moins efficaces. Prenez le temps d’apprendre leurs matériaux et leurs épreuves."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(#205f64)L’Undergarden$()$(br2)Sous le monde, de nouveaux biomes, minerais et structures attendent.$(br2)$(#205f64)Le Stellar Hollow$()$(br2)Foolish propose un ailleurs étrange. Suivez les indices plutôt qu’une course aux ressources."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:bee",
+      "name": "La Bumblezone",
+      "scale": 0.9,
+      "rotate": true,
+      "text": "Une dimension d’abeilles et d’épreuves. Apprenez ses règles avant de bousculer ses habitantes."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(#934957)Note au voyageur$()$(br2)Avant de franchir une porte : notez sa position, vérifiez votre nourriture et gardez un moyen de retour. Même un monde superbe peut devenir une longue marche de secours."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Des assistants inattendus",
+  "icon": "minecraft:wheat",
+  "category": "kubejs:liam",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Le registre de l’atelier mentionne un rat, un drone et quelques abeilles.$(br2)Personne n’a encore osé demander lequel est le chef."
+    },
+    {
+      "type": "patchouli:entity",
+      "entity": "minecraft:bee",
+      "name": "Productive Bees",
+      "scale": 0.9,
+      "rotate": true,
+      "text": "Si l’apiculture te tente encore : choisis une ressource, puis regarde habitat, fleurs et besoins de l’espèce dans son guide et JEI."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Rats permet des compagnons avec ordres et améliorations. Commence par un trajet court que tu peux observer.$(br2)Domestication Innovation enrichit la vie avec les animaux compatibles."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "PneumaticCraft utilise l’air comprimé. Ses drones suivent des programmes pour transporter ou travailler.$(br2)Avant la flotte, construis un prototype qui accomplit une tâche et rentre correctement."
+    }
+  ]
+}

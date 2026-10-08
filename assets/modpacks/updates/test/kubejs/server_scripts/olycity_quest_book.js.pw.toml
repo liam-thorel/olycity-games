@@ -1,0 +1,8 @@
+name = "kubejs/server_scripts/olycity_quest_book.js"
+filename = "olycity_quest_book.js"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/3abc66bd2237ae43c240c16cf2aa6e84b9a1d5c1d600cd7bfa65bbbce609deb9"
+hash-format = "sha256"
+hash = "3abc66bd2237ae43c240c16cf2aa6e84b9a1d5c1d600cd7bfa65bbbce609deb9"
