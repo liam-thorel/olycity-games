@@ -1,8 +1,0 @@
-name = "kubejs/assets/kubejs/patchouli_books/chroniques_olycity/fr_fr/entries/rumeurs.json"
-filename = "rumeurs.json"
-side = "both"
-
-[download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/3eb3515ec78cd90ab43ce73c0f3f1a41ef708502ae2b35260e610eebff04ac7f"
-hash-format = "sha256"
-hash = "3eb3515ec78cd90ab43ce73c0f3f1a41ef708502ae2b35260e610eebff04ac7f"

@@ -1,8 +1,0 @@
-name = "kubejs/assets/kubejs/patchouli_books/chroniques_olycity/fr_fr/entries/brasserie.json"
-filename = "brasserie.json"
-side = "both"
-
-[download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/d39b79d9da9db55f257ab9a89b3d45e6033e0ffe2e3dbf8404254f279efee36f"
-hash-format = "sha256"
-hash = "d39b79d9da9db55f257ab9a89b3d45e6033e0ffe2e3dbf8404254f279efee36f"

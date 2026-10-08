@@ -1,8 +1,0 @@
-name = "patchouli_books/chroniques_olycity/en_us/entries/poules.json"
-filename = "poules.json"
-side = "both"
-
-[download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/aa748b7bec222ff8010e70a3c18edd4487cbbc5bea1648d9bc4d7243840f61bb"
-hash-format = "sha256"
-hash = "aa748b7bec222ff8010e70a3c18edd4487cbbc5bea1648d9bc4d7243840f61bb"

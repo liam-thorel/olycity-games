@@ -1,8 +1,0 @@
-name = "patchouli_books/chroniques_olycity/fr_fr/categories/romain.json"
-filename = "romain.json"
-side = "both"
-
-[download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/0862e52af5ee5d941f6f487921744e0d48723fe4a5e192f9322616e999f7f3f8"
-hash-format = "sha256"
-hash = "0862e52af5ee5d941f6f487921744e0d48723fe4a5e192f9322616e999f7f3f8"

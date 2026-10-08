@@ -1,8 +1,0 @@
-name = "patchouli_books/chroniques_olycity/en_us/entries/donjons.json"
-filename = "donjons.json"
-side = "both"
-
-[download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/eee626ce51e81bc5d92720f2663b086c29c99544cf57b4a81639ad35fe5603fc"
-hash-format = "sha256"
-hash = "eee626ce51e81bc5d92720f2663b086c29c99544cf57b4a81639ad35fe5603fc"

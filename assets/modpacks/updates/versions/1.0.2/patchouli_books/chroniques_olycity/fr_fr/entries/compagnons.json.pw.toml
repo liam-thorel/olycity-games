@@ -1,8 +1,0 @@
-name = "patchouli_books/chroniques_olycity/fr_fr/entries/compagnons.json"
-filename = "compagnons.json"
-side = "both"
-
-[download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/d8745f84485d141f6c4712c85789ad9ef18841af64b5173b3f603ee8e01f26f7"
-hash-format = "sha256"
-hash = "d8745f84485d141f6c4712c85789ad9ef18841af64b5173b3f603ee8e01f26f7"

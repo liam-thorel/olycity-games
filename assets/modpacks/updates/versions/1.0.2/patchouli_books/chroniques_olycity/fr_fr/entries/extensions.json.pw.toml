@@ -1,8 +1,0 @@
-name = "patchouli_books/chroniques_olycity/fr_fr/entries/extensions.json"
-filename = "extensions.json"
-side = "both"
-
-[download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/7e3b02303f6eece01f5f85dfeff017b5b282b6e16e5b57f205961399ac7b5540"
-hash-format = "sha256"
-hash = "7e3b02303f6eece01f5f85dfeff017b5b282b6e16e5b57f205961399ac7b5540"

@@ -1,8 +1,0 @@
-name = "kubejs/assets/kubejs/patchouli_books/chroniques_olycity/fr_fr/categories/magie.json"
-filename = "magie.json"
-side = "both"
-
-[download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/d4f2eacee6b2bc5aa38169ddbc7d480744fff30b4e1535edcc0655e509498558"
-hash-format = "sha256"
-hash = "d4f2eacee6b2bc5aa38169ddbc7d480744fff30b4e1535edcc0655e509498558"

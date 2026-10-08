@@ -1,8 +1,0 @@
-name = "kubejs/assets/kubejs/patchouli_books/chroniques_olycity/en_us/entries/mission.json"
-filename = "mission.json"
-side = "both"
-
-[download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/7573af232421e0e6ad84fa3801a604232998fe5bdc00f79bfae46ec9609127ed"
-hash-format = "sha256"
-hash = "7573af232421e0e6ad84fa3801a604232998fe5bdc00f79bfae46ec9609127ed"

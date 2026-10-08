@@ -1,8 +1,0 @@
-name = "kubejs/assets/kubejs/patchouli_books/chroniques_olycity/fr_fr/entries/tempetes.json"
-filename = "tempetes.json"
-side = "both"
-
-[download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/7a03faefd44afff3ce2a5c263499e65ad131baa3b5ecfd4ac08db7e9009ad1c4"
-hash-format = "sha256"
-hash = "7a03faefd44afff3ce2a5c263499e65ad131baa3b5ecfd4ac08db7e9009ad1c4"

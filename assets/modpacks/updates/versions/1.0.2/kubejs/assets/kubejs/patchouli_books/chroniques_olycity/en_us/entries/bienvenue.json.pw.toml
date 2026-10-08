@@ -1,8 +1,0 @@
-name = "kubejs/assets/kubejs/patchouli_books/chroniques_olycity/en_us/entries/bienvenue.json"
-filename = "bienvenue.json"
-side = "both"
-
-[download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/a211f0b43184892e4d6d1452338348186d86db4e9d73c6f945270d5b0ed19952"
-hash-format = "sha256"
-hash = "a211f0b43184892e4d6d1452338348186d86db4e9d73c6f945270d5b0ed19952"

@@ -1,8 +1,0 @@
-name = "patchouli_books/chroniques_olycity/fr_fr/entries/machines.json"
-filename = "machines.json"
-side = "both"
-
-[download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/8932ccfb6cb95f341fcb9425cabfe4a5788e9da30c103acb5b8243ec227b17d0"
-hash-format = "sha256"
-hash = "8932ccfb6cb95f341fcb9425cabfe4a5788e9da30c103acb5b8243ec227b17d0"
