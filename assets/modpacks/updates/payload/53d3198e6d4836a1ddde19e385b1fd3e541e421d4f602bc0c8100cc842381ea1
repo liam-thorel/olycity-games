@@ -1,0 +1,18 @@
+{
+  "name": "Une base plus calme",
+  "category": "patchouli:refuge",
+  "icon": "torchmaster:megatorch",
+  "sortnum": 7,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "torchmaster:megatorch",
+      "title": "Mega Torch",
+      "text": "Bloque les apparitions naturelles de monstres autour d’elle. Ce n’est ni un déflecteur météo ni une protection contre toutes les créatures."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Les spawners gardent normalement leur fonction. Teste tes élevages ou fermes avant de couvrir toute la zone. Les événements spéciaux des mods ne sont pas forcément des apparitions naturelles."
+    }
+  ]
+}

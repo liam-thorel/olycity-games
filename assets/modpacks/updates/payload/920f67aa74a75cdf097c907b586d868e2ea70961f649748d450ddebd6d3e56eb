@@ -1,0 +1,16 @@
+{
+  "name": "La première sortie",
+  "category": "patchouli:romain",
+  "icon": "minecraft:shield",
+  "sortnum": 17,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Pars avec nourriture, torches, pioche et bouclier. Pose un repère pour rentrer. Une courte sortie avec un ami est une bonne première découverte."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Lootr donne un butin personnel dans ses coffres. Une mort ne rend pas tous tes projets inutiles : un corps peut conserver tes affaires. Observe le lieu avant de retourner les chercher."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Une idée de génie",
+  "category": "patchouli:archives",
+  "icon": "kubejs:cerveau_liam",
+  "sortnum": 29,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "kubejs:cerveau_liam",
+      "title": "Le cerveau de Liam",
+      "text": "Le résultat n’est pas toujours à la hauteur de la réflexion. Les enchantements peuvent tomber sur un objet parfaitement absurde."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Délai réel : deux heures. Changer de partie ou se reconnecter n’est pas censé remettre le compteur à zéro."
+    }
+  ],
+  "advancement": "olycity:find_brain"
+}

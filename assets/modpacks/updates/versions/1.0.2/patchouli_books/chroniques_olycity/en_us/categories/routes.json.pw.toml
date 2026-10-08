@@ -1,0 +1,8 @@
+name = "patchouli_books/chroniques_olycity/en_us/categories/routes.json"
+filename = "routes.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/49f4dd9517101639b709ddcd29e9b3c7803a11840000b28a8496c7ae038ecdf0"
+hash-format = "sha256"
+hash = "49f4dd9517101639b709ddcd29e9b3c7803a11840000b28a8496c7ae038ecdf0"

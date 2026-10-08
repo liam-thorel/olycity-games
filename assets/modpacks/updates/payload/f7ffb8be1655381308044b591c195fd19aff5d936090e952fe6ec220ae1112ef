@@ -1,0 +1,98 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "",
+  "filename": "06_refuge",
+  "group": "",
+  "icon": "weather2:weather_deflector",
+  "id": "6C42F13DFE48BE43",
+  "order_index": 5,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "description": [
+        "Les tornades peuvent arracher des blocs hors d’une zone protégée. Avant une grande construction, préparez un déflecteur météo.",
+        "&cNe comptez pas seulement sur des murs épais ou une revendication FTB Chunks.&r",
+        "Par gros temps, éloigne-toi de la trajectoire et cherche un abri. La protection des bâtiments ne remplace pas la prudence des joueurs.",
+        "Objet(s) à obtenir : 1 × minecraft:book. La détection ne consomme rien et ne prouve pas à elle seule qu’une usine fonctionne."
+      ],
+      "icon": "weather2:weather_deflector",
+      "id": "477C7349249F16BB",
+      "rewards": [],
+      "tasks": [
+        {
+          "id": "2867602E08E8B039",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "&c&lAvis de tempête&r",
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "description": [
+        "{image:weather2:textures/blocks/weather_deflector.png width:48 height:48 align:center}",
+        "&7Ci-dessus : texture du déflecteur, pour le reconnaître.&r",
+        "Cherche Weather Deflector dans JEI et consulte sa recette. Obtiens le bloc, puis passe à la prochaine étape : le garder dans un coffre ne protège rien."
+      ],
+      "icon": "weather2:weather_deflector",
+      "id": "170581A99FE61EC1",
+      "rewards": [
+        {
+          "id": "6EA8184745D840C0",
+          "type": "xp",
+          "xp": 35,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "id": "70ABD38B009AAB71",
+          "item": "weather2:weather_deflector",
+          "type": "item"
+        }
+      ],
+      "title": "&eLe gardien du refuge&r",
+      "x": 2.5,
+      "y": 0.0
+    },
+    {
+      "dependencies": [
+        "170581A99FE61EC1"
+      ],
+      "description": [
+        "Place le déflecteur près du centre de votre zone habitée et garde cette zone chargée pendant vos activités.",
+        "&ePortée configurée dans ce pack : 150 blocs.&r Le mod retire les tempêtes concernées lorsque leur centre entre dans cette portée ; ce n’est pas une bulle qui rend chaque bloc invincible.",
+        "Si votre base s’étend, répartissez plusieurs déflecteurs et laissez de la marge aux frontières. Ne testez pas une tornade sur votre vraie maison.",
+        "Étape vérifiée par le jeu : olycity:place_deflector. Le jeu valide la progression ; aucun clic ne suffit."
+      ],
+      "icon": "weather2:weather_deflector",
+      "id": "77AAAA4A5286ABAF",
+      "rewards": [
+        {
+          "id": "627BDCF7A891CDD7",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "590BD217B12C05A0",
+          "type": "advancement",
+          "advancement": "olycity:place_deflector"
+        }
+      ],
+      "title": "&aInstaller la protection&r",
+      "x": 5.0,
+      "y": 0.0
+    }
+  ],
+  "title": "&cProtéger le installation&r"
+}

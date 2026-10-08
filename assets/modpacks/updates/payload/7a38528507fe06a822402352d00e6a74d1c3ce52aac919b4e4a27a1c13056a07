@@ -1,0 +1,18 @@
+{
+  "name": "Une porte secondaire",
+  "category": "patchouli:routes",
+  "icon": "tardis:manual",
+  "sortnum": 23,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "tardis:manual",
+      "title": "Le TARDIS",
+      "text": "Une autre manière de voyager, avec son propre intérieur et ses systèmes. Le manuel du mod reste la référence."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Vous pouvez aimer votre maison et partir en TARDIS de temps en temps. Ce carnet ne suppose ni que vous en possédez un dès le départ, ni qu’il remplace vos autres projets."
+    }
+  ]
+}

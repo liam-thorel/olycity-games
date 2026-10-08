@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/pyromancer_tower/old_cask.json"
+filename = "old_cask.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/55ebbd5f618ed5cda4353bf15863ace694461312b1250caeafe92c67d61bbdff"
+hash-format = "sha256"
+hash = "55ebbd5f618ed5cda4353bf15863ace694461312b1250caeafe92c67d61bbdff"

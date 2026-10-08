@@ -1,0 +1,8 @@
+name = "config/brandon3055/hud_settings.json"
+filename = "hud_settings.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/12f7829b4f2a7073226189b5d090797ec5c1a6a35ce5767fd22e4afe62cbc646"
+hash-format = "sha256"
+hash = "12f7829b4f2a7073226189b5d090797ec5c1a6a35ce5767fd22e4afe62cbc646"

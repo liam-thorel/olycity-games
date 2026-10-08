@@ -1,0 +1,8 @@
+name = "kubejs/assets/kubejs/textures/item/cerveau_liam.png"
+filename = "cerveau_liam.png"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/f188ed176f5517a217975dbb6ccff10522824d213d37e02e635365f182777243"
+hash-format = "sha256"
+hash = "f188ed176f5517a217975dbb6ccff10522824d213d37e02e635365f182777243"

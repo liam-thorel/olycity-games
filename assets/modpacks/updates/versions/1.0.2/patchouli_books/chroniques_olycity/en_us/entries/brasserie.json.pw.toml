@@ -1,0 +1,8 @@
+name = "patchouli_books/chroniques_olycity/en_us/entries/brasserie.json"
+filename = "brasserie.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/f73b759afd980186557a737535d8f7197a61529cd1024db2572b278383d50140"
+hash-format = "sha256"
+hash = "f73b759afd980186557a737535d8f7197a61529cd1024db2572b278383d50140"

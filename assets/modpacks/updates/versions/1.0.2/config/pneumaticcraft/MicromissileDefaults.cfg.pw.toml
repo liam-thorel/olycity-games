@@ -1,0 +1,8 @@
+name = "config/pneumaticcraft/MicromissileDefaults.cfg"
+filename = "MicromissileDefaults.cfg"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/cf52b07316b17e5217bcd9983b8b5060683d0fe0ed26376e41011bf40e3ea997"
+hash-format = "sha256"
+hash = "cf52b07316b17e5217bcd9983b8b5060683d0fe0ed26376e41011bf40e3ea997"

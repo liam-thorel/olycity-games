@@ -1,0 +1,8 @@
+name = "kubejs/data/ars-expanded/structures/rooms/tardis_grid_gallivanter_abandoned.nbt"
+filename = "tardis_grid_gallivanter_abandoned.nbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/8d1415e81386333f561c336c1ca94ecad8cd547ebe2d8061f8b9c545cfbe32f2"
+hash-format = "sha256"
+hash = "8d1415e81386333f561c336c1ca94ecad8cd547ebe2d8061f8b9c545cfbe32f2"

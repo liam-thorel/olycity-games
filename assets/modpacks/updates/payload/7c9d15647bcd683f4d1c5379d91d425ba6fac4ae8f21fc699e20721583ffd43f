@@ -1,0 +1,24 @@
+{
+  "name": "Brancher avec un but",
+  "category": "patchouli:liam",
+  "icon": "mekanism:basic_energy_cube",
+  "sortnum": 11,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "mekanismgenerators:heat_generator",
+      "title": "Commencer petit",
+      "text": "Un générateur, des câbles et un appareil utile suffisent pour démarrer. Ajoute une réserve d’énergie quand la consommation devient irrégulière."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "mekanism:enrichment_chamber",
+      "title": "Transformer",
+      "text": "Mekanism, Thermal, Industrial Foregoing, Immersive Engineering et Ender IO peuvent se compléter. Choisis une chaîne avant de tout construire."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Les réacteurs ne sont pas des prérequis pour s’amuser. Leurs accidents restent activés : lis les guides et éloigne les expériences dangereuses des pièces où vous vivez."
+    }
+  ]
+}

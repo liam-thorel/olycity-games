@@ -1,0 +1,8 @@
+name = "kubejs/assets/kubejs/patchouli_books/chroniques_olycity/fr_fr/entries/tombe.json"
+filename = "tombe.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/1e0704f7fca5b55506d76ec83aba506b7bcaf2d9636e8975236897f0309da006"
+hash-format = "sha256"
+hash = "1e0704f7fca5b55506d76ec83aba506b7bcaf2d9636e8975236897f0309da006"

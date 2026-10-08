@@ -1,0 +1,30 @@
+{
+  "name": "Les pensionnaires",
+  "category": "patchouli:liam",
+  "icon": "chickens:analyzer",
+  "sortnum": 9,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "chickens:analyzer",
+      "title": "Comparer",
+      "text": "Modern Chickens permet de sélectionner et croiser des poules à ressources. Consulte les parents dans JEI et compare Growth, Gain et Strength."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "chickens:breeder",
+      "title": "Croiser",
+      "text": "Garde une paire des espèces parentes utiles. Ne mets pas tout ton cheptel dans la même expérience."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "chickens:roost",
+      "title": "Produire",
+      "text": "Installe les poules dans le matériel du mod et prévois une collecte."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Produis une ressource dont tu as besoin maintenant. Les abeilles restent une autre piste avec Productive Bees, mais rien ne t’oblige à les recommencer."
+    }
+  ]
+}

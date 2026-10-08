@@ -1,0 +1,7 @@
+{
+  "criteria": {
+    "opened": {
+      "trigger": "lootr:chest_opened"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "À quoi sert l’atelier ?",
+  "category": "patchouli:liam",
+  "icon": "minecraft:iron_ingot",
+  "sortnum": 8,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Vous trouvez un coin où vous installer. Il manque les outils, les murs et presque tout le reste. Liam, choisis une production : fer pour bâtir, nourriture pour repartir ou énergie pour ton atelier."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l:poules)Poules à ressources$(/l)$(br)$(l:create)Mécanique Create$(/l)$(br)$(l:energie)Énergie et machines$(/l)$(br)$(l:drones)Livraisons$(/l)$(br)$(l:liam_stockage)Rangement$(/l)"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Les quêtes vérifient les stocks et équipements demandés. Elles ne prétendent pas reconnaître une usine complète simplement parce qu’un lingot se trouve dans ton inventaire."
+    }
+  ]
+}

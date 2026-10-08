@@ -1,0 +1,16 @@
+{
+  "name": "Chacun son détour",
+  "category": "patchouli:depart",
+  "icon": "minecraft:compass",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Vous pouvez vivre ensemble ou chacun dans votre coin. Les projets sont facultatifs. Une petite maison réussie vaut autant qu’une salle de machines."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Aucun métier n’est imposé. Un élevage peut fournir vos outils ; une usine peut alimenter votre prochaine sortie. Gardez ce qui vous amuse et revenez aux autres pistes plus tard."
+    }
+  ]
+}

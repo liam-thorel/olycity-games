@@ -1,0 +1,16 @@
+{
+  "name": "Retrouver une touche",
+  "category": "patchouli:romain",
+  "icon": "minecraft:book",
+  "sortnum": 16,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Options → Contrôles → Assignation des touches. Controlling permet de chercher un nom et de repérer les conflits."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Repère seulement la carte, le sac et le tri pour commencer. Si deux actions se déclenchent ensemble, change leur touche plutôt que d’essayer de tout retenir."
+    }
+  ]
+}

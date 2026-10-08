@@ -1,0 +1,16 @@
+{
+  "name": "Choisir une route",
+  "category": "patchouli:routes",
+  "icon": "minecraft:ender_pearl",
+  "sortnum": 20,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Aether, Blue Skies, Undergarden et Bumblezone offrent des ambiances différentes. Leur accès et leurs règles se découvrent dans leurs propres guides et les quêtes."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Les itinéraires ne doivent pas être des corvées. Revenez avec un matériau utile, un souvenir ou une histoire. $(l:photographie)Un appareil photo$(/l) peut aussi accompagner la sortie."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Choisir une première piste",
+  "category": "patchouli:romain",
+  "icon": "farmersdelight:cutting_board",
+  "sortnum": 18,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Choisis une seule activité : cuisiner, installer un élevage ou faire tourner une machine Create. Le chapitre des projets propose des étapes courtes."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l:poules)Élevage$(/l)$(br)$(l:create)Mécanique$(/l)$(br)$(l:cuisine)Cuisine$(/l)$(br2)Reviens lire les autres possibilités quand tu en as envie."
+    }
+  ]
+}

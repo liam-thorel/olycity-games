@@ -1,0 +1,22 @@
+{
+  "name": "Un premier toit",
+  "category": "patchouli:refuge",
+  "icon": "minecraft:oak_door",
+  "sortnum": 3,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Avant le palais : un toit, un lit, de la nourriture et un coffre. Explore les alentours avant de choisir où construire grand."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:lantern",
+      "title": "De la lumière",
+      "text": "Éclaire tes pièces et prévois un chemin vers ton point de retour."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Pour aller plus loin : $(l:meteo)la météo$(/l), $(l:rangement)le rangement$(/l), $(l:decoration)la décoration$(/l)."
+    }
+  ]
+}

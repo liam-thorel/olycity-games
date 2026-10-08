@@ -1,0 +1,8 @@
+name = "config/rats-common.toml"
+filename = "rats-common.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/1d06fc665b9512a76b08d18d1589642572b45883736a50e806e7f2b076405f60"
+hash-format = "sha256"
+hash = "1d06fc665b9512a76b08d18d1589642572b45883736a50e806e7f2b076405f60"

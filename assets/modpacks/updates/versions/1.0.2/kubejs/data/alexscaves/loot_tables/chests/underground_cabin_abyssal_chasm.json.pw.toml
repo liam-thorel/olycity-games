@@ -1,0 +1,8 @@
+name = "kubejs/data/alexscaves/loot_tables/chests/underground_cabin_abyssal_chasm.json"
+filename = "underground_cabin_abyssal_chasm.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/36df54e5fbdb814406c2bc28e2bb7f145f10587e198af7d4800982da2ab788c6"
+hash-format = "sha256"
+hash = "36df54e5fbdb814406c2bc28e2bb7f145f10587e198af7d4800982da2ab788c6"

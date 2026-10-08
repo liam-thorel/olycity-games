@@ -1,0 +1,22 @@
+{
+  "name": "Tout retrouver",
+  "category": "patchouli:refuge",
+  "icon": "ae2:terminal",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Commence avec quelques coffres classés et un sac. Functional Storage convient aux grosses réserves ; AE2 et Refined Storage permettent ensuite des réseaux."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "sophisticatedbackpacks:backpack",
+      "title": "Le sac",
+      "text": "Garde nourriture, torches et outils sur toi. Les améliorations du sac se consultent dans JEI."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(l:liam_stockage)Préparer un réseau$(/l) quand ton rangement devient une activité à plein temps."
+    }
+  ]
+}

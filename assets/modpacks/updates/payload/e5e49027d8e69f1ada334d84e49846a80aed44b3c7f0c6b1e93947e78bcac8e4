@@ -1,0 +1,16 @@
+{
+  "name": "Les recettes visibles",
+  "category": "patchouli:romain",
+  "icon": "minecraft:crafting_table",
+  "sortnum": 15,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Romain, tu n’as pas besoin de connaître tous les mods. Ouvre l’inventaire et cherche un objet dans JEI. Survole-le : R affiche sa recette, U ses utilisations, si ces touches sont disponibles."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Tape @create pour afficher ce mod. Commence par un établi, un coffre et des outils. Une recette compliquée peut attendre ; rien ne t’oblige à la faire tout de suite."
+    }
+  ]
+}

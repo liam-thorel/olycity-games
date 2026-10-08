@@ -1,0 +1,8 @@
+name = "config/biomesoplenty/biome_toggles.json"
+filename = "biome_toggles.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/6184168c00c4f45e874e0043304992c67beb5d5306e6150dec4f79dd4dd24b71"
+hash-format = "sha256"
+hash = "6184168c00c4f45e874e0043304992c67beb5d5306e6150dec4f79dd4dd24b71"

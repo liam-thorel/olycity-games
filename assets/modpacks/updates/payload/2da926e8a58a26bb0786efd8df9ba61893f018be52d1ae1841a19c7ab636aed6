@@ -1,0 +1,18 @@
+{
+  "name": "Des chemins étranges",
+  "category": "patchouli:routes",
+  "icon": "hexerei:book_of_shadows",
+  "sortnum": 22,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "hexerei:book_of_shadows",
+      "title": "Hexerei",
+      "text": "Le Livre des ombres guide les premiers pas. Installe un coin de travail et commence par un objectif simple."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Goety, Occultism et Iron’s Spellbooks ouvrent d’autres chemins : rituels, invocations et sorts. Les manuels sont vos références ; le carnet vous aide à choisir un projet sans recopier tous leurs secrets."
+    }
+  ]
+}

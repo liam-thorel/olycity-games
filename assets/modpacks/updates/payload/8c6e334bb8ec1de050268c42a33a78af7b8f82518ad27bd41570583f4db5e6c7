@@ -1,0 +1,22 @@
+{
+  "name": "Deux carnets",
+  "category": "patchouli:depart",
+  "icon": "ftbquests:book",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Ces Chroniques racontent et montrent. Le livre $(bold)Quêtes OLYCITY$() suit les objectifs et distribue les récompenses."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "ftbquests:book",
+      "title": "Les objectifs",
+      "text": "Les objets, succès, visites et combats sont détectés par le jeu. Cliquer ne suffit plus."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(bold)/oly livre$() redonne ce carnet.$(br)$(bold)/oly quetes$() redonne les objectifs.$(br2)Les objets détectés ne sont pas consommés. Une récompense matérielle partagée se récupère une fois par équipe."
+    }
+  ]
+}

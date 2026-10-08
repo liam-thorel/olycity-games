@@ -1,0 +1,29 @@
+{
+  "name": "Garder une trace",
+  "category": "patchouli:archives",
+  "icon": "exposure:camera",
+  "sortnum": 24,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "exposure:camera",
+      "title": "Exposure",
+      "text": "Appareil, pellicule, développement puis photographie : les étapes comptent autant que le souvenir."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "exposure:album",
+      "title": "Votre album",
+      "text": "Une photo de groupe, un paysage, une catastrophe évitée de justesse : choisissez ce qui mérite une place."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "La galerie peut venir plus tard, là où vous habitez. Les nouvelles versions de Minecraft n’ont pas toujours les mêmes fonctions : les recettes de votre pack font foi."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "exposure:camera",
+      "text": "La recette de votre version du pack."
+    }
+  ]
+}

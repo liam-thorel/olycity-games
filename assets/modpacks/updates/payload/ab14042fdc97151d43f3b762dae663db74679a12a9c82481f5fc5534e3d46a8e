@@ -1,0 +1,22 @@
+{
+  "name": "Habiter son coin",
+  "category": "patchouli:refuge",
+  "icon": "handcrafted:oak_chair",
+  "sortnum": 6,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Handcrafted, Chipped et les pièces Create permettent de varier vos constructions. Un lieu commun, un bar ou une galerie photo peuvent venir plus tard, si vous en avez envie."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "exposure:photograph",
+      "title": "Vos propres souvenirs",
+      "text": "Les photographies peuvent devenir la décoration de votre partie, plutôt qu’un décor inventé à votre place."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Les écrans et le navigateur dépendent aussi des services en ligne utilisés. Garde une solution simple pour partager vos vidéos et votre musique."
+    }
+  ]
+}

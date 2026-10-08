@@ -1,0 +1,332 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "",
+  "filename": "04_energie",
+  "group": "",
+  "icon": "mekanism:atomic_disassembler",
+  "id": "297620B4F569D705",
+  "order_index": 3,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "description": [
+        "Pour Liam : produire de l’énergie devient utile lorsqu’elle alimente le traitement des minerais, le stockage et les outils.",
+        "Commence petit. Les réacteurs ne sont pas nécessaires pour ces premières étapes ; ils auront leur propre parcours et leurs protections.",
+        "Objet(s) à obtenir : 16 × minecraft:redstone. La détection ne consomme rien et ne prouve pas à elle seule qu’une usine fonctionne."
+      ],
+      "icon": "mekanism:atomic_disassembler",
+      "id": "58D6CAAD6F1A8915",
+      "rewards": [
+        {
+          "id": "248FD33A96A379D7",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "64542FC0D97D7581",
+          "type": "item",
+          "item": "minecraft:redstone",
+          "count": 16,
+          "consume_items": false
+        }
+      ],
+      "title": "Donner un rôle à l’énergie",
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "dependencies": [
+        "58D6CAAD6F1A8915"
+      ],
+      "description": [
+        "Fabrique le générateur thermique de Mekanism Generators. Consulte son guide pour l’alimentation et les possibilités de fonctionnement passif."
+      ],
+      "icon": "mekanismgenerators:heat_generator",
+      "id": "668A8C05D4D96CE8",
+      "rewards": [
+        {
+          "count": 8,
+          "id": "5463CC4EDC358FF5",
+          "item": "minecraft:coal",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "id": "246282FC9A788845",
+          "item": "mekanismgenerators:heat_generator",
+          "type": "item"
+        }
+      ],
+      "title": "Une première source d’énergie",
+      "x": 2.5,
+      "y": 0.0
+    },
+    {
+      "description": [
+        "Fabrique des câbles universels et relie une source à une machine. Vérifie les faces configurées et les sorties : une machine bien alimentée peut rester bloquée si elle ne reçoit pas ses ingrédients."
+      ],
+      "icon": "mekanism:basic_universal_cable",
+      "id": "028EA5AEB411F25C",
+      "rewards": [
+        {
+          "count": 8,
+          "id": "37F8A80F39623706",
+          "item": "minecraft:redstone",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "id": "39D379196EEB3E61",
+          "item": "mekanism:basic_universal_cable",
+          "type": "item"
+        }
+      ],
+      "title": "Relier les machines",
+      "x": 5.0,
+      "y": 0.0
+    },
+    {
+      "description": [
+        "Fabrique l’infuseur métallurgique. JEI distingue l’objet à traiter et le matériau d’infusion ; commence par une recette simple."
+      ],
+      "icon": "mekanism:metallurgic_infuser",
+      "id": "73775C42CAA8A20E",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "2090CD967EEDAE97",
+          "item": "minecraft:iron_ingot",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "id": "11476F3F49531721",
+          "item": "mekanism:metallurgic_infuser",
+          "type": "item"
+        }
+      ],
+      "title": "Alliages et acier",
+      "x": 7.5,
+      "y": 0.0
+    },
+    {
+      "description": [
+        "Fabrique une chambre d’enrichissement et consulte les recettes de traitement du minerai que vous ramenez.",
+        "Les rendements varient selon l’entrée et la chaîne : ne pars pas du principe que toutes les recettes doublent tous les minerais."
+      ],
+      "icon": "mekanism:enrichment_chamber",
+      "id": "2DD6FDC4B699755C",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "790177AE96DAD998",
+          "item": "minecraft:gold_ingot",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "id": "30F0FAADF2DAEF4B",
+          "item": "mekanism:enrichment_chamber",
+          "type": "item"
+        }
+      ],
+      "title": "Mieux utiliser les minerais",
+      "x": 0.0,
+      "y": 2.5
+    },
+    {
+      "description": [
+        "Voici l’outil dont Skybreacoeur se souvenait. Fabrique-le, recharge-le dans une machine compatible et teste ses modes loin de la base."
+      ],
+      "icon": "mekanism:atomic_disassembler",
+      "id": "27FF17701868086C",
+      "rewards": [
+        {
+          "id": "697DE4E1A8E4534D",
+          "type": "xp",
+          "xp": 35,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "id": "6B6155C16CB55991",
+          "item": "mekanism:atomic_disassembler",
+          "type": "item"
+        }
+      ],
+      "title": "L’Atomic Disassembler",
+      "x": 2.5,
+      "y": 2.5
+    },
+    {
+      "dependencies": [
+        "27FF17701868086C"
+      ],
+      "description": [
+        "Fabrique le Digital Miner. Configure des filtres de minerais et une zone, puis vérifie-les avant de démarrer.",
+        "Un filtre trop large peut viser des blocs que tu veux conserver : utilise une zone de travail éloignée de la base."
+      ],
+      "icon": "mekanism:digital_miner",
+      "id": "1A1E7357B44877D0",
+      "rewards": [
+        {
+          "id": "233E1590FCE70E02",
+          "type": "xp",
+          "xp": 35,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "id": "4DDCAE945A3D564C",
+          "item": "mekanism:digital_miner",
+          "type": "item"
+        }
+      ],
+      "title": "Choisir ce que l’on mine",
+      "x": 5.0,
+      "y": 2.5
+    },
+    {
+      "description": [
+        "Redstone Arsenal propose le marteau Flux-Infused Hammer. Il utilise de l’énergie, pas une recharge obligatoire à la poudre de redstone.",
+        "Fabrique-le et utilise JEI pour trouver une solution de recharge compatible."
+      ],
+      "icon": "redstone_arsenal:flux_hammer",
+      "id": "7627756B879EEB61",
+      "rewards": [
+        {
+          "id": "44B4995EA395F47F",
+          "type": "xp",
+          "xp": 35,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "id": "5CB726FDD76A1EBF",
+          "item": "redstone_arsenal:flux_hammer",
+          "type": "item"
+        }
+      ],
+      "title": "Le marteau rechargeable",
+      "x": 7.5,
+      "y": 2.5
+    },
+    {
+      "description": [
+        "Choisissez votre système de stockage. Refined Storage est déjà présent ; Liam souhaite aussi AE2. Les deux peuvent coexister, mais vous n’avez pas besoin de faire deux réseaux complets dès le départ.",
+        "Valide après avoir choisi une direction. Les guides des deux mods et JEI complètent cette introduction.",
+        "Objet(s) à obtenir : 8 × minecraft:quartz. La détection ne consomme rien et ne prouve pas à elle seule qu’une usine fonctionne."
+      ],
+      "icon": "mekanism:atomic_disassembler",
+      "id": "0DC037EC44834288",
+      "rewards": [
+        {
+          "id": "4C5DCBE946BC8E63",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "396DB1ACC68242A4",
+          "type": "item",
+          "item": "minecraft:quartz",
+          "count": 8,
+          "consume_items": false
+        }
+      ],
+      "title": "Refined Storage ou AE2 ?",
+      "x": 0.0,
+      "y": 5.0
+    },
+    {
+      "description": [
+        "Fabrique un Pity Machine Frame. Industrial Foregoing peut automatiser récoltes, animaux et ressources ; consulte son manuel pour choisir une machine utile."
+      ],
+      "icon": "industrialforegoing:machine_frame_pity",
+      "id": "569B93AF0126874E",
+      "rewards": [
+        {
+          "id": "3B06FCB79795DE03",
+          "type": "xp",
+          "xp": 35,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "id": "344E338C454F1E84",
+          "item": "industrialforegoing:machine_frame_pity",
+          "type": "item"
+        }
+      ],
+      "title": "Une porte vers Industrial Foregoing",
+      "x": 2.5,
+      "y": 5.0
+    },
+    {
+      "description": [
+        "Fabrique un Fluid Extractor. Il extrait du latex de certains bois sans demander lui-même d’énergie électrique.",
+        "Prévois ensuite collecte, tuyaux et traitement ; un extracteur seul ne termine pas toute la chaîne."
+      ],
+      "icon": "industrialforegoing:fluid_extractor",
+      "id": "695FBAB75DC75236",
+      "rewards": [
+        {
+          "count": 8,
+          "id": "27C02E25B65FF77B",
+          "item": "minecraft:oak_log",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "id": "483885B8E92A8712",
+          "item": "industrialforegoing:fluid_extractor",
+          "type": "item"
+        }
+      ],
+      "title": "Produire du latex",
+      "x": 5.0,
+      "y": 5.0
+    }
+  ],
+  "title": "&eÉnergie, minerais et rangement&r"
+}

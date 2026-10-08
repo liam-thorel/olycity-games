@@ -1,0 +1,25 @@
+{
+  "name": "Un autre genre de soirée",
+  "category": "patchouli:archives",
+  "icon": "immersive_melodies:flute",
+  "sortnum": 25,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "immersive_melodies:flute",
+      "title": "Une mélodie",
+      "text": "Les instruments peuvent jouer des morceaux. Commence doucement : être drôle ne demande pas de couvrir toutes les conversations."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "automobility:auto_mechanic_table",
+      "title": "Un circuit plus tard",
+      "text": "Automobility permet de préparer des véhicules et des pistes. Un rallye ou un garage peut devenir un projet du groupe, si vous le choisissez."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "immersive_melodies:flute",
+      "text": "La recette de votre version du pack."
+    }
+  ]
+}

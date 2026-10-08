@@ -1,0 +1,24 @@
+{
+  "name": "Le premier jour",
+  "category": "patchouli:depart",
+  "icon": "minecraft:wooden_pickaxe",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Vous arrivez les poches vides, avec beaucoup d’idées. Aucun village ne vous attend : tout reste à construire. Ce carnet gardera vos découvertes. Pour les mauvaises décisions, on manque encore de papier."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "kubejs:textures/book/depart.png"
+      ],
+      "title": "Tout commence ici",
+      "text": "Un monde à découvrir, pas une ville déjà construite."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Choisis ton premier détour :$(br2)$(l:abri)Trouver un abri$(/l)$(br)$(l:jei)Comprendre les recettes$(/l)$(br)$(l:liam_projets)Ouvrir un atelier$(/l)$(br)$(l:depart_expedition)Partir explorer$(/l)"
+    }
+  ]
+}

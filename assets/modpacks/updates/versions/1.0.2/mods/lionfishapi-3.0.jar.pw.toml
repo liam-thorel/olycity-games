@@ -1,0 +1,8 @@
+name = "mods/lionfishapi-3.0.jar"
+filename = "lionfishapi-3.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/d2fdaf7e9bc53fde7da4a86ab17018a3ed6c16fc2d46de5054e5a83e2bef7871.jar"
+hash-format = "sha256"
+hash = "d2fdaf7e9bc53fde7da4a86ab17018a3ed6c16fc2d46de5054e5a83e2bef7871"

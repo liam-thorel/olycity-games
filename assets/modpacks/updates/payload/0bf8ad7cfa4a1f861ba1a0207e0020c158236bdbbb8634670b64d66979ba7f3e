@@ -1,0 +1,58 @@
+{
+  "name": "Regarder le ciel",
+  "category": "patchouli:refuge",
+  "icon": "weather2:weather_deflector",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Ton toit n’est pas encore terminé. Le ciel, lui, n’attend pas. “Ça va passer à côté” n’est pas un dispositif de protection."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "weather2:weather_deflector",
+      "title": "Le déflecteur",
+      "text": "Place-le près de tes constructions, pas dans un coffre. Les centres de tempêtes concernés sont retirés lorsqu’ils entrent à portée."
+    },
+    {
+      "type": "patchouli:image",
+      "images": [
+        "kubejs:textures/book/deflecteur.png"
+      ],
+      "title": "150 blocs",
+      "text": "Portée configurée autour du déflecteur. Garde une marge et la zone chargée."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Ce n’est pas une bulle d’invulnérabilité. Une grande installation peut demander plusieurs déflecteurs. La pluie reste possible ; les accidents des machines restent possibles aussi."
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "Petit socle",
+      "multiblock": {
+        "pattern": [
+          [
+            "   ",
+            " 0 ",
+            "   "
+          ],
+          [
+            "AAA",
+            "AAA",
+            "AAA"
+          ]
+        ],
+        "mapping": {
+          "0": "weather2:weather_deflector",
+          "A": "minecraft:stone"
+        }
+      },
+      "text": "Aperçu d’un socle simple. Les pierres sont décoratives : elles n’augmentent pas la portée."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "weather2:weather_deflector",
+      "text": "La recette de votre version du pack."
+    }
+  ]
+}

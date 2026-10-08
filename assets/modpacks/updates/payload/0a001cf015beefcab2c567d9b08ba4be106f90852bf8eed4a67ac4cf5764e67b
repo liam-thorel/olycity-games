@@ -1,0 +1,350 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "",
+  "filename": "02_aventure",
+  "group": "",
+  "icon": "minecraft:compass",
+  "id": "1F8E1141FCDBA494",
+  "order_index": 1,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "description": [
+        "Les coffres Lootr donnent un inventaire de loot propre à chaque joueur. Certains barils et variantes n’ont pas l’apparence du coffre jaune classique.",
+        "Étape vérifiée par le jeu : olycity:open_lootr. Le jeu valide la progression ; aucun clic ne suffit."
+      ],
+      "icon": "minecraft:compass",
+      "id": "0F6F28B59EA8AE83",
+      "rewards": [
+        {
+          "count": 16,
+          "id": "450D6CCFF14813FA",
+          "item": "minecraft:torch",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "2DFFBDB91D000B9B",
+          "type": "advancement",
+          "advancement": "olycity:open_lootr"
+        }
+      ],
+      "title": "Un coffre pour chacun",
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "description": [
+        "Choisissez un donjon accessible, emportez nourriture, blocs et bouclier, puis rentrez avec votre butin.",
+        "Dungeon Crawl propose de longs réseaux souterrains ; IDAS propose mines, labyrinthes et pièges ; YUNG améliore les donjons et mines abandonnées.",
+        "Valide après une sortie, pas besoin de tout nettoyer.",
+        "Structure à explorer : dungeoncrawl:dungeon. Le jeu valide la progression ; aucun clic ne suffit."
+      ],
+      "icon": "minecraft:compass",
+      "id": "717BF5AE0B8BEEAF",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "63DA6357B52F46F4",
+          "item": "minecraft:cooked_beef",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "3BE75FC42EFBF132",
+          "type": "structure",
+          "structure": "dungeoncrawl:dungeon"
+        }
+      ],
+      "title": "La première sortie en donjon",
+      "x": 2.5,
+      "y": 0.0
+    },
+    {
+      "description": [
+        "Vaincs trois zombies. Le bouclier est utile, mais tous les ennemis moddés ne se combattent pas de la même façon."
+      ],
+      "icon": "minecraft:compass",
+      "id": "571DFC67296F80A6",
+      "rewards": [
+        {
+          "count": 16,
+          "id": "3252395575AAF16D",
+          "item": "minecraft:arrow",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "minecraft:zombie",
+          "id": "5FB539218389E501",
+          "type": "kill",
+          "value": 3
+        }
+      ],
+      "title": "Garder son calme",
+      "x": 5.0,
+      "y": 0.0
+    },
+    {
+      "description": [
+        "Repère ton portail et évite de partir sans moyen de retour. Les gros donjons du Nether peuvent attendre."
+      ],
+      "icon": "minecraft:compass",
+      "id": "4F3BC8D8CF7D1FDA",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "6973219FC17891F0",
+          "item": "minecraft:bread",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "dimension": "minecraft:the_nether",
+          "id": "77B365F2BB70BCFD",
+          "type": "dimension"
+        }
+      ],
+      "title": "Le Nether",
+      "x": 7.5,
+      "y": 0.0
+    },
+    {
+      "description": [
+        "L’Aether a sa propre progression, des montures et trois types de donjons. Lis son guide et découvre ses équipements."
+      ],
+      "icon": "minecraft:compass",
+      "id": "46051DFAF41CB888",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "2F77C7C32AE29604",
+          "item": "minecraft:bread",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "dimension": "aether:the_aether",
+          "id": "3FEBABF5F82CE4B0",
+          "type": "dimension"
+        }
+      ],
+      "title": "Au-dessus des nuages",
+      "x": 0.0,
+      "y": 2.5
+    },
+    {
+      "description": [
+        "Blue Skies a des équipements et une progression propres. Les outils extérieurs peuvent être moins efficaces ; consulte le guide du mod."
+      ],
+      "icon": "minecraft:compass",
+      "id": "0C8AABCA2B73A77A",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "6ACBB4FED82D3D6F",
+          "item": "minecraft:bread",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "dimension": "blue_skies:everbright",
+          "id": "0789794A6B0222F9",
+          "type": "dimension"
+        }
+      ],
+      "title": "Everbright",
+      "x": 2.5,
+      "y": 2.5
+    },
+    {
+      "description": [
+        "Découvre le second monde de Blue Skies. Prépare la sortie en fonction de ses ennemis plutôt que de foncer sur le premier boss."
+      ],
+      "icon": "minecraft:compass",
+      "id": "73A35DD31F6E0A32",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "1F6E60EF9AE6DA3F",
+          "item": "minecraft:bread",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "dimension": "blue_skies:everdawn",
+          "id": "5525A42A49B75F63",
+          "type": "dimension"
+        }
+      ],
+      "title": "Everdawn",
+      "x": 5.0,
+      "y": 2.5
+    },
+    {
+      "description": [
+        "Découvre les biomes, minerais et structures de l’Undergarden. Pense à noter ton point d’entrée."
+      ],
+      "icon": "minecraft:compass",
+      "id": "1A315D1D38559C35",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "596DD7B42FF4787D",
+          "item": "minecraft:bread",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "dimension": "undergarden:undergarden",
+          "id": "195204FE72266FAC",
+          "type": "dimension"
+        }
+      ],
+      "title": "Sous le monde",
+      "x": 7.5,
+      "y": 2.5
+    },
+    {
+      "description": [
+        "Explore la dimension des abeilles et ses épreuves. Respecte leurs règles et garde un moyen de rentrer."
+      ],
+      "icon": "minecraft:compass",
+      "id": "00C72487C064C963",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "6BD69D479FCB05CE",
+          "item": "minecraft:bread",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "dimension": "the_bumblezone:the_bumblezone",
+          "id": "653176FE3375B050",
+          "type": "dimension"
+        }
+      ],
+      "title": "Chez les abeilles",
+      "x": 0.0,
+      "y": 5.0
+    },
+    {
+      "description": [
+        "Foolish propose un monde étrange et des armes originales. Suis ses indices et garde de la place dans ton sac."
+      ],
+      "icon": "minecraft:compass",
+      "id": "235BEA9D515F0A12",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "6A891A7EE1BC4962",
+          "item": "minecraft:bread",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "dimension": "foolish:stellar_hollow",
+          "id": "44D947D0458149D8",
+          "type": "dimension"
+        }
+      ],
+      "title": "Le Stellar Hollow",
+      "x": 2.5,
+      "y": 5.0
+    },
+    {
+      "description": [
+        "Choisissez un boss adapté à votre équipement dans Cataclysm ou Bosses’Rise. Observez ses attaques et préparez une sortie de secours.",
+        "Cette étape se valide à la main après une victoire : aucun boss précis n’est imposé et aucun objet de progression n’est offert.",
+        "Créature à vaincre : cataclysm:netherite_monstrosity. Le jeu valide la progression ; aucun clic ne suffit."
+      ],
+      "icon": "minecraft:compass",
+      "id": "7BA75C7DED9E96D5",
+      "rewards": [
+        {
+          "id": "69B0302381A5C948",
+          "item": "minecraft:golden_apple",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "5E8B134A3BF629EE",
+          "type": "kill",
+          "entity": "cataclysm:netherite_monstrosity",
+          "value": 1
+        }
+      ],
+      "title": "Un boss, ensemble",
+      "x": 5.0,
+      "y": 5.0
+    },
+    {
+      "description": [
+        "Le TARDIS est un projet à côté de la base : découvrez un extérieur abandonné, gagnez sa confiance et apprenez son fonctionnement.",
+        "Ne le confonds pas avec une simple cabine à placer. Consulte le guide du mod et le mémo TARDIS du pack.",
+        "Valide lorsque vous avez réussi un premier trajet et un retour.",
+        "Objet(s) à obtenir : 1 × tardis:manual. La détection ne consomme rien et ne prouve pas à elle seule qu’une usine fonctionne."
+      ],
+      "icon": "minecraft:compass",
+      "id": "4AB135DD8895ECC1",
+      "rewards": [
+        {
+          "count": 8,
+          "id": "1CF10DB773593C93",
+          "item": "minecraft:paper",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "49607F3555619CDA",
+          "type": "item",
+          "item": "tardis:manual",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Le TARDIS, votre sortie secondaire",
+      "x": 7.5,
+      "y": 5.0
+    }
+  ],
+  "title": "&bPartir à l’aventure&r"
+}

@@ -1,0 +1,217 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "",
+  "filename": "05_vie",
+  "group": "",
+  "icon": "minecraft:enchanted_book",
+  "id": "765213E82E294469",
+  "order_index": 4,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "description": [
+        "Goety pour la magie sombre et les rituels, Hexerei pour la sorcellerie et les balais, Iron’s Spells pour les sorts de combat.",
+        "Choisis une première branche et lis son guide. Tu peux revenir aux autres plus tard.",
+        "Objet(s) à obtenir : 1 × minecraft:book. La détection ne consomme rien et ne prouve pas à elle seule qu’une usine fonctionne."
+      ],
+      "icon": "minecraft:enchanted_book",
+      "id": "6EBC22D0DFF53CB7",
+      "rewards": [],
+      "tasks": [
+        {
+          "id": "0288044D2EFAB0B5",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Choisir sa magie",
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "dependencies": [
+        "6EBC22D0DFF53CB7"
+      ],
+      "description": [
+        "Obtiens le Book of Shadows de Hexerei. Il explique les ingrédients et les pratiques du mod ; suis une première recette avant de te lancer dans les gros projets."
+      ],
+      "icon": "hexerei:book_of_shadows",
+      "id": "4C948DA39527D618",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "0FE5DFA575D48937",
+          "item": "minecraft:glass_bottle",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "id": "76CBDD91FA0D17B1",
+          "item": "hexerei:book_of_shadows",
+          "type": "item"
+        }
+      ],
+      "title": "Le Livre des ombres",
+      "x": 2.5,
+      "y": 0.0
+    },
+    {
+      "dependencies": [
+        "6EBC22D0DFF53CB7"
+      ],
+      "description": [
+        "Fabrique le grimoire relié en fer d’Iron’s Spells. Apprends à équiper un sort et à utiliser le mana avant de partir dans les catacombes."
+      ],
+      "icon": "irons_spellbooks:iron_spell_book",
+      "id": "7F5EE8B2340E2268",
+      "rewards": [
+        {
+          "id": "63A5A01B997E26F2",
+          "type": "xp",
+          "xp": 35,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "id": "2D55259C8DD8DE54",
+          "item": "irons_spellbooks:iron_spell_book",
+          "type": "item"
+        }
+      ],
+      "title": "Un premier grimoire de combat",
+      "x": 5.0,
+      "y": 0.0
+    },
+    {
+      "description": [
+        "Apprivoise un rat et découvre ses commandes. Ses améliorations peuvent l’aider à transporter ou produire des ressources.",
+        "Choisis-lui un rôle simple et vérifie son trajet avant de le laisser travailler.",
+        "Étape vérifiée par le jeu : minecraft:husbandry/tame_an_animal. Le jeu valide la progression ; aucun clic ne suffit."
+      ],
+      "icon": "minecraft:enchanted_book",
+      "id": "684881E7608C1207",
+      "rewards": [
+        {
+          "count": 8,
+          "id": "64F7107130EF78BC",
+          "item": "minecraft:wheat",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "6F09EE3ABA60BED3",
+          "type": "advancement",
+          "advancement": "minecraft:husbandry/tame_an_animal"
+        }
+      ],
+      "title": "Un compagnon, puis un travail",
+      "x": 7.5,
+      "y": 0.0
+    },
+    {
+      "description": [
+        "Modern Chickens et Productive Bees permettent de produire des ressources. Choisissez d’abord une ressource utile, puis découvrez la progression de l’espèce correspondante.",
+        "Valide après avoir installé un premier élevage fonctionnel ; pas besoin de tout collectionner.",
+        "Objet(s) à obtenir : 1 × chickens:roost. La détection ne consomme rien et ne prouve pas à elle seule qu’une usine fonctionne."
+      ],
+      "icon": "minecraft:enchanted_book",
+      "id": "1120C87BE69DA4AE",
+      "rewards": [
+        {
+          "count": 8,
+          "id": "1B9F296C960718CC",
+          "item": "minecraft:wheat_seeds",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "47AE67ECE1626FA6",
+          "type": "item",
+          "item": "chickens:roost",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Un élevage qui sert au groupe",
+      "x": 0.0,
+      "y": 2.5
+    },
+    {
+      "description": [
+        "Fabrique le tonneau de Brewin’ and Chewin’. Regarde les recettes et les températures de fermentation dans JEI.",
+        "Les boissons personnalisées BuzzBall et Vody sont des idées futures, pas des recettes présentes dans cette version."
+      ],
+      "icon": "brewinandchewin:keg",
+      "id": "1D186B0F7B26FFD5",
+      "rewards": [
+        {
+          "count": 8,
+          "id": "6B509C8A3785B50C",
+          "item": "minecraft:glass_bottle",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "id": "3928DB3E204F8ECB",
+          "item": "brewinandchewin:keg",
+          "type": "item"
+        }
+      ],
+      "title": "La brasserie de Liam",
+      "x": 2.5,
+      "y": 2.5
+    },
+    {
+      "description": [
+        "Aménage une pièce pour le groupe avec Handcrafted, Chipped ou les décorations disponibles.",
+        "Ajoute un espace de rangement, un coin musique ou une salle commune. Cette quête est manuelle : chacun a son style.",
+        "Objet(s) à obtenir : 8 × minecraft:lantern. La détection ne consomme rien et ne prouve pas à elle seule qu’une usine fonctionne."
+      ],
+      "icon": "minecraft:enchanted_book",
+      "id": "5F663B968362D290",
+      "rewards": [
+        {
+          "count": 16,
+          "id": "07CDA6E2ACC25F7A",
+          "item": "minecraft:glass",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "1C3A1E97E8C7E3D6",
+          "type": "item",
+          "item": "minecraft:lantern",
+          "count": 8,
+          "consume_items": false
+        }
+      ],
+      "title": "Une maison où l’on a envie de rester",
+      "x": 5.0,
+      "y": 2.5
+    }
+  ],
+  "title": "&dMagie, compagnons et vie à la base&r"
+}

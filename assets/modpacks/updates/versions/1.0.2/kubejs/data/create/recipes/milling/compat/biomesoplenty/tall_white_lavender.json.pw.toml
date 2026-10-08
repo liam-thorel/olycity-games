@@ -1,0 +1,8 @@
+name = "kubejs/data/create/recipes/milling/compat/biomesoplenty/tall_white_lavender.json"
+filename = "tall_white_lavender.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/c117d8f747a05e04478df37a3d4d566b13d07ea0820b01eb1f626235d666a5e0"
+hash-format = "sha256"
+hash = "c117d8f747a05e04478df37a3d4d566b13d07ea0820b01eb1f626235d666a5e0"

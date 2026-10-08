@@ -1,0 +1,24 @@
+{
+  "name": "Des roues aux résultats",
+  "category": "patchouli:liam",
+  "icon": "create:mechanical_press",
+  "sortnum": 10,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "create:water_wheel",
+      "title": "La rotation",
+      "text": "Une roue fournit la rotation. Arbres et engrenages la transportent vers les machines."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "create:mechanical_press",
+      "title": "Une première ligne",
+      "text": "Les plaques servent aux projets suivants. Stocke le résultat et prévois les blocages avant de multiplier les machines."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Connected, Copycats, Interiors, Central Kitchen, Enchantment Industry et Crafts & Additions offrent d’autres pistes. La première production utile reste plus intéressante qu’une vitrine de machines."
+    }
+  ]
+}

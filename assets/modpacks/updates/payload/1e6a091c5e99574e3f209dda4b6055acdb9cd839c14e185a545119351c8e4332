@@ -1,0 +1,18 @@
+{
+  "name": "Échanger ou partager",
+  "category": "patchouli:archives",
+  "icon": "bountiful:bountyboard",
+  "sortnum": 26,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "bountiful:bountyboard",
+      "title": "Des contrats",
+      "text": "Bountiful propose des commandes avec un paiement annoncé. Vérifie le délai et les objets demandés avant d’accepter."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Lightman’s Currency permet des boutiques entre joueurs. Partager gratuitement reste possible. Choisissez ensemble les prix plutôt que de transformer toute la partie en factures."
+    }
+  ]
+}

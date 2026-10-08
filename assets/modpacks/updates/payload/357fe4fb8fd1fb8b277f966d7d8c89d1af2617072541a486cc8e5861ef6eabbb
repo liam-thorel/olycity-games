@@ -1,0 +1,29 @@
+{
+  "name": "Le coin repas",
+  "category": "patchouli:liam",
+  "icon": "farmersdelight:cooking_pot",
+  "sortnum": 14,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "farmersdelight:cooking_pot",
+      "title": "Farmer’s Delight",
+      "text": "Cuisine et cultures alimentent les expéditions. Central Kitchen peut ensuite relier des recettes aux machines Create."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "brewinandchewin:keg",
+      "title": "Brewin’ and Chewin’",
+      "text": "Prépare tes boissons et plats fermentés. Le bar est un projet possible, pas un bâtiment déjà présent."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Dungeon’s Delight et Tide ajoutent d’autres raisons de cuisiner et pêcher. Teste une recette avant de lancer une énorme production."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "farmersdelight:cooking_pot",
+      "text": "La recette de votre version du pack."
+    }
+  ]
+}

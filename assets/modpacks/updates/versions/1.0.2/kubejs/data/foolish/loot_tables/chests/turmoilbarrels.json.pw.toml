@@ -1,0 +1,8 @@
+name = "kubejs/data/foolish/loot_tables/chests/turmoilbarrels.json"
+filename = "turmoilbarrels.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/725317c3da52124e78cfedae78aeb1998bdfae31161694e2e06cfea8527cc92b"
+hash-format = "sha256"
+hash = "725317c3da52124e78cfedae78aeb1998bdfae31161694e2e06cfea8527cc92b"

@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/tags/worldgen/biome/has_structure/bygmohogany_biomes.json"
+filename = "bygmohogany_biomes.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/55cf6287f9f1513d1021e12431eef9b55a4ee563b191510c32e9da9a2af8bfb7"
+hash-format = "sha256"
+hash = "55cf6287f9f1513d1021e12431eef9b55a4ee563b191510c32e9da9a2af8bfb7"

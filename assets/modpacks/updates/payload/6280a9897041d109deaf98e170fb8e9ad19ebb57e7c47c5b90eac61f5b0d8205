@@ -1,0 +1,16 @@
+{
+  "name": "Les objets qui circulent",
+  "category": "patchouli:archives",
+  "icon": "minecraft:book",
+  "sortnum": 27,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Au fil des expéditions, des objets étranges passent de main en main. Les versions des témoins se contredisent. Note ce que tu as vraiment vu ; pour le reste, on verra bien qui ment."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Les reliques OLYCITY se trouvent dans le butin. Les objets puissants restent rares. Ces pages s’enrichiront quand tu en découvriras : aucun cadeau de quête ne remplace cette recherche."
+    }
+  ]
+}

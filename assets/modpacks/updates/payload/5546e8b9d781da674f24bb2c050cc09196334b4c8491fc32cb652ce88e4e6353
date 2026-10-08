@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "placed": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "weather2:weather_deflector"
+      }
+    }
+  }
+}

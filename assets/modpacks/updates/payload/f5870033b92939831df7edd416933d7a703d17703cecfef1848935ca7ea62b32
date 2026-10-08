@@ -1,0 +1,19 @@
+{
+  "name": "Carnet OLYCITY",
+  "subtitle": "Les Chroniques",
+  "landing_text": "Les poches vides. Un monde devant vous. Choisissez votre prochain détour.",
+  "version": "2",
+  "use_resource_pack": true,
+  "book_texture": "patchouli:textures/gui/book_cyan.png",
+  "model": "kubejs:chroniques_olycity",
+  "text_color": "35291F",
+  "header_color": "205F64",
+  "nameplate_color": "E6B75F",
+  "link_color": "246E79",
+  "link_hover_color": "934957",
+  "show_progress": true,
+  "show_toasts": false,
+  "pause_game": false,
+  "text_overflow_mode": "resize",
+  "creative_tab": "minecraft:tools_and_utilities"
+}

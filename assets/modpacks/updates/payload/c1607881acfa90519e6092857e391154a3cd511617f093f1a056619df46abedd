@@ -1,0 +1,202 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "",
+  "filename": "11_village",
+  "group": "",
+  "icon": "minecraft:painting",
+  "id": "57CBE172ACBD515A",
+  "order_index": 10,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "description": [
+        "Découvre /report bug <description> et /report idee <suggestion>. Ne crée pas un faux signalement pour valider : cette quête confirme uniquement que tu connais la commande.",
+        "Objet(s) à obtenir : 1 × minecraft:writable_book. La détection ne consomme rien et ne prouve pas à elle seule qu’une usine fonctionne."
+      ],
+      "icon": "minecraft:book",
+      "id": "4E7EC4EECF2ADBE4",
+      "rewards": [],
+      "tasks": [
+        {
+          "id": "664A02ECE4BE1DFD",
+          "type": "item",
+          "item": "minecraft:writable_book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Le bureau des idées",
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "description": [
+        "Aménage une taverne avec une table, des sièges, de la musique et votre brasserie. Les verres OLYCITY restent des trouvailles rares.",
+        "Objet(s) à obtenir : 16 × minecraft:lantern. La détection ne consomme rien et ne prouve pas à elle seule qu’une usine fonctionne."
+      ],
+      "icon": "minecraft:book",
+      "id": "33907CBE5B2FAD90",
+      "rewards": [
+        {
+          "id": "4F1B7A94D50A6093",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 4,
+          "id": "01BB7DE0982DDEE7",
+          "item": "minecraft:flower_pot",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "3E9A6670ADBAF82E",
+          "type": "item",
+          "item": "minecraft:lantern",
+          "count": 16,
+          "consume_items": false
+        }
+      ],
+      "title": "Une salle pour se retrouver",
+      "x": 2.5,
+      "y": 0.0
+    },
+    {
+      "description": [
+        "Construisez une grande roue commune avec Create, ou une version décorative. Testez la rotation loin des bâtiments avant de l’intégrer chez vous.",
+        "Objet(s) à obtenir : 8 × minecraft:item_frame. La détection ne consomme rien et ne prouve pas à elle seule qu’une usine fonctionne."
+      ],
+      "icon": "minecraft:book",
+      "id": "1D0107AEDED7E5FE",
+      "rewards": [
+        {
+          "id": "54FBFDDD051C2CDD",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 8,
+          "id": "231723566D5C774A",
+          "item": "minecraft:glowstone",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "2E68C46D978E687D",
+          "type": "item",
+          "item": "minecraft:item_frame",
+          "count": 8,
+          "consume_items": false
+        }
+      ],
+      "title": "Le symbole d’OLYCITY",
+      "x": 5.0,
+      "y": 0.0
+    },
+    {
+      "description": [
+        "ISEVEN_7 choisit une recette, construit son premier dispositif et explique son fonctionnement à quelqu’un. Le parcours débutant existant reste disponible.",
+        "Objet(s) à obtenir : 1 × minecraft:book. La détection ne consomme rien et ne prouve pas à elle seule qu’une usine fonctionne."
+      ],
+      "icon": "minecraft:book",
+      "id": "6989C7C8511458E9",
+      "rewards": [],
+      "tasks": [
+        {
+          "id": "3D0D8FA190086351",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Romain guide à son tour",
+      "x": 7.5,
+      "y": 0.0
+    },
+    {
+      "description": [
+        "Construis un espace sûr pour les animaux de Liam. Prévois nourriture, stockage et une sortie sans laisser les compagnons dans les machines.",
+        "Étape vérifiée par le jeu : minecraft:husbandry/tame_an_animal. Le jeu valide la progression ; aucun clic ne suffit."
+      ],
+      "icon": "minecraft:book",
+      "id": "0C6A635B1038A440",
+      "rewards": [
+        {
+          "id": "7E27F943318F1870",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 2,
+          "id": "14703A951F98F83B",
+          "item": "minecraft:lead",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "346327E8C8084AEC",
+          "type": "advancement",
+          "advancement": "minecraft:husbandry/tame_an_animal"
+        }
+      ],
+      "title": "Des pensionnaires bien installés",
+      "x": 0.0,
+      "y": 2.0
+    },
+    {
+      "description": [
+        "Réalise un rituel d’Occultism ou de Goety, puis indique dans ton atelier les ingrédients et son utilité. Choisis une branche au lieu de tout recommencer.",
+        "Objet(s) à obtenir : 1 × occultism:book_of_binding_bound_djinni. La détection ne consomme rien et ne prouve pas à elle seule qu’une usine fonctionne."
+      ],
+      "icon": "minecraft:book",
+      "id": "097034EA835986BC",
+      "rewards": [
+        {
+          "id": "508A86234E26ACB4",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 8,
+          "id": "7C12292752D03331",
+          "item": "minecraft:candle",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "4CD8FDE3FB167A4D",
+          "type": "item",
+          "item": "occultism:book_of_binding_bound_djinni",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Un rituel documenté",
+      "x": 2.5,
+      "y": 2.0
+    }
+  ],
+  "title": "&dVie du installation et grande roue&r"
+}

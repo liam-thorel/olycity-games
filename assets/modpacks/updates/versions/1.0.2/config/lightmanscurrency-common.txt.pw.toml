@@ -1,0 +1,8 @@
+name = "config/lightmanscurrency-common.txt"
+filename = "lightmanscurrency-common.txt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/6c5d090d9ad5908fe197d31068585bcc3d8ec3928184836c8fd3aa45ff4d940e"
+hash-format = "sha256"
+hash = "6c5d090d9ad5908fe197d31068585bcc3d8ec3928184836c8fd3aa45ff4d940e"

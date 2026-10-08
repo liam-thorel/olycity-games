@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/wacky_wares/wacky_wares_store.json"
+filename = "wacky_wares_store.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/0e1711127a40c2e7fa49955625871a88060a9f8197c753896499b959a5ef38e2"
+hash-format = "sha256"
+hash = "0e1711127a40c2e7fa49955625871a88060a9f8197c753896499b959a5ef38e2"

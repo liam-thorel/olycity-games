@@ -1,0 +1,8 @@
+name = "mods/polylib-forge-2000.0.3-build.143.jar"
+filename = "polylib-forge-2000.0.3-build.143.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/abf42a3240b083fc96b9c022a049323cd4130844fcef338e1ab8b2cd6502a04b.jar"
+hash-format = "sha256"
+hash = "abf42a3240b083fc96b9c022a049323cd4130844fcef338e1ab8b2cd6502a04b"

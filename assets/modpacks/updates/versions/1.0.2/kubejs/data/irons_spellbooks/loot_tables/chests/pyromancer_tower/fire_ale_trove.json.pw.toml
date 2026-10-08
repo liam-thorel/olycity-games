@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/pyromancer_tower/fire_ale_trove.json"
+filename = "fire_ale_trove.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/94a28ffddcfaabf4dc9ee7d9447718851696f0f9d9fae2d53de66e75b3b67a23"
+hash-format = "sha256"
+hash = "94a28ffddcfaabf4dc9ee7d9447718851696f0f9d9fae2d53de66e75b3b67a23"

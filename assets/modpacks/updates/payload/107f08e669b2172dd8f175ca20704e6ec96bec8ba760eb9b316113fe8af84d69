@@ -1,0 +1,18 @@
+{
+  "name": "Avant le départ",
+  "category": "patchouli:routes",
+  "icon": "explorerscompass:explorerscompass",
+  "sortnum": 19,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "explorerscompass:explorerscompass",
+      "title": "Trouver une structure",
+      "text": "Explorer’s Compass cherche des structures. Nature’s Compass cherche des biomes. Les objectifs peuvent rester une découverte libre si vous préférez."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Prévois une route de retour et un peu de place dans le sac. Waystones aide à relier vos étapes. Lire les recettes ou les guides n’oblige pas à visiter toutes les dimensions."
+    }
+  ]
+}

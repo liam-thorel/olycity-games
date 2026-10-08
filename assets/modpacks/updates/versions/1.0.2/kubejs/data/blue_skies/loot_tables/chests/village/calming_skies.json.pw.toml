@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/village/calming_skies.json"
+filename = "calming_skies.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/9a3e996536026afc5e087fbe0c5ae309b4f541eb5de1b039b4cce4a8055ddc93"
+hash-format = "sha256"
+hash = "9a3e996536026afc5e087fbe0c5ae309b4f541eb5de1b039b4cce4a8055ddc93"

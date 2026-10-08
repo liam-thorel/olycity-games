@@ -1,0 +1,8 @@
+name = "kubejs/assets/kubejs/models/item/poisson_chantier.json"
+filename = "poisson_chantier.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/d50df8aa85c2a2a6a1700af459413d059ee215fca74de187082f6a40415e4ed6"
+hash-format = "sha256"
+hash = "d50df8aa85c2a2a6a1700af459413d059ee215fca74de187082f6a40415e4ed6"

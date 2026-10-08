@@ -1,0 +1,19 @@
+{
+  "name": "Une visée familière",
+  "category": "patchouli:archives",
+  "icon": "kubejs:longue_vue_neron",
+  "sortnum": 28,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "kubejs:longue_vue_neron",
+      "title": "La longue vue",
+      "text": "Neron, un ennemi tout près et une trajectoire de souris mémorable. Cette fois, prends le temps de viser."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Les contrôles et les effets de l’objet restent indiqués dans son infobulle. Les Chroniques ne changent ni sa mécanique ni son délai."
+    }
+  ],
+  "advancement": "olycity:find_neron"
+}

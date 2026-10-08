@@ -1,0 +1,8 @@
+name = "kubejs/data/the_bumblezone/loot_tables/structures/subway_end.json"
+filename = "subway_end.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/30c6af81bb99e5211a4fd1db01ab400e439f4b12ff5f223648969d9b92311db4"
+hash-format = "sha256"
+hash = "30c6af81bb99e5211a4fd1db01ab400e439f4b12ff5f223648969d9b92311db4"

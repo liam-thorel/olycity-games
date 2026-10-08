@@ -1,0 +1,8 @@
+name = "config/alexsmobs/guster_spawns.json"
+filename = "guster_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/263974f58a4b48df633648246820681745da9f9e16f30fefe6e07f576251dfb1"
+hash-format = "sha256"
+hash = "263974f58a4b48df633648246820681745da9f9e16f30fefe6e07f576251dfb1"

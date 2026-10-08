@@ -1,0 +1,24 @@
+{
+  "name": "La réserve grandit",
+  "category": "patchouli:liam",
+  "icon": "ae2:crafting_terminal",
+  "sortnum": 12,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "ae2:crafting_terminal",
+      "title": "Le réseau",
+      "text": "AE2 réunit stockage et automatisation. Refined Storage constitue une autre approche. Inutile de construire les deux pour valider toutes les possibilités."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "entangled:block",
+      "title": "Un autre accès",
+      "text": "Entangled expose l’accès d’un autre bloc. Commence sur un coffre simple avant de l’utiliser avec une machine complexe."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Garde une réserve utile, pas seulement un compteur énorme. Les projets des quêtes ne suppriment pas les matériaux dont vous avez besoin pour construire."
+    }
+  ]
+}

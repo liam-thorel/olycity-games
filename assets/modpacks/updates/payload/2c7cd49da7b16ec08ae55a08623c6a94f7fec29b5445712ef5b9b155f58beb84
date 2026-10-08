@@ -1,0 +1,16 @@
+{
+  "name": "Les ruines",
+  "category": "patchouli:routes",
+  "icon": "minecraft:torch",
+  "sortnum": 21,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Dungeon Crawl, IDAS et les structures YUNG offrent plusieurs styles d’exploration. Les nouvelles forteresses et strongholds enrichissent aussi les routes vers le Nether et l’End."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Les coffres Lootr sont personnels, mais tous les conteneurs ne sont pas du butin à convertir : certains appartiennent à une mécanique du mod. Ne vide pas les réserves d’un ami en croyant explorer un donjon."
+    }
+  ]
+}
