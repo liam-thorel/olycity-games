@@ -1,7 +1,7 @@
 .modpacks-section,.modpack-install { scroll-margin-top:88px; }
 .modpack-card { display:grid; grid-template-columns:200px minmax(0,1fr); overflow:hidden; border:1px solid var(--border2); border-radius:var(--radius); background:var(--surf); }
 .modpack-art { display:flex; flex-direction:column; justify-content:center; align-items:center; gap:6px; padding:26px; background:linear-gradient(145deg,#192f23,#101a16); border-right:1px solid var(--border); }
-.modpack-art svg { width:116px; height:116px; }
+.modpack-art svg,.modpack-art img { width:116px; height:116px; }
 .modpack-art span { margin-top:8px; font:700 18px var(--font-display); letter-spacing:2px; color:#b8d5b4; }
 .modpack-art small { color:#92b292; font-weight:700; letter-spacing:3px; }
 .modpack-body { display:grid; gap:14px; padding:24px; min-width:0; }
@@ -27,4 +27,4 @@
 .modpack-guide p { margin-top:12px; color:var(--muted); font-size:13px; }
 .modpack-guide a { text-underline-offset:3px; color:#b8d5b4; }
 .modpack-caveat { padding:14px 24px; border-top:1px solid var(--border); color:var(--muted); font-size:12px; }
-@media(max-width:600px) { .modpack-card { grid-template-columns:1fr; } .modpack-art { flex-direction:row; justify-content:flex-start; gap:16px; padding:16px 20px; border-right:0; border-bottom:1px solid var(--border); } .modpack-art svg { width:48px; height:48px; } .modpack-art span { margin:0; } .modpack-body { padding:20px; } .modpack-guide { grid-template-columns:1fr; gap:20px; padding:4px 20px 20px; } .modpack-actions { flex-direction:column; } .modpack-download { flex-wrap:wrap; gap:4px 10px; } }
+@media(max-width:600px) { .modpack-card { grid-template-columns:1fr; } .modpack-art { flex-direction:row; justify-content:flex-start; gap:16px; padding:16px 20px; border-right:0; border-bottom:1px solid var(--border); } .modpack-art svg,.modpack-art img { width:48px; height:48px; } .modpack-art span { margin:0; } .modpack-body { padding:20px; } .modpack-guide { grid-template-columns:1fr; gap:20px; padding:4px 20px 20px; } .modpack-actions { flex-direction:column; } .modpack-download { flex-wrap:wrap; gap:4px 10px; } }

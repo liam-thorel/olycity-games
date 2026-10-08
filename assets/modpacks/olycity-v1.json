@@ -1,12 +1,21 @@
 {
   "name": "OLYCITY V1",
-  "releaseTag": "olycity-v1",
-  "sourceFilename": "OLYCITY-PACK-Test-Mathis.zip",
-  "sourceVersion": "2026.10.07-test-essential",
+  "releaseTag": "olycity-v1-20261008",
+  "sourceFilename": "OLYCITY V1.zip",
+  "sourceVersion": "1.0.0",
   "minecraft": "1.20.1",
   "loader": "forge-47.4.10",
-  "modCount": 156,
-  "bytes": 1206308981,
-  "sha256": "357c1abfeb1c2a2fdc574ec55c99fe949edf96eb7391a324d73cb751d922a97b",
-  "downloadUrl": "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1/OLYCITY-PACK-Test-Mathis.zip"
+  "modCount": 165,
+  "bytes": 1167042059,
+  "sha256": "3ef2ae545fa7902568749522badc11a9540cc2d085f543c06ca848470285a79d",
+  "downloadUrl": "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1-20261008/OLYCITY.V1.zip",
+  "essential": false,
+  "server": {
+    "sourceFilename": "OLYCITY V1 - Serveur.zip",
+    "modCount": 140,
+    "bytes": 1207558505,
+    "sha256": "f7d08ee11c780ed105b01939eab9acddee82ce0542c90312c59a04505a5642bd",
+    "downloadUrl": "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1-20261008/OLYCITY.V1.-.Serveur.zip",
+    "guideUrl": "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1-20261008/Instructions-Romain-OLYCITY-V1.md"
+  }
 }

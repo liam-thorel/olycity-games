@@ -9,11 +9,14 @@ test('OLYCITY V1 has a static download and installation guide independent of Fir
   assert.match(page,/href="#modpacks"/);
   assert.match(page,/id="modpack-install"/);
   assert.ok(page.includes(`href="${pack.downloadUrl}"`));
-  assert.equal(pack.modCount,156);
+  assert.ok(pack.modCount > 150);
+  assert.ok(page.includes(`<strong>${pack.modCount}</strong> mods`));
+  assert.ok(page.includes(pack.server.downloadUrl));
+  assert.equal(pack.essential,false);
   assert.match(pack.sha256,/^[a-f0-9]{64}$/);
   assert.ok(pack.bytes < 2 * 1024 ** 3);
   assert.ok(page.includes(`Forge <strong>${pack.loader.replace('forge-','')}</strong>`));
-  assert.match(page,/Version de test/);
-  assert.match(page,/n’ont pas été testés ici/);
-  assert.match(page,/modpacks\.css\?v=20261007-v1/);
+  assert.match(page,/Version V1/);
+  assert.match(page,/Rejoindre le serveur OLYCITY/);
+  assert.match(page,/modpacks\.css\?v=20261008-v1/);
 });
