@@ -3,6 +3,6 @@ filename = "olycity_tardis.js"
 side = "both"
 
 [download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/e4c4f5f3b7edfe635be229ef3afe5b2cf951a8a95f89319f69271f3738c4c67d"
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/35063c85ef02b60b0b8d5940e51dc8a51653c5cd3fdfe83e959babc9aab7cd84"
 hash-format = "sha256"
-hash = "e4c4f5f3b7edfe635be229ef3afe5b2cf951a8a95f89319f69271f3738c4c67d"
+hash = "35063c85ef02b60b0b8d5940e51dc8a51653c5cd3fdfe83e959babc9aab7cd84"
