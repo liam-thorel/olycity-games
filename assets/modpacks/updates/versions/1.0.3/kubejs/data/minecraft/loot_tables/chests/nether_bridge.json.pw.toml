@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/nether_bridge.json"
+filename = "nether_bridge.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/a1fa774914e80139f86d084fe5097ce1b4ed1879580b9ec5cdf23791ed9e08a7"
+hash-format = "sha256"
+hash = "a1fa774914e80139f86d084fe5097ce1b4ed1879580b9ec5cdf23791ed9e08a7"

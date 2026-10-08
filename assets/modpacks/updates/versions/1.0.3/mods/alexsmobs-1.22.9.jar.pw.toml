@@ -1,0 +1,8 @@
+name = "mods/alexsmobs-1.22.9.jar"
+filename = "alexsmobs-1.22.9.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/16bc5bcc19db9029c24f951346ec71098e6f5b0afef96e61894a2e9407aad37c.jar"
+hash-format = "sha256"
+hash = "16bc5bcc19db9029c24f951346ec71098e6f5b0afef96e61894a2e9407aad37c"

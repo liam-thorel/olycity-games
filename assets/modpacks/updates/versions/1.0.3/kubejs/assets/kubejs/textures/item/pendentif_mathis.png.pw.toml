@@ -1,0 +1,8 @@
+name = "kubejs/assets/kubejs/textures/item/pendentif_mathis.png"
+filename = "pendentif_mathis.png"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/592cfa2f890dc41c9dd8e16329bfd465678ba37e416321bb5a6f79e866d83f8e"
+hash-format = "sha256"
+hash = "592cfa2f890dc41c9dd8e16329bfd465678ba37e416321bb5a6f79e866d83f8e"

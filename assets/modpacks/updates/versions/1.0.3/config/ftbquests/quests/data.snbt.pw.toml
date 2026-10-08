@@ -1,0 +1,8 @@
+name = "config/ftbquests/quests/data.snbt"
+filename = "data.snbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/ba0f751fed8ba19767d31fde9075e55e85fa43c867387c1d2d959a1a94df9d14"
+hash-format = "sha256"
+hash = "ba0f751fed8ba19767d31fde9075e55e85fa43c867387c1d2d959a1a94df9d14"

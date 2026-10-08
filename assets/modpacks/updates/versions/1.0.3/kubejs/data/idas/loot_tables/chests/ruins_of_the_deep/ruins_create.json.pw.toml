@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/ruins_of_the_deep/ruins_create.json"
+filename = "ruins_create.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/d92843888559434211345f6711f77834bd5d87019720e075424dec7d4d2e4acf"
+hash-format = "sha256"
+hash = "d92843888559434211345f6711f77834bd5d87019720e075424dec7d4d2e4acf"

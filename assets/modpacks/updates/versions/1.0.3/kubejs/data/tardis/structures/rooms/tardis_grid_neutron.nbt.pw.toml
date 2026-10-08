@@ -1,0 +1,8 @@
+name = "kubejs/data/tardis/structures/rooms/tardis_grid_neutron.nbt"
+filename = "tardis_grid_neutron.nbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/e0253490909fc2e3ca2d65584892633304ddbcb62b4f9c1e13dc2ef0c25e23cc"
+hash-format = "sha256"
+hash = "e0253490909fc2e3ca2d65584892633304ddbcb62b4f9c1e13dc2ef0c25e23cc"

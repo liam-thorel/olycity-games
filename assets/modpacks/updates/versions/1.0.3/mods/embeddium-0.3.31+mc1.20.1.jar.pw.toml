@@ -1,0 +1,8 @@
+name = "mods/embeddium-0.3.31+mc1.20.1.jar"
+filename = "embeddium-0.3.31+mc1.20.1.jar"
+side = "client"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/eed3d1325f2acc2fd4e69bb495e5ccb91d962126ac5330f0582ebc2a3daf47fb.jar"
+hash-format = "sha256"
+hash = "eed3d1325f2acc2fd4e69bb495e5ccb91d962126ac5330f0582ebc2a3daf47fb"

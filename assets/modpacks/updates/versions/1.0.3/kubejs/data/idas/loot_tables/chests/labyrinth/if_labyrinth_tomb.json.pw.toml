@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/labyrinth/if_labyrinth_tomb.json"
+filename = "if_labyrinth_tomb.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/d10756e2c7c41cc9322032513300c8f7786c9b719c2c06d2bde0574efe139173"
+hash-format = "sha256"
+hash = "d10756e2c7c41cc9322032513300c8f7786c9b719c2c06d2bde0574efe139173"

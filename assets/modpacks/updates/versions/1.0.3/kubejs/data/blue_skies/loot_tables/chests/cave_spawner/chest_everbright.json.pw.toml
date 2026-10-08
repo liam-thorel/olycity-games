@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/cave_spawner/chest_everbright.json"
+filename = "chest_everbright.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/bc37e5c562c2b00e0c98fda414e76956924e5b7c78c654d73ed076607c266d35"
+hash-format = "sha256"
+hash = "bc37e5c562c2b00e0c98fda414e76956924e5b7c78c654d73ed076607c266d35"

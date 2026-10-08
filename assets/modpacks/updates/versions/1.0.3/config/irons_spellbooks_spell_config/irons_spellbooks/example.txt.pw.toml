@@ -1,0 +1,8 @@
+name = "config/irons_spellbooks_spell_config/irons_spellbooks/example.txt"
+filename = "example.txt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/1e7bf1cd347b96620ae018f12148107b3a4b9b75e7a425f1be0a267a7a3c33fc"
+hash-format = "sha256"
+hash = "1e7bf1cd347b96620ae018f12148107b3a4b9b75e7a425f1be0a267a7a3c33fc"

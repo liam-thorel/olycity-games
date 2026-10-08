@@ -1,0 +1,8 @@
+name = "kubejs/data/goety/loot_tables/chests/ruined_monastery_alchemy.json"
+filename = "ruined_monastery_alchemy.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/bc142db2e1ddc12071ec09c8775915ed4034254571af4d09957a528b39e4cd24"
+hash-format = "sha256"
+hash = "bc142db2e1ddc12071ec09c8775915ed4034254571af4d09957a528b39e4cd24"

@@ -1,0 +1,8 @@
+name = "kubejs/data/goety/loot_tables/chests/graveyard_loot.json"
+filename = "graveyard_loot.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/9f67a7dbdd02c141c07f4874719f488f02fde789e41177888c1d88658ef8ed39"
+hash-format = "sha256"
+hash = "9f67a7dbdd02c141c07f4874719f488f02fde789e41177888c1d88658ef8ed39"

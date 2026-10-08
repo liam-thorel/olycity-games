@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/pyromancer_tower/pyromancer_basic_storage.json"
+filename = "pyromancer_basic_storage.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/1704b6dc0015eca1e89880080f84b64d2bdb91d408a3f8fb52c1cec414c6007a"
+hash-format = "sha256"
+hash = "1704b6dc0015eca1e89880080f84b64d2bdb91d408a3f8fb52c1cec414c6007a"

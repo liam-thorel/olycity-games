@@ -1,0 +1,8 @@
+name = "kubejs/data/the_bumblezone/loot_tables/structures/pirate_ship/captain.json"
+filename = "captain.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/fe9980d90e4f0c5aed23592d13d822e83bb5d47b54d767aa9090d1e06460dcab"
+hash-format = "sha256"
+hash = "fe9980d90e4f0c5aed23592d13d822e83bb5d47b54d767aa9090d1e06460dcab"

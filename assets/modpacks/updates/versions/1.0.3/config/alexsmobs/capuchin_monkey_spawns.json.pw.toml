@@ -1,0 +1,8 @@
+name = "config/alexsmobs/capuchin_monkey_spawns.json"
+filename = "capuchin_monkey_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/83b68d395236771ae9276f48b2988cfa9eb65e14dc41531b37a6b4e77c64859a"
+hash-format = "sha256"
+hash = "83b68d395236771ae9276f48b2988cfa9eb65e14dc41531b37a6b4e77c64859a"

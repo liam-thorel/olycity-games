@@ -1,0 +1,8 @@
+name = "kubejs/data/curios/entities/olycity_players.json"
+filename = "olycity_players.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/db3e65d54c0ad3d3feebbc0f1cad121e734ed342d4eae96e3037c199e1cb27eb"
+hash-format = "sha256"
+hash = "db3e65d54c0ad3d3feebbc0f1cad121e734ed342d4eae96e3037c199e1cb27eb"

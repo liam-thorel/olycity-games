@@ -1,0 +1,8 @@
+name = "patchouli_books/chroniques_olycity/en_us/entries/archive_liam.json"
+filename = "archive_liam.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/bf097b96c9806f4070726896d0510601cf1826de8b998ffe3a72e3082e7eb44a"
+hash-format = "sha256"
+hash = "bf097b96c9806f4070726896d0510601cf1826de8b998ffe3a72e3082e7eb44a"

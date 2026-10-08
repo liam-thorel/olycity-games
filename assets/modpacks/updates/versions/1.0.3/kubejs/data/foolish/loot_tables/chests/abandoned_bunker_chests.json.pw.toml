@@ -1,0 +1,8 @@
+name = "kubejs/data/foolish/loot_tables/chests/abandoned_bunker_chests.json"
+filename = "abandoned_bunker_chests.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/827c48c605cb7a0a858caa471abf6af05e77ec3f796e9aefb2f744ce57d86684"
+hash-format = "sha256"
+hash = "827c48c605cb7a0a858caa471abf6af05e77ec3f796e9aefb2f744ce57d86684"

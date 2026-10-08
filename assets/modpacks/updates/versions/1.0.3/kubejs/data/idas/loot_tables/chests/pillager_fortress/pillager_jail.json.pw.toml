@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/pillager_fortress/pillager_jail.json"
+filename = "pillager_jail.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/5810ef35335041e2643ce9d6ad9aaceb58719739a437490e6cd9e82f9c2767d5"
+hash-format = "sha256"
+hash = "5810ef35335041e2643ce9d6ad9aaceb58719739a437490e6cd9e82f9c2767d5"

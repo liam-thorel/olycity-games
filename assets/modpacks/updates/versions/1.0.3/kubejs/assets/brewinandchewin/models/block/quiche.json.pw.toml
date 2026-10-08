@@ -1,0 +1,8 @@
+name = "kubejs/assets/brewinandchewin/models/block/quiche.json"
+filename = "quiche.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/9be3b7a0e995b4f9aa77e5ac97b61189cf9bff5fbc3e63988ede1294a53d42c4"
+hash-format = "sha256"
+hash = "9be3b7a0e995b4f9aa77e5ac97b61189cf9bff5fbc3e63988ede1294a53d42c4"

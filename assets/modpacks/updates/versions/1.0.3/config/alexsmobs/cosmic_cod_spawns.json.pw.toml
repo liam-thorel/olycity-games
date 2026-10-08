@@ -1,0 +1,8 @@
+name = "config/alexsmobs/cosmic_cod_spawns.json"
+filename = "cosmic_cod_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/aed14e990ed38ee78214b1ea4a15e06bca1b8d098e1e440596be9ab14e4403b8"
+hash-format = "sha256"
+hash = "aed14e990ed38ee78214b1ea4a15e06bca1b8d098e1e440596be9ab14e4403b8"

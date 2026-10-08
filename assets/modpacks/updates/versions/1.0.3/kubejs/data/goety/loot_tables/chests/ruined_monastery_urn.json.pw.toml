@@ -1,0 +1,8 @@
+name = "kubejs/data/goety/loot_tables/chests/ruined_monastery_urn.json"
+filename = "ruined_monastery_urn.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/88d53b6dfb84c7e17f10b4996bd504e78a23b2ac09aec4d8741b0087ddccd7cd"
+hash-format = "sha256"
+hash = "88d53b6dfb84c7e17f10b4996bd504e78a23b2ac09aec4d8741b0087ddccd7cd"

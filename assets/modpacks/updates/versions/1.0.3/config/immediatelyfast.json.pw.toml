@@ -1,0 +1,8 @@
+name = "config/immediatelyfast.json"
+filename = "immediatelyfast.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/f2b7f219198f0a911d04b09f545f2c1256e8d114951443924878dc10963e16aa"
+hash-format = "sha256"
+hash = "f2b7f219198f0a911d04b09f545f2c1256e8d114951443924878dc10963e16aa"

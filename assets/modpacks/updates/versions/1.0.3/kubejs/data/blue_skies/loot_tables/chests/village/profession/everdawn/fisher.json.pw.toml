@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/village/profession/everdawn/fisher.json"
+filename = "fisher.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/16e62eb063122aa79e67227e5357dcbda1790fdc49bd53011428db923659f0e4"
+hash-format = "sha256"
+hash = "16e62eb063122aa79e67227e5357dcbda1790fdc49bd53011428db923659f0e4"

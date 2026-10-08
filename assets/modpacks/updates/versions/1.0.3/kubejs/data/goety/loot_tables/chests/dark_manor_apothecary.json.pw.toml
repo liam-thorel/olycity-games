@@ -1,0 +1,8 @@
+name = "kubejs/data/goety/loot_tables/chests/dark_manor_apothecary.json"
+filename = "dark_manor_apothecary.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/0440a211d0abaef4d47f4bd8bc60932522f60588f44e9bd1bf183b447417fa70"
+hash-format = "sha256"
+hash = "0440a211d0abaef4d47f4bd8bc60932522f60588f44e9bd1bf183b447417fa70"

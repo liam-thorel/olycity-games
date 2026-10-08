@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/tags/worldgen/biome/has_structure/byg_redwood_biomes.json"
+filename = "byg_redwood_biomes.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/e99c8a8d8e638c1d36f05705235897a09889f2b9f044f480ca5b548201f94503"
+hash-format = "sha256"
+hash = "e99c8a8d8e638c1d36f05705235897a09889f2b9f044f480ca5b548201f94503"

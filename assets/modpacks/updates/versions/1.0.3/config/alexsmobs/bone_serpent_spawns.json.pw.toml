@@ -1,0 +1,8 @@
+name = "config/alexsmobs/bone_serpent_spawns.json"
+filename = "bone_serpent_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/47eef91378d3d6455a911d58cc3afdbfcdda7fd49968a7921b22620faa8ff672"
+hash-format = "sha256"
+hash = "47eef91378d3d6455a911d58cc3afdbfcdda7fd49968a7921b22620faa8ff672"

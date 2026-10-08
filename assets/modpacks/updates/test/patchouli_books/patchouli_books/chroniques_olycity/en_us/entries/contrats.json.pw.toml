@@ -1,0 +1,8 @@
+name = "patchouli_books/chroniques_olycity/en_us/entries/contrats.json"
+filename = "contrats.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/1e6a091c5e99574e3f209dda4b6055acdb9cd839c14e185a545119351c8e4332"
+hash-format = "sha256"
+hash = "1e6a091c5e99574e3f209dda4b6055acdb9cd839c14e185a545119351c8e4332"

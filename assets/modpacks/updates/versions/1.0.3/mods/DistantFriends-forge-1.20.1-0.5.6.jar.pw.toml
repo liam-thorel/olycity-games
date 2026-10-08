@@ -1,0 +1,8 @@
+name = "mods/DistantFriends-forge-1.20.1-0.5.6.jar"
+filename = "DistantFriends-forge-1.20.1-0.5.6.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/3246e3a5487c5118e0678bc2756da2ccb36e1c2588dce92d8429b943fef825c2.jar"
+hash-format = "sha256"
+hash = "3246e3a5487c5118e0678bc2756da2ccb36e1c2588dce92d8429b943fef825c2"

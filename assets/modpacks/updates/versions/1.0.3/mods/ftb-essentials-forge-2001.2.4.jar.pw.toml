@@ -1,0 +1,8 @@
+name = "mods/ftb-essentials-forge-2001.2.4.jar"
+filename = "ftb-essentials-forge-2001.2.4.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/e0022bfe29dc10e373947701dae1bc4ce75ee15fe21f6d89269677fbb9aebf73.jar"
+hash-format = "sha256"
+hash = "e0022bfe29dc10e373947701dae1bc4ce75ee15fe21f6d89269677fbb9aebf73"

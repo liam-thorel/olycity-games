@@ -1,0 +1,8 @@
+name = "mods/createbigcannons-5.11.4-mc.1.20.1-forge.jar"
+filename = "createbigcannons-5.11.4-mc.1.20.1-forge.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/11845f0d79a9014977f667a57b14d0527928bee8b66bc6b50bedcc29ee81878a.jar"
+hash-format = "sha256"
+hash = "11845f0d79a9014977f667a57b14d0527928bee8b66bc6b50bedcc29ee81878a"

@@ -1,0 +1,8 @@
+name = "config/simplehats-common.toml"
+filename = "simplehats-common.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/64f3f55844543498dd12d3deefdfba679ff37bb750233032a0c3e88a049c254d"
+hash-format = "sha256"
+hash = "64f3f55844543498dd12d3deefdfba679ff37bb750233032a0c3e88a049c254d"

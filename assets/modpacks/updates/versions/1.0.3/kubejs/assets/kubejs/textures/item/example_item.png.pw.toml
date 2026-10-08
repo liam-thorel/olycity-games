@@ -1,0 +1,8 @@
+name = "kubejs/assets/kubejs/textures/item/example_item.png"
+filename = "example_item.png"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/45a5f56eba6066ad05c70988a32b72c50cfeb6e35857739bd582007011ea002b"
+hash-format = "sha256"
+hash = "45a5f56eba6066ad05c70988a32b72c50cfeb6e35857739bd582007011ea002b"

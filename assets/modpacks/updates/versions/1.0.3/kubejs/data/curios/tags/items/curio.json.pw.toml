@@ -1,0 +1,8 @@
+name = "kubejs/data/curios/tags/items/curio.json"
+filename = "curio.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/c4473505ba5ffa4ef17cafb9a0c5e78567cfb76d1d6fabeca2ee9ed14ff131de"
+hash-format = "sha256"
+hash = "c4473505ba5ffa4ef17cafb9a0c5e78567cfb76d1d6fabeca2ee9ed14ff131de"

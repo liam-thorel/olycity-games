@@ -1,0 +1,8 @@
+name = "kubejs/data/foolish/loot_tables/chests/glacial_temple_chest.json"
+filename = "glacial_temple_chest.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/e9972696747a6df2619e14cd62b7cdf7af75a112e32a1f50a975509da2511383"
+hash-format = "sha256"
+hash = "e9972696747a6df2619e14cd62b7cdf7af75a112e32a1f50a975509da2511383"

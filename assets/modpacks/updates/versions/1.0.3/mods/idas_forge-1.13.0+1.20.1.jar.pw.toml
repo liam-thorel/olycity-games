@@ -1,0 +1,8 @@
+name = "mods/idas_forge-1.13.0+1.20.1.jar"
+filename = "idas_forge-1.13.0+1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/5cd376424034f824c06361a31d4941fc1c9e2135613efbd2e69e69457cfc4e3b.jar"
+hash-format = "sha256"
+hash = "5cd376424034f824c06361a31d4941fc1c9e2135613efbd2e69e69457cfc4e3b"

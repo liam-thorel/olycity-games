@@ -1,0 +1,8 @@
+name = "kubejs/assets/brewinandchewin/models/block/coaster_tray.json"
+filename = "coaster_tray.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/7d355423ec4b7b57e2832baa9841d532217aaf8d81854f9f836985ff0d660662"
+hash-format = "sha256"
+hash = "7d355423ec4b7b57e2832baa9841d532217aaf8d81854f9f836985ff0d660662"

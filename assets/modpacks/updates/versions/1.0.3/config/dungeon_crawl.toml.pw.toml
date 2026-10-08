@@ -1,0 +1,8 @@
+name = "config/dungeon_crawl.toml"
+filename = "dungeon_crawl.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/ef72b74a2be9ed2a94911f9f2b43ae27b25f0e6ed9713207af44cc881c1f81c6"
+hash-format = "sha256"
+hash = "ef72b74a2be9ed2a94911f9f2b43ae27b25f0e6ed9713207af44cc881c1f81c6"

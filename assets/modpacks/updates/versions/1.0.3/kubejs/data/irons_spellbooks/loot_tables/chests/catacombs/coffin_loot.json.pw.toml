@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/catacombs/coffin_loot.json"
+filename = "coffin_loot.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/b48e8f289ad44cc0e34d8c9183a391a9c093db362aebef45d24ea6574024fc45"
+hash-format = "sha256"
+hash = "b48e8f289ad44cc0e34d8c9183a391a9c093db362aebef45d24ea6574024fc45"

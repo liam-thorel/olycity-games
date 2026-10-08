@@ -1,0 +1,8 @@
+name = "config/transition.json"
+filename = "transition.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/60420a41571a4658b91babfa2b47d6fefb7c1766eeea969f51ff98ab34c2431c"
+hash-format = "sha256"
+hash = "60420a41571a4658b91babfa2b47d6fefb7c1766eeea969f51ff98ab34c2431c"

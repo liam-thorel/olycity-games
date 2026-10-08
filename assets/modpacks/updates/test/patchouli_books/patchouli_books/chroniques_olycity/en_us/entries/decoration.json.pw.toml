@@ -1,0 +1,8 @@
+name = "patchouli_books/chroniques_olycity/en_us/entries/decoration.json"
+filename = "decoration.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/ab14042fdc97151d43f3b762dae663db74679a12a9c82481f5fc5534e3d46a8e"
+hash-format = "sha256"
+hash = "ab14042fdc97151d43f3b762dae663db74679a12a9c82481f5fc5534e3d46a8e"

@@ -1,0 +1,8 @@
+name = "kubejs/data/cataclysm/loot_tables/chests/abandoned_treasure.json"
+filename = "abandoned_treasure.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/da7a211005ee6ba993362cafe13de8b6d10b0c011367e1454fc9b833f2d0249c"
+hash-format = "sha256"
+hash = "da7a211005ee6ba993362cafe13de8b6d10b0c011367e1454fc9b833f2d0249c"

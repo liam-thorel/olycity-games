@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/additional_ancient_city_loot.json"
+filename = "additional_ancient_city_loot.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/31efb02184821319689f59ce3abfd2728fddb4f2337923a486aaf7a640ab9539"
+hash-format = "sha256"
+hash = "31efb02184821319689f59ce3abfd2728fddb4f2337923a486aaf7a640ab9539"

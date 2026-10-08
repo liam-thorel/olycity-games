@@ -1,0 +1,8 @@
+name = "config/ftbquests/quests/chapters/12_projets.snbt"
+filename = "12_projets.snbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/c8edc6040aab4c6de57be80c8b6aadd03277f73caea57f7854f768e383eb7c9f"
+hash-format = "sha256"
+hash = "c8edc6040aab4c6de57be80c8b6aadd03277f73caea57f7854f768e383eb7c9f"

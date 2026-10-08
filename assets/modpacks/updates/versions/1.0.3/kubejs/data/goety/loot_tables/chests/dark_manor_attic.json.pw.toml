@@ -1,0 +1,8 @@
+name = "kubejs/data/goety/loot_tables/chests/dark_manor_attic.json"
+filename = "dark_manor_attic.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/342683a8d01f43920186ff91c5fd45279c2f843dba6a01443dd5c7f490dae574"
+hash-format = "sha256"
+hash = "342683a8d01f43920186ff91c5fd45279c2f843dba6a01443dd5c7f490dae574"

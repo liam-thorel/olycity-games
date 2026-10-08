@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/mangrove_hut.json"
+filename = "mangrove_hut.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/1e890e568b44ee8b630a826257062f50f6a03e2427f82068ad4683b2ef40e0cb"
+hash-format = "sha256"
+hash = "1e890e568b44ee8b630a826257062f50f6a03e2427f82068ad4683b2ef40e0cb"

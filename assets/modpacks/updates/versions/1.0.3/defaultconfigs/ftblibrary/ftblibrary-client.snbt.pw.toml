@@ -1,0 +1,8 @@
+name = "defaultconfigs/ftblibrary/ftblibrary-client.snbt"
+filename = "ftblibrary-client.snbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/ab6bcad040f138406197f70cfe9a041832feaddf7e87954d9a5f4b13b6a962f9"
+hash-format = "sha256"
+hash = "ab6bcad040f138406197f70cfe9a041832feaddf7e87954d9a5f4b13b6a962f9"

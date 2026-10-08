@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/village/village_fletcher.json"
+filename = "village_fletcher.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/494146bad126968afef4e7c59705a639a20f22a3f19c610463c40eb22b5cfab5"
+hash-format = "sha256"
+hash = "494146bad126968afef4e7c59705a639a20f22a3f19c610463c40eb22b5cfab5"

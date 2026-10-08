@@ -1,0 +1,8 @@
+name = "patchouli_books/chroniques_olycity/en_us/categories/depart.json"
+filename = "depart.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/44589cb91c0ec0fb874a70d1373ce6936a3424e1c5b3d033ea0d82f6bf2fa921"
+hash-format = "sha256"
+hash = "44589cb91c0ec0fb874a70d1373ce6936a3424e1c5b3d033ea0d82f6bf2fa921"
