@@ -1,8 +1,0 @@
-name = "patchouli_books/chroniques_olycity/fr_fr/entries/energie.json"
-filename = "energie.json"
-side = "both"
-
-[download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/7c9d15647bcd683f4d1c5379d91d425ba6fac4ae8f21fc699e20721583ffd43f"
-hash-format = "sha256"
-hash = "7c9d15647bcd683f4d1c5379d91d425ba6fac4ae8f21fc699e20721583ffd43f"

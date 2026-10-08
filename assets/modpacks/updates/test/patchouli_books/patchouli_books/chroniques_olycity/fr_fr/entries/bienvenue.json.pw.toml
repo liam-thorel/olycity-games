@@ -1,8 +1,0 @@
-name = "patchouli_books/chroniques_olycity/fr_fr/entries/bienvenue.json"
-filename = "bienvenue.json"
-side = "both"
-
-[download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/d0cbf0bc8354b021bde78538fa92d65a6560391123f810b8718c1b35a55f5792"
-hash-format = "sha256"
-hash = "d0cbf0bc8354b021bde78538fa92d65a6560391123f810b8718c1b35a55f5792"

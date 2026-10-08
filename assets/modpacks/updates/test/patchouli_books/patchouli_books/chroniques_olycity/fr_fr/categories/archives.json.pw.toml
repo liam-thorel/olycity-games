@@ -1,8 +1,0 @@
-name = "patchouli_books/chroniques_olycity/fr_fr/categories/archives.json"
-filename = "archives.json"
-side = "both"
-
-[download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/c0319800a39f03f900671f281be380f456135790f47e27277598faa4f1271218"
-hash-format = "sha256"
-hash = "c0319800a39f03f900671f281be380f456135790f47e27277598faa4f1271218"

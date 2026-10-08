@@ -3,6 +3,6 @@ filename = "dimensions.json"
 side = "both"
 
 [download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/f4079061cfb61020abc7235aae01567449508ac00460607204a7233c480cd512"
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/4c7b97e3413f24636919052d62ff429b839a0cb66446a994953439baaa3a76a7"
 hash-format = "sha256"
-hash = "f4079061cfb61020abc7235aae01567449508ac00460607204a7233c480cd512"
+hash = "4c7b97e3413f24636919052d62ff429b839a0cb66446a994953439baaa3a76a7"
