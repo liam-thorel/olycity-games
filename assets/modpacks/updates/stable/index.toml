@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "OLYCITY-version.txt.pw.toml"
-hash = "4e0430143f5ff773e7bca4766eec9e08f443bd45314e99ea2fcb78cf2f0b2af7"
+hash = "c225801003898d213a0cc97bcd937ddf4b9172b47e183184a08d24dd0610cf60"
 metafile = true
 
 [[files]]
@@ -5838,4 +5838,364 @@ metafile = true
 [[files]]
 file = "patchouli_books/chroniques_olycity/book.json.pw.toml"
 hash = "4dcce7705e9400f5c5879ef90b1f4468bd5d6b14fd8f5be287c987c379662cf9"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/categories/archives.json.pw.toml"
+hash = "0991c7f14be336be8f55f95b424eb7189771dfb8402055e8ea491b77d4e29424"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/categories/depart.json.pw.toml"
+hash = "44872dec08a75bf47cd4307249fab634b73f7a69237871c6a126f6185287914c"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/categories/liam.json.pw.toml"
+hash = "a5540edb3590d435d3f536ceb9e7f7944759d5d1e87859c163a24f0f0e87a8ed"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/categories/refuge.json.pw.toml"
+hash = "2f157b4f005fbeeef08622a6ff8f277000c0cac0634965e62589753b474a253e"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/categories/romain.json.pw.toml"
+hash = "0b062b36e9757d7a279a71b18f86a349ea60ff6866946a187384668f94ffc0f0"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/categories/routes.json.pw.toml"
+hash = "8c37a3c0cb88441b084c84fcd87b727a525cc5aa953adaab1867a28666ffbe6a"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/abri.json.pw.toml"
+hash = "b56c53b7906bf2456d9cc3902466c768d11dc07b6c6215bd09d794b23ade4c97"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/archive_liam.json.pw.toml"
+hash = "1214897d3ada05777c1376449e07dbe1a40693d5318930a46c276a831028adb8"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/archive_neron.json.pw.toml"
+hash = "b11a6865edcd0b128dce953d0838ff591d8ee989af47ef63f66e095093049c05"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/bienvenue.json.pw.toml"
+hash = "b42c1f2e867b9ab51c4aca8a31f26a5dbf9ea21de94d28e6e5de655d710183f8"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/contrats.json.pw.toml"
+hash = "17f95cdc1bb295e126b1daad373ea46a3e53663f8bc9ae3b9cfe45eee0bb0bfd"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/create.json.pw.toml"
+hash = "810e085985d5e4c1cef136b80306c0fc1b34d3cf2df9641a535120f771a91dc4"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/cuisine.json.pw.toml"
+hash = "9526c2e7d6acfa10f0c41bf521b9ff3d8067d355cf0395cdc3c78ce50aebbf03"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/decoration.json.pw.toml"
+hash = "a468ec79ba246849c2774ddc5f75dd652e9a09ed42079442391e3cc4486f86be"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/depart_expedition.json.pw.toml"
+hash = "b622c243148669caeaad82682fba1a37d057220992c324e30e4e00ae4bb35665"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/dimensions.json.pw.toml"
+hash = "d71f3ff9168eaae54be7d7b16f7b9de45fe01cf078b7313863c17d9c6285b1cc"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/donjons.json.pw.toml"
+hash = "8105859a1d613455592dbbd68115711ec6e197dd11f5f14fafaac20f9115dd1e"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/drones.json.pw.toml"
+hash = "e338f5e10d8bf711078975cad43c04aa76143c0f838f7fc7d569b97fe43b1e10"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/energie.json.pw.toml"
+hash = "4793f1996a53a25835e948115ea2013627315a14cf751e25d9267a0d72b9fa50"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/jei.json.pw.toml"
+hash = "8d6d6da043f4f0652baafce32980efc51f45ae3262e2223a17a7dec13b77258c"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/liam_projets.json.pw.toml"
+hash = "cc67e95b70e776a498a4fa2e76640a2d6c433db1046e5a4b7fbedc2dc3ea2397"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/liam_stockage.json.pw.toml"
+hash = "a17578fc5c2f07d352ba3733f16b00fc33c9ab751630ce2d97ab634123ac216b"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/liberte.json.pw.toml"
+hash = "dd9f7807f328c6aab80dae52d194f974f5200da10e4534642c6e48d156051699"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/magie.json.pw.toml"
+hash = "7eeb839b32289a653c1ef09d971c115aa318634cba7ad13ccbfdd4baa25f5b5d"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/meteo.json.pw.toml"
+hash = "d8828f772085afbf3058f8b7db4c370402c628212415171034e2e56c52e8716b"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/mysteres.json.pw.toml"
+hash = "46657a749795bc370c5b335d8da07f27f5e6b7646c3894c41c38eb76b4bcedff"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/objectifs.json.pw.toml"
+hash = "e2a2a09443afd14862b418d036749d99fdded4de6b4f9b8b0e537026fde690d1"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/photographie.json.pw.toml"
+hash = "b9fdaa6eadf3a9bedfb06a0d7702b68b538ee7eca12d0dbe0d5d09491c3919da"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/poules.json.pw.toml"
+hash = "7e7cb33cd6562e702509b3eea7a2c9b82702e6ac532cd7920278d86a6453e4dc"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/rangement.json.pw.toml"
+hash = "848b68d39f1d549f915ef6615ed011af66e542276d6de40bd7fededf76010e85"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/romain_sortie.json.pw.toml"
+hash = "0bca972102a8b1a7f07d88384cc6d01c8d2cfc27a75f4201146d832070c09367"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/romain_suite.json.pw.toml"
+hash = "4eba6c693cf7b78cf737926057c9881a2de280b3619f474fec85f1a1eef4ad23"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/romain_touches.json.pw.toml"
+hash = "d2ec8caaf830c1cf2c22ad2476de44459a050fb4fe293726475c88d2046334ce"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/soirees.json.pw.toml"
+hash = "2fd4ac2f068816a27dab82b03f3f0dbc48fc71918f1240ee5510ad61cfa5e628"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/tardis.json.pw.toml"
+hash = "c45be88eb8c37c4d45c58097c523db0827480a5d6d7df2e7920ed4881b628db2"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/en_us/entries/torchmaster.json.pw.toml"
+hash = "d7ffed4867ef08e9fd058656e1cb4a729757260ddf09d758f81195fe5cf2db89"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/categories/archives.json.pw.toml"
+hash = "08299031989bc5273a196126a60ab93875f61c1b3d6b5b781c51cc09a7ddf8a9"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/categories/depart.json.pw.toml"
+hash = "38d481702cc9c70ece4f25abf8defa15eb9d3dbe6ccd45936061cd67bee2e243"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/categories/liam.json.pw.toml"
+hash = "3ecab90f59356c21e990cb85cd55184eda35b010597119b12ba2420d125a629d"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/categories/refuge.json.pw.toml"
+hash = "ce80a94c4ccf0eb7f52cf8a7a25ca25ac8d21530273fe320aa221c2ac6a697c7"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/categories/romain.json.pw.toml"
+hash = "ca8440d7ab1e0ee95ddbeaf4c03f428dab93c533c6620e4321e8d5e2c9ac0721"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/categories/routes.json.pw.toml"
+hash = "2be9dfa6eb7af613166b4c9f9004706c8ab9e47ed7d14dffbe26f79e62d15128"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/abri.json.pw.toml"
+hash = "e17bc93294b6fa2346a4c956c07a96ad2831800f80dc31564f0030cbd98f86eb"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/archive_liam.json.pw.toml"
+hash = "8cb9347815f4c00316384a07b6eb09538e7dac212cf90a5910307145cd4958f0"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/archive_neron.json.pw.toml"
+hash = "7fe4d4466700051c8b89c805e6299f0a903692db06d7326b8702eb51ec78c8b0"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/bienvenue.json.pw.toml"
+hash = "7fb3a6bfcea3191326e4f755657e915553817fb0804567ba6a87f61d85a289e7"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/contrats.json.pw.toml"
+hash = "4ce862a8604da2f2d2c5ce5b054c64629070d76c720d0670202a0f7811681c57"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/create.json.pw.toml"
+hash = "a18d2b46f1b680164e70a96854bf628ffe9fb00b51460e7a150fddef3b8eb4d6"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/cuisine.json.pw.toml"
+hash = "9731cdc91ea0133666e87ccb57f80eb2bd48cd6739ec088d76887de825e868e0"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/decoration.json.pw.toml"
+hash = "9a09647062b9240015d110aa1a9a3df9485dc564c3263356dd04c2951bd8f31b"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/depart_expedition.json.pw.toml"
+hash = "7f29e6d8478ed8f2b5911a74df1c27dbc3e4db2d6a03ce68644029f01af4124e"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/dimensions.json.pw.toml"
+hash = "08028b452f90b78b511499a01947da261b154dcdfbb93929398cb25bf1f33e4a"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/donjons.json.pw.toml"
+hash = "365c7bf7abd8019cb446049cd4813611726a46bd7d113ac9af25d1ff38b8570c"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/drones.json.pw.toml"
+hash = "107af009020c5843bda968f81afcabdcaefc27a216285a88248e5386de881314"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/energie.json.pw.toml"
+hash = "e6b4888404dc547e035ff28fa1d92a6a938a8ebd28aa206656af79008b9a692e"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/jei.json.pw.toml"
+hash = "16fe342d3eab328a1d5721766214a0af206089e54975d08db7322ea209840564"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/liam_projets.json.pw.toml"
+hash = "8f3f98e5735a5b4ec42a149d78092a93c644ec8dee654212f2c1ca6196668e03"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/liam_stockage.json.pw.toml"
+hash = "ad4d4cf2318fd3d59ecd48753ff1531a451d3be90a4cc4b2dc631184e2465655"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/liberte.json.pw.toml"
+hash = "ddcdb1954997f5c9d41593d136d1ea43dc49575835c05881171d70b3c7607e86"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/magie.json.pw.toml"
+hash = "dc28d8b48cd16a125379184305a21b42fe856e0ae8fadd34b2285e1444d0775f"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/meteo.json.pw.toml"
+hash = "6c50c4c8f7a5e8b22a93a6730ab9efcdf9ec87f02859f0834efb97c79cb7a7ce"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/mysteres.json.pw.toml"
+hash = "70b8de4aed7cb836a26a84b389593f67ccfed14bd75296626a0656c812646739"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/objectifs.json.pw.toml"
+hash = "5861c4f0af197939f7146a8613eee75f601edc8414d0997abcc362bad5437143"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/photographie.json.pw.toml"
+hash = "51ea69b1bbf4fa9a3767a88ab48b0c609d47b23c60f8799af632148e85e71add"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/poules.json.pw.toml"
+hash = "9a84338b22942ff88e403981f5bac60d22caa65f18ce865eb6ec746e0bd54573"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/rangement.json.pw.toml"
+hash = "ba2a81fbac092166d9bac1111ab8d25f0dff546e85d68a35fe2afb6a8fd0216a"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/romain_sortie.json.pw.toml"
+hash = "b20262c0028f8327587689b630f41f30bbcd379968b4e55495c2465d53e3dee2"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/romain_suite.json.pw.toml"
+hash = "ede8b3f6214df39899756d10d0edd627468e9b175bb713fb64dd847b0527b553"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/romain_touches.json.pw.toml"
+hash = "1a392f1a50d8cfee8d32bd2e3f8320a440094ce277a6cc98308c1fd19a6dce50"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/soirees.json.pw.toml"
+hash = "907dcde9874aa1424c80a5eafb3d1e33ed4d55b4a5d402745b2f7bd16e60b600"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/tardis.json.pw.toml"
+hash = "1df83ae9ba57cb2fe67d1b850ca0d1bc7c5d5ddc5cca06b938658c49fe6cb6af"
+metafile = true
+
+[[files]]
+file = "patchouli_books/chroniques_olycity/fr_fr/entries/torchmaster.json.pw.toml"
+hash = "82aaa11d94022899a53f35bafd1114df705c4c492c8cc1d23e94febc8a4eaed0"
 metafile = true

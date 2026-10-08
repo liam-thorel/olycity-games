@@ -1,0 +1,8 @@
+name = "patchouli_books/chroniques_olycity/en_us/entries/liberte.json"
+filename = "liberte.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/85cd46b1f240a2030d4b8b7cd297751bb11467f8e346d5b34d7592f5dce483b6"
+hash-format = "sha256"
+hash = "85cd46b1f240a2030d4b8b7cd297751bb11467f8e346d5b34d7592f5dce483b6"

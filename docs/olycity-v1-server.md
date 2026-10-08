@@ -1,6 +1,6 @@
 # OLYCITY V1 — installation du serveur
 
-Version **1.0.2** · Minecraft **1.20.1** · Forge **47.4.10** · Java **17**
+Version **1.0.3** · Minecraft **1.20.1** · Forge **47.4.10** · Java **17**
 
 Le ZIP contient le serveur complet et ses outils de mise à jour.
 
