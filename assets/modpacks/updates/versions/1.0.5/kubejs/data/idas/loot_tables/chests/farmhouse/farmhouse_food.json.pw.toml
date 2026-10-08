@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/farmhouse/farmhouse_food.json"
+filename = "farmhouse_food.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/be1a8307fcd4b5f90d03927e1e84c912b688ed30448a039ac2786816cc213d67"
+hash-format = "sha256"
+hash = "be1a8307fcd4b5f90d03927e1e84c912b688ed30448a039ac2786816cc213d67"

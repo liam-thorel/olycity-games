@@ -1,0 +1,8 @@
+name = "kubejs/assets/kubejs/patchouli_books/chroniques_olycity/fr_fr/entries/raretes.json"
+filename = "raretes.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/bacba7edc3e5e4cc5a6187d568d94f097f9e5f147b00bfaed21b45f2967f83f6"
+hash-format = "sha256"
+hash = "bacba7edc3e5e4cc5a6187d568d94f097f9e5f147b00bfaed21b45f2967f83f6"

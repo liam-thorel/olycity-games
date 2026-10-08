@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/apothecary_abode/apothecary_abode_books.json"
+filename = "apothecary_abode_books.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/e9c66128407aab748435cb0c4c36afb627d2f579f0ddf23dd47d8dcda1e485a5"
+hash-format = "sha256"
+hash = "e9c66128407aab748435cb0c4c36afb627d2f579f0ddf23dd47d8dcda1e485a5"

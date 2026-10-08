@@ -1,0 +1,8 @@
+name = "mods/goety-2.5.58.4.jar"
+filename = "goety-2.5.58.4.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/b97f9a5928b5b3665cc7de88d5a1b52a4b07b6ed260f64ef9584b0c4603bee52.jar"
+hash-format = "sha256"
+hash = "b97f9a5928b5b3665cc7de88d5a1b52a4b07b6ed260f64ef9584b0c4603bee52"

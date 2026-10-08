@@ -1,0 +1,268 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "",
+  "filename": "03_create",
+  "group": "",
+  "icon": "create:mechanical_press",
+  "id": "44381BD89858163A",
+  "order_index": 2,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "description": [
+        "Choisis une production utile avant de construire : matériaux de construction, récoltes, nourriture ou traitement de ressources.",
+        "Cette branche est un premier guide. JEI montre les recettes ; maintiens la touche de réflexion indiquée sur un objet Create pour voir sa démonstration.",
+        "À obtenir : 8 × Alliage d'andésite."
+      ],
+      "icon": "create:mechanical_press",
+      "id": "331B9CC34AC049E3",
+      "rewards": [
+        {
+          "id": "4D39EAD4080E4986",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "1744055C39A746F5",
+          "type": "item",
+          "item": "create:andesite_alloy",
+          "count": 8,
+          "consume_items": false
+        }
+      ],
+      "title": "Une usine avec un objectif",
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "dependencies": [
+        "331B9CC34AC049E3"
+      ],
+      "description": [
+        "Construis une roue à eau et installe-la dans un courant. L’énergie de Create est mécanique : ce n’est pas directement l’électricité des autres mods.",
+        "À obtenir : 1 × Roue à eau."
+      ],
+      "icon": "create:water_wheel",
+      "id": "701A2581DC950CC2",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "1C6742459E999E28",
+          "item": "minecraft:iron_ingot",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "id": "2FB3C3C96810A667",
+          "item": "create:water_wheel",
+          "type": "item"
+        }
+      ],
+      "title": "De l’eau à la rotation",
+      "x": 2.5,
+      "y": 0.0
+    },
+    {
+      "dependencies": [
+        "701A2581DC950CC2"
+      ],
+      "description": [
+        "Fabrique huit arbres de transmission et relie la roue à une machine. Observe le sens et la vitesse de rotation.",
+        "À obtenir : 8 × Rotor."
+      ],
+      "icon": "create:shaft",
+      "id": "783B9BC625AB6926",
+      "rewards": [
+        {
+          "count": 16,
+          "id": "1624CF4EF86A063F",
+          "item": "minecraft:andesite",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "count": 8,
+          "id": "6C328CFE2D32C03D",
+          "item": "create:shaft",
+          "type": "item"
+        }
+      ],
+      "title": "Transmettre le mouvement",
+      "x": 5.0,
+      "y": 0.0
+    },
+    {
+      "dependencies": [
+        "783B9BC625AB6926"
+      ],
+      "description": [
+        "Fabrique une presse mécanique. Utilise un dépôt sous la presse pour traiter des lingots, puis garde les plaques pour les prochaines recettes.",
+        "À obtenir : 1 × Presse mécanique."
+      ],
+      "icon": "create:mechanical_press",
+      "id": "659C3AC013E16F35",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "5FD4671E029C7D44",
+          "item": "minecraft:iron_ingot",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "id": "20A8C1EE4CCBB4F2",
+          "item": "create:mechanical_press",
+          "type": "item"
+        }
+      ],
+      "title": "Des plaques pour vos projets",
+      "x": 7.5,
+      "y": 0.0
+    },
+    {
+      "dependencies": [
+        "659C3AC013E16F35"
+      ],
+      "description": [
+        "Fabrique un mélangeur mécanique et un bassin. Vérifie vitesse et éventuel chauffage dans JEI : toutes les recettes ne demandent pas les mêmes conditions.",
+        "À obtenir : 1 × Mixeur mécanique."
+      ],
+      "icon": "create:mechanical_mixer",
+      "id": "3012A4F711DD0339",
+      "rewards": [
+        {
+          "count": 8,
+          "id": "4DC2313957489EE2",
+          "item": "minecraft:copper_ingot",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "id": "43AE20B5A7758A22",
+          "item": "create:mechanical_mixer",
+          "type": "item"
+        }
+      ],
+      "title": "Mélanger sans cliquer mille fois",
+      "x": 0.0,
+      "y": 2.5
+    },
+    {
+      "dependencies": [
+        "659C3AC013E16F35"
+      ],
+      "description": [
+        "Construis des courroies et des entonnoirs pour acheminer les objets. Commence par une petite boucle et vérifie qu’elle ne se bloque pas.",
+        "À obtenir : 1 × Tapis roulant."
+      ],
+      "icon": "create:belt_connector",
+      "id": "60D17459FA3A50C2",
+      "rewards": [
+        {
+          "count": 16,
+          "id": "694032827985E5BF",
+          "item": "minecraft:dried_kelp",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "id": "61B39BB34804D41F",
+          "item": "create:belt_connector",
+          "type": "item"
+        }
+      ],
+      "title": "Faire circuler les objets",
+      "x": 2.5,
+      "y": 2.5
+    },
+    {
+      "dependencies": [
+        "783B9BC625AB6926"
+      ],
+      "description": [
+        "Fabrique une foreuse mécanique. Une foreuse placée seule n’avance pas : utilise les démonstrations Create pour construire une machine mobile ou un montage adapté.",
+        "À obtenir : 1 × Perceuse mécanique."
+      ],
+      "icon": "create:mechanical_drill",
+      "id": "416961CECC450B28",
+      "rewards": [
+        {
+          "count": 16,
+          "id": "1083DF0886817655",
+          "item": "minecraft:torch",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "id": "4D99FAA76A3324D8",
+          "item": "create:mechanical_drill",
+          "type": "item"
+        }
+      ],
+      "title": "Un tunnel fait par votre machine",
+      "x": 5.0,
+      "y": 2.5
+    },
+    {
+      "description": [
+        "Réunis 32 plaques de fer Create. Une presse alimentée et une sortie vers un coffre sont un bon premier projet.",
+        "La quête détecte les plaques obtenues ; à vous d’organiser la production selon vos besoins.",
+        "À obtenir : 32 × Plaque de fer."
+      ],
+      "icon": "create:mechanical_press",
+      "id": "0E2D619A8CF58B74",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "7EAE838C7AE35870",
+          "item": "minecraft:gold_ingot",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "3D3BA03F9F71DEBE",
+          "type": "item",
+          "item": "create:iron_sheet",
+          "count": 32,
+          "consume_items": false
+        }
+      ],
+      "title": "Les premières plaques en réserve",
+      "x": 7.5,
+      "y": 2.5
+    }
+  ],
+  "title": "&3Create : machines utiles&r"
+}

@@ -1,0 +1,8 @@
+name = "kubejs/assets/kubejs/textures/item/joint_rayhan.png"
+filename = "joint_rayhan.png"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/cb25248d30341d1d084468bf094ea7eb31a776bea7b72364400f045a6086cca6"
+hash-format = "sha256"
+hash = "cb25248d30341d1d084468bf094ea7eb31a776bea7b72364400f045a6086cca6"

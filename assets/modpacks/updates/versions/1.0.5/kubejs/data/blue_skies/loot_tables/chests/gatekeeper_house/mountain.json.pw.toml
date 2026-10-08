@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/gatekeeper_house/mountain.json"
+filename = "mountain.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/7e5e9958167fe7491d1592424477fba2b6a79792cf703a794bcb48167f7d5a07"
+hash-format = "sha256"
+hash = "7e5e9958167fe7491d1592424477fba2b6a79792cf703a794bcb48167f7d5a07"

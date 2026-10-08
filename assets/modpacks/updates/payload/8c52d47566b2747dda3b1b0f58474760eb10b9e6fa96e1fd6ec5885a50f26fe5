@@ -1,0 +1,208 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "",
+  "filename": "11_village",
+  "group": "",
+  "icon": "minecraft:painting",
+  "id": "57CBE172ACBD515A",
+  "order_index": 10,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "description": [
+        "Prépare un livre et une plume pour noter tes idées ou les détails d’un problème.",
+        "Pour nous transmettre un retour, utilise /report bug <description> ou /report idee <suggestion>. Aucun signalement n’est demandé pour valider cette quête.",
+        "À obtenir : 1 × livre et plume.",
+        "Repère de lecture : cette étape ne donne pas de récompense."
+      ],
+      "icon": "minecraft:book",
+      "id": "4E7EC4EECF2ADBE4",
+      "rewards": [],
+      "tasks": [
+        {
+          "id": "664A02ECE4BE1DFD",
+          "type": "item",
+          "item": "minecraft:writable_book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Le bureau des idées",
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "description": [
+        "Réunis 16 lanternes pour un futur espace partagé : un salon, un coin repas ou un bar, selon vos envies.",
+        "Vous partez sans bâtiment imposé. Installez-vous où vous voulez, puis aménagez ce lieu petit à petit.",
+        "À obtenir : 16 × lanterne."
+      ],
+      "icon": "minecraft:book",
+      "id": "33907CBE5B2FAD90",
+      "rewards": [
+        {
+          "id": "4F1B7A94D50A6093",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 4,
+          "id": "01BB7DE0982DDEE7",
+          "item": "minecraft:flower_pot",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "3E9A6670ADBAF82E",
+          "type": "item",
+          "item": "minecraft:lantern",
+          "count": 16,
+          "consume_items": false
+        }
+      ],
+      "title": "Préparer un espace commun",
+      "x": 2.5,
+      "y": 0.0
+    },
+    {
+      "description": [
+        "Réunis 8 cadres pour afficher vos trouvailles et décorer une pièce commune.",
+        "La grande roue est le symbole d’OLYCITY. Si vous avez envie d’en construire une plus tard, ce sera un projet libre : aucune roue ni ville n’existe au départ et cette quête n’en demande pas.",
+        "À obtenir : 8 × cadre."
+      ],
+      "icon": "minecraft:book",
+      "id": "1D0107AEDED7E5FE",
+      "rewards": [
+        {
+          "id": "54FBFDDD051C2CDD",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 8,
+          "id": "231723566D5C774A",
+          "item": "minecraft:glowstone",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "2E68C46D978E687D",
+          "type": "item",
+          "item": "minecraft:item_frame",
+          "count": 8,
+          "consume_items": false
+        }
+      ],
+      "title": "Des souvenirs à afficher",
+      "x": 5.0,
+      "y": 0.0
+    },
+    {
+      "description": [
+        "Garde un livre pour noter une recette ou une idée que tu veux essayer. Quand tu te sentiras à l’aise, tu pourras montrer une découverte à un ami.",
+        "ISEVEN_7 peut revenir au parcours débutant à tout moment ; aucune présentation n’est nécessaire pour valider cette étape.",
+        "À obtenir : 1 × livre.",
+        "Repère de lecture : cette étape ne donne pas de récompense."
+      ],
+      "icon": "minecraft:book",
+      "id": "6989C7C8511458E9",
+      "rewards": [],
+      "tasks": [
+        {
+          "id": "3D0D8FA190086351",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Romain, à ton rythme",
+      "x": 7.5,
+      "y": 0.0
+    },
+    {
+      "description": [
+        "Apprivoise un animal reconnu par l’avancement Minecraft « Meilleurs amis pour la vie ». Prépare-lui ensuite un endroit sûr, loin des machines."
+      ],
+      "icon": "minecraft:book",
+      "id": "0C6A635B1038A440",
+      "rewards": [
+        {
+          "id": "7E27F943318F1870",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 2,
+          "id": "14703A951F98F83B",
+          "item": "minecraft:lead",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "346327E8C8084AEC",
+          "type": "advancement",
+          "advancement": "minecraft:husbandry/tame_an_animal"
+        }
+      ],
+      "title": "Un compagnon pour la base",
+      "x": 0.0,
+      "y": 2.0
+    },
+    {
+      "description": [
+        "Obtiens le livre de liaison contenant un djinni d’Occultism. Consulte le Dictionnaire des esprits pour préparer les ingrédients et le rituel correspondant.",
+        "Cette étape concerne Occultism. Les rituels de Goety constituent une autre branche de magie.",
+        "À obtenir : 1 × Livre de la Reliure : Djinni (Lié)."
+      ],
+      "icon": "minecraft:book",
+      "id": "097034EA835986BC",
+      "rewards": [
+        {
+          "id": "508A86234E26ACB4",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 8,
+          "id": "7C12292752D03331",
+          "item": "minecraft:candle",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "4CD8FDE3FB167A4D",
+          "type": "item",
+          "item": "occultism:book_of_binding_bound_djinni",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Lier un djinni",
+      "x": 2.5,
+      "y": 2.0
+    }
+  ],
+  "title": "&dVie entre potes et projets communs&r"
+}

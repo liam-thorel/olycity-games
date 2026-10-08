@@ -1,0 +1,756 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "",
+  "filename": "07_liam",
+  "group": "",
+  "icon": {
+    "Count": 1,
+    "id": "chickens:analyzer",
+    "tag": {
+      "Damage": 0
+    }
+  },
+  "id": "61BDB15B50BF7825",
+  "order_index": 6,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "description": [
+        "Ce parcours te présente les élevages, machines et réseaux du pack. Réunis d’abord 16 lingots de fer pour préparer les premiers projets.",
+        "Choisis une production qui sert au groupe : matériaux, nourriture, ressources pour les machines ou énergie.",
+        "À obtenir : 16 × lingot de fer."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "chickens:analyzer",
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "id": "3F696549FB3DEB2B",
+      "rewards": [
+        {
+          "id": "38A942B9E4BF614B",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "52FD1D5BCAB88E80",
+          "type": "item",
+          "item": "minecraft:iron_ingot",
+          "count": 16,
+          "consume_items": false
+        }
+      ],
+      "title": "Liam, à toi l’atelier",
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "dependencies": [
+        "3F696549FB3DEB2B"
+      ],
+      "description": [
+        "Modern Chickens ajoute des poules à ressources. Récupère des espèces de départ, puis cherche leur nom dans JEI : les croisements indiquent les parents et le résultat.",
+        "Commence par une ressource dont le groupe manque. Les espèces avancées se débloquent par reproduction ; inutile d’attendre qu’elles apparaissent toutes dans la nature.",
+        "À obtenir : 1 × bloc de reproduction de poules."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "chickens:analyzer",
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "id": "283B636DF4992F4A",
+      "rewards": [
+        {
+          "count": 8,
+          "id": "7AAE8BCAE49E0FA8",
+          "item": "minecraft:wheat_seeds",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "7F4FABE9D6ED2394",
+          "type": "item",
+          "item": "chickens:breeder",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "&eDes poules qui travaillent&r",
+      "x": 2.5,
+      "y": 0.0
+    },
+    {
+      "description": [
+        "{image:chickens:textures/item/analyzer.png width:48 height:48 align:center}",
+        "Fabrique le Chicken Analyzer et utilise-le sur une poule du mod. Il affiche ses statistiques Growth, Gain et Strength.",
+        "Compare deux individus d’une même espèce avant de choisir tes reproducteurs. Le nom de la poule seul ne résume pas sa qualité.",
+        "À obtenir : 1 × analyseur de poules."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "chickens:analyzer",
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "id": "23721E95F5AD920C",
+      "rewards": [
+        {
+          "id": "37BA68050939FEF0",
+          "type": "xp",
+          "xp": 35,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "id": "1F1A52DF1ED44614",
+          "item": {
+            "Count": 1,
+            "id": "chickens:analyzer",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item"
+        }
+      ],
+      "title": "Examiner ses pensionnaires",
+      "x": 5.0,
+      "y": 0.0
+    },
+    {
+      "dependencies": [
+        "23721E95F5AD920C"
+      ],
+      "description": [
+        "Fabrique le Chicken Catcher et consulte ses indications. Il sert à récupérer les poules du mod pour les installer dans les blocs d’élevage.",
+        "Garde une paire de chaque parent utile : ne mets pas tout ton cheptel dans une seule expérience.",
+        "À obtenir : 1 × attrape-poules."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "chickens:catcher",
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "id": "2C7B8D99B8915B08",
+      "rewards": [
+        {
+          "id": "1F1924D090CB831E",
+          "type": "xp",
+          "xp": 35,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "id": "1345743E9E440374",
+          "item": {
+            "Count": 1,
+            "id": "chickens:catcher",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item"
+        }
+      ],
+      "title": "Transporter les poules",
+      "x": 7.5,
+      "y": 0.0
+    },
+    {
+      "dependencies": [
+        "2C7B8D99B8915B08"
+      ],
+      "description": [
+        "Fabrique un Chicken Breeder. Place les parents indiqués par JEI et fournis les graines demandées.",
+        "La reproduction peut donner différents résultats : conserve les bons descendants et recommence si nécessaire.",
+        "Obtenir le bloc valide cette étape ; réalise ensuite un croisement avant de passer à le poulailler définitif.",
+        "À obtenir : 1 × bloc de reproduction de poules."
+      ],
+      "icon": "chickens:breeder",
+      "id": "33DDEB8666D035BF",
+      "rewards": [
+        {
+          "id": "2E3A2D8799A58E4D",
+          "type": "xp",
+          "xp": 35,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "id": "02604E8C58F5B89D",
+          "item": "chickens:breeder",
+          "type": "item"
+        }
+      ],
+      "title": "Le premier croisement",
+      "x": 0.0,
+      "y": 2.5
+    },
+    {
+      "dependencies": [
+        "33DDEB8666D035BF"
+      ],
+      "description": [
+        "Fabrique un Roost et installe une poule à ressources. Récupère sa production, puis organise la sortie des objets vers ton stockage.",
+        "Vérifie ce que tes poules produisent avant de multiplier les installations : le but est de fournir l’atelier.",
+        "À obtenir : 1 × poulailler Roost."
+      ],
+      "icon": "chickens:roost",
+      "id": "740EE84BED67DA0A",
+      "rewards": [
+        {
+          "id": "57FAED40EA8D5F29",
+          "type": "xp",
+          "xp": 35,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "id": "716433CDC3BA3776",
+          "item": "chickens:roost",
+          "type": "item"
+        }
+      ],
+      "title": "Un poulailler productif",
+      "x": 2.5,
+      "y": 2.5
+    },
+    {
+      "dependencies": [
+        "740EE84BED67DA0A"
+      ],
+      "description": [
+        "Le Roost Collector récupère la production des Roosts à portée. Consulte son interface et les indications du mod pour le placement.",
+        "Relie sa sortie à un coffre ou un réseau, puis vérifie que la production ne sature pas.",
+        "À obtenir : 1 × collecteur de poulaillers."
+      ],
+      "icon": "chickens:collector",
+      "id": "77C8352E969326D7",
+      "rewards": [
+        {
+          "id": "4F42ACF42FA810A5",
+          "type": "xp",
+          "xp": 35,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "id": "589B381442E1372B",
+          "item": "chickens:collector",
+          "type": "item"
+        }
+      ],
+      "title": "Ne rien laisser traîner",
+      "x": 5.0,
+      "y": 2.5
+    },
+    {
+      "description": [
+        "Réunis 64 lingots de fer. Les élevages peuvent fournir des ressources à ton atelier, mais tu peux aussi commencer avec le minage.",
+        "Teste ensuite la collecte et le rangement de ta production avant de multiplier les machines.",
+        "À obtenir : 64 × lingot de fer."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "chickens:analyzer",
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "id": "656A0ABBDCA0C981",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "74D4B8EAA2D23DE2",
+          "item": "minecraft:iron_ingot",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "06429FF3FACDDFA1",
+          "type": "item",
+          "item": "minecraft:iron_ingot",
+          "count": 64,
+          "consume_items": false
+        }
+      ],
+      "title": "Une réserve pour l’atelier",
+      "x": 7.5,
+      "y": 2.5
+    },
+    {
+      "dependencies": [
+        "3F696549FB3DEB2B"
+      ],
+      "description": [
+        "Productive Bees propose une autre branche d’élevage. JEI et le guide du mod donnent les conditions des espèces : habitat, fleurs ou blocs nécessaires et croisements.",
+        "Choisis une seule ressource au départ et vérifie les besoins de cette abeille. Tu peux rester sur les poules si tu as déjà assez fait d’apiculture.",
+        "À obtenir : 1 × ruche avancée en chêne."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "chickens:analyzer",
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "id": "44C2B98FEA31984F",
+      "rewards": [
+        {
+          "id": "61599B0F43C06D26",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "40B09AD29777841B",
+          "type": "item",
+          "item": "productivebees:advanced_oak_beehive",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Les abeilles, si l’envie revient",
+      "x": 0.0,
+      "y": 5.0
+    },
+    {
+      "dependencies": [
+        "3F696549FB3DEB2B"
+      ],
+      "description": [
+        "Rats permet d’apprivoiser des compagnons, de leur donner des ordres et des améliorations. Commence par une tâche de transport courte entre deux points.",
+        "Prévois un trajet accessible et surveille le premier aller-retour. Domestication Innovation enrichit aussi la vie avec les animaux compatibles ; ses effets ne s’appliquent pas forcément à chaque créature moddée.",
+        "À obtenir : 1 × fromage."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "chickens:analyzer",
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "id": "4129CB9D80385E40",
+      "rewards": [
+        {
+          "id": "7C982F0FE0ABC4FC",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "5A28D4DA400F0276",
+          "type": "item",
+          "item": "rats:cheese",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Un petit assistant",
+      "x": 2.5,
+      "y": 5.0
+    },
+    {
+      "dependencies": [
+        "3F696549FB3DEB2B"
+      ],
+      "description": [
+        "PneumaticCraft utilise de l’air comprimé. Les drones peuvent ensuite recevoir des programmes pour transporter, récolter ou réaliser des tâches.",
+        "Commence par le guide, un circuit pneumatique simple et une tâche de livraison. Ne construis pas une flotte avant d’avoir un prototype qui rentre correctement.",
+        "À obtenir : 1 × Drone."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "chickens:analyzer",
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "id": "17990DD04E1108A9",
+      "rewards": [
+        {
+          "id": "4BE6348E446ACFB7",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "7E09DD496CD6EA05",
+          "type": "item",
+          "item": "pneumaticcraft:drone",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Les livreurs de demain",
+      "x": 5.0,
+      "y": 5.0
+    },
+    {
+      "dependencies": [
+        "3F696549FB3DEB2B"
+      ],
+      "description": [
+        "Mekanism et Mekanism Generators sont installés : traitement des minerais, machines, câbles, outils et production électrique.",
+        "Suis le chapitre Énergie jusqu’à une machine alimentée et une sortie de production. L’Atomic Disassembler et le Digital Miner donnent une utilité directe à ton énergie.",
+        "Pour les réacteurs à fission, apprends d’abord refroidissement, combustible, déchets et arrêt automatique. Le nucléaire mérite un emplacement éloigné des habitations.",
+        "À obtenir : 1 × Cube énergétique de base."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "chickens:analyzer",
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "id": "7418DBDE7E1C9D54",
+      "rewards": [
+        {
+          "id": "09113E314F9645C9",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "66C344A54BEF6377",
+          "type": "item",
+          "item": "mekanism:basic_energy_cube",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Le cœur électrique",
+      "x": 7.5,
+      "y": 5.0
+    },
+    {
+      "description": [
+        "AE2 permet un stockage en réseau et de l’autocraft. Son guide explique l’énergie, les cellules et les canaux ; commence par un petit réseau, pas une salle entière de contrôleurs.",
+        "Construis un terminal de fabrication et consulte le guide intégré pour le raccorder. Détection du terminal = première étape, pas validation du réseau complet.",
+        "Refined Storage reste une autre option du pack.",
+        "À obtenir : 1 × Terminal de fabrication ME."
+      ],
+      "icon": "ae2:crafting_terminal",
+      "id": "60FAF4EBCEB5355B",
+      "rewards": [
+        {
+          "id": "6DADB3167AB6556F",
+          "type": "xp",
+          "xp": 35,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "id": "478253E5214192B2",
+          "item": "ae2:crafting_terminal",
+          "type": "item"
+        }
+      ],
+      "title": "Le stockage de l’atelier",
+      "x": 0.0,
+      "y": 7.5
+    },
+    {
+      "description": [
+        "Industrial Foregoing automatise notamment récoltes, élevage et ressources. Pour commencer, suis la chaîne latex → traitement → plastique dans JEI et le manuel.",
+        "Un Fluid Extractor n’achève pas cette chaîne à lui seul. Choisis ensuite une machine dont la production sert à la base.",
+        "À obtenir : 1 × châssis de machine simple (Pity Machine Frame)."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "chickens:analyzer",
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "id": "50DB6BD1F45F863D",
+      "rewards": [
+        {
+          "id": "63D6F0625D7EBB9B",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "5FD0C626144D9931",
+          "type": "item",
+          "item": "industrialforegoing:machine_frame_pity",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Récolter et transformer",
+      "x": 2.5,
+      "y": 7.5
+    },
+    {
+      "description": [
+        "Thermal Expansion ajoute des machines électriques. Le Pulverizer traite les ingrédients de ses recettes et peut produire des sous-produits.",
+        "Fabrique-en un, alimente-le et consulte JEI pour un minerai réellement utilisé par le groupe. Configure entrées, sorties et rangement pour éviter les blocages.",
+        "À obtenir : 1 × pulvérisateur Thermal."
+      ],
+      "icon": "thermal:machine_pulverizer",
+      "id": "5C0AFA37015FAECD",
+      "rewards": [
+        {
+          "id": "1494DFD19CBDCADB",
+          "type": "xp",
+          "xp": 35,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "id": "7560980C26C98B5C",
+          "item": "thermal:machine_pulverizer",
+          "type": "item"
+        }
+      ],
+      "title": "Une ligne de traitement simple",
+      "x": 5.0,
+      "y": 7.5
+    },
+    {
+      "description": [
+        "Ender IO ajoute notamment des conduits et des machines. Choisis une petite liaison utile : source, machine et coffre de sortie.",
+        "Vérifie extraction, insertion et contrôle redstone dans les interfaces. Le pack utilise une version bêta d’Ender IO : commence par un montage réduit que tu peux observer.",
+        "À obtenir : 8 × Conduit d'énergie."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "chickens:analyzer",
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "id": "7CCE4374FCFAB84E",
+      "rewards": [
+        {
+          "id": "6D31B19C457122D4",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "701AFB47ACE1DFDA",
+          "type": "item",
+          "item": "enderio:energy_conduit",
+          "count": 8,
+          "consume_items": false
+        }
+      ],
+      "title": "Les tuyaux de l’atelier",
+      "x": 7.5,
+      "y": 7.5
+    },
+    {
+      "description": [
+        "Réunis 8 panneaux Copycat de Create. Ils permettent de reprendre l’apparence de blocs de construction pour intégrer tes machines au décor.",
+        "Pour un autre style d’atelier, Immersive Engineering propose des câbles et des machines multiblocs ; son Engineer’s Manual détaille les montages.",
+        "À obtenir : 8 × Panneau imitateur."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "chickens:analyzer",
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "id": "52D5852BDB50A33C",
+      "rewards": [
+        {
+          "id": "30913850269B158C",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "2B2805DC32099D41",
+          "type": "item",
+          "item": "create:copycat_panel",
+          "count": 8,
+          "consume_items": false
+        }
+      ],
+      "title": "Intégrer les machines à la base",
+      "x": 0.0,
+      "y": 10.0
+    },
+    {
+      "dependencies": [
+        "3F696549FB3DEB2B"
+      ],
+      "description": [
+        "Create sert aux chaînes visibles : presses, mélangeurs, récoltes, tri et machines mobiles.",
+        "Crafts & Additions ajoute des possibilités autour de l’énergie ; Central Kitchen rapproche les chaînes de cuisine ; Enchantment Industry permet des projets autour de l’expérience et des enchantements.",
+        "Copycats sert à intégrer les machines aux constructions, Hypertubes aux déplacements et Big Cannons aux gros canons. Consulte les démonstrations et JEI de chaque extension ; choisis ce qui sert ton projet. Les extensions de trains ne sont pas installées.",
+        "À obtenir : 1 × Alternateur."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "chickens:analyzer",
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "id": "27A0ED15E214D3C8",
+      "rewards": [
+        {
+          "id": "10297E81DD62B692",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "30B72E9EE6334584",
+          "type": "item",
+          "item": "createaddition:alternator",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "La mécanique et ses extensions",
+      "x": 2.5,
+      "y": 10.0
+    },
+    {
+      "description": [
+        "&5Une puissance à gagner, pas une obligation pour démarrer.&r",
+        "Draconic Evolution fournit une progression avancée, des équipements et des projets énergétiques. Consulte sa documentation et JEI après avoir stabilisé tes productions.",
+        "Le réacteur draconique demande une vraie compréhension de sa stabilisation. Prévois un site séparé et commence par des projets plus modestes.",
+        "À obtenir : 1 × cœur de draconium."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "chickens:analyzer",
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "id": "736B18E1A8B2028D",
+      "rewards": [
+        {
+          "id": "722792F9F595C61E",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "6785003510C322B2",
+          "type": "item",
+          "item": "draconicevolution:draconium_core",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "L’horizon de fin d’aventure",
+      "x": 5.0,
+      "y": 10.0
+    },
+    {
+      "dependencies": [
+        "3F696549FB3DEB2B"
+      ],
+      "description": [
+        "Brewin’ and Chewin’ complète Farmer’s Delight avec fermentation et boissons. Le tonneau, les ingrédients et les températures sont indiqués par JEI.",
+        "Prépare une première recette du mod et une table pour la partager. Les BuzzBall et Vody personnalisées restent des idées pour plus tard.",
+        "À obtenir : 1 × tonneau de fermentation."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "chickens:analyzer",
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "id": "44A594FA45D97382",
+      "rewards": [
+        {
+          "id": "078C812840FE1DE7",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "0A8C43CE91F445C3",
+          "type": "item",
+          "item": "brewinandchewin:keg",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "La pause de l’ingénieur",
+      "x": 7.5,
+      "y": 10.0
+    }
+  ],
+  "title": "&bLiam — L’atelier et les élevages&r"
+}

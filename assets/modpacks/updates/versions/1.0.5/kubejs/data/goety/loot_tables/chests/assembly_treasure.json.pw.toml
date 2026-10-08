@@ -1,0 +1,8 @@
+name = "kubejs/data/goety/loot_tables/chests/assembly_treasure.json"
+filename = "assembly_treasure.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/8f271d7e8bd3af0a2269b53c96e49d2b594edae594a345e5c7f80f34b30bbd62"
+hash-format = "sha256"
+hash = "8f271d7e8bd3af0a2269b53c96e49d2b594edae594a345e5c7f80f34b30bbd62"

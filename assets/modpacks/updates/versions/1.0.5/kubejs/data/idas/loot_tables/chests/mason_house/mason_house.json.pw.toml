@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/mason_house/mason_house.json"
+filename = "mason_house.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/91ff8395d09f62033986aebfea80bc37e0d79a71e9b4baa224095c9c76d26f86"
+hash-format = "sha256"
+hash = "91ff8395d09f62033986aebfea80bc37e0d79a71e9b4baa224095c9c76d26f86"

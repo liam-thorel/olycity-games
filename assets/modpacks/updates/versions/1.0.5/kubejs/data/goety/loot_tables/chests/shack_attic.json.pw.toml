@@ -1,0 +1,8 @@
+name = "kubejs/data/goety/loot_tables/chests/shack_attic.json"
+filename = "shack_attic.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/fb255f3f2481acf8a20dc98aaade193893750aefc7a1a98c55af8f573f863d18"
+hash-format = "sha256"
+hash = "fb255f3f2481acf8a20dc98aaade193893750aefc7a1a98c55af8f573f863d18"

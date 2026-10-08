@@ -1,0 +1,8 @@
+name = "kubejs/data/pneumaticcraft/loot_tables/chests/mechanic_house.json"
+filename = "mechanic_house.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/0d48044ab19811beb3b94557526d0ca849c1fc2c90b2fbdaaf6ea34c59dc6797"
+hash-format = "sha256"
+hash = "0d48044ab19811beb3b94557526d0ca849c1fc2c90b2fbdaaf6ea34c59dc6797"

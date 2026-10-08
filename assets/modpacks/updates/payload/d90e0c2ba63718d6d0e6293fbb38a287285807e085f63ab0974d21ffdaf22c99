@@ -1,0 +1,799 @@
+{
+  "filename": "12_projets",
+  "title": "Projets utiles",
+  "id": "4EE519AECE0521B7",
+  "icon": "minecraft:iron_ingot",
+  "order_index": 11,
+  "progression_mode": "flexible",
+  "quests": [
+    {
+      "id": "2096F37431AF6B02",
+      "title": "Une réserve pour construire",
+      "description": [
+        "Fer pour les outils, les murs et vos prochains ateliers. Choisissez votre méthode de production.",
+        "À obtenir : 128 × lingot de fer."
+      ],
+      "icon": "minecraft:iron_ingot",
+      "tasks": [
+        {
+          "type": "item",
+          "item": "minecraft:iron_ingot",
+          "count": 128,
+          "consume_items": false,
+          "id": "13EFE5F95D804AF3"
+        }
+      ],
+      "rewards": [
+        {
+          "type": "item",
+          "item": "minecraft:redstone",
+          "count": 32,
+          "team_reward": true,
+          "auto": "disabled",
+          "id": "6C93531A626A5717"
+        },
+        {
+          "type": "item",
+          "item": "minecraft:copper_ingot",
+          "count": 16,
+          "team_reward": true,
+          "auto": "disabled",
+          "id": "795F70A743DBD65C"
+        }
+      ],
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "id": "43F61ACA4D060499",
+      "title": "De quoi repartir",
+      "description": [
+        "Préparez des réserves pour vos prochaines expéditions.",
+        "À obtenir : 64 × pain, 32 × carotte."
+      ],
+      "icon": "minecraft:bread",
+      "tasks": [
+        {
+          "type": "item",
+          "item": "minecraft:bread",
+          "count": 64,
+          "consume_items": false,
+          "id": "6D1386C4D78A76A4"
+        },
+        {
+          "type": "item",
+          "item": "minecraft:carrot",
+          "count": 32,
+          "consume_items": false,
+          "id": "43055D94904AD3BC"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "1C0F5E52FF0C94C5",
+          "type": "choice",
+          "team_reward": true,
+          "auto": "disabled",
+          "table_data": {
+            "loot_size": 1,
+            "empty_weight": 0,
+            "rewards": [
+              {
+                "type": "item",
+                "item": "minecraft:leather",
+                "count": 8,
+                "weight": 1
+              },
+              {
+                "type": "item",
+                "item": "minecraft:wheat_seeds",
+                "count": 32,
+                "weight": 1
+              }
+            ]
+          }
+        }
+      ],
+      "x": 3.0,
+      "y": 0.0
+    },
+    {
+      "id": "27AE9FBB08ADCDE7",
+      "title": "Une production qui avance",
+      "description": [
+        "Produisez un stock de plaques. La quête vérifie le résultat ; construisez la chaîne de votre choix.",
+        "À obtenir : 64 × Plaque de fer."
+      ],
+      "icon": "create:iron_sheet",
+      "tasks": [
+        {
+          "type": "item",
+          "item": "create:iron_sheet",
+          "count": 64,
+          "consume_items": false,
+          "id": "4CD4A6EDF98A40B6"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "0F3F7AEC5F39C072",
+          "type": "choice",
+          "team_reward": true,
+          "auto": "disabled",
+          "table_data": {
+            "loot_size": 1,
+            "empty_weight": 0,
+            "rewards": [
+              {
+                "type": "item",
+                "item": "minecraft:redstone",
+                "count": 32,
+                "weight": 1
+              },
+              {
+                "type": "item",
+                "item": "minecraft:copper_ingot",
+                "count": 32,
+                "weight": 1
+              }
+            ]
+          }
+        }
+      ],
+      "x": 6.0,
+      "y": 0.0
+    },
+    {
+      "id": "5F9076BB9E58F1D0",
+      "title": "Installer un élevage",
+      "description": [
+        "Préparez l’élevage avant de sélectionner vos reproducteurs.",
+        "À obtenir : 1 × bloc de reproduction de poules, 1 × poulailler Roost, 1 × collecteur de poulaillers."
+      ],
+      "icon": "chickens:breeder",
+      "tasks": [
+        {
+          "type": "item",
+          "item": "chickens:breeder",
+          "count": 1,
+          "consume_items": false,
+          "id": "060BB02CC41CE708"
+        },
+        {
+          "type": "item",
+          "item": "chickens:roost",
+          "count": 1,
+          "consume_items": false,
+          "id": "3465F83C06B8CE9E"
+        },
+        {
+          "type": "item",
+          "item": "chickens:collector",
+          "count": 1,
+          "consume_items": false,
+          "id": "098F3C9EE92C2477"
+        }
+      ],
+      "rewards": [
+        {
+          "type": "item",
+          "item": "minecraft:wheat_seeds",
+          "count": 32,
+          "team_reward": true,
+          "auto": "disabled",
+          "id": "7276D02247A6817B"
+        },
+        {
+          "type": "item",
+          "item": "minecraft:name_tag",
+          "count": 1,
+          "team_reward": true,
+          "auto": "disabled",
+          "id": "6D34DAB7A75A48D4"
+        }
+      ],
+      "x": 9.0,
+      "y": 0.0
+    },
+    {
+      "id": "601DD3B0CAB4E525",
+      "title": "Préparer les livraisons",
+      "description": [
+        "Obtenez un drone pour transporter vos ressources. Sa programmation est expliquée dans son manuel.",
+        "À obtenir : 1 × Drone."
+      ],
+      "icon": "pneumaticcraft:drone",
+      "tasks": [
+        {
+          "type": "item",
+          "item": "pneumaticcraft:drone",
+          "count": 1,
+          "consume_items": false,
+          "id": "7502569DCF2B5C32"
+        }
+      ],
+      "rewards": [
+        {
+          "type": "item",
+          "item": "minecraft:iron_ingot",
+          "count": 16,
+          "team_reward": true,
+          "auto": "disabled",
+          "id": "629A37738A1CB501"
+        },
+        {
+          "type": "item",
+          "item": "minecraft:redstone",
+          "count": 16,
+          "team_reward": true,
+          "auto": "disabled",
+          "id": "0F9181C795A6154E"
+        }
+      ],
+      "x": 0.0,
+      "y": 2.0
+    },
+    {
+      "id": "32B9DD6C7FFAD75B",
+      "title": "Une réserve d’énergie",
+      "description": [
+        "Obtenez une batterie pour stabiliser l’alimentation de vos appareils.",
+        "À obtenir : 1 × Cube énergétique de base."
+      ],
+      "icon": "mekanism:basic_energy_cube",
+      "tasks": [
+        {
+          "type": "item",
+          "item": "mekanism:basic_energy_cube",
+          "count": 1,
+          "consume_items": false,
+          "id": "11645FBD54F1AF19"
+        }
+      ],
+      "rewards": [
+        {
+          "type": "item",
+          "item": "minecraft:copper_ingot",
+          "count": 32,
+          "team_reward": true,
+          "auto": "disabled",
+          "id": "1743267A39F1546F"
+        }
+      ],
+      "x": 3.0,
+      "y": 2.0
+    },
+    {
+      "id": "7C4ECE1563875C52",
+      "title": "Le premier coin repas",
+      "description": [
+        "Préparez votre matériel de cuisine et votre première brasserie, où vous voulez.",
+        "À obtenir : 1 × Marmite, 1 × tonneau de fermentation."
+      ],
+      "icon": "farmersdelight:cooking_pot",
+      "tasks": [
+        {
+          "type": "item",
+          "item": "farmersdelight:cooking_pot",
+          "count": 1,
+          "consume_items": false,
+          "id": "2F2D37445334F425"
+        },
+        {
+          "type": "item",
+          "item": "brewinandchewin:keg",
+          "count": 1,
+          "consume_items": false,
+          "id": "1EC2050D5E73B9F2"
+        }
+      ],
+      "rewards": [
+        {
+          "type": "item",
+          "item": "minecraft:lantern",
+          "count": 8,
+          "team_reward": true,
+          "auto": "disabled",
+          "id": "729C615D9098AED1"
+        }
+      ],
+      "x": 6.0,
+      "y": 2.0
+    },
+    {
+      "id": "60A8821E414F6AF4",
+      "title": "Les premiers repères",
+      "description": [
+        "Fabriquez votre établi et votre coffre.",
+        "À obtenir : 1 × établi, 1 × coffre."
+      ],
+      "icon": "minecraft:crafting_table",
+      "tasks": [
+        {
+          "type": "item",
+          "item": "minecraft:crafting_table",
+          "count": 1,
+          "consume_items": false,
+          "id": "733DBBC849647B6F"
+        },
+        {
+          "type": "item",
+          "item": "minecraft:chest",
+          "count": 1,
+          "consume_items": false,
+          "id": "5FC209FFAEA29F69"
+        }
+      ],
+      "rewards": [
+        {
+          "type": "item",
+          "item": "minecraft:torch",
+          "count": 16,
+          "team_reward": true,
+          "auto": "disabled",
+          "id": "1FC3F5BB8A9DFF14"
+        }
+      ],
+      "x": 9.0,
+      "y": 2.0
+    },
+    {
+      "id": "4EFA90CB2D9A4C08",
+      "title": "Dormir pour de vrai",
+      "description": [
+        "Dors dans un lit pour déclencher l’avancement de sommeil du pack."
+      ],
+      "icon": "minecraft:book",
+      "tasks": [
+        {
+          "type": "advancement",
+          "advancement": "olycity:sleep",
+          "id": "4871120A6C4E66AD"
+        }
+      ],
+      "rewards": [
+        {
+          "type": "item",
+          "item": "minecraft:bread",
+          "count": 8,
+          "team_reward": true,
+          "auto": "disabled",
+          "id": "44F75D831B5702E2"
+        }
+      ],
+      "x": 0.0,
+      "y": 4.0
+    },
+    {
+      "id": "789BF3724B1D7786",
+      "title": "Partir équipé",
+      "description": [
+        "Un bouclier et une pioche de fer vous donneront plus de marge.",
+        "À obtenir : 1 × bouclier, 1 × pioche en fer."
+      ],
+      "icon": "minecraft:shield",
+      "tasks": [
+        {
+          "type": "item",
+          "item": "minecraft:shield",
+          "count": 1,
+          "consume_items": false,
+          "id": "7F5D23666AFA95BF"
+        },
+        {
+          "type": "item",
+          "item": "minecraft:iron_pickaxe",
+          "count": 1,
+          "consume_items": false,
+          "id": "4CA9B0BEFC47BF8E"
+        }
+      ],
+      "rewards": [
+        {
+          "type": "item",
+          "item": "minecraft:arrow",
+          "count": 16,
+          "team_reward": true,
+          "auto": "disabled",
+          "id": "2A461446BE0885F9"
+        }
+      ],
+      "x": 3.0,
+      "y": 4.0
+    },
+    {
+      "id": "264BD1F045B7BEDE",
+      "title": "Une première ruine",
+      "description": [
+        "Explorez réellement un donjon Dungeon Crawl."
+      ],
+      "icon": "minecraft:book",
+      "tasks": [
+        {
+          "type": "structure",
+          "structure": "dungeoncrawl:dungeon",
+          "id": "771D41E15DF7FE40"
+        }
+      ],
+      "rewards": [
+        {
+          "type": "item",
+          "item": "minecraft:golden_carrot",
+          "count": 8,
+          "team_reward": true,
+          "auto": "disabled",
+          "id": "76FE857994677BC4"
+        }
+      ],
+      "x": 6.0,
+      "y": 4.0
+    },
+    {
+      "id": "7CB4B527CD78C143",
+      "title": "Un trésor personnel",
+      "description": [
+        "Ouvre un coffre Lootr. Chaque joueur y découvre son propre butin ; le coffre reste partagé et peut être ouvert par les autres."
+      ],
+      "icon": "minecraft:book",
+      "tasks": [
+        {
+          "type": "advancement",
+          "advancement": "olycity:open_lootr",
+          "id": "669B15A1D9B26B34"
+        }
+      ],
+      "rewards": [
+        {
+          "type": "item",
+          "item": "minecraft:torch",
+          "count": 16,
+          "team_reward": true,
+          "auto": "disabled",
+          "id": "375B0B4C6449B370"
+        }
+      ],
+      "x": 9.0,
+      "y": 4.0
+    },
+    {
+      "id": "2CDA549F8EBE477E",
+      "title": "La route du ciel",
+      "description": [
+        "Visitez l’Aether."
+      ],
+      "icon": "minecraft:book",
+      "tasks": [
+        {
+          "type": "dimension",
+          "dimension": "aether:the_aether",
+          "id": "27C67EBE6DFBF32F"
+        }
+      ],
+      "rewards": [
+        {
+          "type": "item",
+          "item": "minecraft:ender_pearl",
+          "count": 2,
+          "team_reward": true,
+          "auto": "disabled",
+          "id": "5CFB22AFDDF38EB8"
+        }
+      ],
+      "x": 0.0,
+      "y": 6.0
+    },
+    {
+      "id": "2C0992D5D642BDDD",
+      "title": "La route sous le monde",
+      "description": [
+        "Visitez l’Undergarden."
+      ],
+      "icon": "minecraft:book",
+      "tasks": [
+        {
+          "type": "dimension",
+          "dimension": "undergarden:undergarden",
+          "id": "0608756EAA502595"
+        }
+      ],
+      "rewards": [
+        {
+          "type": "item",
+          "item": "minecraft:golden_carrot",
+          "count": 8,
+          "team_reward": true,
+          "auto": "disabled",
+          "id": "59160A8BD5717B0D"
+        }
+      ],
+      "x": 3.0,
+      "y": 6.0
+    },
+    {
+      "id": "178BEA6CC92FD786",
+      "title": "Un trophée difficile",
+      "description": [
+        "Vainquez le Netherite Monstrosity. Préparez-vous avant de le chercher."
+      ],
+      "icon": "minecraft:book",
+      "tasks": [
+        {
+          "type": "kill",
+          "entity": "cataclysm:netherite_monstrosity",
+          "value": 1,
+          "id": "157DDAE753C66BE5"
+        }
+      ],
+      "rewards": [
+        {
+          "type": "item",
+          "item": "minecraft:diamond",
+          "count": 4,
+          "team_reward": true,
+          "auto": "disabled",
+          "id": "5BB1620B2E8F0A94"
+        }
+      ],
+      "x": 6.0,
+      "y": 6.0
+    },
+    {
+      "id": "648C4028347F603B",
+      "title": "Prévenir plutôt que reconstruire",
+      "description": [
+        "Placez un déflecteur. Il retire les tempêtes concernées à portée ; gardez une marge et la zone chargée."
+      ],
+      "icon": "minecraft:book",
+      "tasks": [
+        {
+          "type": "advancement",
+          "advancement": "olycity:place_deflector",
+          "id": "32CF54AE902EAF55"
+        }
+      ],
+      "rewards": [
+        {
+          "id": "1AC34369D84F464B",
+          "type": "choice",
+          "team_reward": true,
+          "auto": "disabled",
+          "table_data": {
+            "loot_size": 1,
+            "empty_weight": 0,
+            "rewards": [
+              {
+                "type": "item",
+                "item": "minecraft:lantern",
+                "count": 16,
+                "weight": 1
+              },
+              {
+                "type": "item",
+                "item": "minecraft:item_frame",
+                "count": 16,
+                "weight": 1
+              }
+            ]
+          }
+        }
+      ],
+      "x": 9.0,
+      "y": 6.0
+    },
+    {
+      "id": "6D073C80B3D64422",
+      "title": "Un compagnon à soi",
+      "description": [
+        "Apprivoisez un animal reconnu par le succès vanilla."
+      ],
+      "icon": "minecraft:book",
+      "tasks": [
+        {
+          "type": "advancement",
+          "advancement": "minecraft:husbandry/tame_an_animal",
+          "id": "3E754D7A50978ABE"
+        }
+      ],
+      "rewards": [
+        {
+          "type": "item",
+          "item": "minecraft:name_tag",
+          "count": 1,
+          "team_reward": true,
+          "auto": "disabled",
+          "id": "12F6FBAC982A3572"
+        },
+        {
+          "type": "item",
+          "item": "minecraft:lead",
+          "count": 2,
+          "team_reward": true,
+          "auto": "disabled",
+          "id": "7522E5B9A0976231"
+        }
+      ],
+      "x": 0.0,
+      "y": 8.0
+    },
+    {
+      "id": "023DCF4DD3A92386",
+      "title": "Raconter en images",
+      "description": [
+        "Obtiens un appareil Exposure et une photographie. Garde une image de votre première sortie ou de votre coin de vie.",
+        "À obtenir : 1 × Appareil photo, 1 × Photographie."
+      ],
+      "icon": "exposure:camera",
+      "tasks": [
+        {
+          "type": "item",
+          "item": "exposure:camera",
+          "count": 1,
+          "consume_items": false,
+          "id": "695B2CADA6E2E5E2"
+        },
+        {
+          "type": "item",
+          "item": "exposure:photograph",
+          "count": 1,
+          "consume_items": false,
+          "id": "4101829EC3042BDE"
+        }
+      ],
+      "rewards": [
+        {
+          "type": "item",
+          "item": "minecraft:paper",
+          "count": 16,
+          "team_reward": true,
+          "auto": "disabled",
+          "id": "04AA5A9F046B3015"
+        },
+        {
+          "type": "item",
+          "item": "minecraft:item_frame",
+          "count": 4,
+          "team_reward": true,
+          "auto": "disabled",
+          "id": "357EE6F211C63D52"
+        }
+      ],
+      "x": 3.0,
+      "y": 8.0
+    },
+    {
+      "id": "58388EC2A63902E9",
+      "title": "Un garage à inventer",
+      "description": [
+        "Construisez les deux tables nécessaires pour préparer vos véhicules.",
+        "À obtenir : 1 × table de mécanique Automobility, 1 × assembleur automobile."
+      ],
+      "icon": "automobility:auto_mechanic_table",
+      "tasks": [
+        {
+          "type": "item",
+          "item": "automobility:auto_mechanic_table",
+          "count": 1,
+          "consume_items": false,
+          "id": "115A65E5001FEB8F"
+        },
+        {
+          "type": "item",
+          "item": "automobility:automobile_assembler",
+          "count": 1,
+          "consume_items": false,
+          "id": "5031E3E92A88F3E6"
+        }
+      ],
+      "rewards": [
+        {
+          "type": "item",
+          "item": "minecraft:iron_ingot",
+          "count": 16,
+          "team_reward": true,
+          "auto": "disabled",
+          "id": "3C95BFCE375F78B1"
+        }
+      ],
+      "x": 6.0,
+      "y": 8.0
+    },
+    {
+      "id": "40ABA75FDE421A07",
+      "title": "La première mélodie",
+      "description": [
+        "Fabriquez une flûte et essayez-la avec vos amis.",
+        "À obtenir : 1 × Flûte."
+      ],
+      "icon": "immersive_melodies:flute",
+      "tasks": [
+        {
+          "type": "item",
+          "item": "immersive_melodies:flute",
+          "count": 1,
+          "consume_items": false,
+          "id": "46009BF68B15ECA1"
+        }
+      ],
+      "rewards": [
+        {
+          "type": "item",
+          "item": "minecraft:copper_ingot",
+          "count": 8,
+          "team_reward": true,
+          "auto": "disabled",
+          "id": "0C2C832DEB36E4B6"
+        }
+      ],
+      "x": 9.0,
+      "y": 8.0
+    },
+    {
+      "id": "7FFC9A371126B8AA",
+      "title": "Des commandes à prendre",
+      "description": [
+        "Obtenez un tableau de contrats Bountiful. Consultez les demandes disponibles ; chaque contrat précise son paiement.",
+        "À obtenir : 1 × Tableau de primes."
+      ],
+      "icon": "bountiful:bountyboard",
+      "tasks": [
+        {
+          "type": "item",
+          "item": "bountiful:bountyboard",
+          "count": 1,
+          "consume_items": false,
+          "id": "111E489A15AC69D1"
+        }
+      ],
+      "rewards": [
+        {
+          "type": "item",
+          "item": "minecraft:paper",
+          "count": 16,
+          "team_reward": true,
+          "auto": "disabled",
+          "id": "3D863E0A97C5B55C"
+        }
+      ],
+      "x": 0.0,
+      "y": 10.0
+    },
+    {
+      "id": "61BD7902818BC118",
+      "title": "Deux blocs, un accès",
+      "description": [
+        "Obtenez le bloc et l’outil de liaison Entangled. Testez d’abord sur un coffre simple.",
+        "À obtenir : 1 × bloc Entangled, 1 × outil de liaison Entangled."
+      ],
+      "icon": "entangled:block",
+      "tasks": [
+        {
+          "type": "item",
+          "item": "entangled:block",
+          "count": 1,
+          "consume_items": false,
+          "id": "7A3669FC9D0B4F3C"
+        },
+        {
+          "type": "item",
+          "item": "entangled:item",
+          "count": 1,
+          "consume_items": false,
+          "id": "343178DE4C170FAF"
+        }
+      ],
+      "rewards": [
+        {
+          "type": "item",
+          "item": "minecraft:redstone",
+          "count": 16,
+          "team_reward": true,
+          "auto": "disabled",
+          "id": "243215EB62F58015"
+        }
+      ],
+      "x": 3.0,
+      "y": 10.0
+    }
+  ],
+  "quest_links": []
+}

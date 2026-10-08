@@ -1,0 +1,336 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "",
+  "filename": "01_bienvenue",
+  "group": "",
+  "icon": "ftbquests:book",
+  "id": "44E93BC1FDEEC53E",
+  "order_index": 0,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "description": [
+        "Ce pack est une boîte à aventures : construisez votre base, choisissez vos mods et partez explorer ensemble.",
+        "Les quêtes sont facultatives. Elles ne changent pas les recettes.",
+        "À obtenir : 1 × livre des quêtes.",
+        "Repère de lecture : cette étape ne donne pas de récompense."
+      ],
+      "icon": "ftbquests:book",
+      "id": "0037A6F7F69A24BA",
+      "rewards": [],
+      "tasks": [
+        {
+          "id": "6C7E4F7AB0E5A568",
+          "type": "item",
+          "item": "ftbquests:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Bienvenue à OLYCITY !",
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "dependencies": [
+        "0037A6F7F69A24BA"
+      ],
+      "description": [
+        "Dans l’inventaire, cherche un objet dans JEI. Survole-le puis utilise le raccourci Recette (R par défaut) et Utilisations (U).",
+        "Controlling aide à rechercher les touches et leurs conflits.",
+        "À obtenir : 1 × établi.",
+        "Repère de lecture : cette étape ne donne pas de récompense."
+      ],
+      "icon": "ftbquests:book",
+      "id": "4C3D90AA2DCE9624",
+      "rewards": [],
+      "tasks": [
+        {
+          "id": "5DF93CD125AACA94",
+          "type": "item",
+          "item": "minecraft:crafting_table",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Trouver une recette",
+      "x": 2.5,
+      "y": 0.0
+    },
+    {
+      "dependencies": [
+        "0037A6F7F69A24BA"
+      ],
+      "description": [
+        "Récupère du bois et prépare un établi. Le jeu valide cette étape avec le premier avancement de la branche Histoire."
+      ],
+      "icon": "ftbquests:book",
+      "id": "197A734AB44A6266",
+      "rewards": [
+        {
+          "count": 16,
+          "id": "12CE9DD3E5BF4CAF",
+          "item": "minecraft:stick",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "63A3CA8F5ACBD168",
+          "type": "advancement",
+          "advancement": "minecraft:story/root"
+        }
+      ],
+      "title": "Premier pas vers l’artisanat",
+      "x": 5.0,
+      "y": 0.0
+    },
+    {
+      "dependencies": [
+        "197A734AB44A6266"
+      ],
+      "description": [
+        "Fabrique un établi. JEI t’indique les recettes des outils et machines du pack.",
+        "À obtenir : 1 × établi."
+      ],
+      "icon": "minecraft:crafting_table",
+      "id": "5F5F049EEEA203AC",
+      "rewards": [
+        {
+          "count": 16,
+          "id": "11F98D60FA393D3C",
+          "item": "minecraft:torch",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "id": "7748E8EEB1669588",
+          "item": "minecraft:crafting_table",
+          "type": "item"
+        }
+      ],
+      "title": "Le premier établi",
+      "x": 7.5,
+      "y": 0.0
+    },
+    {
+      "dependencies": [
+        "5F5F049EEEA203AC"
+      ],
+      "description": [
+        "Prépare des outils de pierre et de quoi manger. FTB Ultimine permet de creuser plusieurs blocs : vérifie la forme indiquée avant de miner.",
+        "À obtenir : 1 × pioche en pierre."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "minecraft:stone_pickaxe",
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "id": "19D52593C495BC2C",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "1FAA51F04DC9DCB0",
+          "item": "minecraft:cooked_beef",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "id": "1571A56837E7F3B6",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:stone_pickaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item"
+        }
+      ],
+      "title": "Une pioche de pierre",
+      "x": 0.0,
+      "y": 2.5
+    },
+    {
+      "description": [
+        "Fabrique une pioche en fer. Garde une réserve de fer : sacs, machines et outils en auront besoin.",
+        "À obtenir : 1 × pioche en fer."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "minecraft:iron_pickaxe",
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "id": "2C1F0E3F810F82B6",
+      "rewards": [
+        {
+          "count": 8,
+          "id": "4CF1D5A5AD737D42",
+          "item": "minecraft:coal",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "id": "09617D90E9DDDC00",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:iron_pickaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item"
+        }
+      ],
+      "title": "Prêt pour les minerais",
+      "x": 2.5,
+      "y": 2.5
+    },
+    {
+      "dependencies": [
+        "5F5F049EEEA203AC"
+      ],
+      "description": [
+        "Obtiens un coffre pour tes premières réserves. Un petit abri, un lit et de la lumière feront un bon début ; votre grande base viendra à votre rythme.",
+        "Avant de lancer un atelier, garde de la place pour l’agrandir.",
+        "À obtenir : 1 × coffre."
+      ],
+      "icon": "ftbquests:book",
+      "id": "270B5B13E673B689",
+      "rewards": [
+        {
+          "count": 16,
+          "id": "1327EFB133236033",
+          "item": "minecraft:glass",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "2542C37CE83973B4",
+          "type": "item",
+          "item": "minecraft:chest",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Le premier rangement",
+      "x": 5.0,
+      "y": 2.5
+    },
+    {
+      "dependencies": [
+        "2C1F0E3F810F82B6"
+      ],
+      "description": [
+        "Fabrique un sac Sophisticated Backpacks. Il peut être équipé d’améliorations : commence simplement, le livre/JEI montre les recettes.",
+        "À obtenir : 1 × Sac à dos."
+      ],
+      "icon": "sophisticatedbackpacks:backpack",
+      "id": "5E85CFED1760A38D",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "54EB642180BA1D38",
+          "item": "minecraft:leather",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "consume_items": 0,
+          "id": "262E5ACB82C5DF54",
+          "item": "sophisticatedbackpacks:backpack",
+          "type": "item"
+        }
+      ],
+      "title": "Le sac d’exploration",
+      "x": 7.5,
+      "y": 2.5
+    },
+    {
+      "dependencies": [
+        "270B5B13E673B689"
+      ],
+      "description": [
+        "Obtiens une boussole et marque ton point de chute sur la carte Xaero. La boussole classique indique le point d’apparition du monde, pas automatiquement votre maison.",
+        "Les Waystones servent ensuite à voyager entre les points activés. La téléportation administrative de la carte reste réservée aux joueurs autorisés.",
+        "À obtenir : 1 × boussole."
+      ],
+      "icon": "ftbquests:book",
+      "id": "533ADD03F649AB4E",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "67B25139186BADC6",
+          "item": "minecraft:bread",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "449DE73021F1AB00",
+          "type": "item",
+          "item": "minecraft:compass",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Préparer ses repères",
+      "x": 0.0,
+      "y": 5.0
+    },
+    {
+      "dependencies": [
+        "0037A6F7F69A24BA"
+      ],
+      "description": [
+        "Les Chroniques d’OLYCITY racontent les rumeurs sur les reliques du pack.",
+        "/oly livre permet de récupérer le carnet.",
+        "À obtenir : 1 × livre.",
+        "Repère de lecture : cette étape ne donne pas de récompense."
+      ],
+      "icon": "ftbquests:book",
+      "id": "53DCB36F15217F16",
+      "rewards": [],
+      "tasks": [
+        {
+          "id": "1B2AC5AECB6C59D9",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "&dLes archives scellées&r",
+      "x": 2.5,
+      "y": 5.0
+    }
+  ],
+  "title": "&6Bienvenue à OLYCITY&r"
+}

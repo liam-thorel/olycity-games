@@ -1,0 +1,8 @@
+name = "kubejs/data/dungeoncrawl/loot_tables/chests/forge.json"
+filename = "forge.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/696ee3aabaea53505d8af884e65319801142add87915faa215f41df5167c7586"
+hash-format = "sha256"
+hash = "696ee3aabaea53505d8af884e65319801142add87915faa215f41df5167c7586"

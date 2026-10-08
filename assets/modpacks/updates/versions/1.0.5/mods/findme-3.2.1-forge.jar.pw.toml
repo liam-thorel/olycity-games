@@ -1,0 +1,8 @@
+name = "mods/findme-3.2.1-forge.jar"
+filename = "findme-3.2.1-forge.jar"
+side = "client"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/e23c0c503ee271ca351084c5a40411c5921dbf1d97e95fc59c304270977171c6.jar"
+hash-format = "sha256"
+hash = "e23c0c503ee271ca351084c5a40411c5921dbf1d97e95fc59c304270977171c6"

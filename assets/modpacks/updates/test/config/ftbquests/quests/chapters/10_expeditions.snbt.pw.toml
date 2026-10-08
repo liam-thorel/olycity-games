@@ -3,6 +3,6 @@ filename = "10_expeditions.snbt"
 side = "both"
 
 [download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/c2da4b1768095078bfc0f0300b1a42b71b5d2d04b51f8500ece856d06b661c5e"
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/f5da8034a9e2211b0abd0cfdc8d620d04a60fd2d8d0857e57c51f292fe583889"
 hash-format = "sha256"
-hash = "c2da4b1768095078bfc0f0300b1a42b71b5d2d04b51f8500ece856d06b661c5e"
+hash = "f5da8034a9e2211b0abd0cfdc8d620d04a60fd2d8d0857e57c51f292fe583889"

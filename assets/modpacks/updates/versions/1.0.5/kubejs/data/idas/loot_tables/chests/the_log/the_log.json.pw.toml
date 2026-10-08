@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/the_log/the_log.json"
+filename = "the_log.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/04842c04591f63ed19436992e98a3e6a2e19c5344e88406b05fa441078fd599d"
+hash-format = "sha256"
+hash = "04842c04591f63ed19436992e98a3e6a2e19c5344e88406b05fa441078fd599d"

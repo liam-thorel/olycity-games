@@ -1,0 +1,8 @@
+name = "kubejs/data/dungeoncrawl/loot_tables/chests/treasure.json"
+filename = "treasure.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/187e453cef08c899537916f061518a2ba499daff8121a5b83e34643c3d4bfe92"
+hash-format = "sha256"
+hash = "187e453cef08c899537916f061518a2ba499daff8121a5b83e34643c3d4bfe92"

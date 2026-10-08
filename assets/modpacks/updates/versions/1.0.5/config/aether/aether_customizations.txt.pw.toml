@@ -1,0 +1,8 @@
+name = "config/aether/aether_customizations.txt"
+filename = "aether_customizations.txt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/113f7dfc56b7b2efdc782e45356c87c47174bb76dc34dcef24ca2ec32c7908e1"
+hash-format = "sha256"
+hash = "113f7dfc56b7b2efdc782e45356c87c47174bb76dc34dcef24ca2ec32c7908e1"

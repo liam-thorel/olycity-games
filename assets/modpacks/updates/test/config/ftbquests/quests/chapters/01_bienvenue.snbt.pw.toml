@@ -3,6 +3,6 @@ filename = "01_bienvenue.snbt"
 side = "both"
 
 [download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/3ee6d07155a6132f3fb9013f4261bdd5dc88b0208c3183180775f112581bc748"
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/753edf8991684b91b9dea1cf410053dd1e6e87c5008eef78e90c7d2c31edc223"
 hash-format = "sha256"
-hash = "3ee6d07155a6132f3fb9013f4261bdd5dc88b0208c3183180775f112581bc748"
+hash = "753edf8991684b91b9dea1cf410053dd1e6e87c5008eef78e90c7d2c31edc223"

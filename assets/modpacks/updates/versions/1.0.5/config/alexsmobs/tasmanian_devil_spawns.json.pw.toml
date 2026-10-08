@@ -1,0 +1,8 @@
+name = "config/alexsmobs/tasmanian_devil_spawns.json"
+filename = "tasmanian_devil_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/40c769365424d492a4c17700bb8cfac4c8ce7fac2bc16728f0c4287e3a043130"
+hash-format = "sha256"
+hash = "40c769365424d492a4c17700bb8cfac4c8ce7fac2bc16728f0c4287e3a043130"

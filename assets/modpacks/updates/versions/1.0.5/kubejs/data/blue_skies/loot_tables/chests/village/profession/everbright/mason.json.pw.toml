@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/village/profession/everbright/mason.json"
+filename = "mason.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/10842a97a872d4a39bd429a7447200be10da1873549086cc5a74996dfacb207a"
+hash-format = "sha256"
+hash = "10842a97a872d4a39bd429a7447200be10da1873549086cc5a74996dfacb207a"

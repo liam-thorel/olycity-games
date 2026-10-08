@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/hunters_cabin/hunters_cabin_library.json"
+filename = "hunters_cabin_library.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/09934b85273107a95425225a503a55e4146f947f38a0ce24c2d58546e19b5d99"
+hash-format = "sha256"
+hash = "09934b85273107a95425225a503a55e4146f947f38a0ce24c2d58546e19b5d99"

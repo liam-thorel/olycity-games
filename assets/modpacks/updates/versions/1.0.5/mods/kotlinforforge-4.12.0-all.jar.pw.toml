@@ -1,0 +1,8 @@
+name = "mods/kotlinforforge-4.12.0-all.jar"
+filename = "kotlinforforge-4.12.0-all.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/6a66c6a68ec09f8717cdbf06883394f0ee24d7cd826b7134a0f81839e8e720ae.jar"
+hash-format = "sha256"
+hash = "6a66c6a68ec09f8717cdbf06883394f0ee24d7cd826b7134a0f81839e8e720ae"

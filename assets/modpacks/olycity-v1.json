@@ -19,7 +19,8 @@
     "guideUrl": "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1.0.3-20261008/Instructions-Romain-OLYCITY-V1.md",
     "version": "1.0.3",
     "updatesIncluded": true,
-    "readyToStart": true
+    "readyToStart": true,
+    "updateVersion": "1.0.5"
   },
   "manualDownload": {
     "downloadUrl": "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1.0.3-20261008/OLYCITY.V1.zip",
@@ -30,10 +31,10 @@
   },
   "updates": {
     "type": "packwiz",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "stableUrl": "https://games.olycity.fr/assets/modpacks/updates/stable/pack.toml",
     "testUrl": "https://games.olycity.fr/assets/modpacks/updates/test/pack.toml",
     "firstDownloadApproxBytes": 1167042059,
-    "serverUpdateRequired": false
+    "serverUpdateRequired": true
   }
 }

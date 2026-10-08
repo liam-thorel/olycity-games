@@ -1,0 +1,8 @@
+name = "kubejs/data/ars-expanded/structures/corridor/tardis_grid_barracks_abandoned.nbt"
+filename = "tardis_grid_barracks_abandoned.nbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/967e58fec2132f06896163a1b1ed074f2079f70c2ed73b251b1bbfe1055844dc"
+hash-format = "sha256"
+hash = "967e58fec2132f06896163a1b1ed074f2079f70c2ed73b251b1bbfe1055844dc"

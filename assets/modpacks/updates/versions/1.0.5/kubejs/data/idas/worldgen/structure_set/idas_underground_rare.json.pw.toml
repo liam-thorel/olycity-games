@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/worldgen/structure_set/idas_underground_rare.json"
+filename = "idas_underground_rare.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/fb99305029c3524267f363e7981603ae25a5699443dadee4bcf65ee4e6aa4386"
+hash-format = "sha256"
+hash = "fb99305029c3524267f363e7981603ae25a5699443dadee4bcf65ee4e6aa4386"

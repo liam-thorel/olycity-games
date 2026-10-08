@@ -1,0 +1,8 @@
+name = "config/artifacts/client.json5"
+filename = "client.json5"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/dfae4a12bf924a5e12380032ff257ec535c6b003fef539a3893adb05c0a69c56"
+hash-format = "sha256"
+hash = "dfae4a12bf924a5e12380032ff257ec535c6b003fef539a3893adb05c0a69c56"

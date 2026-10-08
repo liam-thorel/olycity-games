@@ -1,0 +1,8 @@
+name = "kubejs/assets/patchouli/patchouli_books/chroniques_olycity/fr_fr/entries/romain_touches.json"
+filename = "romain_touches.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/009d73cb316aae5125b5b27973c56721d1dc03794db946f1199fde5c69393b99"
+hash-format = "sha256"
+hash = "009d73cb316aae5125b5b27973c56721d1dc03794db946f1199fde5c69393b99"

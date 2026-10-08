@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/tags/items/torches.json"
+filename = "torches.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/069f050351e56bb1833be7aa4d55c3e40aaca93afec5a551bc4c86d025c19ebf"
+hash-format = "sha256"
+hash = "069f050351e56bb1833be7aa4d55c3e40aaca93afec5a551bc4c86d025c19ebf"

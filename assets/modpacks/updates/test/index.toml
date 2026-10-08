@@ -892,62 +892,62 @@ metafile = true
 
 [[files]]
 file = "config/ftbquests/quests/chapters/01_bienvenue.snbt.pw.toml"
-hash = "77b681fabc3374efcff43b60ffa3dd8bb60583b35cc65b60dcff52b8b16746e4"
+hash = "3a045399526d5b5a16cabe57a10e916c9532c4f6f80c7b2595791926f31549f3"
 metafile = true
 
 [[files]]
 file = "config/ftbquests/quests/chapters/02_aventure.snbt.pw.toml"
-hash = "6e2c3672a8c268aa2f29fa785409b22e68b9fe1adb3072925f5aa5ea5709f336"
+hash = "ee1c9622d4f7beb7f3bed33db89177a8d57734d98407da9b723ed76452bc0eb6"
 metafile = true
 
 [[files]]
 file = "config/ftbquests/quests/chapters/03_create.snbt.pw.toml"
-hash = "6ed9027e1b13d7e0aca316bcff216184e388ed814da2a74ea09a4d97b0c26f5e"
+hash = "f86e39f201a10370155f2f7ed54e449ab13468114405c2c48027eb862d4916c4"
 metafile = true
 
 [[files]]
 file = "config/ftbquests/quests/chapters/04_energie.snbt.pw.toml"
-hash = "164a80aa47d5417724f319f52c1816339f765274b541b80e983d719f78cc2afc"
+hash = "38f456ad5120c41a3b14a81b6731f0185d1fdf72fa78e56a15de1f2910f529e4"
 metafile = true
 
 [[files]]
 file = "config/ftbquests/quests/chapters/05_vie.snbt.pw.toml"
-hash = "5cc3ae4558045aaa7febec764ae8322f4040a51769ddf321c986f037cc6ec75b"
+hash = "279a929ed00af3ac3eddb91b43c29bd76559093a2e8b0f02d5bc2adc0eb798e8"
 metafile = true
 
 [[files]]
 file = "config/ftbquests/quests/chapters/06_refuge.snbt.pw.toml"
-hash = "6f69e18acddc3fc85003091a4b3500625f15269064a6be31e3f5bb1f06691b1e"
+hash = "4ce78e85690ad8ddb7646c94279a932b67099ac7cb4505a5252cca60ef87e609"
 metafile = true
 
 [[files]]
 file = "config/ftbquests/quests/chapters/07_liam.snbt.pw.toml"
-hash = "e942f61da8fc7005882c2d21e87c8b51ad43c188f173710dd5441640a28d8319"
+hash = "a402ddef3d577fda4dafc0f824b7166ef98cef3c0c2e3161fb6e5268fe1c85e2"
 metafile = true
 
 [[files]]
 file = "config/ftbquests/quests/chapters/08_romain.snbt.pw.toml"
-hash = "ad9242826a9c1ede2431d11affe7fac0ed7fdc807b86b8bd647ee5048256c9ec"
+hash = "4c045f442b8317edd967e1870cb8dd96ac3175407c834387df234cb1d012213c"
 metafile = true
 
 [[files]]
 file = "config/ftbquests/quests/chapters/09_ateliers.snbt.pw.toml"
-hash = "aff504c02b9834df579c06cf76715f416e5c35fa703d3c09492c3642cc695c3c"
+hash = "adf13aa710a0978b1c2831c41ec3b1f57881563ee7bec5c7ee850c79a7463a40"
 metafile = true
 
 [[files]]
 file = "config/ftbquests/quests/chapters/10_expeditions.snbt.pw.toml"
-hash = "0f9199b332a500b47806645396dc77fb1bd52c210fb74b49b44f464a6b6f27fd"
+hash = "211155d294201ebc7c7f28f89a5ca63b8432d6c4b83cde8e0f01f64c78b62a89"
 metafile = true
 
 [[files]]
 file = "config/ftbquests/quests/chapters/11_village.snbt.pw.toml"
-hash = "c0b28a9b5051de01c673765e0f4c1f10692ded3415d8fb3d9325a59c13ee50f1"
+hash = "7d30a7b3fd50d5194b855fbefb589f9cf146b9abe02c050d4fbce6deaf46de34"
 metafile = true
 
 [[files]]
 file = "config/ftbquests/quests/chapters/12_projets.snbt.pw.toml"
-hash = "711243d0e20db96b8d4ff393f13a5a81507652f05105efa2a61ec13507d67445"
+hash = "95ef6ada6274f9ed27b2ef2ad825dad90e97b549b94c355ec9dca2895c2623cb"
 metafile = true
 
 [[files]]

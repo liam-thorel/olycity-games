@@ -1,0 +1,8 @@
+name = "kubejs/data/the_bumblezone/bz_pollen_puff_entity_flowers/goety.json"
+filename = "goety.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/3a194144c85fa707a70ddb2ab71330f164f570a8a08c6097fa1244ef08b4bd6f"
+hash-format = "sha256"
+hash = "3a194144c85fa707a70ddb2ab71330f164f570a8a08c6097fa1244ef08b4bd6f"

@@ -1,0 +1,8 @@
+name = "patchouli_books/chroniques_olycity/fr_fr/entries/premiers_pas.json"
+filename = "premiers_pas.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/2ec2b9f9d2dcd1835b127b005179eaa396255b81454e74c50ad815d1138da392"
+hash-format = "sha256"
+hash = "2ec2b9f9d2dcd1835b127b005179eaa396255b81454e74c50ad815d1138da392"

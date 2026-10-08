@@ -28,7 +28,7 @@ test('Packwiz distribution preserves personal paths, exact hashes and client/ser
   assert.ok(pack.bytes < 5_000_000);
   assert.equal(pack.server.updatesIncluded,true);
   assert.equal(pack.server.readyToStart,true);
-  assert.ok(pack.server.version === pack.updates.version || pack.updates.serverUpdateRequired === false);
+  assert.ok(pack.server.version === pack.updates.version || pack.server.updateVersion === pack.updates.version || pack.updates.serverUpdateRequired === false);
   assert.equal(pack.server.updateKitUrl,undefined);
   const root = new URL('../assets/modpacks/updates/',import.meta.url);
   const hash = data => createHash('sha256').update(data).digest('hex');

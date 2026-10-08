@@ -1,0 +1,308 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "",
+  "filename": "09_ateliers",
+  "group": "",
+  "icon": "mekanism:enrichment_chamber",
+  "id": "28AE7F12BCC5F0A2",
+  "order_index": 8,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "description": [
+        "Rassemble du fer pour lancer les ateliers. Les objets demandés ne sont pas consommés.",
+        "À obtenir : 16 × lingot de fer."
+      ],
+      "icon": "minecraft:iron_ingot",
+      "id": "14B60B4755FE5317",
+      "rewards": [
+        {
+          "id": "420CD815CF99C09B",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 8,
+          "id": "43B76BD39B3A50C7",
+          "item": "minecraft:coal",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "count": 16,
+          "id": "5BAAFE039060FB8E",
+          "item": "minecraft:iron_ingot",
+          "type": "item"
+        }
+      ],
+      "title": "Les premières fournitures",
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "description": [
+        "Construis une chambre d’enrichissement. Branche une petite source d’énergie et compare les recettes dans JEI.",
+        "À obtenir : 1 × Chambre d'enrichissement."
+      ],
+      "icon": "mekanism:enrichment_chamber",
+      "id": "5E44E4DFDE393624",
+      "rewards": [
+        {
+          "id": "3CE20E46038AD1F1",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 4,
+          "id": "613F55B6FA17FC4B",
+          "item": "mekanism:basic_universal_cable",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "07A8F3D11CA916F7",
+          "item": "mekanism:enrichment_chamber",
+          "type": "item"
+        }
+      ],
+      "title": "Traiter les minerais",
+      "x": 2.5,
+      "y": 0.0
+    },
+    {
+      "dependencies": [
+        "5E44E4DFDE393624"
+      ],
+      "description": [
+        "Un atelier utile alimente plusieurs machines sans gaspiller toute sa production.",
+        "À obtenir : 1 × Cube énergétique de base."
+      ],
+      "icon": "mekanism:basic_energy_cube",
+      "id": "52BAD700AAF774B1",
+      "rewards": [
+        {
+          "id": "651E028F6636CF23",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 8,
+          "id": "29805D28100CFC70",
+          "item": "minecraft:redstone",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "012EC8463E117740",
+          "item": "mekanism:basic_energy_cube",
+          "type": "item"
+        }
+      ],
+      "title": "Distribuer l’énergie",
+      "x": 5.0,
+      "y": 0.0
+    },
+    {
+      "description": [
+        "Les cristaux de certus sont le début du stockage : consulte JEI avant de fabriquer tous les composants.",
+        "À obtenir : 8 × Cristal de Quartz Certus."
+      ],
+      "icon": "ae2:certus_quartz_crystal",
+      "id": "4B3DF05C328C799E",
+      "rewards": [
+        {
+          "id": "18D46C838B67732C",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 8,
+          "id": "2C19DBE8D4A9E55B",
+          "item": "minecraft:copper_ingot",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "count": 8,
+          "id": "7E9E6A1434327616",
+          "item": "ae2:certus_quartz_crystal",
+          "type": "item"
+        }
+      ],
+      "title": "Préparer AE2",
+      "x": 7.5,
+      "y": 0.0
+    },
+    {
+      "dependencies": [
+        "4B3DF05C328C799E"
+      ],
+      "description": [
+        "Fabrique un terminal ME et raccorde-le à un réseau alimenté avec stockage. Le parcours n’offre pas les processeurs gratuitement.",
+        "À obtenir : 1 × Terminal ME."
+      ],
+      "icon": "ae2:terminal",
+      "id": "36E376966D475372",
+      "rewards": [
+        {
+          "id": "0F548B545485209D",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 16,
+          "id": "4EF8372CE793DB28",
+          "item": "minecraft:glass",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "5DBF7CCAC99AD7D9",
+          "item": "ae2:terminal",
+          "type": "item"
+        }
+      ],
+      "title": "Un réseau qui sert au groupe",
+      "x": 0.0,
+      "y": 2.0
+    },
+    {
+      "description": [
+        "Fabrique un pulvérisateur Thermal. Compare consommation, vitesse et rendement avec Mekanism.",
+        "À obtenir : 1 × pulvérisateur Thermal."
+      ],
+      "icon": "thermal:machine_pulverizer",
+      "id": "1A695B5205879CCE",
+      "rewards": [
+        {
+          "id": "0A755912C0421F81",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 8,
+          "id": "4A4D5448882C7F37",
+          "item": "minecraft:coal",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "2DD3443E43662725",
+          "item": "thermal:machine_pulverizer",
+          "type": "item"
+        }
+      ],
+      "title": "Une autre chaîne de production",
+      "x": 2.5,
+      "y": 2.0
+    },
+    {
+      "description": [
+        "Fabrique des conduits d’énergie Ender IO. Utilise-les pour relier un atelier à sa source.",
+        "À obtenir : 4 × Conduit d'énergie."
+      ],
+      "icon": "enderio:energy_conduit",
+      "id": "127318F1755E67EE",
+      "rewards": [
+        {
+          "id": "50512E4C3273E6F9",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 8,
+          "id": "683290BC83B4D2AF",
+          "item": "minecraft:redstone",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "count": 4,
+          "id": "0FE758C7FC2DE256",
+          "item": "enderio:energy_conduit",
+          "type": "item"
+        }
+      ],
+      "title": "Les câbles de l’atelier",
+      "x": 5.0,
+      "y": 2.0
+    },
+    {
+      "dependencies": [
+        "52BAD700AAF774B1"
+      ],
+      "description": [
+        "Réunis 128 lingots de fer pour les prochains projets du groupe. Rangez cette réserve là où elle vous sera utile.",
+        "À obtenir : 128 × lingot de fer."
+      ],
+      "icon": "minecraft:book",
+      "id": "217654DF2FE6CE3E",
+      "rewards": [
+        {
+          "id": "2682D3B1E9EB2050",
+          "type": "xp",
+          "xp": 15,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 4,
+          "id": "52BC2581FB611B7A",
+          "item": "minecraft:gold_ingot",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "71064F4205014CA4",
+          "type": "item",
+          "item": "minecraft:iron_ingot",
+          "count": 128,
+          "consume_items": false
+        }
+      ],
+      "title": "Une réserve commune",
+      "x": 7.5,
+      "y": 2.0
+    }
+  ],
+  "title": "&6Ateliers : produire pour nos projets&r"
+}

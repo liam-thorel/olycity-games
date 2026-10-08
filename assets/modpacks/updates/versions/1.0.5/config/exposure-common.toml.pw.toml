@@ -1,0 +1,8 @@
+name = "config/exposure-common.toml"
+filename = "exposure-common.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/03666ca5d1fd2fa23406e92532186b0e729c46ed1fbce4aee88a26e237d77558"
+hash-format = "sha256"
+hash = "03666ca5d1fd2fa23406e92532186b0e729c46ed1fbce4aee88a26e237d77558"

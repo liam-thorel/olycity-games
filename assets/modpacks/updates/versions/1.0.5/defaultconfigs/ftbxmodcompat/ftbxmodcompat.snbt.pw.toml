@@ -1,0 +1,8 @@
+name = "defaultconfigs/ftbxmodcompat/ftbxmodcompat.snbt"
+filename = "ftbxmodcompat.snbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/9e5046ac0b9f6d27945b689657835bff24310aec7b11f7461c972b514d0e0658"
+hash-format = "sha256"
+hash = "9e5046ac0b9f6d27945b689657835bff24310aec7b11f7461c972b514d0e0658"

@@ -1,0 +1,8 @@
+name = "config/immersive_portals.json"
+filename = "immersive_portals.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/a4bca78891c5c771a9c74faa68c1cf9a8024ecdf68cd3fc3983ee7d6c448e47f"
+hash-format = "sha256"
+hash = "a4bca78891c5c771a9c74faa68c1cf9a8024ecdf68cd3fc3983ee7d6c448e47f"

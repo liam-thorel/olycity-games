@@ -1,0 +1,8 @@
+name = "config/modernfix-mixins.properties"
+filename = "modernfix-mixins.properties"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/cc9db08ca3f44714cf14117fb1772eed88c9cc3272fea6d17e657292c8799fe0"
+hash-format = "sha256"
+hash = "cc9db08ca3f44714cf14117fb1772eed88c9cc3272fea6d17e657292c8799fe0"

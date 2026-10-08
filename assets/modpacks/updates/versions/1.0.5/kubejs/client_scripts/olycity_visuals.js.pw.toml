@@ -1,0 +1,8 @@
+name = "kubejs/client_scripts/olycity_visuals.js"
+filename = "olycity_visuals.js"
+side = "client"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/ba8efe47c30b73c7efabb24e20016b663a737714ca3e12b447feb0bb9895c91a"
+hash-format = "sha256"
+hash = "ba8efe47c30b73c7efabb24e20016b663a737714ca3e12b447feb0bb9895c91a"

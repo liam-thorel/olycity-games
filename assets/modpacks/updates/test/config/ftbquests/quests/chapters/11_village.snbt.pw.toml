@@ -3,6 +3,6 @@ filename = "11_village.snbt"
 side = "both"
 
 [download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/c1607881acfa90519e6092857e391154a3cd511617f093f1a056619df46abedd"
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/8c52d47566b2747dda3b1b0f58474760eb10b9e6fa96e1fd6ec5885a50f26fe5"
 hash-format = "sha256"
-hash = "c1607881acfa90519e6092857e391154a3cd511617f093f1a056619df46abedd"
+hash = "8c52d47566b2747dda3b1b0f58474760eb10b9e6fa96e1fd6ec5885a50f26fe5"

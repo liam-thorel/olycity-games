@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/trial_chambers/additional_ominous_spawner_consumable_loot.json"
+filename = "additional_ominous_spawner_consumable_loot.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/63f1590a003abfdfacec419d4732f676f2f64adecb5a66711c5bf0168f36bdc6"
+hash-format = "sha256"
+hash = "63f1590a003abfdfacec419d4732f676f2f64adecb5a66711c5bf0168f36bdc6"

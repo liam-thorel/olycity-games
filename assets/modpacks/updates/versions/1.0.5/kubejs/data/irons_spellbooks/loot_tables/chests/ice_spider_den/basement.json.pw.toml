@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/ice_spider_den/basement.json"
+filename = "basement.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/b671de308eb741251edcfe16b9d6282b3478530cdb1e1227014a474485504f87"
+hash-format = "sha256"
+hash = "b671de308eb741251edcfe16b9d6282b3478530cdb1e1227014a474485504f87"

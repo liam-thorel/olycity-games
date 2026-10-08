@@ -1,0 +1,8 @@
+name = "kubejs/data/dungeoncrawl/loot_tables/chests/stage_4.json"
+filename = "stage_4.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/5973c29bd2770c51c993c60cad0d317a1d68e531027c7207742b95c836d9e871"
+hash-format = "sha256"
+hash = "5973c29bd2770c51c993c60cad0d317a1d68e531027c7207742b95c836d9e871"

@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/ice_spider_den/dungeon.json"
+filename = "dungeon.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/fa6748647ef25076427c8aea81c4af988bf17e6f5344209add686cb85d614c93"
+hash-format = "sha256"
+hash = "fa6748647ef25076427c8aea81c4af988bf17e6f5344209add686cb85d614c93"
