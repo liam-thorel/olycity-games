@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync, existsSync } from 'node:fs';
+import { readFileSync, existsSync, readdirSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 const read = file => readFileSync(new URL(file,import.meta.url),'utf8');
 test('OLYCITY V1 has a static download and installation guide independent of Firebase', () => {
@@ -29,6 +29,11 @@ test('Packwiz distribution preserves personal paths, exact hashes and client/ser
   assert.ok(pack.server.updateKitUrl.endsWith('.zip'));
   const root = new URL('../assets/modpacks/updates/',import.meta.url);
   const hash = data => createHash('sha256').update(data).digest('hex');
+  for (const channel of ['stable','test',...readdirSync(new URL('versions/',root)).map(v=>`versions/${v}`)]) {
+    const manifest = readFileSync(new URL(`${channel}/pack.toml`,root),'utf8');
+    const bytes = readFileSync(new URL(`${channel}/index.toml`,root));
+    assert.ok(manifest.includes(`hash = "${hash(bytes)}"`),`Exact byte hash: ${channel}`);
+  }
   const stable = readFileSync(new URL('stable/pack.toml',root),'utf8');
   const pinned = readFileSync(new URL(`versions/${pack.updates.version}/pack.toml`,root),'utf8');
   assert.equal(stable,pinned);
