@@ -3,6 +3,6 @@ filename = "09_ateliers.snbt"
 side = "both"
 
 [download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/53e11b221ad119f600a4e9733ffbc09191df930d72ec2ee4e336d9bd8c197842"
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/1075ac81dabd60ef240464857498f23ee7b75bc9e2d3abf6df9cd759399ccecf"
 hash-format = "sha256"
-hash = "53e11b221ad119f600a4e9733ffbc09191df930d72ec2ee4e336d9bd8c197842"
+hash = "1075ac81dabd60ef240464857498f23ee7b75bc9e2d3abf6df9cd759399ccecf"

@@ -1,0 +1,8 @@
+name = "kubejs/assets/patchouli/patchouli_books/chroniques_olycity/fr_fr/entries/romain_suite.json"
+filename = "romain_suite.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/9793eb7d8ca94bfd6dac53a0f1ca152af501694ab95e5dbe43233736e3ca015d"
+hash-format = "sha256"
+hash = "9793eb7d8ca94bfd6dac53a0f1ca152af501694ab95e5dbe43233736e3ca015d"

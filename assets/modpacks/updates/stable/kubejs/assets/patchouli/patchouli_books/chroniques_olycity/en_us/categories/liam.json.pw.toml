@@ -3,6 +3,6 @@ filename = "liam.json"
 side = "both"
 
 [download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/569ec26f805a2ab4eacb0e1902df60c8da1dc6f7545fef7467f4a5161794c052"
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/3730e4d84466f3cd3266a538612e9239820e22ea50941e1f9ec9ead3319caa9b"
 hash-format = "sha256"
-hash = "569ec26f805a2ab4eacb0e1902df60c8da1dc6f7545fef7467f4a5161794c052"
+hash = "3730e4d84466f3cd3266a538612e9239820e22ea50941e1f9ec9ead3319caa9b"

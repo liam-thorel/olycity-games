@@ -3,6 +3,6 @@ filename = "08_romain.snbt"
 side = "both"
 
 [download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/6f9ccf8981284a6e22297dd1e3ce39a7d9220d5a249e12d74d3f6336052f9c06"
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/1dfc77f65b791b0e2ed8a5e846bb52c083a24a5436f09e8e08df29f5011f0bfd"
 hash-format = "sha256"
-hash = "6f9ccf8981284a6e22297dd1e3ce39a7d9220d5a249e12d74d3f6336052f9c06"
+hash = "1dfc77f65b791b0e2ed8a5e846bb52c083a24a5436f09e8e08df29f5011f0bfd"

@@ -3,6 +3,6 @@ filename = "05_vie.snbt"
 side = "both"
 
 [download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/1b63b713f3b34e83709f149a29646df4b23aea68277ca840c6948426415e6211"
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/53231c3ee9aebe9aa15c9aa104473f7833544aac9e21bfe4d494011dc28a4140"
 hash-format = "sha256"
-hash = "1b63b713f3b34e83709f149a29646df4b23aea68277ca840c6948426415e6211"
+hash = "53231c3ee9aebe9aa15c9aa104473f7833544aac9e21bfe4d494011dc28a4140"

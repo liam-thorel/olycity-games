@@ -3,6 +3,6 @@ filename = "data.snbt"
 side = "both"
 
 [download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/4d528763c67b9e0099ca10bd8053958cdf7e6fb831587bf2aa281f40d77eaa53"
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/ba0f751fed8ba19767d31fde9075e55e85fa43c867387c1d2d959a1a94df9d14"
 hash-format = "sha256"
-hash = "4d528763c67b9e0099ca10bd8053958cdf7e6fb831587bf2aa281f40d77eaa53"
+hash = "ba0f751fed8ba19767d31fde9075e55e85fa43c867387c1d2d959a1a94df9d14"

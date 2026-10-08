@@ -1,0 +1,8 @@
+name = "mods/automobility-0.4.2+1.20.1-forge.jar"
+filename = "automobility-0.4.2+1.20.1-forge.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1.0.2-20261008/4ea3933ee2a9ffed5b739bbbf8a8c974737fd59cb6517c61c54b3eae9465ff54.jar"
+hash-format = "sha256"
+hash = "4ea3933ee2a9ffed5b739bbbf8a8c974737fd59cb6517c61c54b3eae9465ff54"
