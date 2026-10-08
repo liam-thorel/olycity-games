@@ -1,0 +1,8 @@
+name = "config/industrialforegoing/machine-misc.toml"
+filename = "machine-misc.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/a938f14316972cfed37a9f1fff2a289fe5ae5e7eaaeeef352a902541c5974148"
+hash-format = "sha256"
+hash = "a938f14316972cfed37a9f1fff2a289fe5ae5e7eaaeeef352a902541c5974148"

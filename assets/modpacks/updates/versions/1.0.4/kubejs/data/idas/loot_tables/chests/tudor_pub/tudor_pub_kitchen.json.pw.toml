@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/tudor_pub/tudor_pub_kitchen.json"
+filename = "tudor_pub_kitchen.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/93c759c57f3ea1c280bdb181d4dd88c2c6dbcd39344dedab37427633a7e986a0"
+hash-format = "sha256"
+hash = "93c759c57f3ea1c280bdb181d4dd88c2c6dbcd39344dedab37427633a7e986a0"

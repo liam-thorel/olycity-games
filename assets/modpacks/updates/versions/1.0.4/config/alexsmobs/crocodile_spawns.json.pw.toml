@@ -1,0 +1,8 @@
+name = "config/alexsmobs/crocodile_spawns.json"
+filename = "crocodile_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/a73d36d1b5dd75eb20f6143193b991e942f4ef4cef725835b66ec01197d7074f"
+hash-format = "sha256"
+hash = "a73d36d1b5dd75eb20f6143193b991e942f4ef4cef725835b66ec01197d7074f"

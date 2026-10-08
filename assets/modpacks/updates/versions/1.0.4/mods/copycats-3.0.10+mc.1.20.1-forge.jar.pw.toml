@@ -1,0 +1,8 @@
+name = "mods/copycats-3.0.10+mc.1.20.1-forge.jar"
+filename = "copycats-3.0.10+mc.1.20.1-forge.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/684a7a65a576d84bee4250b3cc10ddcaa66958cee05b541b1cd99df8bdc0185e.jar"
+hash-format = "sha256"
+hash = "684a7a65a576d84bee4250b3cc10ddcaa66958cee05b541b1cd99df8bdc0185e"

@@ -1,0 +1,8 @@
+name = "kubejs/data/the_bumblezone/loot_tables/structures/spider_infested_bee_dungeon.json"
+filename = "spider_infested_bee_dungeon.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/645fa2c18ba6c99f1238405440ac322e91184145ec1de6a4d5805374dc32cbbc"
+hash-format = "sha256"
+hash = "645fa2c18ba6c99f1238405440ac322e91184145ec1de6a4d5805374dc32cbbc"

@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/village/village_taiga_house.json"
+filename = "village_taiga_house.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/6465598ad20b37dfb60072b82693233bf397ae588a6d61b853e57963780d3da0"
+hash-format = "sha256"
+hash = "6465598ad20b37dfb60072b82693233bf397ae588a6d61b853e57963780d3da0"

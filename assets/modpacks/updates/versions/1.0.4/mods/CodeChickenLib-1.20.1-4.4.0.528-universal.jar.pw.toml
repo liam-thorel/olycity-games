@@ -1,0 +1,8 @@
+name = "mods/CodeChickenLib-1.20.1-4.4.0.528-universal.jar"
+filename = "CodeChickenLib-1.20.1-4.4.0.528-universal.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/754240e1cd05caaf511a808ddf6fc74ece68a8fca7d94548d9ac967287f7960d.jar"
+hash-format = "sha256"
+hash = "754240e1cd05caaf511a808ddf6fc74ece68a8fca7d94548d9ac967287f7960d"

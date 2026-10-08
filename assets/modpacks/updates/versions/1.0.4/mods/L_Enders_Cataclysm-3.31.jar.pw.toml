@@ -1,0 +1,8 @@
+name = "mods/L_Enders_Cataclysm-3.31.jar"
+filename = "L_Enders_Cataclysm-3.31.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/c29dcf940168208517b72f2d9965828b106a6b94cbea55d5001558c69a27b362.jar"
+hash-format = "sha256"
+hash = "c29dcf940168208517b72f2d9965828b106a6b94cbea55d5001558c69a27b362"

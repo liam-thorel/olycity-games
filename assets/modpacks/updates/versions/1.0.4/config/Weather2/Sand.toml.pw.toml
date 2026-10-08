@@ -1,0 +1,8 @@
+name = "config/Weather2/Sand.toml"
+filename = "Sand.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/0e2647731c2b961e23aa0431026b8bf854a6e245f7802b4e7638f1f748c0ad35"
+hash-format = "sha256"
+hash = "0e2647731c2b961e23aa0431026b8bf854a6e245f7802b4e7638f1f748c0ad35"

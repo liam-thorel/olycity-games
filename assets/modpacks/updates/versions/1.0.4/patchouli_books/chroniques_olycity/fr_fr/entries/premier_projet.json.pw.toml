@@ -1,0 +1,8 @@
+name = "patchouli_books/chroniques_olycity/fr_fr/entries/premier_projet.json"
+filename = "premier_projet.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/1fc816a6c16e3493fd1f21f074748e16681af544f8ec4ee499ad3cec948059ff"
+hash-format = "sha256"
+hash = "1fc816a6c16e3493fd1f21f074748e16681af544f8ec4ee499ad3cec948059ff"

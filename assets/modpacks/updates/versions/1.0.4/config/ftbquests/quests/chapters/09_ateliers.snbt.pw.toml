@@ -1,0 +1,8 @@
+name = "config/ftbquests/quests/chapters/09_ateliers.snbt"
+filename = "09_ateliers.snbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/1075ac81dabd60ef240464857498f23ee7b75bc9e2d3abf6df9cd759399ccecf"
+hash-format = "sha256"
+hash = "1075ac81dabd60ef240464857498f23ee7b75bc9e2d3abf6df9cd759399ccecf"

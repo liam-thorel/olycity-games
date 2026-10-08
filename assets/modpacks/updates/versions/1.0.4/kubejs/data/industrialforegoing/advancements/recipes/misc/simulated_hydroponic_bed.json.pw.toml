@@ -1,0 +1,8 @@
+name = "kubejs/data/industrialforegoing/advancements/recipes/misc/simulated_hydroponic_bed.json"
+filename = "simulated_hydroponic_bed.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/593763d81189c4b0cc04bb180b191f591038245a35cbddd5aa549e9150680ebe"
+hash-format = "sha256"
+hash = "593763d81189c4b0cc04bb180b191f591038245a35cbddd5aa549e9150680ebe"

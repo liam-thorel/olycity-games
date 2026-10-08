@@ -1,0 +1,8 @@
+name = "mods/webdisplays-2.0.2-1.20.1.jar"
+filename = "webdisplays-2.0.2-1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/017626c9c08bc6fa620c33643bd6ce9a1368f741b3af36d62fc299d5e38535af.jar"
+hash-format = "sha256"
+hash = "017626c9c08bc6fa620c33643bd6ce9a1368f741b3af36d62fc299d5e38535af"

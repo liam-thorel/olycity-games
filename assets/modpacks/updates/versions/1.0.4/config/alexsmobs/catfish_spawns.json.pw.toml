@@ -1,0 +1,8 @@
+name = "config/alexsmobs/catfish_spawns.json"
+filename = "catfish_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/3c097d29c1f74807815d4c13e3586a76528ac3c104670ce95852bd3b62f9e16e"
+hash-format = "sha256"
+hash = "3c097d29c1f74807815d4c13e3586a76528ac3c104670ce95852bd3b62f9e16e"

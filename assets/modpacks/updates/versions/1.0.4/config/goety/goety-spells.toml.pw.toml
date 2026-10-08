@@ -1,0 +1,8 @@
+name = "config/goety/goety-spells.toml"
+filename = "goety-spells.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/38fef7ead3b1ca6eddcebcc094c00391ce3847e90ba0d6fad03f67de245f58b5"
+hash-format = "sha256"
+hash = "38fef7ead3b1ca6eddcebcc094c00391ce3847e90ba0d6fad03f67de245f58b5"

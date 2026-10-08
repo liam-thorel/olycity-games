@@ -1,0 +1,8 @@
+name = "mods/torchmaster-20.1.9.jar"
+filename = "torchmaster-20.1.9.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1.0.2-20261008/7c8984a2dc11c29147d0677958e9146a18578068bc00fbfcb1cddbaa60557682.jar"
+hash-format = "sha256"
+hash = "7c8984a2dc11c29147d0677958e9146a18578068bc00fbfcb1cddbaa60557682"

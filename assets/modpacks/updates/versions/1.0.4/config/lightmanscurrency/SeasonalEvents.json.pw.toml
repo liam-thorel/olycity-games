@@ -1,0 +1,8 @@
+name = "config/lightmanscurrency/SeasonalEvents.json"
+filename = "SeasonalEvents.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/274cf03e46d4112029c192015d5db918cd28de3d4a02964c50b560c68d04bdb7"
+hash-format = "sha256"
+hash = "274cf03e46d4112029c192015d5db918cd28de3d4a02964c50b560c68d04bdb7"

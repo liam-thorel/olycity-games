@@ -1,0 +1,8 @@
+name = "resourcepacks/Quark Programmer Art.zip"
+filename = "Quark Programmer Art.zip"
+side = "client"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/41cb720cf256a12ea247b2f38068b363aa5b1675470c4b5aa66850701a78bc4d.zip"
+hash-format = "sha256"
+hash = "41cb720cf256a12ea247b2f38068b363aa5b1675470c4b5aa66850701a78bc4d"

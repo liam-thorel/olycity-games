@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/poison_dungeon/chest.json"
+filename = "chest.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/6ffd04d73c1d75118ae9b18d3f55dc8d9d5ed125dbd86d61043b2996bcc1f8f6"
+hash-format = "sha256"
+hash = "6ffd04d73c1d75118ae9b18d3f55dc8d9d5ed125dbd86d61043b2996bcc1f8f6"

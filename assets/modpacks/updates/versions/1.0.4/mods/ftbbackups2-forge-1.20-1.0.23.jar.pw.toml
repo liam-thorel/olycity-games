@@ -1,0 +1,8 @@
+name = "mods/ftbbackups2-forge-1.20-1.0.23.jar"
+filename = "ftbbackups2-forge-1.20-1.0.23.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/19cea280a56e533b9669d4f866aef38ebe54f6d8627efe6798016e17b6b4afda.jar"
+hash-format = "sha256"
+hash = "19cea280a56e533b9669d4f866aef38ebe54f6d8627efe6798016e17b6b4afda"

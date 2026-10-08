@@ -1,0 +1,8 @@
+name = "mods/weather2-1.20.1-2.8.3.jar"
+filename = "weather2-1.20.1-2.8.3.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/5eb828f93b2eb370d7f38ad1893739caf7655f32d58dbbdaabae6075ede635db.jar"
+hash-format = "sha256"
+hash = "5eb828f93b2eb370d7f38ad1893739caf7655f32d58dbbdaabae6075ede635db"

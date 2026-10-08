@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/impaled_icebreaker/captain_quarters.json"
+filename = "captain_quarters.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/a4dec905a354438bd53e2557b4b568e8dc297c9c854f8b04e2639c2a05413c59"
+hash-format = "sha256"
+hash = "a4dec905a354438bd53e2557b4b568e8dc297c9c854f8b04e2639c2a05413c59"

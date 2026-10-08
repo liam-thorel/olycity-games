@@ -1,0 +1,8 @@
+name = "config/industrialforegoing/machine-agriculture-husbandry.toml"
+filename = "machine-agriculture-husbandry.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/484134b6eb217dd86b2673dff189ff66cc95cb5c0f00c8a043a59a19f9d11446"
+hash-format = "sha256"
+hash = "484134b6eb217dd86b2673dff189ff66cc95cb5c0f00c8a043a59a19f9d11446"

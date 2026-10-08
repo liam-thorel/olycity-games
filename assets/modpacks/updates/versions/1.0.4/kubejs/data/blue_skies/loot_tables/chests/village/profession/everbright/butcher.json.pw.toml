@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/village/profession/everbright/butcher.json"
+filename = "butcher.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/57b9c082a0943325652e855664f56c6a045016bd5eee5b4017102297c2c11281"
+hash-format = "sha256"
+hash = "57b9c082a0943325652e855664f56c6a045016bd5eee5b4017102297c2c11281"

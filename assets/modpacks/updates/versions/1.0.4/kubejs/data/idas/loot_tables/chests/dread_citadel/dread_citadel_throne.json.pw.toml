@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/dread_citadel/dread_citadel_throne.json"
+filename = "dread_citadel_throne.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/d9faeac73f2cde3e78fae5f5b8ae40a03d45829c4c5ac19033df7982117b979d"
+hash-format = "sha256"
+hash = "d9faeac73f2cde3e78fae5f5b8ae40a03d45829c4c5ac19033df7982117b979d"

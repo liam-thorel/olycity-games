@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/cave_spawner/chest_everdawn.json"
+filename = "chest_everdawn.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/129eca177a7013723bc9a5cf194730aacd83a04375c18a1cce10404239322f6e"
+hash-format = "sha256"
+hash = "129eca177a7013723bc9a5cf194730aacd83a04375c18a1cce10404239322f6e"

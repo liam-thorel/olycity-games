@@ -6199,3 +6199,8 @@ metafile = true
 file = "patchouli_books/chroniques_olycity/fr_fr/entries/torchmaster.json.pw.toml"
 hash = "82aaa11d94022899a53f35bafd1114df705c4c492c8cc1d23e94febc8a4eaed0"
 metafile = true
+
+[[files]]
+file = "config/xaero/minimap/default_radar_categories_client.json.pw.toml"
+hash = "8b6aff144491105c7aef774a154b1ab634333a6ddff1f2221de008154efa6a75"
+metafile = true

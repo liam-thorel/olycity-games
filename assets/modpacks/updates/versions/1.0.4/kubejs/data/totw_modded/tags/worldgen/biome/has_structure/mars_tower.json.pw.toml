@@ -1,0 +1,8 @@
+name = "kubejs/data/totw_modded/tags/worldgen/biome/has_structure/mars_tower.json"
+filename = "mars_tower.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/00330f868b318f6fcbae4555b9219fb6a1b88f9edb3b16be1a89a3f836714e27"
+hash-format = "sha256"
+hash = "00330f868b318f6fcbae4555b9219fb6a1b88f9edb3b16be1a89a3f836714e27"

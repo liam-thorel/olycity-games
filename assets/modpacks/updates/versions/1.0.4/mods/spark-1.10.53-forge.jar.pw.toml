@@ -1,0 +1,8 @@
+name = "mods/spark-1.10.53-forge.jar"
+filename = "spark-1.10.53-forge.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/eba275ba9bb0cb5b542913c3138c6eeff6a752898266d63d125d185f26ac99ed.jar"
+hash-format = "sha256"
+hash = "eba275ba9bb0cb5b542913c3138c6eeff6a752898266d63d125d185f26ac99ed"

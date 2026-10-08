@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/bazaar/bazaar_food.json"
+filename = "bazaar_food.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/d8db1e955a074785097079d7b10363549568d07af234da78a241c0d97e216b65"
+hash-format = "sha256"
+hash = "d8db1e955a074785097079d7b10363549568d07af234da78a241c0d97e216b65"

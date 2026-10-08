@@ -1,0 +1,8 @@
+name = "mods/radium-mc1.20.1-0.12.4+git.26c9d8e.jar"
+filename = "radium-mc1.20.1-0.12.4+git.26c9d8e.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/b42584e2672d6b5329959ec2b0f342395b19389fed0ee4d86ea71072f42f77a0.jar"
+hash-format = "sha256"
+hash = "b42584e2672d6b5329959ec2b0f342395b19389fed0ee4d86ea71072f42f77a0"

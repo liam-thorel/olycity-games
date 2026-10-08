@@ -1,0 +1,8 @@
+name = "config/ftbquests/quests/chapters/06_refuge.snbt"
+filename = "06_refuge.snbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/f7ffb8be1655381308044b591c195fd19aff5d936090e952fe6ec220ae1112ef"
+hash-format = "sha256"
+hash = "f7ffb8be1655381308044b591c195fd19aff5d936090e952fe6ec220ae1112ef"

@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/catacombs/wall_loot.json"
+filename = "wall_loot.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/8278b2cc12c912273a10a6952eee18012d1bbba1057f3063cb66d71e16a00eaf"
+hash-format = "sha256"
+hash = "8278b2cc12c912273a10a6952eee18012d1bbba1057f3063cb66d71e16a00eaf"

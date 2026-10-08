@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/bastion_hoglin_stable.json"
+filename = "bastion_hoglin_stable.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/a4253ee3e5f1e42732feeaf12621572ee17c4ab65297552d1f049e8feab2d01a"
+hash-format = "sha256"
+hash = "a4253ee3e5f1e42732feeaf12621572ee17c4ab65297552d1f049e8feab2d01a"

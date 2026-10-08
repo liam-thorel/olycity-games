@@ -1,0 +1,8 @@
+name = "kubejs/data/foolish/loot_tables/chests/scarlant_colony_chest.json"
+filename = "scarlant_colony_chest.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/df213677bcc82413fea9075e6c0d3c6abe5bfb75e820e0d7d37363608187fb47"
+hash-format = "sha256"
+hash = "df213677bcc82413fea9075e6c0d3c6abe5bfb75e820e0d7d37363608187fb47"

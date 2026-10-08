@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/blinding_dungeon/prison_chest_everdawn.json"
+filename = "prison_chest_everdawn.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/e3a0968a5fecf3215df89aa2d577b5fc0a1105b4db903bbee20a9177d2831242"
+hash-format = "sha256"
+hash = "e3a0968a5fecf3215df89aa2d577b5fc0a1105b4db903bbee20a9177d2831242"

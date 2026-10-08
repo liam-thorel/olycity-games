@@ -1,0 +1,8 @@
+name = "kubejs/data/alexscaves/loot_tables/chests/forlorn_ruins.json"
+filename = "forlorn_ruins.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/262fe9c107e3223f90c925807af25085195549cd92863aae8f94d851e8c4c118"
+hash-format = "sha256"
+hash = "262fe9c107e3223f90c925807af25085195549cd92863aae8f94d851e8c4c118"

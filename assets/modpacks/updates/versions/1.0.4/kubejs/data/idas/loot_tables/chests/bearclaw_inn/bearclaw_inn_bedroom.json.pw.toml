@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/bearclaw_inn/bearclaw_inn_bedroom.json"
+filename = "bearclaw_inn_bedroom.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/b52bab629c7ec056930a88b020cde9da429d39cfc9d9d8246ea420b48076aac8"
+hash-format = "sha256"
+hash = "b52bab629c7ec056930a88b020cde9da429d39cfc9d9d8246ea420b48076aac8"

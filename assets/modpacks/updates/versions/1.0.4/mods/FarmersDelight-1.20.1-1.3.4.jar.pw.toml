@@ -1,0 +1,8 @@
+name = "mods/FarmersDelight-1.20.1-1.3.4.jar"
+filename = "FarmersDelight-1.20.1-1.3.4.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/34f03eb671ea1ca579b00c98e4541404cb96d1a292014aed9cc5eb45ad8afbce.jar"
+hash-format = "sha256"
+hash = "34f03eb671ea1ca579b00c98e4541404cb96d1a292014aed9cc5eb45ad8afbce"

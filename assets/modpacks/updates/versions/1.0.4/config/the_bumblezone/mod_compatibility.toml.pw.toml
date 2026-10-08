@@ -1,0 +1,8 @@
+name = "config/the_bumblezone/mod_compatibility.toml"
+filename = "mod_compatibility.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/68da923fb910014747a5a65f7c7bde5034f1278c054c441b56ffbcd266aa5d74"
+hash-format = "sha256"
+hash = "68da923fb910014747a5a65f7c7bde5034f1278c054c441b56ffbcd266aa5d74"
