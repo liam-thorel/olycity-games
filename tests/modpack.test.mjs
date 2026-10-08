@@ -26,7 +26,10 @@ test('Packwiz distribution preserves personal paths, exact hashes and client/ser
   const pack = JSON.parse(read('../assets/modpacks/olycity-v1.json'));
   assert.equal(pack.updates.type,'packwiz');
   assert.ok(pack.bytes < 5_000_000);
-  assert.ok(pack.server.updateKitUrl.endsWith('.zip'));
+  assert.equal(pack.server.updatesIncluded,true);
+  assert.equal(pack.server.readyToStart,true);
+  assert.equal(pack.server.version,pack.updates.version);
+  assert.equal(pack.server.updateKitUrl,undefined);
   const root = new URL('../assets/modpacks/updates/',import.meta.url);
   const hash = data => createHash('sha256').update(data).digest('hex');
   for (const channel of ['stable','test',...readdirSync(new URL('versions/',root)).map(v=>`versions/${v}`)]) {

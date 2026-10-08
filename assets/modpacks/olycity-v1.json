@@ -13,12 +13,13 @@
   "server": {
     "sourceFilename": "OLYCITY V1 - Serveur.zip",
     "modCount": 140,
-    "bytes": 1207558505,
-    "sha256": "f7d08ee11c780ed105b01939eab9acddee82ce0542c90312c59a04505a5642bd",
-    "downloadUrl": "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1-20261008/OLYCITY.V1.-.Serveur.zip",
-    "guideUrl": "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1-20261008/Instructions-Romain-OLYCITY-V1.md",
-    "updateKitUrl": "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/OLYCITY.V1.-.Mise.a.jour.Crafty.zip",
-    "updateGuideUrl": "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/OLYCITY-Packwiz-Romain.md"
+    "bytes": 1211809313,
+    "sha256": "7b55b5016623abc0353f11bb223a74511af7689e22a40010e549b0dbaf831ee0",
+    "downloadUrl": "https://github.com/liam-thorel/olycity-games/releases/download/olycity-server-v1.0.1-20261008/OLYCITY.V1.-.Serveur.zip",
+    "guideUrl": "https://github.com/liam-thorel/olycity-games/releases/download/olycity-server-v1.0.1-20261008/Instructions-Romain-OLYCITY-V1.md",
+    "version": "1.0.1",
+    "updatesIncluded": true,
+    "readyToStart": true
   },
   "manualDownload": {
     "downloadUrl": "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1-20261008/OLYCITY.V1.zip",

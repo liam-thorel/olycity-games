@@ -1,8 +1,8 @@
 # OLYCITY V1 — installation pour Romain
 
-Minecraft Java1.20.1 · Forge47.4.10 · Java17 · Linux
+Version du pack **1.0.1** · Minecraft Java1.20.1 · Forge47.4.10 · Java17 · Linux
 
-Le ZIP serveur contient Forge installé, ses bibliothèques, les mods retenus pour le serveur, les configurations, les quêtes, les livres et les scripts OLYCITY. Ne pas importer le ZIP joueur dans Crafty. Aucun monde de test personnel n'est fourni : le serveur créera un monde neuf.
+Le ZIP serveur contient Forge installé, ses bibliothèques, les mods retenus pour le serveur, les configurations, les quêtes, les livres et les scripts OLYCITY. **Tout est déjà inclus dans ce seul ZIP : correctif TARDIS 1.0.1, installateur Packwiz et script de mise à jour. Aucun kit séparé à télécharger, aucune mise à jour à appliquer avant le premier lancement.** Ne pas importer le ZIP joueur dans Crafty. Aucun monde de test personnel n'est fourni : le serveur créera un monde neuf.
 
 ## Import dans ton Crafty existant — solution recommandée
 
@@ -69,6 +69,27 @@ Cette alternative ne gère pas le serveur dans ton panneau Crafty. Ne lance pas 
 
 Ne copie pas un ancien monde par-dessus le serveur pendant qu'il tourne. Sauvegarde-le d'abord. Les `defaultconfigs` ne remplacent pas automatiquement les réglages d'un monde existant : vérifier son dossier `serverconfig`. Les nouveaux donjons et biomes se généreront surtout dans des régions encore inexplorées.
 
-## Mise à jour
+## Mises à jour suivantes — déjà équipé dans ce ZIP
 
-Arrêter proprement le serveur, sauvegarder monde/configurations, remplacer les mods et scripts conformément à la nouvelle version et relancer. Tous les joueurs doivent utiliser la même version du pack joueur. Ne jamais écraser le dossier `world` avec le ZIP d'une mise à jour.
+Le serveur livré est prêt en **1.0.1**. Ne lance pas cette commande pour la première installation : importe le ZIP et démarre normalement après configuration de Crafty et acceptation de l’EULA.
+
+Pour un correctif futur, uniquement après publication et validation de son numéro :
+
+1. Arrêter le serveur dans Crafty et faire une sauvegarde complète, monde compris.
+2. Dans le terminal du conteneur, se placer à la racine du serveur importé.
+3. Exécuter la commande suivante en remplaçant `NUMERO` par la version communiquée :
+
+```sh
+sh olycity-update.sh NUMERO --serveur-arrete
+```
+
+4. Attendre la réussite de la synchronisation, puis redémarrer dans Crafty et vérifier les logs.
+5. Les joueurs relancent leur instance Prism pour recevoir la même version stable.
+
+Le script crée une copie du contenu géré dans `olycity-update-backups` ; la sauvegarde complète du monde reste nécessaire. Il ne touche pas à `world`, `ops.json`, `server.properties` ou à l’EULA. La version du serveur est choisie volontairement : aucune mise à jour automatique au démarrage.
+
+Si une synchronisation échoue, garder le serveur arrêté et restaurer la sauvegarde complète dans un dossier propre. Ne jamais mélanger les mods de deux versions ni écraser le monde avec le ZIP d’une mise à jour. Les migrations Minecraft/Forge/Java et les réglages `world/serverconfig` d’un monde existant sont traités séparément.
+
+## TARDIS
+
+`/oly tardis` crée une cabine de test équipée, pour les opérateurs. La récupération du bloc extérieur absent est intégrée à cette version. `/oly tardis reparer`, près d’une cabine posée dont le bloc principal manque, restaure son extérieur en conservant l’intérieur. Les passages Immersive Portals sont conservés.
