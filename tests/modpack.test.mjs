@@ -18,5 +18,5 @@ test('OLYCITY V1 has a static download and installation guide independent of Fir
   assert.ok(page.includes(`Forge <strong>${pack.loader.replace('forge-','')}</strong>`));
   assert.match(page,/Version V1/);
   assert.match(page,/Rejoindre le serveur OLYCITY/);
-  assert.match(page,/modpacks\.css\?v=20261008-v1/);
+  assert.match(page,/modpacks\.css\?v=20261008-v2/);
 });
