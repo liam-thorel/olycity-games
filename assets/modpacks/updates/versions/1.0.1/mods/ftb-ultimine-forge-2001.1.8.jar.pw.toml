@@ -1,0 +1,8 @@
+name = "mods/ftb-ultimine-forge-2001.1.8.jar"
+filename = "ftb-ultimine-forge-2001.1.8.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/b80dde55b2c91fd27f09f15ed2aefb0756c7bd704316e488ae8a06b179e85730.jar"
+hash-format = "sha256"
+hash = "b80dde55b2c91fd27f09f15ed2aefb0756c7bd704316e488ae8a06b179e85730"

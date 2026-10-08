@@ -1,0 +1,8 @@
+name = "config/Mekanism/common.toml"
+filename = "common.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/dab6dbae43bb67fd6a10438c0cbf997c70560c6af3493b60330ac9248587905d"
+hash-format = "sha256"
+hash = "dab6dbae43bb67fd6a10438c0cbf997c70560c6af3493b60330ac9248587905d"

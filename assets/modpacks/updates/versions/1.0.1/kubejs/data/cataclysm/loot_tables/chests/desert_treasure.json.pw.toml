@@ -1,0 +1,8 @@
+name = "kubejs/data/cataclysm/loot_tables/chests/desert_treasure.json"
+filename = "desert_treasure.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/98e422493e1ab78aa801e4b2450568da58e2ac3cb5616028db857514b3eb062e"
+hash-format = "sha256"
+hash = "98e422493e1ab78aa801e4b2450568da58e2ac3cb5616028db857514b3eb062e"

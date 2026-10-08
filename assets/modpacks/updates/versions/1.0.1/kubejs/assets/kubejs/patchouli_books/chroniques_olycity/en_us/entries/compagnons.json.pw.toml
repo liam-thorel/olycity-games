@@ -1,0 +1,8 @@
+name = "kubejs/assets/kubejs/patchouli_books/chroniques_olycity/en_us/entries/compagnons.json"
+filename = "compagnons.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/09841818cecab7f28110fcd71d5ac630df0181824a526bd9dca35ebe64ad2130"
+hash-format = "sha256"
+hash = "09841818cecab7f28110fcd71d5ac630df0181824a526bd9dca35ebe64ad2130"

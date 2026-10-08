@@ -1,0 +1,8 @@
+name = "mods/fzzy_config-0.7.7+1.20.1+forge.jar"
+filename = "fzzy_config-0.7.7+1.20.1+forge.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/c4acf6fd3ce66ff28050dd9fdbff25c407f98a4911311ff3f59d651acccc9575.jar"
+hash-format = "sha256"
+hash = "c4acf6fd3ce66ff28050dd9fdbff25c407f98a4911311ff3f59d651acccc9575"

@@ -1,0 +1,8 @@
+name = "kubejs/assets/industrialforegoing/blockstates/machine_frame_advanced.json"
+filename = "machine_frame_advanced.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/dacec13fdce8280bd80f8db7e25995e4d8f72fa7b8bf1a9863883ee01b84c697"
+hash-format = "sha256"
+hash = "dacec13fdce8280bd80f8db7e25995e4d8f72fa7b8bf1a9863883ee01b84c697"

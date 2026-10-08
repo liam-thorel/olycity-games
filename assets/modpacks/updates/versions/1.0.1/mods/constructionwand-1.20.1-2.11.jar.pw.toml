@@ -1,0 +1,8 @@
+name = "mods/constructionwand-1.20.1-2.11.jar"
+filename = "constructionwand-1.20.1-2.11.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/b55ca6f0e734bad848adb06949675136f1d05cb4fb3efdde084c9842c40e1eec.jar"
+hash-format = "sha256"
+hash = "b55ca6f0e734bad848adb06949675136f1d05cb4fb3efdde084c9842c40e1eec"

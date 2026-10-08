@@ -1,0 +1,8 @@
+name = "mods/tide-forge-1.20.1-2.1.1-hotfix.jar"
+filename = "tide-forge-1.20.1-2.1.1-hotfix.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/cac8ec3ee8772686ac8d3c35b86869399cede9ce1cc194cea925dc8d3b498a22.jar"
+hash-format = "sha256"
+hash = "cac8ec3ee8772686ac8d3c35b86869399cede9ce1cc194cea925dc8d3b498a22"

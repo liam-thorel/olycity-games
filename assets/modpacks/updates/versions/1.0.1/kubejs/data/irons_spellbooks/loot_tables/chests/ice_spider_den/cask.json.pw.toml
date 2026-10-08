@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/ice_spider_den/cask.json"
+filename = "cask.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/21a5b87a6c5e408dc637783a9af536fbceb61b2b46fbf76ac65b97f438436324"
+hash-format = "sha256"
+hash = "21a5b87a6c5e408dc637783a9af536fbceb61b2b46fbf76ac65b97f438436324"

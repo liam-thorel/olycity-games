@@ -1,0 +1,8 @@
+name = "config/alexscaves_biome_generation/primordial_caves.json"
+filename = "primordial_caves.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/f0e2da7cf5d77abef1bd270cb7c288e3f57c001005fe41e11d545d948b06474d"
+hash-format = "sha256"
+hash = "f0e2da7cf5d77abef1bd270cb7c288e3f57c001005fe41e11d545d948b06474d"

@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/village/profession/everdawn/temple.json"
+filename = "temple.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/8120217a7fde7874c15d921ab269bcd8ca0bc93d618ae429551f5668f36ab9dd"
+hash-format = "sha256"
+hash = "8120217a7fde7874c15d921ab269bcd8ca0bc93d618ae429551f5668f36ab9dd"

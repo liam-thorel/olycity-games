@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/additional_generic_loot.json"
+filename = "additional_generic_loot.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/7e932855e8b50d86b400d09e7a0c3e498eb08d667a22e317320f04344aa54137"
+hash-format = "sha256"
+hash = "7e932855e8b50d86b400d09e7a0c3e498eb08d667a22e317320f04344aa54137"

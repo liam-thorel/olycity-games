@@ -1,0 +1,8 @@
+name = "kubejs/data/goety/loot_tables/chests/spider_den_sac.json"
+filename = "spider_den_sac.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/8e9cd9fd77d6956fbf243cbabbbe8cd0c22c03a22b1c28a9b9debb53af717687"
+hash-format = "sha256"
+hash = "8e9cd9fd77d6956fbf243cbabbbe8cd0c22c03a22b1c28a9b9debb53af717687"

@@ -1,0 +1,8 @@
+name = "config/alexsmobs/rhinoceros_spawns.json"
+filename = "rhinoceros_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/17a5c3263942410596f91fb0aece138e5115bfabfa2a5913a63406fcb64b42d0"
+hash-format = "sha256"
+hash = "17a5c3263942410596f91fb0aece138e5115bfabfa2a5913a63406fcb64b42d0"

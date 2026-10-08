@@ -1,0 +1,8 @@
+name = "kubejs/README.txt"
+filename = "README.txt"
+side = "server"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af"
+hash-format = "sha256"
+hash = "989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af"

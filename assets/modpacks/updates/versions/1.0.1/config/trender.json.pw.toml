@@ -1,0 +1,8 @@
+name = "config/trender.json"
+filename = "trender.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/fe0bed19bd0927b3d519816c73378730689080a8f07e66a6167c266ffde29dd2"
+hash-format = "sha256"
+hash = "fe0bed19bd0927b3d519816c73378730689080a8f07e66a6167c266ffde29dd2"

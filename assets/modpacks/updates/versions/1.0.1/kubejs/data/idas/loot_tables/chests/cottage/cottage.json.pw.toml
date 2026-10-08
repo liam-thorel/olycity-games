@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/cottage/cottage.json"
+filename = "cottage.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/9edad8b6414351c68374fae23a9b7acbe29284ccc3fb8fdb4f4a664ffaf3560a"
+hash-format = "sha256"
+hash = "9edad8b6414351c68374fae23a9b7acbe29284ccc3fb8fdb4f4a664ffaf3560a"

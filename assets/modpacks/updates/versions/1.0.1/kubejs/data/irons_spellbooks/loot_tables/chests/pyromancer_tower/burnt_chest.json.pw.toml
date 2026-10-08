@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/pyromancer_tower/burnt_chest.json"
+filename = "burnt_chest.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/2d57ddfda04b05375bf9cc9b3c0f33f0da056118ede98fe32a36997d14cbd0c1"
+hash-format = "sha256"
+hash = "2d57ddfda04b05375bf9cc9b3c0f33f0da056118ede98fe32a36997d14cbd0c1"

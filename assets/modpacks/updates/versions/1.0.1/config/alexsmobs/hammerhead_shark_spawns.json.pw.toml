@@ -1,0 +1,8 @@
+name = "config/alexsmobs/hammerhead_shark_spawns.json"
+filename = "hammerhead_shark_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/a5eeb1a3843a12ef4fde1d8a3a5f13161034457c0901d3f938aa71a20e6712f3"
+hash-format = "sha256"
+hash = "a5eeb1a3843a12ef4fde1d8a3a5f13161034457c0901d3f938aa71a20e6712f3"

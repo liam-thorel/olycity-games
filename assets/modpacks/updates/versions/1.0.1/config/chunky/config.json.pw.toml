@@ -1,0 +1,8 @@
+name = "config/chunky/config.json"
+filename = "config.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/c7384a22595488f79f3125b22cc175eb729267267807a084479419349797abc8"
+hash-format = "sha256"
+hash = "c7384a22595488f79f3125b22cc175eb729267267807a084479419349797abc8"

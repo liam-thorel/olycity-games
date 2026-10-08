@@ -1,0 +1,8 @@
+name = "kubejs/data/alexscaves/loot_tables/chests/underground_cabin_toxic_caves.json"
+filename = "underground_cabin_toxic_caves.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/64cd46d3a660364fd54b1caf57116cfef1b5977bf8d38608dae784da988257d8"
+hash-format = "sha256"
+hash = "64cd46d3a660364fd54b1caf57116cfef1b5977bf8d38608dae784da988257d8"

@@ -1,0 +1,8 @@
+name = "config/simplyswords/weapon_attributes.toml"
+filename = "weapon_attributes.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/7880be9f01875cd9e99c653c5afb1c41d98a9e649657f08bd47e702895fe133b"
+hash-format = "sha256"
+hash = "7880be9f01875cd9e99c653c5afb1c41d98a9e649657f08bd47e702895fe133b"

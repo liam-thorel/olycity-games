@@ -1,0 +1,8 @@
+name = "config/ftbquests/quests/chapters/08_romain.snbt"
+filename = "08_romain.snbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/6f9ccf8981284a6e22297dd1e3ce39a7d9220d5a249e12d74d3f6336052f9c06"
+hash-format = "sha256"
+hash = "6f9ccf8981284a6e22297dd1e3ce39a7d9220d5a249e12d74d3f6336052f9c06"

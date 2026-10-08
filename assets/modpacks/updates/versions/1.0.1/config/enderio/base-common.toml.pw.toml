@@ -1,0 +1,8 @@
+name = "config/enderio/base-common.toml"
+filename = "base-common.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/7eb5118ba68d60b1c6834614175b1c66c721f25840f6921aa3a6de13f375ec4c"
+hash-format = "sha256"
+hash = "7eb5118ba68d60b1c6834614175b1c66c721f25840f6921aa3a6de13f375ec4c"

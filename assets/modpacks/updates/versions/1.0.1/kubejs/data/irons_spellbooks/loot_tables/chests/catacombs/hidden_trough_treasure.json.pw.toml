@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/catacombs/hidden_trough_treasure.json"
+filename = "hidden_trough_treasure.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/0a2c8938fee9abaedd5bec69ede94ec84872c28e38aac0342c7accaca2980b93"
+hash-format = "sha256"
+hash = "0a2c8938fee9abaedd5bec69ede94ec84872c28e38aac0342c7accaca2980b93"

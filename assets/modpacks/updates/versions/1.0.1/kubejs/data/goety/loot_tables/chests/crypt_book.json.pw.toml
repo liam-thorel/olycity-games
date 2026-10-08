@@ -1,0 +1,8 @@
+name = "kubejs/data/goety/loot_tables/chests/crypt_book.json"
+filename = "crypt_book.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/56e38edc5fba69e907ab35e76b0e33c9a08a2f0ca885b309ac6602fc4c7b3dec"
+hash-format = "sha256"
+hash = "56e38edc5fba69e907ab35e76b0e33c9a08a2f0ca885b309ac6602fc4c7b3dec"

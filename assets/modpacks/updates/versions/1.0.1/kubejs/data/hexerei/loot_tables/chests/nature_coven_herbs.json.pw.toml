@@ -1,0 +1,8 @@
+name = "kubejs/data/hexerei/loot_tables/chests/nature_coven_herbs.json"
+filename = "nature_coven_herbs.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/03cca4015e7dc7c9726fcd8b6dfed4dfb44cb363cd354eb4ae7f5e393c8b479d"
+hash-format = "sha256"
+hash = "03cca4015e7dc7c9726fcd8b6dfed4dfb44cb363cd354eb4ae7f5e393c8b479d"

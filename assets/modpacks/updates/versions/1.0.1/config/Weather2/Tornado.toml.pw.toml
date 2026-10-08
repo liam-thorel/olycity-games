@@ -1,0 +1,8 @@
+name = "config/Weather2/Tornado.toml"
+filename = "Tornado.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/49138309a3e7073857fcde2d2486e07b4687dfdd0527828052aa2b9cc4a4bef9"
+hash-format = "sha256"
+hash = "49138309a3e7073857fcde2d2486e07b4687dfdd0527828052aa2b9cc4a4bef9"

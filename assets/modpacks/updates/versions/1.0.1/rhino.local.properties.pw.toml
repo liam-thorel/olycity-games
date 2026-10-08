@@ -1,0 +1,8 @@
+name = "rhino.local.properties"
+filename = "rhino.local.properties"
+side = "client"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/dcee2d546a6f50e6df2663517c97d84c65521ab8b1469c807325fdeda51f5fa1"
+hash-format = "sha256"
+hash = "dcee2d546a6f50e6df2663517c97d84c65521ab8b1469c807325fdeda51f5fa1"

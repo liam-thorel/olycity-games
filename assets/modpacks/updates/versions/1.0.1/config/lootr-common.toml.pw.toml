@@ -1,0 +1,8 @@
+name = "config/lootr-common.toml"
+filename = "lootr-common.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/62b612f2ad82e73ac8ac177acbe5e43441bc48a0a9a03db2f912ec1d9d8447b3"
+hash-format = "sha256"
+hash = "62b612f2ad82e73ac8ac177acbe5e43441bc48a0a9a03db2f912ec1d9d8447b3"

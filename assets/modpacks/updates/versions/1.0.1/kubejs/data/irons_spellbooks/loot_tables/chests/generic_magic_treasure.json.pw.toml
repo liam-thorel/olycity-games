@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/generic_magic_treasure.json"
+filename = "generic_magic_treasure.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/2b93a944b019aab17b1ac4d8c2bf4dd92770b9d4338f2cdfadc702849fa1e36f"
+hash-format = "sha256"
+hash = "2b93a944b019aab17b1ac4d8c2bf4dd92770b9d4338f2cdfadc702849fa1e36f"

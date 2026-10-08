@@ -1,0 +1,8 @@
+name = "kubejs/data/the_bumblezone/loot_tables/structures/pirate_ship/storage.json"
+filename = "storage.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/e7aa6abbedff10eda611e5ed4670bf9bba03f938d831a7513e9aa239f54aa09b"
+hash-format = "sha256"
+hash = "e7aa6abbedff10eda611e5ed4670bf9bba03f938d831a7513e9aa239f54aa09b"

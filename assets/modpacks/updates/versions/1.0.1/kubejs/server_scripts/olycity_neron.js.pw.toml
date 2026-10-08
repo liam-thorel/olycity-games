@@ -1,0 +1,8 @@
+name = "kubejs/server_scripts/olycity_neron.js"
+filename = "olycity_neron.js"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/6fe4b621074a924320e2e12b1f54127fffaa33bd1fa9968a317fcf2610fd4cec"
+hash-format = "sha256"
+hash = "6fe4b621074a924320e2e12b1f54127fffaa33bd1fa9968a317fcf2610fd4cec"

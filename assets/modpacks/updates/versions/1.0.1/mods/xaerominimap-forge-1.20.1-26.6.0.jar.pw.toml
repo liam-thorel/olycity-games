@@ -1,0 +1,8 @@
+name = "mods/xaerominimap-forge-1.20.1-26.6.0.jar"
+filename = "xaerominimap-forge-1.20.1-26.6.0.jar"
+side = "client"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/9b39cd06094d7631c8614d172d0ba8399c71c981530af417f12a7909fcb855bd.jar"
+hash-format = "sha256"
+hash = "9b39cd06094d7631c8614d172d0ba8399c71c981530af417f12a7909fcb855bd"

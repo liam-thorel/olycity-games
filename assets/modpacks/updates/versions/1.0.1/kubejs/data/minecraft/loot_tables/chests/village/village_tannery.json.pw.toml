@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/village/village_tannery.json"
+filename = "village_tannery.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/90da02149804dacb95d2e4d893ca4d69a20653683b0aca87c0d56826b76e8948"
+hash-format = "sha256"
+hash = "90da02149804dacb95d2e4d893ca4d69a20653683b0aca87c0d56826b76e8948"

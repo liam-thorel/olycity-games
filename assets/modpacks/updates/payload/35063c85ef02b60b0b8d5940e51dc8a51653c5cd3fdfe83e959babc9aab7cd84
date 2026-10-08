@@ -1,0 +1,137 @@
+// Admin test helper for the installed New TARDIS Mod 1.1.6.
+// Creates a fresh native TARDIS; never prepares an existing interior.
+var olyTardisPending = {}, olyTardisLast = {}, olyTardisJobs = [], olyTardisTick = 0
+
+// Recover the native interior even when its exterior block disappeared during generation.
+function olyTardisFind(server, level, x, y, z, radius) {
+  var caps = Java.loadClass('net.tardis.mod.cap.Capabilities')
+  var levels = server.getAllLevels().iterator(), best = null, distance = radius * radius + 1
+  while (levels.hasNext()) {
+    var inner = levels.next()
+    if (String(inner.dimension).indexOf('tardis:') !== 0) continue
+    var optional = caps.getCap(caps.TARDIS, inner).resolve()
+    if (!optional.isPresent()) continue
+    var tardis = optional.get(), loc = tardis.getLocation(), pos = loc.getPos()
+    if (String(loc.getLevel().location()) !== String(level.dimension)) continue
+    if (String(tardis.getFlightState()) !== 'LANDED') continue
+    var d = Math.pow(pos.getX()-x,2)+Math.pow(pos.getY()-y,2)+Math.pow(pos.getZ()-z,2)
+    if (d < distance) { best = {tardis:tardis, pos:[pos.getX(),pos.getY(),pos.getZ()]}; distance = d }
+  }
+  return best
+}
+
+function olyTardisRestore(job, tardis) {
+  var b = job.level.getBlock(job.pos[0],job.pos[1],job.pos[2]), id = String(b.id)
+  if (id !== 'minecraft:air' && id !== 'minecraft:cave_air' && id !== 'minecraft:void_air') return false
+  // Native placement binds the same interior, orientation, doors and texture.
+  // Never build an unlinked exterior with setblock or reset the interior.
+  var pos = new (Java.loadClass('net.minecraft.core.BlockPos'))(job.pos[0],job.pos[1],job.pos[2])
+  tardis.getExterior().setPosition(job.level,pos)
+  return true
+}
+
+function olyTardisRepair(p) {
+  var uuid = String(p.getUuid())
+  if (olyTardisPending[uuid]) { p.tell('§7Une cabine est déjà en cours de préparation.'); return 0 }
+  var found = olyTardisFind(p.server,p.level,p.x,p.y,p.z,16)
+  if (!found) { p.tell('§ePlace-toi près du portail extérieur d’un TARDIS posé (moins de 16 blocs).'); return 0 }
+  var job = {uuid:uuid,player:p,server:p.server,level:p.level,pos:found.pos,attempts:0,at:olyTardisTick+20,repair:true,restored:true}
+  if (!olyTardisRestore(job,found.tardis)) { p.tell('§eLe bloc principal existe déjà ou son emplacement est occupé ; aucun bloc n’a été remplacé.'); return 0 }
+  olyTardisPending[uuid] = true
+  olyTardisJobs.push(job)
+  p.tell('§6OLYCITY §7— restauration de la cabine existante, sans changer son intérieur.')
+  return 1
+}
+
+function olyTardisSpot(level, x, y, z) {
+  for (var dx = -1; dx <= 1; dx++) for (var dz = -1; dz <= 1; dz++) {
+    var floor = String(level.getBlock(x + dx, y - 1, z + dz).id)
+    if (floor === 'minecraft:air' || floor === 'minecraft:water' || floor === 'minecraft:lava') return false
+    for (var dy = 0; dy < 5; dy++) {
+      var id = String(level.getBlock(x + dx, y + dy, z + dz).id)
+      if (id !== 'minecraft:air' && id !== 'minecraft:cave_air' && id !== 'minecraft:void_air') return false
+    }
+  }
+  return true
+}
+
+function olyTardisCreate(p) {
+  var uuid = String(p.getUuid()), now = Date.now()
+  if (olyTardisPending[uuid]) { p.tell('§7La cabine est déjà en cours de création.'); return 0 }
+  if (olyTardisLast[uuid] && now - olyTardisLast[uuid] < 60000) { p.tell('§7Attends une minute avant de créer une autre cabine de test.'); return 0 }
+  var x = Math.floor(p.x), y = Math.floor(p.y), z = Math.floor(p.z), level = p.level
+  var offsets = [[4,0],[-4,0],[0,4],[0,-4]], spot = null
+  for (var i = 0; i < offsets.length; i++) {
+    var sx = x + offsets[i][0], sz = z + offsets[i][1]
+    if (olyTardisSpot(level, sx, y, sz)) { spot = [sx,y,sz]; break }
+  }
+  if (!spot) { p.tell('§ePlace-toi sur un terrain plat et dégagé : la cabine demande un espace libre de 3×3 blocs et 5 blocs de haut.'); return 0 }
+  var b = level.getBlock(spot[0],spot[1],spot[2])
+  try {
+    b.set('tardis:steam_broken_exterior')
+    var tile = b.getEntity()
+    if (!tile || String(b.id) !== 'tardis:steam_broken_exterior') throw new Error('Broken exterior initialization failed')
+    // Verified public native API. It queues generation and transfers loyalty.
+    tile.modLoyalty(p, 200)
+    olyTardisPending[uuid] = true
+    olyTardisLast[uuid] = now
+    olyTardisJobs.push({uuid:uuid, player:p, server:p.server, level:level, pos:spot, attempts:0, at:olyTardisTick+20})
+    p.tell('§6OLYCITY §7— création de ton TARDIS à '+spot.join(', ')+'. Patiente quelques instants.')
+    return 1
+  } catch (e) {
+    console.error('[OLYCITY TARDIS] Creation failed: '+e)
+    p.tell('§cLa création n’a pas abouti. Le détail est enregistré dans les logs ; ne relance pas en boucle.')
+    return 0
+  }
+}
+
+ServerEvents.commandRegistry(event => {
+  var c = event.commands
+  event.register(c.literal('oly').then(c.literal('tardis')
+    .requires(s => s.hasPermission(2) && !!s.player)
+    .executes(ctx => olyTardisCreate(ctx.source.player))
+    .then(c.literal('reparer').executes(ctx => olyTardisRepair(ctx.source.player)))))
+})
+
+ServerEvents.tick(event => {
+  olyTardisTick++
+  var keep = []
+  olyTardisJobs.forEach(job => {
+    if (job.server !== event.server || job.at > olyTardisTick) { keep.push(job); return }
+    job.at = olyTardisTick + 20
+    job.attempts++
+    try {
+      var b = job.level.getBlock(job.pos[0],job.pos[1],job.pos[2])
+      if (!job.restored && job.attempts >= 2 && String(b.id) === 'minecraft:air') {
+        var found = olyTardisFind(job.server,job.level,job.pos[0],job.pos[1],job.pos[2],0)
+        if (found && olyTardisRestore(job,found.tardis)) job.restored = true
+      }
+      if (String(b.id).indexOf('tardis:') === 0) {
+        var tile = b.getEntity()
+        if (tile && typeof tile.getTardis === 'function') {
+          var linked = tile.getTardis()
+          if (linked.isPresent()) {
+            var tardis = linked.get(), dim = String(tardis.getLevel().dimension)
+            // Native setup fills fuel and installs the flight subsystems.
+            // A new unprepared test interior can be equipped; an existing flown TARDIS is preserved.
+            if (!job.repair || (tardis.getInteriorManager().hasNeverFlown() && tardis.getEngine().serializeNBT().getCompound('subsystems').getList('Items',10).isEmpty())) {
+              var result = job.server.runCommandSilent('tardis debug '+dim+' setup')
+              if (result < 1) throw new Error('Native setup command failed for '+dim)
+            }
+            delete olyTardisPending[job.uuid]
+            if (!job.repair) job.player.give('tardis:manual')
+            job.player.tell('§aLa cabine de ton TARDIS est présente et reliée à son intérieur : '+job.pos.join(', ')+'.')
+            return
+          }
+        }
+      }
+      if (job.attempts < 120) { keep.push(job); return }
+      throw new Error('Generation timed out at '+job.pos.join(', '))
+    } catch (e) {
+      delete olyTardisPending[job.uuid]
+      console.error('[OLYCITY TARDIS] Preparation failed: '+e)
+      job.player.tell('§cLa préparation du TARDIS n’a pas abouti. Je pourrai vérifier les logs ; la cabine créée est conservée.')
+    }
+  })
+  olyTardisJobs = keep
+})

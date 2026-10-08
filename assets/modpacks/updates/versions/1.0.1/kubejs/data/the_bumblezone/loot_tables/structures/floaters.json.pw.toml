@@ -1,0 +1,8 @@
+name = "kubejs/data/the_bumblezone/loot_tables/structures/floaters.json"
+filename = "floaters.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/12fb36b1a754ebeeada9ac86c7ad23f576f766a80184133d66d2aa1bd2e7dedc"
+hash-format = "sha256"
+hash = "12fb36b1a754ebeeada9ac86c7ad23f576f766a80184133d66d2aa1bd2e7dedc"

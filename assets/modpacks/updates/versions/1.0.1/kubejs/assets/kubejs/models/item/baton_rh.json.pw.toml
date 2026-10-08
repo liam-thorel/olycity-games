@@ -1,0 +1,8 @@
+name = "kubejs/assets/kubejs/models/item/baton_rh.json"
+filename = "baton_rh.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/6a9d69b3a5957a08301cbd3837b07d6f895d48c710b0079be4a0b742c871a71e"
+hash-format = "sha256"
+hash = "6a9d69b3a5957a08301cbd3837b07d6f895d48c710b0079be4a0b742c871a71e"

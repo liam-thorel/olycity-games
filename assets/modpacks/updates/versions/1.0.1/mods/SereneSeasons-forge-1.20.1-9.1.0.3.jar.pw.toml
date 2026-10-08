@@ -1,0 +1,8 @@
+name = "mods/SereneSeasons-forge-1.20.1-9.1.0.3.jar"
+filename = "SereneSeasons-forge-1.20.1-9.1.0.3.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/57c99eb15acce34bc768279faa3f1d5fbb29715fa507a7bd50944dc1b0d9e315.jar"
+hash-format = "sha256"
+hash = "57c99eb15acce34bc768279faa3f1d5fbb29715fa507a7bd50944dc1b0d9e315"
