@@ -1,0 +1,8 @@
+name = "config/alexsmobs/raccoon_spawns.json"
+filename = "raccoon_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/2f353aa8720d03fbdef9d9e4932ecc4435b7923bbc72191fab6f46acb66d3a12"
+hash-format = "sha256"
+hash = "2f353aa8720d03fbdef9d9e4932ecc4435b7923bbc72191fab6f46acb66d3a12"

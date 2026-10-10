@@ -1,0 +1,8 @@
+name = "mods/integrated_api-forge-1.20.1-1.8.2.jar"
+filename = "integrated_api-forge-1.20.1-1.8.2.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/3cf74cfe999f210f614a32d052d25736c57f805d2ff6d1c8328d04cb40934614.jar"
+hash-format = "sha256"
+hash = "3cf74cfe999f210f614a32d052d25736c57f805d2ff6d1c8328d04cb40934614"

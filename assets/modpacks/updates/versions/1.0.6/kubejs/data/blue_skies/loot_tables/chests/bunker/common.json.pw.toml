@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/bunker/common.json"
+filename = "common.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/075ae15edce157e35669b920f53116f8d9555826e12c6bbd63cb71ff9f802d05"
+hash-format = "sha256"
+hash = "075ae15edce157e35669b920f53116f8d9555826e12c6bbd63cb71ff9f802d05"

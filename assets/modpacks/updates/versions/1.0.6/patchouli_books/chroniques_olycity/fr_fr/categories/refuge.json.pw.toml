@@ -1,0 +1,8 @@
+name = "patchouli_books/chroniques_olycity/fr_fr/categories/refuge.json"
+filename = "refuge.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/d36b40dbf0071758ce9e92a7b23e5e746ba169ccc6a09f29c7c1603accf6aef2"
+hash-format = "sha256"
+hash = "d36b40dbf0071758ce9e92a7b23e5e746ba169ccc6a09f29c7c1603accf6aef2"

@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/woodland_mansion.json"
+filename = "woodland_mansion.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/d8f71c188871e97ae871ea5304220dea931ca93f7b563e94aaf25e7b7b386db0"
+hash-format = "sha256"
+hash = "d8f71c188871e97ae871ea5304220dea931ca93f7b563e94aaf25e7b7b386db0"

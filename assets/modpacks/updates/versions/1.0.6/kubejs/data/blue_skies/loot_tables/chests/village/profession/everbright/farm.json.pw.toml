@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/village/profession/everbright/farm.json"
+filename = "farm.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/aad33845fa3cc0b6da30d30684d2afbee07f8e28c7454a618e95d7ffb081a4c4"
+hash-format = "sha256"
+hash = "aad33845fa3cc0b6da30d30684d2afbee07f8e28c7454a618e95d7ffb081a4c4"

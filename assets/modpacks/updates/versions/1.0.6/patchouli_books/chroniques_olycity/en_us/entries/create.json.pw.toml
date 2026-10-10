@@ -1,0 +1,8 @@
+name = "patchouli_books/chroniques_olycity/en_us/entries/create.json"
+filename = "create.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/dac16eea9a474f831d9009d1123c63434323d29d8c49594327c9a61ca10f6da2"
+hash-format = "sha256"
+hash = "dac16eea9a474f831d9009d1123c63434323d29d8c49594327c9a61ca10f6da2"

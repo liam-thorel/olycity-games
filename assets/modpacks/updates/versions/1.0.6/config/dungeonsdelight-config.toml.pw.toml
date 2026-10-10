@@ -1,0 +1,8 @@
+name = "config/dungeonsdelight-config.toml"
+filename = "dungeonsdelight-config.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/6d8c2727b99d5c48ac6faeaadfe87f894178a3e90628a473b650b27e0accb3e0"
+hash-format = "sha256"
+hash = "6d8c2727b99d5c48ac6faeaadfe87f894178a3e90628a473b650b27e0accb3e0"

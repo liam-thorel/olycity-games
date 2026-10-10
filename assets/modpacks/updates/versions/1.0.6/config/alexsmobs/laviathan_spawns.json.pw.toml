@@ -1,0 +1,8 @@
+name = "config/alexsmobs/laviathan_spawns.json"
+filename = "laviathan_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/07d0215377f12f1299ec46b6277426c3cf957aa1d310c97fa943cdf5ace8d260"
+hash-format = "sha256"
+hash = "07d0215377f12f1299ec46b6277426c3cf957aa1d310c97fa943cdf5ace8d260"

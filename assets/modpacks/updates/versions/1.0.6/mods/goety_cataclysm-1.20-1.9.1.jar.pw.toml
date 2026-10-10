@@ -1,0 +1,8 @@
+name = "mods/goety_cataclysm-1.20-1.9.1.jar"
+filename = "goety_cataclysm-1.20-1.9.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/cbbcb479d9e6181330db2e4a2e425cb1cd2b2f2a1873fa496bfd4835e5667368.jar"
+hash-format = "sha256"
+hash = "cbbcb479d9e6181330db2e4a2e425cb1cd2b2f2a1873fa496bfd4835e5667368"

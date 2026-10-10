@@ -1,0 +1,8 @@
+name = "kubejs/data/the_bumblezone/loot_tables/structures/bumbling_beepartments/shop_cash_drawer.json"
+filename = "shop_cash_drawer.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/dde9ba8fca6190dd043ab0bb8e8c5d47d8a700a177a4b69dc0d16f814b2c875f"
+hash-format = "sha256"
+hash = "dde9ba8fca6190dd043ab0bb8e8c5d47d8a700a177a4b69dc0d16f814b2c875f"

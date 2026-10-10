@@ -1,0 +1,8 @@
+name = "kubejs/data/the_bumblezone/loot_tables/structures/sempiternal_sanctum/blue_generic.json"
+filename = "blue_generic.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/79bc8c1a5f322bcc6b2b3a305d10e73373df82dabb9533dc382e8026542dd4f0"
+hash-format = "sha256"
+hash = "79bc8c1a5f322bcc6b2b3a305d10e73373df82dabb9533dc382e8026542dd4f0"

@@ -1,0 +1,8 @@
+name = "config/simplyswords/compatibility.toml"
+filename = "compatibility.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/e7a5c5756ccadd5d968049a8820c83dce700d7d478a843385688d38d135a9217"
+hash-format = "sha256"
+hash = "e7a5c5756ccadd5d968049a8820c83dce700d7d478a843385688d38d135a9217"

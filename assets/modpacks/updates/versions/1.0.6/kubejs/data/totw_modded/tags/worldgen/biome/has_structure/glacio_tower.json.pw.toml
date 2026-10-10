@@ -1,0 +1,8 @@
+name = "kubejs/data/totw_modded/tags/worldgen/biome/has_structure/glacio_tower.json"
+filename = "glacio_tower.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/05fc8a1e2a7654bc9077993b3d6f1f735988c40cd6dd6e241e318f347e700e4b"
+hash-format = "sha256"
+hash = "05fc8a1e2a7654bc9077993b3d6f1f735988c40cd6dd6e241e318f347e700e4b"

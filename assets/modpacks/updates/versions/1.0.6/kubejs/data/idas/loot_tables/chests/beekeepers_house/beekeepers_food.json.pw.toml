@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/beekeepers_house/beekeepers_food.json"
+filename = "beekeepers_food.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/2541207f49f2c0cd7f7544dfd63f12a1c0208905681cd327d46d484221717cb0"
+hash-format = "sha256"
+hash = "2541207f49f2c0cd7f7544dfd63f12a1c0208905681cd327d46d484221717cb0"

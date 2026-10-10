@@ -1,0 +1,8 @@
+name = "config/sereneseasons/fertility.toml"
+filename = "fertility.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/ab70f328954ae8ccab18d9181fe2c02613719337f5dd98a20767672aca1ff8d6"
+hash-format = "sha256"
+hash = "ab70f328954ae8ccab18d9181fe2c02613719337f5dd98a20767672aca1ff8d6"

@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/village/profession/everdawn/stargazer.json"
+filename = "stargazer.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/089d7d5c1b62927bb1515ac641cbde57722a9cd806673c29680868e95d4bd23d"
+hash-format = "sha256"
+hash = "089d7d5c1b62927bb1515ac641cbde57722a9cd806673c29680868e95d4bd23d"

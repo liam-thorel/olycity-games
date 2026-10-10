@@ -1,0 +1,8 @@
+name = "mods/appleskin-forge-mc1.20.1-2.5.1.jar"
+filename = "appleskin-forge-mc1.20.1-2.5.1.jar"
+side = "client"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/e12419e43e3babc810af289403c5cd96bd7f09809b389acc6bb2f122b4b2a426.jar"
+hash-format = "sha256"
+hash = "e12419e43e3babc810af289403c5cd96bd7f09809b389acc6bb2f122b4b2a426"

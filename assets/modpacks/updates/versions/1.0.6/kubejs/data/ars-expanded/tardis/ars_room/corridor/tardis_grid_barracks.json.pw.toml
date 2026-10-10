@@ -1,0 +1,8 @@
+name = "kubejs/data/ars-expanded/tardis/ars_room/corridor/tardis_grid_barracks.json"
+filename = "tardis_grid_barracks.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/3acd8277dbf1457e08c561741485271f8ae6dd44fec9f7eb0f1b7c2946c49a80"
+hash-format = "sha256"
+hash = "3acd8277dbf1457e08c561741485271f8ae6dd44fec9f7eb0f1b7c2946c49a80"

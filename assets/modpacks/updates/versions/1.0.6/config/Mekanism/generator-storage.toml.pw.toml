@@ -1,0 +1,8 @@
+name = "config/Mekanism/generator-storage.toml"
+filename = "generator-storage.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/db6aa0b38e4dadfe9fae3970599c415d96058e1a47363180d63c647ccd20d084"
+hash-format = "sha256"
+hash = "db6aa0b38e4dadfe9fae3970599c415d96058e1a47363180d63c647ccd20d084"

@@ -1,0 +1,8 @@
+name = "kubejs/data/the_bumblezone/loot_tables/structures/sempiternal_sanctum/yellow_generic.json"
+filename = "yellow_generic.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/dd4d1455dbdbc1f20b03c434ed072e6638bdb82517e7198341757f08d60488e8"
+hash-format = "sha256"
+hash = "dd4d1455dbdbc1f20b03c434ed072e6638bdb82517e7198341757f08d60488e8"

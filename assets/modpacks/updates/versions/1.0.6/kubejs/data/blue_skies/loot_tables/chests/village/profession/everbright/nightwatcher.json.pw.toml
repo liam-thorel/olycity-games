@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/village/profession/everbright/nightwatcher.json"
+filename = "nightwatcher.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/63367754a1cac139fc6ee2b1307eff65bf2a532334d0eb8a457f60a5d932bea2"
+hash-format = "sha256"
+hash = "63367754a1cac139fc6ee2b1307eff65bf2a532334d0eb8a457f60a5d932bea2"

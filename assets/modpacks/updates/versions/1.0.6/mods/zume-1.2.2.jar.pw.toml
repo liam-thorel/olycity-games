@@ -1,0 +1,8 @@
+name = "mods/zume-1.2.2.jar"
+filename = "zume-1.2.2.jar"
+side = "client"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/c33b99e8976dfeb0aeb1afcc2ad8e65c7310532ae5ccc38c75317d672dc95e6f.jar"
+hash-format = "sha256"
+hash = "c33b99e8976dfeb0aeb1afcc2ad8e65c7310532ae5ccc38c75317d672dc95e6f"

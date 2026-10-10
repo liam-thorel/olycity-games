@@ -1,0 +1,8 @@
+name = "kubejs/assets/kubejs/textures/item/olycity_collectors_star.png"
+filename = "olycity_collectors_star.png"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/5eb9033800a6139634740eb17a6cb3b3a6e3ea7faea1b6224921ecf8276cb53f"
+hash-format = "sha256"
+hash = "5eb9033800a6139634740eb17a6cb3b3a6e3ea7faea1b6224921ecf8276cb53f"

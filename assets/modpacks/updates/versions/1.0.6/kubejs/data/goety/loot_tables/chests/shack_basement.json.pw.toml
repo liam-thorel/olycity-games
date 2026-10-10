@@ -1,0 +1,8 @@
+name = "kubejs/data/goety/loot_tables/chests/shack_basement.json"
+filename = "shack_basement.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/b104fdeb10c4550f3bc0ae2f45050d3762252415f8710d2fa8e2859de8cf2647"
+hash-format = "sha256"
+hash = "b104fdeb10c4550f3bc0ae2f45050d3762252415f8710d2fa8e2859de8cf2647"

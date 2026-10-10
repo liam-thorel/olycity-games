@@ -1,0 +1,8 @@
+name = "kubejs/assets/patchouli/patchouli_books/chroniques_olycity/fr_fr/entries/donjons.json"
+filename = "donjons.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/2c7cd49da7b16ec08ae55a08623c6a94f7fec29b5445712ef5b9b155f58beb84"
+hash-format = "sha256"
+hash = "2c7cd49da7b16ec08ae55a08623c6a94f7fec29b5445712ef5b9b155f58beb84"

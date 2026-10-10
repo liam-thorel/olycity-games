@@ -1,0 +1,8 @@
+name = "mods/totw_modded-forge-1.20.1-1.0.5.jar"
+filename = "totw_modded-forge-1.20.1-1.0.5.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/d70ebad33c6b548938b482f4aa09a7782b13fa6cbfc830b7fbd1c7623d09ea8f.jar"
+hash-format = "sha256"
+hash = "d70ebad33c6b548938b482f4aa09a7782b13fa6cbfc830b7fbd1c7623d09ea8f"

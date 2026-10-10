@@ -1,0 +1,8 @@
+name = "kubejs/assets/kubejs/models/item/pendentif_mathis_collector.json"
+filename = "pendentif_mathis_collector.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/a8ba31c55b762b20a99de2c49260e9161625ec6c674f2dc927ae120c7970c06a"
+hash-format = "sha256"
+hash = "a8ba31c55b762b20a99de2c49260e9161625ec6c674f2dc927ae120c7970c06a"

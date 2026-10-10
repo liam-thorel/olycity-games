@@ -1,0 +1,8 @@
+name = "mods/block_factorys_bosses-2.1.2-forge-1.20.1.jar"
+filename = "block_factorys_bosses-2.1.2-forge-1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/8c61087aa483f90861451682519582e03fa76e773d855e35180a8ed3428938bc.jar"
+hash-format = "sha256"
+hash = "8c61087aa483f90861451682519582e03fa76e773d855e35180a8ed3428938bc"

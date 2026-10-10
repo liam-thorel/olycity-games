@@ -1,0 +1,8 @@
+name = "kubejs/assets/foolish/textures/block/foolishwoodtypes-61.png"
+filename = "foolishwoodtypes-61.png"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/f337e4d87f988003867c516427bed21e7ff28388a8cbaf762d00a691a58f73e8"
+hash-format = "sha256"
+hash = "f337e4d87f988003867c516427bed21e7ff28388a8cbaf762d00a691a58f73e8"

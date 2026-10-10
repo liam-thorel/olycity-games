@@ -1,0 +1,8 @@
+name = "mods/YungsBetterStrongholds-1.20-Forge-4.0.3.jar"
+filename = "YungsBetterStrongholds-1.20-Forge-4.0.3.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1.0.2-20261008/054b0a1be86510ed6bd05de66a29200f13f5603c0c9eb7e62074ddc3d19cb0e4.jar"
+hash-format = "sha256"
+hash = "054b0a1be86510ed6bd05de66a29200f13f5603c0c9eb7e62074ddc3d19cb0e4"

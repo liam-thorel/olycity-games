@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/stronghold_crossing.json"
+filename = "stronghold_crossing.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/abf75687995ff6da8919b2cfc3dd26e21ee4b0079e9fdd9f3dcabf0504bf8634"
+hash-format = "sha256"
+hash = "abf75687995ff6da8919b2cfc3dd26e21ee4b0079e9fdd9f3dcabf0504bf8634"

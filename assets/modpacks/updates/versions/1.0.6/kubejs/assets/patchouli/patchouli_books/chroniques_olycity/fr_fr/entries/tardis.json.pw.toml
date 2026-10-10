@@ -1,0 +1,8 @@
+name = "kubejs/assets/patchouli/patchouli_books/chroniques_olycity/fr_fr/entries/tardis.json"
+filename = "tardis.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/7a38528507fe06a822402352d00e6a74d1c3ce52aac919b4e4a27a1c13056a07"
+hash-format = "sha256"
+hash = "7a38528507fe06a822402352d00e6a74d1c3ce52aac919b4e4a27a1c13056a07"
