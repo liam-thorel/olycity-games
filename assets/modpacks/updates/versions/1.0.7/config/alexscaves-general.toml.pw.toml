@@ -1,0 +1,8 @@
+name = "config/alexscaves-general.toml"
+filename = "alexscaves-general.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/232e6e03c16b2d664ffbca9014dc72da2ff952b514d514087288fda1237dbaed"
+hash-format = "sha256"
+hash = "232e6e03c16b2d664ffbca9014dc72da2ff952b514d514087288fda1237dbaed"

@@ -1,0 +1,8 @@
+name = "config/alexsmobs/dropbear_spawns.json"
+filename = "dropbear_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/0fa8f72e4c73805727577a343758cfd39377cbdadebb88b6b2343183053e16cb"
+hash-format = "sha256"
+hash = "0fa8f72e4c73805727577a343758cfd39377cbdadebb88b6b2343183053e16cb"

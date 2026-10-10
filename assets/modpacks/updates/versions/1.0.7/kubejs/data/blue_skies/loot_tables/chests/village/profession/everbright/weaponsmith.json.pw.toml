@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/village/profession/everbright/weaponsmith.json"
+filename = "weaponsmith.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/a99ee77ca254bc1848c968cea3d4ad974d6846f8227ab0601819bff5b084b059"
+hash-format = "sha256"
+hash = "a99ee77ca254bc1848c968cea3d4ad974d6846f8227ab0601819bff5b084b059"

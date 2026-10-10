@@ -1,0 +1,2429 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "",
+  "filename": "atm9_storage",
+  "group": "397831C23DCA38BF",
+  "icon": "minecraft:chest",
+  "id": "187FD26F3E9678B0",
+  "images": [
+    {
+      "height": 5.0,
+      "image": "minecraft:textures/item/chest_minecart.png",
+      "rotation": 0.0,
+      "width": 5.0,
+      "x": -2.0,
+      "y": -3.0
+    }
+  ],
+  "order_index": 0,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "dependencies": [
+        "0911F524F54A3F35"
+      ],
+      "description": [
+        "Les tiroirs stockent de grandes quantités d’un nombre limité d’objets. Choisis un format adapté à la ressource que tu veux conserver.",
+        "Dans OLYCITY, cette étape utilise Functional Storage. Les objets précis à obtenir apparaissent dans la liste des tâches."
+      ],
+      "icon": "functionalstorage:oak_1",
+      "id": "514B70E50ED96F98",
+      "rewards": [],
+      "subtitle": "Pioches sur les pioches",
+      "tasks": [
+        {
+          "id": "5F1314BD1C744E3D",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Le premier tiroir",
+      "x": -9.5,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6BC6C351EE95B2BD"
+      ],
+      "dependency_requirement": "one_started",
+      "description": [
+        "Cet élément peut convertir des objets placés à l'intérieur de leur pépite ou de leur forme de bloc. Par exemple: Un lingot de fer placé dans ce permettra de retirer 9 pépites, ou si plus de fer est placé dans, le couvrira en blocs de fer."
+      ],
+      "id": "1957C438D8DD4463",
+      "rewards": [
+        {
+          "id": "431FF899B926F22A",
+          "item": "functionalstorage:copper_upgrade",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "63BF76D068467C26",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "subtitle": "Compacts/décompacts automatiques",
+      "tasks": [
+        {
+          "id": "42810F1C067330EF",
+          "item": "functionalstorage:compacting_drawer",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Tiroir de compactage avancé",
+      "x": -13.5,
+      "y": -1.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6BC6C351EE95B2BD"
+      ],
+      "dependency_requirement": "one_started",
+      "description": [
+        "Lorsque vous êtes placé et connecté à l'outil Linking à d'autres tiroirs, ce bloc agit comme un 'Hub.' Si vous doublez le clic droit, tous les objets de votre inventaire qui ont une fente dans le réseau des tiroirs seront tirés. Par Sneak + Droite Cliquez sur le contrôleur avec une main vide, vous ouvrez l'onglet des mises à niveau, ajoutez des mises à niveau de stockage normales à ces fentes pour augmenter la gamme de contrôleur. La plage maximale est de 40 blocs pour tous les côtés ou un cube de 80x80x80."
+      ],
+      "id": "07155E078B2C76C4",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "0D599CCA138A66E5",
+          "item": "functionalstorage:copper_upgrade",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "1DEC117CB19CF3FF",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "gear",
+      "size": 1.4,
+      "subtitle": "Le cerveau des dessinateurs",
+      "tasks": [
+        {
+          "id": "60C2A844C3A8FEDD",
+          "item": "functionalstorage:storage_controller",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Contrôleur de stockage",
+      "x": -18.5,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "description": [
+        "Bienvenue au Chapitre de stockage de base! Vous trouverez toutes les façons de stocker des objets sans puissance, ainsi que des objets utiles pour vos besoins de stockage!",
+        "Ce jalon reprend un objectif déjà présent dans les parcours OLYCITY. Il complète le guide sans donner une seconde récompense."
+      ],
+      "hide_dependency_lines": 0,
+      "id": "069F25803921A452",
+      "rewards": [],
+      "shape": "gear",
+      "size": 2.0,
+      "tasks": [
+        {
+          "id": "21D51EC46591E76F",
+          "type": "item",
+          "item": "minecraft:chest",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": -2.0,
+      "y": 3.0,
+      "repeatable": false,
+      "title": "Coffre",
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "6BC6C351EE95B2BD"
+      ],
+      "description": [
+        "À l'aide d'un outil de liaison, vous pouvez lier 2 tiroirs Ender pour synchroniser le contenu. Cela fonctionne tout comme un coffre Ender, mais pour les tiroirs. Pour lier, cliquez à droite le premier tiroir Ender avec l'outil de liaison, puis à gauche cliquez sur le deuxième tiroir Ender pour synchroniser."
+      ],
+      "id": "644CA5369CC73000",
+      "rewards": [
+        {
+          "id": "5E0990A315DC5902",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "606AF8B86F6CA39A",
+          "item": "functionalstorage:ender_drawer",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "subtitle": "Tiroir dimensionnel... si vous voulez.",
+      "tasks": [
+        {
+          "id": "7E71362EA70B4B94",
+          "item": "functionalstorage:ender_drawer",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Tiroirs d'Ender !",
+      "x": -11.5,
+      "y": -1.0,
+      "repeatable": false
+    },
+    {
+      "description": [
+        "Le stockage fonctionnel est un mod pour stocker les piles des mêmes objets. Ceci est utile pour les objets comme Cobblestone, Dirt, etc."
+      ],
+      "icon": "functionalstorage:storage_controller",
+      "id": "0911F524F54A3F35",
+      "rewards": [
+        {
+          "id": "5FC049ECF00AFD3D",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "size": 1.5,
+      "subtitle": "Tiroirs de stockage distants",
+      "tasks": [
+        {
+          "id": "3938AAB9300E6512",
+          "type": "item",
+          "item": "functionalstorage:oak_1",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": -7.75,
+      "y": 0.5,
+      "repeatable": false,
+      "title": "Oak Drawer (1x1)",
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Stockage sophistiqué vous permet de mettre à niveau vos poitrines/barils avec des métaux pour augmenter le stockage! Vous pouvez également ajouter des filtres de mise à niveau pour augmenter leur fonctionnalité.",
+        "Ce jalon reprend un objectif déjà présent dans les parcours OLYCITY. Il complète le guide sans donner une seconde récompense."
+      ],
+      "id": "365773DB0F2E7504",
+      "rewards": [],
+      "shape": "square",
+      "size": 1.5,
+      "subtitle": "Des poitrines et des barils rehaussables !",
+      "tasks": [
+        {
+          "id": "0F644E12AA122270",
+          "type": "item",
+          "item": "minecraft:chest",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 3.0,
+      "y": 0.5,
+      "repeatable": false,
+      "title": "Coffre",
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Sacs à dos sophistiqués offrent des sacs à dos graduables qui peuvent également utiliser des filtres pour ajouter des fonctionnalités nifty!",
+        "Ce jalon reprend un objectif déjà présent dans les parcours OLYCITY. Il complète le guide sans donner une seconde récompense."
+      ],
+      "id": "35B2EF775727EBE0",
+      "rewards": [],
+      "shape": "square",
+      "size": 1.5,
+      "subtitle": "Sophisticated Backpacks",
+      "tasks": [
+        {
+          "id": "758CEED0423F65CC",
+          "item": "sophisticatedbackpacks:backpack",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Sac à dos",
+      "x": 3.0,
+      "y": 4.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "35B2EF775727EBE0"
+      ],
+      "id": "13ABA69E1425B043",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "073A2221717F2EC5",
+          "item": "minecraft:iron_ingot",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "7F28E5FDC57A5229",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "La première mise à jour",
+      "tasks": [
+        {
+          "id": "6D6890C2D55553A4",
+          "item": "sophisticatedbackpacks:iron_backpack",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Sac à dos en Fer",
+      "x": 5.25,
+      "y": 4.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "35B2EF775727EBE0"
+      ],
+      "description": [
+        "Vous aurez besoin de ceux-ci pour faire des mises à niveau de filtre à dos."
+      ],
+      "id": "1BE98AFC67D1A06F",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "5BDB5A102080B558",
+          "item": "sophisticatedbackpacks:upgrade_base",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "6D114E53A614EFB4",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "La base pour les filtres à dos",
+      "tasks": [
+        {
+          "id": "37B752AB098248A2",
+          "item": "sophisticatedbackpacks:upgrade_base",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de base",
+      "x": 5.25,
+      "y": 6.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1BE98AFC67D1A06F"
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 1,
+      "id": "73B49C7E648C7B99",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "5CD57B6948EE0D79",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "circle",
+      "subtitle": "Permet au sac à dos de ramasser des éléments",
+      "tasks": [
+        {
+          "id": "4FAA48D8996969DA",
+          "item": "sophisticatedbackpacks:pickup_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de collecte",
+      "x": 5.25,
+      "y": 8.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "73B49C7E648C7B99"
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "6E0E02838CB2E23A",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "31CE11656D8F784E",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Autres options de filtrage",
+      "tasks": [
+        {
+          "id": "2677E421DBFD58FB",
+          "item": "sophisticatedbackpacks:advanced_pickup_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&eModule de collecte avancée",
+      "x": 5.25,
+      "y": 9.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1BE98AFC67D1A06F"
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 1,
+      "id": "4DFAA1CEB06AFC96",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "1EDA26D37C68ABE2",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Ajoute un filtre pour les objets pompés dans ou hors du sac à dos",
+      "tasks": [
+        {
+          "id": "2E1B41B9613FCE12",
+          "item": "sophisticatedbackpacks:filter_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de filtre",
+      "x": 8.25,
+      "y": 8.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "4DFAA1CEB06AFC96"
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "300C3E13FF242B84",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "65FC2A9351292B6C",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "69C92CC91341D9D4",
+          "item": "sophisticatedbackpacks:advanced_filter_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&eModule de filtre avancée",
+      "x": 8.25,
+      "y": 9.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1BE98AFC67D1A06F"
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 1,
+      "id": "7DD808801B593CF5",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "539E32DB291386AC",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Aimants dans le sac à dos",
+      "tasks": [
+        {
+          "id": "403892914C1B6072",
+          "item": "sophisticatedbackpacks:magnet_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module d'aimant",
+      "x": 9.75,
+      "y": 8.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7DD808801B593CF5"
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "62C203A3695BBA88",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "332C84F8A6AEAD65",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "1587F8FD5E0C7334",
+          "item": "sophisticatedbackpacks:advanced_magnet_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&eModule d'aimant avancée",
+      "x": 9.75,
+      "y": 9.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1BE98AFC67D1A06F"
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 1,
+      "id": "58E3C2F88A19F182",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "377D6CDFFB100CAC",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Auto-alimentation avec des aliments dans le sac à dos",
+      "tasks": [
+        {
+          "id": "291979F75CFB447E",
+          "item": "sophisticatedbackpacks:feeding_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de nourriture",
+      "x": 11.25,
+      "y": 8.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "58E3C2F88A19F182"
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "2102E8933FCA51B3",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "1DCD6757EC7A2466",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "5DF48AA18D933404",
+          "item": "sophisticatedbackpacks:advanced_feeding_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&eAmélioration avancée de l'alimentation",
+      "x": 11.25,
+      "y": 9.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1BE98AFC67D1A06F"
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 1,
+      "id": "2239D39255B9B40D",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "04F0DBA1534C7113",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Compacts objets dans le sac à dos à leur recette 2x2",
+      "tasks": [
+        {
+          "id": "1FAFD1840B9AF232",
+          "item": "sophisticatedbackpacks:compacting_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module compacteur",
+      "x": 12.75,
+      "y": 8.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2239D39255B9B40D"
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "77F42973FDA455D7",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "6559B99B60F3FD9C",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Compacts objets dans le sac à dos à leur recette 3x3",
+      "tasks": [
+        {
+          "id": "78233B3F43E7626F",
+          "item": "sophisticatedbackpacks:advanced_compacting_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&eModule compacteur avancée",
+      "x": 12.75,
+      "y": 9.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1BE98AFC67D1A06F"
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 1,
+      "id": "179A8183A4E5E989",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "3E940ABA9747292D",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Ajoute un filtre pour les objets que vous voulez supprimer automatiquement dans le sac à dos",
+      "tasks": [
+        {
+          "id": "14751C372287CCE3",
+          "item": "sophisticatedbackpacks:void_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module du Vide",
+      "x": 11.25,
+      "y": 11.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "179A8183A4E5E989"
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "594E28F96CE27E9E",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "7BBB7244327EDD97",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "28BCAAE7D0D8A154",
+          "item": "sophisticatedbackpacks:advanced_void_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&eModule du Vide avancée",
+      "x": 11.25,
+      "y": 12.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1BE98AFC67D1A06F"
+      ],
+      "description": [
+        "Ajoute un filtre qui vous permet de dire au sac à dos quels objets il doit garder en stock. Shift-Right Cliquez sur un inventaire le rechargera."
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 1,
+      "id": "6B1A37C0FA051C37",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "56A77E72EFC6CF59",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "En stock.",
+      "tasks": [
+        {
+          "id": "0695461D2949B938",
+          "item": "sophisticatedbackpacks:restock_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de restock",
+      "x": 12.75,
+      "y": 11.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6B1A37C0FA051C37"
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "089173F3824C6D24",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "046B7521BE04C66F",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "178B96EA66800FE0",
+          "item": "sophisticatedbackpacks:advanced_restock_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&eModule de restock avancée",
+      "x": 12.75,
+      "y": 12.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1BE98AFC67D1A06F"
+      ],
+      "description": [
+        "Shift-Right Cliquez sur un inventaire pour le vider."
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 1,
+      "id": "7A6C4FF1D6026634",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "18EA7CE8FED05253",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Permet de vider le sac à dos",
+      "tasks": [
+        {
+          "id": "3A2BE5B98E830A56",
+          "item": "sophisticatedbackpacks:deposit_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de dépose",
+      "x": 6.75,
+      "y": 8.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7A6C4FF1D6026634"
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "65521CBD7A555AAF",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "241C8454B911CE3E",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "353FA71F99368FE7",
+          "item": "sophisticatedbackpacks:advanced_deposit_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&eModule de dépose avancée",
+      "x": 6.75,
+      "y": 9.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1BE98AFC67D1A06F"
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 1,
+      "id": "69A503B5054189D0",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "24C1B6468DF95218",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Garde l'inventaire du joueur empilé à partir d'objets dans le sac à dos",
+      "tasks": [
+        {
+          "id": "219AE15237620648",
+          "item": "sophisticatedbackpacks:refill_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de rechargement",
+      "x": 11.25,
+      "y": 7.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1BE98AFC67D1A06F"
+      ],
+      "description": [
+        "Donc on a une mise à niveau pour mettre votre sac à dos dans votre sac.",
+        "Donc vous pouvez avoir votre sac à dos dans votre sac à dos lorsque vous avez besoin de votre sac à dos dans votre sac à dos."
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 1,
+      "id": "37FF634CF3F0E4BD",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "3EEBF797779CCA04",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "J'ai entendu dire que tu aimes les sacs à dos dans tes sacs à dos",
+      "tasks": [
+        {
+          "id": "5CADF5D3DA018CB1",
+          "item": "sophisticatedbackpacks:inception_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module d'inception",
+      "x": 12.75,
+      "y": 7.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1BE98AFC67D1A06F"
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 1,
+      "id": "77EE8FDABA80BDF9",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "744109CD06E160C4",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Le sac ne peut pas mourir.",
+      "tasks": [
+        {
+          "id": "30EB29E3E59F1C23",
+          "item": "sophisticatedbackpacks:everlasting_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module indestructible",
+      "x": 14.25,
+      "y": 7.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1BE98AFC67D1A06F"
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 1,
+      "id": "2C37A6B380AB81A1",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "1E1388AF95DC97CB",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Ajoute un onglet de fusion dans le sac à dos",
+      "tasks": [
+        {
+          "id": "762B0CD33D0DEF3D",
+          "item": "sophisticatedbackpacks:smelting_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module du fourneau",
+      "x": 8.25,
+      "y": 11.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2C37A6B380AB81A1"
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "5E3ABAD34F23C093",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "65B6E6499A2FFAAC",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Articles d'injection automatique dans le sac à dos",
+      "tasks": [
+        {
+          "id": "728AA4135773FD00",
+          "item": "sophisticatedbackpacks:auto_smelting_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&eMise à niveau de la fusion automatique",
+      "x": 8.25,
+      "y": 12.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1BE98AFC67D1A06F"
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 1,
+      "id": "3DCA169E9B160E0D",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "50FFAA4E2236FC7F",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Ajoute un fumeur GUI au sac à dos",
+      "tasks": [
+        {
+          "id": "37086EFCC1479C27",
+          "item": "sophisticatedbackpacks:smoking_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module du fumoir",
+      "x": 5.25,
+      "y": 11.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "3DCA169E9B160E0D"
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "53708F60668AA3DC",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "07319A4357DE2002",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "406B4502B20E8AB7",
+          "item": "sophisticatedbackpacks:auto_smoking_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&eModernisation de l'auto-fumeurs",
+      "x": 5.25,
+      "y": 12.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1BE98AFC67D1A06F"
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 1,
+      "id": "6CFD9A752A8419E5",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "722E43D189670100",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Ajoute une interface graphique à l'emballage arrière",
+      "tasks": [
+        {
+          "id": "668A5FC683A3B255",
+          "item": "sophisticatedbackpacks:blasting_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module du haut fourneau",
+      "x": 6.75,
+      "y": 11.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6CFD9A752A8419E5"
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "68F8E2E35E2EDB12",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "2E9A58CE7508EA95",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "5477D2C86C1B548F",
+          "item": "sophisticatedbackpacks:auto_blasting_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&eMise à niveau automatique de la durée de vie",
+      "x": 6.75,
+      "y": 12.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1BE98AFC67D1A06F"
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 1,
+      "id": "4BD7AF17F6ED4402",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "58BCACACC2F00E94",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Ajoute une interface graphique de table d'artisanat au sac à dos",
+      "tasks": [
+        {
+          "id": "6612D474FB8D7EEF",
+          "item": "sophisticatedbackpacks:crafting_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de l'établi",
+      "x": 15.75,
+      "y": 7.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1BE98AFC67D1A06F"
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 1,
+      "id": "5F73027C1C134CC2",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "4003DB16B0C217B0",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Ajoute une interface graphique à pierre dans le sac à dos",
+      "tasks": [
+        {
+          "id": "6CF606A56FE6AD4A",
+          "item": "sophisticatedbackpacks:stonecutter_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module du tailleur de pierre",
+      "x": 8.25,
+      "y": 7.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1BE98AFC67D1A06F"
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 1,
+      "id": "7BFD89CC0F77809E",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "330E86F78E533165",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Augmente la taille de la pile dans le sac à dos",
+      "tasks": [
+        {
+          "id": "7CDC353214CAF421",
+          "item": "sophisticatedbackpacks:stack_upgrade_tier_1",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module d'empillement Niveau 1",
+      "x": 11.25,
+      "y": 6.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7BFD89CC0F77809E"
+      ],
+      "hide_until_deps_visible": 0,
+      "id": "6826488DC6539555",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "635E87B8D28A7265",
+          "type": "xp",
+          "xp": 200,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "5A229E181471BA93",
+          "item": "sophisticatedbackpacks:stack_upgrade_tier_2",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&eModule d'empillement Niveau 2",
+      "x": 12.75,
+      "y": 6.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6826488DC6539555"
+      ],
+      "hide_until_deps_visible": 0,
+      "id": "64B38E892BB64FDD",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "6B629E49F5104348",
+          "type": "xp",
+          "xp": 300,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "163D20F839FADAE2",
+          "item": "sophisticatedbackpacks:stack_upgrade_tier_3",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&bModule d'empillement Niveau 3",
+      "x": 14.25,
+      "y": 6.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "64B38E892BB64FDD"
+      ],
+      "hide_until_deps_visible": 0,
+      "id": "40720BC95359DE55",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "51BB7B0DC9383F6C",
+          "type": "xp",
+          "xp": 400,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "654EC48C0386DC82",
+          "item": "sophisticatedbackpacks:stack_upgrade_tier_4",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&5Module d'empillement Niveau 4",
+      "x": 15.75,
+      "y": 6.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1BE98AFC67D1A06F"
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 1,
+      "id": "6768FD6A0D86F18A",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "4DD2CA56CC2829A5",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Maintenant nous sommes coincés",
+      "tasks": [
+        {
+          "id": "55F6C4BFD60576EF",
+          "item": "sophisticatedbackpacks:jukebox_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module du Jukebox",
+      "x": 9.75,
+      "y": 7.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1BE98AFC67D1A06F"
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 1,
+      "id": "78B0F6BFA96B966B",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "67AEA26489CF37B1",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Auto-Swap à l'outil qui est le plus efficace pour le bloc que vous regardez",
+      "tasks": [
+        {
+          "id": "3DE3E790CCDD4143",
+          "item": "sophisticatedbackpacks:tool_swapper_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module d'échange d'outils",
+      "x": 9.75,
+      "y": 11.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "78B0F6BFA96B966B"
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "74EA95C2AC4A7F33",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "7AA3D9BF0A3FA06F",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "58579AD3EBEB17C8",
+          "item": "sophisticatedbackpacks:advanced_tool_swapper_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&eModule d'échange d'outils avancée",
+      "x": 9.75,
+      "y": 12.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1BE98AFC67D1A06F"
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 1,
+      "id": "500AE391F38969D1",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "0793E67F64C26911",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Ajoute un réservoir au sac à dos",
+      "tasks": [
+        {
+          "id": "188118E5904275AF",
+          "item": "sophisticatedbackpacks:tank_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de réservoir",
+      "x": 5.25,
+      "y": 7.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1BE98AFC67D1A06F"
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 1,
+      "id": "2F377E89FCDF28A0",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "372B5FAF7E2A477B",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Ajoute une batterie au sac à dos",
+      "tasks": [
+        {
+          "id": "66B776045FD0D9D3",
+          "item": "sophisticatedbackpacks:battery_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de batterie",
+      "x": 6.75,
+      "y": 7.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1BE98AFC67D1A06F"
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 1,
+      "id": "766C28A54115241E",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "3A3167513DE50253",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Ajoute la capacité de pomper les liquides de la mise à niveau du réservoir",
+      "tasks": [
+        {
+          "id": "3EB9DAE955259C21",
+          "item": "sophisticatedbackpacks:pump_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de pompe",
+      "x": 6.75,
+      "y": 6.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "766C28A54115241E"
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "24B4409ABCC11302",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "4C29E97E7AD7EE0F",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "0B9DBB9FAA3A232E",
+          "item": "sophisticatedbackpacks:advanced_pump_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&eModule de pompe amélioré",
+      "x": 8.25,
+      "y": 6.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "24B4409ABCC11302"
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "3E94F859E62D71E8",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "2FE32F3A813E8865",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "3525023F93013A36",
+          "item": "sophisticatedbackpacks:xp_pump_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&aModule de pompe d'expérience",
+      "x": 9.75,
+      "y": 6.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "13ABA69E1425B043"
+      ],
+      "id": "3E5C6EB0DC27F0DB",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "75C62F806FA318E7",
+          "item": "minecraft:gold_ingot",
+          "random_bonus": 2,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "01C8D4E3AE69B6FC",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "186D27E3920486E4",
+          "item": "sophisticatedbackpacks:gold_backpack",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&eSac à dos en Or",
+      "x": 7.25,
+      "y": 4.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "3E5C6EB0DC27F0DB"
+      ],
+      "id": "62C779A7D8DECAA9",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "2B760BDCAA83F47C",
+          "item": "minecraft:diamond",
+          "random_bonus": 2,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "265B731F3B33E14A",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "7648B704D422F351",
+          "item": "sophisticatedbackpacks:diamond_backpack",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&bSac à dos en Diamant",
+      "x": 9.25,
+      "y": 4.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "62C779A7D8DECAA9"
+      ],
+      "id": "5B550D2589B63725",
+      "optional": 1,
+      "rewards": [
+        {
+          "count": 4,
+          "id": "176BFA66D2BCAAF6",
+          "item": "sophisticatedbackpacks:upgrade_base",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "00C31B3F3CCE8C7A",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "4B3CDAD88A9FA957",
+          "item": "sophisticatedbackpacks:netherite_backpack",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&5Sac à dos en Netherite",
+      "x": 11.25,
+      "y": 4.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "514B70E50ED96F98"
+      ],
+      "description": [
+        "Utilisé pour lier les tiroirs à un contrôleur et pour lier les tiroirs Ender. Pour lier les tiroirs au contrôleur, cliquez avec le bouton droit sur le bloc du contrôleur pour démarrer la configuration. Cliquez avec le bouton droit sur les tiroirs les ajouter au réseau."
+      ],
+      "id": "6BC6C351EE95B2BD",
+      "rewards": [
+        {
+          "id": "499EEFE6F6BE929F",
+          "item": "functionalstorage:oak_1",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "6E97E9A716113F66",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "circle",
+      "tasks": [
+        {
+          "id": "77FEAB795AAA8C75",
+          "item": {
+            "Count": 1,
+            "id": "functionalstorage:linking_tool",
+            "tag": {
+              "Action": "ADD",
+              "Mode": "SINGLE"
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Outil d'appairage",
+      "x": -12.5,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "514B70E50ED96F98"
+      ],
+      "id": "00DE5137644EA55A",
+      "rewards": [
+        {
+          "id": "0477CD3AD54BE3AC",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 4,
+          "id": "5BD0D1DFB1199802",
+          "item": "minecraft:copper_ingot",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "subtitle": "x8 Mise à jour du stockage",
+      "tasks": [
+        {
+          "id": "41D5D095E32C14C2",
+          "item": "functionalstorage:copper_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&6Mise à niveau du cuivre",
+      "x": -9.5,
+      "y": -0.9785714285714064,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "00DE5137644EA55A"
+      ],
+      "id": "3AEBC4024AAAD22E",
+      "rewards": [
+        {
+          "id": "07211F7AB05C3DF1",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 4,
+          "id": "135EE48DED9ACBBD",
+          "item": "minecraft:gold_ingot",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "subtitle": "x16 Mise à jour du stockage",
+      "tasks": [
+        {
+          "id": "2FA5CD4A50454973",
+          "item": "functionalstorage:gold_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&eMise à niveau de l'or",
+      "x": -10.0,
+      "y": -1.4785714285714064,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "3AEBC4024AAAD22E"
+      ],
+      "id": "45D0FB2C9C74620A",
+      "rewards": [
+        {
+          "id": "6AD48CAD2D26609D",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 2,
+          "id": "1AEE116507C473A1",
+          "item": "minecraft:diamond",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "subtitle": "Amélioration du stockage x24",
+      "tasks": [
+        {
+          "id": "4E942A40EA01D276",
+          "item": "functionalstorage:diamond_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&bAmélioration du diamant",
+      "x": -9.4952380952381,
+      "y": -2.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "45D0FB2C9C74620A"
+      ],
+      "id": "1522B2BC23D555F2",
+      "rewards": [
+        {
+          "id": "352341DD4C06FD91",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "0A7070F536FA66BC",
+          "item": "minecraft:ancient_debris",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "subtitle": "x32 Mise à jour du stockage",
+      "tasks": [
+        {
+          "id": "7440505F6D92F496",
+          "item": "functionalstorage:netherite_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&5Mise à niveau de la néthérite",
+      "x": -9.0,
+      "y": -1.4785714285714064,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6BC6C351EE95B2BD"
+      ],
+      "description": [
+        "L'outil de configuration est utilisé pour verrouiller les tiroirs pour qu'ils se souviennent de l'élément qu'il a à l'intérieur. Ceci est utile chaque fois que vous configurez un système pour tirer et pousser des tiroirs. Le tiroir verrouillé ne remplacera pas l'élément qui a été verrouillé dessus!"
+      ],
+      "id": "58CA430757C3A8DA",
+      "rewards": [
+        {
+          "id": "78BB2411BFEA3501",
+          "item": "functionalstorage:gold_upgrade",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "6BF75516FE40BDAA",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "667891545D5694E2",
+          "item": {
+            "Count": 1,
+            "id": "functionalstorage:configuration_tool",
+            "tag": {
+              "Mode": "LOCKING"
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Outil de configuration",
+      "x": -12.5,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "description": [
+        "Vous cherchez à créer un stockage virtuel en utilisant le Refined Storage ou l'énergie appliquée 2? Ce sont deux excellentes façons de mettre à niveau votre stockage, mais il est important de parler des éléments NBT et la meilleure façon de les stocker. Les éléments NBT sont des éléments avec des balises supplémentaires attachées à eux. Enchantés, des éléments avec durabilité, des pierres précieuses d'apothéose... ce sont tous des éléments avec des balises NBT attachées à eux."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "minecraft:enchanted_book",
+        "tag": {
+          "StoredEnchantments": [
+            {
+              "id": "minecraft:protection",
+              "lvl": 1
+            }
+          ]
+        }
+      },
+      "id": "6FDB4F368C4CE44C",
+      "min_width": 300,
+      "rewards": [
+        {
+          "id": "5B3BE840AD58A139",
+          "item": "minecraft:chest",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "36425F8D940C4A95",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "6DCE2C2E631A7B19",
+          "type": "item",
+          "item": "minecraft:enchanted_book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": -2.0,
+      "y": 5.0,
+      "repeatable": false,
+      "title": "Livre enchanté",
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "07155E078B2C76C4"
+      ],
+      "description": [
+        "Fonctionne comme contrôleur de stockage lorsqu'il est lié à lui, en étant capable d'être poussé dans ou tiré de. Fondamentalement un point d'entrée pour les tiroirs."
+      ],
+      "id": "2099D34FFB0E383A",
+      "rewards": [
+        {
+          "id": "3EDC03D536BC23BB",
+          "item": "functionalstorage:copper_upgrade",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "71714B81FE908D50",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "gear",
+      "size": 1.3,
+      "tasks": [
+        {
+          "id": "23ACA70C82E86A90",
+          "item": "functionalstorage:controller_extension",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Point d'accès du contrôleur",
+      "x": -18.5,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6BC6C351EE95B2BD"
+      ],
+      "description": [
+        "Ce tiroir convertira automatiquement l'élément placé à l'intérieur en sa forme compacte."
+      ],
+      "id": "63E4427AEF49D98A",
+      "rewards": [
+        {
+          "id": "3D71192B5B7E140A",
+          "item": "functionalstorage:copper_upgrade",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "5748893A48A48416",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "subtitle": "Compacts/décompacts automatiques",
+      "tasks": [
+        {
+          "id": "79BED5F9B7C253E6",
+          "item": "functionalstorage:simple_compacting_drawer",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Tiroir de compactage simple",
+      "x": -14.0,
+      "y": -0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6990E2035B72848C"
+      ],
+      "description": [
+        "Cette mise à jour va déclasser l'espace max du tiroir à une pile. Cela peut être utile pour garder les objets en stock, mais pas trop."
+      ],
+      "id": "1EF93FC6D46CB4B4",
+      "rewards": [
+        {
+          "id": "66033DB1534B4131",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "7E2AE19C57B5AB97",
+          "item": "functionalstorage:copper_upgrade",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "74FC62220AC49C4A",
+          "item": "functionalstorage:iron_downgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Mise à niveau vers le bas",
+      "x": -10.0,
+      "y": 4.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6990E2035B72848C"
+      ],
+      "description": [
+        "Cette mise à jour fera le tiroir vide objets dans l'un des côtés."
+      ],
+      "id": "26BE410789F73792",
+      "rewards": [
+        {
+          "id": "5F6A1BF9F7DD0187",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "3DB988339D326466",
+          "item": "functionalstorage:copper_upgrade",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "1F4C719D69826216",
+          "item": "functionalstorage:collector_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Mise à jour du collecteur",
+      "x": -11.0,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6990E2035B72848C"
+      ],
+      "description": [
+        "Cette mise à jour permet au tiroir de tirer des éléments de n'importe quel côté."
+      ],
+      "id": "169340E3C0936031",
+      "rewards": [
+        {
+          "id": "0DB6EC685733F13D",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "1FC3EB6C452F7D39",
+          "item": "functionalstorage:copper_upgrade",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "1AF3376D15116B63",
+          "item": "functionalstorage:puller_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Mise à jour du pulvérisateur",
+      "x": -8.0,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6990E2035B72848C"
+      ],
+      "description": [
+        "Cette mise à jour permet au tiroir de pousser des objets de n'importe quel côté."
+      ],
+      "id": "585E0189BB467C02",
+      "rewards": [
+        {
+          "id": "110E32549F3582F7",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "3CBCBFDDDF77EB9C",
+          "item": "functionalstorage:copper_upgrade",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "688E7F3166912DFA",
+          "item": "functionalstorage:pusher_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Mise à niveau du pousseur",
+      "x": -8.0,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6990E2035B72848C"
+      ],
+      "description": [
+        "Cette mise à jour annulera les éléments supplémentaires qui viennent lorsque le tiroir est plein. Ceci est utile pour empêcher le débordement ou pour empêcher une configuration de sauvegarder en raison du stockage étant plein."
+      ],
+      "id": "7B36E9379FF8BD91",
+      "rewards": [
+        {
+          "id": "7E5563299DE19AB4",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "465C203E96CF8496",
+          "item": "functionalstorage:copper_upgrade",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "5B5116AFFF404B27",
+          "item": "functionalstorage:void_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module du Vide",
+      "x": -9.0,
+      "y": 4.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6990E2035B72848C"
+      ],
+      "description": [
+        "Cette mise à niveau fera du tiroir un signal rouge de tous les côtés, signal strength indiquant à quel point il est plein/vide. Pour les tiroirs multi-lots, la mise à niveau peut être configurée à quel emplacement à surveiller. 0 - signifie vide 15 - signifie plein."
+      ],
+      "id": "35785C44300F80D5",
+      "rewards": [
+        {
+          "id": "7C32BE37CC972914",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "675050E650057223",
+          "item": "functionalstorage:copper_upgrade",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "3BBF1C004EF80707",
+          "item": "functionalstorage:redstone_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Redstone Mise à jour",
+      "x": -11.0,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "514B70E50ED96F98"
+      ],
+      "description": [
+        "Outre les mises à niveau de stockage, il y a aussi d'autres mises à jour utiles."
+      ],
+      "id": "6990E2035B72848C",
+      "tasks": [
+        {
+          "id": "4D9D05222EB47FC3",
+          "type": "item",
+          "item": "sophisticatedbackpacks:filter_upgrade",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Autres améliorations",
+      "x": -9.5,
+      "y": 2.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6BC6C351EE95B2BD"
+      ],
+      "description": [
+        "Vous voulez avoir des tiroirs personnalisés? Ne cherchez pas plus loin, ceux-ci peuvent imiter la texture d'un bloc à l'extérieur, et un autre à l'avant. Suivez l'outil sur la façon de le faire."
+      ],
+      "icon": "functionalstorage:framed_1",
+      "id": "55CBC6303C29695D",
+      "rewards": [
+        {
+          "id": "61050C217626F7C9",
+          "item": "functionalstorage:oak_1",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "260DE84CF332D3F0",
+          "type": "xp",
+          "xp": 5,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "3C1CE039516DF2E6",
+          "item": {
+            "Count": 1,
+            "id": "functionalstorage:framed_1"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Tiroirs encadrés",
+      "x": -12.5,
+      "y": -1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6BC6C351EE95B2BD"
+      ],
+      "description": [
+        "Si ce mod ne stockait que des objets, vous auriez tort, il y a aussi des tiroirs fluides. Ils fonctionnent de la même façon que les tiroirs réguliers, mais entreposez des fluides à la place."
+      ],
+      "id": "56791D9593999C7D",
+      "rewards": [
+        {
+          "id": "1393595333E57E96",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "57F091460B92D3C3",
+          "item": "functionalstorage:copper_upgrade",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "147B28E3178263B0",
+          "item": {
+            "Count": 1,
+            "id": "functionalstorage:fluid_1"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Tiroirs à fluide",
+      "x": -13.5,
+      "y": 1.5,
+      "repeatable": false
+    },
+    {
+      "can_repeat": 0,
+      "description": [
+        "Cette quête a été créée par AllTheMods Staff, ou un contributeur communautaire pour une utilisation dans AllTheMods Modpacks.",
+        "Comme tous les packs AllTheMods sont sous licence All Rights Reserved, cette Quest n'est pas autorisée à être utilisée dans les packs publics non publiés par l'équipe AllTheMods, sans autorisation explicite.",
+        "Cette quête est intentionnellement cachée, si vous voyez cela, vous êtes en mode édition.",
+        "Repère de lecture : obtiens le livre indiqué pour poursuivre. Cette étape ne donne aucune récompense."
+      ],
+      "disable_toast": 1,
+      "hide_details_until_startable": 1,
+      "hide_until_deps_visible": 1,
+      "icon": {
+        "Count": 1,
+        "id": "ftbquests:custom_icon",
+        "tag": {
+          "Icon": "minecraft:item/barrier"
+        }
+      },
+      "id": "6F01D40A8BED35B6",
+      "invisible": 1,
+      "optional": 1,
+      "shape": "octagon",
+      "tasks": [
+        {
+          "id": "240F4351375D9B1F",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "2B86A8399E53893C",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": -4.0,
+      "y": 1.0,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Livre",
+      "dependencies": []
+    }
+  ],
+  "title": "Organiser ses réserves",
+  "default_consume_items": false
+}

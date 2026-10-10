@@ -5,14 +5,14 @@
   "sourceVersion": "1.0.3",
   "minecraft": "1.20.1",
   "loader": "forge-47.4.10",
-  "modCount": 178,
+  "modCount": 183,
   "bytes": 1683682,
   "sha256": "8ee1e460e4e20eab4d109668eda2a13f6e7f0b343629e00b034f8bd05d31c349",
   "downloadUrl": "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1.0.3-20261008/OLYCITY.V1.-.Prism.zip",
   "essential": false,
   "server": {
     "sourceFilename": "OLYCITY V1 - Serveur.zip",
-    "modCount": 153,
+    "modCount": 161,
     "bytes": 1153060270,
     "sha256": "b845cf1918c00136d3ac395874e0a698cda52a06492d838a937ddf268af140f9",
     "downloadUrl": "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1.0.3-20261008/OLYCITY.V1.-.Serveur.zip",
@@ -20,7 +20,7 @@
     "version": "1.0.3",
     "updatesIncluded": true,
     "readyToStart": true,
-    "updateVersion": "1.0.6"
+    "updateVersion": "1.0.7"
   },
   "manualDownload": {
     "downloadUrl": "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1.0.3-20261008/OLYCITY.V1.zip",
@@ -31,10 +31,12 @@
   },
   "updates": {
     "type": "packwiz",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "stableUrl": "https://games.olycity.fr/assets/modpacks/updates/stable/pack.toml",
     "testUrl": "https://games.olycity.fr/assets/modpacks/updates/test/pack.toml",
     "firstDownloadApproxBytes": 1167042059,
-    "serverUpdateRequired": true
+    "serverUpdateRequired": true,
+    "releaseNotesUrl": "https://games.olycity.fr/docs/olycity-v1-patch-1.0.7.md",
+    "serverGuideUrl": "https://games.olycity.fr/docs/olycity-v1-update-1.0.7.md"
   }
 }

@@ -1,0 +1,8 @@
+name = "config/ftbquests/quests/chapters/atm9_cataclysm.snbt"
+filename = "atm9_cataclysm.snbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/a484ae7cfe07816b353c2e3d559b4ea8f404ed0bf197f32502ca5be2a005edca"
+hash-format = "sha256"
+hash = "a484ae7cfe07816b353c2e3d559b4ea8f404ed0bf197f32502ca5be2a005edca"

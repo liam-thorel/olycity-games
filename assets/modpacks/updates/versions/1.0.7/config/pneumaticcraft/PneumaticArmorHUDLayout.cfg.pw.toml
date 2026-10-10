@@ -1,0 +1,8 @@
+name = "config/pneumaticcraft/PneumaticArmorHUDLayout.cfg"
+filename = "PneumaticArmorHUDLayout.cfg"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/052d37ccd8ea50a41b1313430b3b85690ae130e6fde53c1c4902ab40e51afb4f"
+hash-format = "sha256"
+hash = "052d37ccd8ea50a41b1313430b3b85690ae130e6fde53c1c4902ab40e51afb4f"

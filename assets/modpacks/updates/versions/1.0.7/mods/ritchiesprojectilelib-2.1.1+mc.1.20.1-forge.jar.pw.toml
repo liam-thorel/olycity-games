@@ -1,0 +1,8 @@
+name = "mods/ritchiesprojectilelib-2.1.1+mc.1.20.1-forge.jar"
+filename = "ritchiesprojectilelib-2.1.1+mc.1.20.1-forge.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/5531ec454792f98993fa29d55f8810444ba3e9ef8f04331c5811b84ec8d0c3dc.jar"
+hash-format = "sha256"
+hash = "5531ec454792f98993fa29d55f8810444ba3e9ef8f04331c5811b84ec8d0c3dc"

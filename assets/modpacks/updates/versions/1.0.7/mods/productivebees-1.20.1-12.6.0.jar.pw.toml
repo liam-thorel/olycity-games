@@ -1,0 +1,8 @@
+name = "mods/productivebees-1.20.1-12.6.0.jar"
+filename = "productivebees-1.20.1-12.6.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/b728e5640fcfd0bd7137cabf475455588452ace89a3dd136333a60fdf7049af4.jar"
+hash-format = "sha256"
+hash = "b728e5640fcfd0bd7137cabf475455588452ace89a3dd136333a60fdf7049af4"

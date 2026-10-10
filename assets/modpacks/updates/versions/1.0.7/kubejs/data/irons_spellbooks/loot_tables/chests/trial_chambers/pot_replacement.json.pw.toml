@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/trial_chambers/pot_replacement.json"
+filename = "pot_replacement.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/7e637cb71845ec679a7b8b190300f9ba2d4beb67bde5c41c7a0227112ca5a003"
+hash-format = "sha256"
+hash = "7e637cb71845ec679a7b8b190300f9ba2d4beb67bde5c41c7a0227112ca5a003"

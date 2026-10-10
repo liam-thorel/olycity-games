@@ -1,0 +1,8 @@
+name = "mods/ModernChickens-1.20.1-2.7.0-Forge.jar"
+filename = "ModernChickens-1.20.1-2.7.0-Forge.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1.0.7-20261011/76f59194b2a3bb49e4e5678e7a361e07a245e3dc872a6468731a10666ca67df6.jar"
+hash-format = "sha256"
+hash = "76f59194b2a3bb49e4e5678e7a361e07a245e3dc872a6468731a10666ca67df6"

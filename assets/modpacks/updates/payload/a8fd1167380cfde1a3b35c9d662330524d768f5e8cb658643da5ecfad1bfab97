@@ -1,0 +1,488 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "",
+  "filename": "atm9_basic_power",
+  "group": "2F635AC0A0406D99",
+  "icon": {
+    "Count": 1,
+    "id": "mekanism:creative_energy_cube",
+    "tag": {
+      "mekData": {
+        "EnergyContainers": [
+          {
+            "Container": 0,
+            "stored": "18446744073709551615.9999"
+          }
+        ]
+      }
+    }
+  },
+  "id": "40DC0293F0202ACC",
+  "order_index": 0,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "description": [
+        "Ce chapitre présente les générateurs, les connexions et les réserves d’énergie utilisables dans OLYCITY.",
+        "Choisis une première machine à alimenter avant de produire davantage d’énergie. Les rendements et recettes à consulter sont ceux de notre pack, pas ceux d’ATM9."
+      ],
+      "icon": "minecraft:redstone_torch",
+      "id": "391E529FF885B128",
+      "rewards": [
+        {
+          "id": "5A35E6443B5874BA",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "gear",
+      "size": 2.0,
+      "tasks": [
+        {
+          "id": "3BF2D05AB7B89962",
+          "type": "item",
+          "item": "minecraft:redstone",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": -3.5,
+      "y": 0.5,
+      "repeatable": false,
+      "title": "Produire, transporter et stocker",
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "3AF8F6D6709A7E85"
+      ],
+      "description": [
+        "Le Mekanism fournit plusieurs façons de faire de l'énergie à l'aide de ressources renouvelables. Les générateurs solaires exploitent la puissance du soleil pour fournir des besoins énergétiques de base. Il ne fonctionne pas pendant la nuit, et doit avoir accès au ciel. Le verre est correct. Le générateur de vent fournit de l'énergie par le vent. À moins que vous ayez trouvé un moyen pour votre personnage de tourner manuellement ceci, la vitesse qu'il tourne est basée sur le Y lvl il est placé à. Il a également besoin d'un accès direct au ciel sans bloc au-dessus."
+      ],
+      "hide_dependency_lines": 0,
+      "id": "34B3FA1740F14CDB",
+      "rewards": [
+        {
+          "id": "7E2CC28355BE1C9E",
+          "type": "xp",
+          "xp": 25,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Utilisation du Soleil",
+      "tasks": [
+        {
+          "id": "5EDB597EC0E0B7E4",
+          "item": {
+            "Count": 1,
+            "id": "mekanismgenerators:solar_generator"
+          },
+          "title": "Énergies renouvelables",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Mekanism: Énergies renouvelables",
+      "x": -5.0,
+      "y": 4.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "3AF8F6D6709A7E85"
+      ],
+      "description": [
+        "&aLe générateur de chaleur de Mekanism est une prise différente sur la production d'énergie de base. Il a deux modes de création d'énergie: passive: Entourer le générateur avec la source de lave ou les blocs d'écoulement crée l'énergie passive au fil du temps à travers la chaleur. Placez un bloc de source de lave sur le dessus et laissez-le couler sur les côtés. Assurez-vous d'avoir des tuyaux connectés pour l'énergie d'abord! Active: Placer des matériaux combustibles tels que le charbon ou le bois dans le générateur brûlera le combustible pour créer de l'énergie.",
+        "Ce jalon reprend un objectif déjà présent dans les parcours OLYCITY. Il complète le guide sans donner une seconde récompense."
+      ],
+      "id": "2A62131E5124DA1E",
+      "rewards": [],
+      "shape": "rsquare",
+      "subtitle": "La solution d'alimentation de démarrage du Mekanism",
+      "tasks": [
+        {
+          "id": "7F42350E836F0DCD",
+          "item": "mekanismgenerators:heat_generator",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Générateur thermique",
+      "x": -6.5,
+      "y": 3.0,
+      "repeatable": false
+    },
+    {
+      "description": [
+        "Vous cherchez des options de puissance de jeu précoce? Ce sont de bonnes façons de vous faire démarrer avec la production d'énergie. Ceux-ci ne produisent pas une tonne de puissance, mais ils sont généralement faciles ou bon marché à obtenir dans le jeu précoce!"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:coal",
+      "id": "3AF8F6D6709A7E85",
+      "rewards": [
+        {
+          "id": "15A1D7DD7FC2FBAF",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.5,
+      "subtitle": "Puissance de démarrage",
+      "tasks": [
+        {
+          "id": "2C90404EBF3E9130",
+          "type": "item",
+          "item": "minecraft:coal",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": -5.0,
+      "y": 3.0,
+      "repeatable": false,
+      "title": "Charbon",
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "6161FE7AA54F7C52"
+      ],
+      "description": [
+        "Mekanism offre un joli câble pour transférer votre puissance. Si la machine que vous connectez tire ou pousse déjà, vous n'aurez pas besoin de configurer le câble. Sinon, vous aurez besoin d'un Configurateur pour configurer le tuyau. Shift+droit-clic changera le câble pour tirer ou pousser en mode.",
+        "Ce jalon reprend un objectif déjà présent dans les parcours OLYCITY. Il complète le guide sans donner une seconde récompense."
+      ],
+      "id": "36989C02DC550264",
+      "rewards": [],
+      "shape": "rsquare",
+      "subtitle": "Tuyau de transfert d'énergie du Mekanism",
+      "tasks": [
+        {
+          "id": "2BB97252463C59ED",
+          "item": {
+            "Count": 1,
+            "id": "mekanism:basic_universal_cable"
+          },
+          "title": "Câbles universels",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&9Utilisation du Mekanism : Câble universel de base",
+      "x": -7.5,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "description": [
+        "Si vous cherchez différentes façons de sortir de vos machines de l'électricité, c'est là que vous pouvez la trouver ! Il y a plusieurs options, à la fois câblées et sans fil, pour transférer l'énergie.",
+        "Ce jalon reprend un objectif déjà présent dans les parcours OLYCITY. Il complète le guide sans donner une seconde récompense."
+      ],
+      "hide_dependency_lines": 1,
+      "icon": {
+        "Count": 1,
+        "id": "mekanism:energy_tablet",
+        "tag": {
+          "mekData": {
+            "EnergyContainers": [
+              {
+                "Container": 0,
+                "stored": "1000000"
+              }
+            ]
+          }
+        }
+      },
+      "id": "6161FE7AA54F7C52",
+      "rewards": [],
+      "shape": "hexagon",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "0A001046257C0E4E",
+          "type": "item",
+          "item": "mekanism:basic_universal_cable",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": -9.0,
+      "y": 0.5,
+      "repeatable": false,
+      "title": "Câble universel de base",
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "6161FE7AA54F7C52"
+      ],
+      "description": [
+        "Avec un peu de travail dans le Mekanism, cette machine vous permet de transférer n'importe quoi sans fil. Vous pouvez définir des canaux spécifiques pour transférer des objets individuels, de l'énergie, ou même des gaz du Mekanism."
+      ],
+      "id": "54B8868D7C70B68F",
+      "rewards": [
+        {
+          "id": "2D3D93CE8010A82A",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Fonctionne aussi pour les objets, les gaz, les liquides et la chaleur.",
+      "tasks": [
+        {
+          "id": "4A7D91E1D6893183",
+          "item": "mekanism:quantum_entangloporter",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&9Transfert sans fil: Quantum Entangloporter",
+      "x": -10.0,
+      "y": 1.5,
+      "repeatable": false
+    },
+    {
+      "description": [
+        "Cette section vous montre différentes façons de stocker votre pouvoir!",
+        "Ce jalon reprend un objectif déjà présent dans les parcours OLYCITY. Il complète le guide sans donner une seconde récompense."
+      ],
+      "hide_dependency_lines": 1,
+      "id": "45BFAB424503B38C",
+      "rewards": [],
+      "shape": "hexagon",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "3915C59A2D95A845",
+          "type": "item",
+          "item": "mekanism:basic_energy_cube",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 3.0,
+      "y": 0.5,
+      "repeatable": false,
+      "title": "Cube énergétique de base",
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "45BFAB424503B38C"
+      ],
+      "description": [
+        "Le Mekanism est l'un des meilleurs mods pour le stockage de l'énergie, en particulier dans le jeu précoce. Le Basic Energy Cube est facile à configurer, facile à fabriquer et stocke beaucoup de puissance. Il peut également être mis à niveau et peut charger des objets à l'intérieur de l'interface ! Pour en savoir plus sur la mise à niveau du Energy Cube ainsi que du mod, rendez-vous sur la ligne de quête du Mekanism !",
+        "Ce jalon reprend un objectif déjà présent dans les parcours OLYCITY. Il complète le guide sans donner une seconde récompense."
+      ],
+      "id": "7C7E0A4E46B0DC22",
+      "rewards": [],
+      "shape": "rsquare",
+      "subtitle": "Mekanism",
+      "tasks": [
+        {
+          "id": "52AB8D7134FF8AA6",
+          "item": {
+            "Count": 1,
+            "id": "mekanism:basic_energy_cube"
+          },
+          "title": "Cubes énergétiques",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Les cubes énergétiques du Mekanism",
+      "x": 3.0,
+      "y": 2.0,
+      "repeatable": false
+    },
+    {
+      "description": [
+        "Vous ne pouvez pas alimenter votre base de charbon pour toujours! Si vous avez une quantité décente de ressources disponibles, il est temps de mettre à niveau votre configuration de puissance! Ces options nécessitent généralement un peu de configuration, mais produire assez de puissance pour vous transporter loin dans votre jeu."
+      ],
+      "id": "4AF4893ECA5D6472",
+      "shape": "hexagon",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "2B382D88A5A68925",
+          "type": "item",
+          "item": "mekanismgenerators:gas_burning_generator",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Options de puissance de jeu intermédiaire",
+      "x": -2.0,
+      "y": 3.0,
+      "rewards": [],
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "4AF4893ECA5D6472"
+      ],
+      "description": [
+        "Si vous avez déjà entendu parler de quelqu'un de 'Melon Power', c'est ça. Le générateur de combustion de gaz de Mekanism peut produire une bonne quantité d'énergie en pompant à l'éthylène fabriqué à partir de tranches de Melon. Pour produire de l'éthylène, commencez par broyer des matériaux organiques dans un broyeur pour créer du biocarburant. Les tranches de Melon sont généralement utilisées pour cela! Ceci est ensuite pompé dans une chambre de réaction pressurisée (PRC pour résumer). La RPC a besoin d'eau, de biocarburant et d'hydrogène pour créer de l'éthylène."
+      ],
+      "id": "46D7AD6F4C616DB9",
+      "min_width": 300,
+      "rewards": [
+        {
+          "count": 8,
+          "id": "2A734C2513CD7055",
+          "item": "minecraft:melon_slice",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "217B91929CC64EC6",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Le pouvoir du Melon",
+      "tasks": [
+        {
+          "id": "185D41A2C5A9D6B1",
+          "item": "mekanismgenerators:gas_burning_generator",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&eGénérateur de gaz du Mekanism",
+      "x": -2.0,
+      "y": 4.5,
+      "repeatable": false
+    },
+    {
+      "description": [
+        "Si vous cherchez à générer une tonne de puissance, vous pouvez commencer par augmenter certaines des options de la section Mid Game Power. Faites vos réacteurs extrêmes plus grands. Mettez à niveau votre Thermo Gens à Nitro. Allez à l'état sauvage. Le Mekanism a également une option de puissance de jeu finale qui est difficile à battre. Le réacteur Fusion peut produire jusqu'à 200MRF/t, et si vous voulez apprendre à le construire, assurez-vous de vérifier le Mekanism: Advanced Chapter!"
+      ],
+      "icon": "mekanismgenerators:fusion_reactor_controller",
+      "id": "2B54FB5EB9B95488",
+      "min_width": 300,
+      "rewards": [
+        {
+          "id": "751D9E1BB81AF836",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.5,
+      "subtitle": "Plus de pouvoir que vous aurez besoin",
+      "tasks": [
+        {
+          "id": "109712DCBFB60ECF",
+          "type": "item",
+          "item": "mekanismgenerators:fusion_reactor_controller",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": -3.5,
+      "y": 4.5,
+      "repeatable": false,
+      "title": "Contrôleur de réacteur à fusion",
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "7C7E0A4E46B0DC22"
+      ],
+      "description": [
+        "&9La matrice d'induction de Mekanism est le moyen ultime de stocker votre puissance. Si vous cherchez le meilleur stockage de puissance dans le jeu, consultez le chapitre avancé de Mekanism."
+      ],
+      "id": "32F8A3ABD7CA6817",
+      "min_width": 300,
+      "rewards": [
+        {
+          "id": "7B567E272F2F921A",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "gear",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "78A664B724070A4C",
+          "type": "item",
+          "item": "mekanism:induction_casing",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 3.0,
+      "y": 3.5,
+      "repeatable": false,
+      "title": "Structure à induction"
+    },
+    {
+      "can_repeat": 0,
+      "description": [
+        "Cette quête a été créée par AllTheMods Staff, ou un contributeur communautaire pour une utilisation dans AllTheMods Modpacks.",
+        "Comme tous les packs AllTheMods sont sous licence All Rights Reserved, cette Quest n'est pas autorisée à être utilisée dans les packs publics non publiés par l'équipe AllTheMods, sans autorisation explicite.",
+        "Cette quête est intentionnellement cachée, si vous voyez cela, vous êtes en mode édition.",
+        "Repère de lecture : obtiens le livre indiqué pour poursuivre. Cette étape ne donne aucune récompense."
+      ],
+      "disable_toast": 1,
+      "hide_details_until_startable": 1,
+      "hide_until_deps_visible": 1,
+      "icon": {
+        "Count": 1,
+        "id": "ftbquests:custom_icon",
+        "tag": {
+          "Icon": "minecraft:item/barrier"
+        }
+      },
+      "id": "3DAC863178DB1361",
+      "invisible": 1,
+      "optional": 1,
+      "shape": "octagon",
+      "tasks": [
+        {
+          "id": "12D44D5CC46D92AF",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "2BFAC185E7462468",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": -3.5,
+      "y": -1.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Livre",
+      "dependencies": []
+    }
+  ],
+  "title": "Produire et stocker l’énergie",
+  "default_consume_items": false
+}

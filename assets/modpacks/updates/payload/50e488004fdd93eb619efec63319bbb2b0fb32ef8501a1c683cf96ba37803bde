@@ -1,0 +1,2681 @@
+{
+  "autofocus_id": "2E9E0DC47C09A2C4",
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "",
+  "filename": "atm9_undergarden",
+  "group": "3B2BC36F39863788",
+  "icon": "undergarden:catalyst",
+  "id": "7153859AAF5A93E2",
+  "order_index": 3,
+  "quest_links": [],
+  "quests": [
+    {
+      "dependencies": [
+        "30D431A902AF021A"
+      ],
+      "description": [
+        "L’Undergarden possède ses propres biomes, minerais, créatures et structures. Prépare des réserves et note le point de retour.",
+        "Le chapitre guide l’exploration et les équipements de cette dimension. Vous pouvez y aller par étapes ; rien n’impose de tout terminer en une sortie."
+      ],
+      "hide_dependent_lines": 1,
+      "icon": "undergarden:goo_ball",
+      "id": "2E9E0DC47C09A2C4",
+      "rewards": [],
+      "shape": "gear",
+      "size": 3.0,
+      "tasks": [
+        {
+          "dimension": "undergarden:undergarden",
+          "id": "0D3DAB6DDB0D4A84",
+          "type": "dimension"
+        }
+      ],
+      "title": "Entrer dans l’Undergarden",
+      "x": 2.0,
+      "y": -6.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Les catacombes sont des structures souterraines massives faites de briques de Profondrock. Elles pourraient avoir une partie s'écartant du sol que vous pouvez trouver. Dans l'immense labyrinthe se trouve des oubliés, des poitrines cachées, et le patron: Forgotten Guardian. Espérons que vous êtes prêt pour elle!"
+      ],
+      "icon": "undergarden:cracked_depthrock_bricks",
+      "id": "5E98826D64FDEE7C",
+      "rewards": [
+        {
+          "count": 5,
+          "id": "22B4412183666DC2",
+          "item": "minecraft:golden_apple",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "octagon",
+      "size": 1.3,
+      "tasks": [
+        {
+          "id": "6EF753A26A925B4D",
+          "structure": "undergarden:catacombs",
+          "type": "structure"
+        }
+      ],
+      "title": "Catacombes",
+      "x": 13.5,
+      "y": -0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Mon biome préféré de loin! Une jungle verte géante avec d'immenses grongly Trees. Sur ces arbres vous pouvez trouver des gronglets!"
+      ],
+      "icon": "undergarden:grongle_sapling",
+      "id": "280EFBC59B7F34AB",
+      "rewards": [
+        {
+          "id": "523720517B27FE70",
+          "type": "xp_levels",
+          "xp_levels": 1,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.2,
+      "tasks": [
+        {
+          "biome": "undergarden:gronglegrowth",
+          "icon": "undergarden:grongle_sapling",
+          "id": "679F96F20F7D3B9F",
+          "type": "biome"
+        }
+      ],
+      "title": "Grognement",
+      "x": -5.5,
+      "y": -6.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "&eLes gronglets sont techniquement des blocs pas les Mobs. Mais je les aime trop pour ne pas les inclure! Ils frayent sur Grongle Trees et émettent le bruit et la lumière! Définitivement parfait pour la décoration."
+      ],
+      "id": "7CC3E2A3767D86B4",
+      "rewards": [
+        {
+          "count": 7,
+          "id": "6177C337BD543D95",
+          "item": "undergarden:gronglet",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "0291C233B4B9A33E",
+          "item": "undergarden:gronglet",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&eGroglets",
+      "x": -3.5,
+      "y": -2.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Les mers antiques sont de grandes mers ouvertes dans les sous-jardins. D'une certaine manière, même avec la quantité de polluants que l'eau est sûre à boire. L'eau contient également Gwibs et Gwiblings. Et ne peut pas oublier Glitterkelp!"
+      ],
+      "icon": "undergarden:glitterkelp",
+      "id": "7B88C50D3E91F4F7",
+      "rewards": [
+        {
+          "id": "1289E42BF9CC570A",
+          "type": "xp_levels",
+          "xp_levels": 1,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.2,
+      "tasks": [
+        {
+          "biome": "undergarden:ancient_sea",
+          "icon": "undergarden:glitterkelp",
+          "id": "2511889D27674300",
+          "type": "biome"
+        }
+      ],
+      "title": "La mer antique",
+      "x": -5.5,
+      "y": -8.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Glitterkelp pousse dans les mers antiques et glacées. Ils ne font pas grand-chose mais Glow et peuvent être fabriqués en Pie!"
+      ],
+      "id": "6439C1EDDEB78B41",
+      "rewards": [
+        {
+          "count": 5,
+          "id": "6DD855C956728BF7",
+          "item": "undergarden:glitterkelp",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "762D2C55188B088D",
+          "item": "undergarden:glitterkelp",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 6.5,
+      "y": -5.0,
+      "repeatable": false,
+      "title": "Glitterkelp"
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Les forêts de Wigglewood sont des forêts comme tous les autres. Juste ces arbres aiment aller comme ils veulent."
+      ],
+      "icon": "undergarden:wigglewood_sapling",
+      "id": "789B471C5E38AB07",
+      "rewards": [
+        {
+          "id": "44AC6D32C268684B",
+          "type": "xp_levels",
+          "xp_levels": 1,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.2,
+      "tasks": [
+        {
+          "biome": "undergarden:wigglewood_forest",
+          "icon": "undergarden:wigglewood_sapling",
+          "id": "75E3472D7BBEFFA7",
+          "type": "biome"
+        }
+      ],
+      "title": "Forêts de bûcherons",
+      "x": -2.0,
+      "y": -5.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Les champs oubliés sont les plaines des sous-jardins. Ils n'ont pas d'arbres mais ils ont beaucoup de Roches, de Fleurs et de Mobs! Ils ne frayent pas les Forgottens cependant, ouais désolé de ruiner votre enthousiasme."
+      ],
+      "icon": "undergarden:depthrock_bricks",
+      "id": "23BCD3023DA4BB37",
+      "rewards": [
+        {
+          "id": "6DD5B56B600F68A7",
+          "type": "xp_levels",
+          "xp_levels": 1,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.2,
+      "tasks": [
+        {
+          "biome": "undergarden:forgotten_field",
+          "icon": "undergarden:depthrock_bricks",
+          "id": "306F7A079FC00F51",
+          "type": "biome"
+        }
+      ],
+      "title": "Champs oubliés",
+      "x": -4.0,
+      "y": -7.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Je promets que c'est le dernier Champignon Bog! Ces Champignons semblent assez normaux, leur gimick bien que ce qui vient d'eux! Les Veils! Définitivement un bloc de décoration utile."
+      ],
+      "icon": "undergarden:veil_mushroom",
+      "id": "7AFCB0FBAB66197F",
+      "rewards": [
+        {
+          "id": "7526F6E4433B8384",
+          "type": "xp_levels",
+          "xp_levels": 1,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.2,
+      "tasks": [
+        {
+          "biome": "undergarden:veil_mushroom_bog",
+          "icon": "undergarden:veil_mushroom",
+          "id": "52C385BE041AD620",
+          "type": "biome"
+        }
+      ],
+      "title": "Tourbière de champignons veil",
+      "x": -3.0,
+      "y": -5.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Les plus petits et les plus faibles des Mobs Rot. Ceux-ci ont 5 Cœurs. Comme tous les Mobs Rot ils cibleront Stoneborns et Forgottens et tomberont Utheric Shards."
+      ],
+      "icon": "undergarden:rotling_spawn_egg",
+      "id": "72D268BEF878CC6E",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "349D3BE2DB90E9BD",
+          "item": "undergarden:utheric_shard",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "undergarden:rotling",
+          "icon": "undergarden:rotling_spawn_egg",
+          "id": "1984DE03B6018394",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&cDécoupe",
+      "x": 6.5,
+      "y": 1.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Le Rot Mob de taille moyenne, le Rotwalker. Ils ont 20 Cœurs. Comme tous les Rot Mobs, ils cibleront Stoneborns et Forgottens et tomberont Utheric Shards."
+      ],
+      "icon": "undergarden:rotwalker_spawn_egg",
+      "id": "0545C00A5BAE5CA6",
+      "rewards": [
+        {
+          "count": 6,
+          "id": "3BC90091BB14F041",
+          "item": "undergarden:utheric_shard",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "undergarden:rotwalker",
+          "icon": "undergarden:rotwalker_spawn_egg",
+          "id": "6CA7E01BE5C62723",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&cRoulette",
+      "x": 8.5,
+      "y": 1.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Le plus grand et le plus dangereux Rot Mob. Ils ont 80 Cœurs, qui je pense se qualifie comme un Miniboss. Comme tous les Rot Mobs, ils viseront Stoneborns et Forgottens et tomberont Utheric Shards."
+      ],
+      "icon": "undergarden:rotbeast_spawn_egg",
+      "id": "7E514A1294002DED",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "007F190447747925",
+          "item": "undergarden:utherium_crystal",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "undergarden:rotbeast",
+          "icon": "undergarden:rotbeast_spawn_egg",
+          "id": "43FE27864C4A4A49",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&cTourbeau",
+      "x": 10.5,
+      "y": 1.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "&4Les munchers sont semblables à tous les autres hostiles de l'Undergarden, mais ceux-ci le rendent beaucoup plus utile! Le muncher peut déposer Cloggrum et Froststeel Nuggets sur la mort."
+      ],
+      "icon": "undergarden:muncher_spawn_egg",
+      "id": "533E782E067AB4CC",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "5ABD55F46B238BA9",
+          "item": "undergarden:froststeel_nugget",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "undergarden:muncher",
+          "icon": "undergarden:muncher_spawn_egg",
+          "id": "42C2306B498B397B",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&4Muncher",
+      "x": 10.5,
+      "y": -2.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "&2Les Stoneborns sont le mélange parfait des Villagers et des Golems de Fer. Vous pouvez échanger avec eux en cliquant avec le droit. Et ils vont combattre les Hostile Mobs (ou les joueurs qui les ont frappés)."
+      ],
+      "icon": "undergarden:stoneborn_spawn_egg",
+      "id": "2D7F20CA8C2C7A02",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "1FFE13BA0A180C2E",
+          "item": "undergarden:regalium_crystal",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "undergarden:stoneborn",
+          "icon": "undergarden:stoneborn_spawn_egg",
+          "id": "324A63813C91DFB7",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&2Naissance de pierre",
+      "x": 2.0,
+      "y": -0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "&5Les paupières sont techniquement passives, mais elles ont un mécanisme de défense contre vous donc je les considère comme neutres! Quand elles seront frappées, elles laisseront tomber un effet semblable à une Potion Lingering. À la mort, elles laisseront tomber leurs jambes (qui sont très savoureux) et peut-être le cuir."
+      ],
+      "icon": "undergarden:gloomper_spawn_egg",
+      "id": "0DF08B087BA9D76A",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "2654E474FE9AB1D6",
+          "item": "undergarden:raw_gloomper_leg",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "undergarden:gloomper",
+          "icon": "undergarden:gloomper_spawn_egg",
+          "id": "4545965DB26CB92D",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&5Éclaireur",
+      "x": 0.5,
+      "y": -0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "&dLes nargoyles sont des Mobs méchants et hostiles qui frayent sous terre. Ils ont 7 Cœurs et demi et vont essayer sans relâche de vous tuer. Ils ne lâchent rien et servent juste d'obstacle pour ceux qui essaient de le faire pacifiquement."
+      ],
+      "icon": "undergarden:nargoyle_spawn_egg",
+      "id": "485F74364A0DF611",
+      "rewards": [
+        {
+          "id": "6812C72A73CFDA81",
+          "type": "xp",
+          "xp": 1,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "undergarden:nargoyle",
+          "icon": "undergarden:nargoyle_spawn_egg",
+          "id": "2D07E9024C745502",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&dNargoyle",
+      "x": 8.5,
+      "y": -2.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "&7Les scintlings sont de petits slugs innocents trouvés partout dans les Undergarden. Ils agissent comme des Golems de Neige comme ils laissent un sentier où qu'ils marchent. Juste celui-ci est plus Gooey... Sur la mort ils déposent Scintling Goo, mais vous pouvez juste l'agriculteur de leurs sentiers, alors pourquoi les tuer!"
+      ],
+      "icon": "undergarden:scintling_spawn_egg",
+      "id": "11A2A0CA2BD1F614",
+      "rewards": [
+        {
+          "count": 10,
+          "id": "58865F00408C452F",
+          "item": "undergarden:goo_ball",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "undergarden:scintling",
+          "icon": "undergarden:scintling_spawn_egg",
+          "id": "5BB5BED3F8DB614F",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&7Éclat",
+      "x": -2.5,
+      "y": -0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "&9Les sploogies peuvent rarement frayer, mais lorsqu'elles le font, elles sont destinées à vous ennuyer. Elles vous cracheront dessus (et feront des bruits de sucage dégoûtants) mais si vous les frappez, elles s'enfuiront; semblable à un bébé Piglin."
+      ],
+      "icon": "undergarden:sploogie_spawn_egg",
+      "id": "7369AD863814F2D4",
+      "rewards": [
+        {
+          "id": "1F89EFE741755A7C",
+          "type": "xp",
+          "xp": 1,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "undergarden:sploogie",
+          "icon": "undergarden:sploogie_spawn_egg",
+          "id": "14FA087B05C61994",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&9Sploogie",
+      "x": 6.5,
+      "y": -2.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "&bLes nageurs sont des poissons sympathiques dans les mers. Ils sont plus petits que les nageurs et agissent comme des poissons de la Vanille!"
+      ],
+      "icon": "undergarden:gwibling_spawn_egg",
+      "id": "77EC6B9E37D8559E",
+      "rewards": [
+        {
+          "id": "4891A7853A9C6362",
+          "item": "undergarden:gwibling_bucket",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "undergarden:gwibling",
+          "icon": "undergarden:gwibling_spawn_egg",
+          "id": "0162AD5D5459A52C",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&bGivrage",
+      "x": -4.5,
+      "y": -0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "&bLes gwibs sont des versions plus grandes et plus ingreuses des gwiblings. Ils n'ont pas de gouttes et ne peuvent pas être placés dans des seauts. Tout ce qu'ils offrent est la douleur!"
+      ],
+      "icon": "undergarden:gwib_spawn_egg",
+      "id": "1EE7A8D07B8BF9E2",
+      "rewards": [
+        {
+          "id": "3F3643016747B828",
+          "type": "xp",
+          "xp": 1,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "undergarden:gwib",
+          "icon": "undergarden:gwib_spawn_egg",
+          "id": "04E61FA7E6DD7507",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&bGwib",
+      "x": 7.5,
+      "y": -0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Est-ce que ça bouge ? Oh attends que ce ne soit pas un rocher, c'est un Mog ! Les Mogs peuvent être élevés ensemble avec les Pebbles de Profondrock et sur la mort pourrait tomber plus de Pebbles ou Mogmoss ! Les Mogmoss peuvent être utilisés dans de nombreuses recettes différentes !"
+      ],
+      "icon": "undergarden:mog_spawn_egg",
+      "id": "13551616E5E1C7C2",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "0C9CE384A8EE5910",
+          "item": "undergarden:mogmoss",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "undergarden:mog",
+          "icon": "undergarden:mog_spawn_egg",
+          "id": "03C2D867229DDDDF",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&2Mog",
+      "x": -3.5,
+      "y": 1.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Ce Smogvent bouge ? C'est juste un S'Mog ! Le cousin proche du Mog ! Ils agissent exactement comme des Mogs juste ceux-ci pourraient tomber des Mogmos Bleus."
+      ],
+      "icon": "undergarden:smog_mog_spawn_egg",
+      "id": "4C8F34BF64AA543A",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "61AC297E02BF0983",
+          "item": "undergarden:blue_mogmoss",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "undergarden:smog_mog",
+          "icon": "undergarden:smog_mog_spawn_egg",
+          "id": "6633E9ED3882023D",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&3S'Mog",
+      "x": -5.5,
+      "y": 1.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "&7Les oubliés sont des guerriers qui frayent dans la structure de Catacombe. Ils portent l'armure antique et tiennent Cloggrum Tools, tous qui peuvent être lâchés à la mort. Ils vont également cibler et tuer Rot Mobs."
+      ],
+      "hide_dependent_lines": 1,
+      "icon": "undergarden:forgotten_spawn_egg",
+      "id": "30C0C864A3B9B1A2",
+      "rewards": [
+        {
+          "id": "294A21F033040D41",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:cloggrum_battleaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "undergarden:forgotten",
+          "icon": "undergarden:forgotten_spawn_egg",
+          "id": "75B608972AC85426",
+          "type": "kill",
+          "value": 3
+        }
+      ],
+      "title": "&7Oublié",
+      "x": 9.5,
+      "y": -0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5E98826D64FDEE7C"
+      ],
+      "description": [
+        "Le Guardian Forgotten est un énorme Golem fait de lingots oubliés. Il ciblera le Joueur et fera tout pour les tuer. Ils ont 80 Cœurs et si vous pouvez les tuer, ils tomberont des pépites oubliées."
+      ],
+      "icon": "undergarden:forgotten_guardian_spawn_egg",
+      "id": "454A7F8B0F3F4A39",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "5564879254EE0691",
+          "item": "undergarden:forgotten_ingot",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.9,
+      "tasks": [
+        {
+          "entity": "undergarden:forgotten_guardian",
+          "icon": "undergarden:forgotten_guardian_spawn_egg",
+          "id": "621BEFABA5FA3976",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&aGardien oublié",
+      "x": 11.5,
+      "y": -0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "&cL'Uthérium peut être soit miné, soit abandonné de Rot Mobs."
+      ],
+      "id": "57882FD36CC41046",
+      "rewards": [
+        {
+          "id": "647493D4A8734AAF",
+          "item": "undergarden:utherium_crystal",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "63C0A8764FA18F3E",
+          "item": "undergarden:utherium_crystal",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&cUthériques",
+      "x": 4.0,
+      "y": 5.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "&eRegalium est l'équivalent Emerald de Undergarden. Il ne peut pas être fait en Armor ou Outils, mais il peut être utilisé pour le commerce avec Stoneborns pour d'autres objets."
+      ],
+      "id": "7C4B92DBB1D5CC7A",
+      "rewards": [
+        {
+          "count": 5,
+          "id": "4CCD7DF74EC45B1A",
+          "item": "undergarden:regalium_crystal",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "56C38830E81AA2C0",
+          "item": "undergarden:regalium_crystal",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&eRégalium",
+      "x": 6.0,
+      "y": 5.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "&aLes lingots oubliés doivent être obtenus par l'intermédiaire des catacombes, qu'il s'agisse de piller les poitrines ou de tuer le gardien oublié. Vous aurez également besoin d'un modèle de Smithing qui se trouve dans les poitrines de catacombe."
+      ],
+      "id": "7A08C639B22C476F",
+      "rewards": [
+        {
+          "id": "57660FE5AC86EDF5",
+          "item": "undergarden:forgotten_ingot",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "1C4FDBA0E82B87B3",
+          "item": "undergarden:forgotten_ingot",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&aLingots oubliés",
+      "x": 2.0,
+      "y": 5.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Froststeel fraie dans les biomes congelés: Frostfields, Frosty Smogstem Forests, et probablement Icey Seas. Il fraie dans Shiverstone qui remplace Profondrock dans ces biomes. La Shiverstone agira similaire à la glace comme dans elle est glissante et vous ralentit un peu. Vous pourriez également trouver des pépites dans les ventres de Munchers!"
+      ],
+      "id": "124CD8477B5926EF",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "1936DAE80B9587A0",
+          "item": "undergarden:froststeel_ingot",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "72510CB132C2B1A0",
+          "item": "undergarden:froststeel_ingot",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&bFroststeel",
+      "x": 0.0,
+      "y": 5.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "&7Cloggrum est le fer de l'Undergarden. Il est trouvé partout et est utilisé dans une douzaine de recettes différentes."
+      ],
+      "id": "5B8A497EBE658415",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "27CE7AD7D3E6A58C",
+          "item": "undergarden:cloggrum_ingot",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "50579AD110598AD8",
+          "item": "undergarden:cloggrum_ingot",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&7Cloggrum",
+      "x": -2.0,
+      "y": 5.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5B8A497EBE658415"
+      ],
+      "description": [
+        "&7Cloggrum a des statistiques un peu pires que Iron Armor, mais il pousse de façon pragmatique sur les arbres donc je pense que c'est juste. Les bottes aident également à passer par Scintling Goo!"
+      ],
+      "id": "5779A8C02C4E70C2",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "420E8FDEF6526A7F",
+          "item": "undergarden:cloggrum_ingot",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "size": 1.15,
+      "tasks": [
+        {
+          "id": "06CD84397E904107",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:cloggrum_helmet",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "0E10D589A357190E",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:cloggrum_chestplate",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "684A514BF91FC9DC",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:cloggrum_leggings",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "3BC40954637D9B99",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:cloggrum_boots",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&7Armure de cloggrum",
+      "x": -2.0,
+      "y": 7.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5B8A497EBE658415"
+      ],
+      "description": [
+        "&7Cloggrum Tools agit comme Iron Tools, ils ressemblent plus à Mud qu'à Iron! L'épée fait plus de dégâts qu'une épée de fer cependant."
+      ],
+      "id": "1D0D8355BA7BE22F",
+      "shape": "square",
+      "size": 1.15,
+      "tasks": [
+        {
+          "id": "0E553C1DDF91B21C",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:cloggrum_pickaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "7C1F92449C8BE38F",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:cloggrum_axe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "052100684AF9EC98",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:cloggrum_shovel",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "7C35E0D007F7FB57",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:cloggrum_hoe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "7C57E905DBEF271B",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:cloggrum_sword",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&7Outils Cloggrum",
+      "x": -2.5,
+      "y": 4.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5B8A497EBE658415"
+      ],
+      "description": [
+        "Les outils normaux ne suffiront tout simplement pas à manipuler les dangereux Mobs dans le sous-jardin. Nous pouvons fabriquer le bouclier Cloggrum qui agit comme un bouclier normal. Mais nous devrons obtenir la Battleaxe comme une goutte rare des oubliés."
+      ],
+      "id": "668DCD783CB65E02",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "6D7FD4D6D4E628D6",
+          "item": "undergarden:cloggrum_ingot",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "size": 1.15,
+      "tasks": [
+        {
+          "id": "60692C2D22DB4969",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:cloggrum_battleaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "56145CE7B40E0DCE",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:cloggrum_shield",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&7Armes à cloggrum",
+      "x": -1.5,
+      "y": 4.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "124CD8477B5926EF"
+      ],
+      "description": [
+        "&bFroststeel Armor est un peu pire que Diamond Armor, mais il donne aussi une grande résistance au Knockback. Il donne également Speed debuff bien, semble-t-on ne bouge pas beaucoup!"
+      ],
+      "id": "58EDD822A67FD01B",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "073118B4B3F972C4",
+          "item": "undergarden:froststeel_ingot",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "size": 1.15,
+      "tasks": [
+        {
+          "id": "37253E18E349073C",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:froststeel_helmet",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "36E68F0F55DF6DA7",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:froststeel_chestplate",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "504797A25950FB16",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:froststeel_leggings",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "3A865CAB4FEE16EA",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:froststeel_boots",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&bArmure de givre",
+      "x": 0.0,
+      "y": 7.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "124CD8477B5926EF"
+      ],
+      "description": [
+        "Similaire à Iron Tools tout simplement ces ralentir qui est frappé par eux. Eh bien à part la Hoe, mais vous souciez-vous vraiment d'une simple hoe?"
+      ],
+      "id": "6D7772897F93CD98",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "0BAC6F773BD64484",
+          "item": "undergarden:froststeel_ingot",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "size": 1.15,
+      "tasks": [
+        {
+          "id": "0AA58A06CB232CC5",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:froststeel_sword",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "07A663AAAD8C669F",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:froststeel_pickaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "6A8C5F52BDEC9B82",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:froststeel_axe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "47AC888841BF5134",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:froststeel_shovel",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "7C76C98A67F4D1E3",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:froststeel_hoe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&bOutils de givrage",
+      "x": 0.0,
+      "y": 4.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "57882FD36CC41046"
+      ],
+      "description": [
+        "&cUtherium Armor a les mêmes statistiques que Netherit Armor! Sans besoin d'un modèle de Smithing!"
+      ],
+      "id": "158940DACE8A4800",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "6480B21E7D4B3D1A",
+          "item": "undergarden:utherium_crystal",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "size": 1.15,
+      "tasks": [
+        {
+          "id": "0985D2D5AFCF44FC",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:utherium_helmet",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "1F2E51DC9C48EB83",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:utherium_chestplate",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "305E7C73757B7D93",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:utherium_leggings",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "2702EEE3DAD42DB9",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:utherium_boots",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&cArmure d'Uthérium",
+      "x": 4.0,
+      "y": 7.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "57882FD36CC41046"
+      ],
+      "description": [
+        "&cUtherium Tools sont similaires à Diamond Tools mais les armes sont plus efficaces pour Rot Mobs! Vous utilisez ce qu'ils font pour faire plus de dommages à eux! Il y a probablement une douzaine de références de la culture pop que je peux faire avec cela..."
+      ],
+      "id": "15BCA600063A66A9",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "00D3927137F44803",
+          "item": "undergarden:utherium_crystal",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "size": 1.15,
+      "tasks": [
+        {
+          "id": "5B0CFD69FC176301",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:utherium_sword",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "3CAAE4C4FCBAAB26",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:utherium_pickaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "15551FD9F2DD3C4E",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:utherium_axe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "787DBC98277E1CD0",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:utherium_shovel",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "0B738FB388ABD11A",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:utherium_hoe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&cOutils Uthériques",
+      "x": 4.0,
+      "y": 4.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7A08C639B22C476F"
+      ],
+      "description": [
+        "Mettre à niveau les outils Cloggrum avec des lingots oubliés et un modèle de Smithing. Ce sont les meilleurs outils que vous pouvez obtenir, ils viennent avec l'efficacité sur eux déjà juste pour les blocs Undergarden. Et l'épée et Axe infligeront plus de dommages à tous les Mobs Undergarden mais la Bête Rot et le Gardien oublié!"
+      ],
+      "id": "022EB2C15E7683AA",
+      "rewards": [
+        {
+          "id": "6AE1856A26166EDA",
+          "item": "undergarden:forgotten_ingot",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "size": 1.15,
+      "tasks": [
+        {
+          "id": "3DF0FEB84B1DA152",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:forgotten_pickaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "189E94044431DAA3",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:forgotten_axe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "67E1224EF94C85D0",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:forgotten_shovel",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "62B2D7A1C52EB129",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:forgotten_hoe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "0BBF61F240E0B01E",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:forgotten_sword",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&aOutils oubliés",
+      "x": 2.5,
+      "y": 4.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7A08C639B22C476F"
+      ],
+      "description": [
+        "Mettez à niveau votre Cloggrum Battleaxe pour faire la plus grande arme que Undergarden puisse donner !"
+      ],
+      "id": "073460F525A00648",
+      "rewards": [
+        {
+          "id": "3257972FD9529574",
+          "type": "xp_levels",
+          "xp_levels": 5,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "size": 1.15,
+      "tasks": [
+        {
+          "id": "02A6AC0FBDF29F9B",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:forgotten_battleaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&aL'arme ultime !",
+      "x": 1.5,
+      "y": 4.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "&aLes Minions oubliées ne sont pas engendrées comme des Mobs normaux, elles doivent être créées. Elles sont créées en plaçant un Gloomgourd sculpté sur un bloc de lingots oubliés. Ils agissent comme des Golems de Neige, ils ne vous attaqueront jamais et au lieu de tirer sur des Mobs hostiles. Ils ont 10 cœurs et ne déposent rien sur la mort... mais comme pourquoi les tuer?"
+      ],
+      "icon": "undergarden:forgotten_block",
+      "id": "46B2E5D84BE9BBBB",
+      "rewards": [
+        {
+          "id": "76301EC3BDFF873A",
+          "item": "undergarden:forgotten_block",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "undergarden:minion",
+          "id": "1FD148E43DA6DF8A",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&aMinions oubliés",
+      "x": -5.5,
+      "y": -2.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Le Barren Abyss est comme son nom l'indique, stérile... il ne contient que des Mobs et des Pebbles hostiles."
+      ],
+      "icon": "undergarden:depthrock",
+      "id": "796FE7953BC80CCB",
+      "rewards": [
+        {
+          "id": "7777748440639AD1",
+          "type": "xp_levels",
+          "xp_levels": 1,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.2,
+      "tasks": [
+        {
+          "biome": "undergarden:barren_abyss",
+          "icon": "undergarden:depthrock",
+          "id": "6F24F873954303C5",
+          "type": "biome"
+        }
+      ],
+      "title": "Abyss barré",
+      "x": -4.5,
+      "y": -8.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "La tourbière de champignons de sang abrite les champignons géants de champignons de sang. Le sang me rend mal à l'aise donc je pense que je vais garder cette description courte."
+      ],
+      "icon": "undergarden:blood_mushroom",
+      "id": "5BE5FA61C9316362",
+      "rewards": [
+        {
+          "id": "3FE4AF43A6934F67",
+          "type": "xp_levels",
+          "xp_levels": 1,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.2,
+      "tasks": [
+        {
+          "biome": "undergarden:blood_mushroom_bog",
+          "icon": "undergarden:blood_mushroom",
+          "id": "199382CA3EC6E637",
+          "type": "biome"
+        }
+      ],
+      "title": "Boissons de champignons de sang",
+      "x": -3.5,
+      "y": -8.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Imaginez la mer antique. Ok maintenant enlever tous Kelp et enlever tous les Gwibs et Gwiblings. C'est la mer Morte pour vous!"
+      ],
+      "icon": "undergarden:sediment",
+      "id": "75199E611F596FBE",
+      "rewards": [
+        {
+          "id": "63F72101E0CDF3FE",
+          "type": "xp_levels",
+          "xp_levels": 1,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.2,
+      "tasks": [
+        {
+          "biome": "undergarden:dead_sea",
+          "icon": "undergarden:sediment",
+          "id": "08E4D13A8E3632FB",
+          "type": "biome"
+        }
+      ],
+      "title": "Mer Morte",
+      "x": -2.5,
+      "y": -8.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Certaines personnes détestent explorer de nombreux biomes différents pour obtenir tous les différents Saplings d'arbre. Clairement le Dev Undergarden l'a fait, donc il a mis la plupart d'entre eux dans la forêt dense!"
+      ],
+      "icon": "undergarden:deepturf_block",
+      "id": "360D586CADEF3056",
+      "rewards": [
+        {
+          "id": "755195B5852B6C01",
+          "type": "xp_levels",
+          "xp_levels": 1,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.2,
+      "tasks": [
+        {
+          "biome": "undergarden:dense_forest",
+          "icon": "undergarden:deepturf_block",
+          "id": "244911B713DA553B",
+          "type": "biome"
+        }
+      ],
+      "title": "Forêt dense",
+      "x": -5.0,
+      "y": -7.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Frostfields sont l'un des biomes froids dans le sous-jardin. Vous pouvez dire qu'il est froid par les énormes glaces, neige en poudre, et Frozen Deepturf! Aussi ici au lieu de l'habituel Profondrock sous terre vous trouverez Shiverstone. Shiverstone agit plus comme la glace que la pierre réelle. Eh bien au moins quand se tient sur elle!"
+      ],
+      "icon": "minecraft:snow_block",
+      "id": "06F37D0018AA870D",
+      "rewards": [
+        {
+          "id": "5855769CB50C9949",
+          "type": "xp_levels",
+          "xp_levels": 1,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.2,
+      "tasks": [
+        {
+          "biome": "undergarden:frostfields",
+          "icon": "minecraft:snow_block",
+          "id": "2729B0E3F375A7D2",
+          "type": "biome"
+        }
+      ],
+      "title": "Champs de givre",
+      "x": -3.0,
+      "y": -7.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Près de Frostfields, vous pouvez trouver Frosty Smogstem Forests. Ce sont tout comme Frostfields juste avec Smogstem Trees!"
+      ],
+      "icon": "undergarden:frozen_deepturf_block",
+      "id": "41143A8F27A46F50",
+      "rewards": [
+        {
+          "id": "48074B424A337AC5",
+          "type": "xp_levels",
+          "xp_levels": 1,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.2,
+      "tasks": [
+        {
+          "biome": "undergarden:frosty_smogstem_forest",
+          "icon": "undergarden:frozen_deepturf_block",
+          "id": "52897D43D9D42AAD",
+          "type": "biome"
+        }
+      ],
+      "title": "Forêt de Smogstem",
+      "x": -2.0,
+      "y": -7.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Une autre mer, juste celle-là est beaucoup plus froide."
+      ],
+      "icon": "minecraft:packed_ice",
+      "id": "35E7464593D70403",
+      "rewards": [
+        {
+          "id": "5DB3CE01C10ED984",
+          "type": "xp_levels",
+          "xp_levels": 1,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.2,
+      "tasks": [
+        {
+          "biome": "undergarden:icy_sea",
+          "icon": "minecraft:packed_ice",
+          "id": "320DE4BCE3DD7ABD",
+          "type": "biome"
+        }
+      ],
+      "title": "Mer glacée",
+      "x": -4.5,
+      "y": -6.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Indigo Mushroom Bog est beaucoup plus rempli Bog que le Blood Mushroom Bog. Bien sûr, il a Indigo Mushrooms mais aussi Mini Smogstem Arbres et étangs de Virulent Mix. Je me demande ce qu'il fait..."
+      ],
+      "icon": "undergarden:indigo_mushroom",
+      "id": "3AD27B53E26F7BE5",
+      "rewards": [
+        {
+          "id": "00E284AB7280C7CE",
+          "type": "xp_levels",
+          "xp_levels": 1,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.2,
+      "tasks": [
+        {
+          "biome": "undergarden:indigo_mushroom_bog",
+          "icon": "undergarden:indigo_mushroom",
+          "id": "5F86BD99C7B44A07",
+          "type": "biome"
+        }
+      ],
+      "title": "Bogues de champignons Indigo",
+      "x": -3.5,
+      "y": -6.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Une tourbière pourpre ! Ils ont des champignons d'encre et un mélange virulent partout !"
+      ],
+      "icon": "undergarden:ink_mushroom",
+      "id": "0120264D98520073",
+      "rewards": [
+        {
+          "id": "073501CD34ECC0BC",
+          "type": "xp_levels",
+          "xp_levels": 1,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.2,
+      "tasks": [
+        {
+          "biome": "undergarden:ink_mushroom_bog",
+          "icon": "undergarden:ink_mushroom",
+          "id": "41B35547B312062F",
+          "type": "biome"
+        }
+      ],
+      "title": "Bog de champignons d'encre",
+      "x": -2.5,
+      "y": -6.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Les Spires de Smog sont... vous l'avez deviné! D'où vient tout le Smog! Eh bien, nous ne pouvons pas tous discréditer les Mogs et S'mogs. Ici vous trouverez Blisterberries, Coarse Deepsoil, et Smog Vents. Je ne recommanderais pas d'aller les approcher..."
+      ],
+      "icon": "undergarden:smog_vent",
+      "id": "012C7EDBD5DCD02B",
+      "rewards": [
+        {
+          "id": "0370A80EEC930655",
+          "type": "xp_levels",
+          "xp_levels": 1,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.2,
+      "tasks": [
+        {
+          "biome": "undergarden:smog_spires",
+          "icon": "undergarden:smog_vent",
+          "id": "7C043D25DFC4C71F",
+          "type": "biome"
+        }
+      ],
+      "title": "Smog Spires",
+      "x": -5.0,
+      "y": -5.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "La forêt de Smogstem est un biome voisin des tourbières de champignons Indigo. Bien sûr, il est aussi bleu et a des champignons Indigo dedans! Il y a juste des arbres plus gros de Smogstem!"
+      ],
+      "icon": "undergarden:smogstem_sapling",
+      "id": "6D46567B25A6366F",
+      "rewards": [
+        {
+          "id": "3D17BFB66BF6FE72",
+          "type": "xp_levels",
+          "xp_levels": 1,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.2,
+      "tasks": [
+        {
+          "biome": "undergarden:smogstem_forest",
+          "icon": "undergarden:smogstem_sapling",
+          "id": "58943D183A43862E",
+          "type": "biome"
+        }
+      ],
+      "title": "Forêt de Smogstem",
+      "x": -4.0,
+      "y": -5.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Je suis presque sûr que la seule définition de ce qu'un arbre de Wigglewood est qu'il a des feuilles de Wigglewood. Ils semblent croître dans n'importe quelle direction, taille, et la forme. Vous pouvez les trouver dans les forêts de Wigglewood et les forêts denses. Ils ont de jolies feuilles roses et des billes brunes semblables à l'épinette!"
+      ],
+      "id": "4739785A1706C165",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "570574CE2C3B03F2",
+          "item": "undergarden:wigglewood_sapling",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "7CE5A8A95E91117B",
+          "item": "undergarden:wigglewood_sapling",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 8.0,
+      "y": -8.0,
+      "repeatable": false,
+      "title": "Wigglewood Sapling"
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Les champignons veilés ne peuvent être trouvés que dans leur tourbière. Ils ont des chapeaux bruns qui, s'il y a de l'air en dessous, ils frayeront des voiles de champignons. D'où le nom!"
+      ],
+      "id": "1483D833DF83AE98",
+      "rewards": [
+        {
+          "count": 5,
+          "id": "52500F139882DA61",
+          "item": "undergarden:veil_mushroom",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "61ED49F2D53DD75A",
+          "item": "undergarden:veil_mushroom",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 8.5,
+      "y": -7.0,
+      "repeatable": false,
+      "title": "Veiled Mushroom"
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Les arbres de Smogstem sont beaucoup plus épais sur leurs moitiés inférieures, semblables aux arbres de Baobab dans la vie réelle! Ils ont des feuilles bleues avec des billes grises. Vous pouvez les trouver dans plusieurs biomes: Forêts de Smogstem, Forêts denses, et même dans les tourbières de champignons Indigo!"
+      ],
+      "id": "173F4F1CFED6E600",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "23A259067F6CFEB2",
+          "item": "undergarden:smogstem_sapling",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "2092FEA44D0890E1",
+          "item": "undergarden:smogstem_sapling",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 7.0,
+      "y": -8.0,
+      "repeatable": false,
+      "title": "Smogstem Sapling"
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Les myrtilles frayent à Smog Spires. Parce qu'elles poussent dans une zone aussi dégoûtante certains viendront Rotten. Je ne recommande pas de manger ceux-ci, peut-être qu'ils peuvent être utiles pour quelque chose d'autre!"
+      ],
+      "id": "6C8D9A3437259D2A",
+      "rewards": [
+        {
+          "count": 8,
+          "id": "2CAE8682F5F40895",
+          "item": "undergarden:blisterberry",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 3,
+          "id": "56E20ED24AD9584A",
+          "item": "undergarden:rotten_blisterberry",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "1197BB153E3FFCA8",
+          "item": "undergarden:blisterberry",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 6.0,
+      "y": -6.0,
+      "repeatable": false,
+      "title": "Blisterberry"
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Oui, ils peuvent faire Black Dye !"
+      ],
+      "id": "72E257B3B84FCC40",
+      "rewards": [
+        {
+          "count": 5,
+          "id": "3F6AF8FA1E05849B",
+          "item": "undergarden:ink_mushroom",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "134D68E4046C182C",
+          "item": "undergarden:ink_mushroom",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 7.5,
+      "y": -7.0,
+      "repeatable": false,
+      "title": "Ink Mushroom"
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Indigo Mushrooms sont apparemment les meilleurs amis avec Smogstem et vont frayer principalement avec eux!"
+      ],
+      "id": "27E3C0318E802386",
+      "rewards": [
+        {
+          "count": 5,
+          "id": "043E6C1C742C555D",
+          "item": "undergarden:indigo_mushroom",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "41A38ABCD4FB25FF",
+          "item": "undergarden:indigo_mushroom",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 6.5,
+      "y": -7.0,
+      "repeatable": false,
+      "title": "Indigo Mushroom"
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Les gronglettes sont de grandes jungles comme les arbres qui frayent seulement dans les biomes de grongle! Ces arbres sont également là où les gronglettes frayent."
+      ],
+      "id": "211F362E930347CD",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "5C034876438333CD",
+          "item": "undergarden:grongle_sapling",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "1C90072BA91A14D0",
+          "item": "undergarden:gronglet",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "18BC9FEA53171636",
+          "item": "undergarden:grongle_sapling",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 6.0,
+      "y": -8.0,
+      "repeatable": false,
+      "title": "Grongle Sapling"
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Les gourdes frayent et ferment comme les citrouilles. Aussi comme les citrouilles ils peuvent être faits en Pie ou même Jack-O-Lanternes! Contrairement aux citrouilles ils peuvent être faits en explosifs..."
+      ],
+      "id": "5E2055D6B0F56EA3",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "0E39670F1F398551",
+          "item": "undergarden:gloomgourd_seeds",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "347341D2B5A11737",
+          "item": "undergarden:gloomgourd",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 7.5,
+      "y": -5.0,
+      "repeatable": false,
+      "title": "Gloomgourd"
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Mangez-les crus, rôtissez-les, mettez-les sur un bâton."
+      ],
+      "id": "7B6407E5F3FDFF3D",
+      "rewards": [
+        {
+          "id": "7F37C49349ECDA95",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:underbean_on_a_stick",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "1282A69BE266F97C",
+          "item": "undergarden:underbeans",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 8.0,
+      "y": -6.0,
+      "repeatable": false,
+      "title": "Underbeans"
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Les fruits d'ivraie peuvent frayer à peu près dans n'importe quel biome juste regarder vers le haut! Ils frayent sur le toit de la plupart des biomes et vont se développer similaire à Glowberries."
+      ],
+      "id": "0DC52A304B968825",
+      "rewards": [
+        {
+          "count": 10,
+          "id": "72E345C8DBE61280",
+          "item": "undergarden:droopvine_item",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "25EAECFD52E4BAFC",
+          "item": "undergarden:droopvine_item",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 7.0,
+      "y": -6.0,
+      "repeatable": false,
+      "title": "Droopfruit"
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4",
+        "30C0C864A3B9B1A2"
+      ],
+      "description": [
+        "L'armure antique est ce qui est porté par les Forgottens, et c'est d'où vous pouvez l'obtenir. Il n'y a pas de Bottes antiques cependant, apparemment Forgottens n'ont pas les pieds."
+      ],
+      "id": "6C84EBAEF70D5109",
+      "rewards": [
+        {
+          "id": "48A277A341C3111E",
+          "type": "xp_levels",
+          "xp_levels": 5,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "size": 1.15,
+      "tasks": [
+        {
+          "id": "4D666EB14CAA054F",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:ancient_helmet",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "3E5F3243ED4ED6E5",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:ancient_chestplate",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "2D3934A72E9B86C9",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:ancient_leggings",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Armure ancienne",
+      "x": 6.0,
+      "y": 7.0,
+      "repeatable": false
+    },
+    {
+      "description": [
+        "Se rendre à l'Undergarden est similaire à se rendre à The Nether. Vous aurez besoin d'élaborer un portail. Il est de la même forme et de la même taille que les Portails Nether, mais au lieu d'Obsidian vous aurez besoin d'une variété de briques de pierre. Briques de pierre, briques de pierre Mossy, ou briques de fond. Une fois formé, vous pouvez l'activer en utilisant le Catalyst sur elle."
+      ],
+      "id": "30D431A902AF021A",
+      "rewards": [
+        {
+          "id": "4FDAB7A4E3B4FD46",
+          "item": "minecraft:diamond",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "5DB95D4C09758711",
+          "item": "undergarden:catalyst",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Comment faire le portail",
+      "x": 2.0,
+      "y": -9.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "&2Les habitants sont les vaches des sous-jardins. Ils sont passifs et tomberont la viande de cuir et d'habitant sur la mort. Dieu merci, ils ne peuvent pas être traites, je ne veux pas de lait que ces habitants font."
+      ],
+      "icon": "undergarden:dweller_spawn_egg",
+      "id": "4914959E056878A4",
+      "rewards": [
+        {
+          "count": 5,
+          "id": "2C004675260E2331",
+          "item": "undergarden:raw_dweller_meat",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "undergarden:dweller",
+          "icon": "undergarden:dweller_spawn_egg",
+          "id": "70242AF11A267A2F",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&2Logement",
+      "x": -6.5,
+      "y": -0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "&eLes Brutes frayent dans quelques Biomes et sont Neutres. Si frappés, tous dans la région vont vous attaquer. Similaire aux loups ou aux Piglins Zombifiés. À la mort, ils pourraient tomber leurs Tusks, qui peuvent agir comme un remplacement pour les Bones!"
+      ],
+      "icon": "undergarden:brute_spawn_egg",
+      "id": "57A9EE10674248DD",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "03EB33241D4E456B",
+          "item": "undergarden:brute_tusk",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "undergarden:brute",
+          "icon": "undergarden:brute_spawn_egg",
+          "id": "65E33FF765FD4D2F",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&eBrutes",
+      "x": 3.5,
+      "y": -0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Slingshot est une arme très amusante ajoutée par Undergarden. Il a 4 Ammo qui peut être tiré: Scintling Goo peut être tiré et quand il frappe un Mob, il leur donnera l'effet Gooey. Profondeur de roche sont juste des projectiles normaux. Blisterberries rotées va exploser sur l'impact. Et Gronglets ne font aucun dommage qu'ils font juste du bruit et se font tirer!"
+      ],
+      "id": "1572F0F519BF8A8A",
+      "rewards": [
+        {
+          "count": 5,
+          "id": "35245589497A9711",
+          "item": "undergarden:rotten_blisterberry",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "size": 1.15,
+      "tasks": [
+        {
+          "id": "6CE82AA5EEA1ACB1",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:slingshot",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 5.5,
+      "y": 4.0,
+      "repeatable": false,
+      "title": "Slingshot"
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "On ne peut pas jeter les myrtilles rotées, mais quand elles sont faites en myrtilles, elles peuvent l'être! Vous pouvez même aller plus loin et faire des boomgourds qui agiront comme TNT qui jette des myrtilles partout."
+      ],
+      "id": "20600B184D401D00",
+      "rewards": [
+        {
+          "count": 5,
+          "id": "3FBA4D66B289AB43",
+          "item": "undergarden:blisterbomb",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "size": 1.15,
+      "tasks": [
+        {
+          "id": "0FA068BDEB736F4D",
+          "item": "undergarden:blisterbomb",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "6AE5765117B5CF2F",
+          "item": "undergarden:boomgourd",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Explosifs!!!",
+      "x": 6.5,
+      "y": 4.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9E0DC47C09A2C4"
+      ],
+      "description": [
+        "Les champignons de sang se trouvent dans leurs tourbières. Ils sont en forme de chêne foncé et sont principalement blancs avec seulement quelques blocs ayant des taches de sang sur eux!"
+      ],
+      "id": "5A1BF61A73E66226",
+      "rewards": [
+        {
+          "count": 5,
+          "id": "502AEBAE479D2A5E",
+          "item": "undergarden:blood_mushroom",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "25DD0AC60EE14265",
+          "item": "undergarden:blood_mushroom",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 5.5,
+      "y": -7.0,
+      "repeatable": false,
+      "title": "Blood Mushroom"
+    },
+    {
+      "can_repeat": 0,
+      "description": [
+        "Cette quête a été créée par AllTheMods Staff, ou un contributeur communautaire pour une utilisation dans AllTheMods Modpacks.",
+        "Comme tous les packs AllTheMods sont sous licence All Rights Reserved, cette Quest n'est pas autorisée à être utilisée dans les packs publics non publiés par l'équipe AllTheMods, sans autorisation explicite.",
+        "Cette quête est intentionnellement cachée, si vous voyez cela, vous êtes en mode édition.",
+        "Repère de lecture : obtiens le livre indiqué pour poursuivre. Cette étape ne donne aucune récompense."
+      ],
+      "disable_toast": 1,
+      "hide_details_until_startable": 1,
+      "hide_until_deps_visible": 1,
+      "icon": {
+        "Count": 1,
+        "id": "ftbquests:custom_icon",
+        "tag": {
+          "Icon": "minecraft:item/barrier"
+        }
+      },
+      "id": "33240B5C88F4A1D5",
+      "invisible": 1,
+      "optional": 1,
+      "shape": "octagon",
+      "tasks": [
+        {
+          "id": "15C2842DE9ED0657",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "7E52D85FD5DD5B53",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 2.0,
+      "y": -4.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Livre",
+      "dependencies": []
+    }
+  ],
+  "title": "Explorer l’Undergarden",
+  "default_consume_items": false,
+  "progression_mode": "flexible"
+}

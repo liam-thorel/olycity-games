@@ -1,0 +1,8 @@
+name = "kubejs/data/aether/loot_tables/chests/ruined_portal.json"
+filename = "ruined_portal.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/8dc5fc95a87c61c351a2e5de03d676ba9794de5418a1c2e612caf5ebd317c64e"
+hash-format = "sha256"
+hash = "8dc5fc95a87c61c351a2e5de03d676ba9794de5418a1c2e612caf5ebd317c64e"

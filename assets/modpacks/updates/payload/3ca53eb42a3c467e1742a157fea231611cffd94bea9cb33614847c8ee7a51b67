@@ -1,0 +1,32 @@
+{
+  "chapter_groups": [
+    {
+      "id": "397831C23DCA38BF",
+      "title": "Stockage"
+    },
+    {
+      "id": "1F488C60EF77E6C0",
+      "title": "Magie et équipements"
+    },
+    {
+      "id": "273C0F1E7B1F54FF",
+      "title": "Logistique"
+    },
+    {
+      "id": "2F635AC0A0406D99",
+      "title": "Ressources et élevages"
+    },
+    {
+      "id": "39780E238024A574",
+      "title": "Outils et armes"
+    },
+    {
+      "id": "3B2BC36F39863788",
+      "title": "Exploration et combats"
+    },
+    {
+      "id": "3DA9E3931E28DB13",
+      "title": "Machines et énergie"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+name = "mods/sophisticatedbackpacks-1.20.1-3.26.9.2194.jar"
+filename = "sophisticatedbackpacks-1.20.1-3.26.9.2194.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/569187c5a2d9765cbdb621511d211cbac92b6b618a2413f5eaeaa4fb34c315f3.jar"
+hash-format = "sha256"
+hash = "569187c5a2d9765cbdb621511d211cbac92b6b618a2413f5eaeaa4fb34c315f3"

@@ -1,0 +1,8 @@
+name = "config/ftbquests/quests/chapters/atm9_refined_storage.snbt"
+filename = "atm9_refined_storage.snbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/081057d381d0b4424fb09fa0160c30fdcd3d61b29a2b52099a6ece0c237c7d59"
+hash-format = "sha256"
+hash = "081057d381d0b4424fb09fa0160c30fdcd3d61b29a2b52099a6ece0c237c7d59"

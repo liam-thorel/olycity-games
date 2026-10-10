@@ -1,0 +1,8 @@
+name = "mods/voicechat-forge-1.20.1-2.6.22.jar"
+filename = "voicechat-forge-1.20.1-2.6.22.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/727d31c11905be6af05686c619dd62a1ed4e451c47670cf5e9804c1ac8871386.jar"
+hash-format = "sha256"
+hash = "727d31c11905be6af05686c619dd62a1ed4e451c47670cf5e9804c1ac8871386"

@@ -1,0 +1,5092 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "hexagon",
+  "filename": "atm9_productive_bees",
+  "group": "2F635AC0A0406D99",
+  "icon": {
+    "Count": 1,
+    "id": "patchouli:guide_book",
+    "tag": {
+      "patchouli:book": "productivebees:guide"
+    }
+  },
+  "id": "03B0C37C68E85CD6",
+  "images": [
+    {
+      "height": 2.0,
+      "image": "minecraft:textures/item/honeycomb.png",
+      "rotation": 0.0,
+      "width": 2.0,
+      "x": -3.0,
+      "y": -7.0
+    },
+    {
+      "height": 2.0,
+      "image": "minecraft:textures/item/honey_bottle.png",
+      "rotation": 0.0,
+      "width": 2.0,
+      "x": 5.0,
+      "y": -7.0
+    }
+  ],
+  "order_index": 5,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "description": [
+        "Les abeilles à ressources ont des besoins différents : habitat, reproduction et bloc ou fleur de travail. Consulte JEI et le guide avant de choisir tes espèces.",
+        "Les quêtes d’abeilles liées à des mods absents d’OLYCITY ont été retirées. Les tâches qui demandent un rayon particulier vérifient aussi sa variante."
+      ],
+      "id": "7FD5C53AB2622DB9",
+      "rewards": [
+        {
+          "id": "0047BAB76A6CA68E",
+          "item": "minecraft:dandelion",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "5FA30A5BE5FD7C06",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 2,
+          "id": "62FF60CA0C7F59EA",
+          "item": "minecraft:honeycomb",
+          "random_bonus": 2,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "74391EBD974DEA21",
+          "item": "minecraft:honey_bottle",
+          "random_bonus": 2,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "0FE7D72D7189DC3E",
+          "item": "minecraft:honeycomb",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "1DB7094A78E9304E",
+          "item": "minecraft:honey_bottle",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 1.0,
+      "y": -6.0,
+      "repeatable": false,
+      "title": "Découvrir Productive Bees",
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "72A9AC05C11C44EE"
+      ],
+      "description": [
+        "En utilisant la méthode de vanille, allez-y et faites-vous une ruche pour avoir votre propre petite configuration!",
+        "Ils peuvent contenir 3 abeilles chacune, mais nous ne l'utiliserons pas longtemps...",
+        "Les abeilles ne créeront de miel et de nids d'abeilles que si elles ont les fleurs appropriées. Les abeilles de la vanille peuvent utiliser n'importe quelle fleur, mais la plupart des abeilles du mod auront besoin d'un bloc spécifique!"
+      ],
+      "id": "747385F65746552A",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "63D1E6BA53965273",
+          "item": "minecraft:honeycomb",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "5F3EAE5EB2EF9E83",
+          "item": "minecraft:beehive",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Votre première ruche !",
+      "x": 1.0,
+      "y": -1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7FD5C53AB2622DB9"
+      ],
+      "description": [
+        "Pour que notre propre ferme d'abeilles parte, nous devrons nous trouver des abeilles... et les capturer.",
+        "Faites un clic droit sur une abeille avec ça, ça va la capturer !",
+        "L'aventurage peut également vous écraser des cages d'abeilles, alors gardez un œil dehors!"
+      ],
+      "id": "72A9AC05C11C44EE",
+      "rewards": [
+        {
+          "id": "501A290EC8F42C7B",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "2F853F6A0E6CEEED",
+          "item": "productivebees:sturdy_bee_cage",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "count": 4,
+          "id": "1FE99542FC9FAFFA",
+          "item": "productivebees:bee_cage",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Capturer des abeilles !",
+      "x": 1.0,
+      "y": -3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "747385F65746552A"
+      ],
+      "description": [
+        "Avec la ruche à la vanille, nous allons l'utiliser pour fabriquer une ruche à l'état avancé.",
+        "Les abeilles volent dans et hors de ceux-ci, et déposent des nids d'abeilles dans l'inventaire. Vous pouvez également insérer des bouteilles de verre pour obtenir des bouteilles de miel.",
+        "On aura besoin de plein de nids d'abeilles pour les gâteries !"
+      ],
+      "id": "2FEF37AEE1ABD01D",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "0EE4EDF739FA9341",
+          "item": "minecraft:honeycomb",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "6A7190E78CA1A2A2",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.5,
+      "subtitle": "Plus de cisaillement.",
+      "tasks": [
+        {
+          "id": "252295F20F643ABA",
+          "type": "item",
+          "item": "productivebees:advanced_acacia_beehive",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Pois avancés",
+      "x": 1.0,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "55ADCED5C63D8EEB"
+      ],
+      "description": [
+        "Les nids de bois sont utilisés pour attirer les abeilles charpentières et les abeilles à bandes bleues.",
+        "Chêne foncé Nests leurres 3 abeilles différentes.",
+        "Ceux-ci peuvent être placés dans n'importe quel Biome Overworld."
+      ],
+      "hide_until_deps_visible": 0,
+      "id": "2099D3B8F21E1E3C",
+      "rewards": [
+        {
+          "id": "263C2DCE810827B6",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Peut être utilisé dans n'importe quel biome Overworld",
+      "tasks": [
+        {
+          "id": "39CD93DBE8DEE695",
+          "item": "productivebees:oak_wood_nest",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "53B9CEA482C98692",
+          "item": "productivebees:dark_oak_wood_nest",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "304BC2CBE52CECFF",
+          "item": "productivebees:jungle_wood_nest",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "1C65FE9564C36216",
+          "item": "productivebees:spruce_wood_nest",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "51AF450C57B3DB09",
+          "item": "productivebees:birch_wood_nest",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "4559A9CD1BC6F47E",
+          "item": "productivebees:acacia_wood_nest",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Nid de bois",
+      "x": -4.0,
+      "y": 5.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "55ADCED5C63D8EEB"
+      ],
+      "description": [
+        "Le Stone Nest peut être placé dans n'importe quel biome du monde entier pour attirer dans un Mason Bee ou Digger Bee."
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 0,
+      "id": "1AC544A3F646B8CB",
+      "rewards": [
+        {
+          "id": "76A59A844B879B75",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Lures Abeilles dans n'importe quel biome du monde",
+      "tasks": [
+        {
+          "id": "777F3CCAC33CE7F0",
+          "item": "productivebees:stone_nest",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -5.0,
+      "y": 5.5,
+      "repeatable": false,
+      "title": "Stone Nest"
+    },
+    {
+      "dependencies": [
+        "55ADCED5C63D8EEB"
+      ],
+      "description": [
+        "Le nid de dirt peut être placé dans n'importe quel biome du monde pour attirer les abeilles.",
+        "Il peut attirer l'abeille minière Ashy, l'abeille minière au chocolat et l'abeille à feuilles."
+      ],
+      "hide_until_deps_visible": 0,
+      "id": "5D51952CF4E5C69B",
+      "rewards": [
+        {
+          "id": "7166883BD24D8552",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "N'importe quel biome du monde",
+      "tasks": [
+        {
+          "id": "06603110C59DCEC3",
+          "item": "productivebees:coarse_dirt_nest",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -4.0,
+      "y": 4.0,
+      "repeatable": false,
+      "title": "Dirt Nest"
+    },
+    {
+      "dependencies": [
+        "55ADCED5C63D8EEB"
+      ],
+      "description": [
+        "Lorsqu'il est placé dans un biome du désert, le Sand Nest attirera soit le chocolat, soit l'abeille minière Ashy."
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 0,
+      "id": "67CD61F91F858698",
+      "rewards": [
+        {
+          "id": "008594B506068AA5",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Bières de Lures dans les biomes du désert",
+      "tasks": [
+        {
+          "id": "5C040F9BFC663AFF",
+          "item": "productivebees:sand_nest",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -5.0,
+      "y": 4.5,
+      "repeatable": false,
+      "title": "Sand Nest"
+    },
+    {
+      "dependencies": [
+        "55ADCED5C63D8EEB"
+      ],
+      "description": [
+        "Placer un nid de neige dans un biome enneigé attirera dans une abeille à la sueur."
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 0,
+      "id": "1B56BE7A06A90107",
+      "rewards": [
+        {
+          "id": "2F014AFA51EA3F99",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Sueurs l'abeille dans les biomes froids",
+      "tasks": [
+        {
+          "id": "26F7D1310B82DDFB",
+          "item": "productivebees:snow_nest",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -6.0,
+      "y": 3.5,
+      "repeatable": false,
+      "title": "Snow Nest"
+    },
+    {
+      "dependencies": [
+        "55ADCED5C63D8EEB"
+      ],
+      "description": [
+        "Le nid de gravier attirera les abeilles dans un biome de la rivière ou de la plage.",
+        "Il est présent dans l'Ashy Mining Bee, Chocolate Mining Bee et le Digger Bee."
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 0,
+      "id": "3B55B25B0B4E31BC",
+      "rewards": [
+        {
+          "id": "086FD55341C59AEE",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Lures en abeilles dans les biomes de River et Beach",
+      "tasks": [
+        {
+          "id": "3C3495799744B025",
+          "item": "productivebees:gravel_nest",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -5.0,
+      "y": 3.5,
+      "repeatable": false,
+      "title": "Gravel Nest"
+    },
+    {
+      "dependencies": [
+        "55ADCED5C63D8EEB"
+      ],
+      "description": [
+        "Un Reed Nest travaillera dans n'importe quel biome du monde entier, et attirera dans un Mason Bee ou un Reed Bee."
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 0,
+      "id": "4EB3067E11837801",
+      "rewards": [
+        {
+          "id": "40CC997101046B36",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Bières de Lures dans n'importe quel biome du monde",
+      "tasks": [
+        {
+          "id": "5063D48AB666575A",
+          "item": "productivebees:sugar_cane_nest",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -6.0,
+      "y": 4.5,
+      "repeatable": false,
+      "title": "Reed Nest"
+    },
+    {
+      "dependencies": [
+        "55ADCED5C63D8EEB"
+      ],
+      "description": [
+        "Lorsqu'il est placé dans un biome marécageux, le Slimy Nest attirera les abeilles slimy."
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 0,
+      "id": "57F405479A26232B",
+      "rewards": [
+        {
+          "id": "60279D215708615C",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Lures dans une abeille slimy dans un biome de marais",
+      "tasks": [
+        {
+          "id": "56E3543480D672DF",
+          "item": "productivebees:slimy_nest",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -6.0,
+      "y": 5.5,
+      "repeatable": false,
+      "title": "Slimy Nest"
+    },
+    {
+      "dependencies": [
+        "55ADCED5C63D8EEB"
+      ],
+      "description": [
+        "Une fois placé dans la Nether et donné Glowstone, le nid Glowstone attirera dans une abeille Glowing."
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 0,
+      "id": "609A4EBA09E42FBB",
+      "rewards": [
+        {
+          "id": "01DA774763BABE66",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "C'est une abeille qui brille dans la Nether",
+      "tasks": [
+        {
+          "id": "5A57C39AE23A1662",
+          "item": "productivebees:glowstone_nest",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -7.0,
+      "y": 5.5,
+      "repeatable": false,
+      "title": "Glowstone Nest"
+    },
+    {
+      "dependencies": [
+        "55ADCED5C63D8EEB"
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 0,
+      "id": "15BA891CCE7E62E5",
+      "rewards": [
+        {
+          "id": "7FCBC638BF7C33F2",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Lures en Abeilles fantômes lorsqu'elles sont placées dans la Nether et données Ghast Larmes",
+      "tasks": [
+        {
+          "id": "48120E6ED99E0001",
+          "item": "productivebees:soul_sand_nest",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -8.0,
+      "y": 5.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Soul Sand Nest"
+    },
+    {
+      "dependencies": [
+        "55ADCED5C63D8EEB"
+      ],
+      "description": [
+        "Ce nid attire les abeilles cristallines. Vous aurez besoin de Nether Quartz au lieu d'utiliser des Treats au miel pour attirer l'abeille.",
+        "La meilleure façon d'obtenir un bloc de quartz est de l'exploiter avec un pic Silk Touch.",
+        "Astuce : Le laiton a le caractère Silk Touch lors de la fabrication d'un outil Silent Gear."
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 0,
+      "id": "2B5F87C0959E6E94",
+      "rewards": [
+        {
+          "id": "6FF30AA21C496942",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Lures dans les abeilles cristallines dans la Nether",
+      "tasks": [
+        {
+          "id": "12A7BDA83C4012C5",
+          "item": "productivebees:nether_quartz_nest",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -7.0,
+      "y": 3.5,
+      "repeatable": false,
+      "title": "Quartz Nest"
+    },
+    {
+      "dependencies": [
+        "55ADCED5C63D8EEB"
+      ],
+      "description": [
+        "Placer le nid de briques dans le nid de briques dans le nid attirera dans une abeille Magmatic quand elle est administrée à la crème Magma."
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 0,
+      "id": "7F18A910D19EC083",
+      "rewards": [
+        {
+          "id": "6F4BBFD524367A50",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Lures dans une abeille Magmatique lorsqu'elles sont placées dans la Nether",
+      "tasks": [
+        {
+          "id": "72562CD72628F375",
+          "item": "productivebees:nether_brick_nest",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -7.0,
+      "y": 4.5,
+      "repeatable": false,
+      "title": "Nether Brick Nest"
+    },
+    {
+      "dependencies": [
+        "55ADCED5C63D8EEB"
+      ],
+      "description": [
+        "Pour attirer les abeilles dans ce nid, vous aurez besoin de Chorus Popped Fruit au lieu de Miel Treats."
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 0,
+      "id": "4014168AB4C2095E",
+      "rewards": [
+        {
+          "id": "3B3B4E0C72DE0A97",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Lures en Ender Bees lorsqu'elles sont placées dans la fin",
+      "tasks": [
+        {
+          "id": "566FE91337D512DE",
+          "item": "productivebees:end_stone_nest",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -8.0,
+      "y": 4.5,
+      "repeatable": false,
+      "title": "End Stone Nest"
+    },
+    {
+      "dependencies": [
+        "55ADCED5C63D8EEB"
+      ],
+      "description": [
+        "Le nid obsidien attirera les abeilles draconiennes lorsqu'elles seront placées dans la fin.",
+        "Ceux-ci n'acceptent pas les bonbons au miel, mais utilisent plutôt Dragon's Breath."
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 0,
+      "id": "507CEBCB1411E17F",
+      "rewards": [
+        {
+          "id": "6DA4B80899FDBA21",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Lures une abeille draconienne à la fin",
+      "tasks": [
+        {
+          "id": "003D99F7BA7AFE07",
+          "item": "productivebees:obsidian_nest",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -8.0,
+      "y": 3.5,
+      "repeatable": false,
+      "title": "Obsidian Nest"
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "description": [],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:iron_ingot",
+      "id": "0D9AD56C17771800",
+      "rewards": [
+        {
+          "id": "4821867F27FE7108",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Mines de cendres + cristalline",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:iron"
+              }
+            }
+          },
+          "id": "5C44374FBCEA4A4D",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:iron"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne en fer",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeilles de fer",
+      "x": 1.0,
+      "y": 9.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "392992933124BA54"
+      ],
+      "description": [
+        "L'abeille minière Ashy est issue d'un nid de sable, d'un gravier ou d'un nid de sable."
+      ],
+      "hide_dependency_lines": 1,
+      "icon": {
+        "Count": 1,
+        "id": "minecraft:stone_pickaxe",
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "id": "5A4955D066C58696",
+      "rewards": [
+        {
+          "id": "3C0E68D465E55147",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Crevettes d'un nid de dirt",
+      "tasks": [
+        {
+          "id": "76AE3AC610C355BD",
+          "type": "item",
+          "item": "productivebees:spawn_egg_ashy_mining_bee",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": -4.0,
+      "y": 12.5,
+      "repeatable": false,
+      "title": "Ashy Mining Bee Spawn Egg"
+    },
+    {
+      "dependencies": [
+        "392992933124BA54"
+      ],
+      "description": [
+        "L'abeille cristalline est issue d'un nid de Quartz.",
+        "Cette abeille est nécessaire pour faire beaucoup d'autres abeilles métalliques, comme le fer et le cuivre."
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:quartz",
+      "id": "26934DF8C591D647",
+      "rewards": [
+        {
+          "id": "2CFC88042025142B",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Des fragrances d'un nid de Quartz dans la Nether",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:crystalline"
+              }
+            }
+          },
+          "id": "38B7338CEEABBF48",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:crystalline"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne cristalline",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeille cristalline",
+      "x": -4.0,
+      "y": 11.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "description": [],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:copper_ingot",
+      "id": "267C0474703244D8",
+      "rewards": [
+        {
+          "id": "40DAF2EAD81E4FF4",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Crystalline et extraction minière des cendres",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:copper"
+              }
+            }
+          },
+          "id": "38763E2BD2D6161D",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:copper"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne en cuivre",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeilles de cuivre",
+      "x": 2.0,
+      "y": 11.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "description": [
+        "Les abeilles en étain sont fabriquées en élevant une abeille cristalline avec une abeille minière Ashy."
+      ],
+      "hide_dependency_lines": 1,
+      "id": "6BDD484D00B80055",
+      "rewards": [
+        {
+          "id": "6CD8AE78BE69B90A",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Mines de cendres + cristalline",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:tin"
+              }
+            }
+          },
+          "id": "1FE7F74454569BFA",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:tin"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne en étain",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeilles",
+      "x": 3.0,
+      "y": 10.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "description": [],
+      "hide_dependency_lines": 1,
+      "id": "24387AB7B4D52995",
+      "rewards": [
+        {
+          "id": "292F1B00D68F93B9",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Crystalline et extraction minière des cendres",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:aluminum"
+              }
+            }
+          },
+          "id": "62DE744C1276D11E",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:aluminum"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne en aluminium",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeilles d'aluminium",
+      "x": -1.0,
+      "y": 11.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "description": [],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 0,
+      "icon": "minecraft:gold_ingot",
+      "id": "4F39E09218C1CA80",
+      "rewards": [
+        {
+          "id": "59E97A3CBD979110",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Cristalline + Mason",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:gold"
+              }
+            }
+          },
+          "id": "7E1EE1E94EC119FB",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:gold"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne or",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeilles d'or",
+      "x": 0.0,
+      "y": 10.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "392992933124BA54"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:brick",
+      "id": "4EE729CB696C8DA1",
+      "rewards": [
+        {
+          "id": "2B846A3F8D23ABEF",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Spawned à l'aide d'un nid de pierre",
+      "tasks": [
+        {
+          "id": "57B68F6A92E12F31",
+          "type": "item",
+          "item": "productivebees:spawn_egg_mason_bee",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Maçon Bee",
+      "x": -3.0,
+      "y": 13.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2FEF37AEE1ABD01D"
+      ],
+      "description": [
+        "Dans Productive Bees, vous ne passez pas la plupart de votre temps à voler autour d'essayer de trouver certaines abeilles.",
+        "Au lieu de cela, vous les frayez en utilisant Nests with Honey Treats.",
+        "Avec ceux-ci, vous vous créerez des nids et faites un clic droit avec les gâteries pour attirer les abeilles. Certains nids nécessitent des objets spéciaux au lieu de Honey Treats, alors assurez-vous de vérifier JEI pour plus d'informations!",
+        "Assurez-vous de vérifier quel biome vous devez être dans pour attirer dans les bonnes abeilles!"
+      ],
+      "id": "392992933124BA54",
+      "rewards": [
+        {
+          "id": "6791746518AC1A4F",
+          "item": "productivebees:honey_treat",
+          "random_bonus": 2,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "1C8FBC93BADB2D40",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "gear",
+      "size": 3.0,
+      "tasks": [
+        {
+          "id": "00046FB7B2CB5F75",
+          "item": "productivebees:honey_treat",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 1.0,
+      "y": 4.5,
+      "repeatable": false,
+      "title": "Honey Treat"
+    },
+    {
+      "dependencies": [
+        "72A9AC05C11C44EE"
+      ],
+      "description": [
+        "Faites un clic droit sur un Nid du type que vous recherchez vous dirigera vers un autre !"
+      ],
+      "id": "49188534732D2687",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "2C156A3D70E6ECBE",
+          "item": "minecraft:honey_bottle",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "7B3AEFFC86CE9D4A",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "15DBF5EBE959AA09",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:nest_locator",
+            "tag": {}
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Trouver des nids",
+      "x": 2.0,
+      "y": -2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "392992933124BA54"
+      ],
+      "description": [
+        "La base de mise à niveau est utilisée pour fabriquer les diverses améliorations dans les abeilles productives."
+      ],
+      "hide_dependency_lines": 1,
+      "id": "3771E2B9BB7813AD",
+      "rewards": [
+        {
+          "id": "565B7884A594A327",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "1935D50103C089BC",
+          "item": "productivebees:upgrade_base",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "20D369B1901A350F",
+          "item": "productivebees:upgrade_base",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -3.5,
+      "y": 0.5,
+      "repeatable": false,
+      "title": "Module de base"
+    },
+    {
+      "dependencies": [
+        "3771E2B9BB7813AD"
+      ],
+      "id": "64A1B8F6DA1EFA17",
+      "rewards": [
+        {
+          "id": "228B125CED67983F",
+          "item": "productivebees:honey_treat",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "170B720C5D8A0CEB",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "subtitle": "Augmente la productivité des abeilles de 120%",
+      "tasks": [
+        {
+          "id": "3C787B0CA081240E",
+          "item": "productivebees:upgrade_productivity",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -5.0,
+      "y": 0.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Upgrade: Productivity Alpha"
+    },
+    {
+      "dependencies": [
+        "3771E2B9BB7813AD"
+      ],
+      "description": [
+        "Peut être placé dans une ruche ou une centrifugeuse.",
+        "Dans une ruche, il diminue de 20% le temps que passent les abeilles dans la ruche.",
+        "Lorsqu'il est placé dans un Centrifuge, il augmente la vitesse de traitement.",
+        "Ça s'empile."
+      ],
+      "id": "3DE892508185FB76",
+      "rewards": [
+        {
+          "id": "26794F5B42F33B09",
+          "item": "productivebees:honey_treat",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "28BF75BC116504CC",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Abeilles soniques",
+      "tasks": [
+        {
+          "id": "7B060FE0AC574581",
+          "item": "productivebees:upgrade_time",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -2.5,
+      "y": -0.5,
+      "repeatable": false,
+      "title": "Upgrade: Speed"
+    },
+    {
+      "dependencies": [
+        "3771E2B9BB7813AD"
+      ],
+      "description": [
+        "Lorsqu'il est installé dans une ruche, il donne une chance de 5% pour qu'une nouvelle abeille soit frayée à chaque fois que le miel est livré.",
+        "Lorsqu'il est placé dans un attrapeur, il permet seulement au attrapeur d'attraper des abeilles.",
+        "Vous pouvez les empiler pour une plus grande chance."
+      ],
+      "id": "5CE5EE3971119081",
+      "rewards": [
+        {
+          "id": "083905C4F52215E0",
+          "item": "productivebees:honey_treat",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "6816A4651CF0F1DD",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "subtitle": "Faire des bébés",
+      "tasks": [
+        {
+          "id": "5CD4D08769434A2A",
+          "item": "productivebees:upgrade_breeding",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -3.5,
+      "y": 2.0,
+      "repeatable": false,
+      "title": "Upgrade: BaBee"
+    },
+    {
+      "dependencies": [
+        "3771E2B9BB7813AD"
+      ],
+      "id": "7046E26D72581C32",
+      "rewards": [
+        {
+          "id": "426B77EF5B8C470D",
+          "item": "productivebees:honey_treat",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "4D2BAC31240A1105",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "subtitle": "Lumber and Quarry Bees donnera des blocs au lieu de Chips",
+      "tasks": [
+        {
+          "id": "76450AA059D45C83",
+          "item": "productivebees:upgrade_comb_block",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -4.5,
+      "y": -0.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Upgrade: Block"
+    },
+    {
+      "dependencies": [
+        "3771E2B9BB7813AD"
+      ],
+      "description": [
+        "Tu auras besoin de ça pour Ender Bees."
+      ],
+      "id": "5BCF6342CB7230FD",
+      "rewards": [
+        {
+          "id": "0D70265D616A1C4F",
+          "item": "productivebees:honey_treat",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "43F598EE97C476B5",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "subtitle": "Empêche les abeilles de se téléporter dans une vogue",
+      "tasks": [
+        {
+          "id": "190BF2BF1082FDF1",
+          "item": "productivebees:upgrade_anti_teleport",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -3.5,
+      "y": -1.0,
+      "repeatable": false,
+      "title": "Upgrade: Anti Teleportation"
+    },
+    {
+      "dependencies": [
+        "3771E2B9BB7813AD"
+      ],
+      "description": [
+        "Surtout pour le Catcher."
+      ],
+      "id": "3A31ADC50A3CB7B6",
+      "rewards": [
+        {
+          "id": "39100287C44F875C",
+          "item": "productivebees:honey_treat",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "5FD2C6FE82FC3292",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "subtitle": "Augmente la portée d'une machine",
+      "tasks": [
+        {
+          "id": "4B92E4FD76EA0E97",
+          "item": "productivebees:upgrade_range",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -2.5,
+      "y": 1.5,
+      "repeatable": false,
+      "title": "Upgrade: Range"
+    },
+    {
+      "dependencies": [
+        "3771E2B9BB7813AD"
+      ],
+      "id": "626EEDFFC299168C",
+      "rewards": [
+        {
+          "id": "005D1C6CD5F9B8ED",
+          "item": "productivebees:honey_treat",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "6ED5EEA6D1C19C2C",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "subtitle": "Utilisé pour ajouter des abeilles à un filtre",
+      "tasks": [
+        {
+          "id": "2447D79EF6CAD83A",
+          "item": "productivebees:upgrade_filter",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -4.5,
+      "y": 1.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Upgrade: Filter"
+    },
+    {
+      "dependencies": [
+        "3771E2B9BB7813AD"
+      ],
+      "id": "03EC80456BF105AD",
+      "rewards": [
+        {
+          "id": "7E8273695ECB8DCE",
+          "item": "productivebees:honey_treat",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "0CA5DBA47C6D5DBB",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Extraits de gènes d'abeilles dans les ruches",
+      "tasks": [
+        {
+          "id": "7A7F7B35250C2D61",
+          "item": "productivebees:upgrade_bee_sampler",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -2.0,
+      "y": 0.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Upgrade: Pokey pokey gene sampler"
+    },
+    {
+      "dependencies": [
+        "2FEF37AEE1ABD01D"
+      ],
+      "description": [
+        "La Centrifugeuse est utilisée pour traiter les Combs d'abeilles en objets utiles et miel! Alors que vous pouvez certainement juste utiliser une Centrifuge régulière au début, obtenir une Centrifugeuse Powered peu après est un must. C'est une Centrifugeuse plus rapide qui s'épuise de puissance!",
+        "Si vous cherchez la meilleure façon de traiter vos Combs, la centrifugeuse chauffée est encore plus rapide et peut même traiter les blocs Comb!",
+        "Ces derniers peuvent être rendus plus rapides en utilisant des mises à niveau de vitesse."
+      ],
+      "id": "0981E1CFB82BC012",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "046CEC57A496FFCC",
+          "item": "minecraft:honeycomb",
+          "random_bonus": 2,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "11C58974DAB43A8C",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Traitement des nids d'abeilles",
+      "tasks": [
+        {
+          "id": "222394A7ED53937B",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:centrifuge"
+          },
+          "title": "Centrifugeuses",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 0.0,
+      "y": 1.5,
+      "repeatable": false,
+      "title": "Centrifuge"
+    },
+    {
+      "dependencies": [
+        "2D7939D50E94F5D2",
+        "072162E69A24AB42"
+      ],
+      "description": [
+        "Racontez l'abeille ender avec une Lapis Bee pour créer un Diamond Bee!"
+      ],
+      "icon": "minecraft:diamond",
+      "id": "707C93B4763D3746",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "24962673C5C29AB0",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:diamond"
+              }
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "54B60E1327DAD157",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Ender + Lapis",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:diamond"
+              }
+            }
+          },
+          "id": "4DD32F4AF0A42FDF",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:diamond"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne diamant",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeille de diamant",
+      "x": 8.0,
+      "y": 4.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "538445A2E351D7B4"
+      ],
+      "description": [
+        "Racontez une Redstone Bee avec une Blue Banded Bee pour obtenir une Lapis Bee!"
+      ],
+      "icon": "minecraft:lapis_lazuli",
+      "id": "072162E69A24AB42",
+      "rewards": [
+        {
+          "id": "490E84CD9E060700",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 2,
+          "id": "1F2C54D5FD9F7410",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:lapis"
+              }
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Redstone + Bleu Banded",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:lapis"
+              }
+            }
+          },
+          "id": "3D67134CA0F5093E",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:lapis"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Combus Lapis",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Lapis Bees",
+      "x": 7.0,
+      "y": 4.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "495C550D58905981"
+      ],
+      "description": [
+        "Avec l'abeille Glowing, faites-la pousser avec l'abeille Chocolat Mining pour obtenir une abeille Redstone!"
+      ],
+      "disable_toast": 1,
+      "icon": "minecraft:redstone",
+      "id": "538445A2E351D7B4",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "6E0B622C5D7AAFD0",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:redstone"
+              }
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "5B79D3C1C9840655",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Glowing + Chocolat Mining",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:redstone"
+              }
+            }
+          },
+          "id": "5EE3118F01C2E603",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:redstone"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Combus Redstone",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeilles de Redstone",
+      "x": 7.0,
+      "y": 5.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "392992933124BA54"
+      ],
+      "description": [
+        "Créez-vous un Nest de pierre de fin et dirigez-vous vers la fin pour capturer une de ces abeilles!"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:ender_pearl",
+      "id": "2D7939D50E94F5D2",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "29015D124E0D3B67",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:ender"
+              }
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "2AD69D408C75B74E",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&9Nécessite un nid de pierre d'extrémité",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:ender"
+              }
+            }
+          },
+          "id": "51D2AB7F2781865C",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:ender"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne d'endeur",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Ender Bees",
+      "x": 8.0,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [],
+      "description": [
+        "Vous aurez besoin de vous prendre un nid Glowstone et de vous diriger vers la Nether pour capturer cette abeille!"
+      ],
+      "hide_dependency_lines": 0,
+      "icon": "minecraft:glowstone_dust",
+      "id": "495C550D58905981",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "1B5196AB3C483E63",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:glowing"
+              }
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "20EAB8910D4C1CAB",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:glowing"
+              }
+            }
+          },
+          "id": "33329865E764593C",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:glowing"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne à gants",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeille à éclats",
+      "x": 6.0,
+      "y": 5.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "392992933124BA54"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "4A4E76388ABBBD1E",
+      "rewards": [
+        {
+          "id": "5741B91974D995AE",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Crevettes d'un nid de dirt",
+      "tasks": [
+        {
+          "id": "6CE081700FAACEDB",
+          "type": "item",
+          "item": "productivebees:spawn_egg_chocolate_mining_bee",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Abeilles de l'exploitation du chocolat",
+      "x": -5.0,
+      "y": 12.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "392992933124BA54"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:blue_dye",
+      "id": "020D4B12C0877302",
+      "rewards": [
+        {
+          "id": "3A8F14DB13BA2012",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Broyé à l'aide d'un nid de bois",
+      "tasks": [
+        {
+          "id": "45F790A5122108C6",
+          "type": "item",
+          "item": "productivebees:spawn_egg_blue_banded_bee",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": -4.0,
+      "y": 15.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Blue Banded Bee Spawn Egg"
+    },
+    {
+      "dependencies": [
+        "707C93B4763D3746",
+        "7E88A9D0D89A454A"
+      ],
+      "description": [
+        "Une fois que vous avez une Bee Diamante, la race avec l'Abeille Slimy pour créer une Bee Emerald!"
+      ],
+      "icon": "minecraft:emerald",
+      "id": "7EFA697D1E5F3F4A",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "29DF424881AD89B5",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:emerald"
+              }
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "222AF83309F03E15",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Abeille diamantée + Abeille mince",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:emerald"
+              }
+            }
+          },
+          "id": "43C08714A4249C8E",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:emerald"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne émeraude",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeille émeraude",
+      "x": 7.0,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [],
+      "description": [
+        "Vous pouvez attirer ces abeilles en utilisant un nid mince dans un biome marécageux."
+      ],
+      "icon": "minecraft:slime_ball",
+      "id": "7E88A9D0D89A454A",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "05101DAEFE869667",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:slimy"
+              }
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "089EB329C540C59B",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&9Nécessite un nid mince",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:slimy"
+              }
+            }
+          },
+          "id": "5B66229BDA091206",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:slimy"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne mince",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeille mince",
+      "x": 6.0,
+      "y": 4.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "707C93B4763D3746"
+      ],
+      "icon": "minecraft:netherite_ingot",
+      "id": "635A1B73C5C29745",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "27432508BA94F9A6",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:netherite"
+              }
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "5FB8BB0089EFBD7E",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Feed Diamond Bee un bloc de Néthérite",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:netherite"
+              }
+            }
+          },
+          "id": "06ED4C0D8DFE5733",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:netherite"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Combus ancien",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeille ancienne (Netherite)",
+      "x": 9.0,
+      "y": 4.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5CF518793C9FF26A"
+      ],
+      "icon": "minecraft:wither_skeleton_skull",
+      "id": "0449941123C90BF6",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "16D4AEDBA55B49F8",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:withered"
+              }
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "0BAA21AE7F7F3C8B",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Nourrir une abeille squelettique une rose flétrie",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:withered"
+              }
+            }
+          },
+          "id": "6AEB0C21732C4A7C",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:withered"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne désossée",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeille désossée",
+      "x": 10.0,
+      "y": 3.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2FEF37AEE1ABD01D"
+      ],
+      "description": [
+        "Placez des ruches avancées vides dans une zone non éclairée. Les abeilles se déplaceront au fil du temps."
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:skeleton_skull",
+      "id": "5CF518793C9FF26A",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "5967CCC5AD51A2D1",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:skeletal"
+              }
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "180B8CADAC48B773",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Parsemé de ruches vides dans l'obscurité",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:skeletal"
+              }
+            }
+          },
+          "id": "1360A342BBB1EBF1",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:skeletal"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Combustion squelettique",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeille squelettique",
+      "x": 9.0,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "392992933124BA54"
+      ],
+      "description": [
+        "Placer un nid obsidien dans la fin pour attirer cette abeille."
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:dragon_head",
+      "id": "079141F65D1E1257",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "5739A3D3CEF9FD4F",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:draconic"
+              }
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "5AF7B5A75C2BF930",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&9Nécessite un nid obsidien",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:draconic"
+              }
+            }
+          },
+          "id": "200A483163F711C4",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:draconic"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Combustion draconienne",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeille draconienne",
+      "x": 8.0,
+      "y": 5.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "description": [],
+      "hide_dependency_lines": 1,
+      "id": "4038B57CBEB909CA",
+      "rewards": [
+        {
+          "id": "3F450E2EA838C3C4",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Fer + Sueur",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:zinc"
+              }
+            }
+          },
+          "id": "63A0C7F9E3EA7418",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:zinc"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne de zinc",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeilles de zinc",
+      "x": 1.0,
+      "y": 12.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "0484D2736BADE97B",
+      "rewards": [
+        {
+          "id": "11594570E89FD6F6",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Or + Argent",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:electrum"
+              }
+            }
+          },
+          "id": "0CD48F053CFDB5AD",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:electrum"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Combustion électrique",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeilles électriques",
+      "x": 0.0,
+      "y": 14.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "2944A7EC1C48276C",
+      "rewards": [
+        {
+          "id": "0DBB59E1227BA883",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Fer + Bleu Bandé",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:lead"
+              }
+            }
+          },
+          "id": "0A66567B7B70A859",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:lead"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne de plomb",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeilles de plomb",
+      "x": 1.0,
+      "y": 10.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "description": [],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:blaze_rod",
+      "id": "5C628E77A7E19CCD",
+      "rewards": [
+        {
+          "id": "315F91FC67CD70BD",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Magmatique + Nomade",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:blazing"
+              }
+            }
+          },
+          "id": "49519ADF8DC5ECCB",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:blazing"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Combustion à feu",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeille en feu",
+      "x": -1.0,
+      "y": 10.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "6BC392561BA835C3",
+      "rewards": [
+        {
+          "id": "6E5411D1EC2933CE",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Cuivre + zinc",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:brass"
+              }
+            }
+          },
+          "id": "72021D6F63A6DAC4",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:brass"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne en laiton",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeilles en laiton",
+      "x": 1.0,
+      "y": 14.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "392992933124BA54"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "302B7CBAD0291C2E",
+      "rewards": [
+        {
+          "id": "48560264E43B7A69",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Crevettes d'un nid de dirt",
+      "tasks": [
+        {
+          "id": "25FEE4F7AC05606C",
+          "type": "item",
+          "item": "productivebees:spawn_egg_leafcutter_bee",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Abeille à feuilles",
+      "x": -4.0,
+      "y": 14.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "392992933124BA54"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "productivebees:spawn_egg_neon_cuckoo_bee",
+      "id": "036A5C791D537E01",
+      "rewards": [
+        {
+          "id": "69BC97E0BA39F6C6",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Crevettes dans un nid qui a une Bee à bandes bleues",
+      "tasks": [
+        {
+          "id": "456266A375D5E4B0",
+          "type": "item",
+          "item": "productivebees:spawn_egg_neon_cuckoo_bee",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Abeille à coucous Neon",
+      "x": -5.0,
+      "y": 16.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "392992933124BA54"
+      ],
+      "description": [
+        "Si vous en voulez un, vous aurez besoin d'une abeille d'extraction d'Ashy.",
+        "Une fois que l'Ashy Mining Bee est confortable dans son nid, il ya une chance pour un nomad Bee de le prendre en charge."
+      ],
+      "hide_dependency_lines": 1,
+      "icon": {
+        "Count": 1,
+        "id": "minecraft:wooden_sword",
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "id": "3BD0EBEC5C752C77",
+      "rewards": [
+        {
+          "id": "5086053DA99D9CCA",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Il a été éparpillé dans un nid qui a une abeille minière d'Ashy",
+      "tasks": [
+        {
+          "id": "52DEF281937672E2",
+          "type": "item",
+          "item": "productivebees:spawn_egg_nomad_bee",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Abeille nomade",
+      "x": -3.0,
+      "y": 15.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "392992933124BA54"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "productivebees:sugar_cane_nest",
+      "id": "6B6936465B4B0147",
+      "rewards": [
+        {
+          "id": "7629CD394D750D5F",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Crevettes d'un nid de roseau",
+      "tasks": [
+        {
+          "id": "7A4CAEB9A18D0F9A",
+          "type": "item",
+          "item": "productivebees:spawn_egg_reed_bee",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Abeille rose",
+      "x": -5.0,
+      "y": 15.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "392992933124BA54"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:sugar",
+      "id": "6D55C43F26C441D0",
+      "rewards": [
+        {
+          "id": "2F8D606F2E54F6C9",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Random Chance to Spawn en cassant les cocoa Pods dans une jungle",
+      "tasks": [
+        {
+          "id": "079615D94E87331E",
+          "item": "productivebees:sugarbag_honeycomb",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Sac à sucre",
+      "x": -4.0,
+      "y": 17.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "392992933124BA54"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:snowball",
+      "id": "3BA308AD64331900",
+      "rewards": [
+        {
+          "id": "61CD76CCE2966E3A",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Crevettes d'un nid de neige",
+      "tasks": [
+        {
+          "id": "503B458C8148B090",
+          "type": "item",
+          "item": "productivebees:spawn_egg_sweat_bee",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Sueur de l'abeille",
+      "x": -5.0,
+      "y": 13.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "392992933124BA54"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:yellow_dye",
+      "id": "2CEE8C6CE6F2F8B4",
+      "rewards": [],
+      "subtitle": "Crevettes de la plupart des nids de bois",
+      "tasks": [
+        {
+          "id": "6A3C3EA0E0CBB33D",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Abeille de menuisier jaune",
+      "x": -3.0,
+      "y": 14.5,
+      "description": [
+        "Repère de lecture : obtiens le livre indiqué pour poursuivre. Cette étape ne donne aucune récompense."
+      ],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "392992933124BA54"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:zombie_head",
+      "id": "79016A601477349E",
+      "rewards": [
+        {
+          "id": "797B2462FF9262E6",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Spawns dans des ruches avancées vides dans un endroit sombre",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:zombie"
+              }
+            }
+          },
+          "id": "4D519564B32586F7",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:zombie"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne ZomBee",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "ZomBee",
+      "x": -3.0,
+      "y": 12.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "2539B82853598012",
+      "rewards": [
+        {
+          "id": "1E9C8B882A1B7A04",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Cuivre + étain",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:bronze"
+              }
+            }
+          },
+          "id": "45EB26528325427A",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:bronze"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne en bronze",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeilles de bronze",
+      "x": 1.0,
+      "y": 13.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:coal",
+      "id": "78945639CBFA8E7E",
+      "rewards": [
+        {
+          "id": "12C7EB63FE833B97",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Magmatique + Dépliant",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:coal"
+              }
+            }
+          },
+          "id": "530F17F4B5CE80C9",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:coal"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Charbon",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeille de charbon",
+      "x": 2.0,
+      "y": 10.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "description": [],
+      "hide_dependency_lines": 1,
+      "id": "6BD59173A2101325",
+      "rewards": [
+        {
+          "id": "757D9823BF3BDF7C",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Cuivre + Nickel",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:constantan"
+              }
+            }
+          },
+          "id": "0638DEC45C24CEC6",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:constantan"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Constantan Comb",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeille de Constantin",
+      "x": 2.0,
+      "y": 14.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "description": [
+        "C'est l'abeille de la race."
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:chicken",
+      "id": "15457D611B89B7AB",
+      "rewards": [
+        {
+          "id": "2B19124988AA9907",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Agricultrice + Rancher",
+      "tasks": [
+        {
+          "id": "0A202E77796C2962",
+          "type": "item",
+          "item": "productivebees:spawn_egg_cupid_bee",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "CuBee",
+      "x": -1.0,
+      "y": 14.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:red_dye",
+      "id": "44CD742C0EE5F45D",
+      "rewards": [
+        {
+          "id": "6752B5A64B29F024",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Lapis + squelette",
+      "tasks": [
+        {
+          "id": "434A0515367AB68C",
+          "type": "item",
+          "item": "productivebees:spawn_egg_dye_bee",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Abeille à colorants",
+      "x": 1.0,
+      "y": 15.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "5EF7AE87E2A9C247",
+      "rewards": [
+        {
+          "id": "2F869B6E078BCAE2",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Plomb + Diamant/Platine",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:enderium"
+              }
+            }
+          },
+          "id": "2A6AB4689F325F16",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:enderium"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne endérium",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeille endérique",
+      "x": -1.0,
+      "y": 12.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:experience_bottle",
+      "id": "4689DDFF118D7727",
+      "rewards": [
+        {
+          "id": "56B0C28A764D40D6",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Lapis + Emeraude",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:experience"
+              }
+            }
+          },
+          "id": "2BDAAAFBB270BD86",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:experience"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Combus de l'expérience",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Expérience de l'abeille",
+      "x": -1.0,
+      "y": 15.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": {
+        "Count": 1,
+        "id": "minecraft:iron_hoe",
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "id": "5971075B30D4489A",
+      "rewards": [
+        {
+          "id": "72EB0AAC27C7E163",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Bois d'oeuvre + Rancher",
+      "tasks": [
+        {
+          "id": "459D2A45C52072AC",
+          "type": "item",
+          "item": "productivebees:spawn_egg_farmer_bee",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Abeille",
+      "x": 2.0,
+      "y": 16.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "569FB1B1C83422D9",
+      "rewards": [
+        {
+          "id": "0132108F9EBA50CC",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Fer + nickel",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:invar"
+              }
+            }
+          },
+          "id": "71DDD6D92D21E986",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:invar"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Combus Invar",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeille invar",
+      "x": -1.0,
+      "y": 13.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:oak_log",
+      "id": "345F2A25F7B8FD89",
+      "rewards": [
+        {
+          "id": "6ABD857FF3D4B0F3",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Abeille jaune + menuisier vert",
+      "tasks": [
+        {
+          "id": "7E8C45F8C1E739EE",
+          "type": "item",
+          "item": "productivebees:spawn_egg_lumber_bee",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Abeille de bois",
+      "x": 3.0,
+      "y": 15.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "34CD0E196D3232FC",
+      "rewards": [
+        {
+          "id": "2FA7AF127FD8D89D",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Argent + étain",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:lumium"
+              }
+            }
+          },
+          "id": "3B28A6B9F2400B8D",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:lumium"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Combustion Lumium",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeille lumium",
+      "x": 3.0,
+      "y": 12.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "3B5FA2D5CD557270",
+      "rewards": [
+        {
+          "id": "0B918751581C72C4",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Fer + Sueur",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:nickel"
+              }
+            }
+          },
+          "id": "750CA44F8CF7A455",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:nickel"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne de nickel",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeille de nickel",
+      "x": 0.0,
+      "y": 12.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:obsidian",
+      "id": "0035B6DF6B67B989",
+      "rewards": [
+        {
+          "id": "215FF8EE2579AC05",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Magmatique + Sueur",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:obsidian"
+              }
+            }
+          },
+          "id": "2636E32B65B69B87",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:obsidian"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Combustion obsidienne",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeille obsidienne",
+      "x": 1.0,
+      "y": 16.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "4E875C412F7AE2CE",
+      "rewards": [
+        {
+          "id": "2F19E0F6B115383B",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Fer + coucou de néon",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:osmium"
+              }
+            }
+          },
+          "id": "3550D27CCC988703",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:osmium"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne d'osmium",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeille d'osmium",
+      "x": 3.0,
+      "y": 11.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:stone",
+      "id": "5D60347CEB21B494",
+      "rewards": [
+        {
+          "id": "4AAD56759195AFD4",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Exploitation minière de chocolat + Digger",
+      "tasks": [
+        {
+          "id": "544D67871712D411",
+          "type": "item",
+          "item": "productivebees:spawn_egg_quarry_bee",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Abeille de carrières",
+      "x": 0.0,
+      "y": 16.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "19EBE964F684D5C1",
+      "rewards": [
+        {
+          "id": "4DCB345ED5BA1F23",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Abeilles cries + Fer",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:radioactive"
+              }
+            }
+          },
+          "id": "698B3EEFE17E605A",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:radioactive"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Combustion radioactive",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeille radioactive",
+      "x": 2.0,
+      "y": 12.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:egg",
+      "id": "32BC6B0F58975995",
+      "rewards": [
+        {
+          "id": "72A88997C8F14ED0",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Bois d'oeuvre + Sueur",
+      "tasks": [
+        {
+          "id": "69BF57CD642CEF00",
+          "item": "productivebees:honeycomb_milky",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Abeille de chasse",
+      "x": 3.0,
+      "y": 14.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "4FAEC5A6E7ED3D45",
+      "rewards": [
+        {
+          "id": "31E939D4E5FFCBA8",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Argent + cuivre",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:signalum"
+              }
+            }
+          },
+          "id": "5EE869812427AC30",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:signalum"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Combustible de signalisation",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeille signalique",
+      "x": 3.0,
+      "y": 13.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:string",
+      "id": "03CD56695447E299",
+      "rewards": [
+        {
+          "id": "21F8ABA50B333087",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Résine + roseau",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:silky"
+              }
+            }
+          },
+          "id": "026BDEF91B507EFA",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:silky"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne à soie",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeille soyeuse",
+      "x": -1.0,
+      "y": 16.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "6D43E2CCE4B2C643",
+      "rewards": [
+        {
+          "id": "36A6D88393E90DD2",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Fer + Mason",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:silver"
+              }
+            }
+          },
+          "id": "06809B40CA7992FE",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:silver"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne en argent",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeille argentée",
+      "x": 1.0,
+      "y": 11.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "195454C790090F92",
+      "rewards": [
+        {
+          "id": "6D733E29D9660666",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Fer et charbon",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:steel"
+              }
+            }
+          },
+          "id": "3F931C39004B3B1F",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:steel"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne en acier",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeille en acier",
+      "x": 2.0,
+      "y": 15.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "392992933124BA54"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:soul_sand",
+      "id": "618DC3AB244322E1",
+      "rewards": [
+        {
+          "id": "340C15DC1E47B68D",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Éparpillé à l'aide d'un nid de sable d'âme dans la Nether.",
+      "tasks": [
+        {
+          "id": "6A56C06A93C7DF31",
+          "item": "productivebees:honeycomb_ghostly",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Abeille fantôme",
+      "x": -3.0,
+      "y": 16.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "392992933124BA54"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:magma_block",
+      "id": "6C397BB91C2912F5",
+      "rewards": [
+        {
+          "id": "478D64583C833F32",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Spawned à l'aide d'un nid Brick Nether dans la Nether",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:magmatic"
+              }
+            }
+          },
+          "id": "61BBDD786210F9AB",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:magmatic"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne Magmatique",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeille Magmatique",
+      "x": -5.0,
+      "y": 11.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "392992933124BA54"
+      ],
+      "description": [
+        "Tu as déjà voulu voler sur une abeille ?",
+        "Les bourdons frayent naturellement dans le monde, et ils peuvent être utilisés comme montures!",
+        "Faites-vous plaisir sur un Stick, tapez une selle sur un Bumble Bee, et prenez le ciel !"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:saddle",
+      "id": "2FCF6320F90917A8",
+      "rewards": [
+        {
+          "id": "027D559D345C2342",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Les frênes dans le monde entier de Bumble Bee Nests",
+      "tasks": [
+        {
+          "id": "7900E7F69A54ADEC",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:treat_on_a_stick",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "2DE24F9B00F13572",
+          "item": "minecraft:saddle",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Bourdons",
+      "x": -5.0,
+      "y": 14.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "392992933124BA54"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:gravel",
+      "id": "5C8F805442BB9B45",
+      "rewards": [
+        {
+          "id": "6ACC7020321E181D",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Spawned à l'aide d'un gravier ou d'un nid de pierre",
+      "tasks": [
+        {
+          "id": "6ADD354F2E8E052E",
+          "type": "item",
+          "item": "productivebees:spawn_egg_digger_bee",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Abeille plus grosse",
+      "x": -3.0,
+      "y": 11.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:amethyst_cluster",
+      "id": "1BAE08AB8F2DCFB4",
+      "rewards": [
+        {
+          "id": "01A081320C765BA8",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Nourrir un améthyste d'abeilles diamantées",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:amethyst"
+              }
+            }
+          },
+          "id": "7CF02C1DAEE760DB",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:amethyst"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne d'améthyste",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeille d'améthyste",
+      "x": 6.0,
+      "y": 11.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:brown_mushroom",
+      "id": "5223A0B6D8E0CF00",
+      "rewards": [
+        {
+          "id": "0563A8CE047D47FF",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Nourrir un Shroombee un champignon brun !",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:brown_shroom"
+              }
+            }
+          },
+          "id": "66AFD1038FB9F244",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:brown_shroom"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne de Chroombee marron",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Haricots bruns",
+      "x": 7.0,
+      "y": 11.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "description": [
+        "Va chercher des objets et les ramener à sa ruche.",
+        "Pas aussi bien qu'une Hoarder Bee."
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:hopper",
+      "id": "6F108DC14484799F",
+      "rewards": [
+        {
+          "id": "508CFE7EC2476E4C",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Nourrissez une abeille de la Vanille !",
+      "tasks": [
+        {
+          "id": "13E1E3EF27356EEB",
+          "type": "item",
+          "item": "productivebees:spawn_egg_collector_bee",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Abeille collectrice",
+      "x": 6.0,
+      "y": 17.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:creeper_head",
+      "id": "4600443BBF74D52F",
+      "rewards": [
+        {
+          "id": "75FEF33670ED668A",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Nourrissez un TNT d'abeilles de la Vanille !",
+      "tasks": [
+        {
+          "id": "1E04F07DECC2CD29",
+          "item": "productivebees:honeycomb_powdery",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Abeilles criées",
+      "x": 5.0,
+      "y": 11.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "description": [],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:crimson_fungus",
+      "id": "30362A149291FED1",
+      "rewards": [
+        {
+          "id": "4AF9F0DBF0DEC806",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Nourrir un Shroombee un champignon Crimson !",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:crimson"
+              }
+            }
+          },
+          "id": "2619DA5E175343B0",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:crimson"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne de chignon de Crimson",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Crimson Shroombee",
+      "x": 7.0,
+      "y": 12.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "ae2:fluix_crystal",
+      "id": "6EDD4C89EF9288D5",
+      "rewards": [
+        {
+          "id": "52D69CE67649C049",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Nourrir une abeille spatiale une perle de Fluix!",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:fluix"
+              }
+            }
+          },
+          "id": "18D659B01FCA9E29",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:fluix"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Combustion Fluix",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Fluix Abeille",
+      "x": 5.0,
+      "y": 15.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:ice",
+      "id": "40D4C2111D3DED01",
+      "rewards": [
+        {
+          "id": "006898AF6C9E762B",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Nourrissez une glace d'abeille !",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:frosty"
+              }
+            }
+          },
+          "id": "5AB94620E09FCD5F",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:frosty"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Combustible à givre",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeilles givrées",
+      "x": 7.0,
+      "y": 13.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "description": [
+        "Recueille des objets sur le sol et les ramène à son nid."
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:shulker_box",
+      "id": "400BE31935E23B76",
+      "rewards": [
+        {
+          "id": "286DCE04385915AB",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Nourrir une Bee Collector une Shell Shulker !",
+      "tasks": [
+        {
+          "id": "38394C87E4DC1244",
+          "type": "item",
+          "item": "productivebees:spawn_egg_hoarder_bee",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Abeilles",
+      "x": 5.0,
+      "y": 16.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:red_mushroom",
+      "id": "19ED15C37E336AB4",
+      "rewards": [
+        {
+          "id": "75AA4CF191780E47",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Nourrir un Shroombee un Muscle Rouge !",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:red_shroom"
+              }
+            }
+          },
+          "id": "29092D248F3F19CA",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:red_shroom"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne de Chroombee Rouge",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeilles rouges",
+      "x": 7.0,
+      "y": 14.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "7E62722F9F049D54",
+      "rewards": [
+        {
+          "id": "44BECE0ED1C35CB6",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Nourrissez une Bee Diamante une Ruby !",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:ruby"
+              }
+            }
+          },
+          "id": "79A49F5C11905317",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:ruby"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne RuBee",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "RuBee",
+      "x": 5.0,
+      "y": 13.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "78DD7E8C2FF1CBF3",
+      "rewards": [
+        {
+          "id": "6DDAFAF2EBD4C524",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Nourrissez une Bee Diamante une Saphir !",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:sapphire"
+              }
+            }
+          },
+          "id": "6266ED1EE025EF14",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:sapphire"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Peigne saphir",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeille saphir",
+      "x": 5.0,
+      "y": 14.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5291664B04AE1A76"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": "minecraft:warped_fungus",
+      "id": "5E90F7FD0AA1A2BB",
+      "rewards": [
+        {
+          "id": "6838C60BC3BE1A3B",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Nourrissez un champignon éparpillé Shroombee !",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:warped"
+              }
+            }
+          },
+          "id": "43260DCEF50CDE3F",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:warped"
+              }
+            }
+          },
+          "match_nbt": true,
+          "title": "Combus torpillés",
+          "type": "item",
+          "consume_items": false,
+          "weak_nbt_match": true
+        }
+      ],
+      "title": "Abeilles évasées",
+      "x": 7.0,
+      "y": 15.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "392992933124BA54"
+      ],
+      "description": [
+        "Outre les abeilles qui poussent dans des nids, la plupart des abeilles ont besoin de se reproduire ou de se convertir pour être créées. (Non, ce n'est pas une typographie.)",
+        "&eL'élevage des abeilles nécessite 2 abeilles et des objets particuliers qui leur sont fournis pour les amener à s'accoupler.",
+        "&9La conversion d'abeilles vous oblige à alimenter une abeille en un élément spécifique pour la convertir en une nouvelle abeille.",
+        "Repère de lecture : obtiens le livre indiqué pour poursuivre. Cette étape ne donne aucune récompense."
+      ],
+      "id": "5291664B04AE1A76",
+      "rewards": [],
+      "subtitle": "Les oiseaux et les abeilles",
+      "tasks": [
+        {
+          "id": "3535804D4C04EEDA",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Élevage et transformation des abeilles",
+      "x": 1.0,
+      "y": 7.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "392992933124BA54"
+      ],
+      "description": [
+        "Si vous voulez transformer votre ferme d'abeilles en une usine de ressources, vous devrez commencer par frayer avec des nids d'abeilles.",
+        "Les nids doivent être placés dans des biomes spécifiques, que vous pouvez trouver dans le JEI pour elle (recherchez l'icône I en haut).",
+        "Pour attirer une abeille vers le nid, cliquez à droite dessus avec un Honey Treat. Les nids ne fonctionneront pas sans les gâteries!!",
+        "&9Remarque importante : Certaines abeilles ne vivent que dans les nids et ne vont pas dans les ruches avancées. S'ils ne produisent pas de nids d'abeilles, ils doivent plutôt vivre dans un nid."
+      ],
+      "id": "55ADCED5C63D8EEB",
+      "rewards": [
+        {
+          "id": "6C69A4BADFD1092D",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Aliments pour le miel",
+      "tasks": [
+        {
+          "id": "7762FC8BB6FB2090",
+          "type": "item",
+          "item": "productivebees:oak_wood_nest",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": -2.0,
+      "y": 4.5,
+      "repeatable": false,
+      "title": "Oak Nest"
+    },
+    {
+      "dependencies": [
+        "2FEF37AEE1ABD01D"
+      ],
+      "description": [
+        "Les boîtes d'expansion sont placées sur le dessus de vos ruches avancées pour augmenter la quantité d'abeilles qui peuvent être dans la ruche à un total de 5 fentes."
+      ],
+      "id": "505E331A5BE0F901",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "44BED77C631391BC",
+          "item": "minecraft:honeycomb",
+          "random_bonus": 2,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "5590512C7D9CC56E",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Augmenter notre stockage des abeilles",
+      "tasks": [
+        {
+          "id": "346C81B383829994",
+          "type": "item",
+          "item": "productivebees:expansion_box_acacia",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 2.0,
+      "y": 1.5,
+      "repeatable": false,
+      "title": "Acacia Expansion Box"
+    },
+    {
+      "dependencies": [
+        "72A9AC05C11C44EE"
+      ],
+      "description": [
+        "Vous pouvez trouver ceci dans la Tome Excentrique que vous commencez par, mais si vous avez perdu quelque chose, faites-en un!",
+        "Ce guide vous aidera à tout apprendre sur les abeilles."
+      ],
+      "id": "084B2A5C04C3F6B5",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "221A18961D996960",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Manuel de l'abeille",
+      "tasks": [
+        {
+          "id": "332EC54265E4DDB6",
+          "item": {
+            "Count": 1,
+            "id": "patchouli:guide_book",
+            "tag": {
+              "patchouli:book": "productivebees:guide"
+            }
+          },
+          "type": "item",
+          "consume_items": false,
+          "match_nbt": true,
+          "weak_nbt_match": true
+        }
+      ],
+      "x": 0.0,
+      "y": -2.5,
+      "repeatable": false,
+      "title": "Guide"
+    },
+    {
+      "dependencies": [
+        "2FEF37AEE1ABD01D"
+      ],
+      "description": [
+        "Lors de la collecte de gènes, vous obtiendrez un pourcentage d'un trait. Vous pouvez les combiner dans une table d'artisanat pour les ajouter ensemble, ou les placer dans un indexeur de gènes pour auto-combine."
+      ],
+      "hide_dependency_lines": 1,
+      "id": "4DA55E316B8A4CD0",
+      "rewards": [
+        {
+          "id": "5BF8729DCABED503",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 2,
+          "id": "09282B2D272FFBC1",
+          "item": "minecraft:honeycomb",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Le Combineur Gene et le Poitre",
+      "tasks": [
+        {
+          "id": "5AA3DEADBC462FE2",
+          "item": "productivebees:gene_indexer",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 4.0,
+      "y": 0.5,
+      "repeatable": false,
+      "title": "Gene Indexer"
+    },
+    {
+      "dependencies": [
+        "2FEF37AEE1ABD01D"
+      ],
+      "description": [
+        "L'embouteilleur a deux usages : mettre en bouteille du miel et bourrer des abeilles pour les gènes.",
+        "Pour obtenir des gènes des abeilles, placez un piston au-dessus du Embouteilleur avec un bloc d'espace entre eux.",
+        "Placez l'abeille sur le embouteilleur et activez le piston pour écraser l'abeille en gènes. La bouteille de bourrelet qui en résulte peut ensuite être placée dans une centrifugeuse.",
+        "Remarque: Assurez-vous d'avoir des bouteilles dans le embouteilleur."
+      ],
+      "hide_dependency_lines": 1,
+      "id": "06A7FEF3E4B7A206",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "24CE7FFA73667198",
+          "item": "minecraft:honeycomb",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "3A71CBB69E76459D",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Chéri, j'ai écrasé les abeilles",
+      "tasks": [
+        {
+          "id": "29269353F113E88F",
+          "item": "productivebees:bottler",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 5.0,
+      "y": 0.5,
+      "repeatable": false,
+      "title": "Bottler"
+    },
+    {
+      "dependencies": [
+        "2FEF37AEE1ABD01D"
+      ],
+      "description": [
+        "Utilisé pour attraper des abeilles qui volent autour d'elle.",
+        "Vous pouvez utiliser une mise à niveau de filtre pour filtrer les abeilles que vous voulez attraper, ainsi qu'une mise à niveau de BaBee pour attraper uniquement les abeilles bébés."
+      ],
+      "hide_dependency_lines": 1,
+      "id": "5C7DE6BB70713909",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "524697EAF5D4EFDD",
+          "item": "minecraft:honeycomb",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "3CC327D41FF2BB82",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Attrape des abeilles",
+      "tasks": [
+        {
+          "id": "0A98A407EC765164",
+          "item": "productivebees:catcher",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 6.0,
+      "y": 0.5,
+      "repeatable": false,
+      "title": "Catcher"
+    },
+    {
+      "dependencies": [
+        "2FEF37AEE1ABD01D"
+      ],
+      "description": [
+        "Cela peut être utilisé pour accélérer le taux de croissance des abeilles pour bébés, ou pour créer de nouveaux oeufs reproducteurs.",
+        "Placez une abeille en cage avec 20 Miel Treats pour en faire un adulte.",
+        "Pour créer des oeufs de frayère, vous devrez combiner le gène de l'abeille que vous voulez avec un gâtement au miel, puis utiliser ce gâtement au miel dans cette machine avec un oeuf pour créer le nouvel oeuf de frayère.",
+        "Les gènes peuvent être combinés pour un maximum de pureté de 100 %, ce qui vous donnera une chance de 100 % de convertir un œuf en œuf frayé par l'abeille."
+      ],
+      "hide_dependency_lines": 1,
+      "id": "1E4A549DA6EAC923",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "33861C53A1E1C3C7",
+          "item": "minecraft:honeycomb",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "08D1DCB355AB7953",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Garde d'enfants",
+      "tasks": [
+        {
+          "id": "5E81379F1D56C5BC",
+          "item": "productivebees:incubator",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 5.0,
+      "y": -0.5,
+      "repeatable": false,
+      "title": "BaBee Incubator"
+    },
+    {
+      "dependencies": [
+        "2FEF37AEE1ABD01D"
+      ],
+      "description": [
+        "Fier des abeilles que vous avez ?",
+        "Tu veux les mettre dans un pot pour le montrer ?",
+        "Placez un pot d'abeille et utilisez un tuyau ou une trémie pour insérer l'abeille en cage dans le pot."
+      ],
+      "hide_dependency_lines": 1,
+      "id": "263560203E916F9D",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "2320CBC001F33CDB",
+          "item": "minecraft:honeycomb",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "72C2CABB82709A03",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Afficher les abeilles",
+      "tasks": [
+        {
+          "id": "3453E564541FF8B6",
+          "item": "productivebees:jar_oak",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 5.0,
+      "y": 1.5,
+      "repeatable": false,
+      "title": "Bee Jar"
+    },
+    {
+      "dependencies": [
+        "55ADCED5C63D8EEB"
+      ],
+      "description": [
+        "Au lieu d'utiliser des Treats au miel, cette ruche exige des lingots d'or pour attirer les abeilles."
+      ],
+      "hide_dependency_lines": 1,
+      "id": "05007CD4E71467E6",
+      "rewards": [
+        {
+          "id": "6B48BC3EAD5BD148",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Lures une Bee d'Or lorsqu'elle est placée dans la Nether",
+      "tasks": [
+        {
+          "id": "05B174095E7C9057",
+          "item": "productivebees:nether_gold_nest",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -9.0,
+      "y": 4.5,
+      "repeatable": false,
+      "title": "Nether Gold Nest"
+    },
+    {
+      "dependencies": [
+        "64A1B8F6DA1EFA17"
+      ],
+      "id": "3D2A9D73F5283C47",
+      "rewards": [
+        {
+          "id": "7071BCFE13E4C99E",
+          "type": "xp",
+          "xp": 25,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "5D75A1D933D9DFF3",
+          "item": "productivebees:upgrade_productivity_2",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -6.0,
+      "y": 0.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Upgrade: Productivity Beta"
+    },
+    {
+      "dependencies": [
+        "3D2A9D73F5283C47"
+      ],
+      "id": "6FAF3A27ECB1FDF9",
+      "rewards": [
+        {
+          "id": "7385A8021F425DB1",
+          "type": "xp",
+          "xp": 25,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "666C1D6449A6FF60",
+          "item": "productivebees:upgrade_productivity_3",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -7.0,
+      "y": 0.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Upgrade: Productivity Gamma"
+    },
+    {
+      "dependencies": [
+        "6FAF3A27ECB1FDF9"
+      ],
+      "id": "561E93663648C446",
+      "rewards": [
+        {
+          "id": "003BD33D344A47B6",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "52F52CFAF183382E",
+          "item": "productivebees:upgrade_productivity_4",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -8.0,
+      "y": 0.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Upgrade: Productivity Omega"
+    },
+    {
+      "can_repeat": 0,
+      "description": [
+        "Cette quête a été créée par AllTheMods Staff, ou un contributeur communautaire pour une utilisation dans AllTheMods Modpacks.",
+        "Comme tous les packs AllTheMods sont sous licence All Rights Reserved, cette Quest n'est pas autorisée à être utilisée dans les packs publics non publiés par l'équipe AllTheMods, sans autorisation explicite.",
+        "Cette quête est intentionnellement cachée, si vous voyez cela, vous êtes en mode édition.",
+        "Repère de lecture : obtiens le livre indiqué pour poursuivre. Cette étape ne donne aucune récompense."
+      ],
+      "disable_toast": 1,
+      "hide_details_until_startable": 1,
+      "hide_until_deps_visible": 1,
+      "icon": {
+        "Count": 1,
+        "id": "ftbquests:custom_icon",
+        "tag": {
+          "Icon": "minecraft:item/barrier"
+        }
+      },
+      "id": "7441AB4CF6209A14",
+      "invisible": 1,
+      "optional": 1,
+      "shape": "octagon",
+      "tasks": [
+        {
+          "id": "2A6FE46B621B49C5",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "5171909B2DE21DCA",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 1.0,
+      "y": -7.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Livre",
+      "dependencies": []
+    }
+  ],
+  "title": "Productive Bees",
+  "default_consume_items": false
+}

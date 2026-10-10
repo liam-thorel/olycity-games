@@ -1,0 +1,8 @@
+name = "kubejs/assets/patchouli/patchouli_books/chroniques_olycity/fr_fr/entries/abri.json"
+filename = "abri.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/47529c2bc09cd6beced96f39ca98cb94b9d0c4a4e3ce38952a37d75131cba019"
+hash-format = "sha256"
+hash = "47529c2bc09cd6beced96f39ca98cb94b9d0c4a4e3ce38952a37d75131cba019"

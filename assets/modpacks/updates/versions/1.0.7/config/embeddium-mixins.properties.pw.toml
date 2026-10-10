@@ -1,0 +1,8 @@
+name = "config/embeddium-mixins.properties"
+filename = "embeddium-mixins.properties"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/09ff183e061d93b79514bc171bf9118497578757e7a5c45946039487656e2619"
+hash-format = "sha256"
+hash = "09ff183e061d93b79514bc171bf9118497578757e7a5c45946039487656e2619"

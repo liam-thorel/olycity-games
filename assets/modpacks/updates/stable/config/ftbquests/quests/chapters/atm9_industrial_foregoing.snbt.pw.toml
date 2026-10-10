@@ -1,0 +1,8 @@
+name = "config/ftbquests/quests/chapters/atm9_industrial_foregoing.snbt"
+filename = "atm9_industrial_foregoing.snbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/916f4b065bfc98bc523194b8ba1c307494bbd4eefe26189d4b4565376d983d2b"
+hash-format = "sha256"
+hash = "916f4b065bfc98bc523194b8ba1c307494bbd4eefe26189d4b4565376d983d2b"

@@ -1,0 +1,268 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "diamond",
+  "filename": "atm9_tips_and_tricks",
+  "group": "",
+  "icon": {
+    "Count": 1,
+    "id": "constructionwand:infinity_wand",
+    "tag": {
+      "wand_options": {}
+    }
+  },
+  "id": "44A974D7D50D9D1C",
+  "order_index": 3,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "description": [
+        "Le sac de couchage permet de dormir la nuit sans déplacer ton point de réapparition. Le hamac permet de dormir pendant la journée.",
+        "Garde un lit permanent dans votre coin de vie, puis emporte un couchage de voyage pour vos sorties."
+      ],
+      "id": "58A0E51E40CC0836",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "0D81D2CB80521B0F",
+          "item": "comforts:rope_and_nail",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "109538C18ACF7F11",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "ZZZzzz...",
+      "tasks": [
+        {
+          "id": "6118C98ABBAFD397",
+          "item": {
+            "Count": 1,
+            "id": "comforts:hammock_white"
+          },
+          "title": "Accumulation",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "7A0971330C37A4EC",
+          "item": {
+            "Count": 1,
+            "id": "comforts:sleeping_bag_white"
+          },
+          "title": "Sacs de couchage",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Les lits de voyage Comforts",
+      "x": 3.0,
+      "y": 5.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "La baguette de construction mod ajoute des baguettes utiles qui sont utilisées lors de la construction. Lorsque le clic droit sur une face d'un bloc avec la baguette, il étendra cette face dehors aussi longtemps que vous avez les blocs dans votre inventaire."
+      ],
+      "id": "06C83F1283DB72AC",
+      "rewards": [
+        {
+          "id": "5E852F4D9E4C2463",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "4BE7C8967AEF9291",
+          "item": {
+            "Count": 1,
+            "id": "constructionwand:stone_wand",
+            "tag": {
+              "Damage": 0,
+              "wand_options": {}
+            }
+          },
+          "title": "Panneaux de construction",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Baguettes de construction",
+      "x": 0.5,
+      "y": 8.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "58A0E51E40CC0836",
+        "06C83F1283DB72AC",
+        "34690BBE63F4786D"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "043ED91F37FC9D17",
+      "rewards": [],
+      "shape": "circle",
+      "subtitle": "Terminez tous les conseils!",
+      "tasks": [
+        {
+          "id": "141D004954B72A73",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Conseils pour être bien équipé",
+      "x": 1.0,
+      "y": 5.5,
+      "description": [
+        "Ce jalon reprend un objectif déjà présent dans les parcours OLYCITY. Il complète le guide sans donner une seconde récompense."
+      ],
+      "repeatable": false
+    },
+    {
+      "description": [
+        "Sur cette page, vous trouverez quelques objets utiles et des informations pour vous aider dans votre périple!",
+        "Ce jalon reprend un objectif déjà présent dans les parcours OLYCITY. Il complète le guide sans donner une seconde récompense."
+      ],
+      "id": "36D579718950BE36",
+      "rewards": [],
+      "shape": "hexagon",
+      "size": 2.0,
+      "subtitle": "Et d'autres objets utiles!",
+      "tasks": [
+        {
+          "id": "5F5B3E7DF3850805",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Conseils et Astuces!",
+      "x": 1.0,
+      "y": 3.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Vous donne une liste de biomes que vous pouvez rechercher. Sélectionnez un biome, puis appuyez sur 'Rechercher.' Vous verrez quelques informations en haut à gauche, et la boussole va pointer dans la direction du biome."
+      ],
+      "id": "5386E70874A67917",
+      "rewards": [
+        {
+          "id": "222C3205A18BE559",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Aide à trouver des biomes",
+      "tasks": [
+        {
+          "id": "7F2B06E7D48006D0",
+          "item": {
+            "Count": 1,
+            "id": "naturescompass:naturescompass",
+            "tag": {}
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Boussole de la nature",
+      "x": 1.0,
+      "y": 8.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Lorsqu'il est placé, le Mega Torch empêche toutes les foules hostiles de frayer naturellement dans un rayon de 64 blocs."
+      ],
+      "id": "34690BBE63F4786D",
+      "rewards": [
+        {
+          "id": "5874F5F4DBE9085D",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "63CDFA539616F9BA",
+          "item": "torchmaster:megatorch",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Prévention des apparitions de monstres",
+      "x": -1.0,
+      "y": 5.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "can_repeat": 0,
+      "description": [
+        "Cette quête a été créée par AllTheMods Staff, ou un contributeur communautaire pour une utilisation dans AllTheMods Modpacks.",
+        "Comme tous les packs AllTheMods sont sous licence All Rights Reserved, cette Quest n'est pas autorisée à être utilisée dans les packs publics non publiés par l'équipe AllTheMods, sans autorisation explicite.",
+        "Cette quête est intentionnellement cachée, si vous voyez cela, vous êtes en mode édition.",
+        "Repère de lecture : obtiens le livre indiqué pour poursuivre. Cette étape ne donne aucune récompense."
+      ],
+      "disable_toast": 1,
+      "hide_details_until_startable": 1,
+      "hide_until_deps_visible": 1,
+      "icon": {
+        "Count": 1,
+        "id": "ftbquests:custom_icon",
+        "tag": {
+          "Icon": "minecraft:item/barrier"
+        }
+      },
+      "id": "65A6AC247286D0EA",
+      "invisible": 1,
+      "optional": 1,
+      "shape": "octagon",
+      "tasks": [
+        {
+          "id": "749B3E2EEAEAF489",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "06269F7BEE786C51",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 1.0,
+      "y": 4.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Livre",
+      "dependencies": []
+    }
+  ],
+  "title": "Conseils pratiques",
+  "default_consume_items": false
+}

@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/worldgen/structure_set/idas_nether.json"
+filename = "idas_nether.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/b297cb432220e05db421e7b7862434a4758df97eceb8036edcd9fd081062c1f2"
+hash-format = "sha256"
+hash = "b297cb432220e05db421e7b7862434a4758df97eceb8036edcd9fd081062c1f2"

@@ -1,0 +1,2071 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "rsquare",
+  "filename": "atm9_applied_energistics_2",
+  "group": "397831C23DCA38BF",
+  "icon": "ae2:controller",
+  "id": "05CD0FB8A7D7F76A",
+  "order_index": 1,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "description": [
+        "AE2 organise le stockage, les échanges et la fabrication automatique dans un réseau ME. Commence par les cristaux de quartz certus, puis avance vers un petit réseau alimenté.",
+        "Les pages suivantes détaillent les cellules, terminaux, câbles et composants. Elles complètent le parcours OLYCITY de Liam.",
+        "Guide du mod : https://appliedenergistics.github.io/"
+      ],
+      "icon": "ae2:certus_quartz_crystal",
+      "id": "42887299717367ED",
+      "rewards": [
+        {
+          "count": 8,
+          "id": "1E6C1767F850E2B3",
+          "item": "ae2:certus_quartz_dust",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "69A32BFE9131F5D7",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.5,
+      "subtitle": "Système de stockage virtuel",
+      "tasks": [
+        {
+          "id": "19D56C661CEB5BCC",
+          "item": "ae2:certus_quartz_dust",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "6C3BE9E5F444BDD9",
+          "item": "ae2:certus_quartz_crystal",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Découvrir Applied Energistics 2",
+      "x": 0.0,
+      "y": 0.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "42887299717367ED"
+      ],
+      "description": [
+        "Deux des toutes premières choses que vous aurez besoin de commencer dans AE2 sont le Chargeur et l'Inscription. Le Chargeur, lorsqu'il est fourni avec de la puissance, prendra Certus Quartz Crystals et les rechargera. Ces Cristaux Certus Charged peuvent ensuite être utilisés dans la production de Fluix, une autre ressource importante dans le mod. Il peut également être utilisé pour charger n'importe quel article qui stocke de la puissance. L'Inscription peut être utilisé pour transformer les différents cristaux de quartz dans AE2 dans leur forme de poussière, mais plus important est utilisé pour fabriquer des circuits imprimés spéciaux et des processeurs, comme sera plus clair dans la prochaine quête."
+      ],
+      "id": "7670F817B1FBB1A8",
+      "rewards": [
+        {
+          "id": "4FD7F2E7D21FFDE5",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Quelques machines de base",
+      "tasks": [
+        {
+          "id": "14A7E9466859812C",
+          "item": "ae2:charger",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "6600C9C38A6114C8",
+          "item": "ae2:inscriber",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Première chose",
+      "x": 2.0,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7670F817B1FBB1A8"
+      ],
+      "description": [
+        "Il est temps de trouver des météorites qui contiennent Sky Stone. Celles-ci peuvent être soit en surface soit sous terre, et contiennent un Cube mystérieux dans son centre. Ce cube contient toutes les différentes Presses utilisées dans l'Inscriber pour faire les composants spéciaux d'artisanat d'AE2. La façon la plus facile de localiser une météorite est de fabriquer un Boussole de Météorite en plaçant une boussole à l'intérieur d'un Chargeur."
+      ],
+      "icon": "ae2:calculation_processor_press",
+      "id": "749E488322AB792E",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "2102E2FF2C1F0DD1",
+          "item": "ae2:sky_stone_block",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "0929A62D2905D979",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "'COMIC #42: cisaillement 4 bobby [Fischer]'",
+      "tasks": [
+        {
+          "id": "3680227B67A6406B",
+          "item": "ae2:meteorite_compass",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "advancement": "ae2:main/presses",
+          "criterion": "",
+          "id": "0D6DFD6FE9152402",
+          "type": "advancement"
+        }
+      ],
+      "title": "Chasse aux météorites",
+      "x": 4.0,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7670F817B1FBB1A8"
+      ],
+      "description": [
+        "Alors que l'Inscription et le Chargeur accepteront nativement RF/FE, la grande majorité d'un réseau ME utilise son propre système d'alimentation dédié appelé AE. RF/FE peut être converti en AE native à un rapport de 2:1 RF:AE, soit directement par l'intermédiaire d'un contrôleur ME, soit par l'intermédiaire de l'Accepteur d'énergie, qui peut être connecté à n'importe quelle partie du réseau."
+      ],
+      "id": "124AA52BEC61621A",
+      "rewards": [
+        {
+          "id": "4F9278689553596B",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Branche-toi",
+      "tasks": [
+        {
+          "id": "1AC0F7992CE963C1",
+          "item": "ae2:energy_acceptor",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Acceptateur énergétique",
+      "x": 3.0,
+      "y": -0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "124AA52BEC61621A"
+      ],
+      "description": [
+        "Par défaut, un réseau ME seul ne dispose que d'un tampon interne de 800AE sans contrôleur ME, le contrôleur ajoutant un supplément de 8kAE par bloc. Pour un nombre suffisant de réseaux, cela peut être insuffisant et provoquer une coupure intermittente d'un réseau lorsqu'il essaie de récupérer la puissance de tous les appareils connectés. La cellule énergie permet à un réseau ME de contenir beaucoup plus d'énergie, ajoutant 200kAE par cellule énergie ordinaire et 1,6MAE par cellule énergie dense. Ceux-ci peuvent également être placés n'importe où dans le réseau pour fournir le tampon énergie augmenté."
+      ],
+      "id": "288CFF5C009581AB",
+      "rewards": [
+        {
+          "id": "5E63692BBFA2BC29",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "0B19529355886CA5",
+          "item": {
+            "Count": 1,
+            "id": "ae2:energy_cell",
+            "tag": {}
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "7585A1D98035CA56",
+          "item": {
+            "Count": 1,
+            "id": "ae2:dense_energy_cell",
+            "tag": {}
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Cellule énergétique",
+      "x": 5.0,
+      "y": -0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "288CFF5C009581AB"
+      ],
+      "description": [
+        "La carte Énergie peut être appliquée à la plupart des appareils rechargeables comme les cellules portables et les terminaux sans fil (couverts plus tard) pour augmenter leur tampon énergétique."
+      ],
+      "id": "1407EB5B06DA1F94",
+      "rewards": [
+        {
+          "id": "10970391F1541C17",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "circle",
+      "tasks": [
+        {
+          "id": "4019C0CCCD6D1504",
+          "item": "ae2:energy_card",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Carte énergie",
+      "x": 7.0,
+      "y": -0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "749E488322AB792E"
+      ],
+      "description": [
+        "Une fois que vous avez obtenu un ensemble complet des presses d'inscription requises, il est temps de commencer à faire certains processeurs. Ce sont un ingrédient important de fabrication utilisé pour faire la grande majorité des dispositifs connectés à ME."
+      ],
+      "id": "475D2ECED969C206",
+      "rewards": [
+        {
+          "id": "2188A33EAE169E14",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "50A1B16E8B5AFE3F",
+          "item": "ae2:logic_processor",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "08AA832F49A58BC3",
+          "item": "ae2:calculation_processor",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "1BCDFAE69C8E8E35",
+          "item": "ae2:engineering_processor",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Processeurs",
+      "x": 6.0,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7670F817B1FBB1A8"
+      ],
+      "description": [
+        "La ressource la plus importante dont vous aurez besoin ensuite est Fluix, utilisé dans la grande majorité des appareils AE2 et servant de base pour fabriquer tous les câbles dans un réseau ME. Vous aurez généralement envie de les produire en masse, et la façon de le faire est de faire un Fluix Crystal en jetant Nether Quartz, Charged Certus quartz et Redstone ensemble dans une piscine d'eau. Cela vous donnera un Fluix Crystal que vous pouvez transformer en poussière dans un Inscrivant."
+      ],
+      "icon": "ae2:fluix_crystal",
+      "id": "0C00E162D45CBFA0",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "135E502F1A4AB52A",
+          "item": "ae2:fluix_dust",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "2B1B0913EA984E0F",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "6B417BC11AD27B48",
+          "item": "ae2:fluix_dust",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "56D4D7B7F0868FB9",
+          "item": "ae2:fluix_crystal",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Cristaux Fluix",
+      "x": 3.0,
+      "y": 1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "0C00E162D45CBFA0"
+      ],
+      "description": [
+        "Pour relier la grande majorité de votre réseau ME ensemble, vous aurez besoin d'un câble. ME Glass Cable est le premier et le plus basique câble, et vous le ferez tout au long de la première étape vers la fabrication des autres types de câble. Les deux câbles en verre et leur contrepartie couverte peuvent transporter jusqu'à 8 canaux le long d'une seule section de câblage. Contrairement aux câbles en verre, les câbles couverts peuvent ensuite être fabriqués en câbles couverts denses, capables de transporter jusqu'à 32 canaux. Cependant, la plupart des dispositifs «multipartes» tels que les autobus et les terminaux ne peuvent pas être directement fixés à des câbles denses, ce qui exige que les câbles de largeur normale forment une connexion."
+      ],
+      "id": "60357DF5C56A4BCA",
+      "min_width": 300,
+      "rewards": [
+        {
+          "id": "33A6F5C0F70E9D3D",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "37270FE0C10DBDF1",
+          "type": "item",
+          "item": "ae2:black_glass_cable",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "1A45CFC36352F732",
+          "type": "item",
+          "item": "ae2:black_covered_cable",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "733A4FEBB578CBFE",
+          "type": "item",
+          "item": "ae2:black_covered_dense_cable",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Câblage de base",
+      "x": 5.0,
+      "y": 1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "60357DF5C56A4BCA"
+      ],
+      "description": [
+        "Le câble intelligent ME et le câble intelligent Dense fonctionnent de façon identique aux câbles couverts en termes de distribution de canaux, mais ils afficheront aussi visiblement la quantité de canaux qu'ils utilisent comme lignes colorées le long d'eux-mêmes."
+      ],
+      "id": "4D6EAA0BC04BEEA7",
+      "rewards": [
+        {
+          "id": "309C5E6B20D15B40",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 2,
+          "id": "5FE1877F94A15E39",
+          "item": "ae2:quartz_fiber",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "subtitle": "\"S.M.R.T.\"",
+      "tasks": [
+        {
+          "id": "4458A8BA21A4F1FF",
+          "type": "item",
+          "item": "ae2:black_smart_cable",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "7E692570A15A75F1",
+          "type": "item",
+          "item": "ae2:black_smart_dense_cable",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Câblage avancé",
+      "x": 5.0,
+      "y": 3.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "475D2ECED969C206"
+      ],
+      "description": [
+        "&eLes terminaux permettent d'accéder à n'importe quel contenu d'un réseau ME. Le terminal ME standard indique simplement tout dans le réseau comme un grand réseau à tirer et à insérer dans, à l'instar d'un seul inventaire. Le terminal ME Crafting est une extension du terminal ME qui fournit également une grille d'artisanat intégrée, permettant d'artisanat pratique en utilisant n'importe quel élément contenu dans le réseau et visible à travers l'écran du terminal."
+      ],
+      "id": "28B6E6726B28521A",
+      "rewards": [
+        {
+          "id": "6D71D8ADF98F1935",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "[Linux user joker va ici]",
+      "tasks": [
+        {
+          "id": "6D3D93620C37B027",
+          "item": "ae2:terminal",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "26D791BA78C87E8E",
+          "item": "ae2:crafting_terminal",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Terminaux",
+      "x": 8.0,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "06B9B4EF54DE083E"
+      ],
+      "description": [
+        "L'aspect le plus important de l'énergie appliquée 2 est sans doute son système de stockage, utilisant des cellules de stockage numériques. Ces cellules sont accessibles soit par un ME Chest pour cellules simples, soit par un ME Drive pour cellules multiples. Le ME Chest détient une cellule unique à la fois, qui peut ensuite être lue à partir et écrite à partir de n'importe quel autre terminal sur le même réseau. Le ME Chest lui-même fournit également son propre écran de terminal sur le dessus avec un accès spécifique à la cellule qu'il contient. Le ME Drive peut contenir jusqu'à 10 cellules de stockage assorties dans l'espace d'un bloc unique et d'un seul canal ME. Cependant, il ne fournit pas son propre écran de terminal, nécessitant un terminal externe ailleurs sur le réseau pour l'accès au stockage."
+      ],
+      "id": "27301C8FF4C711B8",
+      "rewards": [
+        {
+          "id": "441D0C41AD03E1BF",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "gear",
+      "size": 1.5,
+      "subtitle": "Éléments en tant que système de fichiers",
+      "tasks": [
+        {
+          "id": "5C38DAC1E622C7E1",
+          "item": "ae2:chest",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "7FF92D030DE05E4D",
+          "item": "ae2:drive",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Le stockage",
+      "x": 11.0,
+      "y": 1.5,
+      "repeatable": false
+    },
+    {
+      "description": [
+        "Pour rendre la vie aussi facile, AE2 fournit toute une série de dispositifs pour la manipulation des données ME, c'est-à-dire le déplacement d'objets stockés dans le monde entier. L'interface ME est l'un de ces dispositifs. En tant que périphérique d'entrée, l'interface permet d'envoyer tout élément/fluide/etc à travers lui, qui est automatiquement stocké dans le réseau ME auquel l'interface est connectée. En tant que périphérique de sortie, l'interface peut être configurée pour garder une certaine quantité disponible d'un objet stocké en stock, du réseau ME à son propre inventaire interne. Cela permet d'être reçu par une source externe comme un autre lecteur ou un certain tuyau."
+      ],
+      "icon": "ae2:interface",
+      "id": "37B44EA97F7E2CD0",
+      "rewards": [
+        {
+          "id": "5E6AED30F094C748",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "gear",
+      "size": 1.5,
+      "subtitle": "Oh, OI, OI !",
+      "tasks": [
+        {
+          "id": "0E7A769E8DF49CE5",
+          "type": "item",
+          "item": "ae2:cable_interface",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "L'OI",
+      "x": 24.0,
+      "y": 1.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Le stockage est agréable et tout cela, mais à quoi bon un système de stockage s'il est obstrué avec des matières premières qui ont besoin d'être conçues et transformées en quelque chose et vous êtes toujours coincé avec avoir à le faire manuellement? Le système d'auto-artisanat d'AE2 commence avec le fournisseur de modèles ME. Le fournisseur de modèles contient certains éléments appelés Patterns (couverts dans la prochaine quête) qui sont programmés pour tenir une recette qui transforme les éléments d'entrée en une certaine sortie. Jusqu'à 9 modèles peuvent s'intégrer dans un seul fournisseur. Vous ferez souvent usage de fournisseurs de modèles multiples dispersés tout au long de votre base, ce qui explique pourquoi il est utile d'avoir un terminal d'accès de Pattern pour accéder à distance au contenu de n'importe quel fournisseur sur votre réseau ME élargi."
+      ],
+      "icon": "ae2:pattern_provider",
+      "id": "034A72A7CB2756F2",
+      "rewards": [
+        {
+          "id": "746EA2A16AD3AAF0",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "gear",
+      "size": 1.5,
+      "subtitle": "Commandez",
+      "tasks": [
+        {
+          "id": "2BDC5825FD5CCDB3",
+          "type": "item",
+          "item": "ae2:cable_pattern_provider",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "2F674547D4F31969",
+          "item": "ae2:pattern_access_terminal",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Auto-Craft",
+      "x": 13.0,
+      "y": -2.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "28B6E6726B28521A",
+        "4B56F88729181D06"
+      ],
+      "description": [
+        "La dernière pièce du puzzle pour tout grand réseau ME est le contrôleur ME. Un contrôleur fournit un réseau ME avec un nombre beaucoup plus grand de canaux que les 8 canaux standard pour les réseaux ad-hoc, fournissant 32 canaux de chaque face du bloc pour un total de 216 canaux. Ce n'est que pour un contrôleur à bloc unique, cependant, puisque le contrôleur ME est en fait une structure à bloc multiple. Le contrôleur peut être jusqu'à 7x7x7 blocs de taille et peut venir dans n'importe quel arrangement de forme libre dans cette taille maximale. Chaque bloc individuel peut alors fournir son propre ensemble de canaux, tant qu'aucun bloc de contrôleur n'est entouré par 4 autres blocs le long du même plan. Un réseau ME ne peut contenir qu'un contrôleur à bloc multiple à tout moment."
+      ],
+      "id": "06B9B4EF54DE083E",
+      "rewards": [
+        {
+          "id": "5573501BF39B754F",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "49CE7D696650A0C4",
+          "item": "ae2:controller",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Contrôleur ME",
+      "x": 9.0,
+      "y": 1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "42887299717367ED"
+      ],
+      "description": [
+        "La clé Quartz fait ce que tout mod de clé standard de technologie ferait. Elle tourne les blocs et les appareils le long du visage que vous faites un clic droit et les démonte lorsque le clic droit est fait en se faufilant. La clé d'AE2 vient à la fois dans les arômes de certus et de quartz."
+      ],
+      "id": "063513C842ADE7D6",
+      "rewards": [
+        {
+          "id": "5038001D83D6754E",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "circle",
+      "subtitle": "Fait exactement ce que vous attendez.",
+      "tasks": [
+        {
+          "id": "6E79E17F614C973D",
+          "type": "item",
+          "item": "ae2:certus_quartz_wrench",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Clé à quartz",
+      "x": 1.0,
+      "y": 1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "28B6E6726B28521A"
+      ],
+      "description": [
+        "L'outil réseau est un outil important dans toute l'AE2, qui est utilisé pour afficher différents détails d'un réseau à l'écran, comme la consommation d'énergie et le stockage. En plus, il fournit également son propre petit inventaire utilisé pour tenir des cartes de mise à niveau, qui peuvent être accessibles lorsque l'on regarde l'écran de n'importe quel appareil mis à jour pour un remplacement facile."
+      ],
+      "id": "5EA7EDA2A4F00205",
+      "tasks": [
+        {
+          "id": "5C9F990CE719D59B",
+          "item": "ae2:network_tool",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Outils réseau",
+      "x": 9.0,
+      "y": -0.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "27301C8FF4C711B8"
+      ],
+      "description": [
+        "Chaque cellule individuelle a une certaine capacité dictée par le composant avec lequel la cellule a été conçue. Le premier des composants est le composant de stockage 1k ME, fournissant 1024 'octets' de stockage pour une cellule donnée. Plus sur cela plus tard."
+      ],
+      "id": "39CC762E2486DAEF",
+      "rewards": [
+        {
+          "id": "134CA02D7880AE86",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "subtitle": "Le premier kilooctet.",
+      "tasks": [
+        {
+          "id": "09281EFF62A91253",
+          "item": "ae2:cell_component_1k",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Création de votre première cellule de stockage",
+      "x": 14.0,
+      "y": 1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "39CC762E2486DAEF"
+      ],
+      "description": [
+        "Le deuxième volet de la composante de stockage, qui fournit 4096 octets de stockage."
+      ],
+      "id": "00BACDE3120DBEE7",
+      "rewards": [
+        {
+          "id": "4BE6B4F0F59E54C1",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "subtitle": "x4",
+      "tasks": [
+        {
+          "id": "0A0382E7ECC79AF6",
+          "item": "ae2:cell_component_4k",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "4k Composant de stockage",
+      "x": 15.0,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "00BACDE3120DBEE7"
+      ],
+      "description": [
+        "Le troisième niveau de la composante de stockage, fournissant 16384 octets de stockage."
+      ],
+      "id": "6475B3C61DE57424",
+      "rewards": [
+        {
+          "id": "282B3FE0872CD553",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "subtitle": "χ4^2",
+      "tasks": [
+        {
+          "id": "362FCA8562FEFFAF",
+          "item": "ae2:cell_component_16k",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "16k Composant de stockage",
+      "x": 14.5,
+      "y": 3.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6475B3C61DE57424"
+      ],
+      "description": [
+        "Le quatrième niveau de la composante de stockage, qui fournit 65536 octets de stockage."
+      ],
+      "id": "74AFE4F625E8E594",
+      "rewards": [
+        {
+          "id": "21461A965C99BE9A",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "subtitle": "x4^3",
+      "tasks": [
+        {
+          "id": "5865AA4AE8C64E27",
+          "item": "ae2:cell_component_64k",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "64k Composant de stockage",
+      "x": 15.0,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "74AFE4F625E8E594"
+      ],
+      "description": [
+        "Le cinquième et dernier volet de stockage standard AE2, fournissant 262144 octets de stockage."
+      ],
+      "id": "5345654B070C13FF",
+      "rewards": [
+        {
+          "id": "70D90C6E73EC56CE",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "subtitle": "χ4^4",
+      "tasks": [
+        {
+          "id": "381782B5090444AF",
+          "item": "ae2:cell_component_256k",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "256k Composant de stockage",
+      "x": 15.5,
+      "y": 3.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "39CC762E2486DAEF"
+      ],
+      "description": [
+        "Avec le composant de stockage 1k, vous pouvez maintenant créer une cellule de stockage d'article 1k ME pour démarrer votre système de stockage numérique d'article. Vous voudrez probablement que la majorité de votre stockage soit pour des objets, donc vous voudrez probablement faire quelques cellules de stockage d'article ME. Les cellules de stockage d'article ME peuvent chacune contenir jusqu'à 63 types d'objets différents. Chaque nouveau type d'article ajouté à une cellule prendra une certaine fraction de la capacité totale de la cellule de stockage en octets. Pour chaque type déjà présent, 1 'octet' compte pour 8 objets de ce même type. Par exemple, une cellule de stockage d'article 1k contenant seulement des pavés peut contenir jusqu'à 8128 pavés (8*1024b - 8b/type * 1 type). Si une cellule est vide, elle peut être réutilisée en la désassemblant dans son composant et son boîtier respectifs."
+      ],
+      "id": "22A457DF1D3372DC",
+      "rewards": [
+        {
+          "id": "444E503F52346331",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "6EABF9C790D78428",
+          "item": "ae2:item_cell_housing",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "7B72BF9B1AC36F5D",
+          "item": {
+            "Count": 1,
+            "id": "ae2:item_storage_cell_1k",
+            "tag": {}
+          },
+          "title": "Unité de stockage de l'article ME",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Stockage de l'article",
+      "x": 16.5,
+      "y": 1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "27301C8FF4C711B8"
+      ],
+      "description": [
+        "Le Workbench Cell permet aux cellules d'être \"partitées\" pour contenir des éléments spécifiques, c'est-à-dire avec un filtre de liste blanche. Il permet également à la cellule d'être mise à niveau avec certaines cartes de mise à niveau telles que la carte Inverter, qui définit la liste blanche susmentionnée pour être une liste noire. Les cellules peuvent également recevoir une \"priorité\" supérieure ou inférieure via le workbench, c'est-à-dire permettre à la cellule d'être la première à recevoir certains éléments jusqu'à ce qu'ils soient pleins, ou faire attendre que d'autres cellules de priorité supérieure se remplissent en premier."
+      ],
+      "id": "48C5E12BDE444B1B",
+      "rewards": [
+        {
+          "id": "59AB569D7371FAAA",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "39FA042CB17DD8EF",
+          "item": "ae2:cell_workbench",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Etabli de cellules",
+      "x": 12.0,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "27301C8FF4C711B8"
+      ],
+      "description": [
+        "Le port ME IO permet de réaménager rapidement le contenu du stockage d'un réseau ME entre différents supports de stockage tels que les cellules ME et les conteneurs externes connectés aux bus de stockage. Lorsqu'une cellule est insérée dans une fente d'entrée à gauche, le port IO peut être remorqué pour vider la cellule dans d'autres stockages ME ou remplir la cellule (idéalement partitionnée) avec certains éléments répartis entre d'autres stockages."
+      ],
+      "id": "4A28BC819B395FC5",
+      "rewards": [
+        {
+          "id": "1AFF2DF7108EE684",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Défragmentation",
+      "tasks": [
+        {
+          "id": "0E7807EF7063B63E",
+          "item": "ae2:io_port",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Port d'E/S ME",
+      "x": 12.0,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "37B44EA97F7E2CD0"
+      ],
+      "description": [
+        "Le ME Import Bus aspire périodiquement les objets de quelque stockage externe que le bus soit face. Il peut éventuellement être filtré pour prendre seulement certains objets de cet inventaire."
+      ],
+      "id": "6834FD58AF3BADAD",
+      "rewards": [
+        {
+          "id": "4FAAB2F28A5FA52C",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Les I",
+      "tasks": [
+        {
+          "id": "42B5830F85A773E9",
+          "item": "ae2:import_bus",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Bus d'import ME",
+      "x": 23.0,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "37B44EA97F7E2CD0"
+      ],
+      "description": [
+        "Le ME Export Bus crache périodiquement des objets dans sa liste blanche filtrent vers n'importe quel stockage externe le bus est face. Contrairement au bus d'importation, le bus d'exportation ne peut pas fonctionner sans être filtré."
+      ],
+      "id": "3E298B819D73AC65",
+      "rewards": [
+        {
+          "id": "1097CDFDDABAFF5E",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Les",
+      "tasks": [
+        {
+          "id": "719C790F099D157F",
+          "item": "ae2:export_bus",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Bus d'export ME",
+      "x": 25.0,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6834FD58AF3BADAD"
+      ],
+      "description": [
+        "Le ME Annihilation Plane peut être utilisé pour casser automatiquement tous les blocs devant lui et retourner tout ce qui est tombé par le bloc directement sur le réseau ME. En plus, le plan d'annihilation peut être enchanté de la même manière qu'un outil de creusement régulier, affectant les gouttes de bloc de la même manière que cet outil enchanté. Cela le rend idéal pour le traitement des blocs de minerais enchanté avec Fortune, par exemple. Tout enchantement ajouté augmente de façon significative la quantité d'énergie utilisée par l'avion à chaque fois qu'un bloc est brisé. Enchanter l'avion avec Efficiency réduira l'utilisation globale de l'énergie par tous les autres enchantements, tandis que l'enchantement sans rupture donne à l'avion la possibilité d'utiliser seulement n'importe quelle énergie parfois, de même que Débreverser sur les outils réguliers."
+      ],
+      "id": "53EFB7C8203399B5",
+      "rewards": [
+        {
+          "id": "1AC5D9B91D72BE8C",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Entrez.",
+      "tasks": [
+        {
+          "id": "19EBF86C99E0E771",
+          "item": "ae2:annihilation_plane",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "ME Plan d'Annhilation",
+      "x": 23.0,
+      "y": -1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "3E298B819D73AC65"
+      ],
+      "description": [
+        "Le ME Formation Plane agit de la même manière que le Storage Bus, mais traite le monde lui-même comme son support de stockage. En d'autres termes, il placera n'importe quel bloc dans son filtre directement devant lui-même. Cela peut être utile pour les situations où un bloc peut être traité simplement en le plaçant et en le brisant avec un certain outil."
+      ],
+      "id": "495D3C49A5D3BAB6",
+      "rewards": [
+        {
+          "id": "607A87562964775A",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Sors d'ici.",
+      "tasks": [
+        {
+          "id": "4DE7C103D7319293",
+          "item": "ae2:formation_plane",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Plan de matérialisation ME",
+      "x": 25.0,
+      "y": -1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "37B44EA97F7E2CD0"
+      ],
+      "description": [
+        "&bP2P (peer-to-peer) est un système puissant au sein de l'AE2, permettant le transfert d'objets, de fluides et encore plus sans besoin de stockage intermédiaire ME. Le clic droit sur un tunnel P2P avec certains objets permettra d'aménager le tunnel dans un autre capable de transférer quelque chose d'autre, tels que des objets à travers des tuyaux, de l'énergie à travers des câbles, des signaux de pierre rouge et (par défaut) même ME se connecte."
+      ],
+      "id": "3CC8D982ABB5299F",
+      "rewards": [
+        {
+          "id": "5522E5FA0E6D1AEF",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Arrête l'intermédiaire.",
+      "tasks": [
+        {
+          "id": "01170FAF8FF86EC1",
+          "item": "ae2:me_p2p_tunnel",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Tunnels P2P",
+      "x": 26.0,
+      "y": 1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "37B44EA97F7E2CD0"
+      ],
+      "description": [
+        "Le ME Storage Bus, face à un conteneur de stockage externe, permettra d'utiliser le conteneur comme s'il faisait partie du réseau ME, permettant d'enlever des objets du conteneur ou d'y insérer uniquement via ME. Les bus de stockage peuvent être filtrés et donnés des priorités spécifiques telles que des objets spécifiques essaieront d'aller au stockage attaché d'abord, mais il ne déplacera pas rétroactivement les objets filtrés de n'importe où ailleurs dans le réseau à son stockage attaché."
+      ],
+      "id": "422A736BCA92E639",
+      "rewards": [
+        {
+          "id": "69FAA2EB1D718723",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Le coffre de secours",
+      "tasks": [
+        {
+          "id": "2D62F190C6B68BCE",
+          "item": "ae2:storage_bus",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Bus de stockage ME",
+      "x": 24.0,
+      "y": -0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "3CC8D982ABB5299F"
+      ],
+      "description": [
+        "La carte mémoire est un outil avec deux fonctions différentes. La plus simple des deux est d'enregistrer les configurations de différents appareils (tels que les filtres de liste blanche) à copier sur un autre appareil du même type. La seconde fonction d'une carte mémoire est de relier les tunnels P2P ensemble. Ce faisant, le tunnel P2P en liaison se verra attribuer un ID unique, qui est stocké sur la carte mémoire pour une liaison plus poussée."
+      ],
+      "id": "345ED0C0A4D34C7C",
+      "rewards": [
+        {
+          "id": "612B3FFE53C5F527",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "circle",
+      "tasks": [
+        {
+          "id": "77495DE2D5DDE53B",
+          "item": {
+            "Count": 1,
+            "id": "ae2:memory_card",
+            "tag": {}
+          },
+          "title": "Carte mémoire",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Carte mémoire",
+      "x": 26.0,
+      "y": -0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "48C5E12BDE444B1B"
+      ],
+      "description": [
+        "La carte de distribution égale est une mise à niveau pour les cellules de stockage qui pré-allotent une certaine quantité d'objets qui peuvent être pris par n'importe quel type. Ce comportement est comparable à quelque chose comme un tiroir de stockage fonctionnel, où chaque compartiment contient un certain nombre de piles, au lieu de permettre aux objets d'un compartiment de s'infiltrer dans les autres et de fouler d'autres types d'objets."
+      ],
+      "id": "74BF2C11D329810A",
+      "rewards": [
+        {
+          "id": "38CC5FA7513B36C9",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "circle",
+      "subtitle": "Douilles de cellules de stockage ME",
+      "tasks": [
+        {
+          "id": "12E64B53D7155348",
+          "item": "ae2:equal_distribution_card",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Carte de distribution égale",
+      "x": 12.0,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "48C5E12BDE444B1B"
+      ],
+      "description": [
+        "Ce comportement est comparable à quelque chose comme un tiroir de stockage fonctionnel, où chaque compartiment contient un nombre fixe de piles, au lieu de permettre aux objets d'un compartiment de s'infiltrer dans les autres et de fouler d'autres types d'objets."
+      ],
+      "id": "1E00C888E98B4200",
+      "rewards": [
+        {
+          "id": "51C328862FB66F64",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "circle",
+      "tasks": [
+        {
+          "id": "3D473371820FDFBB",
+          "item": "ae2:void_card",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Carte de destruction du débordement",
+      "x": 13.0,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "422A736BCA92E639"
+      ],
+      "description": [
+        "La carte de capacité permet à un bus mis à niveau avec elle de transporter un filtre plus grand. Les bus d'importation et d'exportation mis à niveau avec des cartes de capacité peuvent aller de la prise en charge d'un seul article filtré à leur filtre maximum de neuf emplacements, tandis que les bus de stockage passeront de 18 emplacements à un maximum de 63."
+      ],
+      "id": "2D4363CBAE3FC959",
+      "rewards": [
+        {
+          "id": "65DEB58F134DD5A5",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "circle",
+      "tasks": [
+        {
+          "id": "76CCA260FE2FF407",
+          "item": "ae2:capacity_card",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Carte de capacité",
+      "x": 24.0,
+      "y": -2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "37B44EA97F7E2CD0"
+      ],
+      "description": [
+        "Un concept important au sein de l'AE2 est une technique connue sous le nom de \"subnetting\", dans laquelle un réseau ME séparé (un sous-réseau) agit en conjonction avec le réseau principal pour effectuer une fonction ou un processus spécialisé. Ce qui sépare un sous-réseau d'un réseau séparé est généralement l'utilisation de la fibre de quartz comme partie de câble. Lorsqu'elle est placée entre deux longueurs de câble non reliées par ailleurs, la fibre de quartz ne transfère aucune donnée ou canal entre les deux, au lieu de transmettre seulement la puissance."
+      ],
+      "id": "348C94EE34D6E1C4",
+      "rewards": [
+        {
+          "id": "6E350A96F0E796EC",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Ceci a une utilisation à l'extérieur des câbles de fabrication.",
+      "tasks": [
+        {
+          "id": "2651122F650628C9",
+          "item": "ae2:quartz_fiber",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Oublié de mentionner",
+      "x": 25.0,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "034A72A7CB2756F2"
+      ],
+      "description": [
+        "&bPour encoder une recette sur un Pattern, le ME Pattern Encoding Terminal doit être utilisé. Les patrons peuvent contenir soit une recette d'artisanat régulière, qui nécessitera l'utilisation d'un assembleur moléculaire sur le visage de son fournisseur, soit une recette plus générale de « traitement », dans laquelle tout élément d'entrée peut être envoyé par le fournisseur dans un autre bloc de machine ou une usine de traitement spécialisée."
+      ],
+      "icon": "ae2:blank_pattern",
+      "id": "5F6C7D1F75EF689B",
+      "rewards": [
+        {
+          "count": 8,
+          "id": "2122586ADDAD58E0",
+          "item": "ae2:blank_pattern",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "59BC1009F7246E98",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "26BFE8AFBBAD9157",
+          "item": "ae2:pattern_encoding_terminal",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "6FC40BD1DF1BCD58",
+          "item": "ae2:blank_pattern",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Modèles",
+      "x": 14.0,
+      "y": -3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5F6C7D1F75EF689B"
+      ],
+      "description": [
+        "L'assemblage moléculaire est l'équivalent d'une table d'artisanat automatique de l'AE2, nécessaire pour remplir tous les métiers d'artisanat. Les assemblages moléculaires sont capables de transférer l’énergie et les canaux à d'autres dispositifs ME connectés à elle, mais ne prendront pas eux-mêmes un canal. Jusqu'à 6 MA peuvent être connectés à un seul fournisseur de motif (s'il est employé) pour permettre que plus d'artisanat se fasse en parallèle. Les MA ont également leur propre emplacement dédié pour un modèle d'artisanat unique, leur permettant de fonctionner autonome lorsqu'ils sont alimentés."
+      ],
+      "id": "204C542147018B9B",
+      "rewards": [
+        {
+          "id": "6DCFE380EA68627F",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "34D7F86EE5476A7D",
+          "item": "ae2:molecular_assembler",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Assembleur moléculaire",
+      "x": 16.0,
+      "y": -3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "034A72A7CB2756F2"
+      ],
+      "description": [
+        "Lorsqu'il est configuré avec un élément spécifique et la quantité à laquelle il doit répondre, l'émetteur de niveau ME émettra un signal de pierre rouge selon que l'élément stocké dans le réseau tombe en dessous, va au-dessus ou égale la quantité donnée. Ceci peut être utilisé, par exemple, pour activer automatiquement certaines machines avec Redstone pour auto-faire une ressource lorsqu'elle tombe en dessous d'un montant minimum donné."
+      ],
+      "id": "6074E11B8BB090FD",
+      "rewards": [
+        {
+          "id": "0251FCEE23943B1E",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "49C90DF6442A65D4",
+          "item": "ae2:level_emitter",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Emetteur de niveau ME",
+      "x": 15.0,
+      "y": -2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6074E11B8BB090FD"
+      ],
+      "description": [
+        "Les appareils ME individuels peuvent également être configurés pour répondre aux signaux de Redstone. Lorsqu'ils sont mis à niveau avec une carte Redstone, un appareil peut être configuré pour fonctionner uniquement lorsqu'il est alimenté par Redstone ou autrement au besoin. Ce comportement peut également s'appliquer à des sections entières d'un réseau ME en utilisant un bus ME Toggle. Cela permet à une section du réseau de l'autre côté du bus de venir en ligne seulement lorsque le bus est alimenté par Redstone, ou de se déconnecter si vous utilisez un bus toggle inversé."
+      ],
+      "id": "0DF207435BBB082C",
+      "rewards": [
+        {
+          "id": "1452456D7D92ABF9",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "circle",
+      "tasks": [
+        {
+          "id": "1EB9598B9E2B9FC4",
+          "item": "ae2:redstone_card",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "02F06501125E0F03",
+          "item": "ae2:toggle_bus",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "MOI contrôlé par Redstone",
+      "x": 17.0,
+      "y": -2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "0DF207435BBB082C"
+      ],
+      "description": [
+        "Lorsqu'elle est appliquée comme mise à niveau d'un appareil pris en charge comme une interface ou un bus d'exportation, la carte d'artisanat permet à l'appareil en question d'envoyer automatiquement ses propres demandes d'artisanat pour un article requis (filtré). Les processeurs d'artisanat peuvent être configurés pour répondre uniquement à ces demandes afin d'éviter de prendre des processeurs destinés aux métiers demandés par le joueur. Lorsque l'émetteur de niveau est mis à niveau avec la carte d'artisanat, il peut être configuré pour émettre des pierres rouges afin de faciliter directement l'artisanat, en émettant un signal soit pendant qu'un travail d'artisanat pour cet article est détecté, soit spécifiquement pour l'artisanat."
+      ],
+      "id": "6E23A8BCABC0AD5E",
+      "rewards": [
+        {
+          "id": "16FEBCC02F6D39CD",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "circle",
+      "subtitle": "Automatisation sous forme de mise à niveau !",
+      "tasks": [
+        {
+          "id": "16439447D95BCEA7",
+          "item": "ae2:crafting_card",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Carte de fabrication",
+      "x": 19.0,
+      "y": -2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "034A72A7CB2756F2"
+      ],
+      "description": [
+        "Naturellement, AE2 fournit sa propre façon d'accélérer considérablement la croissance des cristaux. Placez-les autour de vos cristaux Budding, donnez-leur de la puissance, et regardez vos cristaux croître!"
+      ],
+      "id": "63E6FBC0C1C401CB",
+      "rewards": [
+        {
+          "id": "0111B80EB9412A87",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "76CF1AFB7076AEFF",
+          "item": "ae2:growth_accelerator",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Accélérateur de croissance",
+      "x": 12.0,
+      "y": -3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "204C542147018B9B"
+      ],
+      "description": [
+        "La carte d'accélération, selon l'appareil mis à niveau avec elle, augmentera la vitesse à laquelle l'appareil fonctionne ou permettra à l'appareil d'effectuer plus d'opérations en une seule fois. Dans le cas de l'assemblage moléculaire, un jeu complet de 5 cartes réduit le temps nécessaire à l'AM pour accomplir un embarcation d'une seconde (sans carte) à une seule tique."
+      ],
+      "id": "48EFB5C732BAA225",
+      "rewards": [
+        {
+          "id": "6058E4B90EA6FB89",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "circle",
+      "tasks": [
+        {
+          "id": "25806B6743A2F850",
+          "item": "ae2:speed_card",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Carte d'accélérateur",
+      "x": 18.0,
+      "y": -3.5,
+      "repeatable": false
+    },
+    {
+      "description": [
+        "Outre le stockage d'objets et de fluides, AE2 fournit également une manière native de stocker des structures entières à l'intérieur des cellules de stockage, pas trop dissemblable au mod des machines compactes. Le port d'IO spatiale permet de capturer des structures contenues dans une structure de confinement spatiale à l'intérieur d'une cellule de stockage spécialement conçue, activée par un signal de pierre rouge. Si une foule ou un joueur se trouve à l'intérieur du SCS pendant que l'espace est capturé, ils aussi seront transportés vers l'endroit où va le reste de l'espace, c'est-à-dire dans une dimension dédiée."
+      ],
+      "id": "561D4F24030DA343",
+      "rewards": [
+        {
+          "id": "65A944A39AA70DCF",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "gear",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "50FEA6D5F3FDB3AD",
+          "item": "ae2:spatial_io_port",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "IO spatiale",
+      "x": 16.5,
+      "y": 6.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "561D4F24030DA343"
+      ],
+      "description": [
+        "La structure de confinement spatiale (SCS) est constituée d'une cage de Pylônes Spatiaux couvrant le volume que vous souhaitez enfermer dans une cellule d'IO spatiale. Au minimum, un SCS nécessite trois lignes de blocs de pylônes spatiaux, une pour chaque dimension de l'espace contenu (longueur, largeur, hauteur). Cependant, l'IO spatiale est une caractéristique extrêmement faible en puissance, surtout lorsqu'on tente de capturer des espaces beaucoup plus grands (jusqu'à 128x128x128). Avoir des pylônes plus spatiaux inclus dans le SCS autour du volume désiré augmentera son efficacité globale, lui permettant d'utiliser moins d'énergie pour capturer."
+      ],
+      "id": "42D9B2696B36AD4E",
+      "rewards": [
+        {
+          "id": "65420BFC6B310BF6",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "3483A972D5137151",
+          "item": "ae2:spatial_pylon",
+          "title": "Composante de la cellule spatiale",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Pilier spatial",
+      "x": 19.5,
+      "y": 6.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "42D9B2696B36AD4E"
+      ],
+      "description": [
+        "L'Anchor Spatial est un appareil de la gamme Spatial IO qui fonctionne simplement comme un chargeur de morceaux. Lorsqu'il est connecté à un réseau ME, l'Anchor charge tous les morceaux occupés par le réseau ME sur tous les câbles et appareils, à l'exclusion des sous-réseaux, tant que le réseau reste alimenté."
+      ],
+      "id": "07C24936E62EC71B",
+      "rewards": [
+        {
+          "id": "66BA95843C48C964",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "7BAEF84BDE759317",
+          "item": "ae2:spatial_anchor",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Ancre spatiale",
+      "x": 20.5,
+      "y": 5.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "60357DF5C56A4BCA"
+      ],
+      "description": [
+        "Le couteau de coupe Quartz, comme la clé, vient à la fois dans les saveurs de quartz nether et certus et est un outil de fabrication utile à avoir à la main. Les câbles peuvent également être séparés sans avoir besoin d'être colorés en fixant un anchor de câble entre eux, fabriqué avec ce couteau et fabriqué jusqu'à 50 fois avec le même couteau avant qu'il ne casse. Les anchors de câble peuvent également être utilisés pour artisanat des facades de câble, vous permettant de déguiser des câbles à l'intérieur des murs en les couvrant avec le visage d'un bloc arbitraire. Tandis que les recettes de façade sont cachées dans JEI, vous pouvez encore les artisanat en prenant n'importe quel bloc régulier et l'entourant avec 4 ancres de câble dans la grille de fabrication."
+      ],
+      "icon": "ae2:cable_anchor",
+      "id": "6652CD117F5E0430",
+      "min_width": 300,
+      "rewards": [
+        {
+          "id": "45422CC1EC99F622",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "subtitle": "Sous le couteau",
+      "tasks": [
+        {
+          "id": "45A68D6FC34C2647",
+          "type": "item",
+          "item": "ae2:certus_quartz_cutting_knife",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "1FB86C9084F14B4F",
+          "item": "ae2:cable_anchor",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "0A67F5DCD1D8AAFD",
+          "item": {
+            "Count": 1,
+            "id": "ae2:name_press",
+            "tag": {}
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Ancre de câble",
+      "x": 4.5,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "60357DF5C56A4BCA"
+      ],
+      "description": [
+        "Le Color Applicator est un outil rechargeable qui permet la teinture de câbles dans le monde entier. Il fonctionne plus ou moins comme une cellule de rangement spécialisée à charger soit avec des colorants vanille ou des boules de peinture pour des couleurs spécifiques, ainsi que des boules de neige pour laver les couleurs et retourner les câbles à leur variante Fluix. Appliquer la couleur à un câble utilise 100AE d'énergie de sa batterie interne, pour un total de 3400 segments de câbles en une seule charge."
+      ],
+      "id": "286A718667EBDAE2",
+      "rewards": [
+        {
+          "id": "10463276F28A3AEA",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "37A0724397CDA70E",
+          "item": {
+            "Count": 1,
+            "id": "ae2:color_applicator",
+            "tag": {}
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Applicateur de couleur",
+      "x": 5.5,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "39CC762E2486DAEF"
+      ],
+      "description": [
+        "Ces trois derniers objets sont plus ou moins quelques jouets supplémentaires fournis par AE2 et ne s'adaptent pas nécessairement à l'un de ces arbres de quête. Le personnel chargé est juste un personnel à moteur simple qui traite 3 cœurs de dommages et consomme 300AE par coup. Il utilise également des mécaniques de combat pré-1.9, ce qui signifie que vous pouvez spam-cliquez avec ceci comme dans les bons vieux jours. Le Manipulateur Entropy, lorsqu'il est utilisé sur certains blocs dans le monde, les fondra en place, comme le sable au verre et les minerais métalliques aux lingots métalliques. Sinon, il allumera simplement un feu sur le bloc. Enfin, le Cannon de Matière fonctionne de la même manière que l'Applicateur de Couleur comme cellule dédiée à la détention d'objets 'ammo' tels que boules de Matière et pépites de Fer/or, qui peuvent ensuite être éteints pour causer des dommages aux foules ou casser des blocs."
+      ],
+      "hide_dependency_lines": 1,
+      "id": "7695D187EEBBAF6D",
+      "rewards": [
+        {
+          "id": "5FF707C905324E16",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "subtitle": "Trop chaud pour l'ATF",
+      "tasks": [
+        {
+          "id": "555B188FF0FCE34A",
+          "item": "ae2:charged_staff",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "405167A95C694488",
+          "item": "ae2:entropy_manipulator",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "0AF2CE560D3E7866",
+          "item": {
+            "Count": 1,
+            "id": "ae2:matter_cannon",
+            "tag": {}
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Les... armes ?",
+      "x": 15.0,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "06B9B4EF54DE083E"
+      ],
+      "description": [
+        "La prochaine chose à faire pour permettre l'accès au réseau sans fil est le point d'accès sans fil ME. Le point d'accès est utilisé pour ouvrir le réseau à l'accès sans fil via un terminal sans fil, et dispose d'une plage de réglage (finie) en fonction du nombre de boosters sans fil insérés dans le point d'accès."
+      ],
+      "hide_dependency_lines": 1,
+      "id": "4421BDC3D0D700D2",
+      "rewards": [
+        {
+          "id": "5DBBB999D716CED2",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "07791ACEAA8A77F2",
+          "item": "ae2:wireless_access_point",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "0D9A297FD26AC250",
+          "item": "ae2:wireless_booster",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Point d'accès sans-fil ME",
+      "x": 9.0,
+      "y": 4.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "06B9B4EF54DE083E"
+      ],
+      "description": [
+        "Quant à l'extension sans fil du réseau ME lui-même, la première étape est certes quelque peu peu peu orthodoxe. Le Condenseur de Matière est la prise d'AE2 sur une poubelle, annulant tous les éléments insérés dans elle. Cependant, lorsqu'il est équipé d'un composant de stockage, le condenseur peut exploiter une partie de l'énergie résiduelle de l'article étant vide et le stocker pour faire deux objets spéciaux d'artisanat à partir d'une énergie suffisamment concentrée. Le premier de ces deux éléments est la boule de Matière, nécessitant au moins un composant de stockage 1k et 256 objets' de matériel vide."
+      ],
+      "hide_dependency_lines": 1,
+      "id": "09F3C9642CE49369",
+      "rewards": [
+        {
+          "id": "4F7547B22E27AB61",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "0E2F4AFE19A9457A",
+          "item": "ae2:condenser",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "0AFFF2AA861CBD5A",
+          "item": "ae2:matter_ball",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Matière condensée",
+      "x": 7.0,
+      "y": 4.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "4421BDC3D0D700D2"
+      ],
+      "description": [
+        "Le terminal sans fil fonctionne de façon identique à un terminal ordinaire, mais sans fil. Avant qu'il puisse être utilisé pour accéder à un réseau, il doit d'abord être relié au réseau en le plaçant dans la fente supérieure droite du point d'accès sans fil. S'il n'est pas relié à un réseau, ou est hors de gamme ou de puissance, le terminal ne fonctionnera pas."
+      ],
+      "id": "28E1802CA1013377",
+      "rewards": [
+        {
+          "id": "0E97E44FB97C411A",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "C'est pour ça que tu es là.",
+      "tasks": [
+        {
+          "id": "352BF5351F2F0A93",
+          "item": "ae2:wireless_terminal",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "6DC19EC8A8B4E54C",
+          "item": "ae2:wireless_crafting_terminal",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Terminaux sans fil",
+      "x": 11.0,
+      "y": 6.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "09F3C9642CE49369"
+      ],
+      "description": [
+        "Lorsque vous utilisez un composant de stockage 64k ou plus, le Matter Condenser devient capable de condenser significativement plus pour produire une Singularity. Une singularité unique nécessite 256000 objets à vider. C'est exactement 4000 piles! Voyez ce qui se passe lorsque vous lancez cette singularité sur le sol avec un morceau de poussière d'ender. Vous devrez causer des dommages à l'environnement pendant que vous êtes à elle, mais heureusement AE2 offre son propre Tiny TNT pour minimiser cela."
+      ],
+      "icon": "ae2:singularity",
+      "id": "3BB07C2C8BC5DADA",
+      "rewards": [
+        {
+          "id": "5F452E533660F54A",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Pas tout à fait antimatière",
+      "tasks": [
+        {
+          "id": "22782D10D83F7852",
+          "item": "ae2:singularity",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "680AA8C454AA340D",
+          "item": "ae2:ender_dust",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "021D9961A36CC828",
+          "item": "ae2:tiny_tnt",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Matière hyper-condensée",
+      "x": 5.0,
+      "y": 4.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2D4363CBAE3FC959"
+      ],
+      "description": [
+        "La carte Fuzzy permet d'adapter un élément filtré indépendamment de toute métadonnées (NBT) telle que les dommages ou les enchantements, tandis que la carte Inverter bascule le filtre sur ces bus d'être une liste blanche à être une liste noire."
+      ],
+      "id": "649E46CAC34FB240",
+      "rewards": [
+        {
+          "id": "6A526264C9E53493",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "circle",
+      "subtitle": "Les deux autres cartes IO",
+      "tasks": [
+        {
+          "id": "5938E3A6DF48077C",
+          "item": "ae2:fuzzy_card",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "0A979EA9A5DCE3F5",
+          "item": "ae2:inverter_card",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "C'est un discours discret.",
+      "x": 26.0,
+      "y": -2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "3BB07C2C8BC5DADA"
+      ],
+      "description": [
+        "Si vous avez fait cette dernière quête correctement, vous auriez dû transformer cette singularité en une paire de singularités entangées quantiques. Ces nouvelles singularités sont utilisées pour relier un dispositif en forme d'anneau appelé pont réseau quantique. Lorsque deux de ces anneaux individuels ont été reliés en utilisant les singularités entangées quantiques et ont commencé avec une certaine puissance AE (par exemple une cellule d'énergie), un réseau ME peut être élargi sans fil de l'autre côté du pont, sur de longues distances ou même des dimensions."
+      ],
+      "id": "07C9E4EE22C74449",
+      "rewards": [
+        {
+          "id": "70F9C16EEB1E11BD",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "count": 16,
+          "id": "344A3A753DEB3E77",
+          "item": "ae2:quantum_ring",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 2,
+          "id": "3510DF242D7FE5CD",
+          "item": "ae2:quantum_link",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 2,
+          "id": "3F8BA1D34E871096",
+          "item": "ae2:quantum_entangled_singularity",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Pont du réseau quantique",
+      "x": 3.0,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "60357DF5C56A4BCA"
+      ],
+      "description": [
+        "Dans Applied Energistics 2, chaque réseau ME dispose d'un certain nombre de canaux, ce qui signifie simplement combien d'appareils réseau peuvent s'adapter sur l'ensemble du réseau. En règle générale, tout appareil qui gère plus ou moins les données ME directement (éléments stockés dans le réseau) et effectue une certaine forme d'E/S prendra un canal. Habituellement, les composants qui ne sont concernés que par le stockage de puissance interne du réseau, comme les cellules énergétiques et les abonnés, ne prennent pas de canaux."
+      ],
+      "id": "4B56F88729181D06",
+      "rewards": [
+        {
+          "id": "0C9ADDB4FF9F8ACF",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "4A1B5348F979D9DD",
+          "type": "item",
+          "item": "ae2:fluix_glass_cable",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Avant-propos sur les canaux",
+      "x": 7.0,
+      "y": 1.5,
+      "repeatable": false
+    },
+    {
+      "can_repeat": 0,
+      "description": [
+        "Cette quête a été créée par AllTheMods Staff, ou un contributeur communautaire pour une utilisation dans AllTheMods Modpacks.",
+        "Comme tous les packs AllTheMods sont sous licence All Rights Reserved, cette Quest n'est pas autorisée à être utilisée dans les packs publics non publiés par l'équipe AllTheMods, sans autorisation explicite.",
+        "Cette quête est intentionnellement cachée, si vous voyez cela, vous êtes en mode édition.",
+        "Repère de lecture : obtiens le livre indiqué pour poursuivre. Cette étape ne donne aucune récompense."
+      ],
+      "disable_toast": 1,
+      "hide_details_until_startable": 1,
+      "hide_until_deps_visible": 1,
+      "icon": {
+        "Count": 1,
+        "id": "ftbquests:custom_icon",
+        "tag": {
+          "Icon": "minecraft:item/barrier"
+        }
+      },
+      "id": "6F9F42D123920653",
+      "invisible": 1,
+      "optional": 1,
+      "shape": "octagon",
+      "tasks": [
+        {
+          "id": "6C11C9E4DA3D7D00",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "05EACF35C7EC7D12",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 0.0,
+      "y": -1.0,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Livre",
+      "dependencies": []
+    }
+  ],
+  "title": "Applied Energistics 2",
+  "default_consume_items": false
+}

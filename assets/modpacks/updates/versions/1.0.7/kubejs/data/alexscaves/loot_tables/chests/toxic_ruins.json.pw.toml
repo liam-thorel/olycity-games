@@ -1,0 +1,8 @@
+name = "kubejs/data/alexscaves/loot_tables/chests/toxic_ruins.json"
+filename = "toxic_ruins.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/e39eeac43e64ff1359ef3a5ea34449223359936fc8420f81b73b1239af075da7"
+hash-format = "sha256"
+hash = "e39eeac43e64ff1359ef3a5ea34449223359936fc8420f81b73b1239af075da7"

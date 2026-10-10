@@ -1,0 +1,1123 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "diamond",
+  "filename": "atm9_refined_storage",
+  "group": "397831C23DCA38BF",
+  "icon": "refinedstorage:creative_controller",
+  "id": "13A185130FB6FE15",
+  "order_index": 2,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "description": [
+        "Refined Storage rassemble tes objets dans un réseau alimenté. Le contrôleur fournit l’énergie aux composants connectés et constitue le point de départ.",
+        "Prépare un petit réseau avec du stockage et un terminal. Tu pourras ensuite ajouter l’autocraft ; AE2 reste une autre option du pack."
+      ],
+      "id": "6CE8F66818377CB4",
+      "shape": "gear",
+      "size": 2.0,
+      "subtitle": "Débuter",
+      "tasks": [
+        {
+          "id": "6BBAA30840E84FB9",
+          "item": "refinedstorage:controller",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Le contrôleur Refined Storage",
+      "x": -6.0,
+      "y": -2.5,
+      "rewards": [],
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "0D461D8A20A36C21"
+      ],
+      "description": [
+        "Le disque de stockage 1k peut stocker 1000 objets."
+      ],
+      "id": "3FAD3BF6BF1D6D07",
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "393732504212B3A1",
+          "item": "refinedstorage:1k_storage_part",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&6Pièce de stockage 1k",
+      "x": -0.5,
+      "y": -0.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "3FAD3BF6BF1D6D07"
+      ],
+      "description": [
+        "Le disque de stockage 4k peut stocker 4000 objets."
+      ],
+      "id": "25063509D01A7CAC",
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "2261B5616B908950",
+          "item": "refinedstorage:4k_storage_part",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&ePièce de stockage 4k",
+      "x": 0.0,
+      "y": 0.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "25063509D01A7CAC"
+      ],
+      "description": [
+        "Le disque de stockage 16k peut stocker 16000 objets."
+      ],
+      "id": "1FE16BEFE518380A",
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "45B1EC448B81B3D9",
+          "item": "refinedstorage:16k_storage_part",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&aPièce de stockage 16k",
+      "x": -0.5,
+      "y": 0.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1FE16BEFE518380A"
+      ],
+      "description": [
+        "Le disque de stockage 64k peut stocker 64000 objets."
+      ],
+      "id": "4BF1889D40E009C0",
+      "shape": "hexagon",
+      "tasks": [
+        {
+          "id": "03342C49878BE86A",
+          "item": "refinedstorage:64k_storage_part",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&bPièce de stockage 64k",
+      "x": -0.5,
+      "y": 1.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "416D60ABBAC82766"
+      ],
+      "description": [
+        "Une fois qu'une recette est placée dans l'artisan, vous pourrez 'Demander' un article à fabriquer à partir de votre Grille. Vous pouvez le faire en cliquant sur CTRL+Shift lorsque vous cliquez sur l'article pour lequel vous avez une recette pour faire monter l'interface graphique. Ce bloc peut également être placé face à une machine pour utiliser des modèles de traitement. Par exemple, si vous pointez l'artisan sur une fournaise, vous pouvez mettre une recette à l'intérieur pour une recette pour laquelle vous avez besoin d'une fournaise, comme la fonte des transformateurs bruts. Tant que l'artisan est attaché à votre système et que la fournaise a un importateur attaché à celui-ci, l'artisan vous permettra de demander la version fondue du Processeur!"
+      ],
+      "id": "538FCDB841606243",
+      "min_width": 300,
+      "rewards": [
+        {
+          "count": 4,
+          "id": "0734DCC34E659A9E",
+          "item": "refinedstorage:pattern",
+          "random_bonus": 4,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.25,
+      "subtitle": "Artisanat automatique !",
+      "tasks": [
+        {
+          "id": "31DEE12E9F767923",
+          "item": "refinedstorage:crafter",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Crafteur",
+      "x": 2.0,
+      "y": -8.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6CE8F66818377CB4"
+      ],
+      "description": [
+        "&9Les câbles sont utilisés pour connecter des blocs et des éléments à votre système. Au début, vous pouvez obtenir en plaçant des blocs à côté l'un de l'autre pour les connecter à votre système, mais les câbles vous permettent de vous étendre! C'est un agrafe pour tout réseau de Refined Storage."
+      ],
+      "id": "4731D57FE54312FC",
+      "rewards": [
+        {
+          "count": 8,
+          "id": "4020D978B4DBCBE9",
+          "item": "refinedstorage:cable",
+          "random_bonus": 8,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "octagon",
+      "size": 1.5,
+      "subtitle": "Connexion du système",
+      "tasks": [
+        {
+          "id": "1CB5329EC9DB565F",
+          "item": "refinedstorage:cable",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Câbles",
+      "x": -6.0,
+      "y": -5.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "4731D57FE54312FC"
+      ],
+      "description": [
+        "L'importateur est utilisé pour tirer des éléments d'un bloc connecté. Par exemple, vous pouvez les utiliser sur les Furnaces pour tirer le produit fini dans votre système. Assurez-vous d'attraper des mises à niveau Speed ou Stack pour eux! Vous pouvez également filtrer quels éléments sont tirés."
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "4D813DFF85B28CB6",
+      "shape": "hexagon",
+      "subtitle": "Importation d'objets !",
+      "tasks": [
+        {
+          "id": "753DC12E882C603F",
+          "item": "refinedstorage:importer",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Importeur",
+      "x": -6.5,
+      "y": -6.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "4731D57FE54312FC"
+      ],
+      "description": [
+        "Cette interface cassera automatiquement le bloc auquel elle est attachée. Vous pouvez également le configurer sur des blocs de liste blanche, ce qui est utile pour automatiser certains processus, comme la fabrication de boîtiers dans Create."
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "234BE0A1503E17A2",
+      "shape": "hexagon",
+      "subtitle": "Les blocs cassés !",
+      "tasks": [
+        {
+          "id": "3D32BF2B4837C857",
+          "item": "refinedstorage:destructor",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Destructeur",
+      "x": -4.5,
+      "y": -6.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "4731D57FE54312FC"
+      ],
+      "description": [
+        "Cette interface placera le bloc désigné dans la direction qu'il est pointé. Vous pouvez désigner le bloc dans l'interface graphique. Ceci est utile pour l'automatisation!"
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "05E88A6E8152D746",
+      "shape": "hexagon",
+      "subtitle": "Placer des blocs !",
+      "tasks": [
+        {
+          "id": "4BB271AE21434E40",
+          "item": "refinedstorage:constructor",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Constructeur",
+      "x": -5.5,
+      "y": -6.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "4731D57FE54312FC"
+      ],
+      "description": [
+        "L'exportateur est utilisé pour pousser des objets de votre système dans un bloc de votre stockage réseau. Cela peut être utilisé pour remplir Furnaces de minerais ou de carburant, pousser des matériaux dans les coffres désignés, etc. Vous pouvez également filtrer quels objets sont poussés. Besoin de plus de fentes de filtre?"
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "44A5566C31C31279",
+      "shape": "hexagon",
+      "subtitle": "Exporter des objets !",
+      "tasks": [
+        {
+          "id": "265FFB971395E16F",
+          "item": "refinedstorage:exporter",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Exporteur",
+      "x": -7.5,
+      "y": -6.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "0D461D8A20A36C21"
+      ],
+      "description": [
+        "La pièce de stockage de fluide 64k est utilisée pour fabriquer le disque de stockage de fluide 64k."
+      ],
+      "id": "405BA51FC922D2F7",
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "0BF6DFE2DFF34FBF",
+          "item": "refinedstorage:64k_fluid_storage_part",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&664k partie fluide",
+      "x": -2.5,
+      "y": -0.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "405BA51FC922D2F7"
+      ],
+      "description": [
+        "La pièce de stockage de fluide 64k est utilisée pour fabriquer le disque de stockage de fluide 64k."
+      ],
+      "id": "042D5686DD9CE982",
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "1BDB0910C8AE671F",
+          "item": "refinedstorage:256k_fluid_storage_part",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&ePartie fluide de 256k",
+      "x": -3.0,
+      "y": 0.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "042D5686DD9CE982"
+      ],
+      "description": [
+        "La pièce de rangement de 1024k Fluid est utilisée pour fabriquer le disque de stockage de 1024k Fluid."
+      ],
+      "id": "1ECD77DD180E2907",
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "075ED32B441A7303",
+          "item": "refinedstorage:1024k_fluid_storage_part",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&a1024k partie fluide",
+      "x": -2.5,
+      "y": 0.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1ECD77DD180E2907"
+      ],
+      "description": [
+        "La pièce de stockage de fluide de 4096k est utilisée pour fabriquer le disque de stockage de fluide de 4096k."
+      ],
+      "id": "20F39F934856B4A4",
+      "shape": "hexagon",
+      "tasks": [
+        {
+          "id": "68DB4D579CF9FFF6",
+          "item": "refinedstorage:4096k_fluid_storage_part",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&b4096k Partie fluide",
+      "x": -2.5,
+      "y": 1.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "4731D57FE54312FC"
+      ],
+      "description": [
+        "Ce type d'interface de câble est probablement l'élément le plus important que l'on puisse faire dans leur parcours de Refined Storage. Ce type d'interface de câble relie un stockage externe à votre réseau de Refined Storage. Il permet fondamentalement à RS de regarder dans le conteneur de stockage pour vous permettre d'accéder à celui-ci dans votre grille! Cela fonctionne sur de nombreuses choses, y compris, mais non limité à: Poches, Barreaux, Tiroirs, Contrôleurs de tiroirs, et plus! Si vous ne pouvez pas faire des disques et avoir un tas de coffres partout, c'est votre meilleur pari dans la création d'un réseau de stockage!"
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "0B2A6B8D600E3B03",
+      "min_width": 300,
+      "shape": "hexagon",
+      "tasks": [
+        {
+          "id": "1EA98BC76AB357E8",
+          "item": "refinedstorage:external_storage",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Stockage externe",
+      "x": -7.0,
+      "y": -4.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6CE8F66818377CB4"
+      ],
+      "description": [
+        "Le gestionnaire de sécurité vous permet d'accorder l'accès et les permissions aux utilisateurs de votre réseau. Une fois placé dans votre système, vous devrez créer une carte de sécurité pour chaque joueur pour lequel vous souhaitez configurer les permissions. Lorsqu'aucune carte n'est présente, tout le monde a accès à toutes les permissions. Pour limiter les permissions et l'accès à tous les joueurs non configurés, configurer une carte qui n'est pas liée à un joueur et la mettre dans le gestionnaire. La personne qui a placé le gestionnaire de sécurité aura toujours accès à celle-ci."
+      ],
+      "id": "33615DC7317F3180",
+      "min_width": 300,
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "5B48F95429F92110",
+          "item": "refinedstorage:security_card",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Sécurisez votre réseau !",
+      "tasks": [
+        {
+          "id": "2B008DCAFBD8714E",
+          "item": "refinedstorage:security_manager",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Poste de sécurité",
+      "x": -7.0,
+      "y": -1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6ECD4A2BF326B002"
+      ],
+      "description": [
+        "Super! Nous pouvons stocker des objets virtuellement, mais comment voyons-nous ce qui est sur le réseau? Pour accéder au système, vous aurez besoin de créer une grille. La grille est la forme la plus basique de 'Afficher' pour les objets de votre inventaire."
+      ],
+      "id": "7E1CF54578260F4E",
+      "shape": "rsquare",
+      "size": 1.25,
+      "tasks": [
+        {
+          "id": "4BCB3E8ED3E94604",
+          "item": "refinedstorage:grid",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Accès à notre stockage réseau",
+      "x": 2.0,
+      "y": -2.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7E1CF54578260F4E"
+      ],
+      "description": [
+        "Cela vous permet d'accéder à votre stockage, mais avec une table d'artisanat! Soyons honnêtes, personne n'utilise seulement des grilles régulières."
+      ],
+      "id": "7AD125A936FCE38D",
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "6FF10D792E90B995",
+          "item": "refinedstorage:crafting_grid",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Grille de craft",
+      "x": 1.5,
+      "y": -1.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "66886C7B92388559"
+      ],
+      "description": [
+        "Cette grille vous permet d'imprimer des recettes sur des modèles pour votre réseau. La façon la plus simple de créer une recette pour un modèle est de chercher l'article dans JEI, puis cliquez sur le bouton «+» en bas à droite de la recette. Cela placera alors la recette dans la grille. Sur le côté droit, la fente supérieure est utilisée pour stocker des motifs vierges. Avec un motif blanc à l'intérieur, vous devriez être en mesure de cliquer sur la flèche en dessous pour imprimer la recette sur le modèle."
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "416D60ABBAC82766",
+      "min_width": 300,
+      "shape": "square",
+      "tasks": [
+        {
+          "id": "0CD4EE157AA5E354",
+          "item": "refinedstorage:pattern_grid",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Grille de modèle",
+      "x": 2.0,
+      "y": -6.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7E1CF54578260F4E"
+      ],
+      "description": [
+        "Vous avez besoin d'une grille de liquide pour voir quels fluides vous avez sur vos disques de liquide. Conseil Pro : Si vous voulez stocker des gaz du Mekanism, voyez si vous pouvez le transformer en liquide en premier à l'aide d'un condensateur rotatif."
+      ],
+      "id": "0FF559D9E5297B94",
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "2A7039E6BABEFA5B",
+          "item": "refinedstorage:fluid_grid",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Grille de fluide",
+      "x": 2.5,
+      "y": -1.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1748B4F4F0512D81"
+      ],
+      "description": [
+        "Vous permet d'accéder à votre stockage sans fil."
+      ],
+      "id": "6F9F04559EAC0279",
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "4AED2F43759F93DD",
+          "item": "refinedstorage:wireless_grid",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Grille sans fil",
+      "x": 5.5,
+      "y": -3.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1748B4F4F0512D81"
+      ],
+      "description": [
+        "Vous permet d'accéder à votre réseau de fluides sans fil."
+      ],
+      "id": "200FE47C60A17837",
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "0ACEAE868212768C",
+          "item": "refinedstorage:wireless_fluid_grid",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Grille de liquide sans fil",
+      "x": 6.5,
+      "y": -3.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7E1CF54578260F4E"
+      ],
+      "description": [
+        "Le Portable Grid est un stockage portable qui n'est pas connecté à un réseau. Il vous permet d'interagir avec un disque de stockage sans être connecté à un réseau."
+      ],
+      "hide_dependency_lines": 0,
+      "hide_until_deps_visible": 0,
+      "id": "1E402A83F00C9F1F",
+      "optional": 1,
+      "shape": "diamond",
+      "subtitle": "Grille en marche",
+      "tasks": [
+        {
+          "id": "76224D2205438F24",
+          "item": {
+            "Count": 1,
+            "id": "refinedstorage:portable_grid",
+            "tag": {}
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Grille portative",
+      "x": 2.0,
+      "y": -1.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6CE8F66818377CB4"
+      ],
+      "description": [
+        "Pour stocker vos objets, vous devez créer des disques qui sont stockés dans un lecteur de disque. Vous pouvez l'attacher à votre réseau en le plaçant à côté de votre contrôleur, ou en utilisant des tuyaux."
+      ],
+      "id": "6ECD4A2BF326B002",
+      "shape": "rsquare",
+      "size": 1.25,
+      "subtitle": "C'est l'heure du flippy !",
+      "tasks": [
+        {
+          "id": "42140EFC44B5D855",
+          "item": "refinedstorage:disk_drive",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Création d'un stockage virtuel",
+      "x": -1.5,
+      "y": -2.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6ECD4A2BF326B002"
+      ],
+      "description": [
+        "Permet de prendre des éléments et des fluides d'un disque dans les disques d'une autre grille."
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "69A77D781882FBD0",
+      "shape": "hexagon",
+      "tasks": [
+        {
+          "id": "02CE5AE9C068FC59",
+          "item": "refinedstorage:disk_manipulator",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Manipulateur de disque",
+      "x": -1.5,
+      "y": -4.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7E1CF54578260F4E"
+      ],
+      "description": [
+        "&9Les motifs sont le pain et le beurre de l'auto-artisanat. Ces recettes de magasin pour faire savoir à votre réseau RS comment fabriquer des objets."
+      ],
+      "id": "66886C7B92388559",
+      "rewards": [
+        {
+          "count": 8,
+          "id": "118739D3ACE7C8D4",
+          "item": "refinedstorage:pattern",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "5DCEB01351948397",
+          "item": "refinedstorage:pattern",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "L'automobile !",
+      "x": 2.0,
+      "y": -4.449999999999999,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "4731D57FE54312FC"
+      ],
+      "description": [
+        "Une fois connecté à votre système, ce bloc affichera le numéro actuel d'un élément dans votre réseau."
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "17BD0138802259A3",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "33D0D7261CCFF397",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "tasks": [
+        {
+          "id": "0FA8A0192A8F2138",
+          "item": "refinedstorage:storage_monitor",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Moniteur de stockage",
+      "x": -5.0,
+      "y": -4.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7E1CF54578260F4E"
+      ],
+      "dependency_requirement": "one_started",
+      "description": [
+        "Si vous souhaitez accéder à votre réseau de Refined Storage sans fil, vous devez commencer par créer un émetteur sans fil. Vous pouvez l'attacher n'importe où sur votre système. Ceci est nécessaire pour utiliser des grilles sans fil."
+      ],
+      "hide_dependency_lines": 0,
+      "id": "1748B4F4F0512D81",
+      "shape": "hexagon",
+      "subtitle": "Stockage, à distance",
+      "tasks": [
+        {
+          "id": "0B1261AA3A0F6EB6",
+          "item": "refinedstorage:wireless_transmitter",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&5Accès sans fil",
+      "x": 5.5,
+      "y": -2.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6ECD4A2BF326B002"
+      ],
+      "dependency_requirement": "one_started",
+      "description": [
+        "Pour cela, nous aurons besoin d'un boîtier de stockage que nous combinerons avec une pièce de stockage pour créer un disque de stockage. Il suffit simplement de faire la taille désirée de la pièce, puis de combiner avec le boîtier pour créer un disque. Le disque de stockage est utilisé pour stocker vos objets pratiquement une fois placé à l'intérieur du disque. Il doit être mis dans un disque. Le disque de stockage a gagné un déshabillé lorsqu'il est tombé dans le monde."
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "0D461D8A20A36C21",
+      "min_width": 300,
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "58351482ABF4DF3E",
+          "item": "refinedstorage:storage_housing",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Boitier de stockage",
+      "x": -1.5,
+      "y": -1.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6CE8F66818377CB4"
+      ],
+      "description": [
+        "En raison de la limite de contrôleur, vous finirez probablement par vouloir connecter différents systèmes à votre hub principal sans qu'un milliard de câbles les relient. Ceci est fait à l'aide des émetteurs réseau et des récepteurs. Les émetteurs devraient être connectés à votre système principal, où que votre contrôleur soit. Le récepteur devrait aller où que vous souhaitiez que votre réseau externe soit. Par exemple, cela peut être une partie distincte de votre base où vous avez Bees, une ferme de masse, etc. Pour connecter le récepteur à votre réseau principal, vous devrez utiliser une carte réseau. Pour lier la carte réseau, faites un clic droit sur le récepteur réseau, puis placez la carte réseau dans l'émetteur réseau qui est attaché à votre système principal."
+      ],
+      "id": "0B8DC447212FD46B",
+      "min_width": 300,
+      "rewards": [
+        {
+          "id": "2FE2F45D8C299DFA",
+          "item": "refinedstorage:network_card",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Réseaux de connexion sans fil!",
+      "tasks": [
+        {
+          "id": "24D0A48C83E27B8E",
+          "item": "refinedstorage:network_transmitter",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "0B00EC8896CC4E4E",
+          "item": "refinedstorage:network_receiver",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Réseaux de réseau",
+      "x": -5.0,
+      "y": -1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "405BA51FC922D2F7",
+        "3FAD3BF6BF1D6D07"
+      ],
+      "dependency_requirement": "one_completed",
+      "description": [
+        "Vous pouvez créer des blocs de stockage à la place et simplement gifler le bloc quelque part dans votre système. Quels que soient les éléments qui finissent dans le bloc seront stockés à l'intérieur quand vous le cassez aussi bien. Si vous voulez le défaire, vous pouvez faire un clic droit en le tenant."
+      ],
+      "id": "2DB699B14FA3CBF8",
+      "optional": 1,
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "7D74AE06DFBBA13F",
+          "item": {
+            "Count": 1,
+            "id": "refinedstorage:64k_fluid_storage_block"
+          },
+          "title": "Blocs de stockage",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -1.5,
+      "y": 0.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Bloc de stockage de fluides de 64k"
+    },
+    {
+      "dependencies": [
+        "234BE0A1503E17A2"
+      ],
+      "description": [
+        "Ces mises à jour ajoutent des enchantements à votre Destructeur. Vous vous demandez pourquoi vous utiliseriez ceci? Imaginez avoir une pompe à soie ou à la soie dans votre système. Vous pouvez avoir un Constructeur place ces minerais, puis un Destructeur avec Fortune dessus pour le casser pour des minerais encore plus crus."
+      ],
+      "hide_dependency_lines": 0,
+      "id": "5C4F81DD662AAF34",
+      "min_width": 300,
+      "optional": 1,
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "79BB2ED90AFA1E91",
+          "item": "refinedstorage:silk_touch_upgrade",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "49ACD02A45409DBF",
+          "item": "refinedstorage:fortune_3_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Mise à niveau du destructeur",
+      "x": -3.5,
+      "y": -6.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "4731D57FE54312FC"
+      ],
+      "dependency_requirement": "one_completed",
+      "description": [
+        "La Speed Upgrade fait exactement ce qu'elle dit qu'elle fait. Elle augmentera la vitesse à laquelle fonctionne l'interface/bloc. Besoin d'un importateur pour tirer plus vite? Vous voulez que vos artisans travaillent plus vite? C'est la mise à niveau! La Stack Upgrade augmente la vitesse de transfert par une pile d'objets plutôt qu'un seul. Combinez avec Speed Upgrades!"
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "02F1E70385AD1D7A",
+      "rewards": [
+        {
+          "id": "63167ED1F18838BA",
+          "item": "refinedstorage:speed_upgrade",
+          "random_bonus": 2,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "3BA2F71AC755D2A5",
+          "item": "refinedstorage:speed_upgrade",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "5686E65FDD48F67D",
+          "item": "refinedstorage:stack_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Accélérer tout !",
+      "x": -7.5,
+      "y": -5.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "4731D57FE54312FC"
+      ],
+      "description": [
+        "Le filtre est un élément utilisé dans une grille pour spécifier quels éléments ou fluides peuvent être visibles."
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "122439941CA14E27",
+      "optional": 1,
+      "tasks": [
+        {
+          "id": "7998DCAD16266960",
+          "item": "refinedstorage:filter",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Filtre",
+      "x": -4.5,
+      "y": -5.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1748B4F4F0512D81"
+      ],
+      "description": [
+        "Pour augmenter la portée de votre connexion sans fil à votre système, vous aurez besoin de faire des mises à niveau de gamme. L'émetteur sans fil ne peut contenir que 4 au total. Voici un sur la maison."
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "58700BBD15B6B6B0",
+      "rewards": [
+        {
+          "id": "029D77C3E4849C01",
+          "item": "refinedstorage:range_upgrade",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "circle",
+      "subtitle": "Je veux dire portée de transmission",
+      "tasks": [
+        {
+          "id": "17215B16C07CE41F",
+          "item": "refinedstorage:range_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Augmentation de la portée Wifi",
+      "x": 5.5,
+      "y": -1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "4731D57FE54312FC"
+      ],
+      "description": [
+        "La mise à niveau de l'appareil vous permet de maintenir une certaine quantité d'objets dans un bloc ou une machine. Un excellent exemple de cela est de dire à votre réseau que vous voulez garder 64 charbon dans une fournaise. Vous placez la mise à niveau dans l'exportateur attaché au four, et le mettre à 64. Votre système va alors essayer de garder le four plein de carburant! Mais si vous avez besoin d'un article qui est fabriqué? La mise à niveau de l'artisanat fait exactement cela. Si vous avez la recette apprise à l'intérieur d'un artisan, ajouter cette mise à niveau à une interface lui permettra de l'élaborer si vous manquez."
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 1,
+      "id": "45EBBE4D349A400D",
+      "min_width": 300,
+      "rewards": [
+        {
+          "id": "15EBCFD643C14BD9",
+          "item": "refinedstorage:regulator_upgrade",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "695AFCC3186E4D80",
+          "item": "refinedstorage:crafting_upgrade",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "52E06B5FCFBE2BD0",
+          "item": "refinedstorage:regulator_upgrade",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "5E3DA89F58828CB2",
+          "item": "refinedstorage:crafting_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Réglage des éléments dans les interfaces",
+      "x": -8.5,
+      "y": -6.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "416D60ABBAC82766"
+      ],
+      "description": [
+        "Lorsqu'il est attaché à votre système, le moniteur d'artisanat vous permet de voir quels sont les éléments actuellement dans votre file d'attente d'artisanat. Vous en aurez besoin si vous voulez pouvoir annuler les artisanats qui ne fonctionnent pas ou qui sont buggués."
+      ],
+      "id": "7817BDD8678D9D1F",
+      "shape": "pentagon",
+      "tasks": [
+        {
+          "id": "4DED8A7597521753",
+          "item": "refinedstorage:crafting_monitor",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Surveillance de la file d'attente pour l'artisanat",
+      "x": 1.0,
+      "y": -6.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6CE8F66818377CB4"
+      ],
+      "description": [
+        "La clé est un outil qui peut faire deux choses: -> Rotation des blocs -> Break Fined Storage couvertures. Il suffit de faire un clic droit et de sneak lors de l'utilisation de la clé."
+      ],
+      "id": "791ACA6D148EBB85",
+      "subtitle": "Tu me fais tourner le dos.",
+      "tasks": [
+        {
+          "id": "15C3AE4638644951",
+          "item": "refinedstorage:wrench",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Clé à molette",
+      "x": -6.0,
+      "y": -1.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "can_repeat": 0,
+      "description": [
+        "Cette quête a été créée par AllTheMods Staff, ou un contributeur communautaire pour une utilisation dans AllTheMods Modpacks.",
+        "Comme tous les packs AllTheMods sont sous licence All Rights Reserved, cette Quest n'est pas autorisée à être utilisée dans les packs publics non publiés par l'équipe AllTheMods, sans autorisation explicite.",
+        "Cette quête est intentionnellement cachée, si vous voyez cela, vous êtes en mode édition.",
+        "Repère de lecture : obtiens le livre indiqué pour poursuivre. Cette étape ne donne aucune récompense."
+      ],
+      "disable_toast": 1,
+      "hide_details_until_startable": 1,
+      "hide_until_deps_visible": 1,
+      "icon": {
+        "Count": 1,
+        "id": "ftbquests:custom_icon",
+        "tag": {
+          "Icon": "minecraft:item/barrier"
+        }
+      },
+      "id": "3F22C97905F47146",
+      "invisible": 1,
+      "optional": 1,
+      "shape": "octagon",
+      "tasks": [
+        {
+          "id": "14352164E9632975",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "55077DF768846D31",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": -7.5,
+      "y": -2.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Livre",
+      "dependencies": []
+    }
+  ],
+  "title": "Refined Storage",
+  "default_consume_items": false
+}

@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/village/village_shepherd.json"
+filename = "village_shepherd.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/d384d05a1e5d7b31f858b3ca2a82362457941f9c0997fa39e9d6672fc353a817"
+hash-format = "sha256"
+hash = "d384d05a1e5d7b31f858b3ca2a82362457941f9c0997fa39e9d6672fc353a817"

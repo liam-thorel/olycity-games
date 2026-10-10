@@ -1,0 +1,8 @@
+name = "kubejs/data/olycity/advancements/find_neron.json"
+filename = "find_neron.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/c081a58d45ca732ac4aec88b0f9618ac0229eb5aa65c3878362acb643e053f53"
+hash-format = "sha256"
+hash = "c081a58d45ca732ac4aec88b0f9618ac0229eb5aa65c3878362acb643e053f53"

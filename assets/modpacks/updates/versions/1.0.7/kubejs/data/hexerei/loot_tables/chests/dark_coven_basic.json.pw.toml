@@ -1,0 +1,8 @@
+name = "kubejs/data/hexerei/loot_tables/chests/dark_coven_basic.json"
+filename = "dark_coven_basic.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/dce75a90063926af52eae5104cf0db6ec0e7f5d9cd7173ebb2f51a8639617dd6"
+hash-format = "sha256"
+hash = "dce75a90063926af52eae5104cf0db6ec0e7f5d9cd7173ebb2f51a8639617dd6"

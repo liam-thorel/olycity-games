@@ -1,8 +1,0 @@
-name = "mods/ModernChickens-1.20.1-2.6.1-Forge.jar"
-filename = "ModernChickens-1.20.1-2.6.1-Forge.jar"
-side = "both"
-
-[download]
-url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/02136b9955534fbedcf243d7f1a044b55c72cd9f455b7c3018f2e090abf1e826.jar"
-hash-format = "sha256"
-hash = "02136b9955534fbedcf243d7f1a044b55c72cd9f455b7c3018f2e090abf1e826"

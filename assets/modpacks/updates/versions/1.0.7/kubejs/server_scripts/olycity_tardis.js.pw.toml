@@ -1,0 +1,8 @@
+name = "kubejs/server_scripts/olycity_tardis.js"
+filename = "olycity_tardis.js"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/f2e74b30aa29f4a7c619ca344d602cfdc0b1e1b675006ceeee59eb8b73cfb03f"
+hash-format = "sha256"
+hash = "f2e74b30aa29f4a7c619ca344d602cfdc0b1e1b675006ceeee59eb8b73cfb03f"

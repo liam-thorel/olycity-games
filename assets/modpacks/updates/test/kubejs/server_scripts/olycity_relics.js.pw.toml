@@ -3,6 +3,6 @@ filename = "olycity_relics.js"
 side = "both"
 
 [download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/0c9478ceedaed79d989b3952dd3231a685f18b58ac4a06074ae5893e62ac4477"
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/152f18274f3c98f9f83ec57c789d931fa2c943c7d66295e4e4c78b3aca1bf3bc"
 hash-format = "sha256"
-hash = "0c9478ceedaed79d989b3952dd3231a685f18b58ac4a06074ae5893e62ac4477"
+hash = "152f18274f3c98f9f83ec57c789d931fa2c943c7d66295e4e4c78b3aca1bf3bc"

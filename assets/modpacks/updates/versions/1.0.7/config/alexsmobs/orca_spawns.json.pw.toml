@@ -1,0 +1,8 @@
+name = "config/alexsmobs/orca_spawns.json"
+filename = "orca_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/2e62ae273c3488a294068e5ed737dbf08791f4758cd3659308824d7bf4ece377"
+hash-format = "sha256"
+hash = "2e62ae273c3488a294068e5ed737dbf08791f4758cd3659308824d7bf4ece377"

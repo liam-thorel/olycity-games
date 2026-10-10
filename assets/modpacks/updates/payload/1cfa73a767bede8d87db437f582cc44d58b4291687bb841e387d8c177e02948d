@@ -1,0 +1,802 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "",
+  "filename": "atm9_food_and_farming",
+  "group": "2F635AC0A0406D99",
+  "icon": "minecraft:cake",
+  "id": "608A6503FBE4F1DE",
+  "images": [
+    {
+      "height": 2.0,
+      "image": "minecraft:textures/item/cake.png",
+      "rotation": 0.0,
+      "width": 2.0,
+      "x": 0.5,
+      "y": -3.5
+    },
+    {
+      "height": 1.0,
+      "image": "minecraft:textures/item/wheat.png",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 1.5102040816326507,
+      "y": -3.0714285714285765
+    },
+    {
+      "height": 1.0,
+      "image": "minecraft:textures/item/wheat.png",
+      "rotation": -90.0,
+      "width": 1.0,
+      "x": -0.5,
+      "y": -3.0
+    },
+    {
+      "height": 1.0,
+      "image": "minecraft:textures/item/wheat_seeds.png",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 0.48979591836734215,
+      "y": -2.5
+    },
+    {
+      "height": 2.0,
+      "image": "minecraft:textures/block/birch_sapling.png",
+      "rotation": 0.0,
+      "width": 2.0,
+      "x": 5.0,
+      "y": 3.5
+    },
+    {
+      "height": 2.0,
+      "image": "farmersdelight:textures/block/cutting_board.png",
+      "rotation": -90.0,
+      "width": 2.0,
+      "x": 0.5,
+      "y": 11.0
+    },
+    {
+      "height": 1.0,
+      "image": "farmersdelight:textures/item/apple_cider.png",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": -4.0,
+      "y": 1.0
+    },
+    {
+      "height": 1.0,
+      "image": "minecraft:textures/item/cooked_chicken.png",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 3.0,
+      "y": 1.0
+    },
+    {
+      "height": 1.0,
+      "image": "minecraft:textures/item/cooked_porkchop.png",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 4.5,
+      "y": -1.0
+    }
+  ],
+  "order_index": 2,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "description": [
+        "Prépare de la nourriture, découvre les cultures et organise des réserves pour le groupe.",
+        "Les tâches demandent des aliments ou des outils précis. Les repas de Farmer’s Delight pourront ensuite devenir une production utile à votre base."
+      ],
+      "icon": "minecraft:emerald",
+      "id": "41D70B3EEAAA04A9",
+      "rewards": [
+        {
+          "id": "690548B3D13FE8D5",
+          "item": "minecraft:wheat_seeds",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "5F0B272FFAF6460A",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "size": 1.5,
+      "subtitle": "Débuter",
+      "tasks": [
+        {
+          "id": "46639DD9D36F5AA4",
+          "type": "item",
+          "item": "minecraft:beetroot",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Cuisine et agriculture",
+      "x": 0.5,
+      "y": 0.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "0A4ECA4B6D33B894"
+      ],
+      "description": [
+        "Allons chercher des graines."
+      ],
+      "id": "003343A0E71DB51A",
+      "rewards": [
+        {
+          "id": "30E471945326E3AA",
+          "item": "minecraft:wheat",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "62AF76A18AF9A4CF",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "circle",
+      "subtitle": "Main de bloc 1, Herbe de bloc 0",
+      "tasks": [
+        {
+          "count": 8,
+          "id": "4E87C75D5E78B008",
+          "item": "minecraft:wheat_seeds",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Frappe l'herbe",
+      "x": -3.5,
+      "y": 0.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1122DEC87CCC0E8E"
+      ],
+      "description": [
+        "Rassemblons des morceaux de laine !"
+      ],
+      "icon": "minecraft:white_wool",
+      "id": "202DD1D0B14A391C",
+      "rewards": [
+        {
+          "id": "2B867A39FF07F7D9",
+          "item": "minecraft:white_wool",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "31A0CBE1F4E9870F",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "A qui était la polaire... Rainbow ?",
+      "tasks": [
+        {
+          "id": "2DD6654146B74737",
+          "type": "item",
+          "item": "minecraft:black_wool",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Marie avait un petit agneau",
+      "x": 5.5,
+      "y": 0.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "68F12273A42B9BA7"
+      ],
+      "id": "1122DEC87CCC0E8E",
+      "rewards": [
+        {
+          "id": "6A01EF470BB0D76C",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "2D1313F498A7860F",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:shears",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "C'est l'heure du clippin",
+      "x": 4.0,
+      "y": 0.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "68F12273A42B9BA7"
+      ],
+      "description": [
+        "Je ne veux pas savoir comment tu as eu ça."
+      ],
+      "id": "03D1C281D9185CAC",
+      "rewards": [
+        {
+          "id": "71FF8ECFB63268DD",
+          "item": "minecraft:leather",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "4234DCCCFBDC7264",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "count": 3,
+          "id": "5CC99A497FEAF941",
+          "item": "minecraft:leather",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Mais... les vaches ne peuvent pas être cirées...",
+      "x": 4.5,
+      "y": -1.0,
+      "repeatable": false
+    },
+    {
+      "description": [
+        "Le plomb classique. Utilisez-le pour amener les animaux dans votre ferme. Ce n'est pas la même chose que dans la peinture."
+      ],
+      "id": "68F12273A42B9BA7",
+      "rewards": [
+        {
+          "id": "15B5E1655EA46A79",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "subtitle": "Levez-vous petit Doggy",
+      "tasks": [
+        {
+          "id": "6D3F822CE7F136AB",
+          "item": "minecraft:lead",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "On fait ça à l'ancienne.",
+      "x": 2.5,
+      "y": 0.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "03D1C281D9185CAC"
+      ],
+      "description": [
+        "Trouver une vache et du droit Cliquez dessus avec un seau. Sérieusement, pourquoi pas de taureaux ?"
+      ],
+      "id": "06E1C6AFB8FB4BEE",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "531EFE3582975166",
+          "item": "minecraft:cooked_beef",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "78F7C6273F97AAEA",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Pourquoi il n'y a pas de Bulls dans le jeu ?",
+      "tasks": [
+        {
+          "id": "473BBCACC7EF4D8E",
+          "item": "minecraft:milk_bucket",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Trouvez une vache, laitez la vache, profitez.",
+      "x": 6.0,
+      "y": -1.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "68F12273A42B9BA7"
+      ],
+      "description": [
+        "Les poulets vont les pondre naturellement. Je suppose qu'il n'est pas vraiment considéré naturellement... Je suppose que les poulets sont juste obtenir... Eggs-ercise!!!."
+      ],
+      "id": "65AFFA78F72A5AD8",
+      "rewards": [
+        {
+          "id": "053BACBED06A466D",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "... ou je le suis ?",
+      "tasks": [
+        {
+          "count": 3,
+          "id": "76EB04AFCF47C094",
+          "item": "minecraft:egg",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Je ne vais pas faire de jeu d'oeufs",
+      "x": 4.0,
+      "y": 1.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "65AFFA78F72A5AD8"
+      ],
+      "id": "74B2495F483B7256",
+      "rewards": [
+        {
+          "id": "4C755172FC6C1D2E",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Comment d'autre penses-tu que Fried Chicken est fait ?",
+      "tasks": [
+        {
+          "count": 10,
+          "id": "03FB1BB64758D2AB",
+          "item": "minecraft:feather",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 3,
+          "id": "7ACEA65655261CAA",
+          "item": "minecraft:chicken",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Les poulets doivent partir",
+      "x": 6.0,
+      "y": 1.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "icon": {
+        "Count": 1,
+        "id": "minecraft:wooden_hoe",
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "id": "0A4ECA4B6D33B894",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "3E64AA9F2BB74862",
+          "item": "minecraft:wheat_seeds",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "37A95E4383A5EE1E",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 1.25,
+      "subtitle": "Attendez que vous ayez des machines pour ça.",
+      "tasks": [
+        {
+          "id": "058D371AE7BC36BD",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:wooden_hoe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "title": "Hoes de base",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Le planteur",
+      "x": -1.5749999999999997,
+      "y": 0.0,
+      "description": [],
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "003343A0E71DB51A"
+      ],
+      "id": "27675B842A835862",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "155524588488DE06",
+          "item": "minecraft:bread",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "43B402EB603CAB62",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Speedrunners aime ces trucs",
+      "tasks": [
+        {
+          "count": 3,
+          "id": "76E5D8764FD06E40",
+          "item": "minecraft:wheat",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Blé",
+      "x": -5.0,
+      "y": 0.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "27675B842A835862"
+      ],
+      "id": "405B644446C55019",
+      "rewards": [
+        {
+          "id": "5197B264127B78FB",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Rapide et simple",
+      "tasks": [
+        {
+          "count": 3,
+          "id": "3A49B291BDA2B1C3",
+          "item": "minecraft:bread",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Le Pain de Vie",
+      "x": -6.5,
+      "y": 0.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "003343A0E71DB51A"
+      ],
+      "description": [
+        "&2Graines de lin sont une excellente façon d'obtenir la corde dans le jeu précoce!"
+      ],
+      "id": "70980D66A8D38E2A",
+      "rewards": [
+        {
+          "id": "6EFBE36443D5503A",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Qui a besoin d'araignées ?",
+      "tasks": [
+        {
+          "id": "1A9F16354C6C9F30",
+          "item": "supplementaries:flax_seeds",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Graines de lin",
+      "x": -5.5,
+      "y": -1.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "003343A0E71DB51A"
+      ],
+      "description": [
+        "Trouvez de la canne à sucre !"
+      ],
+      "id": "3B6FACAD4DC1C6BD",
+      "rewards": [
+        {
+          "id": "3FA0AB5E17F62320",
+          "item": "minecraft:sugar",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "7E7733DE53C30AE5",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Ça grandit jusqu'au ciel !",
+      "tasks": [
+        {
+          "count": 10,
+          "id": "7BCDDE12DE327D08",
+          "item": "minecraft:sugar_cane",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Sucre",
+      "x": -5.5,
+      "y": 1.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "70980D66A8D38E2A"
+      ],
+      "description": [
+        "Le lin se transforme en string !"
+      ],
+      "id": "41C097C79A477704",
+      "rewards": [
+        {
+          "id": "212552F63F56ACB3",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "count": 4,
+          "id": "2075CC363955ABCB",
+          "item": "minecraft:string",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Chaîne de graines",
+      "x": -7.0,
+      "y": -1.0,
+      "repeatable": false
+    },
+    {
+      "description": [
+        "Mais d'habitude, il se ferme à 5 h, donc qui s'en soucie."
+      ],
+      "id": "5CE0198278BC10B8",
+      "rewards": [
+        {
+          "id": "75B56854C9DA7B1A",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 1.25,
+      "subtitle": "Willy serait fier",
+      "tasks": [
+        {
+          "id": "316E9D6A0AABAFE4",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:fishing_rod",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Le début d'un pêcheur",
+      "x": -1.57,
+      "y": 4.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "405B644446C55019",
+        "2BD02087E62AD58B"
+      ],
+      "description": [
+        "C'est l'heure de faire un gâteau, si vous avez du lait et des œufs prêts."
+      ],
+      "id": "7F94F81A960A81CC",
+      "rewards": [
+        {
+          "id": "3F3EC3196D13CF1B",
+          "item": "minecraft:cake",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "6A8E2FC3B3FE2272",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "1ECEA2CCB8E9553C",
+          "item": "minecraft:cake",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Tu peux avoir ton gâteau et le manger aussi.",
+      "x": -8.25,
+      "y": 0.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "3B6FACAD4DC1C6BD"
+      ],
+      "description": [
+        "Tu devrais déjà avoir tout ce dont tu as besoin."
+      ],
+      "id": "2BD02087E62AD58B",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "369C065868BE3993",
+          "item": "minecraft:sugar_cane",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "12A4DCDC240F6F96",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Verse du sucre sur moi.",
+      "tasks": [
+        {
+          "count": 3,
+          "id": "74AAD59EA305A2DB",
+          "item": "minecraft:sugar",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Tu es si gentil.",
+      "x": -7.0,
+      "y": 1.0,
+      "repeatable": false
+    },
+    {
+      "can_repeat": 0,
+      "description": [
+        "Cette quête a été créée par AllTheMods Staff, ou un contributeur communautaire pour une utilisation dans AllTheMods Modpacks.",
+        "Comme tous les packs AllTheMods sont sous licence All Rights Reserved, cette Quest n'est pas autorisée à être utilisée dans les packs publics non publiés par l'équipe AllTheMods, sans autorisation explicite.",
+        "Cette quête est intentionnellement cachée, si vous voyez cela, vous êtes en mode édition.",
+        "Repère de lecture : obtiens le livre indiqué pour poursuivre. Cette étape ne donne aucune récompense."
+      ],
+      "disable_toast": 1,
+      "hide_details_until_startable": 1,
+      "hide_until_deps_visible": 1,
+      "icon": {
+        "Count": 1,
+        "id": "ftbquests:custom_icon",
+        "tag": {
+          "Icon": "minecraft:item/barrier"
+        }
+      },
+      "id": "692DC2BEEAEBE035",
+      "invisible": 1,
+      "optional": 1,
+      "shape": "octagon",
+      "tasks": [
+        {
+          "id": "7DFB552823F0846E",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "0930682B51AF02B0",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 0.5,
+      "y": -1.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Livre",
+      "dependencies": []
+    }
+  ],
+  "title": "Cuisine et agriculture",
+  "default_consume_items": false
+}

@@ -1,0 +1,1213 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "",
+  "filename": "olycity_chaos_persists",
+  "group": "3B2BC36F39863788",
+  "icon": "chaospersists:ruby",
+  "id": "1DC3155FE2AC8B3C",
+  "order_index": 0,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "description": [
+        "Chaos Persists est un remake moderne d'OreSpawn : dinosaures, insectes géants, boss énormes et six dimensions à explorer.",
+        "",
+        "Sous terre, tu trouveras des œufs fossilisés (Ancient Dried Spawn Eggs), et certaines pierres peuvent libérer des créatures quand on les casse : mine prudemment !",
+        "Page de guide : conserve un livre dans ton inventaire pour consulter cette étape. Aucune récompense pour cette page informative."
+      ],
+      "icon": "chaospersists:ruby",
+      "id": "2EE1F63084F1415D",
+      "rewards": [],
+      "shape": "gear",
+      "size": 2.0,
+      "tasks": [
+        {
+          "id": "21BCAB9DCA44B734",
+          "title": "C'est parti !",
+          "type": "item",
+          "item": "minecraft:book",
+          "consume_items": false
+        }
+      ],
+      "title": "Bienvenue dans Chaos Persists",
+      "x": 0.0,
+      "y": 0.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2EE1F63084F1415D"
+      ],
+      "description": [
+        "Le rubis est le premier vrai minerai du mod. Il sert à fabriquer des outils et une armure solides."
+      ],
+      "id": "0961786EB323977B",
+      "rewards": [
+        {
+          "id": "7756D64F8262C1C3",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "6172F75380662B24",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:ruby"
+          },
+          "type": "item"
+        }
+      ],
+      "title": "Rubis",
+      "x": -3.0,
+      "y": 2.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2EE1F63084F1415D"
+      ],
+      "description": [
+        "À ne pas confondre avec l'améthyste de Minecraft : celle-ci vient du minerai d'améthyste du mod."
+      ],
+      "id": "3FC73F239B879671",
+      "rewards": [
+        {
+          "id": "14B4F6CD508AD7E6",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "21FC3E4C79E83467",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:amethyst"
+          },
+          "type": "item"
+        }
+      ],
+      "title": "Améthyste (version Chaos)",
+      "x": -1.5,
+      "y": 2.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2EE1F63084F1415D"
+      ],
+      "description": [
+        "Lingot de titane, fondu à partir du minerai de titane."
+      ],
+      "id": "21A4E336A38644A5",
+      "rewards": [
+        {
+          "id": "36D06F7DDBCBF91D",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "0B9297F67A0916A1",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:ingottitanium"
+          },
+          "type": "item"
+        }
+      ],
+      "title": "Titane",
+      "x": 0.0,
+      "y": 2.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2EE1F63084F1415D"
+      ],
+      "description": [
+        "Lingot d'uranium, fondu à partir du minerai d'uranium."
+      ],
+      "id": "2B3C4EE6DCEA64FA",
+      "rewards": [
+        {
+          "id": "46F054A2E9A2791E",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "6D902A083DD05888",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:ingoturanium"
+          },
+          "type": "item"
+        }
+      ],
+      "title": "Uranium",
+      "x": 1.5,
+      "y": 2.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "0961786EB323977B"
+      ],
+      "description": [
+        "Une épée et une pioche en rubis pour bien démarrer."
+      ],
+      "icon": "chaospersists:rubysword",
+      "id": "02E137AF5FA7A318",
+      "rewards": [
+        {
+          "id": "55D0CF02546FE3F0",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "6278AD96E4AB04FF",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:rubysword"
+          },
+          "type": "item"
+        },
+        {
+          "id": "39D4072371D51760",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:rubypickaxe"
+          },
+          "type": "item"
+        }
+      ],
+      "title": "Outils en rubis",
+      "x": -3.0,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "02E137AF5FA7A318"
+      ],
+      "description": [
+        "L'armure complète en rubis."
+      ],
+      "icon": "chaospersists:ruby_chest",
+      "id": "3E525A0CE8C4686C",
+      "rewards": [
+        {
+          "id": "4AF18D6B521571EC",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "27A9DA7D9B92C958",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:ruby_helmet"
+          },
+          "type": "item"
+        },
+        {
+          "id": "56358FF0B512DDBA",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:ruby_chest"
+          },
+          "type": "item"
+        },
+        {
+          "id": "7F50389BD169C080",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:ruby_leggings"
+          },
+          "type": "item"
+        },
+        {
+          "id": "458E34053F52ACB8",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:ruby_boots"
+          },
+          "type": "item"
+        }
+      ],
+      "title": "Armure en rubis",
+      "x": -3.0,
+      "y": 5.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "3FC73F239B879671"
+      ],
+      "description": [
+        "Épée et armure en améthyste."
+      ],
+      "icon": "chaospersists:amethyst_chest",
+      "id": "423E3DE60A542801",
+      "rewards": [
+        {
+          "id": "4A992175D3DCFFF8",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "16C6460CAD884B9F",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:amethystsword"
+          },
+          "type": "item"
+        },
+        {
+          "id": "55881FF5EEE05087",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:amethyst_helmet"
+          },
+          "type": "item"
+        },
+        {
+          "id": "183621671B7AAD10",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:amethyst_chest"
+          },
+          "type": "item"
+        },
+        {
+          "id": "542261BB2C2E54C7",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:amethyst_leggings"
+          },
+          "type": "item"
+        },
+        {
+          "id": "119F6CFCF582BFA9",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:amethyst_boots"
+          },
+          "type": "item"
+        }
+      ],
+      "title": "Équipement en améthyste",
+      "x": -1.5,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "423E3DE60A542801"
+      ],
+      "description": [
+        "Le mod ajoute aussi des armures en émeraude, en lapis-lazuli et en expérience. Fabrique au moins un plastron de chaque."
+      ],
+      "icon": "chaospersists:emerald_chest",
+      "id": "0CCFD9EE438B3BA6",
+      "rewards": [
+        {
+          "id": "6C811FDF293CE350",
+          "type": "xp",
+          "xp": 150,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "1C3E93F7C99CAAE4",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:emerald_chest"
+          },
+          "type": "item"
+        },
+        {
+          "id": "6C69AFBBD148372A",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:lapis_chest"
+          },
+          "type": "item"
+        },
+        {
+          "id": "330ECEC816F23AAF",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:experience_chest"
+          },
+          "type": "item"
+        }
+      ],
+      "title": "Armures précieuses",
+      "x": -1.5,
+      "y": 5.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "21A4E336A38644A5"
+      ],
+      "description": [
+        "Le Miner's Dream creuse un tunnel d'un coup. Idéal pour aller chercher les minerais en profondeur."
+      ],
+      "id": "0C9FF3CA9EA8A001",
+      "rewards": [
+        {
+          "id": "63D5E58D45BD0DCA",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "1E93694C90B60FDC",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:minersdream"
+          },
+          "type": "item"
+        }
+      ],
+      "title": "Le rêve du mineur",
+      "x": 0.0,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "0C9FF3CA9EA8A001"
+      ],
+      "description": [
+        "Le sommet de l'équipement Chaos Persists. L'Emperor Scorpion peut aussi laisser tomber une Ultimate Sword ou un Ultimate Bow."
+      ],
+      "icon": "chaospersists:ultimatesword",
+      "id": "44964A311505DDA3",
+      "rewards": [
+        {
+          "id": "6E0406A669A3ADCD",
+          "type": "xp",
+          "xp": 500,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "079B6DCF50B17DFF",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:ultimatesword"
+          },
+          "type": "item"
+        },
+        {
+          "id": "6D9060B5459DBDC1",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:ultimate_helmet"
+          },
+          "type": "item"
+        },
+        {
+          "id": "48F6DD7800105EA6",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:ultimate_chest"
+          },
+          "type": "item"
+        },
+        {
+          "id": "1D78EA4EA9FBC97F",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:ultimate_leggings"
+          },
+          "type": "item"
+        },
+        {
+          "id": "3578BE88CC99FECD",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:ultimate_boots"
+          },
+          "type": "item"
+        }
+      ],
+      "title": "L'équipement Ultimate",
+      "x": 0.0,
+      "y": 5.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2EE1F63084F1415D"
+      ],
+      "description": [
+        "Pas de portail ici : on change de dimension en faisant un clic droit, main vide, sur certaines créatures.",
+        "Refaire la même chose depuis la dimension renvoie dans l'Overworld.",
+        "Page de guide : conserve un livre dans ton inventaire pour consulter cette étape. Aucune récompense pour cette page informative."
+      ],
+      "icon": "minecraft:ender_pearl",
+      "id": "647688A700BC8421",
+      "rewards": [],
+      "shape": "diamond",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "481B6A48A07A3621",
+          "title": "Compris",
+          "type": "item",
+          "item": "minecraft:book",
+          "consume_items": false
+        }
+      ],
+      "title": "Voyager entre les dimensions",
+      "x": 4.0,
+      "y": 0.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "647688A700BC8421"
+      ],
+      "description": [
+        "Fais un clic droit, la main vide, sur une Fourmi (noire) pour être téléporté dans la dimension « utopia »."
+      ],
+      "icon": "minecraft:compass",
+      "id": "7CA1D763D3F0C41E",
+      "rewards": [
+        {
+          "id": "19027E95CFC3D653",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "dimension": "chaospersists:utopia",
+          "id": "7C338A93F1EC80C5",
+          "title": "Entrer dans : Utopia",
+          "type": "dimension"
+        }
+      ],
+      "title": "Utopia",
+      "x": 4.0,
+      "y": 1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "647688A700BC8421"
+      ],
+      "description": [
+        "Fais un clic droit, la main vide, sur une Fourmi rouge pour être téléporté dans la dimension « mining »."
+      ],
+      "icon": "minecraft:compass",
+      "id": "07E4B39755D5F7A9",
+      "rewards": [
+        {
+          "id": "78548D978B81955A",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "dimension": "chaospersists:mining",
+          "id": "17FCEE1E29C723A1",
+          "title": "Entrer dans : Dimension minière",
+          "type": "dimension"
+        }
+      ],
+      "title": "Dimension minière",
+      "x": 5.5,
+      "y": 1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "647688A700BC8421"
+      ],
+      "description": [
+        "Fais un clic droit, la main vide, sur une Fourmi arc-en-ciel pour être téléporté dans la dimension « village »."
+      ],
+      "icon": "minecraft:compass",
+      "id": "06A72E0CAB484FF9",
+      "rewards": [
+        {
+          "id": "5E7C56FDDFE0A614",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "dimension": "chaospersists:village",
+          "id": "17AD6E0E04F098E7",
+          "title": "Entrer dans : Dimension des villages",
+          "type": "dimension"
+        }
+      ],
+      "title": "Dimension des villages",
+      "x": 7.0,
+      "y": 1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "647688A700BC8421"
+      ],
+      "description": [
+        "Fais un clic droit, la main vide, sur une Fourmi instable pour être téléporté dans la dimension « danger »."
+      ],
+      "icon": "minecraft:compass",
+      "id": "0B0E6F4A8FBBA50D",
+      "rewards": [
+        {
+          "id": "7DB7606B16D26757",
+          "type": "xp",
+          "xp": 150,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "dimension": "chaospersists:danger",
+          "id": "544FF72EF42C7A5E",
+          "title": "Entrer dans : Dimension du danger",
+          "type": "dimension"
+        }
+      ],
+      "title": "Dimension du danger",
+      "x": 4.0,
+      "y": 3.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "647688A700BC8421"
+      ],
+      "description": [
+        "Fais un clic droit, la main vide, sur une Termite pour être téléporté dans la dimension « crystal »."
+      ],
+      "icon": "minecraft:compass",
+      "id": "0F63DC60A9F10010",
+      "rewards": [
+        {
+          "id": "2F15BFD612EB15F1",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "dimension": "chaospersists:crystal",
+          "id": "1539D4527AB7041F",
+          "title": "Entrer dans : Dimension de cristal",
+          "type": "dimension"
+        }
+      ],
+      "title": "Dimension de cristal",
+      "x": 5.5,
+      "y": 3.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "647688A700BC8421"
+      ],
+      "description": [
+        "Fais un clic droit, la main vide, sur un Papillon pour être téléporté dans la dimension « chaos »."
+      ],
+      "icon": "minecraft:compass",
+      "id": "630BCF36806E2525",
+      "rewards": [
+        {
+          "id": "4BDAA1DF4DE8FA45",
+          "type": "xp",
+          "xp": 150,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "dimension": "chaospersists:chaos",
+          "id": "3AD53E1C1F4A57A6",
+          "title": "Entrer dans : Dimension du chaos",
+          "type": "dimension"
+        }
+      ],
+      "title": "Dimension du chaos",
+      "x": 7.0,
+      "y": 3.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "0F63DC60A9F10010"
+      ],
+      "description": [
+        "La dimension de cristal a ses propres matériaux : la kyanite et la tourmaline rose."
+      ],
+      "icon": "chaospersists:crystalpink_ingot",
+      "id": "40004F950C99EC01",
+      "rewards": [
+        {
+          "id": "0B3F1E9A4D7C4B57",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "count": 16,
+          "id": "5BB144CDF42E8422",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:crystalstone"
+          },
+          "type": "item"
+        },
+        {
+          "id": "6ADF77E5BC506AD3",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:crystalpink_ingot"
+          },
+          "type": "item"
+        }
+      ],
+      "title": "Ressources de cristal",
+      "x": 5.5,
+      "y": 4.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "40004F950C99EC01"
+      ],
+      "description": [
+        "Une pioche en tourmaline rose, l'outil de la dimension de cristal."
+      ],
+      "id": "2A2B46954AEB3458",
+      "rewards": [
+        {
+          "id": "1D61DCD38D43AA58",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "568DFC36DD66E38C",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:crystalpinkpickaxe"
+          },
+          "type": "item"
+        }
+      ],
+      "title": "Outils de cristal",
+      "x": 5.5,
+      "y": 6.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2EE1F63084F1415D"
+      ],
+      "description": [
+        "Chaos Persists regorge de boss. Ce sont des combats difficiles : viens bien équipé, et de préférence à plusieurs.",
+        "Page de guide : conserve un livre dans ton inventaire pour consulter cette étape. Aucune récompense pour cette page informative."
+      ],
+      "icon": "minecraft:wither_skeleton_skull",
+      "id": "6A2919ED3D049E3B",
+      "rewards": [],
+      "shape": "diamond",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "792F76AF9C6F0729",
+          "title": "Je suis prêt",
+          "type": "item",
+          "item": "minecraft:book",
+          "consume_items": false
+        }
+      ],
+      "title": "Les boss",
+      "x": 10.0,
+      "y": 0.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6A2919ED3D049E3B"
+      ],
+      "description": [
+        "Un scorpion géant. Il laisse tomber ses écailles, et parfois de l'équipement Ultimate."
+      ],
+      "icon": "minecraft:diamond_sword",
+      "id": "2099A9399AFD9A57",
+      "rewards": [
+        {
+          "id": "42244601E28723EB",
+          "type": "xp",
+          "xp": 300,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "chaospersists:emperor_scorpion",
+          "id": "15DCAE15D1D9732F",
+          "title": "Vaincre Emperor Scorpion",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "Emperor Scorpion",
+      "x": 10.0,
+      "y": 1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2099A9399AFD9A57"
+      ],
+      "description": [
+        "Une mite colossale qui peut lâcher une étoile du Nether."
+      ],
+      "icon": "minecraft:diamond_sword",
+      "id": "439F484D4C10FA49",
+      "rewards": [
+        {
+          "id": "167C0376EB287202",
+          "type": "xp",
+          "xp": 300,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "chaospersists:mothra",
+          "id": "35DE17EFC627D8ED",
+          "title": "Vaincre Mothra",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "Mothra",
+      "x": 10.0,
+      "y": 3.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "439F484D4C10FA49"
+      ],
+      "description": [
+        "Une créature des ténèbres qui laisse tomber des écailles de Nightmare."
+      ],
+      "icon": "minecraft:diamond_sword",
+      "id": "10AEE41DDCB55C48",
+      "rewards": [
+        {
+          "id": "5F71E908F83830B7",
+          "type": "xp",
+          "xp": 300,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "chaospersists:nightmare",
+          "id": "34630F7BC356DFD9",
+          "title": "Vaincre Nightmare",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "Nightmare",
+      "x": 10.0,
+      "y": 4.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "10AEE41DDCB55C48"
+      ],
+      "description": [
+        "Le monstre des profondeurs. Ne t'approche pas de l'eau sans préparation."
+      ],
+      "icon": "minecraft:diamond_sword",
+      "id": "2205E026952B1B61",
+      "rewards": [
+        {
+          "id": "7811039181F37CA5",
+          "type": "xp",
+          "xp": 500,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "chaospersists:the_kraken",
+          "id": "48DE153804455908",
+          "title": "Vaincre The Kraken",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "The Kraken",
+      "x": 10.0,
+      "y": 6.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2205E026952B1B61"
+      ],
+      "description": [
+        "Le roi des lézards géants. Il laisse tomber des écailles de Mobzilla."
+      ],
+      "icon": "minecraft:diamond_sword",
+      "id": "62BB99FB792C3EA0",
+      "rewards": [
+        {
+          "id": "166D4C2A2C536398",
+          "type": "xp",
+          "xp": 800,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "tasks": [
+        {
+          "entity": "chaospersists:mobzilla",
+          "id": "0F10A99BAAA962FC",
+          "title": "Vaincre Mobzilla",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "Mobzilla",
+      "x": 10.0,
+      "y": 7.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "62BB99FB792C3EA0"
+      ],
+      "description": [
+        "Un boss redoutable qui laisse tomber des écailles de reine."
+      ],
+      "icon": "minecraft:diamond_sword",
+      "id": "5691033093042B9C",
+      "rewards": [
+        {
+          "id": "23D95967789FB13A",
+          "type": "xp",
+          "xp": 1000,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "tasks": [
+        {
+          "entity": "chaospersists:the_queen",
+          "id": "5D61EDB94B47771B",
+          "title": "Vaincre The Queen",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "The Queen",
+      "x": 10.0,
+      "y": 9.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5691033093042B9C"
+      ],
+      "description": [
+        "Le boss ultime de Chaos Persists. Prépare ta meilleure armure."
+      ],
+      "icon": "minecraft:diamond_sword",
+      "id": "1D3D476C135E2539",
+      "rewards": [
+        {
+          "id": "33B39BE2354B9E2E",
+          "type": "xp",
+          "xp": 1500,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "tasks": [
+        {
+          "entity": "chaospersists:the_king",
+          "id": "09F006C081EBEC91",
+          "title": "Vaincre The King",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "The King",
+      "x": 10.0,
+      "y": 10.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "62BB99FB792C3EA0"
+      ],
+      "description": [
+        "L'armure fabriquée avec les écailles de Mobzilla."
+      ],
+      "icon": "chaospersists:mobzilla_chest",
+      "id": "184971BF0DBDAF0D",
+      "rewards": [
+        {
+          "id": "01EC75C16096849A",
+          "type": "xp",
+          "xp": 500,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "788E495865A6C471",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:mobzilla_helmet"
+          },
+          "type": "item"
+        },
+        {
+          "id": "076164D31E47F816",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:mobzilla_chest"
+          },
+          "type": "item"
+        },
+        {
+          "id": "74B8BF0FC0993EAA",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:mobzilla_leggings"
+          },
+          "type": "item"
+        },
+        {
+          "id": "1F0688B078D0C6F9",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:mobzilla_boots"
+          },
+          "type": "item"
+        }
+      ],
+      "title": "Armure de Mobzilla",
+      "x": 11.5,
+      "y": 7.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5691033093042B9C"
+      ],
+      "description": [
+        "Armure en écailles de reine et la hache de bataille de la Reine."
+      ],
+      "icon": "chaospersists:queenbattleaxesmall",
+      "id": "1D510FCD054475D8",
+      "rewards": [
+        {
+          "id": "6B0ABA5EE068BB18",
+          "type": "xp",
+          "xp": 800,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "59DB0601C5CF1C7B",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:queen_helmet"
+          },
+          "type": "item"
+        },
+        {
+          "id": "77D42FEED15CF82E",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:queen_chest"
+          },
+          "type": "item"
+        },
+        {
+          "id": "45343062314ED550",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:queen_leggings"
+          },
+          "type": "item"
+        },
+        {
+          "id": "08A94A9A0F1E4F7D",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:queen_boots"
+          },
+          "type": "item"
+        },
+        {
+          "id": "265E0C65F831CD5C",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:queenbattleaxesmall"
+          },
+          "type": "item"
+        }
+      ],
+      "title": "Équipement de la Reine",
+      "x": 11.5,
+      "y": 9.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1D3D476C135E2539"
+      ],
+      "description": [
+        "La récompense du King : l'épée et l'armure Royal Guardian."
+      ],
+      "icon": "chaospersists:royalsmall",
+      "id": "00D2240539E5C69B",
+      "rewards": [
+        {
+          "id": "4D552B4BD2C6167C",
+          "type": "xp",
+          "xp": 1500,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "gear",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "3470B7758A42605D",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:royalsmall"
+          },
+          "type": "item"
+        },
+        {
+          "id": "19DB8E4E12A70F67",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:royal_helmet"
+          },
+          "type": "item"
+        },
+        {
+          "id": "4D6D1D9DFC2C8544",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:royal_chest"
+          },
+          "type": "item"
+        },
+        {
+          "id": "158AB0BA2CC12A8D",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:royal_leggings"
+          },
+          "type": "item"
+        },
+        {
+          "id": "22AEB4135F2224D6",
+          "item": {
+            "Count": 1,
+            "id": "chaospersists:royal_boots"
+          },
+          "type": "item"
+        }
+      ],
+      "title": "Équipement Royal Guardian",
+      "x": 11.5,
+      "y": 10.5,
+      "repeatable": false
+    }
+  ],
+  "subtitle": [
+    "Minerais, dimensions et boss d'OreSpawn"
+  ],
+  "title": "Chaos Persists"
+}

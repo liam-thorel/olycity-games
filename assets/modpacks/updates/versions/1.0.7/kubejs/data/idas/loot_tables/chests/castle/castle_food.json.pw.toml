@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/castle/castle_food.json"
+filename = "castle_food.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/837a1a216d0df479dd42ec6096832218acf70b22d7223cf8933f9fd9e3d9dcf6"
+hash-format = "sha256"
+hash = "837a1a216d0df479dd42ec6096832218acf70b22d7223cf8933f9fd9e3d9dcf6"

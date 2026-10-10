@@ -1,0 +1,2189 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "",
+  "filename": "atm9_blue_skies",
+  "group": "3B2BC36F39863788",
+  "icon": "blue_skies:poison_key",
+  "id": "79BE20FEA2F7333D",
+  "order_index": 1,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "description": [
+        "Blue Skies propose Everbright et Everdawn, deux dimensions avec leurs propres équipements et adversaires.",
+        "Le journal du mod et le gardien des portails t’aident à commencer. Les étapes suivantes demandent les objets et avancées indiqués dans leurs tâches."
+      ],
+      "icon": "blue_skies:blinding_key",
+      "id": "316D7E47AC975AAC",
+      "rewards": [],
+      "shape": "gear",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "2560CE7F014B26AA",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Découvrir Blue Skies",
+      "x": -2.0,
+      "y": 0.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "316D7E47AC975AAC"
+      ],
+      "description": [
+        "Quelque part dans l'Overworld, vous trouverez deux maisons simples.",
+        "Le Gatekeeper vit ici, et vous échangera quelques objets pour vous faire démarrer dans le mod.",
+        "Acquérir le Blue Journal. Vous aurez aussi besoin du Zeal Lighter dans la prochaine quête."
+      ],
+      "icon": "blue_skies:blue_journal",
+      "id": "532F729E6C621213",
+      "rewards": [
+        {
+          "id": "74FE7E774D7526CC",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Vivre une vie simple...",
+      "tasks": [
+        {
+          "id": "45FBF33D2CCB9EA7",
+          "item": "blue_skies:blue_journal",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Trouver le gardien de porte",
+      "x": 0.5,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "532F729E6C621213"
+      ],
+      "description": [
+        "Le Gatekeeper connaît toutes les dimensions du ciel bleu. En voyageant à travers le mod, votre Blue Journal s'étendra pour vous guider.",
+        "Il échangera aussi plus d'objets à mesure que vous avancez à travers les dimensions, alors gardez un œil dehors!"
+      ],
+      "id": "1880F2772241C468",
+      "rewards": [
+        {
+          "id": "2F3528A39F270DBC",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "267367049EFEBA42",
+          "type": "item",
+          "item": "blue_skies:blue_journal",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 0.5,
+      "y": -1.0,
+      "repeatable": false,
+      "title": "Encyclopédie bleue"
+    },
+    {
+      "dependencies": [
+        "532F729E6C621213"
+      ],
+      "description": [
+        "Dans la petite maison du gardien, vous pourriez tomber sur ce qui semble être un portail cassé.",
+        "Acquérir une lumière Zeal et l'utiliser pour éclairer le portail."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "blue_skies:zeal_lighter",
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "id": "75E63CEEEB5EDB76",
+      "rewards": [
+        {
+          "id": "2F50D6B837E76B15",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "635AF44CED93F55A",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:zeal_lighter",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 2.5,
+      "y": 0.5,
+      "repeatable": false,
+      "title": "Briquet zèle"
+    },
+    {
+      "dependencies": [
+        "75E63CEEEB5EDB76"
+      ],
+      "description": [
+        "Il semble que vous ayez trébuché dans le monde de Everbright.",
+        "C'est le royaume des jours éternels et des temps frigides. Vous trouverez plusieurs grandes bêtes, des foules éthérées, et même quelques patrons."
+      ],
+      "id": "1BDBB399941DD8E3",
+      "rewards": [
+        {
+          "id": "4A5B8077154AEDCD",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "advancement": "blue_skies:everbright/enter",
+          "criterion": "",
+          "id": "53CE7BD2BA9314AD",
+          "title": "Pour Everbright !",
+          "type": "advancement"
+        }
+      ],
+      "x": 4.0,
+      "y": -0.5,
+      "repeatable": false,
+      "title": "Blue Skies : découverte"
+    },
+    {
+      "dependencies": [
+        "75E63CEEEB5EDB76"
+      ],
+      "description": [
+        "Bienvenue dans le monde de l'Everdawn, le monde où le soleil se lève pour toujours.",
+        "C'est un monde chaud et humide où les insectes et les reptiles fleurissent.",
+        "Êtes-vous prêt pour le poison et le feu ?"
+      ],
+      "id": "1DBF7116AC33813B",
+      "rewards": [
+        {
+          "id": "530C8A27FB93EADE",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "advancement": "blue_skies:everdawn/enter",
+          "criterion": "",
+          "id": "341170AF137B5224",
+          "title": "À Everdawn !",
+          "type": "advancement"
+        }
+      ],
+      "x": 4.0,
+      "y": 1.5,
+      "repeatable": false,
+      "title": "Blue Skies : découverte"
+    },
+    {
+      "dependencies": [
+        "1BDBB399941DD8E3",
+        "1DBF7116AC33813B"
+      ],
+      "dependency_requirement": "one_completed",
+      "description": [
+        "Vos outils de l'Overworldly n'ont aucun pouvoir ici.",
+        "Vous voudrez rapidement faire un nouveau pioche dans les bois autour de vous si vous voulez obtenir n'importe où dans le ciel bleu."
+      ],
+      "id": "5B1A6C31194480B7",
+      "rewards": [
+        {
+          "id": "0D2A9092B1DAF2E2",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 4,
+          "id": "24B81FE83B0AAE20",
+          "item": "blue_skies:starlit_log",
+          "random_bonus": 4,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "057A9950DCCF62E2",
+          "item": "minecraft:golden_apple",
+          "random_bonus": 2,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "499C48C5786C79A5",
+          "type": "item",
+          "item": "blue_skies:bluebright_pickaxe",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Quelque chose ne va pas...",
+      "x": 5.5,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "01CC11AF707B47A8"
+      ],
+      "description": [
+        "Si vous voulez maîtriser les terres du Ciel Bleu, vous devrez fabriquer une nouvelle arme, la Lance.",
+        "Pour faire ça, il nous faut du Moonstone pour commencer."
+      ],
+      "id": "39FBEE4A359A3D31",
+      "optional": 1,
+      "rewards": [
+        {
+          "count": 2,
+          "id": "7A4767869E8196BD",
+          "item": "blue_skies:moonstone_shard",
+          "random_bonus": 4,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "495DFE92AD9A1344",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "subtitle": "Et il fait assez sombre.",
+      "tasks": [
+        {
+          "count": 2,
+          "id": "19C2A1EA56C7AEC7",
+          "item": "blue_skies:moonstone_shard",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Une nouvelle aventure minière",
+      "x": 6.5,
+      "y": -1.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5B1A6C31194480B7"
+      ],
+      "description": [
+        "Comme dans le monde, les outils en bois ne vous mèneront pas loin.",
+        "Vous allez vouloir vous faire un nouveau pioche, puis nous pourrons commencer avec les nouveaux minerais."
+      ],
+      "id": "01CC11AF707B47A8",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "7347D5DCA71204F8",
+          "item": "blue_skies:cooked_venison",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "0C996010158E18FB",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "D'abord Wood, puis Stone... alors quoi ?",
+      "tasks": [
+        {
+          "id": "39E46115D097D2F0",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:lunar_stone_pickaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "title": "Pickaxe de pierre du ciel bleu",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Obtenir une amélioration",
+      "x": 8.5,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "39FBEE4A359A3D31"
+      ],
+      "description": [
+        "La lance est l'arme privilégiée dans le ciel bleu. Elle peut être enchantée, et fonctionne comme une belle arme variée pour les ennemis que vous affronterez."
+      ],
+      "id": "6339FDA63E9B030B",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "7F92BF31130BF25C",
+          "item": "farmersdelight:mutton_wrap",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "69E5CBC0D7471A18",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "subtitle": "Style spartiate",
+      "tasks": [
+        {
+          "id": "1812B4F1AFE47980",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:frostbright_spear",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Faire une nouvelle arme",
+      "x": 6.5,
+      "y": -2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "01CC11AF707B47A8"
+      ],
+      "description": [
+        "Pyrope signifie Vitesse dans la langue du Ciel Bleu.",
+        "Ces outils sont faibles, mais rapides."
+      ],
+      "icon": "blue_skies:pyrope_gem",
+      "id": "024E24FEFEBE9F18",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "1B059356983AE437",
+          "item": "blue_skies:pyrope_gem",
+          "random_bonus": 2,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "0A2D7940462A2F98",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "count": 3,
+          "id": "5A291C0A30757374",
+          "item": "blue_skies:pyrope_gem",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Rouge signifie rapide",
+      "x": 8.5,
+      "y": -1.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "024E24FEFEBE9F18"
+      ],
+      "id": "5FA11C8ABF34A2F2",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "4011CA5D6D51477B",
+          "item": "blue_skies:cooked_carabeef",
+          "random_bonus": 2,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "2F30C609D498A9CA",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "30BFAF736363BB9D",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:pyrope_helmet",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "231EEF8EEE929A1A",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:pyrope_chestplate",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "1C08CD28EAFBAC87",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:pyrope_leggings",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "69743A489849E69C",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:pyrope_boots",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 9.0,
+      "y": -1.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Casque en pyrope"
+    },
+    {
+      "dependencies": [
+        "024E24FEFEBE9F18"
+      ],
+      "id": "6934BC1F55BFB0B7",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "15AF1A966326D66E",
+          "item": "blue_skies:cooked_monitor_tail",
+          "random_bonus": 2,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 2,
+          "id": "6BB2A5101A9C0E63",
+          "item": "blue_skies:pyrope_gem",
+          "random_bonus": 2,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "1269E077640D32B2",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "176DC971E7D93B58",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:pyrope_sword",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "16A08D1D70BDFC82",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:pyrope_axe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "0F687B60AE5C27B1",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:pyrope_shovel",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "57955CCC13753119",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:pyrope_pickaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Outils de pyrope",
+      "x": 8.0,
+      "y": -1.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "01CC11AF707B47A8"
+      ],
+      "description": [
+        "Alors que nous allons plus loin dans les cavernes du ciel bleu, nous allons rencontrer Aquite Ore.",
+        "Vous aurez besoin de ces outils pour faire le minerai Blue Skie plus dur.",
+        "De là, il est recommandé de trouver certains des meilleurs matériaux pour fabriquer des armes et des armures.",
+        "Remarque : Les armes ATM font toujours un coup de poing."
+      ],
+      "id": "2E9AB07D74163229",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "561594945DBC706C",
+          "item": "blue_skies:raw_aquite",
+          "random_bonus": 3,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 3,
+          "id": "0751B5B504C9C77F",
+          "item": "blue_skies:cooked_horizofin_tunid",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "10224F68EF1D1D96",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "count": 3,
+          "id": "020C53D3660A94E1",
+          "item": "blue_skies:aquite",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Outils métalliques",
+      "x": 11.5,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9AB07D74163229"
+      ],
+      "description": [
+        "La pierre précieuse verte Diopside est un métal très dur qui empaquete un poinçon, mais est du côté le plus lent. C'est parfait pour les armes !"
+      ],
+      "id": "5D5B1F46167CDA6B",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "0F55C4B9DD888C0F",
+          "item": "blue_skies:diopside_gem",
+          "random_bonus": 3,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 2,
+          "id": "62C3C2D8DC8020D8",
+          "item": "blue_skies:cooked_carabeef",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "5B24383610F7527D",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "count": 3,
+          "id": "75FFB75DA4542002",
+          "item": "blue_skies:diopside_gem",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Diopside",
+      "x": 12.5,
+      "y": -1.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "01CC11AF707B47A8"
+      ],
+      "description": [
+        "Le ventium est un métal rouge présent dans la plupart des biomes non montagnards d'Everbright.",
+        "C'est essentiellement du fer, mais on ne peut que fabriquer des cisailles, des seaux et la boîte à outils."
+      ],
+      "id": "5971979B548EA445",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "0DD8EF68B025D73A",
+          "item": "blue_skies:ventium_ingot",
+          "random_bonus": 2,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 4,
+          "id": "0EE8ACC256A0C62A",
+          "item": "blue_skies:brewberry",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "6A450A89684D5F99",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "subtitle": "Fer rouge",
+      "tasks": [
+        {
+          "id": "3F90648949036C4A",
+          "item": "blue_skies:ventium_ingot",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&cVentium",
+      "x": 8.0,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "01CC11AF707B47A8"
+      ],
+      "description": [
+        "On peut trouver le fausite à l'intérieur des biomes non montagnards d'Everbright.",
+        "Ce lingot est utilisé pour renforcer la durabilité de presque n'importe quel outil à l'aide de la boîte à outils."
+      ],
+      "id": "44B4EAE72B759DAB",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "299A7492D2FEB35E",
+          "item": "blue_skies:falsite_ingot",
+          "random_bonus": 2,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 4,
+          "id": "1A51D03C978400CB",
+          "item": "blue_skies:black_brewberry",
+          "random_bonus": 4,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "14E296DCAB5509BC",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "count": 2,
+          "id": "288FFB8D210368AB",
+          "item": "blue_skies:falsite_ingot",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&9Fausite",
+      "x": 8.5,
+      "y": 3.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9AB07D74163229"
+      ],
+      "description": [
+        "Voici le diamant du ciel bleu.",
+        "Bien que Diopside soit plus durable et frappe plus fort, Charoite est plus rapide et est plus léger dans l'ensemble. Les outils fabriqués à partir de Charoite peuvent exploiter n'importe quoi dans le ciel bleu."
+      ],
+      "id": "7D4CF4C41636A6AC",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "16AF8D8EADBC6BB6",
+          "item": "blue_skies:charoite",
+          "random_bonus": 2,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "4DEF1DDBCD31A1E6",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "2D998C9FA25D99EB",
+          "item": "blue_skies:raw_charoite",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Charoite",
+      "x": 10.5,
+      "y": -1.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "01CC11AF707B47A8"
+      ],
+      "description": [
+        "Trouvé seulement dans les dunes de cristal.",
+        "Les outils fabriqués à partir de ce lingot seront livrés avec Auto-Smelt.",
+        "Cela peut également être utilisé pour faire la Forge Horizonite."
+      ],
+      "id": "7A7D72F23942CA26",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "687D6CB2D7721414",
+          "item": "blue_skies:raw_horizonite",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "44DE083EA8A24EDB",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "2BF5DD3804927BE3",
+          "item": "blue_skies:horizonite_ingot",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&6Horizonte",
+      "x": 9.0,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5971979B548EA445"
+      ],
+      "description": [
+        "Ceci est utilisé pour mettre à niveau et améliorer les outils de Blue Skies.",
+        "Vous pouvez utiliser Falsite pour augmenter la durabilité d'un outil, ou vous pouvez utiliser n'importe quel bâton du mod pour échanger sur un outil. Oui, différents types de bois ont des utilisations différentes."
+      ],
+      "id": "42C762A091ABC8FA",
+      "rewards": [
+        {
+          "id": "3CCF951FE284BAEE",
+          "item": "blue_skies:starlit_stick",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "611CD29E9F4CC356",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "586A6B9A39D6E580",
+          "item": "blue_skies:tool_box",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 7.5,
+      "y": 3.5,
+      "repeatable": false,
+      "title": "Boîte à outils"
+    },
+    {
+      "dependencies": [
+        "7A7D72F23942CA26"
+      ],
+      "id": "7FC945F6C97B7F97",
+      "optional": 1,
+      "rewards": [
+        {
+          "count": 4,
+          "id": "4F9695FDC473B038",
+          "item": "blue_skies:horizonite_ingot",
+          "random_bonus": 4,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "750244E2FCC4D4E2",
+          "type": "xp",
+          "xp": 1000,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "4171854BF1BB7DF6",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:horizonite_sword",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "2EF9D4DAAEBBEE12",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:horizonite_pickaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "2F0B6D1BFA48800E",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:horizonite_axe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "16E045D8124187D5",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:horizonite_shovel",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "2876D15987035EC5",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:horizonite_hoe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Outils Horizonite",
+      "x": 10.0,
+      "y": 2.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7A7D72F23942CA26"
+      ],
+      "description": [
+        "Tu as déjà voulu une forge qui sente les choses sans carburant ?",
+        "Techniquement, cela nécessite un \"carburant\" en soi. Il a une charge, et peut être rechargé en utilisant Sunstone ou tout ce qui est fait à partir d'Horizonite.",
+        "La forge doit être vide pour la recharger."
+      ],
+      "id": "66C82680A3BEBF6C",
+      "optional": 1,
+      "rewards": [
+        {
+          "count": 2,
+          "id": "47CC24CE055F4113",
+          "item": "blue_skies:sunstone_crystal",
+          "random_bonus": 2,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 4,
+          "id": "4B7682602DA28B10",
+          "item": "blue_skies:cooked_charscale_moki",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "166E6511760A515E",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "39D9A86C406175AA",
+          "item": "blue_skies:horizonite_forge",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 9.5,
+      "y": 3.5,
+      "repeatable": false,
+      "title": "Forge d'horizonite"
+    },
+    {
+      "dependencies": [
+        "44B4EAE72B759DAB"
+      ],
+      "description": [
+        "C'est une lanterne qui empêche les frayères hostiles dans un grand rayon."
+      ],
+      "id": "7B06905D7703834A",
+      "optional": 1,
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "4C2C98E1C53314B0",
+          "item": "blue_skies:warding_pearl",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 8.5,
+      "y": 4.0,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Perle de garde"
+    },
+    {
+      "dependencies": [
+        "5971979B548EA445"
+      ],
+      "description": [
+        "Le ventium peut être utilisé pour fabriquer des karités et un seau.",
+        "Le seau peut prendre les foules sous-marines dans le ciel bleu."
+      ],
+      "id": "2CBF8C58B708FF58",
+      "optional": 1,
+      "rewards": [
+        {
+          "count": 4,
+          "id": "08395458FE1D7910",
+          "item": "blue_skies:cooked_municipal_monkfish",
+          "random_bonus": 4,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "613E91D46313C488",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "3CE536F67E49D59C",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:ventium_shears",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "20EB70661D7D1333",
+          "item": "blue_skies:ventium_bucket",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Outils de ventilation",
+      "x": 7.0,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5D5B1F46167CDA6B"
+      ],
+      "id": "3CDB275F6E62F06C",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "439F684C6F98871D",
+          "item": "blue_skies:raw_falsite",
+          "random_bonus": 2,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "28D687A003978FE7",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "360DA4E958017F07",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:diopside_sword",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "66E39D600F40181B",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:diopside_pickaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "598785B6DCC096C0",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:diopside_axe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "66C7DC56390ACD2C",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:diopside_shovel",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "7C7812080C470D00",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:diopside_hoe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Outils Diopside",
+      "x": 12.0,
+      "y": -1.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5D5B1F46167CDA6B"
+      ],
+      "id": "4D93809D6FE0B927",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "165F20071544C616",
+          "item": "blue_skies:raw_falsite",
+          "random_bonus": 2,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "2EAB39C26DF3DBC8",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "67DA3F56583E95F2",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:diopside_helmet",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "2710C4B84B54D48B",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:diopside_chestplate",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "673454A38D2245B3",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:diopside_leggings",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "67A0A6ED296BF945",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:diopside_boots",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Armure Diopside",
+      "x": 13.0,
+      "y": -1.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7D4CF4C41636A6AC"
+      ],
+      "id": "6133D8F843CE0B67",
+      "rewards": [
+        {
+          "id": "6351FDD3B0CE0B17",
+          "type": "xp",
+          "xp": 1000,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 4,
+          "id": "450BFC428C25E4C8",
+          "item": "blue_skies:raw_falsite",
+          "random_bonus": 4,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "67073E418F4A1E97",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:charoite_sword",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "365A49C10C489D27",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:charoite_pickaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "33FA819E84249AC6",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:charoite_axe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "6F1D0082E607C924",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:charoite_shovel",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "4EC82009E7C0D14B",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:charoite_hoe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Outils à base de charoite",
+      "x": 10.0,
+      "y": -1.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7D4CF4C41636A6AC"
+      ],
+      "id": "2DF4B697F3607E46",
+      "rewards": [
+        {
+          "id": "1F141DA54A8E524C",
+          "type": "xp",
+          "xp": 1000,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 4,
+          "id": "5F68A636449F5C5C",
+          "item": "blue_skies:raw_falsite",
+          "random_bonus": 4,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "0A7582E5A1635307",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:charoite_helmet",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "45C9A64292BAEB08",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:charoite_chestplate",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "72F20E86592033E0",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:charoite_leggings",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "0ACC535208CF6142",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:charoite_boots",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Armure de Charoite",
+      "x": 11.0,
+      "y": -1.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9AB07D74163229"
+      ],
+      "description": [
+        "Que vous ayez commencé à Everbright ou à Everdawn, vous aurez envie de chercher une structure de tour. Il y a des images pour eux dans les prochaines quêtes. C'est là que vous trouverez votre premier patron.",
+        "Dans les parties plus petites de la tour, vous vous battrez pour le butin et acquérir quelques clés de donjon aveuglant. Au fond du donjon, il y aura une porte avec une serrure dessus. Utilisez 4 des clés de donjon aveuglant pour débloquer le combat du patron.",
+        "Note : Le patron va déposer un arc lors de la défaite. Ceux-ci peuvent être équipés dans un onglet spécial de votre inventaire. Il y a 4 arcs au total."
+      ],
+      "id": "0C9D36409D57A81B",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "750D837A440CB4F0",
+          "item": "blue_skies:blinding_key",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "183A9CBEBD05E529",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.5,
+      "tasks": [
+        {
+          "count": 4,
+          "id": "5962533F56B4339D",
+          "item": "blue_skies:blinding_key",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&9Les Donjons d'entrée",
+      "x": 15.0,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E9AB07D74163229"
+      ],
+      "description": [
+        "Dans Blue Skies, il y a 4 patrons à vaincre et plusieurs donjons à explorer.",
+        "Vous pouvez trouver des \"tunnels\" aléatoires qui mènent vers les chambres du donjon. Ceux-ci frayeront dans les Esprits de Givre Armoré à tuer. Recueillez quelques-uns de ces pour les âmes!"
+      ],
+      "id": "6BFD7C08444582FC",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "402324647A6D04B4",
+          "item": "blue_skies:soul_fragment",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "53E1ABE68315D22B",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "octagon",
+      "tasks": [
+        {
+          "count": 5,
+          "id": "39B0CD759CA511CD",
+          "item": "blue_skies:soul_fragment",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Structures et donjons",
+      "x": 11.5,
+      "y": 2.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "0C9D36409D57A81B"
+      ],
+      "description": [
+        "Au plus profond de la tour d'Everbright, vous trouverez l'Invocateur.",
+        "Ce patron utilisera la foudre, les attaques d'énergie, et bien sûr ses gardes de golem convoqués pour protéger la tour.",
+        "Pouvez-vous mieux l'Invocateur ?"
+      ],
+      "icon": "blue_skies:summoner_spawn_egg",
+      "id": "06C07C78643E2FED",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "3F272C88B27D8F21",
+          "item": "blue_skies:blinding_key",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "495A1C6AE4FCFBB7",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "subtitle": "Le gardien de la tour Everbright",
+      "tasks": [
+        {
+          "entity": "blue_skies:summoner",
+          "icon": "blue_skies:summoner_spawn_egg",
+          "id": "231194296729C125",
+          "title": "&5L'invocateur",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "x": 17.5,
+      "y": 0.0,
+      "repeatable": false,
+      "title": "Chasse : Summonateur"
+    },
+    {
+      "dependencies": [
+        "0C9D36409D57A81B"
+      ],
+      "description": [
+        "Dans la tour de l'Everdawn, vous trouverez le combat du patron alchimiste. Recueillez quelques clés de donjon aveuglantes pour débloquer le combat!",
+        "Préparez-vous à être frappé avec des potions, ainsi que de combattre les minions de l'alchimiste."
+      ],
+      "icon": "blue_skies:alchemist_spawn_egg",
+      "id": "5E9E78EF300DD735",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "38E2E2226341E9A1",
+          "item": "blue_skies:blinding_key",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "4A4A05E475B23CC2",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "subtitle": "Le gardien de la Tour de l'Everdawn",
+      "tasks": [
+        {
+          "entity": "blue_skies:alchemist",
+          "icon": "blue_skies:alchemist_spawn_egg",
+          "id": "6148EAF9DAF2C356",
+          "title": "&5L'alchimiste",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "x": 17.5,
+      "y": 1.0,
+      "repeatable": false,
+      "title": "Chasse : Alchimiste"
+    },
+    {
+      "dependencies": [
+        "06C07C78643E2FED"
+      ],
+      "description": [
+        "Vous trouverez le donjon de la nature dans Everbright. Vous ne pouvez pas le manquer, c'est énorme.",
+        "Rassemblez quelques clés de donjon de la nature dans le labyrinthe de la structure pour débloquer le combat du patron, et CHOP lui bas!",
+        "Remarque: Vous pouvez échanger avec le Gatekeeper au cas où vous ne trouverez pas toutes les clés, mais seulement après avoir cliqué droit sur la porte pour le combat du patron."
+      ],
+      "id": "131D9C0B10370C82",
+      "rewards": [
+        {
+          "id": "067C9C9006926620",
+          "item": "blue_skies:nature_key",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "01A717ABB2548230",
+          "type": "xp",
+          "xp": 1000,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "size": 1.5,
+      "subtitle": "Le patron du donjon de la nature",
+      "tasks": [
+        {
+          "entity": "blue_skies:starlit_crusher",
+          "icon": "blue_skies:starlit_crusher_spawn_egg",
+          "id": "542DEBD0B636D387",
+          "title": "&5Le croqueur étoilé",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "x": 19.5,
+      "y": -0.5,
+      "repeatable": false,
+      "title": "Chasse : Déstructeur des Étoiles"
+    },
+    {
+      "dependencies": [
+        "5E9E78EF300DD735"
+      ],
+      "description": [
+        "Remarque: Si vous êtes arachnophobique, ce n'est peut-être pas le combat pour vous.",
+        "Au sein de l'Everdawn, il y aura un arbre mort géant avec un tas de toiles d'araignées qui le couvriront.",
+        "Rassemblez quelques clés de donjon Poison pour débloquer le combat final du patron !"
+      ],
+      "id": "0FD7AC1AC4002018",
+      "rewards": [
+        {
+          "id": "3DD9CC6A9387FA64",
+          "item": "blue_skies:poison_key",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "08A3EBCD59BA4657",
+          "type": "xp",
+          "xp": 1000,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "size": 1.5,
+      "subtitle": "Le patron du donjon de Poison",
+      "tasks": [
+        {
+          "entity": "blue_skies:arachnarch",
+          "icon": "blue_skies:arachnarch_spawn_egg",
+          "id": "05342130059E9C1E",
+          "title": "&5L'Arachnarque",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "x": 19.5,
+      "y": 1.5,
+      "repeatable": false,
+      "title": "Chasse : Arachnarque"
+    },
+    {
+      "dependencies": [
+        "06C07C78643E2FED"
+      ],
+      "description": [
+        "Augmente la vitesse de déplacement."
+      ],
+      "id": "7A852D184CF757A6",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "03A724A5016171D8",
+          "item": "blue_skies:blinding_key",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "3680478287F232B4",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "6C1F9A635013D4F5",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:ethereal_arc",
+            "tag": {
+              "ArcLevel": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 17.5,
+      "y": -1.5,
+      "repeatable": false,
+      "title": "Artéfact éthéré"
+    },
+    {
+      "dependencies": [
+        "5E9E78EF300DD735"
+      ],
+      "description": [
+        "Donne de l'invisibilité en se faufilant."
+      ],
+      "id": "1C6260CCBDE9575C",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "5114F289F5A7B557",
+          "item": "blue_skies:blinding_key",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "1D4AC03492567C4B",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "02C4988DA96F3378",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:dusk_arc",
+            "tag": {
+              "ArcLevel": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 17.5,
+      "y": 2.5,
+      "repeatable": false,
+      "title": "Artéfact du crépuscule"
+    },
+    {
+      "dependencies": [
+        "131D9C0B10370C82"
+      ],
+      "id": "76508FFD71569414",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "557AF482B6C4FADE",
+          "type": "xp",
+          "xp": 1000,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "subtitle": "Des gouttes du sac à dos de l'Étoile",
+      "tasks": [
+        {
+          "id": "19EC6A024D51DB2F",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:crushing_hammer",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 22.0,
+      "y": -0.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Marteau écraseur"
+    },
+    {
+      "dependencies": [
+        "0FD7AC1AC4002018"
+      ],
+      "description": [
+        "Augmente les dommages causés par l'empoisonnement."
+      ],
+      "id": "684E7574F19D05B0",
+      "rewards": [
+        {
+          "id": "48C6500171CE17FC",
+          "type": "xp",
+          "xp": 1000,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Des gouttes dans le sac de l'Arachnarque",
+      "tasks": [
+        {
+          "id": "2CA15CA1EC9DCE5A",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:poison_arc",
+            "tag": {
+              "ArcLevel": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 21.0,
+      "y": 1.5,
+      "repeatable": false,
+      "title": "Artéfact empoisonné"
+    },
+    {
+      "dependencies": [
+        "0FD7AC1AC4002018"
+      ],
+      "id": "52E469B925D2077D",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "3C31C839425D012D",
+          "type": "xp",
+          "xp": 1000,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "subtitle": "Des gouttes dans le sac de l'Arachnarque",
+      "tasks": [
+        {
+          "id": "75ACD6EBF9A06B57",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:venom_sac",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 22.0,
+      "y": 2.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Poche de venin"
+    },
+    {
+      "dependencies": [
+        "0FD7AC1AC4002018"
+      ],
+      "id": "21167D7B61915941",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "275F2CEDBC8922DB",
+          "type": "xp",
+          "xp": 1000,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "subtitle": "Des gouttes dans le sac de l'Arachnarque",
+      "tasks": [
+        {
+          "id": "28720A47B7EFA026",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:different_sword",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 22.0,
+      "y": 1.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Épée différente"
+    },
+    {
+      "dependencies": [
+        "131D9C0B10370C82"
+      ],
+      "description": [
+        "Augmente les cœurs.",
+        "Vous aurez également besoin de cela pour créer l'âme Dragon, qui est nécessaire pour l'étoile ATM."
+      ],
+      "id": "6CB0B0784DD9AAD0",
+      "rewards": [
+        {
+          "id": "43A22E7C6D495C1E",
+          "type": "xp",
+          "xp": 1000,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Des gouttes du sac à dos de l'Étoile",
+      "tasks": [
+        {
+          "id": "6BDBA0EEEEFB350C",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:nature_arc",
+            "tag": {
+              "ArcLevel": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 21.0,
+      "y": -0.5,
+      "repeatable": false,
+      "title": "Artéfact de la nature"
+    },
+    {
+      "dependencies": [
+        "7A852D184CF757A6"
+      ],
+      "id": "7082A3184D1D6484",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "170A0AB5B245FC41",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "tasks": [
+        {
+          "id": "679E4D2008283A33",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:soulbound_spear",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 17.0,
+      "y": -2.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Lance de garde"
+    },
+    {
+      "dependencies": [
+        "7A852D184CF757A6"
+      ],
+      "id": "7F7F9D529FAACE42",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "51EE2ABA42A69207",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "tasks": [
+        {
+          "id": "6044FEFCE3265F31",
+          "item": "blue_skies:summoning_table",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 18.0,
+      "y": -2.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Table d'invocation"
+    },
+    {
+      "dependencies": [
+        "1C6260CCBDE9575C"
+      ],
+      "id": "1702C678256C2606",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "3693D1E2B6AB32D8",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "tasks": [
+        {
+          "id": "0473FB8DB5D0C410",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:spike_shield",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 17.5,
+      "y": 3.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Bouclier spéléothème"
+    },
+    {
+      "can_repeat": 0,
+      "description": [
+        "Cette quête a été créée par AllTheMods Staff, ou un contributeur communautaire pour une utilisation dans AllTheMods Modpacks.",
+        "Comme tous les packs AllTheMods sont sous licence All Rights Reserved, cette Quest n'est pas autorisée à être utilisée dans les packs publics non publiés par l'équipe AllTheMods, sans autorisation explicite.",
+        "Cette quête est intentionnellement cachée, si vous voyez cela, vous êtes en mode édition.",
+        "Repère de lecture : obtiens le livre indiqué pour poursuivre. Cette étape ne donne aucune récompense."
+      ],
+      "disable_toast": 1,
+      "hide_details_until_startable": 1,
+      "hide_until_deps_visible": 1,
+      "icon": {
+        "Count": 1,
+        "id": "ftbquests:custom_icon",
+        "tag": {
+          "Icon": "minecraft:item/barrier"
+        }
+      },
+      "id": "5746755EB0786F70",
+      "invisible": 1,
+      "optional": 1,
+      "shape": "octagon",
+      "tasks": [
+        {
+          "id": "1A944EF867FAFDED",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "7F9484DF44430758",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": -2.0,
+      "y": -1.0,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Livre",
+      "dependencies": []
+    }
+  ],
+  "title": "Blue Skies",
+  "default_consume_items": false
+}

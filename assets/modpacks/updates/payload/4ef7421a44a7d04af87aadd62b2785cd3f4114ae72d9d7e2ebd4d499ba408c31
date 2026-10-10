@@ -1,0 +1,4579 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "",
+  "filename": "atm9_pneumaticcraft",
+  "group": "3DA9E3931E28DB13",
+  "icon": {
+    "Count": 1,
+    "id": "pneumaticcraft:pneumatic_wrench",
+    "tag": {
+      "pneumaticcraft:air": 30000
+    }
+  },
+  "id": "1FCD757BF7132A81",
+  "images": [
+    {
+      "height": 1.0,
+      "image": "pneumaticcraft:item/pneumatic_helmet",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 26.5,
+      "y": -1.0
+    },
+    {
+      "height": 1.0,
+      "image": "pneumaticcraft:item/pneumatic_chestplate",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 26.5,
+      "y": 0.0
+    },
+    {
+      "height": 1.0,
+      "image": "pneumaticcraft:item/pneumatic_leggings",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 26.5,
+      "y": 1.0
+    },
+    {
+      "height": 1.0,
+      "image": "pneumaticcraft:item/pneumatic_boots",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 26.5,
+      "y": 2.0
+    },
+    {
+      "height": 1.0,
+      "image": "ftbchunks:textures/faces/pneumaticcraft/amadrone.png",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 15.5,
+      "y": 7.0
+    },
+    {
+      "height": 1.0,
+      "image": "ftbchunks:textures/faces/pneumaticcraft/drone.png",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 21.0,
+      "y": 4.0
+    },
+    {
+      "height": 1.0,
+      "image": "pneumaticcraft:item/salmon_tempura",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 8.5,
+      "y": 8.5
+    },
+    {
+      "height": 1.0,
+      "image": "pneumaticcraft:item/sourdough_bread",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 7.5,
+      "y": 8.5
+    },
+    {
+      "click": "#3CFE522A4B7CC2EC",
+      "height": 1.0,
+      "image": "pneumaticcraft:block/chest/front_panel",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 5.0,
+      "y": -1.5
+    },
+    {
+      "click": "#440B1E1D4951F808",
+      "height": 1.0,
+      "image": "pneumaticcraft:block/chest/front_panel_smart",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 5.0,
+      "y": -3.0
+    },
+    {
+      "height": 1.0,
+      "image": "pneumaticcraft:item/seismic_sensor",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 7.0,
+      "y": 2.5
+    }
+  ],
+  "order_index": 10,
+  "quest_links": [],
+  "quests": [
+    {
+      "description": [
+        "PneumaticCraft utilise de l’air comprimé pour alimenter machines, outils et drones. Le manuel et JEI complètent les conseils de ce chapitre.",
+        "Le fer comprimé est un matériau de départ. Une explosion peut convertir des lingots de fer : prépare cette expérience loin de la base, avec peu de matière. Les chambres de pression permettent ensuite d’organiser la production."
+      ],
+      "hide_dependency_lines": 0,
+      "id": "7B81B32AB1745DE0",
+      "min_width": 250,
+      "rewards": [
+        {
+          "id": "3C83ACFCB8D0EFDD",
+          "item": {
+            "Count": 1,
+            "id": "patchouli:guide_book",
+            "tag": {
+              "patchouli:book": "pneumaticcraft:book"
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "0F55F80386DFB3D7",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.5,
+      "subtitle": "La puissance de l'air !",
+      "tasks": [
+        {
+          "id": "27F70CFCC2EFC75B",
+          "item": "pneumaticcraft:ingot_iron_compressed",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "L’air comprimé de PneumaticCraft",
+      "x": 0.0,
+      "y": 0.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "7B81B32AB1745DE0"
+      ],
+      "description": [
+        "L'un des matériaux les plus importants dont vous aurez besoin est la pierre renforcée, commencer par faire 32 en utilisant le fer comprimé et quelques Pierres régulières."
+      ],
+      "id": "3B8F577DC514E343",
+      "min_required_dependencies": 1,
+      "rewards": [
+        {
+          "id": "46DB06A3C6ABF84E",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Vous en aurez besoin.",
+      "tasks": [
+        {
+          "count": 32,
+          "id": "75D16F547F18203A",
+          "item": "pneumaticcraft:reinforced_stone",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Pierre renforcée",
+      "x": 4.0,
+      "y": 0.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7B81B32AB1745DE0"
+      ],
+      "description": [
+        "Le fer comprimé peut être utilisé pour fabriquer l'armure de fer comprimé, c'est le même que l'armure de fer, mais avec une meilleure résistance à l'armure et à l'écrou."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "pneumaticcraft:compressed_iron_chestplate",
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "id": "25387BC1903AE7B1",
+      "optional": 1,
+      "rewards": [
+        {
+          "count": 5,
+          "id": "3DB91A5ACBE537EF",
+          "item": "pneumaticcraft:ingot_iron_compressed",
+          "random_bonus": 5,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "36409DF999E31D62",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Mieux que Iron !",
+      "tasks": [
+        {
+          "id": "2A55C78ADDF0428E",
+          "item": {
+            "Count": 1,
+            "id": "pneumaticcraft:compressed_iron_helmet",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "71FFAE4A8CB358CF",
+          "item": {
+            "Count": 1,
+            "id": "pneumaticcraft:compressed_iron_chestplate",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "376E5F89A2C5D585",
+          "item": {
+            "Count": 1,
+            "id": "pneumaticcraft:compressed_iron_leggings",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "4533037C65D346FD",
+          "item": {
+            "Count": 1,
+            "id": "pneumaticcraft:compressed_iron_boots",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Armure de fer comprimée",
+      "x": -2.5,
+      "y": 0.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7B81B32AB1745DE0"
+      ],
+      "dependency_requirement": "one_completed",
+      "description": [
+        "Est-ce même possible ? Si vous souhaitez automatiser ce processus, vous pouvez utiliser Mystic Agriculture ou Productive Bees. Ou je suppose que vous pourriez automatiser, avec... des explosions."
+      ],
+      "hide_dependency_lines": 0,
+      "hide_until_deps_visible": 1,
+      "id": "5B34B293EF1621ED",
+      "min_required_dependencies": 1,
+      "optional": 1,
+      "rewards": [
+        {
+          "count": 5,
+          "id": "5C52CE6F6B37EA8E",
+          "item": "pneumaticcraft:ingot_iron_compressed",
+          "random_bonus": 5,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "7B990DDCE1435F67",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Fatigué d'exploser des trucs ?",
+      "tasks": [
+        {
+          "id": "40449BC8E23DD40B",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:compressed_iron"
+              }
+            }
+          },
+          "title": "Automatisation du fer comprimé",
+          "type": "item",
+          "consume_items": false,
+          "match_nbt": true,
+          "weak_nbt_match": true
+        }
+      ],
+      "x": 1.5,
+      "y": -1.5,
+      "repeatable": false,
+      "title": "Honeycomb"
+    },
+    {
+      "dependencies": [
+        "7B81B32AB1745DE0"
+      ],
+      "description": [
+        "Pour déplacer la pression, vous aurez besoin d'obtenir des tubes de pression. Quelle pression vous pouvez demander? Continuer la ligne de quête pour voir à quoi ils sont utilisés."
+      ],
+      "id": "5AF2A023157301D8",
+      "rewards": [
+        {
+          "id": "41EAC2F7080518D1",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Pression ?",
+      "tasks": [
+        {
+          "count": 16,
+          "id": "63F10AC038E395B4",
+          "item": {
+            "Count": 16,
+            "id": "pneumaticcraft:pressure_tube"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Pression de transport",
+      "x": 0.0,
+      "y": 2.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "0D45008B5AB8D64F"
+      ],
+      "description": [
+        "Lorsque vous faites de la pression dans un compresseur d'air, si vous n'avez nulle part pour la pression d'aller. il va juste disparaître. Assurez-vous que vous avez quelque part pour la pression d'aller avant de faire certains."
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "7EF315BE903A7774",
+      "rewards": [
+        {
+          "id": "060B145CD0B4FAF8",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Qu'est-il arrivé à RF ou FE?",
+      "tasks": [
+        {
+          "id": "419AC50BB40F89D2",
+          "type": "item",
+          "item": "pneumaticcraft:pressure_gauge",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 0.0,
+      "y": 5.5,
+      "repeatable": false,
+      "title": "Pressure Gauge"
+    },
+    {
+      "dependencies": [
+        "3860345FF650AA51",
+        "3B8F577DC514E343"
+      ],
+      "description": [
+        "La chambre de pression est une structure multiblocs importante composée de murs de chambre de pression (les visages peuvent être remplacés par du verre de chambre de pression). Bien que la chambre de pression puisse être aussi petite qu'un multibloc 3x3x3, celle requise pour le trou noir pulsant est 5x5x5, c'est donc celle que nous allons construire. Les blocs nécessaires pour cela sont ce qui est nécessaire pour la recherche. 4,9 bars de pression sont nécessaires pour le trou noir pulsant. Pour utiliser la chambre de pression, vous devrez égoutter la pression dans une chambre de pression en utilisant les tubes de pression que vous avez faits plus tôt, n'oubliez pas de mettre une amélioration de sécurité dans la soupape de pression. Différentes recettes nécessitent des quantités de pression différentes. Vous devrez pouvoir entrer et sortir des objets vers et depuis la chambre de pression, c'est là que les interfaces de chambre de pression entrent en dedans."
+      ],
+      "icon": "pneumaticcraft:pressure_chamber_interface",
+      "id": "366353CC41B97D07",
+      "min_width": 400,
+      "rewards": [
+        {
+          "id": "155D570BD528ADB7",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.25,
+      "subtitle": "Pressurisation !",
+      "tasks": [
+        {
+          "count": 95,
+          "id": "6FC75EADB0B52099",
+          "item": "pneumaticcraft:pressure_chamber_wall",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "7AA0A6375371DA5C",
+          "item": "pneumaticcraft:pressure_chamber_valve",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 2,
+          "id": "2F71087BAAA8E77A",
+          "item": {
+            "Count": 2,
+            "id": "pneumaticcraft:pressure_chamber_interface"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "La salle de pression",
+      "x": 4.0,
+      "y": 4.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "0D45008B5AB8D64F"
+      ],
+      "dependency_requirement": "all_started",
+      "description": [
+        "Ai-je oublié de mentionner que tout peut exploser... Heureusement, il y a une solution facile ! La mise à niveau de sécurité lorsqu'elle est placée dans une machine assure qu'elle n'explose pas, qu'elle entre dans n'importe quelle machine où elle peut entrer."
+      ],
+      "id": "3860345FF650AA51",
+      "rewards": [
+        {
+          "id": "28495873BE159F57",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Si seulement il y avait une solution facile...",
+      "tasks": [
+        {
+          "count": 2,
+          "id": "38648C27FC2756B4",
+          "item": {
+            "Count": 2,
+            "id": "pneumaticcraft:security_upgrade"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Prévenir les explosions ?",
+      "x": 2.0,
+      "y": 4.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5AF2A023157301D8"
+      ],
+      "description": [
+        "Le Compresseur d'air est un moyen facile de faire pression, il suffit de mettre des objets burnables dedans, et de regarder la magie se produire! (Je recommande de faire au moins 3 de ces à commencer par)."
+      ],
+      "id": "0D45008B5AB8D64F",
+      "rewards": [
+        {
+          "id": "2E8258EDB85CDE84",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.5,
+      "subtitle": "Je sens la pression !",
+      "tasks": [
+        {
+          "id": "484B7F940E09E898",
+          "item": "pneumaticcraft:air_compressor",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Pression de production",
+      "x": 0.0,
+      "y": 4.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1ADEA6E6212DE08B"
+      ],
+      "description": [
+        "La Clé Pneumatique est utilisée pour se déplacer ou casser vos machines et tubes."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "pneumaticcraft:pneumatic_wrench",
+        "tag": {
+          "pneumaticcraft:air": 30000
+        }
+      },
+      "id": "2C8200204E90CD72",
+      "rewards": [
+        {
+          "id": "47C0E13F8D5CCDD5",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Torque-ing à propos des outils !",
+      "tasks": [
+        {
+          "id": "7F6F3DA31DBDC26C",
+          "item": "pneumaticcraft:pneumatic_wrench",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 2.0,
+      "y": 2.5,
+      "repeatable": false,
+      "title": "Pneumatic Wrench"
+    },
+    {
+      "dependencies": [
+        "7B81B32AB1745DE0"
+      ],
+      "description": [
+        "Lorsqu'un réservoir fluide est placé sur un autre réservoir fluide et qu'il est assemblé, il devient un grand réservoir. Il peut être utilisé dans les recettes en utilisant la version seautée de liquides PneumaticCraft."
+      ],
+      "id": "7AA399F9E5DFB7A4",
+      "rewards": [
+        {
+          "id": "7C3484C92D2BBC6A",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "32 000milliards",
+      "tasks": [
+        {
+          "id": "54A50D62EE153C34",
+          "item": "pneumaticcraft:small_tank",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -1.5,
+      "y": 1.5,
+      "repeatable": false,
+      "title": "Small Fluid Tank"
+    },
+    {
+      "dependencies": [
+        "7AA399F9E5DFB7A4"
+      ],
+      "id": "67CC78802C7579B8",
+      "rewards": [
+        {
+          "id": "306AE97D8BEFC831",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "64 000mb",
+      "tasks": [
+        {
+          "id": "5DA4953A7337E7E8",
+          "item": "pneumaticcraft:medium_tank",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -2.5,
+      "y": 1.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Medium Fluid Tank"
+    },
+    {
+      "dependencies": [
+        "5267C15A24184AA1"
+      ],
+      "id": "1D40093CCF019572",
+      "rewards": [
+        {
+          "id": "346D37A1FA93D064",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "512 000mb",
+      "tasks": [
+        {
+          "id": "560604F56FAE45DF",
+          "item": "pneumaticcraft:huge_tank",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -1.5,
+      "y": 2.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Huge Fluid Tank"
+    },
+    {
+      "dependencies": [
+        "67CC78802C7579B8"
+      ],
+      "id": "5267C15A24184AA1",
+      "rewards": [
+        {
+          "id": "20A7CD6FB22616B4",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "128 000mb",
+      "tasks": [
+        {
+          "id": "6B0B016B6B092188",
+          "item": "pneumaticcraft:large_tank",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -2.5,
+      "y": 2.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Large Fluid Tank"
+    },
+    {
+      "dependencies": [
+        "3B8F577DC514E343",
+        "5AF2A023157301D8"
+      ],
+      "description": [
+        "La station de recharge est utilisée pour charger différents outils et gadgets dans PneumaticCraft en utilisant la pression."
+      ],
+      "id": "1ADEA6E6212DE08B",
+      "rewards": [
+        {
+          "id": "56FCD73F3584B8C4",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Où est le cordon ?",
+      "tasks": [
+        {
+          "id": "4D39A3304A57557C",
+          "item": "pneumaticcraft:charging_station",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 2.0,
+      "y": 1.0,
+      "repeatable": false,
+      "title": "Charging Station"
+    },
+    {
+      "dependencies": [
+        "7B81B32AB1745DE0"
+      ],
+      "description": [
+        "Thie Omnidirectionnel Hopper peut entrer des éléments de n'importe quel côté, plus il peut être mis à niveau pour être beaucoup plus rapide qu'un Hopper régulier! Nice pour quand les tuyaux ne sont pas nécessaires."
+      ],
+      "id": "38C44CF2E0998065",
+      "rewards": [
+        {
+          "id": "22943435D14556C3",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Une hopper configurable",
+      "tasks": [
+        {
+          "id": "55DB1D74ED744397",
+          "item": "pneumaticcraft:omnidirectional_hopper",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -2.0,
+      "y": -1.0,
+      "repeatable": false,
+      "title": "Omnidirectional Hopper"
+    },
+    {
+      "dependencies": [
+        "7B81B32AB1745DE0"
+      ],
+      "description": [
+        "Le Hopper liquide est un Hopper, mais pour les liquides. Pas un remplacement pour les tuyaux."
+      ],
+      "id": "77A22F72B1E019EC",
+      "rewards": [
+        {
+          "id": "7E88A93D0538A9ED",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Qui a besoin de tuyaux ?",
+      "tasks": [
+        {
+          "id": "303C1E4E32346A65",
+          "item": "pneumaticcraft:liquid_hopper",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -1.0,
+      "y": -2.0,
+      "repeatable": false,
+      "title": "Liquid Hopper"
+    },
+    {
+      "dependencies": [
+        "7B81B32AB1745DE0"
+      ],
+      "description": [
+        "PneumaticCraft est tout Le Transfert Gadget agit comme un Hopper qui peut être placé entre les blocs."
+      ],
+      "id": "7F71D42205CD2DF9",
+      "rewards": [
+        {
+          "id": "60D6A23B344742DA",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Une petite hopper",
+      "tasks": [
+        {
+          "id": "3EC53935AF28EAA1",
+          "item": "pneumaticcraft:transfer_gadget",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -2.0,
+      "y": -2.0,
+      "repeatable": false,
+      "title": "Transfer Gadget"
+    },
+    {
+      "dependencies": [
+        "1ADEA6E6212DE08B"
+      ],
+      "description": [
+        "Le Manomètre est utilisé pour montrer des informations supplémentaires sur une machine."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "pneumaticcraft:manometer",
+        "tag": {
+          "pneumaticcraft:air": 30000
+        }
+      },
+      "id": "5EF8BBC414BA6FFA",
+      "rewards": [
+        {
+          "id": "66BCCEA473CBF24D",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Un outil utile",
+      "tasks": [
+        {
+          "id": "479EA73DAE729364",
+          "item": "pneumaticcraft:manometer",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 3.0,
+      "y": 2.5,
+      "repeatable": false,
+      "title": "Manometer"
+    },
+    {
+      "dependencies": [
+        "1ADEA6E6212DE08B"
+      ],
+      "description": [
+        "L'applicateur Camouflage peut être utilisé pour cacher les machines PneumaticCraft à l'intérieur d'autres blocs."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "pneumaticcraft:camo_applicator",
+        "tag": {
+          "pneumaticcraft:air": 30000
+        }
+      },
+      "id": "3DE4FD71AA452A14",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "28896B7E166F74EC",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Tu veux que ça ait l'air cool ?",
+      "tasks": [
+        {
+          "id": "08F0A03EBEE331FB",
+          "item": "pneumaticcraft:camo_applicator",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 1.0,
+      "y": 2.5,
+      "repeatable": false,
+      "title": "Camouflage Applicator"
+    },
+    {
+      "dependencies": [
+        "366353CC41B97D07"
+      ],
+      "description": [
+        "L'étape suivante du mod nécessite la collecte du pétrole brut. Ce pétrole peut être trouvé naturellement à la surface du monde."
+      ],
+      "id": "56F443F65D7CDAEC",
+      "rewards": [
+        {
+          "id": "766D05FEAC8D0B2E",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "La voie vers le plastique",
+      "tasks": [
+        {
+          "id": "71023836A27E3F9F",
+          "item": "pneumaticcraft:oil_bucket",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Pétrole brut",
+      "x": 6.0,
+      "y": 4.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "56F443F65D7CDAEC"
+      ],
+      "description": [
+        "Bien que vous puissiez trouver du pétrole brut à la surface, le forage est un excellent moyen d'obtenir un bouquet d'huile. D'abord, utilisez un capteur sismique jusqu'à ce que vous trouviez du pétrole sous vous, puis utilisez votre gaz Lift rempli de tuyaux de forage pour forer le pétrole. (Cela nécessite une pression pour travailler)."
+      ],
+      "icon": "pneumaticcraft:gas_lift",
+      "id": "70242EDC6B949FF7",
+      "min_width": 250,
+      "rewards": [
+        {
+          "id": "00DF9EB8F1D9F14D",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Forage pour le pétrole",
+      "tasks": [
+        {
+          "id": "5F652D55358B80EF",
+          "item": "pneumaticcraft:gas_lift",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 32,
+          "id": "63F837836DA15859",
+          "item": {
+            "Count": 64,
+            "id": "pneumaticcraft:drill_pipe"
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "61C9E99BC0A9BB5F",
+          "item": "pneumaticcraft:seismic_sensor",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 6.0,
+      "y": 2.5,
+      "repeatable": false,
+      "title": "Gas Lift"
+    },
+    {
+      "dependencies": [
+        "56F443F65D7CDAEC",
+        "45200742F56C4734"
+      ],
+      "description": [
+        "La raffinerie de pétrole que nous allons fabriquer est un multibloc 1x1x5 composé de 1 contrôleur de raffinerie (au bas) et de quatre sorties de raffinerie (en haut). Vous aurez besoin d'entrer le pétrole et la chaleur pour cela pour travailler. Cela produira Diesel, Kérosène, Essence et GPL."
+      ],
+      "icon": "pneumaticcraft:refinery",
+      "id": "2F381F3309ADC43E",
+      "min_width": 300,
+      "rewards": [
+        {
+          "id": "53046EC11D6AF49E",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Maintenant, on va quelque part !",
+      "tasks": [
+        {
+          "id": "4D2F164ECB184276",
+          "item": "pneumaticcraft:refinery",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 4,
+          "id": "13B84721FAD75F24",
+          "item": {
+            "Count": 4,
+            "id": "pneumaticcraft:refinery_output"
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 19,
+          "id": "36BA14C6295F311F",
+          "item": {
+            "Count": 19,
+            "id": "pneumaticcraft:thermal_lagging"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Raffinerie de pétrole",
+      "x": 8.0,
+      "y": 4.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "74426247A93107E0"
+      ],
+      "description": [
+        "Ça rend les choses plus rapides."
+      ],
+      "hide_dependency_lines": 0,
+      "id": "377EB8188F6370D7",
+      "rewards": [
+        {
+          "id": "2E21F2C3E47F5CA5",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Vite !",
+      "tasks": [
+        {
+          "id": "674564F735B2C087",
+          "item": "pneumaticcraft:speed_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 11.0,
+      "y": 0.5,
+      "repeatable": false,
+      "title": "Speed Upgrade"
+    },
+    {
+      "dependencies": [
+        "56F443F65D7CDAEC"
+      ],
+      "description": [
+        "Le tube Vortex se sépare de la pression dans l'air chaud et froid. L'air froid va du côté bleu et l'air chaud va du côté rouge."
+      ],
+      "id": "08345B032D59B4E3",
+      "rewards": [
+        {
+          "id": "3DA6B88C41E03408",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Toujours pas RF...",
+      "tasks": [
+        {
+          "id": "25940EA30976D04C",
+          "item": "pneumaticcraft:vortex_tube",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Production de chaleur",
+      "x": 6.0,
+      "y": 5.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "08345B032D59B4E3"
+      ],
+      "description": [
+        "Pour augmenter votre production de chaleur, placez une évier sur le côté froid de votre tube Vortex."
+      ],
+      "hide_dependency_lines": 0,
+      "id": "56D6269B3D1CA2EE",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "6CE8F7784C5D1411",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Plus de chaleur",
+      "tasks": [
+        {
+          "id": "25CAA79BC7AD5CCB",
+          "item": "pneumaticcraft:heat_sink",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Meilleure production de chaleur",
+      "x": 6.0,
+      "y": 7.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "08345B032D59B4E3"
+      ],
+      "description": [
+        "Pour déplacer la chaleur produite par le tube Vortex, faites quelques tubes de chauffage."
+      ],
+      "id": "45200742F56C4734",
+      "rewards": [
+        {
+          "id": "603FE91A94437226",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Nous avons la chaleur à déplacer :)",
+      "tasks": [
+        {
+          "id": "6B45A75513055C29",
+          "item": "pneumaticcraft:heat_pipe",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Transport de chaleur",
+      "x": 8.0,
+      "y": 5.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "74426247A93107E0"
+      ],
+      "description": [
+        "Empêche les choses d'exploser."
+      ],
+      "id": "2A4C0CE587C0B6E3",
+      "rewards": [
+        {
+          "id": "1A65568E4E975B70",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Sécurisez !",
+      "tasks": [
+        {
+          "id": "3F6D92B44F8D5894",
+          "item": "pneumaticcraft:security_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 10.0,
+      "y": 0.5,
+      "repeatable": false,
+      "title": "Security Upgrade"
+    },
+    {
+      "dependencies": [
+        "2F381F3309ADC43E"
+      ],
+      "description": [
+        "&3Le diesel peut être utilisé pour faire plus de kérosène ou pour faire du lubrifiant.."
+      ],
+      "id": "168A087F49A34877",
+      "rewards": [
+        {
+          "id": "556D32461DDA75C4",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "155A3E2B8F4FE8F0",
+          "item": "pneumaticcraft:diesel_bucket",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Diesel",
+      "x": 9.5,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2F381F3309ADC43E"
+      ],
+      "description": [
+        "&3Le kérosène peut être utilisé pour fabriquer de l'essence ou il peut être utilisé comme carburant dans une lampe à kérosène."
+      ],
+      "id": "4B3C127FDF7415E7",
+      "rewards": [
+        {
+          "id": "251D4C82AB17D705",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "402F96C03D54C217",
+          "item": "pneumaticcraft:kerosene_bucket",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Kérosène",
+      "x": 9.5,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2F381F3309ADC43E"
+      ],
+      "description": [
+        "&3L'essence peut être utilisée pour fabriquer du GPL."
+      ],
+      "id": "5755773FC413DE23",
+      "rewards": [
+        {
+          "id": "508865FC6F64D402",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "51FFCD67307E8CC7",
+          "item": "pneumaticcraft:gasoline_bucket",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Essence",
+      "x": 9.5,
+      "y": 4.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2F381F3309ADC43E"
+      ],
+      "description": [
+        "&3Le GPL peut être utilisé pour fabriquer du plastique fondu."
+      ],
+      "hide_details_until_startable": 0,
+      "id": "0E6B0CAC1A296CF5",
+      "rewards": [
+        {
+          "id": "52056E218E0BF199",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Celui dont nous avons besoin",
+      "tasks": [
+        {
+          "id": "762F0242DEB7F537",
+          "item": "pneumaticcraft:lpg_bucket",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "GPL",
+      "x": 9.5,
+      "y": 5.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "4B3C127FDF7415E7"
+      ],
+      "description": [
+        "La lampe Kerosene est une grande source de lumière qui utilise le carburant (Kerosene étant le meilleur) pour produire de la lumière."
+      ],
+      "id": "32205C741E5F2273",
+      "rewards": [
+        {
+          "id": "0B6AE8E1067625CB",
+          "item": "pneumaticcraft:kerosene_bucket",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "05E5BF6329038E3A",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Mega Torches ne sont rien !",
+      "tasks": [
+        {
+          "id": "55C14880CF48A6D5",
+          "item": "pneumaticcraft:kerosene_lamp",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 11.0,
+      "y": 3.5,
+      "repeatable": false,
+      "title": "Kerosene Lamp"
+    },
+    {
+      "dependencies": [
+        "0E6B0CAC1A296CF5"
+      ],
+      "description": [
+        "L'usine de traitement thermopneumatique sera utilisée pour fabriquer du plastique fondu, tout simplement pomper dans un peu de GPL, de charbon et de chaleur."
+      ],
+      "id": "55CE6EB89ECD687D",
+      "rewards": [
+        {
+          "id": "76E08BAEA990ACEF",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Plus le nom est long, mieux c'est.",
+      "tasks": [
+        {
+          "id": "2E2E322494D1D234",
+          "item": "pneumaticcraft:thermopneumatic_processing_plant",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 11.0,
+      "y": 5.5,
+      "repeatable": false,
+      "title": "Thermopneumatic Processing Plant"
+    },
+    {
+      "dependencies": [
+        "55CE6EB89ECD687D"
+      ],
+      "description": [
+        "Placez votre plastique liquide sur le sol ou entreposez-en dans une poitrine avec un cadre de chaleur attaché et il y a votre plastique!"
+      ],
+      "id": "5CF2C5108CCABD64",
+      "rewards": [
+        {
+          "id": "0E6B99E896A2F9DE",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.5,
+      "subtitle": "Enfin !",
+      "tasks": [
+        {
+          "id": "352E3F36329A2715",
+          "item": "industrialforegoing:plastic",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 14.0,
+      "y": 5.5,
+      "repeatable": false,
+      "title": "Plastic"
+    },
+    {
+      "dependencies": [
+        "5CF2C5108CCABD64"
+      ],
+      "description": [
+        "Making Plastic peut prendre un certain temps, si vous souhaitez automatiser ce processus, vous pouvez utiliser Mystic Agriculture ou des abeilles productives. Ou je suppose que vous pouvez automatiser en utilisant ces quêtes précédentes."
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "2C6E047AAEC3ED82",
+      "optional": 1,
+      "rewards": [
+        {
+          "count": 5,
+          "id": "1F1BF66C364E2179",
+          "item": "industrialforegoing:plastic",
+          "random_bonus": 5,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "7C09329F8AE8F2D2",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Très utile !",
+      "tasks": [
+        {
+          "id": "22B99B765B6EA928",
+          "item": {
+            "Count": 1,
+            "id": "productivebees:configurable_honeycomb",
+            "tag": {
+              "EntityTag": {
+                "type": "productivebees:plastic"
+              }
+            }
+          },
+          "title": "Plastique automatisant",
+          "type": "item",
+          "consume_items": false,
+          "match_nbt": true,
+          "weak_nbt_match": true
+        }
+      ],
+      "x": 15.0,
+      "y": 4.0,
+      "repeatable": false,
+      "title": "Honeycomb"
+    },
+    {
+      "dependencies": [
+        "5CF2C5108CCABD64"
+      ],
+      "description": [
+        "Maintenant que nous avons du plastique, la prochaine étape consiste à obtenir des BPC finis, d'abord faire des BPC vides dans la chambre de pression."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "ftbquests:custom_icon",
+        "tag": {
+          "Icon": "pneumaticcraft:item/empty_pcb"
+        }
+      },
+      "id": "72DFB5066E085CDB",
+      "rewards": [
+        {
+          "id": "7D86FE0193E3181D",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Le chemin vers les PCB",
+      "tasks": [
+        {
+          "id": "74326B6345C8002C",
+          "item": "pneumaticcraft:empty_pcb",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 15.5,
+      "y": 5.0,
+      "repeatable": false,
+      "title": "Empty PCB"
+    },
+    {
+      "dependencies": [
+        "55CE6EB89ECD687D"
+      ],
+      "description": [
+        "Utilisez seulement 1 Lapis pour une mise à jour au lieu de 4."
+      ],
+      "id": "4E9067368761A25E",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "220757E53D4132BB",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Sauver Lapis",
+      "tasks": [
+        {
+          "id": "1C9587C2DA59BC0C",
+          "item": "pneumaticcraft:upgrade_matrix",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 11.0,
+      "y": 7.0,
+      "repeatable": false,
+      "title": "Upgrade Matrix"
+    },
+    {
+      "dependencies": [
+        "5CF2C5108CCABD64"
+      ],
+      "description": [
+        "Pour l'utiliser, cliquez sur un coffre et un réservoir de liquide, mettez votre devise dans un conteneur lié (Emeralds, etc) et commandez quelque chose. Vous verrez une Amadrone descendre pour prendre votre argent et une autre Amadrone venir pour déposer ce que vous avez commandé."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "pneumaticcraft:amadron_tablet",
+        "tag": {
+          "pneumaticcraft:air": 30000
+        }
+      },
+      "id": "674E7CDEDBE180AF",
+      "min_width": 300,
+      "rewards": [
+        {
+          "id": "02B8DDE0B5C5345A",
+          "item": "pneumaticcraft:gps_tool",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "7315A571311612B1",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Je me demande s'ils ont 1 jour de livraison ?",
+      "tasks": [
+        {
+          "id": "3A7FE8A3D788B169",
+          "item": "pneumaticcraft:amadron_tablet",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Amadron",
+      "x": 15.5,
+      "y": 6.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "72DFB5066E085CDB",
+        "674E7CDEDBE180AF"
+      ],
+      "description": [
+        "&3PCB Blueprints On VENTE MAINTENANT pour 8 Emeralds. (Pour un temps limité seulement)."
+      ],
+      "id": "7B1CFFAE369C34B6",
+      "rewards": [
+        {
+          "id": "5F48E53F5218E1DB",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Merci Amadron !",
+      "tasks": [
+        {
+          "id": "2A1DE94B31E2ED8E",
+          "item": "pneumaticcraft:pcb_blueprint",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 17.0,
+      "y": 5.5,
+      "repeatable": false,
+      "title": "PCB Blueprint"
+    },
+    {
+      "dependencies": [
+        "7B1CFFAE369C34B6"
+      ],
+      "description": [
+        "Placez vos PCB vides dans une boîte à lumière UV pour les recharger."
+      ],
+      "id": "2D5ADD865F0759D9",
+      "rewards": [
+        {
+          "id": "5EF0A98F5CE83C8F",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "J'espère que vous avez des lunettes de soleil !",
+      "tasks": [
+        {
+          "id": "7BE3D959F238D4B6",
+          "item": "pneumaticcraft:uv_light_box",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Charger avec les UV",
+      "x": 18.5,
+      "y": 5.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "74426247A93107E0"
+      ],
+      "description": [
+        "Ça rend les choses capables de distribuer des objets."
+      ],
+      "id": "3E4CCB015E62DE44",
+      "rewards": [
+        {
+          "id": "768CAC732894A84A",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Je la connais à peine !",
+      "tasks": [
+        {
+          "id": "5C409F5369BC58EC",
+          "item": "pneumaticcraft:dispenser_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 12.0,
+      "y": 0.5,
+      "repeatable": false,
+      "title": "Dispenser Upgrade"
+    },
+    {
+      "dependencies": [
+        "74426247A93107E0"
+      ],
+      "description": [
+        "Augmente la portée, fait des choses différentes lorsqu'il est utilisé dans différentes choses."
+      ],
+      "hide_dependent_lines": 1,
+      "id": "788B784F6175E0B7",
+      "rewards": [
+        {
+          "id": "64A15B18D4939592",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Plus près !",
+      "tasks": [
+        {
+          "id": "3FCD27F8597AC849",
+          "item": "pneumaticcraft:range_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 10.5,
+      "y": -0.5,
+      "repeatable": false,
+      "title": "Range Upgrade"
+    },
+    {
+      "dependencies": [
+        "74426247A93107E0"
+      ],
+      "description": [
+        "Augmente la pression que les choses peuvent supporter."
+      ],
+      "hide_dependent_lines": 1,
+      "id": "2A70217D6258C029",
+      "rewards": [
+        {
+          "id": "472E1ECC35034F46",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Montez !",
+      "tasks": [
+        {
+          "id": "1E2C04772FC311B4",
+          "item": "pneumaticcraft:volume_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 11.5,
+      "y": -0.5,
+      "repeatable": false,
+      "title": "Volume Upgrade"
+    },
+    {
+      "dependencies": [
+        "7B81B32AB1745DE0"
+      ],
+      "description": [
+        "Ci-dessous sont quelques mises à jour que vous pouvez utiliser tôt dans ce mod. Shift tout en survolant une mise à jour pour voir ce qu'il peut être utilisé, ou déplacer tout en survolant quelque chose pour voir ce que les mises à niveau peuvent utiliser."
+      ],
+      "hide_dependency_lines": 1,
+      "hide_until_deps_visible": 1,
+      "icon": "pneumaticcraft:upgrade_matrix",
+      "id": "74426247A93107E0",
+      "min_width": 250,
+      "rewards": [
+        {
+          "id": "6F1A4B4077AABEF8",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "gear",
+      "subtitle": "Très utile",
+      "tasks": [
+        {
+          "count": 4,
+          "id": "6522615A69918ACB",
+          "item": {
+            "Count": 4,
+            "id": "minecraft:lapis_lazuli"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Mises à jour simples",
+      "x": 11.0,
+      "y": -1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2D5ADD865F0759D9"
+      ],
+      "description": [
+        "La prochaine étape de fabrication des BPC consiste à utiliser le réservoir d'eau-de-vie avec l'acide d'eau-de-vie."
+      ],
+      "id": "67365CD78ADFBD35",
+      "rewards": [
+        {
+          "id": "68BBFDBF3A1A5892",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "C'est l'heure de la gravure !",
+      "tasks": [
+        {
+          "id": "5F12C6055FAB5170",
+          "item": "pneumaticcraft:etching_tank",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 20.0,
+      "y": 4.5,
+      "repeatable": false,
+      "title": "Etching Tank"
+    },
+    {
+      "dependencies": [
+        "2D5ADD865F0759D9"
+      ],
+      "description": [
+        "&3L'acide d'arrachage est fabriqué dans la chambre de pression avec du plastique fondu... et d'autres choses. Utilisé dans le réservoir d'arrachage."
+      ],
+      "id": "22A8EC24DBF23D1B",
+      "rewards": [
+        {
+          "id": "0A3F4DF9B82090C2",
+          "item": "pneumaticcraft:etching_acid_bucket",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "4D1C0674CB8C63D3",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Ne demande pas...",
+      "tasks": [
+        {
+          "id": "4D6851C0DBCCA542",
+          "item": "pneumaticcraft:etching_acid_bucket",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Acide écrémé",
+      "x": 20.0,
+      "y": 6.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "22A8EC24DBF23D1B",
+        "67365CD78ADFBD35"
+      ],
+      "description": [
+        "Mettez un PCB vide chargé dans le réservoir d'eau-de-vie avec un peu d'acide d'eau-de-vie et de la chaleur et vous obtiendrez un PCB non assemblé."
+      ],
+      "id": "55A753DA30957D4C",
+      "rewards": [
+        {
+          "id": "23F6D36E4AA9D4EF",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "On y est presque !",
+      "tasks": [
+        {
+          "id": "581937FEA3EB8D04",
+          "item": "pneumaticcraft:unassembled_pcb",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 21.5,
+      "y": 5.5,
+      "repeatable": false,
+      "title": "Unassembled PCB"
+    },
+    {
+      "dependencies": [
+        "5CF2C5108CCABD64"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "5B6DEFB6892357F6",
+      "rewards": [
+        {
+          "id": "61E03A5400667B35",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Besoins pour les PCB finis",
+      "tasks": [
+        {
+          "count": 2,
+          "id": "6F2E2ED2EA336938",
+          "item": "pneumaticcraft:transistor",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Transistors",
+      "x": 23.5,
+      "y": 7.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5CF2C5108CCABD64"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "1F3F2D3E6AFF28ED",
+      "rewards": [
+        {
+          "id": "4FD78B21DE59FB7B",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Besoins pour les PCB finis",
+      "tasks": [
+        {
+          "count": 2,
+          "id": "39DABF4614B880BA",
+          "item": {
+            "Count": 2,
+            "id": "pneumaticcraft:capacitor"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Condensateurs",
+      "x": 22.5,
+      "y": 7.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "55A753DA30957D4C",
+        "1F3F2D3E6AFF28ED",
+        "5B6DEFB6892357F6"
+      ],
+      "description": [
+        "Configurez votre PCB non-monté avec 2 condensateurs et 2 transistors pour vous procurer un PCB fini."
+      ],
+      "id": "15287542B91256EA",
+      "rewards": [
+        {
+          "id": "56721DBEDFEA8128",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "pentagon",
+      "size": 1.0,
+      "subtitle": "C'est toi qui l'as fait !",
+      "tasks": [
+        {
+          "id": "7EBC9AE71A9A6AC0",
+          "item": "pneumaticcraft:printed_circuit_board",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 23.0,
+      "y": 5.5,
+      "repeatable": false,
+      "title": "Finished PCB"
+    },
+    {
+      "dependencies": [
+        "15287542B91256EA"
+      ],
+      "description": [
+        "C'est aussi loin que vous devez obtenir pour faire le trou noir pulsant. Félicitations pour avoir fait ce loin!"
+      ],
+      "id": "3E032CBF9C177581",
+      "rewards": [
+        {
+          "id": "686F62277D93C4D5",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Des explosions de loin !",
+      "tasks": [
+        {
+          "id": "2B0B03DB85A8B6EB",
+          "item": {
+            "Count": 1,
+            "id": "pneumaticcraft:micromissiles",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 24.0,
+      "y": 4.0,
+      "repeatable": false,
+      "title": "Micromissiles"
+    },
+    {
+      "dependencies": [
+        "3B8F577DC514E343"
+      ],
+      "description": [
+        "La poitrine renforcée est une poitrine anti-explosion avec 36 fentes. Pas double poitrine-able. Fonctionne également comme une boîte de Shulker."
+      ],
+      "id": "327E655E79710B75",
+      "rewards": [
+        {
+          "id": "079852851EA4F1AF",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Mieux que votre poitrine quotidienne",
+      "tasks": [
+        {
+          "id": "0CBF4B87CBB4D5D5",
+          "item": "pneumaticcraft:reinforced_chest",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 4.0,
+      "y": -1.5,
+      "repeatable": false,
+      "title": "Reinforced Chest"
+    },
+    {
+      "dependencies": [
+        "327E655E79710B75"
+      ],
+      "description": [
+        "Le Smart Chest est un coffre antidéflagrant avec 72 fentes, comprend un intégré, entièrement configuarble Hopper Omnidirectionnel et a des fentes de mise à niveau. Pas Double Chest-able. Fonctionne également comme une boîte de Shulker."
+      ],
+      "id": "631A62F014DFE08C",
+      "subtitle": "Le nerd des poitrines",
+      "tasks": [
+        {
+          "id": "1B5FDE1A3F9B208F",
+          "item": "pneumaticcraft:smart_chest",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 4.0,
+      "y": -3.0,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Smart Chest"
+    },
+    {
+      "dependencies": [
+        "168A087F49A34877"
+      ],
+      "description": [
+        "&3Lubrifiant peut être utilisé pour faire des Bits de forage."
+      ],
+      "id": "1254013CDEA86C86",
+      "rewards": [
+        {
+          "id": "06224035A0864B9B",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Production de lubrifiants !",
+      "tasks": [
+        {
+          "id": "4EFE2B751BADE77B",
+          "item": "pneumaticcraft:lubricant_bucket",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Lubrifiant",
+      "x": 11.0,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "55CE6EB89ECD687D"
+      ],
+      "description": [
+        "&3L'huile végétale peut être fabriquée en mettant des cultures ou des semences dans une usine de traitement thermopneumatique."
+      ],
+      "id": "2D8A8ED72FA24FD4",
+      "rewards": [
+        {
+          "id": "1EA180630AEC4816",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Meilleur pétrole",
+      "tasks": [
+        {
+          "id": "671EF5DDEC3E8C77",
+          "item": "pneumaticcraft:vegetable_oil_bucket",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Huile végétale",
+      "x": 9.5,
+      "y": 6.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2D8A8ED72FA24FD4"
+      ],
+      "description": [
+        "Puis-je avoir ça avec des pois à la mâche avec un côté de haricots sur Toast, s'il vous plaît Gouverneur ?"
+      ],
+      "id": "7A6A2E8C7D3EEEA6",
+      "rewards": [
+        {
+          "id": "2C0D9F02F9B8480A",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Tu veux du poisson et des chips ?",
+      "tasks": [
+        {
+          "id": "4AB370C8D82C9281",
+          "item": "pneumaticcraft:cod_n_chips",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Poissons et chips !",
+      "x": 8.0,
+      "y": 6.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "55CE6EB89ECD687D"
+      ],
+      "description": [
+        "Pourquoi le pain ordinaire n'a pas besoin de levure ?"
+      ],
+      "id": "2243383409F79327",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "21BDB6ABCFB87DD8",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "La Levure de vos problèmes",
+      "tasks": [
+        {
+          "id": "2D49776CAE2889B2",
+          "item": "pneumaticcraft:yeast_culture_bucket",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Levure",
+      "x": 9.5,
+      "y": 7.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2243383409F79327"
+      ],
+      "description": [
+        "&3L'éthanol peut être utilisé pour fabriquer du biodiesel."
+      ],
+      "id": "6460E6D42570213B",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "77B77F1ED12C1A56",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "287A2A4001D998B5",
+          "item": "pneumaticcraft:ethanol_bucket",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Éthanol",
+      "x": 9.5,
+      "y": 8.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6460E6D42570213B"
+      ],
+      "description": [
+        "&3Le biodiesel peut être utilisé pour fabriquer du lubrifiant et du plastique fondu."
+      ],
+      "id": "37046BDA5E1697EB",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "725942C31CA80974",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Bio/Diesel",
+      "tasks": [
+        {
+          "id": "4A8097D7CA9F1C86",
+          "item": "pneumaticcraft:biodiesel_bucket",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Bio-diesel",
+      "x": 11.0,
+      "y": 8.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2243383409F79327"
+      ],
+      "description": [
+        "Fabriqué avec de la farine de blé. Peut être utilisé pour faire du pain de saumon Tempura et Sourdough."
+      ],
+      "id": "2E3DD95874383FDA",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "445DD127E3148812",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Tu as fait ça.",
+      "tasks": [
+        {
+          "id": "4CB4B32BDF6DA7B3",
+          "item": "pneumaticcraft:sourdough",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 8.0,
+      "y": 7.5,
+      "repeatable": false,
+      "title": "Sourdough"
+    },
+    {
+      "dependencies": [
+        "7B81B32AB1745DE0"
+      ],
+      "description": [
+        "&3Les soutiens de culture peuvent être placés sur vos cultures pour les faire pousser plus rapidement."
+      ],
+      "id": "3D6FC40C1EB85820",
+      "rewards": [
+        {
+          "id": "1EE86A1AAB011249",
+          "item": "pneumaticcraft:crop_support",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "0572D840FAE09549",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Cultivons plus rapidement",
+      "tasks": [
+        {
+          "id": "31984FB34A664CD7",
+          "item": "pneumaticcraft:crop_support",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 0.0,
+      "y": -2.5,
+      "repeatable": false,
+      "title": "Crop Support"
+    },
+    {
+      "dependencies": [
+        "5CF2C5108CCABD64"
+      ],
+      "description": [
+        "&3Construction Bricks sont des blocs de construction cool, soyez prudent qu'ils blessent."
+      ],
+      "icon": "pneumaticcraft:plastic_brick_red",
+      "id": "1DA4A192A7B04550",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "0A12FF6383E5B0BE",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Il n'y a pas de douleur pire que de marcher sur ces",
+      "tasks": [
+        {
+          "id": "5A48BCB48D572412",
+          "type": "item",
+          "item": "pneumaticcraft:plastic_brick_black",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 13.5,
+      "y": 7.0,
+      "repeatable": false,
+      "title": "Black Plastic Construction Brick™"
+    },
+    {
+      "can_repeat": 0,
+      "description": [
+        "Cette quête a été créée par AllTheMods Staff, ou un contributeur communautaire pour une utilisation dans AllTheMods Modpacks.",
+        "Comme tous les packs AllTheMods sont sous licence All Rights Reserved, cette Quest n'est pas autorisée à être utilisée dans les packs publics non publiés par l'équipe AllTheMods, sans autorisation explicite.",
+        "Cette quête est intentionnellement cachée, si vous voyez cela, vous êtes en mode édition.",
+        "Repère de lecture : obtiens le livre indiqué pour poursuivre. Cette étape ne donne aucune récompense."
+      ],
+      "disable_toast": 1,
+      "hide_details_until_startable": 1,
+      "hide_until_deps_visible": 1,
+      "icon": {
+        "Count": 1,
+        "id": "ftbquests:custom_icon",
+        "tag": {
+          "Icon": "minecraft:item/barrier"
+        }
+      },
+      "id": "6562F7516CC9D42B",
+      "invisible": 1,
+      "optional": 1,
+      "shape": "octagon",
+      "tasks": [
+        {
+          "id": "24A18337A371D00A",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "2743719087A83FCC",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 2.0,
+      "y": 0.0,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Livre",
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "15287542B91256EA"
+      ],
+      "description": [
+        "La prochaine étape de ce mod vous demande de configurer Assembly Lines. Le composant principal d'une Assembly Line est le contrôleur de l'assemblage. C'est là que la pression ira."
+      ],
+      "hide_dependent_lines": 1,
+      "id": "40888D98C526A55B",
+      "rewards": [
+        {
+          "id": "2FCA8AB1F8505ECA",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Toujours nécessaire",
+      "tasks": [
+        {
+          "id": "0433E039337DFFFA",
+          "item": "pneumaticcraft:assembly_controller",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 24.5,
+      "y": 5.5,
+      "repeatable": false,
+      "title": "Assembly Controller"
+    },
+    {
+      "dependencies": [
+        "5CF2C5108CCABD64"
+      ],
+      "description": [
+        "&3Tubes de pression renforcés Tout comme les tubes de pression réguliers. seuls ceux-ci peuvent contenir 10 bars de pression."
+      ],
+      "id": "458CD81161E4DC0A",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "7C6435B620CBADD0",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Tubes à pression modernisés",
+      "tasks": [
+        {
+          "id": "3DFC8984E2BA2208",
+          "item": "pneumaticcraft:reinforced_pressure_tube",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 14.5,
+      "y": 7.0,
+      "repeatable": false,
+      "title": "Reinforced Pressure Tube"
+    },
+    {
+      "dependencies": [
+        "15287542B91256EA"
+      ],
+      "description": [
+        "L'article devra être placé ici avant d'être récupéré."
+      ],
+      "id": "50677D2025F36C90",
+      "rewards": [
+        {
+          "id": "0D8BB92C9B982A2F",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Toujours nécessaire",
+      "tasks": [
+        {
+          "id": "479E350B81B5B577",
+          "item": "pneumaticcraft:assembly_platform",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 26.0,
+      "y": 5.5,
+      "repeatable": false,
+      "title": "Assembly Platform"
+    },
+    {
+      "dependencies": [
+        "15287542B91256EA"
+      ],
+      "description": [
+        "Cela fera tomber le produit fini dans votre poitrine de sortie."
+      ],
+      "id": "285EA9FC7C451717",
+      "rewards": [
+        {
+          "id": "3B7EF8608E5D5D05",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Toujours nécessaire",
+      "tasks": [
+        {
+          "id": "3A3576D97103AB2E",
+          "item": "pneumaticcraft:assembly_io_unit_export",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 26.0,
+      "y": 4.5,
+      "repeatable": false,
+      "title": "Assembly IO Unit (export)"
+    },
+    {
+      "dependencies": [
+        "15287542B91256EA"
+      ],
+      "description": [
+        "Cela va retirer les éléments de votre poitrine d'entrée."
+      ],
+      "id": "52BD4354F7AE9796",
+      "rewards": [
+        {
+          "id": "0123D5F112AA20D0",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Toujours nécessaire",
+      "tasks": [
+        {
+          "id": "4CD13CA969AEF9F4",
+          "item": "pneumaticcraft:assembly_io_unit_import",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 26.0,
+      "y": 6.5,
+      "repeatable": false,
+      "title": "Assembly IO Unit (import)"
+    },
+    {
+      "dependencies": [
+        "15287542B91256EA"
+      ],
+      "hide_dependent_lines": 1,
+      "id": "4E1226CADAD52270",
+      "rewards": [
+        {
+          "id": "582FC200C303FDF9",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Requis pour les recettes laser",
+      "tasks": [
+        {
+          "id": "504EE7863E332F94",
+          "item": "pneumaticcraft:assembly_laser",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 27.5,
+      "y": 5.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Assembly Laser"
+    },
+    {
+      "dependencies": [
+        "15287542B91256EA"
+      ],
+      "hide_dependent_lines": 1,
+      "id": "05D3988902C0854E",
+      "rewards": [
+        {
+          "id": "6FF522056B173DBB",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Requis pour les recettes de forage",
+      "tasks": [
+        {
+          "id": "3B3F74D4125D3D0A",
+          "item": "pneumaticcraft:assembly_drill",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 27.5,
+      "y": 6.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Assembly Drill"
+    },
+    {
+      "dependencies": [
+        "40888D98C526A55B",
+        "52BD4354F7AE9796",
+        "05D3988902C0854E",
+        "50677D2025F36C90",
+        "4E1226CADAD52270",
+        "285EA9FC7C451717"
+      ],
+      "description": [
+        "Ce jalon reprend un objectif déjà présent dans les parcours OLYCITY. Il complète le guide sans donner une seconde récompense."
+      ],
+      "id": "742BAAE300196431",
+      "min_width": 250,
+      "rewards": [],
+      "size": 1.25,
+      "subtitle": "Une certaine Assemblage nécessaire",
+      "tasks": [
+        {
+          "id": "491BBEB91A85177C",
+          "type": "item",
+          "item": "minecraft:chest",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Utilisation des lignes d'assemblage",
+      "x": 29.0,
+      "y": 5.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5AF2A023157301D8"
+      ],
+      "description": [
+        "La jonction de tubes vous donne plus de contrôle sur le transport de votre pression en vous permettant de déplacer vos tubes de pression dans plus de directions."
+      ],
+      "id": "2BB44FFF813F37D0",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "7C7084E3353657FE",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 0.5,
+      "subtitle": "Non, par ici !",
+      "tasks": [
+        {
+          "id": "631E40629E4AD174",
+          "item": "pneumaticcraft:tube_junction",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -0.75,
+      "y": 2.0,
+      "repeatable": false,
+      "title": "Tube Junction"
+    },
+    {
+      "dependencies": [
+        "742BAAE300196431"
+      ],
+      "description": [
+        "&3Les tubes de pression avancés sont les meilleurs tubes de pression disponibles, pouvant contenir 20 bars de pression! Bien que ceux-ci soient vraiment frais sur leur propre, ils peuvent également être utilisés dans certaines recettes encore plus fraîches."
+      ],
+      "id": "7A27B773E9805BF8",
+      "rewards": [
+        {
+          "id": "1D7CE75A21449C52",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Un tout nouveau niveau !",
+      "tasks": [
+        {
+          "id": "0229327FA06288F9",
+          "item": "pneumaticcraft:advanced_pressure_tube",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 29.0,
+      "y": 3.5,
+      "repeatable": false,
+      "title": "Advanced Pressure Tube"
+    },
+    {
+      "dependencies": [
+        "742BAAE300196431"
+      ],
+      "description": [
+        "En utilisant un programme d'assemblage laser, vous pouvez accélérer la production de PCB non assemblés. Il suffit de mettre un PCB vide dans la poitrine d'entrée, pomper dans une certaine pression et attendre."
+      ],
+      "icon": "pneumaticcraft:unassembled_pcb",
+      "id": "7AE42ABF2E0A6B4A",
+      "rewards": [
+        {
+          "id": "31BAF3907BAD1FDA",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "55BC3715C71237CE",
+          "item": "pneumaticcraft:empty_pcb",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "75FC26ACA0202A10",
+          "item": "pneumaticcraft:unassembled_pcb",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Automatisation des PCB",
+      "x": 29.0,
+      "y": 7.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7A27B773E9805BF8"
+      ],
+      "description": [
+        "Celui qui vous a dit PneumaticCraft n'était pas sur la production d'énergie? Le Dynamo Pneumatic vous permet de tourner votre pression en FE. Lisez le tooltip ou lisez à ce sujet pour apprendre comment il fonctionne."
+      ],
+      "id": "07F8B602EF385C3F",
+      "rewards": [
+        {
+          "id": "42707141D97176BC",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Pression = Puissance",
+      "tasks": [
+        {
+          "id": "6881CC1EF20C791A",
+          "item": "pneumaticcraft:pneumatic_dynamo",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Puissance de production",
+      "x": 27.5,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "15287542B91256EA"
+      ],
+      "description": [
+        "L'armor pneumatique est en soi assez grand, cependant si vous voulez rendre cette armure incroyable, vous aurez besoin d'installer des mises à niveau. Appuyez sur 'U' par défaut pour ouvrir l'interface graphique de mise à niveau, certaines mises à niveau utilisent la pression, d'autres pas. Tout comme la mise à niveau d'autres outils dans PneumaticCraft, pour mettre à niveau l'armor pneumatique, vous aurez besoin d'une station de recharge avec pression. Note: Le sous-titre vous dira la quantité maximale de cette mise à niveau qui peut être mise en quelque chose."
+      ],
+      "hide_dependent_lines": 1,
+      "icon": {
+        "Count": 1,
+        "id": "pneumaticcraft:pneumatic_chestplate",
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "id": "5C670DAE4478EBF5",
+      "min_width": 300,
+      "rewards": [
+        {
+          "id": "587666FE42C880DD",
+          "type": "xp",
+          "xp": 500,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.2,
+      "subtitle": "Homme en fer comprimé",
+      "tasks": [
+        {
+          "id": "26ED03C40CA1FF5E",
+          "item": {
+            "Count": 1,
+            "id": "pneumaticcraft:pneumatic_helmet",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "70E56014CCCB878B",
+          "item": {
+            "Count": 1,
+            "id": "pneumaticcraft:pneumatic_chestplate",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "78A2F3317846CF26",
+          "item": {
+            "Count": 1,
+            "id": "pneumaticcraft:pneumatic_leggings",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "308E9C2A0F051C72",
+          "item": {
+            "Count": 1,
+            "id": "pneumaticcraft:pneumatic_boots",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Armure pneumatique",
+      "x": 23.0,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7A27B773E9805BF8"
+      ],
+      "description": [
+        "Le Compresseur Flux peut créer une tonne de pression en utilisant de la puissance. Il suffit de pomper un FE et il va commencer à en générer. Si vous avez assez de FE à épargner, c'est probablement la façon la plus facile de générer de la pression."
+      ],
+      "id": "23E0750119991090",
+      "rewards": [
+        {
+          "id": "773F543C67C0D66F",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Puissance = pression",
+      "tasks": [
+        {
+          "id": "1B4900089E29EB28",
+          "item": "pneumaticcraft:flux_compressor",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Pression de puissance",
+      "x": 28.0,
+      "y": 2.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7A27B773E9805BF8"
+      ],
+      "description": [
+        "Le compresseur d'air avancé fonctionne de la même façon que le compresseur d'air, seulement bien mieux!"
+      ],
+      "id": "6CD5D821C8EA5D74",
+      "rewards": [
+        {
+          "id": "65F3D79ED5E05861",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Pas besoin de vieux compresseurs d'air ennuyeux maintenant!",
+      "tasks": [
+        {
+          "id": "2F83B15C8077C89E",
+          "item": "pneumaticcraft:advanced_air_compressor",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 30.0,
+      "y": 2.0,
+      "repeatable": false,
+      "title": "Advanced Air Compressor"
+    },
+    {
+      "dependencies": [
+        "7A27B773E9805BF8",
+        "2C6F83C4D68C1605"
+      ],
+      "description": [
+        "Le compresseur solaire génère la pression en utilisant la lumière du soleil, le plus chaud il obtient, plus Prssure il produira. Cependant, soyez prudent, si il devient trop chaud, il va dysfonctionnement et vous aurez besoin de le réparer."
+      ],
+      "id": "71D2B8E41EC1098B",
+      "rewards": [
+        {
+          "id": "6695762299E6893D",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "007F3A915A044A73",
+          "item": "pneumaticcraft:solar_compressor",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Pression du Soleil",
+      "x": 30.5,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "0D45008B5AB8D64F"
+      ],
+      "description": [
+        "Le compresseur liquide crée de la pression en utilisant certains liquides. Vous pouvez mettre le carburant en cliquant droit sur le godet sur la machine, pomper dans le liquide, ou en mettant un godet dans la fente supérieure de l'interface utilisateur."
+      ],
+      "id": "3B4EA9529B263A1E",
+      "rewards": [
+        {
+          "id": "3DD94024CC3B360B",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "62FA581205E270FB",
+          "item": "pneumaticcraft:liquid_compressor",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Pression des liquides",
+      "x": -1.5,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6CD5D821C8EA5D74"
+      ],
+      "description": [
+        "Le Compresseur Electrostatique génère beaucoup de pression à partir de Lightning Strikes. Pour plus d'informations, consultez l'onglet 'Informations' dans JEI ou consultez PNC:R."
+      ],
+      "id": "11A031FB1CCB4AF7",
+      "rewards": [
+        {
+          "id": "6C6C97AF18ACB3D9",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "0BF2CDBD84C88A1D",
+          "item": "pneumaticcraft:electrostatic_compressor",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Pression de la foudre",
+      "x": 31.5,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "0D45008B5AB8D64F"
+      ],
+      "description": [
+        "Le Compresseur thermique crée de la pression en utilisant la chaleur! Placez le somthing chaud d'un côté et quelque chose de froid de l'autre pour créer de la pression."
+      ],
+      "id": "5428986023C41FE4",
+      "rewards": [
+        {
+          "id": "09AB24B687A71561",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "352C1CB50D5B3668",
+          "item": "pneumaticcraft:thermal_compressor",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Pression due à la chaleur",
+      "x": -1.5,
+      "y": 4.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5CF2C5108CCABD64"
+      ],
+      "description": [
+        "Le Pneumatic Jackhammer utilise la pression à la mienne, il peut être amélioré pour être incroyable!"
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "pneumaticcraft:jackhammer",
+        "tag": {
+          "pneumaticcraft:air": 120000
+        }
+      },
+      "id": "7550D6F5BF0583ED",
+      "rewards": [
+        {
+          "id": "7EE95BFE81274ECD",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Désolé Jack !",
+      "tasks": [
+        {
+          "id": "062A4B0E114B372B",
+          "item": "pneumaticcraft:jackhammer",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 13.0,
+      "y": 4.0,
+      "repeatable": false,
+      "title": "Pneumatic Jackhammer"
+    },
+    {
+      "dependencies": [
+        "15287542B91256EA"
+      ],
+      "description": [
+        "Bien que ces quêtes ne vont pas passer en revue les Drones, ils sont incroyables! Regardez dans les utiliser si vous voulez."
+      ],
+      "icon": "pneumaticcraft:programmer",
+      "id": "4BAAE8C0691B60DA",
+      "rewards": [
+        {
+          "id": "0004CEBE6B8EE942",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "17DD96DA7B61EBB7",
+          "item": "pneumaticcraft:programmer",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "3B71FC7479B4DB13",
+          "item": "pneumaticcraft:drone",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Programmation des drones",
+      "x": 22.0,
+      "y": 4.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "55CE6EB89ECD687D"
+      ],
+      "description": [
+        "Lorsque le cadre thermique est placé sur un contenant contenant certains fluides et fait assez froid, il transformera ces fluides en objets. Transforme en plastique fondu. Transforme l'eau en glace. Transforme en obsidien lava."
+      ],
+      "icon_scale": 0.9,
+      "id": "6AFA7FD895A3CEA4",
+      "rewards": [
+        {
+          "id": "4C1712D88B3723CF",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 1.1,
+      "tasks": [
+        {
+          "id": "2D557B42E0A3CEC7",
+          "item": "pneumaticcraft:heat_frame",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 12.5,
+      "y": 5.5,
+      "repeatable": false,
+      "title": "Heat Frame"
+    },
+    {
+      "dependencies": [
+        "1254013CDEA86C86"
+      ],
+      "description": [
+        "&3Les bits de forage peuvent être utilisés dans un jackhammer pneumatique."
+      ],
+      "id": "423252E7AD24800C",
+      "rewards": [
+        {
+          "count": 5,
+          "id": "3D8E837F07CA5BB0",
+          "item": "minecraft:diamond",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "714FEDD6F49F6FBE",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "759366C810BD7515",
+          "item": "pneumaticcraft:drill_bit_diamond",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 12.0,
+      "y": 2.5,
+      "repeatable": false,
+      "title": "Diamond Drill Bit"
+    },
+    {
+      "dependencies": [
+        "742BAAE300196431"
+      ],
+      "description": [
+        "&3Les cellules solaires sont utilisées pour fabriquer des compresseurs solaires."
+      ],
+      "id": "2C6F83C4D68C1605",
+      "rewards": [
+        {
+          "id": "511DC9C03CFF4470",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "count": 3,
+          "id": "7E892B00868A055B",
+          "item": "pneumaticcraft:solar_cell",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Cellules solaires",
+      "x": 30.5,
+      "y": 5.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "742BAAE300196431"
+      ],
+      "description": [
+        "Un signe intelligent qui peut stocker et afficher des quantités arbitraires de texte, gradué pour que le texte corresponde toujours. Faites un clic droit avec n'importe quelle Dye pour recolorer la tuile, vous pouvez colorer la bordure et l'arrière-plan de manière indépendante."
+      ],
+      "id": "60177D4628DB2854",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "5205079771D1693C",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Jamais entendu parler d'eux !",
+      "tasks": [
+        {
+          "id": "09134CA75B1C764A",
+          "item": "pneumaticcraft:aphorism_tile",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 30.5,
+      "y": 7.0,
+      "repeatable": false,
+      "title": "Aphorism Tile"
+    },
+    {
+      "dependencies": [
+        "5CF2C5108CCABD64"
+      ],
+      "description": [
+        "Avec ces 3 composants, vous pouvez créer des ascenseurs incroyables."
+      ],
+      "icon": "pneumaticcraft:elevator_base",
+      "id": "118B4150032936C7",
+      "rewards": [
+        {
+          "id": "1710969AF68BAB41",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "0D47B992CE8C3C1B",
+          "item": "pneumaticcraft:elevator_base",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "11C8879E4C43AA02",
+          "item": "pneumaticcraft:elevator_caller",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "77B501459958973C",
+          "item": "pneumaticcraft:elevator_frame",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Ascenseurs",
+      "x": 14.0,
+      "y": 4.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "423252E7AD24800C",
+        "7550D6F5BF0583ED"
+      ],
+      "description": [
+        "Le Bit de forage Netherite est le meilleur Bit de forage, il est encore mieux que le Bit de forage diamant."
+      ],
+      "id": "025A6A8426E1F6E5",
+      "rewards": [
+        {
+          "id": "7FD59B7611E5266A",
+          "item": "minecraft:netherite_ingot",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "17BA7DC0C761FE46",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "C'est le meilleur bit !",
+      "tasks": [
+        {
+          "id": "00235475F3604526",
+          "item": "pneumaticcraft:drill_bit_netherite",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 13.0,
+      "y": 2.5,
+      "repeatable": false,
+      "title": "Netherite Drill Bit"
+    },
+    {
+      "dependencies": [
+        "5C670DAE4478EBF5"
+      ],
+      "description": [
+        "Chaque mise à niveau ajoute +0,5 Armor Defence et +1 Armor Toughness."
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "593FCC96601B4C7E",
+      "rewards": [
+        {
+          "id": "2A0E896AEF5DFBD4",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Max: 4",
+      "tasks": [
+        {
+          "id": "0BEF9CE192DBAA3C",
+          "item": "pneumaticcraft:armor_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 21.0,
+      "y": -1.5,
+      "repeatable": false,
+      "title": "Armor Upgrade"
+    },
+    {
+      "dependencies": [
+        "5C670DAE4478EBF5"
+      ],
+      "description": [
+        "Vous permet de voir des détails sur certains blocs/fluides, même à travers les murs."
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "389C806111FC7BE8",
+      "rewards": [
+        {
+          "id": "65BD7D37899FA012",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Nombre maximal: 1",
+      "tasks": [
+        {
+          "id": "4BFF9D3A098933B1",
+          "item": "pneumaticcraft:block_tracker_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 21.0,
+      "y": 2.5,
+      "repeatable": false,
+      "title": "Block Tracker Upgrade"
+    },
+    {
+      "dependencies": [
+        "5C670DAE4478EBF5"
+      ],
+      "description": [
+        "Chargez d'autres objets pressurisables dans votre inventaire à partir de l'entreposage de la plaque thoracique."
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "40A65B9FD829B596",
+      "rewards": [
+        {
+          "id": "4C0D6B4F5975C063",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Max: 6",
+      "tasks": [
+        {
+          "id": "4CAF00600350F418",
+          "item": "pneumaticcraft:charging_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 22.0,
+      "y": 0.5,
+      "repeatable": false,
+      "title": "Charging Upgrade"
+    },
+    {
+      "dependencies": [
+        "5C670DAE4478EBF5"
+      ],
+      "description": [
+        "Faites un clic droit quelque part et vous pourrez remonter le chemin. Si vous êtes assez près et que vous avez une route directe, un chemin apparaîtra."
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "68D45B32C586FE8F",
+      "rewards": [
+        {
+          "id": "691A829568428964",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Nombre maximal: 1",
+      "tasks": [
+        {
+          "id": "6B7A17EB99F7F1BE",
+          "item": "pneumaticcraft:coordinate_tracker_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 21.0,
+      "y": -0.5,
+      "repeatable": false,
+      "title": "Coordinate Tracker Upgrade"
+    },
+    {
+      "dependencies": [
+        "5C670DAE4478EBF5"
+      ],
+      "description": [
+        "Permet d'utiliser un Elytra tout en ayant toujours votre Pneumatic Chestplate."
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "3A68C13F9BE2BA25",
+      "rewards": [
+        {
+          "id": "7017BA6A362D75C1",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Nombre maximal: 1",
+      "tasks": [
+        {
+          "id": "59BDC4453048B511",
+          "item": "pneumaticcraft:elytra_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 25.0,
+      "y": -0.5,
+      "repeatable": false,
+      "title": "Elytra Upgrade"
+    },
+    {
+      "dependencies": [
+        "5C670DAE4478EBF5"
+      ],
+      "description": [
+        "Ça fait qu'Endermen ne s'énerve pas contre vous, comme les citrouilles sculptées le feraient, seulement de cette façon vous pouvez réellement voir."
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "405850F46311EE68",
+      "rewards": [
+        {
+          "id": "55882109DFBAD869",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Nombre maximal: 1",
+      "tasks": [
+        {
+          "id": "4F8DAE3A852703CA",
+          "item": "pneumaticcraft:ender_visor_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 25.0,
+      "y": -1.5,
+      "repeatable": false,
+      "title": "Ender Visor Upgrade"
+    },
+    {
+      "dependencies": [
+        "5C670DAE4478EBF5"
+      ],
+      "description": [
+        "Les êtres vivants à proximité seront automatiquement suivis, même à travers les murs. Si c'est une mafia agressive, vous obtiendrez un avertissement quand il vous cible."
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "33FC2E018DD492EF",
+      "rewards": [
+        {
+          "id": "24D755626874D7FF",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Nombre maximal: 1",
+      "tasks": [
+        {
+          "id": "16B858D11878051B",
+          "item": "pneumaticcraft:entity_tracker_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 21.0,
+      "y": 1.5,
+      "repeatable": false,
+      "title": "Entity Tracker Upgrade"
+    },
+    {
+      "dependencies": [
+        "5C670DAE4478EBF5"
+      ],
+      "description": [
+        "Ça vous fait nager plus vite."
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "55B29634CBE91816",
+      "rewards": [
+        {
+          "id": "21D44AD628E18E90",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Nombre maximal: 1",
+      "tasks": [
+        {
+          "id": "0D95596706AF67DC",
+          "item": "pneumaticcraft:flippers_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 22.0,
+      "y": 1.5,
+      "repeatable": false,
+      "title": "Flippers Upgrade"
+    },
+    {
+      "dependencies": [
+        "5C670DAE4478EBF5"
+      ],
+      "description": [
+        "Makes Piglins Passif (même que porter Gold Armor), vous n'avez besoin de mettre la mise à niveau que sur une seule pièce."
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "4447B99421F9599A",
+      "rewards": [
+        {
+          "id": "7E14F6D991A969B9",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Nombre maximal: 1",
+      "tasks": [
+        {
+          "id": "1EE484726569F45D",
+          "item": "pneumaticcraft:gilded_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 25.0,
+      "y": 1.5,
+      "repeatable": false,
+      "title": "Gilded Upgrade"
+    },
+    {
+      "dependencies": [
+        "5C670DAE4478EBF5"
+      ],
+      "description": [
+        "Vous permet de voler comme Iron Man. Vous ne pouvez avoir qu'un seul niveau de ces mises à niveau dans les Bottes à la fois. Chaque niveau utilisera plus de pression que la précédente. Utilisez ces mises à niveau, ne pas simplement les fabriquer."
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "54DF2C9BEA92313C",
+      "rewards": [
+        {
+          "id": "66B1D18863F61ADB",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Nombre maximal: 1",
+      "tasks": [
+        {
+          "id": "38D6401DB6AC12DC",
+          "item": "pneumaticcraft:jet_boots_upgrade_1",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 23.0,
+      "y": 2.5,
+      "repeatable": false,
+      "title": "Jet Boots Upgrade: Tier I"
+    },
+    {
+      "dependencies": [
+        "54DF2C9BEA92313C"
+      ],
+      "description": [
+        "Vous permet de voyager plus vite qu'avec le niveau I."
+      ],
+      "id": "32115D5E4F008B4D",
+      "rewards": [
+        {
+          "id": "2E81C511E7CE06A2",
+          "type": "xp",
+          "xp": 200,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Nombre maximal: 1",
+      "tasks": [
+        {
+          "id": "5517C9B2ED0A1D3F",
+          "item": "pneumaticcraft:jet_boots_upgrade_2",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 23.0,
+      "y": 1.5,
+      "repeatable": false,
+      "title": "Jet Boots Upgrade: Tier II"
+    },
+    {
+      "dependencies": [
+        "32115D5E4F008B4D"
+      ],
+      "description": [
+        "Vous permet de voyager encore plus vite que le niveau II."
+      ],
+      "id": "65F24561050F1583",
+      "rewards": [
+        {
+          "id": "659A03EE7ED8C09D",
+          "type": "xp",
+          "xp": 300,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Nombre maximal: 1",
+      "tasks": [
+        {
+          "id": "2F45EDD9D4247D31",
+          "item": "pneumaticcraft:jet_boots_upgrade_3",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 23.0,
+      "y": -0.5,
+      "repeatable": false,
+      "title": "Jet Boots Upgrade: Tier III"
+    },
+    {
+      "dependencies": [
+        "65F24561050F1583"
+      ],
+      "description": [
+        "Peut-être un peu trop vite même."
+      ],
+      "id": "0ECF41A433815753",
+      "rewards": [
+        {
+          "id": "162F18F988F5DFB7",
+          "type": "xp",
+          "xp": 400,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Nombre maximal: 1",
+      "tasks": [
+        {
+          "id": "6E9BA124457C6C16",
+          "item": "pneumaticcraft:jet_boots_upgrade_4",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 23.0,
+      "y": -1.5,
+      "repeatable": false,
+      "title": "Jet Boots Upgrade: Tier IV"
+    },
+    {
+      "dependencies": [
+        "0ECF41A433815753"
+      ],
+      "description": [
+        "100%% bien trop vite! Essayez de ne pas mourir!"
+      ],
+      "id": "36CFCDE7E700C172",
+      "rewards": [
+        {
+          "id": "4D9AEFB85434C44D",
+          "type": "xp",
+          "xp": 500,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Nombre maximal: 1",
+      "tasks": [
+        {
+          "id": "01A88CA677E68C83",
+          "item": "pneumaticcraft:jet_boots_upgrade_5",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 24.0,
+      "y": -1.5,
+      "repeatable": false,
+      "title": "Jet Boots Upgrade: Tier V"
+    },
+    {
+      "dependencies": [
+        "5C670DAE4478EBF5"
+      ],
+      "description": [
+        "Vous permet de sauter plus haut que d'habitude et vous rend printanière, ce qui vous permet de voyager plus rapidement. Vous ne pouvez avoir qu'un niveau de ces mises à niveau dans les leggings à la fois."
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "169B4BF15442B33F",
+      "rewards": [
+        {
+          "id": "53AEBF190038CA27",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Nombre maximal: 1",
+      "tasks": [
+        {
+          "id": "650BF23AD15ADDEE",
+          "item": "pneumaticcraft:jumping_upgrade_1",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 24.0,
+      "y": 2.5,
+      "repeatable": false,
+      "title": "Jumping Upgrade: Tier I"
+    },
+    {
+      "dependencies": [
+        "169B4BF15442B33F"
+      ],
+      "description": [
+        "Vous permet de sauter plus haut qu'avec le niveau I."
+      ],
+      "id": "300430974F139E9C",
+      "rewards": [
+        {
+          "id": "744FF9DF24A95EBC",
+          "type": "xp",
+          "xp": 200,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Nombre maximal: 1",
+      "tasks": [
+        {
+          "id": "3A8A5A11946B73DA",
+          "item": "pneumaticcraft:jumping_upgrade_2",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 24.0,
+      "y": 1.5,
+      "repeatable": false,
+      "title": "Jumping Upgrade: Tier II"
+    },
+    {
+      "dependencies": [
+        "300430974F139E9C"
+      ],
+      "description": [
+        "Vous permet de sauter plus haut qu'avec le niveau II."
+      ],
+      "id": "755D4E3F54350979",
+      "rewards": [
+        {
+          "id": "4A1CC38571CFEC95",
+          "type": "xp",
+          "xp": 300,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Nombre maximal: 1",
+      "tasks": [
+        {
+          "id": "6E21B5D2E9F5B38D",
+          "item": "pneumaticcraft:jumping_upgrade_3",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 24.0,
+      "y": 0.5,
+      "repeatable": false,
+      "title": "Jumping Upgrade: Tier III"
+    },
+    {
+      "dependencies": [
+        "755D4E3F54350979"
+      ],
+      "description": [
+        "Vous permet de sauter très haut."
+      ],
+      "id": "312D0D20618F6F0C",
+      "rewards": [
+        {
+          "id": "4B86CEE866F522AC",
+          "type": "xp",
+          "xp": 400,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Nombre maximal: 1",
+      "tasks": [
+        {
+          "id": "26E23534E4F07F21",
+          "item": "pneumaticcraft:jumping_upgrade_4",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 24.0,
+      "y": -0.5,
+      "repeatable": false,
+      "title": "Jumping Upgrade: Tier IV"
+    },
+    {
+      "dependencies": [
+        "5C670DAE4478EBF5"
+      ],
+      "description": [
+        "Donne au joueur Night Vision quand il est porté."
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "4909038F64CF6766",
+      "rewards": [
+        {
+          "id": "3FB79B3CDA77EE06",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Nombre maximal: 1",
+      "tasks": [
+        {
+          "id": "1B474A605DD190CC",
+          "item": "pneumaticcraft:night_vision_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 22.0,
+      "y": -1.5,
+      "repeatable": false,
+      "title": "Night Vision Upgrade"
+    },
+    {
+      "dependencies": [
+        "5C670DAE4478EBF5"
+      ],
+      "description": [
+        "Il vous protège des radiations du Mekanism."
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "793F6E9F044729DF",
+      "rewards": [
+        {
+          "id": "6AE6C601A02CA9D8",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Nombre maximal: 1",
+      "tasks": [
+        {
+          "id": "5787713FBBFEB047",
+          "item": "pneumaticcraft:radiation_shielding_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 25.0,
+      "y": 2.5,
+      "repeatable": false,
+      "title": "Radiation Shielding Upgrade"
+    },
+    {
+      "dependencies": [
+        "5C670DAE4478EBF5"
+      ],
+      "description": [
+        "Gardez votre respiration sous l'eau, une fois vos bulles descendre à 5 ils seront remplis! Il vous permet également de voir beaucoup plus facilement sous l'eau!"
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "248D68F334E64969",
+      "rewards": [
+        {
+          "id": "3FC22A654C32B066",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Nombre maximal: 1",
+      "tasks": [
+        {
+          "id": "354FF7627E9DC07F",
+          "item": "pneumaticcraft:scuba_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 22.0,
+      "y": -0.5,
+      "repeatable": false,
+      "title": "SCUBA Upgrade"
+    },
+    {
+      "dependencies": [
+        "5C670DAE4478EBF5"
+      ],
+      "description": [
+        "Sélectionnez un élément d'une telle mise à niveau va chercher à proximité dans les coffres ou sur le sol. Pour le trouver dans les coffres, il faudra la mise à niveau du block tracker et pour le trouver sur le plancher, il faudra la mise à niveau du block tracker."
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "49806FD7B6931C73",
+      "rewards": [
+        {
+          "id": "1B18DD2D79ED42A5",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Nombre maximal: 1",
+      "tasks": [
+        {
+          "id": "5ADA68B8941423E3",
+          "item": "pneumaticcraft:search_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 21.0,
+      "y": 0.5,
+      "repeatable": false,
+      "title": "Item Search Upgrade"
+    },
+    {
+      "dependencies": [
+        "5C670DAE4478EBF5"
+      ],
+      "description": [
+        "Tout dommage que vous prendrez lors de la chute (armure d'ignoir) sera également distribué à la foule voisine."
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "6DA2D982034AFE50",
+      "rewards": [
+        {
+          "id": "51C2203E815168F8",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Nombre maximal: 1",
+      "tasks": [
+        {
+          "id": "7D0EC09094510872",
+          "item": "pneumaticcraft:stomp_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 22.0,
+      "y": 2.5,
+      "repeatable": false,
+      "title": "Stomp Upgrade"
+    },
+    {
+      "dependencies": [
+        "5CF2C5108CCABD64"
+      ],
+      "description": [
+        "La Porte Pneumatique agit comme une porte automatique qui peut être faite pour vous ouvrir seulement!"
+      ],
+      "icon": "pneumaticcraft:pneumatic_door",
+      "id": "1C4BF7411446E347",
+      "rewards": [
+        {
+          "id": "2CA2018A0A0F7308",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "14C0C1EB81F17B3E",
+          "item": "pneumaticcraft:pneumatic_door",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "1027C2330E8604FC",
+          "item": "pneumaticcraft:pneumatic_door_base",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 14.0,
+      "y": 3.0,
+      "repeatable": false,
+      "title": "Pneumatic Door"
+    },
+    {
+      "dependencies": [
+        "7A27B773E9805BF8"
+      ],
+      "description": [
+        "L'interface aérienne peut être utilisée pour recharger vos objets pressurisables avec pression. Maintenant, vous pouvez utiliser votre Armure Pneumatique sans avoir besoin de recharger!"
+      ],
+      "id": "6DDD001DA2EDD14F",
+      "rewards": [
+        {
+          "id": "3857206E764A15FA",
+          "type": "xp",
+          "xp": 500,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Aller sans fil !",
+      "tasks": [
+        {
+          "id": "64F4CA7870F67013",
+          "item": "pneumaticcraft:aerial_interface",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 29.0,
+      "y": 1.0,
+      "repeatable": false,
+      "title": "Aerial Interface"
+    },
+    {
+      "dependencies": [
+        "6CD5D821C8EA5D74"
+      ],
+      "description": [
+        "En utilisant un programme d'assemblage laser, vous pouvez accélérer la production de PCB non assemblés. Il suffit de mettre un PCB vide dans la poitrine d'entrée, pomper dans une certaine pression et attendre."
+      ],
+      "id": "3F2195618872EF3A",
+      "rewards": [
+        {
+          "id": "5E3D99A81B010FA1",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "6F3251B7A2862094",
+          "item": "pneumaticcraft:advanced_liquid_compressor",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 31.5,
+      "y": 1.5,
+      "repeatable": false,
+      "title": "Advanced Liquid Compressor"
+    },
+    {
+      "dependencies": [
+        "54DF2C9BEA92313C"
+      ],
+      "description": [
+        "Vous ne verrez cette quête que si vous avez utilisé Jet Boots. Il n'y a aucun moyen d'utiliser Jet Boots sans prendre des dommages, n'essayez même pas..."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "pneumaticcraft:pneumatic_boots",
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "id": "09312761412E10C5",
+      "invisible": 1,
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "63E9006F45A86CA0",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 0.5,
+      "subtitle": "Vous pensiez que l'utilisation d'un Elytra était difficile ?",
+      "tasks": [
+        {
+          "advancement": "pneumaticcraft:fly_into_wall",
+          "criterion": "",
+          "id": "3A58531EC8FD3A87",
+          "type": "advancement"
+        }
+      ],
+      "title": "Bottes à réaction",
+      "x": 23.0,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1ADEA6E6212DE08B"
+      ],
+      "description": [
+        "Le module de charge dépressurise toutes les choses pressurisables dans les conteneurs où il pointe."
+      ],
+      "id": "008524BA34C8BA53",
+      "rewards": [
+        {
+          "id": "2A39FDCE2CABF946",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 0.5,
+      "tasks": [
+        {
+          "id": "7A3AB35147DD85C0",
+          "item": "pneumaticcraft:charging_module",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 3.25,
+      "y": 1.0,
+      "repeatable": false,
+      "title": "Charging Module"
+    },
+    {
+      "dependencies": [
+        "008524BA34C8BA53"
+      ],
+      "description": [
+        "La carte d'extension du module améliore encore le module de charge."
+      ],
+      "id": "133294909A60CD9D",
+      "rewards": [
+        {
+          "id": "2D2C7052FFD09261",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 0.5,
+      "tasks": [
+        {
+          "id": "54A793D875A15E8F",
+          "item": "pneumaticcraft:module_expansion_card",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 3.25,
+      "y": 1.75,
+      "repeatable": false,
+      "title": "Module Expansion Card"
+    },
+    {
+      "dependencies": [
+        "3B8F577DC514E343"
+      ],
+      "description": [
+        "Pour commencer avec Logistics craft a Logistics Core, je recommande de lire le manuel PNC:R pour un tutoriel complet sur la façon d'utiliser ces éléments."
+      ],
+      "id": "59F9280020390FA0",
+      "rewards": [
+        {
+          "id": "655B135E0C44072D",
+          "item": "pneumaticcraft:logistics_core",
+          "random_bonus": 1,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "424E192691D09803",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Transport d'objets/luides",
+      "tasks": [
+        {
+          "id": "1FB403D38BEB8EA6",
+          "item": "pneumaticcraft:logistics_core",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Logistique",
+      "x": 5.5,
+      "y": 0.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "59F9280020390FA0"
+      ],
+      "description": [
+        "Chaque cadre logistique peut être utilisé pour différents types d'automatisation."
+      ],
+      "id": "40430FB4B6D1E0FE",
+      "rewards": [
+        {
+          "id": "264407AAFD9F5396",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Vous êtes piégés !",
+      "tasks": [
+        {
+          "id": "61C89E0CC395A8B7",
+          "item": {
+            "Count": 1,
+            "id": "pneumaticcraft:logistics_frame_active_provider"
+          },
+          "title": "Cadres logistiques",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 7.0,
+      "y": -1.5,
+      "repeatable": false,
+      "title": "Logistic Active Provider Frame"
+    },
+    {
+      "dependencies": [
+        "59F9280020390FA0"
+      ],
+      "description": [
+        "Le configurateur logistique peut être utilisé pour configurer les cadres logistiques et les Gadgets de transfert."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "pneumaticcraft:logistics_configurator",
+        "tag": {
+          "pneumaticcraft:air": 30000
+        }
+      },
+      "id": "015F4B2712EDB700",
+      "rewards": [
+        {
+          "id": "534C76563B04FBC5",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "6FB4EA3075315F3B",
+          "item": "pneumaticcraft:logistics_configurator",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 7.0,
+      "y": 0.0,
+      "repeatable": false,
+      "title": "Logistics Configurator"
+    },
+    {
+      "dependencies": [
+        "59F9280020390FA0"
+      ],
+      "description": [
+        "Les cadres logistiques doivent se connecter à un module logistique pour fonctionner."
+      ],
+      "id": "63D507B4F0D5A0EA",
+      "rewards": [
+        {
+          "id": "3F44B38B8D6E0284",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "567300DBB3AC930E",
+          "item": "pneumaticcraft:logistics_module",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 7.0,
+      "y": 1.5,
+      "repeatable": false,
+      "title": "Logistics Module"
+    },
+    {
+      "dependencies": [
+        "42442CC0A8C0D9C8"
+      ],
+      "description": [
+        "Le Minigun est un pistolet qui a besoin de pression et de munitions pour fonctionner. Lire l'outil pour plus d'informations."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "pneumaticcraft:minigun",
+        "tag": {
+          "pneumaticcraft:air": 30000
+        }
+      },
+      "id": "28E374EE626734F0",
+      "rewards": [
+        {
+          "id": "07DC5036840A4855",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Piou Piou !",
+      "tasks": [
+        {
+          "id": "23CD41C80ABAFA34",
+          "item": "pneumaticcraft:minigun",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 5.0,
+      "y": 2.0,
+      "repeatable": false,
+      "title": "Minigun"
+    },
+    {
+      "dependencies": [
+        "3B8F577DC514E343"
+      ],
+      "description": [
+        "Chargez votre Minigun avec ce Minigun Ammo pour l'utiliser."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "pneumaticcraft:gun_ammo",
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "id": "42442CC0A8C0D9C8",
+      "rewards": [
+        {
+          "id": "01A2A92418B93942",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "7C76C50F77320635",
+          "item": {
+            "Count": 1,
+            "id": "pneumaticcraft:gun_ammo",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "title": "Minigun Ammo",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 5.0,
+      "y": 1.0,
+      "repeatable": false,
+      "title": "Minigun Ammo"
+    },
+    {
+      "dependencies": [
+        "5C670DAE4478EBF5"
+      ],
+      "description": [
+        "Vous permet de ramasser des objets et l'expérience de furthur loin."
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "41C18FE0E170D5A2",
+      "rewards": [
+        {
+          "id": "5D661F7A259BA76A",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Max: 6",
+      "tasks": [
+        {
+          "id": "21158884D5A6A1B7",
+          "item": "pneumaticcraft:magnet_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 25.0,
+      "y": 0.5,
+      "repeatable": false,
+      "title": "Module d'aimant"
+    },
+    {
+      "dependencies": [
+        "28E374EE626734F0"
+      ],
+      "description": [
+        "Le Sentry Turret peut être placé quelque part et réglé pour attaquer les mafieux ou les joueurs quand ils sont à portée. Il a juste besoin de quelques Minigun Ammo."
+      ],
+      "id": "25895129D82DB51F",
+      "rewards": [
+        {
+          "id": "59B356CE0424E393",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Pew Pew (Sans vous)",
+      "tasks": [
+        {
+          "id": "5EFCB3F862D4D80A",
+          "item": "pneumaticcraft:sentry_turret",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 5.0,
+      "y": 3.0,
+      "repeatable": false,
+      "title": "Sentry Turret"
+    }
+  ],
+  "title": "PneumaticCraft",
+  "default_consume_items": false,
+  "progression_mode": "flexible"
+}

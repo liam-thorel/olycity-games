@@ -1,0 +1,8 @@
+name = "config/alexsmobs/crow_spawns.json"
+filename = "crow_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/cace87b5d504be10d1fff107ad14349066ae1c39d5200a7a29bdd5476167d9b8"
+hash-format = "sha256"
+hash = "cace87b5d504be10d1fff107ad14349066ae1c39d5200a7a29bdd5476167d9b8"

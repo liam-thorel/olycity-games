@@ -1,0 +1,1491 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "",
+  "filename": "atm9_bounty_board",
+  "group": "",
+  "icon": "minecraft:zombie_head",
+  "id": "1A53E5ACAA417BBC",
+  "order_index": 2,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "hide_until_deps_visible": 0,
+      "id": "481935035A661367",
+      "rewards": [
+        {
+          "id": "4C31A2BF764CB0A9",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 5,
+          "id": "41E32BB2FCA9C6A3",
+          "item": "minecraft:rotten_flesh",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Tuer 5 Zombies",
+      "tasks": [
+        {
+          "entity": "minecraft:zombie",
+          "icon": "minecraft:zombie_head",
+          "id": "4E37A6F5B09DDC95",
+          "title": "Tuer 5 Zombies",
+          "type": "kill",
+          "value": 5
+        }
+      ],
+      "title": "&l&9Bounty Overworld: Zombies",
+      "x": -4.0,
+      "y": -0.5,
+      "description": [],
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "481935035A661367"
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "30DAC22C99D1C501",
+      "rewards": [
+        {
+          "id": "6BE7E6BD462DF9DC",
+          "type": "xp",
+          "xp": 20,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "minecraft:zombie",
+          "icon": "minecraft:zombie_head",
+          "id": "2F079445FF40B596",
+          "title": "Tuer 10 Zombies",
+          "type": "kill",
+          "value": 10
+        }
+      ],
+      "x": -4.0,
+      "y": -2.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Chasse : Zombie"
+    },
+    {
+      "dependencies": [
+        "30DAC22C99D1C501"
+      ],
+      "id": "40D4C876D87C133E",
+      "rewards": [
+        {
+          "id": "6D49D513606AE174",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 20,
+          "id": "6FF1FF1CB150841E",
+          "item": "minecraft:rotten_flesh",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 10,
+          "id": "32A131EA2C31F846",
+          "item": "minecraft:iron_ingot",
+          "random_bonus": 10,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "minecraft:zombie",
+          "icon": "minecraft:zombie_head",
+          "id": "36B456CB944C5B1D",
+          "title": "Tuer 50 Zombies",
+          "type": "kill",
+          "value": 50
+        }
+      ],
+      "x": -4.0,
+      "y": -3.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Chasse : Zombie"
+    },
+    {
+      "dependencies": [
+        "40D4C876D87C133E"
+      ],
+      "id": "164D0DDAA9F391CB",
+      "rewards": [
+        {
+          "id": "3787B2F64E69B623",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "pentagon",
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "minecraft:zombie",
+          "icon": "minecraft:zombie_head",
+          "id": "40738214E0AAF4C5",
+          "title": "Tuer 100 Zombies",
+          "type": "kill",
+          "value": 100
+        }
+      ],
+      "x": -4.0,
+      "y": -5.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Chasse : Zombie"
+    },
+    {
+      "id": "5CB99DBEBB64451F",
+      "rewards": [
+        {
+          "id": "5759D7FF01E0545F",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 5,
+          "id": "2CFB024A80D8F761",
+          "item": "minecraft:bone",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Tuer 5 Squelettes",
+      "tasks": [
+        {
+          "entity": "minecraft:skeleton",
+          "icon": "minecraft:skeleton_skull",
+          "id": "56FD023E49BA7704",
+          "title": "Tuer 5 skeletons",
+          "type": "kill",
+          "value": 5
+        }
+      ],
+      "title": "&l&9Bounty dans le monde entier: squelettes",
+      "x": -2.0,
+      "y": -0.5,
+      "description": [],
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "5CB99DBEBB64451F"
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "730CC964C97B5730",
+      "rewards": [
+        {
+          "id": "045F864447BEA16A",
+          "type": "xp",
+          "xp": 20,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "minecraft:skeleton",
+          "icon": "minecraft:skeleton_skull",
+          "id": "126910070BA484DA",
+          "title": "Tuer 10 squelettes",
+          "type": "kill",
+          "value": 10
+        }
+      ],
+      "x": -2.0,
+      "y": -2.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Chasse : Squelette"
+    },
+    {
+      "dependencies": [
+        "730CC964C97B5730"
+      ],
+      "id": "572B9BA66D4B63EE",
+      "rewards": [
+        {
+          "id": "47AB7A5BC6335E4A",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 20,
+          "id": "626292DEE65A8FEB",
+          "item": "minecraft:bone",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 20,
+          "id": "732C57E2F2D797A4",
+          "item": "minecraft:arrow",
+          "random_bonus": 20,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "minecraft:skeleton",
+          "icon": "minecraft:skeleton_skull",
+          "id": "43D2C3E4C0DEEC17",
+          "title": "Tuer 50 skeletons",
+          "type": "kill",
+          "value": 50
+        }
+      ],
+      "x": -2.0,
+      "y": -3.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Chasse : Squelette"
+    },
+    {
+      "dependencies": [
+        "572B9BA66D4B63EE"
+      ],
+      "id": "7F93B2FD3EC9A073",
+      "rewards": [
+        {
+          "id": "773F3604A6FFA77A",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "pentagon",
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "minecraft:skeleton",
+          "icon": "minecraft:skeleton_skull",
+          "id": "688191769D4029C8",
+          "title": "Tuer 100 skeletons",
+          "type": "kill",
+          "value": 100
+        }
+      ],
+      "x": -2.0,
+      "y": -5.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Chasse : Squelette"
+    },
+    {
+      "id": "19E02C3BF730303E",
+      "rewards": [
+        {
+          "count": 5,
+          "id": "0806F88ABF0B4C8E",
+          "item": "minecraft:gunpowder",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "23172EFD800B1FA6",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Tuer 5 Creepers",
+      "tasks": [
+        {
+          "entity": "minecraft:creeper",
+          "icon": "minecraft:creeper_head",
+          "id": "6FCFB617C55064F3",
+          "title": "Tuer 5 Creepers",
+          "type": "kill",
+          "value": 5
+        }
+      ],
+      "title": "&l&9Bounty du monde entier : Crises",
+      "x": 0.0,
+      "y": -0.5,
+      "description": [],
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "19E02C3BF730303E"
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "4773C3BE4C73D8D5",
+      "rewards": [
+        {
+          "id": "21961BDC69CFE458",
+          "type": "xp",
+          "xp": 20,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "minecraft:creeper",
+          "icon": "minecraft:creeper_head",
+          "id": "4DDB9813BCFD50F6",
+          "title": "Tuer 10 Cris",
+          "type": "kill",
+          "value": 10
+        }
+      ],
+      "x": 0.0,
+      "y": -2.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Chasse : Creeper"
+    },
+    {
+      "dependencies": [
+        "4773C3BE4C73D8D5"
+      ],
+      "id": "358F521765824179",
+      "rewards": [
+        {
+          "id": "36E28A712367AFB9",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 20,
+          "id": "0E11753E2117A156",
+          "item": "minecraft:gunpowder",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 5,
+          "id": "0E05AA2446A60F3A",
+          "item": "supplementaries:bomb",
+          "random_bonus": 5,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "minecraft:creeper",
+          "icon": "minecraft:creeper_head",
+          "id": "0AB2589C3B2EDFF8",
+          "title": "Tuez 50 Cris",
+          "type": "kill",
+          "value": 50
+        }
+      ],
+      "x": 0.0,
+      "y": -3.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Chasse : Creeper"
+    },
+    {
+      "dependencies": [
+        "358F521765824179"
+      ],
+      "id": "615170AD5508F1D7",
+      "rewards": [
+        {
+          "id": "5EB1FDD68A9B40AC",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "pentagon",
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "minecraft:creeper",
+          "icon": "minecraft:creeper_head",
+          "id": "48957DEC2534A4E5",
+          "title": "Tuer 100 Cris.",
+          "type": "kill",
+          "value": 100
+        }
+      ],
+      "x": 0.0,
+      "y": -5.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Chasse : Creeper"
+    },
+    {
+      "description": [
+        "Ici, vous trouverez toutes les récompenses que vous pouvez obtenir en tuant des ennemis.",
+        "Cette page est en cours d'élaboration!",
+        "Ce jalon reprend un objectif déjà présent dans les parcours OLYCITY. Il complète le guide sans donner une seconde récompense."
+      ],
+      "id": "4AD1271901C730A4",
+      "rewards": [],
+      "size": 2.0,
+      "subtitle": "Tuer toutes ces choses",
+      "tasks": [
+        {
+          "id": "1D04C794046CED1B",
+          "type": "item",
+          "item": "bountiful:bountyboard",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 3.0,
+      "y": 2.0,
+      "repeatable": false,
+      "title": "Tableau de primes",
+      "dependencies": []
+    },
+    {
+      "id": "3C0E9BC7A8FEC9BC",
+      "rewards": [
+        {
+          "id": "3CCD49DA7CD2EF45",
+          "type": "xp",
+          "xp": 1000,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "minecraft:ender_dragon",
+          "icon": "minecraft:dragon_head",
+          "id": "5DA504D8C85062BB",
+          "title": "Tuer l'Ender Dragon",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "x": 1.5,
+      "y": 4.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Chasse : Ender Dragon",
+      "dependencies": []
+    },
+    {
+      "id": "5D2531E7C1C1E477",
+      "rewards": [
+        {
+          "id": "5BC21177B8CEFC9A",
+          "type": "xp",
+          "xp": 1000,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "minecraft:wither",
+          "icon": "minecraft:wither_skeleton_skull",
+          "id": "0978C3840A11D0FB",
+          "title": "Tuer le Wither",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "x": 3.0000000000000004,
+      "y": 4.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Chasse : Wither",
+      "dependencies": []
+    },
+    {
+      "id": "0476EC1A7C36CF09",
+      "rewards": [
+        {
+          "id": "0E5D0A1498B5B387",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "minecraft:elder_guardian",
+          "icon": "minecraft:elder_guardian_spawn_egg",
+          "id": "778B5C17C748E4D1",
+          "title": "Tuer le Gardien Ancien",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "x": 4.5,
+      "y": 4.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Chasse : Grand gardien",
+      "dependencies": []
+    },
+    {
+      "description": [
+        "« Tout en faisant beaucoup de lignes de quête pour l'ATM7, le Trader Villager a pensé que ce serait drôle de me pousser constamment dans l'écran de quête."
+      ],
+      "id": "383427D59828C7F2",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "36AB418E99FFBBE7",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:iron_sword",
+            "tag": {
+              "Damage": 0,
+              "display": {
+                "Lore": [
+                  "[{\"text\":\"For those brave enough to slaughter the Mighty and Annoying Trader\",\"italic\":false}]"
+                ],
+                "Name": "[{\"text\":\"Sword of AlfredGG\",\"italic\":false}]"
+              }
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "2779020EE1612EE5",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "061E17F3FD27F8A7",
+          "item": "supplementaries:pedestal",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.5,
+      "subtitle": "'C'est personnel' - AlfredGG",
+      "tasks": [
+        {
+          "entity": "minecraft:wandering_trader",
+          "icon": "minecraft:trader_llama_spawn_egg",
+          "id": "39A399C357E4C3D2",
+          "title": "Tuez le commerçant Villager",
+          "type": "kill",
+          "value": 1
+        },
+        {
+          "entity": "minecraft:trader_llama",
+          "icon": "minecraft:trader_llama_spawn_egg",
+          "id": "230096125879D964",
+          "title": "Tuez le trader Lamas",
+          "type": "kill",
+          "value": 2
+        }
+      ],
+      "title": "Tuer le Villageois Marchand et ses Ennuyeux Lamas",
+      "x": 3.0500000000000003,
+      "y": 6.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "icon": "minecraft:ender_pearl",
+      "id": "69D0ADE8D85C1896",
+      "rewards": [
+        {
+          "count": 5,
+          "id": "5DBE90DBB408B6F3",
+          "item": "minecraft:ender_pearl",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "5D116C0825A3F9CC",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Tuer 5 Enderman",
+      "tasks": [
+        {
+          "entity": "minecraft:enderman",
+          "icon": "minecraft:ender_pearl",
+          "id": "401CD64D7F9FE365",
+          "title": "&l&9La fin du Bounty: Endermen",
+          "type": "kill",
+          "value": 5
+        }
+      ],
+      "title": "&l&9La fin du Bounty: Endermen",
+      "x": 10.0,
+      "y": -0.5,
+      "description": [],
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "69D0ADE8D85C1896"
+      ],
+      "hide_until_deps_visible": 1,
+      "icon": "minecraft:ender_pearl",
+      "id": "2631F290BE7EDB9A",
+      "rewards": [
+        {
+          "id": "4FB38759D8753870",
+          "type": "xp",
+          "xp": 20,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "minecraft:enderman",
+          "icon": "minecraft:ender_pearl",
+          "id": "7DD189E1796B4A88",
+          "title": "Tuer 10 Endermen",
+          "type": "kill",
+          "value": 10
+        }
+      ],
+      "x": 10.0,
+      "y": -2.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Chasse : Enderman"
+    },
+    {
+      "dependencies": [
+        "2631F290BE7EDB9A"
+      ],
+      "icon": "minecraft:ender_pearl",
+      "id": "677C1E9D0CD800A5",
+      "rewards": [
+        {
+          "id": "6927F3B734D1D1D4",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 8,
+          "id": "4062FE4087775C26",
+          "item": "minecraft:ender_pearl",
+          "random_bonus": 8,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "minecraft:enderman",
+          "icon": "minecraft:ender_pearl",
+          "id": "136EC2EB301F4716",
+          "title": "Tuer 50 Endermen",
+          "type": "kill",
+          "value": 50
+        }
+      ],
+      "x": 10.0,
+      "y": -3.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Chasse : Enderman"
+    },
+    {
+      "dependencies": [
+        "677C1E9D0CD800A5"
+      ],
+      "id": "250989558E885375",
+      "rewards": [
+        {
+          "id": "57AB7F3262E3E795",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "pentagon",
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "minecraft:enderman",
+          "icon": "minecraft:ender_eye",
+          "id": "635C67FEFBC20265",
+          "title": "Tuer 100 Endermen",
+          "type": "kill",
+          "value": 100
+        }
+      ],
+      "x": 10.0,
+      "y": -5.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Chasse : Enderman"
+    },
+    {
+      "icon": "minecraft:spider_eye",
+      "id": "30E0B3D17BE08970",
+      "rewards": [
+        {
+          "count": 5,
+          "id": "73E1C1B347CBE21E",
+          "item": "minecraft:spider_eye",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "0BAF44CDD0277A72",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Tuer 5 Araignées",
+      "tasks": [
+        {
+          "entity": "minecraft:spider",
+          "icon": "minecraft:spider_eye",
+          "id": "7EA1099D9BD63A6D",
+          "type": "kill",
+          "value": 5
+        }
+      ],
+      "title": "&l&9Bounty Overworld: Les araignées",
+      "x": 2.0,
+      "y": -0.5,
+      "description": [],
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "30E0B3D17BE08970"
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "32D020FBA5AEB84E",
+      "rewards": [
+        {
+          "id": "1313CD7751CC0EF0",
+          "type": "xp",
+          "xp": 20,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "minecraft:spider",
+          "icon": "minecraft:spider_eye",
+          "id": "597797E06B25F60D",
+          "title": "Tuer 10 araignées",
+          "type": "kill",
+          "value": 10
+        }
+      ],
+      "x": 2.0,
+      "y": -2.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Chasse : Araignée"
+    },
+    {
+      "dependencies": [
+        "32D020FBA5AEB84E"
+      ],
+      "id": "1316A9C35566611D",
+      "rewards": [
+        {
+          "id": "033C91566EE35F10",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 10,
+          "id": "2648EE67E2CDD516",
+          "item": "minecraft:string",
+          "random_bonus": 10,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 20,
+          "id": "714133CCCCFDCE08",
+          "item": "minecraft:spider_eye",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "minecraft:spider",
+          "icon": "minecraft:spider_eye",
+          "id": "334A3B6E8DDDBC76",
+          "title": "Tuer 50 araignées",
+          "type": "kill",
+          "value": 50
+        }
+      ],
+      "x": 2.0,
+      "y": -3.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Chasse : Araignée"
+    },
+    {
+      "dependencies": [
+        "1316A9C35566611D"
+      ],
+      "id": "5481F0C46F9F253D",
+      "rewards": [
+        {
+          "id": "5A8685E2B9AB4AFA",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "pentagon",
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "minecraft:spider",
+          "icon": "minecraft:spider_eye",
+          "id": "00DC8E7A9E9DA205",
+          "title": "Tuer 100 araignées",
+          "type": "kill",
+          "value": 100
+        }
+      ],
+      "x": 2.0,
+      "y": -5.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Chasse : Araignée"
+    },
+    {
+      "icon": "minecraft:blaze_powder",
+      "id": "658488B58AFC088A",
+      "rewards": [
+        {
+          "count": 5,
+          "id": "3476498362845503",
+          "item": "minecraft:blaze_rod",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "342100CAC8D27702",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Tuer 5 Blazes",
+      "tasks": [
+        {
+          "entity": "minecraft:blaze",
+          "icon": "minecraft:blaze_powder",
+          "id": "18A1B52F65D3463E",
+          "title": "&l&cLe Bounty Nether: Blazes",
+          "type": "kill",
+          "value": 5
+        }
+      ],
+      "title": "&l&cLe Bounty Nether: Blazes",
+      "x": 6.0,
+      "y": -0.5,
+      "description": [],
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "658488B58AFC088A"
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "11B8A54A369D3AE6",
+      "rewards": [
+        {
+          "id": "271E12A7FB4FD31A",
+          "type": "xp",
+          "xp": 20,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "minecraft:blaze",
+          "icon": "minecraft:blaze_rod",
+          "id": "44BFCA7CD9C110EF",
+          "title": "Tuer 10 Blazes",
+          "type": "kill",
+          "value": 10
+        }
+      ],
+      "x": 6.0,
+      "y": -2.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Chasse : Blaze"
+    },
+    {
+      "dependencies": [
+        "11B8A54A369D3AE6"
+      ],
+      "id": "1D43D443B6D29D33",
+      "rewards": [
+        {
+          "id": "48B143CA9089F05B",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 20,
+          "id": "2CAFEF0B7AFF950D",
+          "item": "minecraft:blaze_rod",
+          "random_bonus": 10,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 10,
+          "id": "44525FAF7321BDD9",
+          "item": "minecraft:blaze_powder",
+          "random_bonus": 10,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "minecraft:blaze",
+          "icon": "minecraft:blaze_rod",
+          "id": "45C3E42CD9B76001",
+          "title": "Tuer 50 blasons",
+          "type": "kill",
+          "value": 50
+        }
+      ],
+      "x": 6.0,
+      "y": -3.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Chasse : Blaze"
+    },
+    {
+      "dependencies": [
+        "1D43D443B6D29D33"
+      ],
+      "id": "41C0C29BBAD2A1FF",
+      "rewards": [
+        {
+          "id": "4D52EA7C156E6C82",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "pentagon",
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "minecraft:blaze",
+          "icon": "minecraft:blaze_rod",
+          "id": "51B8F6154459919E",
+          "title": "Tuer 100 Blazes",
+          "type": "kill",
+          "value": 100
+        }
+      ],
+      "x": 6.0,
+      "y": -5.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Chasse : Blaze"
+    },
+    {
+      "id": "6B9DF9A583BB8D9A",
+      "rewards": [
+        {
+          "count": 5,
+          "id": "58EE5B7ABBF00FCD",
+          "item": "minecraft:glass_bottle",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "2CB54E10218119D1",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Tuer 5 Sorcières",
+      "tasks": [
+        {
+          "entity": "minecraft:witch",
+          "icon": {
+            "Count": 1,
+            "id": "minecraft:potion",
+            "tag": {
+              "Potion": "minecraft:invisibility"
+            }
+          },
+          "id": "315EE0170A4B2993",
+          "title": "&l&9Bounty Overworld: Sorcières",
+          "type": "kill",
+          "value": 5
+        }
+      ],
+      "title": "&l&9Bounty Overworld: Sorcières",
+      "x": 4.0,
+      "y": -0.5,
+      "description": [],
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "6B9DF9A583BB8D9A"
+      ],
+      "hide_until_deps_visible": 1,
+      "icon": {
+        "Count": 1,
+        "id": "minecraft:potion",
+        "tag": {
+          "Potion": "minecraft:invisibility"
+        }
+      },
+      "id": "529A67FFFA8ACCB5",
+      "rewards": [
+        {
+          "id": "3EB2CCF2889CE444",
+          "type": "xp",
+          "xp": 20,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "minecraft:witch",
+          "icon": {
+            "Count": 1,
+            "id": "minecraft:potion",
+            "tag": {
+              "Potion": "minecraft:leaping"
+            }
+          },
+          "id": "06776C7B3ED8D11C",
+          "title": "Tuer 10 sorcières",
+          "type": "kill",
+          "value": 10
+        }
+      ],
+      "x": 4.0,
+      "y": -2.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Chasse : Sorcière"
+    },
+    {
+      "dependencies": [
+        "529A67FFFA8ACCB5"
+      ],
+      "id": "50FBF4BC3E318D2E",
+      "rewards": [
+        {
+          "id": "715EED01F59A4E82",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 10,
+          "id": "06E46E2955E95A8E",
+          "item": "minecraft:redstone",
+          "random_bonus": 10,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 10,
+          "id": "1331ABB2FB48D08D",
+          "item": "minecraft:sugar",
+          "random_bonus": 10,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 10,
+          "id": "2131957A369B9353",
+          "item": "minecraft:glowstone_dust",
+          "random_bonus": 10,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "minecraft:witch",
+          "icon": {
+            "Count": 1,
+            "id": "minecraft:potion",
+            "tag": {
+              "Potion": "minecraft:slowness"
+            }
+          },
+          "id": "7F30F74AAC1BF061",
+          "title": "Tuer 50 sorcières",
+          "type": "kill",
+          "value": 50
+        }
+      ],
+      "x": 4.0,
+      "y": -3.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Chasse : Sorcière"
+    },
+    {
+      "dependencies": [
+        "50FBF4BC3E318D2E"
+      ],
+      "id": "6C9789A323572D8C",
+      "rewards": [
+        {
+          "id": "139476B3E186914A",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "pentagon",
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "minecraft:witch",
+          "icon": {
+            "Count": 1,
+            "id": "minecraft:splash_potion",
+            "tag": {
+              "Potion": "ars_nouveau:shielding_potion_strong"
+            }
+          },
+          "id": "2978D1C3A4A92CA8",
+          "title": "Tuer 100 sorcières",
+          "type": "kill",
+          "value": 100
+        }
+      ],
+      "x": 4.0,
+      "y": -5.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Chasse : Sorcière"
+    },
+    {
+      "id": "5C29663609A30232",
+      "rewards": [
+        {
+          "id": "16D0F72216AE8DF6",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 6,
+          "id": "48CD381C7FF1CCE1",
+          "item": "minecraft:coal",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "62887C172CFFDF41",
+          "item": "minecraft:wither_skeleton_skull",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Tuer 5 Wither Squelettes",
+      "tasks": [
+        {
+          "entity": "minecraft:wither_skeleton",
+          "icon": "minecraft:wither_skeleton_skull",
+          "id": "0CD6333D95B5594E",
+          "title": "&l&cLe Bounty Nether: Des squelettes plus épais",
+          "type": "kill",
+          "value": 5
+        }
+      ],
+      "title": "&l&cLe Bounty Nether: Des squelettes plus épais",
+      "x": 8.0,
+      "y": -0.5,
+      "description": [],
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "5C29663609A30232"
+      ],
+      "hide_until_deps_visible": 1,
+      "id": "632911407DA1BB34",
+      "rewards": [
+        {
+          "id": "1EC09EE519427EDF",
+          "type": "xp",
+          "xp": 20,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "minecraft:wither_skeleton",
+          "icon": "minecraft:wither_skeleton_skull",
+          "id": "7354CCA0A997B2D5",
+          "title": "Tuer 10 squelettes de dépérissement",
+          "type": "kill",
+          "value": 10
+        }
+      ],
+      "x": 8.0,
+      "y": -2.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Chasse : Wither squelette"
+    },
+    {
+      "dependencies": [
+        "632911407DA1BB34"
+      ],
+      "id": "293255C14E4E8E52",
+      "rewards": [
+        {
+          "id": "52A73A205FD2ECC1",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 3,
+          "id": "36D5CCA12E584906",
+          "item": "minecraft:wither_skeleton_skull",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 6,
+          "id": "693ABA3830A6704B",
+          "item": "minecraft:coal",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "minecraft:wither_skeleton",
+          "icon": "minecraft:wither_skeleton_skull",
+          "id": "74172A8722815062",
+          "title": "Tuer 50 squelettes de dépérissement",
+          "type": "kill",
+          "value": 50
+        }
+      ],
+      "x": 8.0,
+      "y": -3.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Chasse : Wither squelette"
+    },
+    {
+      "dependencies": [
+        "293255C14E4E8E52"
+      ],
+      "id": "24F5E4FCA7D2F853",
+      "rewards": [
+        {
+          "count": 9,
+          "id": "13F22A49288A1B00",
+          "item": "minecraft:wither_skeleton_skull",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "pentagon",
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "minecraft:wither_skeleton",
+          "icon": "minecraft:wither_skeleton_skull",
+          "id": "55EAFEFD6028ED80",
+          "title": "Tuer 100 squelettes de wire",
+          "type": "kill",
+          "value": 100
+        }
+      ],
+      "x": 8.0,
+      "y": -5.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Chasse : Wither squelette"
+    },
+    {
+      "icon": "minecraft:sculk_sensor",
+      "id": "3C6F97888200621B",
+      "rewards": [
+        {
+          "id": "7DCE4FC0CC1BA080",
+          "type": "xp",
+          "xp": 1000,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "minecraft:warden",
+          "icon": "minecraft:sculk_catalyst",
+          "id": "3E653A0C6D74B242",
+          "title": "Tuer le Gardien des Profondeurs",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "x": 1.5,
+      "y": 6.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Chasse : Warden",
+      "dependencies": []
+    },
+    {
+      "can_repeat": 0,
+      "description": [
+        "Cette quête a été créée par AllTheMods Staff, ou un contributeur communautaire pour une utilisation dans AllTheMods Modpacks.",
+        "Comme tous les packs AllTheMods sont sous licence All Rights Reserved, cette Quest n'est pas autorisée à être utilisée dans les packs publics non publiés par l'équipe AllTheMods, sans autorisation explicite.",
+        "Cette quête est intentionnellement cachée, si vous voyez cela, vous êtes en mode édition.",
+        "Repère de lecture : obtiens le livre indiqué pour poursuivre. Cette étape ne donne aucune récompense."
+      ],
+      "disable_toast": 1,
+      "hide_details_until_startable": 1,
+      "hide_until_deps_visible": 1,
+      "icon": {
+        "Count": 1,
+        "id": "ftbquests:custom_icon",
+        "tag": {
+          "Icon": "minecraft:item/barrier"
+        }
+      },
+      "id": "2F438D50D603EA0B",
+      "invisible": 1,
+      "optional": 1,
+      "shape": "octagon",
+      "tasks": [
+        {
+          "id": "0B0116C226EF033C",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "59184F0D4CC392E6",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 3.0,
+      "y": 0.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Livre",
+      "dependencies": []
+    }
+  ],
+  "title": "Défis de chasse",
+  "default_consume_items": false
+}

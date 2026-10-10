@@ -1,0 +1,8 @@
+name = "config/alexsmobs/flying_fish_spawns.json"
+filename = "flying_fish_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/69904b309696b6081cdec1ea87bdb62f84886cf6dac600a8bca231860c3a3f2f"
+hash-format = "sha256"
+hash = "69904b309696b6081cdec1ea87bdb62f84886cf6dac600a8bca231860c3a3f2f"

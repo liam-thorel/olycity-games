@@ -1,0 +1,8 @@
+name = "config/goety/goety-brews.toml"
+filename = "goety-brews.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/a47608bc82821a6564d232f047612ca212990a6e75e715aec1fa2a4acdacc012"
+hash-format = "sha256"
+hash = "a47608bc82821a6564d232f047612ca212990a6e75e715aec1fa2a4acdacc012"

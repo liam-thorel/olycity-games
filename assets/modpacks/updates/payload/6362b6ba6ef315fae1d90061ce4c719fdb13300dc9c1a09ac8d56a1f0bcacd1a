@@ -1,0 +1,3210 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "",
+  "filename": "atm9_mekanism",
+  "group": "3DA9E3931E28DB13",
+  "icon": "mekanism:steel_casing",
+  "id": "4CCF00F4B1696FB3",
+  "images": [
+    {
+      "height": 2.0,
+      "image": "ftbquests:block/barrier_open",
+      "rotation": 45.0,
+      "width": 2.0,
+      "x": 9.0,
+      "y": -5.5
+    }
+  ],
+  "order_index": 7,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "dependencies": [
+        "4848D092AAD168AC"
+      ],
+      "description": [
+        "L’infuseur métallurgique prépare les alliages et composants de Mekanism. Il utilise un objet à traiter et un matériau d’infusion.",
+        "Consulte JEI pour la recette exacte, puis vérifie l’énergie et les faces d’entrée et de sortie de ta machine."
+      ],
+      "id": "14DA6F78E54C5711",
+      "rewards": [],
+      "shape": "gear",
+      "size": 1.5,
+      "subtitle": "La machine de démarrage",
+      "tasks": [
+        {
+          "id": "14BC407664E4064C",
+          "item": "mekanism:metallurgic_infuser",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -7.0,
+      "y": -2.0,
+      "repeatable": false,
+      "title": "L’infuseur métallurgique"
+    },
+    {
+      "dependencies": [
+        "14DA6F78E54C5711"
+      ],
+      "description": [
+        "Cette machine fonctionne comme un Macerator ou Pulverizer, et va décomposer les minerais en poussières.",
+        "Cela décompose 3 minerais bruts en 4 poussières.",
+        "C'est le début de votre usine d'or. Il peut également être mis à niveau à une machine d'usine, augmentant les fentes d'utilisation.",
+        "Ce jalon reprend un objectif déjà présent dans les parcours OLYCITY. Il complète le guide sans donner une seconde récompense."
+      ],
+      "id": "4553DD02291FBF71",
+      "rewards": [],
+      "subtitle": "Briser les minerais bruts en poussières",
+      "tasks": [
+        {
+          "id": "39850824E4BD860A",
+          "item": "mekanism:enrichment_chamber",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -4.0,
+      "y": -2.0,
+      "repeatable": false,
+      "title": "Chambre d'enrichissement"
+    },
+    {
+      "dependencies": [
+        "14DA6F78E54C5711"
+      ],
+      "description": [
+        "La machine crée deux lingots vraiment forts : Glowstone raffiné et Obsidian raffiné.",
+        "Il infuse un objet avec Osmium pour créer un lingot plus puissant."
+      ],
+      "id": "26E9FB187EEA73AC",
+      "rewards": [
+        {
+          "id": "4ABFD416E05C03EE",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Vraiment seulement bon pour 2 choses",
+      "tasks": [
+        {
+          "id": "677F7FA8CB3FA445",
+          "item": "mekanism:osmium_compressor",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -8.0,
+      "y": -0.5,
+      "repeatable": false,
+      "title": "Compresseur d'Osmium"
+    },
+    {
+      "dependencies": [
+        "268190A85F7D81DE"
+      ],
+      "description": [
+        "Cette machine écrase les minerais dans leurs formes de poussières \" sales \". Ceci est utile pour convertir les touffes en poussières sales, qui peuvent passer par une chambre d'enrichissement pour créer la poussière de minerai, qui peut alors être fondu en lingot."
+      ],
+      "id": "238955D440DED459",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "7C4D68FE5D00200F",
+          "item": "mekanism:dirty_dust_iron",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "77A63C4E795C50D4",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "C'est un choc.",
+      "tasks": [
+        {
+          "id": "19F7E8EB8AE9249A",
+          "item": "mekanism:crusher",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 1.0,
+      "y": -2.0,
+      "repeatable": false,
+      "title": "Broyeur"
+    },
+    {
+      "dependencies": [
+        "4080D93E5405C37A"
+      ],
+      "description": [
+        "Cette machine peut être à moi pour vous !",
+        "Il est entièrement configurable, et peut même remplacer les blocs minés par des pavés, ou quel que soit le bloc que vous lui fournissez!",
+        "Ce jalon reprend un objectif déjà présent dans les parcours OLYCITY. Il complète le guide sans donner une seconde récompense."
+      ],
+      "id": "39C5C47159A3ACAF",
+      "rewards": [],
+      "shape": "hexagon",
+      "size": 1.25,
+      "subtitle": "Un ami robot plus grand.",
+      "tasks": [
+        {
+          "id": "0556D3B226A4E8DA",
+          "item": "mekanism:digital_miner",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -7.75,
+      "y": 3.75,
+      "repeatable": false,
+      "title": "Mineur digital"
+    },
+    {
+      "description": [
+        "Cet article stocke des liquides.",
+        "Il dispose d'un mode seau qui peut être toggled pour ramasser des liquides avec elle. Très utile pour la lave au début!"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "60C151D1DE92FEE7",
+      "rewards": [
+        {
+          "id": "33F06DE689B26295",
+          "item": "minecraft:bucket",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "65DB7F80D071F99D",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 1.5,
+      "subtitle": "C'est un modèle BUCKET !",
+      "tasks": [
+        {
+          "id": "4795613D2755C02E",
+          "item": "mekanism:basic_fluid_tank",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 3.5,
+      "y": 7.0,
+      "repeatable": false,
+      "title": "Réservoir de fluide de base",
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "394B974205E6F10B",
+        "52234EAD24B7062F"
+      ],
+      "hide_dependency_lines": 0,
+      "id": "4080D93E5405C37A",
+      "progression_mode": "linear",
+      "rewards": [
+        {
+          "id": "54DB38C9A45EFFDD",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.25,
+      "subtitle": "Un mini-robot pour vous accompagner lors de vos voyages",
+      "tasks": [
+        {
+          "id": "27F3EC429A50D4DB",
+          "item": "mekanism:robit",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -7.75,
+      "y": 2.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Robit"
+    },
+    {
+      "dependencies": [
+        "14DA6F78E54C5711"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "78361528D8A21B24",
+      "progression_mode": "linear",
+      "rewards": [
+        {
+          "id": "47268676D1492D3E",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.25,
+      "subtitle": "Nécessite de l'hydrogène pour travailler!",
+      "tasks": [
+        {
+          "id": "65A73E131F6768DD",
+          "item": "mekanism:jetpack",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -6.5,
+      "y": 3.75,
+      "description": [],
+      "repeatable": false,
+      "title": "Jetpack"
+    },
+    {
+      "dependencies": [
+        "14DA6F78E54C5711"
+      ],
+      "description": [
+        "Cet article met à niveau une machine de base vers une machine Basic Factory."
+      ],
+      "hide_dependency_lines": 1,
+      "id": "57B8BE44F77CA11D",
+      "rewards": [
+        {
+          "id": "19F8272C1CFC0BE0",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 1.5,
+      "subtitle": "Mise à niveau vers les usines",
+      "tasks": [
+        {
+          "id": "041E2C7C7C449A3E",
+          "item": "mekanism:basic_tier_installer",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -0.5,
+      "y": 7.0,
+      "repeatable": false,
+      "title": "Installateur de niveau de base"
+    },
+    {
+      "dependencies": [
+        "57B8BE44F77CA11D"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "46045971A0DE8413",
+      "rewards": [
+        {
+          "id": "0ED81CEBF9D86C2B",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "4D5EC5E083C8BA69",
+          "item": "mekanism:advanced_tier_installer",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 0.0,
+      "y": 7.75,
+      "description": [],
+      "repeatable": false,
+      "title": "Installateur de niveau avancé"
+    },
+    {
+      "dependencies": [
+        "46045971A0DE8413"
+      ],
+      "id": "7E4AF2ACDD853D6D",
+      "rewards": [
+        {
+          "id": "3C430A12EE6ECBEC",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "043042D15FF12981",
+          "item": "mekanism:elite_tier_installer",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -0.5,
+      "y": 8.25,
+      "description": [],
+      "repeatable": false,
+      "title": "Installateur de niveau élite"
+    },
+    {
+      "dependencies": [
+        "7E4AF2ACDD853D6D"
+      ],
+      "id": "558979EBEB313495",
+      "rewards": [
+        {
+          "id": "31EE80B2CD2A1B2F",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "53440877D4B03A55",
+          "item": "mekanism:ultimate_tier_installer",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -1.0,
+      "y": 7.75,
+      "description": [],
+      "repeatable": false,
+      "title": "Installateur de niveau ultime"
+    },
+    {
+      "dependencies": [
+        "14DA6F78E54C5711"
+      ],
+      "description": [
+        "Cet article est la façon dont vous rendez les transferts sans fil possibles.",
+        "Vous pouvez définir des canaux spécifiques, nommés par vous, pour transférer ce que vous voulez de lui."
+      ],
+      "hide_dependency_lines": 1,
+      "id": "0FBB579C4CD0D301",
+      "progression_mode": "linear",
+      "rewards": [
+        {
+          "id": "7231AB5F7A03E536",
+          "item": "mekanism:teleportation_core",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "615184F8A551582C",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.25,
+      "subtitle": "Puissance sans fil, gaz, fluides, tout.",
+      "tasks": [
+        {
+          "id": "6D07D81FD06D0736",
+          "item": "mekanism:quantum_entangloporter",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -7.75,
+      "y": 5.0,
+      "repeatable": false,
+      "title": "Entangloporteur quantique"
+    },
+    {
+      "dependencies": [
+        "14DA6F78E54C5711"
+      ],
+      "description": [
+        "Ce bloc stocke de l'énergie, et peut également être utilisé pour charger des objets.",
+        "Ce jalon reprend un objectif déjà présent dans les parcours OLYCITY. Il complète le guide sans donner une seconde récompense."
+      ],
+      "hide_dependency_lines": 1,
+      "id": "07B648899FA01EFA",
+      "rewards": [],
+      "shape": "diamond",
+      "size": 1.5,
+      "subtitle": "Pouvoir de stockage",
+      "tasks": [
+        {
+          "id": "02309D750A59B216",
+          "item": "mekanism:basic_energy_cube",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -2.5000000000000004,
+      "y": 7.0,
+      "repeatable": false,
+      "title": "Cube énergétique de base"
+    },
+    {
+      "dependencies": [
+        "07B648899FA01EFA"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "29F5D420EE9176D7",
+      "rewards": [
+        {
+          "id": "5DA3C8717E3CB588",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "0EAB065FEBD8F83D",
+          "item": "mekanism:advanced_energy_cube",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -2.0,
+      "y": 7.800000000000001,
+      "description": [],
+      "repeatable": false,
+      "title": "Cube d'énergie avancé"
+    },
+    {
+      "dependencies": [
+        "29F5D420EE9176D7"
+      ],
+      "id": "260CC291F4D6191E",
+      "rewards": [
+        {
+          "id": "3D8F2C16AF3E55DC",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "6FDABE850C47DE71",
+          "item": "mekanism:elite_energy_cube",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -2.5000000000000004,
+      "y": 8.3,
+      "description": [],
+      "repeatable": false,
+      "title": "Cube d'énergie d'élite"
+    },
+    {
+      "dependencies": [
+        "260CC291F4D6191E"
+      ],
+      "id": "621726A6933C3DF9",
+      "rewards": [
+        {
+          "id": "78A9FBF2E11A9A1B",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "6DD939A7AD2AE447",
+          "item": "mekanism:ultimate_energy_cube",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -3.0000000000000004,
+      "y": 7.800000000000001,
+      "description": [],
+      "repeatable": false,
+      "title": "Cube d'énergie ultime"
+    },
+    {
+      "dependencies": [
+        "14DA6F78E54C5711"
+      ],
+      "description": [
+        "Infusez le fer avec Redstone dans un infuseur métallurgique vous en procurera un."
+      ],
+      "hide_dependency_lines": 1,
+      "id": "54E7ADC58F571FA0",
+      "rewards": [
+        {
+          "id": "1ABE4D853DD2C41F",
+          "item": "minecraft:redstone",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "77C8B1DD6AF9B2D8",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "subtitle": "L'alliage de base pour l'artisanat",
+      "tasks": [
+        {
+          "id": "324C520FA39D4F30",
+          "item": "mekanism:alloy_infused",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -7.5,
+      "y": -3.5,
+      "repeatable": false,
+      "title": "Alliage infusé"
+    },
+    {
+      "dependencies": [
+        "54E7ADC58F571FA0"
+      ],
+      "id": "1EF132661F35E465",
+      "rewards": [
+        {
+          "id": "7D47104408EB63DE",
+          "item": "mekanism:enriched_diamond",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "7D04992859C21C41",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "tasks": [
+        {
+          "id": "2D76B18DE2B7EE2D",
+          "item": "mekanism:alloy_reinforced",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -7.5,
+      "y": -4.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Alliage renforcé"
+    },
+    {
+      "dependencies": [
+        "1EF132661F35E465"
+      ],
+      "id": "524E70C7125862D2",
+      "rewards": [
+        {
+          "id": "5B11DEE448A7BA80",
+          "item": "mekanism:dust_refined_obsidian",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "321D5E295F664C0A",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "tasks": [
+        {
+          "id": "37B89495164AE3E8",
+          "item": "mekanism:alloy_atomic",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -7.5,
+      "y": -5.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Alliage atomique"
+    },
+    {
+      "dependencies": [
+        "14DA6F78E54C5711"
+      ],
+      "description": [
+        "Infuser Osmium avec Redstone dans un Infuseur métallurgique vous en créera un."
+      ],
+      "hide_dependency_lines": 1,
+      "id": "03062F5176A39D1B",
+      "rewards": [
+        {
+          "id": "1C81B26637930E7A",
+          "item": "minecraft:redstone",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "6688D46C0FFF719B",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "subtitle": "Le circuit de commande de base",
+      "tasks": [
+        {
+          "id": "63D9161FAC015029",
+          "item": "mekanism:basic_control_circuit",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -6.5,
+      "y": -3.5,
+      "repeatable": false,
+      "title": "Circuit de contrôle de base"
+    },
+    {
+      "dependencies": [
+        "03062F5176A39D1B",
+        "54E7ADC58F571FA0"
+      ],
+      "id": "47169F8BAC806FDC",
+      "rewards": [
+        {
+          "id": "0D2F28B74CB35677",
+          "item": "mekanism:enriched_redstone",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "7577FE632A2B0640",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "tasks": [
+        {
+          "id": "3DF120ECC7AD7831",
+          "item": "mekanism:advanced_control_circuit",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -6.5,
+      "y": -4.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Circuit de contrôle avancé"
+    },
+    {
+      "dependencies": [
+        "47169F8BAC806FDC",
+        "1EF132661F35E465"
+      ],
+      "id": "2DEEB37127A2CA1E",
+      "rewards": [
+        {
+          "id": "7CBE5A08783AAC06",
+          "item": "mekanism:alloy_reinforced",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "5BD374463BC61EDC",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "tasks": [
+        {
+          "id": "1F1952CA34A9B8A4",
+          "item": "mekanism:elite_control_circuit",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -6.5,
+      "y": -5.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Circuit de contrôle d'élite"
+    },
+    {
+      "dependencies": [
+        "2DEEB37127A2CA1E",
+        "524E70C7125862D2"
+      ],
+      "id": "476070C3B89D62C2",
+      "rewards": [
+        {
+          "id": "5287B286F3DF3381",
+          "item": "mekanism:alloy_atomic",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "44C9D7CF40E2F118",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "tasks": [
+        {
+          "id": "650842FF6C3FB1EF",
+          "item": "mekanism:ultimate_control_circuit",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -7.0,
+      "y": -6.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Circuit de contrôle ultime"
+    },
+    {
+      "dependencies": [
+        "14DA6F78E54C5711"
+      ],
+      "description": [
+        "Infusion du fer avec du charbon ou du charbon dans un infuseur métallurgique vous donnera du fer enrichi.",
+        "Le fer enrichi avec plus de charbon ou de charbon vous donnera de la poussière d'acier, qui peut être fondu dans l'acier.",
+        "Il s'agit d'un élément important de l'artisanat dans beaucoup de recettes dans le Mekanism."
+      ],
+      "hide_dependency_lines": 1,
+      "id": "0E21391F6740C122",
+      "rewards": [
+        {
+          "id": "05A3BD585CD90A87",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "pentagon",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "0882AC1FB3277823",
+          "type": "item",
+          "item": "mekanism:ingot_steel",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Acier",
+      "x": 0.5,
+      "y": 2.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "0E21391F6740C122"
+      ],
+      "description": [
+        "Ce jalon reprend un objectif déjà présent dans les parcours OLYCITY. Il complète le guide sans donner une seconde récompense."
+      ],
+      "id": "252F980541EA682E",
+      "rewards": [],
+      "shape": "diamond",
+      "size": 1.5,
+      "subtitle": "Pour la puissance de transfert",
+      "tasks": [
+        {
+          "id": "12DE7B91BDEBAF80",
+          "item": "mekanism:basic_universal_cable",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -3.5,
+      "y": 4.0,
+      "repeatable": false,
+      "title": "Câble universel de base"
+    },
+    {
+      "dependencies": [
+        "252F980541EA682E"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "1B70D04E565BCD99",
+      "rewards": [
+        {
+          "id": "266D7F905A674557",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "7A073D792CDC38B1",
+          "item": "mekanism:advanced_universal_cable",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -3.0,
+      "y": 5.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Câble universel avancé"
+    },
+    {
+      "dependencies": [
+        "1B70D04E565BCD99"
+      ],
+      "id": "1E1B1700589D6422",
+      "rewards": [
+        {
+          "id": "51DBCF6A8B6384B5",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "6250707901794F45",
+          "item": "mekanism:elite_universal_cable",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -3.5,
+      "y": 5.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Câble universel d'élite"
+    },
+    {
+      "dependencies": [
+        "1E1B1700589D6422"
+      ],
+      "id": "7C4A1DA02589B541",
+      "rewards": [
+        {
+          "id": "675A78B77E56A39B",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "42044D440F93C0A1",
+          "item": "mekanism:ultimate_universal_cable",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -4.0,
+      "y": 5.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Câble universel ultime"
+    },
+    {
+      "dependencies": [
+        "0E21391F6740C122"
+      ],
+      "id": "69F777A95B3BC4B0",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "5253A64611E4F359",
+          "item": "mekanism:basic_mechanical_pipe",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "75260F9C844D50F6",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 1.5,
+      "subtitle": "Pour le transfert des fluides",
+      "tasks": [
+        {
+          "id": "7D3B00A1319B9347",
+          "item": "mekanism:basic_mechanical_pipe",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -1.5,
+      "y": 4.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Tuyau mécanique de base"
+    },
+    {
+      "dependencies": [
+        "69F777A95B3BC4B0"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "5539489D16B790FB",
+      "rewards": [
+        {
+          "id": "72C575FE8254F686",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "7EFFF4BE1460133B",
+          "item": "mekanism:advanced_mechanical_pipe",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -1.0,
+      "y": 5.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Tuyau mécanique avancé"
+    },
+    {
+      "dependencies": [
+        "5539489D16B790FB"
+      ],
+      "id": "66E7EE4FD7D2670A",
+      "rewards": [
+        {
+          "id": "046976B881E97D1E",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "4164B09191AD8F34",
+          "item": "mekanism:elite_mechanical_pipe",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -1.5,
+      "y": 5.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Tuyau mécanique d'élite"
+    },
+    {
+      "dependencies": [
+        "66E7EE4FD7D2670A"
+      ],
+      "id": "28848A64D29A61B8",
+      "rewards": [
+        {
+          "id": "0C045E4EAA304A68",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "0D191636623B3045",
+          "item": "mekanism:ultimate_mechanical_pipe",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -2.0,
+      "y": 5.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Tuyau mécanique ultime"
+    },
+    {
+      "dependencies": [
+        "0E21391F6740C122"
+      ],
+      "id": "4BA2660DC4B10D9A",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "43FFC351781FB448",
+          "item": "mekanism:basic_pressurized_tube",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "391469E3ED05D29D",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 1.5,
+      "subtitle": "Pour le transfert des gaz",
+      "tasks": [
+        {
+          "id": "335459AF85C2F6F9",
+          "item": "mekanism:basic_pressurized_tube",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 0.5,
+      "y": 4.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Tube pressurisé de base"
+    },
+    {
+      "dependencies": [
+        "0E21391F6740C122"
+      ],
+      "id": "365DD567FCBE42FC",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "2AF60C7D9FC3A188",
+          "item": "mekanism:basic_logistical_transporter",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "16DB77859DFF4384",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 1.5,
+      "subtitle": "Pour transférer des éléments",
+      "tasks": [
+        {
+          "id": "285AF1F65B55523C",
+          "item": "mekanism:basic_logistical_transporter",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 2.5,
+      "y": 4.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Transporteur logistique de base"
+    },
+    {
+      "dependencies": [
+        "0E21391F6740C122"
+      ],
+      "id": "6B04474D6E5A8CDB",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "1B565F6DE0F1245E",
+          "item": "mekanism:basic_thermodynamic_conductor",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "2B3830EFE38DE1FE",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 1.5,
+      "subtitle": "Pour transférer la chaleur",
+      "tasks": [
+        {
+          "id": "4F0DE8F9F9D0BD2C",
+          "item": "mekanism:basic_thermodynamic_conductor",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 4.5,
+      "y": 4.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Conducteur thermique de base"
+    },
+    {
+      "dependencies": [
+        "4BA2660DC4B10D9A"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "6598A401E6405956",
+      "rewards": [
+        {
+          "id": "1C673C8FAA18DFFE",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "7727805E8874A006",
+          "item": "mekanism:advanced_pressurized_tube",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 1.0,
+      "y": 5.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Tube pressurisé avancé"
+    },
+    {
+      "dependencies": [
+        "6598A401E6405956"
+      ],
+      "id": "07612D7B42A5F650",
+      "rewards": [
+        {
+          "id": "6A74244A316210A7",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "33B057AFD7AFE8F8",
+          "item": "mekanism:elite_pressurized_tube",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 0.5,
+      "y": 5.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Tube pressurisé d'élite"
+    },
+    {
+      "dependencies": [
+        "07612D7B42A5F650"
+      ],
+      "id": "61268D9F8C7EE8FB",
+      "rewards": [
+        {
+          "id": "673ACF903A91180F",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "141C738E1B6632CD",
+          "item": "mekanism:ultimate_pressurized_tube",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 0.0,
+      "y": 5.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Tube pressurisé ultime"
+    },
+    {
+      "dependencies": [
+        "365DD567FCBE42FC"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "51F44DAB43D20EB8",
+      "rewards": [
+        {
+          "id": "65D4FD3AE7B4E2BF",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "65C6147E22F59908",
+          "item": "mekanism:advanced_logistical_transporter",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 3.0,
+      "y": 5.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Transporteur Logistique Avancé"
+    },
+    {
+      "dependencies": [
+        "51F44DAB43D20EB8"
+      ],
+      "id": "70C3C89CE3E49E80",
+      "rewards": [
+        {
+          "id": "2EB437D64813F470",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "387FB8EECB0244C5",
+          "item": "mekanism:elite_logistical_transporter",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 2.5,
+      "y": 5.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Transporteur logistique d'élite"
+    },
+    {
+      "dependencies": [
+        "70C3C89CE3E49E80"
+      ],
+      "id": "34198ADAEB137362",
+      "rewards": [
+        {
+          "id": "643F2D0F0497F5A9",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "3E5202802A2C9C58",
+          "item": "mekanism:ultimate_logistical_transporter",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 2.0,
+      "y": 5.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Transporteur logistique ultime"
+    },
+    {
+      "dependencies": [
+        "6B04474D6E5A8CDB"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "198F1A0F66496E91",
+      "rewards": [
+        {
+          "id": "484B5DB595B25BEB",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "50F799849278673F",
+          "item": "mekanism:advanced_thermodynamic_conductor",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 5.0,
+      "y": 5.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Conducteur thermodynamique avancé"
+    },
+    {
+      "dependencies": [
+        "198F1A0F66496E91"
+      ],
+      "id": "0EE04B054D8272CF",
+      "rewards": [
+        {
+          "id": "7755D16275B306A6",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "49C304AC6E1A5C5D",
+          "item": "mekanism:elite_thermodynamic_conductor",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 4.5,
+      "y": 5.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Conducteur thermique d'élite"
+    },
+    {
+      "dependencies": [
+        "0EE04B054D8272CF"
+      ],
+      "id": "0C91B105AA3E1DF0",
+      "rewards": [
+        {
+          "id": "35FCB36DA53CCB29",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "72AA6B259EB5D991",
+          "item": "mekanism:ultimate_thermodynamic_conductor",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 4.0,
+      "y": 5.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Conducteur thermodynamique ultime"
+    },
+    {
+      "dependencies": [
+        "26E9FB187EEA73AC"
+      ],
+      "id": "38191A9684480070",
+      "rewards": [
+        {
+          "id": "7B13603359FC7E1B",
+          "item": "mekanism:enriched_refined_obsidian",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "3AE13018663CBD24",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "59CAC6F3FC173AEC",
+          "item": "mekanism:ingot_refined_obsidian",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -7.5,
+      "y": 0.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Lingot d'obsidienne raffinée"
+    },
+    {
+      "dependencies": [
+        "26E9FB187EEA73AC"
+      ],
+      "id": "06538F150841DDCC",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "53F6D222FF7F5CD2",
+          "item": "minecraft:glowstone_dust",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "66E1E03D9C351229",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "7208E89812FACFA2",
+          "item": "mekanism:ingot_refined_glowstone",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -8.5,
+      "y": 0.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Lingot de pierre lumineuse raffinée"
+    },
+    {
+      "dependencies": [
+        "0C25FF36D0AB1F9A"
+      ],
+      "description": [
+        "Cette machine \"Purifie\" nos minerais. Elle transforme 1 Ore Raw en 2 \"Clumps\", qui peut ensuite être envoyé par un broyeur pour être transformé en poussières sales, puis par une chambre d'enrichissement pour obtenir de la poussière propre, puis par une fonderie pour être transformé en lingot.",
+        "Cela doublera votre sortie de lingot.",
+        "Cette machine nécessite le fonctionnement d'oxygène, qui est créé par pompage d'eau dans un séparateur électrolytique."
+      ],
+      "id": "268190A85F7D81DE",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "1D557F1847F3FFCF",
+          "item": "mekanism:clump_iron",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "4622D61137EE5609",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Ça fait des Clumps.",
+      "tasks": [
+        {
+          "id": "3C364118ECA04DA2",
+          "item": "mekanism:purification_chamber",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -0.5,
+      "y": -2.0,
+      "repeatable": false,
+      "title": "Chambre de purification"
+    },
+    {
+      "dependencies": [
+        "14DA6F78E54C5711"
+      ],
+      "description": [
+        "Cette machine fait fondre des objets.",
+        "Il peut être mis à niveau dans une usine de fusion, augmentant le nombre total de fentes de fusion jusqu'à un maximum de 9."
+      ],
+      "id": "1D1DF18C1C2A9624",
+      "optional": 1,
+      "rewards": [
+        {
+          "count": 2,
+          "id": "54C452ABC2D36FCC",
+          "item": "minecraft:raw_iron",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "5A4A937013DF58D5",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Furnace puissante du Mekanism",
+      "tasks": [
+        {
+          "id": "38BE7CDD2129566C",
+          "item": "mekanism:energized_smelter",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -6.0,
+      "y": -0.5,
+      "repeatable": false,
+      "title": "Fonderie électrique"
+    },
+    {
+      "dependencies": [
+        "4553DD02291FBF71"
+      ],
+      "description": [
+        "Le séparateur électrolytique (grand nom) est utilisé pour séparer les produits chimiques de certains liquides et gaz.",
+        "Vous en aurez besoin si vous envisagez de créer une usine de traitement des minerais.",
+        "Pour commencer, faites l'un de ceux-ci et nous allons décomposer le fluide le plus basique: l'eau."
+      ],
+      "id": "0C25FF36D0AB1F9A",
+      "rewards": [
+        {
+          "id": "59BDC83DAAD1033D",
+          "item": "mekanism:alloy_infused",
+          "random_bonus": 1,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "3C445D76396C33A6",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "C'est l'heure de le briser",
+      "tasks": [
+        {
+          "id": "1C735352045F0665",
+          "item": "mekanism:electrolytic_separator",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -2.0,
+      "y": -2.0,
+      "repeatable": false,
+      "title": "Séparateur électrolytique"
+    },
+    {
+      "description": [
+        "Ce générateur peut brûler à la fois l'hydrogène et l'éthylène pour produire de l'énergie.",
+        "Remarque : La combustion d'hydrogène ne produira pas plus de puissance que ce qu'il coûte de faire fonctionner un séparateur électrolytique."
+      ],
+      "id": "7F6678D8045B5C97",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "7EF1D5616224179B",
+          "item": "mekanism:alloy_infused",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "3819D06107B1650F",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Brûlez des gaz dans le courant !",
+      "tasks": [
+        {
+          "id": "7F5B8F9EA30F3E10",
+          "item": "mekanismgenerators:gas_burning_generator",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -2.0,
+      "y": -4.0,
+      "repeatable": false,
+      "title": "Générateur à combustion de gaz",
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "2C82CCCB47394659"
+      ],
+      "description": [
+        "Cette machine est la prochaine étape de votre usine de traitement des minerais. Ajoutez ceci à la gauche de votre chambre de purification pour construire sur votre usine de minerais actuelle!",
+        "Pour savoir comment créer du chlorure d'hydrogène, suivez la quête ci-dessus!"
+      ],
+      "id": "7EADE9038BACBA8F",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "3B2C7945B0E95B86",
+          "item": "mekanism:alloy_infused",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "40B827D529A00F10",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Tourne 3 Ors bruts en 8 Ardennes",
+      "tasks": [
+        {
+          "id": "615DB4881E6A27FB",
+          "item": "mekanism:chemical_injection_chamber",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 5.0,
+      "y": -2.0,
+      "repeatable": false,
+      "title": "Chambre d'injection chimiques"
+    },
+    {
+      "dependencies": [
+        "0D2183311EBF4F84"
+      ],
+      "description": [
+        "Cette machine combine deux gaz pour créer un nouveau gaz.",
+        "Vous aurez besoin de cela pour combiner le chlore et l'hydrogène pour créer du chlorure d'hydrogène, qui est ensuite utilisé dans notre chambre d'injection chimique."
+      ],
+      "id": "22C6AB6BF0A8A60D",
+      "rewards": [
+        {
+          "id": "789D751BBFEF6036",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Le mélangeur chimique",
+      "tasks": [
+        {
+          "id": "522CD6B8929751A9",
+          "item": "mekanism:chemical_infuser",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 6.5,
+      "y": -3.5,
+      "repeatable": false,
+      "title": "Infuseur chimique"
+    },
+    {
+      "dependencies": [
+        "7EADE9038BACBA8F"
+      ],
+      "description": [
+        "Pour obtenir du chlorure d'hydrogène pour nos machines, nous devrons d'abord créer de la saumure.",
+        "Pour ce faire, nous aurons besoin d'une usine d'évaporation thermique.",
+        "Pour commencer, créez une structure 4x3x4 qui est creuse au milieu, à l'exception de la base. Vous pouvez remplacer n'importe quel côté par un contrôleur ou une valve.",
+        "Vous aurez besoin d'au moins 1 contrôleur, et d'au moins 2 vannes.",
+        "Pompez dans l'eau, et vous commencerez à recueillir la saumure, qui peut être pompée dans un séparateur électrolytique pour extraire le chlore du gaz."
+      ],
+      "id": "0D2183311EBF4F84",
+      "min_width": 300,
+      "rewards": [
+        {
+          "id": "28DB5BC384FA69D7",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "L'eau se transforme en saumure !",
+      "tasks": [
+        {
+          "id": "5DCEBD84044A8385",
+          "item": "mekanism:thermal_evaporation_controller",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 37,
+          "id": "5B0A1190BF617BC5",
+          "item": "mekanism:thermal_evaporation_block",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 2,
+          "id": "75C9F9A972717AC4",
+          "item": "mekanism:thermal_evaporation_valve",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Usine d'évaporation thermique",
+      "x": 5.0,
+      "y": -3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "3496ED804E8A6A4A"
+      ],
+      "description": [
+        "Nous allons devoir ajouter 3 autres machines à notre configuration actuelle.",
+        "La première partie du processus est la Chambre de dissolution chimique.",
+        "Cette machine exige de l'acide sulfurique qu'il décompose les minerais bruts en une « boue d'or ».",
+        "Pour obtenir l'acide sulfurique, nous aurons besoin d'une nouvelle configuration, qui est expliquée plus loin dans les quêtes ci-dessus."
+      ],
+      "id": "75FFBA5DEDA31C4C",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "1C861CB6F98556B5",
+          "item": "mekanism:ingot_refined_obsidian",
+          "random_bonus": 2,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "1B0FEB306C30BB40",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "77768AA57D22408C",
+          "item": "mekanism:chemical_dissolution_chamber",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Le début d'une usine d'orage de niveau 4",
+      "x": 9.0,
+      "y": -2.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "75FFBA5DEDA31C4C"
+      ],
+      "description": [
+        "Pour faire de l'acide sulfurique, vous aurez besoin de créer de la vapeur d'eau.",
+        "Pompez de l'eau dans cette machine et ça la transformera en vapeur."
+      ],
+      "id": "2FD7BE14A970B3E9",
+      "rewards": [
+        {
+          "id": "0A92A1C96ADFDBFD",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "07C9B99B271B2571",
+          "item": "mekanism:rotary_condensentrator",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 8.5,
+      "y": -3.5,
+      "repeatable": false,
+      "title": "Condensateur rotatif"
+    },
+    {
+      "dependencies": [
+        "75FFBA5DEDA31C4C"
+      ],
+      "description": [
+        "Bon, commençons par faire du dioxyde de soufre en premier.",
+        "Commencez par placer la poudre dans une chambre d'injection chimique séparée avec du chlorure d'hydrogène pour créer de la poussière de soufre. OU vous pouvez simplement pulvériser le soufre de la série thermique dans la poussière de soufre, c'est à vous de le faire.",
+        "L'alimentation de la poussière de soufre dans cette machine, l'oxyde chimique, va créer le dioxyde de soufre. Maintenant, nous devons créer le trioxyde de soufre.",
+        "Envoyer le dioxyde de soufre dans un infuseur chimique pour le combiner avec de l'oxygène pour créer du trioxyde de soufre. Envoyer le trioxyde à un autre infuseur chimique pour le combiner avec de la vapeur d'eau pour créer de l'acide sulfurique.",
+        "C'est beaucoup."
+      ],
+      "id": "030154D84E3EA314",
+      "rewards": [
+        {
+          "id": "1FEA7EFEBC5A1450",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "11103462DCC5E3BB",
+          "item": "mekanism:chemical_oxidizer",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "2FB5F333B4CF734B",
+          "type": "item",
+          "item": "mekanism:dust_sulfur",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 9.5,
+      "y": -3.5,
+      "repeatable": false,
+      "title": "Oxydateur chimique"
+    },
+    {
+      "dependencies": [
+        "0D2183311EBF4F84"
+      ],
+      "description": [
+        "L'usine d'évaporation thermique multibloc produit de la saumure en fonction de la température interne.",
+        "Il y a plusieurs méthodes pour augmenter la température de l'usine, y compris les construire dans un désert !",
+        "Le chauffe-bois brûle des seaux de Lava, qui peuvent ensuite être conduits à l'aide d'un tuyau qui transfère la chaleur.",
+        "Le Résistant Heater utilise RF/FE pour produire de la chaleur, et peut être configuré pour utiliser n'importe quelle RF/FE que vous voulez utiliser."
+      ],
+      "id": "253332A3387ED0DE",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "132E8AAF1914D9B1",
+          "item": "mekanism:thermal_evaporation_valve",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "6B961AB85AD66716",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Brine chaude ici, amène ta Brine chaude ici.",
+      "tasks": [
+        {
+          "id": "1FFA4D78285BAB33",
+          "item": {
+            "Count": 1,
+            "id": "mekanism:fuelwood_heater"
+          },
+          "title": "Chauffe- chaleur",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Chauffage de notre production de saumure",
+      "x": 5.0,
+      "y": -5.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "14DA6F78E54C5711"
+      ],
+      "description": [
+        "Pour créer un portail personnalisé, placez un seul bloc Teleporter. Connectez la puissance au bloc.",
+        "Créer un \"Portal Frame\" avec le bloc téléporteur étant la base du portail.",
+        "Le produit final sera une structure de portail 4x3, avec les deux blocs au milieu créant le portail."
+      ],
+      "hide_dependency_lines": 1,
+      "id": "5CE42B42D8E87A22",
+      "rewards": [
+        {
+          "id": "365FC502CC868815",
+          "item": "mekanism:teleportation_core",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "225D067D8D2984EF",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.25,
+      "subtitle": "Téléportation à son meilleur.",
+      "tasks": [
+        {
+          "count": 9,
+          "id": "7487C8129DAC0501",
+          "item": "mekanism:teleporter_frame",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "2C35B72FF862DAB6",
+          "item": "mekanism:teleporter",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Portails personnalisés !",
+      "x": -9.0,
+      "y": 3.75,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "14DA6F78E54C5711"
+      ],
+      "description": [
+        "Cet article est utilisé pour stocker de l'énergie, et fonctionne comme un pack de batterie portable.",
+        "C'est aussi un élément important de l'artisanat dans le Mekanism."
+      ],
+      "hide_dependency_lines": 1,
+      "id": "394B974205E6F10B",
+      "rewards": [
+        {
+          "id": "05491AC678ECFCEC",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.25,
+      "subtitle": "Batterie portable",
+      "tasks": [
+        {
+          "id": "5C1F9AA261753C6F",
+          "item": "mekanism:energy_tablet",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -9.0,
+      "y": 2.5,
+      "repeatable": false,
+      "title": "Tablette d\"énergie"
+    },
+    {
+      "dependencies": [
+        "54E7ADC58F571FA0"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "2C81D2284E399D3C",
+      "rewards": [
+        {
+          "id": "6B4D367C2618CBA5",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "34955CEF14D15DE0",
+          "item": "mekanism:upgrade_speed",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 0.5,
+      "y": 9.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Mise à niveau de la vitesse"
+    },
+    {
+      "dependencies": [
+        "54E7ADC58F571FA0"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "3CBC4877743A9D7A",
+      "rewards": [
+        {
+          "id": "6FF75C238F190EFB",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "42D2E05520F14751",
+          "item": "mekanism:upgrade_energy",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 1.0,
+      "y": 10.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Mise à niveau énergétique"
+    },
+    {
+      "dependencies": [
+        "54E7ADC58F571FA0"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "3AEE72F103A46ACA",
+      "rewards": [
+        {
+          "id": "7F75A393A1B8F40D",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "65FA99EA590DCABF",
+          "item": "mekanism:upgrade_filter",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -0.5,
+      "y": 9.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Mise à niveau du filtre"
+    },
+    {
+      "dependencies": [
+        "54E7ADC58F571FA0"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "55AFAAB7E6EF9D94",
+      "rewards": [
+        {
+          "id": "6D75BBEB764EB1B7",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "subtitle": "Trop fort.",
+      "tasks": [
+        {
+          "id": "175D11B77C7599CD",
+          "item": "mekanism:upgrade_muffling",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 0.0,
+      "y": 10.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Mise à niveau de l'étouffement"
+    },
+    {
+      "dependencies": [
+        "54E7ADC58F571FA0"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "7020FE8B8B9517FE",
+      "rewards": [
+        {
+          "id": "6D58F4104F970C6D",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "35635324ACFFEC79",
+          "item": "mekanism:upgrade_gas",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 0.5,
+      "y": 10.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Mise à niveau du gaz"
+    },
+    {
+      "dependencies": [
+        "54E7ADC58F571FA0"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "3F36237946FE3BFB",
+      "rewards": [
+        {
+          "id": "321D205CE1FAB0F6",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "7F02DDAD0EF8B256",
+          "item": "mekanism:upgrade_stone_generator",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 1.5,
+      "y": 9.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Mise à niveau du générateur de roche"
+    },
+    {
+      "dependencies": [
+        "394B974205E6F10B"
+      ],
+      "description": [
+        "Cet élément est utilisé pour configurer de nombreux éléments du Mekanism, depuis le passage des tuyaux jusqu'aux machines \"Pull or Push\" ou rotatives."
+      ],
+      "hide_dependency_lines": 1,
+      "id": "383B864DF300DF99",
+      "progression_mode": "linear",
+      "rewards": [
+        {
+          "id": "39938D05171A6CA0",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.25,
+      "subtitle": "La clé du Mekanism",
+      "tasks": [
+        {
+          "id": "34FD69F63F6E7B36",
+          "item": "mekanism:configurator",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -9.0,
+      "y": 5.0,
+      "repeatable": false,
+      "title": "Configurateur"
+    },
+    {
+      "dependencies": [
+        "60C151D1DE92FEE7"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "5EDB61E29DFD1A34",
+      "rewards": [
+        {
+          "id": "18BC9A3E6D4160D6",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "43E4D4FFED271C41",
+          "item": "mekanism:advanced_fluid_tank",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 4.0,
+      "y": 7.800000000000004,
+      "description": [],
+      "repeatable": false,
+      "title": "Réservoir de fluide avancé"
+    },
+    {
+      "dependencies": [
+        "5EDB61E29DFD1A34"
+      ],
+      "id": "09C9945CF2F5468B",
+      "rewards": [
+        {
+          "id": "08965294F353B0B9",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "2B943DDE2970B4C2",
+          "item": "mekanism:elite_fluid_tank",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 3.5,
+      "y": 8.300000000000004,
+      "description": [],
+      "repeatable": false,
+      "title": "Réservoir de liquide d'élite"
+    },
+    {
+      "dependencies": [
+        "09C9945CF2F5468B"
+      ],
+      "id": "50C768AAB26FE73B",
+      "rewards": [
+        {
+          "id": "2FC8E438223A915D",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "244FABF626885552",
+          "item": "mekanism:ultimate_fluid_tank",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 3.0,
+      "y": 7.800000000000004,
+      "description": [],
+      "repeatable": false,
+      "title": "Réservoir de fluide ultime"
+    },
+    {
+      "description": [
+        "Ce bloc stocke des gaz."
+      ],
+      "hide_dependency_lines": 1,
+      "id": "2879EF0DF10605AF",
+      "rewards": [
+        {
+          "id": "53E9FAC08A8ACB55",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 1.5,
+      "subtitle": "Stocker tout ce gaz",
+      "tasks": [
+        {
+          "id": "618750781997C243",
+          "item": "mekanism:basic_chemical_tank",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 1.5000000000000053,
+      "y": 7.0,
+      "repeatable": false,
+      "title": "Réservoir chimique basique",
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "2879EF0DF10605AF"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "78AC7191F5140B69",
+      "rewards": [
+        {
+          "id": "5623F79366A0151A",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "2DC3D90363821960",
+          "item": "mekanism:advanced_chemical_tank",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 2.0,
+      "y": 7.800000000000004,
+      "description": [],
+      "repeatable": false,
+      "title": "Réservoir chimique avancé"
+    },
+    {
+      "dependencies": [
+        "78AC7191F5140B69"
+      ],
+      "id": "2C10213AEB2A7F28",
+      "rewards": [
+        {
+          "id": "73E3B0550E718DFC",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "10BBAE1563A1C5B4",
+          "item": "mekanism:elite_chemical_tank",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 1.5,
+      "y": 8.300000000000004,
+      "description": [],
+      "repeatable": false,
+      "title": "Réservoir chimique d'élite"
+    },
+    {
+      "dependencies": [
+        "2C10213AEB2A7F28"
+      ],
+      "id": "1DECEEBBE1EC5BCA",
+      "rewards": [
+        {
+          "id": "014CE862C91ABEFD",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "4E9855D8FDFF1955",
+          "item": "mekanism:ultimate_chemical_tank",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 1.0,
+      "y": 7.800000000000004,
+      "description": [],
+      "repeatable": false,
+      "title": "Réservoir chimique Ultime"
+    },
+    {
+      "dependencies": [
+        "14DA6F78E54C5711"
+      ],
+      "description": [
+        "Génére le pouvoir du soleil !"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "6A02B4FC5D453CF5",
+      "rewards": [
+        {
+          "id": "4DCCC7604B02E392",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "octagon",
+      "size": 1.25,
+      "subtitle": "Produit environ 17.6F/t",
+      "tasks": [
+        {
+          "id": "5F73078F232CF8DB",
+          "item": "mekanismgenerators:solar_generator",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -1.0,
+      "y": 1.0,
+      "repeatable": false,
+      "title": "Panneau solaire"
+    },
+    {
+      "description": [
+        "Le générateur de chaleur a 2 modes pour générer de l'énergie:",
+        "&9Passif: Entourer le générateur avec une source de lave ou des blocs d'écoulement crée une puissance passive en créant de la chaleur. Placez un bloc de source de lave sur le dessus, et laissez-le couler sur les côtés. Assurez-vous de connecter les tuyaux d'abord!",
+        "&9Active: Placer des matériaux combustibles comme le charbon ou le bois dans le générateur brûlera le combustible pour créer de l'énergie.",
+        "Ce jalon reprend un objectif déjà présent dans les parcours OLYCITY. Il complète le guide sans donner une seconde récompense."
+      ],
+      "id": "4848D092AAD168AC",
+      "rewards": [],
+      "shape": "octagon",
+      "size": 1.25,
+      "subtitle": "Puissance de base Gen",
+      "tasks": [
+        {
+          "id": "44B05F9DA6603D15",
+          "item": "mekanismgenerators:heat_generator",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -8.875,
+      "y": -1.975,
+      "repeatable": false,
+      "title": "Générateur thermique",
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "14DA6F78E54C5711"
+      ],
+      "description": [
+        "Ce générateur brûlera le biocarburant en énergie. Il produit environ 140FE/t."
+      ],
+      "hide_dependency_lines": 1,
+      "id": "6AAFE9567AA63A46",
+      "rewards": [
+        {
+          "id": "181116F5433A7235",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "octagon",
+      "size": 1.25,
+      "tasks": [
+        {
+          "id": "34813152B3DC6FE6",
+          "item": "mekanismgenerators:bio_generator",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 3.0,
+      "y": 2.0,
+      "repeatable": false,
+      "title": "Bio-Générateur"
+    },
+    {
+      "dependencies": [
+        "6A02B4FC5D453CF5"
+      ],
+      "description": [
+        "Si vous vous demandez si cela vaut la peine de faire cette mise à niveau, la réponse est oui.",
+        "Cette version produit 105.6FE/t. Elle peut également être utilisée pour ajouter de la chaleur supplémentaire aux installations d'évaporation thermique."
+      ],
+      "id": "3BE39DE8E96CC25E",
+      "rewards": [
+        {
+          "id": "4B386E9DA873DEA4",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "octagon",
+      "size": 1.25,
+      "tasks": [
+        {
+          "id": "7448DFC363C62B6D",
+          "item": "mekanismgenerators:advanced_solar_generator",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -2.0,
+      "y": 2.0,
+      "repeatable": false,
+      "title": "Panneau solaire avancé"
+    },
+    {
+      "dependencies": [
+        "14DA6F78E54C5711"
+      ],
+      "description": [
+        "C'est une excellente option pour générer de l'énergie.",
+        "Cela génère environ 40FE/t, et augmente en fonction de la hauteur que vous êtes. Plus le niveau Y est élevé, plus il produit de puissance!"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "78922D38EA172BF0",
+      "rewards": [
+        {
+          "id": "2BC3485FFB89B2C8",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "octagon",
+      "size": 1.25,
+      "subtitle": "Génére de l'énergie à partir du vent",
+      "tasks": [
+        {
+          "id": "6A5BD8907D12AB60",
+          "item": "mekanismgenerators:wind_generator",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 2.0,
+      "y": 1.0,
+      "repeatable": false,
+      "title": "Éolienne"
+    },
+    {
+      "dependencies": [
+        "238955D440DED459"
+      ],
+      "description": [
+        "Réunis les composants indiqués puis teste ta chaîne sur une petite quantité de minerai.",
+        "La quête détecte les composants. Vérifie ensuite les entrées, les sorties, les réservoirs et l’alimentation pour obtenir une production continue."
+      ],
+      "id": "2C82CCCB47394659",
+      "rewards": [],
+      "shape": "hexagon",
+      "size": 1.5,
+      "subtitle": "Usine de traitement des minerais de catégorie 2",
+      "tasks": [
+        {
+          "id": "00881D7C5896B17C",
+          "type": "item",
+          "item": "mekanism:enrichment_chamber",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 3.0,
+      "y": -2.0,
+      "repeatable": false,
+      "title": "Vérifier sa chaîne de traitement"
+    },
+    {
+      "dependencies": [
+        "7EADE9038BACBA8F",
+        "22C6AB6BF0A8A60D"
+      ],
+      "description": [
+        "Donc maintenant, vous devriez avoir 5 machines prêtes à aller traiter vos minerais. Êtes-vous prêt à le rendre encore plus compliqué?",
+        "Votre usine devrait être: Chambre d'injection chimique > Chambre de purification > Creuseur > Chambre d'enrichissement > Four/Smelter.",
+        "C'est facile jusqu'ici, non ?",
+        "C'est sur le point de devenir sauvage."
+      ],
+      "id": "3496ED804E8A6A4A",
+      "rewards": [
+        {
+          "id": "3856B488B79423EB",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Usine de traitement des minerais de catégorie 3",
+      "tasks": [
+        {
+          "id": "7BFE1F0C6BEC7A8B",
+          "type": "item",
+          "item": "mekanism:chemical_crystallizer",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 6.5,
+      "y": -2.0,
+      "repeatable": false,
+      "title": "Cristalliseur chimique"
+    },
+    {
+      "dependencies": [
+        "4553DD02291FBF71"
+      ],
+      "description": [
+        "Combine des gaz, des objets solides et des liquides pour produire un article et un sous-produit.",
+        "Cette machine est nécessaire pour créer des matériaux et des armures."
+      ],
+      "id": "75E76244C2DFEDB7",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "598ED734A96914C2",
+          "item": "mekanism:basic_control_circuit",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "297C27A913A1564D",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "5F8B4FA9DDCA7668",
+          "item": "mekanism:pressurized_reaction_chamber",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -4.0,
+      "y": -3.5,
+      "repeatable": false,
+      "title": "Chambre de réaction pressurisée"
+    },
+    {
+      "dependencies": [
+        "238955D440DED459"
+      ],
+      "description": [
+        "Le Crusher peut également décomposer les substances naturelles en biocarburant !"
+      ],
+      "id": "5DDF1A8DD9EECBC7",
+      "rewards": [
+        {
+          "id": "2A0EF8E1AD6D7726",
+          "item": "mekanism:bio_fuel",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "53B5D19FC803373E",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "count": 2,
+          "id": "7BFB0A96DEC0953A",
+          "item": "mekanism:bio_fuel",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Biocarburant",
+      "x": 1.0,
+      "y": -3.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5DDF1A8DD9EECBC7"
+      ],
+      "description": [
+        "Lorsque le biocarburant est combiné avec l'eau et l'hydrogène dans une chambre de réaction sous pression, il crée des substrats. Il crée également l'éthylène comme sous-produit.",
+        "Ils sont nécessaires pour créer des granulés de PEHD, qui sont utilisés pour les artisanats de fin de jeu comme le Meka-suit."
+      ],
+      "id": "78E1B27ED45FB17F",
+      "rewards": [
+        {
+          "id": "34BF6E35B790AFF2",
+          "item": "mekanism:substrate",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "1EA64000FD9715C3",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "count": 3,
+          "id": "487546E5DC9B93D6",
+          "item": "mekanism:substrate",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Substrats",
+      "x": 1.0,
+      "y": -4.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "78E1B27ED45FB17F"
+      ],
+      "description": [
+        "La combinaison de l'oxygène, de l'éthylène et d'un substrat dans une chambre de réaction sous pression créera un granulat HDPE."
+      ],
+      "id": "47A5F665C8B3046C",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "1E60836313F31938",
+          "item": "mekanism:substrate",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "62F9C70F2B4B681C",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "count": 3,
+          "id": "5A56D7093DCD95B3",
+          "item": "mekanism:hdpe_pellet",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Pellets HDPE",
+      "x": 1.0,
+      "y": -5.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "47A5F665C8B3046C"
+      ],
+      "description": [
+        "Pour obtenir une feuille de PEHD, placez 3 Pellets PEHD dans une chambre d'enrichissement."
+      ],
+      "id": "5AD7B15EDCE0976F",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "2B8BA2CE9693954D",
+          "item": "mekanism:hdpe_pellet",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "27DB4BBF25D12C99",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "637AE70C3CBA7B6E",
+          "item": "mekanism:hdpe_sheet",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 1.0,
+      "y": -6.0,
+      "repeatable": false,
+      "title": "Feuille de PE-HD"
+    },
+    {
+      "dependencies": [
+        "14DA6F78E54C5711"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "627F1AAC48976D4D",
+      "progression_mode": "linear",
+      "rewards": [],
+      "shape": "hexagon",
+      "size": 1.25,
+      "subtitle": "Le mékanisme est tout en un seul outil",
+      "tasks": [
+        {
+          "id": "0472843AFE655546",
+          "item": "mekanism:atomic_disassembler",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -6.5,
+      "y": 5.0,
+      "description": [
+        "Ce jalon reprend un objectif déjà présent dans les parcours OLYCITY. Il complète le guide sans donner une seconde récompense."
+      ],
+      "repeatable": false,
+      "title": "Désassembleur atomique"
+    },
+    {
+      "dependencies": [
+        "4553DD02291FBF71"
+      ],
+      "description": [
+        "En utilisant la Chambre d'enrichissement, vous pouvez enrichir des éléments pour les convertir en variantes enrichies.",
+        "Ces éléments « enrichis » donnent 8x la quantité de mb dans un infuseur métallurgique.",
+        "Si vous prévoyez de faire un tas d'acier, Enrichissez votre Charcoal d'abord!"
+      ],
+      "id": "4B00559BA6E2FEE4",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "3D8C520CCEC283DF",
+          "item": "mekanism:enriched_carbon",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "22CBB5F551C59018",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Enrichissez vos objets d'abord !",
+      "tasks": [
+        {
+          "id": "439D14796539971D",
+          "item": "mekanism:enriched_carbon",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Éléments enrichis",
+      "x": -4.0,
+      "y": -0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "75FFBA5DEDA31C4C"
+      ],
+      "description": [
+        "Cette machine a besoin d'eau pour fonctionner, et utilise l'eau pour nettoyer \"Ore Slurry\" dans \"Clean Ore Slurry\".",
+        "Ce sera la partie 2 de votre usine de traitement des minerais de niveau 4."
+      ],
+      "id": "1932AB35F6EA712B",
+      "rewards": [
+        {
+          "id": "0538F5C16B837B90",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Donner un bain à Ores",
+      "tasks": [
+        {
+          "id": "62EF9F827367216C",
+          "item": "mekanism:chemical_washer",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 8.5,
+      "y": -0.5,
+      "repeatable": false,
+      "title": "Laveuse chimique"
+    },
+    {
+      "dependencies": [
+        "75FFBA5DEDA31C4C"
+      ],
+      "description": [
+        "Cette machine sera #3 dans votre usine de traitement d'or de niveau 4.",
+        "Il prend la boue d'or propre de la laveuse chimique et la transforme en cristaux, que la chambre d'injection chimique peut traiter après."
+      ],
+      "id": "53C7E905E991D5D3",
+      "rewards": [
+        {
+          "id": "3210AA1183B43502",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Transforme la boue d'or en cristaux",
+      "tasks": [
+        {
+          "id": "3861035BC4E2C4AE",
+          "item": "mekanism:chemical_crystallizer",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 9.5,
+      "y": -0.5,
+      "repeatable": false,
+      "title": "Cristalliseur chimique"
+    },
+    {
+      "dependencies": [
+        "53C7E905E991D5D3",
+        "1932AB35F6EA712B"
+      ],
+      "description": [
+        "Si tu es comme moi, tu t'es probablement perdu 55 fois au cours de ces dernières étapes.",
+        "Une disposition de base de votre usine devrait être:",
+        "Le minerai brut entre dans votre chambre de dissolution chimique > pompes A GAS à la machine à laver chimique > pompes A GAS à la cristallisateur chimique > produit des cristaux à la chambre d'injection chimique > produit des fils à la chambre de purification > produit des grumeaux à Crusher > produit des poussières sales à la chambre d'enrichissement > produit de la poussière propre à la fonderie."
+      ],
+      "id": "6BF2847269558458",
+      "min_width": 300,
+      "rewards": [
+        {
+          "id": "0BB27517B67A79D0",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "gear",
+      "size": 1.5,
+      "subtitle": "C'est beaucoup, je sais.",
+      "tasks": [
+        {
+          "id": "4574C7B448E16C2E",
+          "type": "item",
+          "item": "mekanism:chemical_washer",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 9.0,
+      "y": 1.0,
+      "repeatable": false,
+      "title": "Laveuse chimique"
+    },
+    {
+      "dependencies": [
+        "14DA6F78E54C5711"
+      ],
+      "description": [
+        "Se tenant sur cet article va charger n'importe quel article alimenté à partir de n'importe quel mod.",
+        "Cela est également nécessaire pour le Robit."
+      ],
+      "hide_dependency_lines": 1,
+      "id": "52234EAD24B7062F",
+      "rewards": [
+        {
+          "id": "0C0C2CCFBA0A8C64",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.25,
+      "tasks": [
+        {
+          "id": "5B8006602CAC7EE4",
+          "item": "mekanism:chargepad",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -6.5,
+      "y": 2.5,
+      "repeatable": false,
+      "title": "Plaque de rechargement"
+    },
+    {
+      "dependencies": [
+        "2FD7BE14A970B3E9",
+        "030154D84E3EA314"
+      ],
+      "description": [
+        "Maintenant que nous avons une certaine expérience de travail avec des machines plus avancées, il est temps de passer à la fabrication de granulés antimatière.",
+        "Ceux-ci créent plusieurs éléments de jeu final, y compris l'ATM Star. Pour tout savoir sur les Réacteurs et plus, rendez-vous sur le Mekanism: Reacteurs questline!"
+      ],
+      "icon": "mekanism:pellet_antimatter",
+      "id": "2136DF6FA89074EE",
+      "rewards": [
+        {
+          "id": "293CF421B68A9F15",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 2.0,
+      "subtitle": "La voie des réacteurs",
+      "tasks": [
+        {
+          "id": "3FD63D432343A4DE",
+          "type": "item",
+          "item": "mekanism:pellet_antimatter",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 9.0,
+      "y": -5.5,
+      "repeatable": false,
+      "title": "Pastille d'antimatière"
+    },
+    {
+      "can_repeat": 0,
+      "description": [
+        "Cette quête a été créée par AllTheMods Staff, ou un contributeur communautaire pour une utilisation dans AllTheMods Modpacks.",
+        "Comme tous les packs AllTheMods sont sous licence All Rights Reserved, cette Quest n'est pas autorisée à être utilisée dans les packs publics non publiés par l'équipe AllTheMods, sans autorisation explicite.",
+        "Cette quête est intentionnellement cachée, si vous voyez cela, vous êtes en mode édition.",
+        "Repère de lecture : obtiens le livre indiqué pour poursuivre. Cette étape ne donne aucune récompense."
+      ],
+      "disable_toast": 1,
+      "hide_details_until_startable": 1,
+      "hide_until_deps_visible": 1,
+      "icon": {
+        "Count": 1,
+        "id": "ftbquests:custom_icon",
+        "tag": {
+          "Icon": "minecraft:item/barrier"
+        }
+      },
+      "id": "429A7A50CBFE49A6",
+      "invisible": 1,
+      "optional": 1,
+      "shape": "octagon",
+      "tasks": [
+        {
+          "id": "6A3D26CFB79FBFF2",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "4511C796CED984EF",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": -13.0,
+      "y": -4.0,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Livre",
+      "dependencies": []
+    }
+  ],
+  "title": "Mekanism",
+  "default_consume_items": false
+}

@@ -1,0 +1,8 @@
+name = "config/apotheosis/enchantments.cfg"
+filename = "enchantments.cfg"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/39976703b25376bf2cffb2a46ebfce4d78fe00e89700954be7a9a9c8f50444f3"
+hash-format = "sha256"
+hash = "39976703b25376bf2cffb2a46ebfce4d78fe00e89700954be7a9a9c8f50444f3"

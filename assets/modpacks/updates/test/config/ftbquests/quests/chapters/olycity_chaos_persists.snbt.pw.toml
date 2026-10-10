@@ -1,0 +1,8 @@
+name = "config/ftbquests/quests/chapters/olycity_chaos_persists.snbt"
+filename = "olycity_chaos_persists.snbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/536b9ba31569fcf79b5ca7d9a8e1de696b7bf25e7a395436bbdae986150b64c8"
+hash-format = "sha256"
+hash = "536b9ba31569fcf79b5ca7d9a8e1de696b7bf25e7a395436bbdae986150b64c8"

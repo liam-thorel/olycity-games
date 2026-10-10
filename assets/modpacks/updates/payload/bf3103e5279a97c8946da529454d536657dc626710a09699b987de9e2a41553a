@@ -1,0 +1,4207 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "",
+  "filename": "atm9_draconic_evolution",
+  "group": "3DA9E3931E28DB13",
+  "icon": "draconicevolution:draconium_core",
+  "id": "409395642FC8BCAB",
+  "order_index": 3,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "dependencies": [
+        "33374986A8F5C154"
+      ],
+      "description": [
+        "Les modules d'énergie sont les modules les plus importants et sont nécessaires pour l'utilisation des éléments DE. Le montant qui y est indiqué détermine la quantité d'OP qu'un élément peut contenir et prendre, consultez l'Infuser d'énergie pour en savoir plus sur la charge. Plus tard, le module Tier of Energy peut contenir et utiliser les éléments OP."
+      ],
+      "id": "0B8D5900B88F7BB2",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "04D205EE57886AB4",
+          "item": "draconicevolution:item_draconium_energy",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module énergie de base",
+      "x": 17.25,
+      "y": -12.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "0B8D5900B88F7BB2"
+      ],
+      "id": "075A6EB3D0691F7A",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "22FDB57F167EBE9F",
+          "item": "draconicevolution:item_wyvern_energy",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module énergie de Wyvern",
+      "x": 18.0,
+      "y": -12.0,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "075A6EB3D0691F7A"
+      ],
+      "id": "78CE82D132D22EDA",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "24C015F1CE4514B1",
+          "item": "draconicevolution:item_draconic_energy",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module d'énergie draconienne",
+      "x": 18.75,
+      "y": -12.0,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "78CE82D132D22EDA"
+      ],
+      "id": "383FF39B31DA3A59",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "0EEB7AA5DCCDA24A",
+          "item": "draconicevolution:item_chaotic_energy",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module énergie chaotique",
+      "x": 19.5,
+      "y": -12.0,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "33374986A8F5C154"
+      ],
+      "description": [
+        "Les modules de vitesse sont amusants, ils fonctionnent à peu près tout et les rendent plus rapides! Les épées oscillent plus vite, les Pickaxes les minent plus vite, les Axes se haissent plus vite, les Bows tirent plus vite, et Chestplate vous rend plus rapide. Le meilleur le module de vitesse plus rapide qu'ils vont! (BTW bon moment pour mentionner la plupart des statistiques empilent. 2 Modules de vitesse de base augmentent la vitesse de 20% alors!)"
+      ],
+      "id": "647A892B02A8403C",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "5DD45FB9986A7865",
+          "item": "draconicevolution:item_draconium_speed",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de vitesse de base",
+      "x": 17.25,
+      "y": -10.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "647A892B02A8403C"
+      ],
+      "id": "4EE63FD2C2CF97B8",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "0E407561F3B80BCA",
+          "item": "draconicevolution:item_wyvern_speed",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de vitesse de Wyvern",
+      "x": 18.0,
+      "y": -10.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "4EE63FD2C2CF97B8"
+      ],
+      "id": "1049BA9252AFAAD9",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "536BB61DD570399C",
+          "item": "draconicevolution:item_draconic_speed",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de vitesse draconienne",
+      "x": 18.75,
+      "y": -10.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1049BA9252AFAAD9"
+      ],
+      "id": "4F919A1ABD5329DA",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "098DFB6BD13D4226",
+          "item": "draconicevolution:item_chaotic_speed",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de vitesse chaotique",
+      "x": 19.5,
+      "y": -10.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "33374986A8F5C154"
+      ],
+      "description": [
+        "Vous voulez que votre bouclier revienne et pas seulement quand vous mourez presque? Ensuite, vous aurez besoin de modules de récupération. Plus de modules plus il récupère plus rapidement."
+      ],
+      "id": "504CDCB7B6D24732",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "0626828F8D508B5B",
+          "item": "draconicevolution:item_wyvern_shield_recovery",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de récupération du bouclier Wyvern",
+      "x": 18.0,
+      "y": -0.75,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "504CDCB7B6D24732"
+      ],
+      "id": "7A0573A243F5BA21",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "0B65533AE6E7B1DC",
+          "item": "draconicevolution:item_draconic_shield_recovery",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de récupération du bouclier draconien",
+      "x": 18.75,
+      "y": -0.75,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7A0573A243F5BA21"
+      ],
+      "id": "2E6E3832A461AE4B",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "0441765904F69FA1",
+          "item": "draconicevolution:item_chaotic_shield_recovery",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de récupération du bouclier chaotique",
+      "x": 19.5,
+      "y": -0.75,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "33374986A8F5C154"
+      ],
+      "description": [
+        "Les chestplates fonctionnent comme le Meka-Suit. Tout dommage qui vous serait infligé est annulé et plutôt retiré de votre bouclier. La capacité de bouclier est la quantité de bouclier que vous pouvez tenir, le taux de recharge est la vitesse qu'il remplit, et OP sera utilisé lors du rechargement."
+      ],
+      "id": "67948F2CDF1BFC98",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "7DBB21A3840876B7",
+          "item": "draconicevolution:item_wyvern_shield_capacity",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de capacité du bouclier Wyvern",
+      "x": 18.0,
+      "y": -2.25,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "67948F2CDF1BFC98"
+      ],
+      "id": "79A27819BFD90276",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "1D1878A247995332",
+          "item": "draconicevolution:item_draconic_shield_capacity",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de capacité du bouclier draconien",
+      "x": 18.75,
+      "y": -2.25,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "79A27819BFD90276"
+      ],
+      "id": "5A4DC75ECE137F08",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "0D0E3987EB52E73F",
+          "item": "draconicevolution:item_chaotic_shield_capacity",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module Capacité du bouclier chaotique",
+      "x": 19.5,
+      "y": -2.25,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "67948F2CDF1BFC98"
+      ],
+      "description": [
+        "Comme la quête précédente, juste plus, beaucoup plus."
+      ],
+      "id": "3DD83F2643173D65",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "3A89C238F0A82D77",
+          "item": "draconicevolution:item_wyvern_large_shield_capacity",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de capacité de grand bouclier Wyvern",
+      "x": 18.0,
+      "y": -1.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "3DD83F2643173D65",
+        "79A27819BFD90276"
+      ],
+      "id": "5188D3FBCA5B7E0F",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "1BDDAAF38E403B80",
+          "item": "draconicevolution:item_draconic_large_shield_capacity",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de grande capacité de bouclier draconien",
+      "x": 18.75,
+      "y": -1.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5188D3FBCA5B7E0F",
+        "5A4DC75ECE137F08"
+      ],
+      "id": "78492CF40021BBF4",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "52D096951D1E58EA",
+          "item": "draconicevolution:item_chaotic_large_shield_capacity",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module Chaotique Grande Capacité de Bouclier",
+      "x": 19.5,
+      "y": -1.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "33374986A8F5C154",
+        "67948F2CDF1BFC98"
+      ],
+      "description": [
+        "Undying agit comme la chose qui le fait, le Totem de récupération! Lorsque vos cœurs sont jusqu'à 0 au lieu de mourir, le module va s'activer, vous donnant Absorption et Régénération, sauvez votre vie. Il a un Cooldown et doit utiliser OP pour alimenter à nouveau. Essayez de ne pas mourir pendant ce temps! Meilleures mises à niveau signifie moins de cooldowns."
+      ],
+      "id": "40FE4F1C4A3D250A",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "13A0B37A88DD398A",
+          "item": "draconicevolution:item_wyvern_undying",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module Wyvern de décoloration",
+      "x": 18.0,
+      "y": -3.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "40FE4F1C4A3D250A",
+        "79A27819BFD90276"
+      ],
+      "id": "7644A4F969FDF209",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "3872D2AC7329B7C8",
+          "item": "draconicevolution:item_draconic_undying",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de décoloration draconienne",
+      "x": 18.75,
+      "y": -3.0,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7644A4F969FDF209",
+        "5A4DC75ECE137F08"
+      ],
+      "id": "76A275343557DED8",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "2372756E0C843D9F",
+          "item": "draconicevolution:item_chaotic_undying",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de décoloration chaotique",
+      "x": 19.5,
+      "y": -3.0,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "33374986A8F5C154"
+      ],
+      "description": [
+        "Zone d'effet est une phrase que la plupart des Gamers connaîtraient. Fondamentalement, il met à niveau la zone de travail de l'outil qu'il est. Pickaxes avec 3x3 AOE sera mine dans une zone 3x3. Swords avec 3x3 AOE tuera toutes les mafia touchées dans cette zone. Plus la mise à niveau est plus grande la zone. Non, il n'est pas empilable!"
+      ],
+      "id": "4A71BE8E8C51A786",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "1E8B87B3C7BA9BCE",
+          "item": "draconicevolution:item_draconium_aoe",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module Zone d'effet de base",
+      "x": 17.25,
+      "y": -6.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "4A71BE8E8C51A786"
+      ],
+      "id": "56CD39E35E9B8DCF",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "3533704D878DD26C",
+          "item": "draconicevolution:item_wyvern_aoe",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de zone d'effet de Wyvern",
+      "x": 18.0,
+      "y": -6.0,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "56CD39E35E9B8DCF"
+      ],
+      "id": "6F1595DC20B9D361",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "5F67F53E321DFBF0",
+          "item": "draconicevolution:item_draconic_aoe",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module draconien de zone d'effet",
+      "x": 18.75,
+      "y": -6.0,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6F1595DC20B9D361"
+      ],
+      "id": "2BE31C04343537F0",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "2A3CA3EB1CD7452C",
+          "item": "draconicevolution:item_chaotic_aoe",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module Zone d'effet chaotique",
+      "x": 19.5,
+      "y": -6.0,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "33374986A8F5C154"
+      ],
+      "description": [
+        "Shield Control change le bouclier réel que vous avez et quand il se régénère."
+      ],
+      "id": "0C2D3D12EB44A4BF",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "0A8576DFFE47DF2B",
+          "item": "draconicevolution:item_wyvern_shield_control",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de contrôle du bouclier Wyvern",
+      "x": 18.0,
+      "y": 0.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "0C2D3D12EB44A4BF"
+      ],
+      "id": "35C976D9C9D65D25",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "3455C7565BB503D5",
+          "item": "draconicevolution:item_draconic_shield_control",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de contrôle du bouclier draconien",
+      "x": 18.75,
+      "y": 0.0,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "35C976D9C9D65D25"
+      ],
+      "id": "45429AD8F00D5B29",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "3787D3D234387234",
+          "item": "draconicevolution:item_chaotic_shield_control",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de contrôle du bouclier chaotique",
+      "x": 19.5,
+      "y": 0.0,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1FE7A252486AE1B0"
+      ],
+      "description": [
+        "Une fois défait, il tombera EXP, un Dragon Heart, et surtout libérera les Chaos Shards. Regardez où Lightning frappera puis le mien en dessous. Là, vous trouverez le Chaos Shard. Le mien sera accordé 5 Chaos Shards qui peuvent être fabriqués en plus petites parties de lui!"
+      ],
+      "id": "532C99BA33C161A2",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "257A3E2167A7D536",
+          "item": "draconicevolution:chaos_shard",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 1.3,
+      "tasks": [
+        {
+          "count": 5,
+          "id": "1711104611D964B6",
+          "item": {
+            "Count": 5,
+            "id": "draconicevolution:chaos_shard"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Chaos Shard {s}",
+      "x": 0.5,
+      "y": -6.0,
+      "repeatable": false
+    },
+    {
+      "description": [
+        "Pour entrer dans l'évolution draconienne, vous aurez besoin de Chaos Shards. Chaos Shards sont dans les îles Chaos gardées par Chaos Guardians dans la fin. Allez à la fin à une coordonnée X/Z qui est un multiple de 10k. 10k, 10k / 10k, 20k / 20k, 20k, etc."
+      ],
+      "id": "65C0DC572BF84C9D",
+      "shape": "rsquare",
+      "size": 1.5,
+      "subtitle": "Trouver l'île du Chaos",
+      "tasks": [
+        {
+          "dimension": "minecraft:the_end",
+          "id": "36525B045E5715D2",
+          "type": "dimension"
+        }
+      ],
+      "title": "Où est-il ?",
+      "x": 0.5,
+      "y": -12.0,
+      "rewards": [],
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "65C0DC572BF84C9D"
+      ],
+      "description": [
+        "La première étape du combat consiste à briser les cristaux qui tiennent le bouclier Chaos Guardians. Vous ne pouvez pas le blesser jusqu'à ce qu'ils soient détruits. Détruire ces cristaux n'est pas une tâche facile sans une arme draconienne. Chaos Guardian boules de feu peuvent affaiblir ce bouclier vous permettant de le détruire. (Oui, il aura besoin trop tirer sur vous / hit les cristaux.) Vous remarquerez que des particules sont produites quand il est vulnérable aux dommages et quand frappé fera un bruit. Plus près de la destruction plus le bruit et mijoter le cristal va obtenir. Une fois qu'ils sont détruits vous pouvez enfin le endommager!"
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "draconicevolution:mob_soul",
+        "tag": {
+          "EntityName": "draconicevolution:guardian_crystal"
+        }
+      },
+      "id": "5030F9A13A452AB8",
+      "shape": "square",
+      "tasks": [
+        {
+          "id": "272E87EA75E6BEB5",
+          "item": "draconicevolution:infused_obsidian",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Localiser et détruire 14 cristaux gardiens",
+      "x": 0.5,
+      "y": -10.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "65C0DC572BF84C9D"
+      ],
+      "description": [
+        "Avant d'arriver à l'île du Chaos, je vous recommande de vous préparer, il peut ressembler au Dragon d'Ender, mais celui-ci est beaucoup plus difficile. Vous voudrez des armes draconiennes ou des outils qui font beaucoup de dégâts car ceux-ci le rendront plus facile. Il fera également une merde de tonnes de dégâts bon Armor comme Unobtainium ou Meka-Suit sera recommended. (Egalement les effets de la régénération, de l'absorption et de la résistance vous aideront à survivre}. Ne vous inquiétez pas, vous pouvez toujours revenir combattre un autre jour si vous n'êtes pas prêt.",
+        "Repère de lecture : obtiens le livre indiqué pour poursuivre. Cette étape ne donne aucune récompense."
+      ],
+      "id": "6861BAF38470B7FF",
+      "optional": 1,
+      "tasks": [
+        {
+          "id": "35520FA3608B8A64",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "C'est dur que tu doives te préparer.",
+      "x": 2.0,
+      "y": -12.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5030F9A13A452AB8"
+      ],
+      "description": [
+        "Maintenant, le combat commence, il a deux barres de santé doivent tous deux se faire prendre à 0 pour obtenir le Chaos Shards. Ne vous approchez pas trop ou il vous frappera avec un barrage de Fireballs! {BTW dans les versions plus anciennes le Chaos Guardian pourrait même tuer quelqu'un en mode créatif! Heureusement, il ne peut plus)"
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "draconicevolution:mob_soul",
+        "tag": {
+          "EntityName": "draconicevolution:draconic_guardian"
+        }
+      },
+      "icon_scale": 2.0,
+      "id": "1FE7A252486AE1B0",
+      "rewards": [
+        {
+          "id": "2CED540C7ABF8966",
+          "type": "xp_levels",
+          "xp_levels": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "size": 1.3,
+      "tasks": [
+        {
+          "entity": "draconicevolution:draconic_guardian",
+          "id": "457493AF28B00FEC",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "Tuez le Gardien du Chaos",
+      "x": 0.5,
+      "y": -8.0,
+      "repeatable": false
+    },
+    {
+      "description": [
+        "Le noyau d'énergie est une, sinon la plus grande banque d'énergie de tout Minecraft. Et tout commence avec le noyau. C'est le centre et le cœur du noyau multibloc d'énergie (assurez-vous qu'il est un peu hors du sol). Lorsque vous le placez vers le bas, vous pouvez voir qu'il s'agit de l'interface graphique avec le noyau: build Guide, Tier Down, Tier Up et Assemble Core. Les niveaux déterminent à quel point le noyau est grand et puissant. Le guide Build vous montre comment assembler ce niveau de noyau. Si vous avez tous les blocs nécessaires, vous pouvez appuyer sur Assemble Core et il le fera automatiquement!"
+      ],
+      "id": "645759316BA8408A",
+      "rewards": [
+        {
+          "id": "1E3C6BE8316F07EE",
+          "item": "draconicevolution:draconium_block",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "subtitle": "Stockage d'énergie draconienne",
+      "tasks": [
+        {
+          "id": "3015C7820CF23340",
+          "item": "draconicevolution:energy_core",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Énergie centrale de Mulitblock",
+      "x": 0.5,
+      "y": 1.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "645759316BA8408A",
+        "73F20BDFD48078E2",
+        "21AADF3D513E59F2"
+      ],
+      "description": [
+        "Le niveau 1 n'a besoin que du noyau et des stabilisants 4 à réaliser."
+      ],
+      "icon": "minecraft:cobblestone",
+      "id": "3994BC1440D411F9",
+      "shape": "square",
+      "subtitle": "Magasins : 45 500 000 RF",
+      "tasks": [
+        {
+          "count": 4,
+          "id": "0AE51E2E83F1D17F",
+          "item": "draconicevolution:energy_core_stabilizer",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Niveau 1",
+      "x": 0.5,
+      "y": 0.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "3994BC1440D411F9"
+      ],
+      "description": [
+        "Tier 2 a besoin de 6 blocs de lingots de draconium, 1 de chaque côté du noyau. Ensuite, évidemment, les 4 stabilisants à faire."
+      ],
+      "icon": "minecraft:iron_ingot",
+      "id": "6E979B7D59C92912",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "741708EF91368EAB",
+          "item": "draconicevolution:draconium_block",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "subtitle": "Magasins : 273 000 000 RF",
+      "tasks": [
+        {
+          "count": 4,
+          "id": "5782D8140487EE08",
+          "item": "draconicevolution:energy_core_stabilizer",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 6,
+          "id": "1CBF212D68372494",
+          "item": "draconicevolution:draconium_block",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Niveau 2",
+      "x": 0.5,
+      "y": -0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6E979B7D59C92912"
+      ],
+      "description": [
+        "Tier 3 a besoin de 26 Blocs de lingots de draconium autour d'elle, encaissant entièrement le noyau, à faire."
+      ],
+      "icon": "minecraft:gold_ingot",
+      "id": "725C9CBF1490046E",
+      "rewards": [
+        {
+          "count": 5,
+          "id": "2F96E3C3D042CB39",
+          "item": "draconicevolution:draconium_block",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 3,
+          "id": "0D8E2C9D322AEE72",
+          "item": "minecraft:redstone_block",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "subtitle": "Magasins : 1640 000 000 RF",
+      "tasks": [
+        {
+          "count": 4,
+          "id": "7A852A6A520F62BC",
+          "item": "draconicevolution:energy_core_stabilizer",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 26,
+          "id": "095AF1A0E9150FFE",
+          "item": "draconicevolution:draconium_block",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Niveau 3",
+      "x": 1.5,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "725C9CBF1490046E"
+      ],
+      "description": [
+        "Le niveau 4 est différent. D'abord, il faut 26 blocs Redstone encaissant le noyau. Puis au-dessus du Redstone il a besoin de 56 blocs de lingots Draconium."
+      ],
+      "icon": "minecraft:diamond",
+      "id": "55BE83D00D6AFCD8",
+      "rewards": [
+        {
+          "count": 7,
+          "id": "4E835009F89A46DF",
+          "item": "draconicevolution:draconium_block",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 6,
+          "id": "1472ED742C5E2FB3",
+          "item": "minecraft:redstone_block",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "subtitle": "Magasins : 9 880 000 000 RF",
+      "tasks": [
+        {
+          "count": 4,
+          "id": "4B3E62217B8D11CB",
+          "item": "draconicevolution:energy_core_stabilizer",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 54,
+          "id": "482FF90B411DFE47",
+          "item": "draconicevolution:draconium_block",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 26,
+          "id": "7134C080730ADEC9",
+          "item": "minecraft:redstone_block",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Niveau 4",
+      "x": 2.5,
+      "y": 1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6D9B5E858128C4FB"
+      ],
+      "description": [
+        "Niveau 5 a besoin de 90 blocs de lingots de draconium et 80 blocs de Redstone, ainsi que de 4 stabilisants avancés ou 36 stabilisants."
+      ],
+      "icon": "minecraft:netherite_scrap",
+      "id": "23666430B4E59E6B",
+      "rewards": [
+        {
+          "count": 30,
+          "id": "6F24D38F08F78EDA",
+          "item": "draconicevolution:draconium_block",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 15,
+          "id": "3E051571E7B939F8",
+          "item": "minecraft:redstone_block",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "subtitle": "Magasins : 59,300 millions de RF",
+      "tasks": [
+        {
+          "count": 36,
+          "id": "157460FD487923A6",
+          "item": "draconicevolution:energy_core_stabilizer",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 90,
+          "id": "27AB1C9634BE2490",
+          "item": "draconicevolution:draconium_block",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 80,
+          "id": "3A284E5E1C39475C",
+          "item": "minecraft:redstone_block",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Niveau 5",
+      "x": 0.5,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "23666430B4E59E6B"
+      ],
+      "description": [
+        "Niveau 6 a besoin de 150 blocs de lingots draconiens et 178 blocs de pierres rouges (n'oubliez pas 36 stabilisants)."
+      ],
+      "id": "1E609E259519CCB3",
+      "rewards": [
+        {
+          "count": 35,
+          "id": "046CD124787BDD37",
+          "item": "draconicevolution:draconium_block",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 30,
+          "id": "39D021E0B289BAE9",
+          "item": "minecraft:redstone_block",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "subtitle": "Magasins: 356.0000.000 RF",
+      "tasks": [
+        {
+          "count": 36,
+          "id": "186EF9191EF984B3",
+          "item": "draconicevolution:energy_core_stabilizer",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 150,
+          "id": "77670CA28A003495",
+          "item": "draconicevolution:draconium_block",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 178,
+          "id": "09B8801640BC31E4",
+          "item": "minecraft:redstone_block",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Niveau 6",
+      "x": -0.5,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6277FAFB7451C4DB"
+      ],
+      "description": [
+        "Dernier et le meilleur Tier 8! Vous aurez besoin de 378 blocs de draconium réveillés et 786 blocs de draconium de lingots! Est-ce que cela en vaut la peine?"
+      ],
+      "id": "72404A95747C7356",
+      "rewards": [
+        {
+          "id": "2517D0B0B3981555",
+          "type": "xp_levels",
+          "xp_levels": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "1BABE907B22D2800",
+          "item": {
+            "Count": 1,
+            "id": "mekanism:ultimate_energy_cube",
+            "tag": {
+              "mekData": {
+                "EnergyContainers": [
+                  {
+                    "Container": 0,
+                    "stored": "256000000"
+                  }
+                ]
+              }
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "subtitle": "Magasins: Près de Infinite",
+      "tasks": [
+        {
+          "count": 36,
+          "id": "12BFD0CF97FA53A0",
+          "item": "draconicevolution:energy_core_stabilizer",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 786,
+          "id": "4F8DFE9B5FD7CDF4",
+          "item": "draconicevolution:draconium_block",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 378,
+          "id": "52D19BB47D605658",
+          "item": "draconicevolution:awakened_draconium_block",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Niveau 8",
+      "x": -0.5,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "645759316BA8408A"
+      ],
+      "description": [
+        "Les pylônes sont la façon dont vous obtenez OP dans et hors du noyau d'énergie. Placez-les au moins à proximité du noyau, 2 d'entre eux 1 pour l'entrée et 1 pour la sortie (vous pouvez utiliser plus). Ensuite, placez le verre sur eux et ils seront assemblés automatiquement ciblant le noyau d'énergie le plus proche. Cliquez droit sur les balles nouvellement formées sur les Pylônes pour changer s'ils sont Entrée ou Sortie (vous saurez à partir des flèches et de la conception d'eux)."
+      ],
+      "id": "73F20BDFD48078E2",
+      "rewards": [
+        {
+          "id": "10567DCAB4006091",
+          "item": "draconicevolution:draconium_block",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "tasks": [
+        {
+          "count": 2,
+          "id": "17B6CCED9289EC47",
+          "item": "draconicevolution:energy_pylon",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Le pouvoir vient et passe par ces",
+      "x": -0.5,
+      "y": 1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1E609E259519CCB3"
+      ],
+      "description": [
+        "Presque là ! Niveau 7. 210 Lingots de draconium et 328 blocs de Redstone !"
+      ],
+      "id": "6277FAFB7451C4DB",
+      "rewards": [
+        {
+          "count": 30,
+          "id": "3DCA619BC851D5A5",
+          "item": "draconicevolution:awakened_draconium_block",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 50,
+          "id": "5D9D5299B9DBF5D6",
+          "item": "draconicevolution:draconium_block",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "subtitle": "Magasins : 2 140 000 000 000 RF",
+      "tasks": [
+        {
+          "count": 36,
+          "id": "644950493C845914",
+          "item": "draconicevolution:energy_core_stabilizer",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 210,
+          "id": "139374B42ED9C922",
+          "item": "draconicevolution:draconium_block",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 328,
+          "id": "32B28DF1A815835C",
+          "item": "minecraft:redstone_block",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Niveau 7",
+      "x": -1.5,
+      "y": 1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "490662702864EBE1"
+      ],
+      "description": [
+        "Consultez les modules pour en savoir plus sur l'utilisation et la mise à niveau des éléments DE! Les pioches fonctionnent comme un pioche Tier 6 normal. Elles peuvent exploiter tous les niveaux de bloc, de Stone à Unobtainium. Les éléments extraits vont automatiquement à votre inventaire."
+      ],
+      "id": "1ADE7D6DF2AD99C8",
+      "tasks": [
+        {
+          "id": "22613959D57CC42E",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {
+                    "mining_speed": {
+                      "hud": 1,
+                      "value": 1.0
+                    }
+                  },
+                  "provider_id": "[I;-2013849626,958352009,-1732031612,934577912]"
+                }
+              }
+            },
+            "id": "draconicevolution:wyvern_pickaxe"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Wyvern Pickaxe",
+      "x": 9.5,
+      "y": -4.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "702CF3DC93F91261"
+      ],
+      "description": [
+        "Version mise à jour du Wyvern Pickaxe."
+      ],
+      "id": "4C84417ECD3A7F37",
+      "tasks": [
+        {
+          "id": "43E987FE92DF94F8",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {
+                    "mining_speed": {
+                      "hud": 1,
+                      "value": 1.0
+                    }
+                  },
+                  "provider_id": "[I;1979741931,1214926207,-1479051553,-1433035768]"
+                }
+              }
+            },
+            "id": "draconicevolution:draconic_pickaxe"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Pickaxe draconien",
+      "x": 9.5,
+      "y": -3.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "42276CAE1B9E1757"
+      ],
+      "description": [
+        "Toutes les mines de Pickaxes au même niveau minier, de sorte que le seul besoin de mise à niveau est d'être plus rapide et d'obtenir le personnel."
+      ],
+      "id": "6E09576459D4746A",
+      "tasks": [
+        {
+          "id": "2CB8DF5A8FA0037C",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {
+                    "mining_speed": {
+                      "hud": 1,
+                      "value": 1.0
+                    }
+                  },
+                  "provider_id": "[I;484774789,1874281568,-1450945247,896813227]"
+                }
+              }
+            },
+            "id": "draconicevolution:chaotic_pickaxe"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Pickaxe chaotique",
+      "x": 9.5,
+      "y": -1.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "490662702864EBE1"
+      ],
+      "description": [
+        "Découvrez les Modules pour en savoir plus sur l'utilisation et la mise à jour des éléments DE! Faites-le glisser et frappez quelque chose avec. Allez, c'est une épée que je ne peux plus expliquer."
+      ],
+      "id": "7AEE56BCC87E5341",
+      "tasks": [
+        {
+          "id": "35F068EE05ECFA7B",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {},
+                  "provider_id": "[I;-1634615125,1226785551,-1731327574,-1976770563]"
+                }
+              }
+            },
+            "id": "draconicevolution:wyvern_sword"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Épée de Wyvern",
+      "x": 8.5,
+      "y": -4.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "702CF3DC93F91261"
+      ],
+      "description": [
+        "Version améliorée de l'épée Wyvern."
+      ],
+      "id": "1C1281133138FECC",
+      "tasks": [
+        {
+          "id": "3811457FB5492AC2",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {},
+                  "provider_id": "[I;222970897,-1652274634,-1311029750,-486642495]"
+                }
+              }
+            },
+            "id": "draconicevolution:draconic_sword"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Épée draconienne",
+      "x": 8.5,
+      "y": -3.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "42276CAE1B9E1757"
+      ],
+      "description": [
+        "C'est comme l'épée de Netherite mais beaucoup mieux et beaucoup plus cool !"
+      ],
+      "id": "6FCAB2FBE461B34F",
+      "tasks": [
+        {
+          "id": "776BE44758B6B5EF",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {},
+                  "provider_id": "[I;1752156390,-1117762597,-1937665277,1295896343]"
+                }
+              }
+            },
+            "id": "draconicevolution:chaotic_sword"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Épée chaotique",
+      "x": 8.5,
+      "y": -1.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "490662702864EBE1"
+      ],
+      "description": [
+        "Découvrez les modules pour en savoir plus sur l'utilisation et la mise à niveau des éléments DE! Je sais ce que les joueurs de l'autre côté se soucient vraiment du Wyvern Shovel. Vous n'avez plus besoin de passer des nuits sans sommeil parce que maintenant vous savez, le DE Shovels peut faire des chemins."
+      ],
+      "id": "1FF663CC4787A958",
+      "tasks": [
+        {
+          "id": "04AD1B6B7B8DE278",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {
+                    "mining_speed": {
+                      "hud": 1,
+                      "value": 1.0
+                    }
+                  },
+                  "provider_id": "[I;-1262718153,439631883,-1444692843,1784537457]"
+                }
+              }
+            },
+            "id": "draconicevolution:wyvern_shovel"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Fût de Wyvern",
+      "x": 11.5,
+      "y": -4.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "702CF3DC93F91261"
+      ],
+      "description": [
+        "Version mise à jour du Wyvern Shovel."
+      ],
+      "id": "673CE15F19CC22C7",
+      "tasks": [
+        {
+          "id": "307AF9FC5B89E356",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {
+                    "mining_speed": {
+                      "hud": 1,
+                      "value": 1.0
+                    }
+                  },
+                  "provider_id": "[I;-1669197455,-2033236569,-1707985451,-182582560]"
+                }
+              }
+            },
+            "id": "draconicevolution:draconic_shovel"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Pelle draconienne",
+      "x": 11.5,
+      "y": -3.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "42276CAE1B9E1757"
+      ],
+      "description": [
+        "Peut aussi faire des chemins!"
+      ],
+      "id": "62587DB341A8DF6D",
+      "tasks": [
+        {
+          "id": "28B9C1CFDED4F3B9",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {
+                    "mining_speed": {
+                      "hud": 1,
+                      "value": 1.0
+                    }
+                  },
+                  "provider_id": "[I;-1928681628,-2081928443,-2097843096,1112698517]"
+                }
+              }
+            },
+            "id": "draconicevolution:chaotic_shovel"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Chaotique Shovel",
+      "x": 11.5,
+      "y": -1.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "673CE15F19CC22C7",
+        "4C84417ECD3A7F37",
+        "1C1281133138FECC",
+        "702CF3DC93F91261"
+      ],
+      "description": [
+        "Vous connaissez le légendaire Paxel? Une combinaison de Picks, Axes et Shovels? C'est similaire, étant une combinaison de Swords, Pickaxes et Shovels! Il fait tout ce que les outils draconiens font!"
+      ],
+      "id": "0B81FFB25CF4953F",
+      "tasks": [
+        {
+          "id": "68EFC358EE3F10B8",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {
+                    "mining_speed": {
+                      "hud": 1,
+                      "value": 1.0
+                    }
+                  },
+                  "provider_id": "[I;1384449529,1812481997,-1795174812,-1381346482]"
+                }
+              }
+            },
+            "id": "draconicevolution:draconic_staff"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Personnel draconien",
+      "x": 13.5,
+      "y": -3.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "62587DB341A8DF6D",
+        "6E09576459D4746A",
+        "6FCAB2FBE461B34F",
+        "42276CAE1B9E1757"
+      ],
+      "description": [
+        "La meilleure épée plus le plus rapide Pickaxe plus le Shovel?!! Que voulez-vous de plus!"
+      ],
+      "id": "679E45F8968AA510",
+      "tasks": [
+        {
+          "id": "41D3973786E71944",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {
+                    "mining_speed": {
+                      "hud": 1,
+                      "value": 1.0
+                    }
+                  },
+                  "provider_id": "[I;825504265,124930682,-1931566581,-1344135636]"
+                }
+              }
+            },
+            "id": "draconicevolution:chaotic_staff"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Personnel chaotique",
+      "x": 13.5,
+      "y": -1.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "description": [
+        "Les modules sont très importants pour nos éléments DE. Si importants ils ne fonctionnent pas sans eux! La plupart des modules sont fabriqués à partir d'un noyau de module ou d'un module précédent. Maintenez un élément et appuyez sur Maj et C pour ouvrir le menu du module. Là, vous verrez quelques fentes et boutons! Les fentes sont où les modules vont réellement et la grille est ce qui détermine combien de modules peuvent aller. Quand un module dit 1x1 il ne prendra que 1 fente, tandis que celui qui dit 2z2 prendra uo 4 fentes. Le bouton le plus bas à droite montrera ce que les modules peuvent être appliqués à l'élément que vous tenez. Le reste ne fait que changer l'apparence de GUI."
+      ],
+      "hide_dependency_lines": 1,
+      "hide_dependent_lines": 1,
+      "icon_scale": 2.0,
+      "id": "33374986A8F5C154",
+      "rewards": [
+        {
+          "count": 10,
+          "id": "27C7890BE5A32953",
+          "item": "draconicevolution:module_core",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "17C8848F24C31219",
+          "item": "draconicevolution:module_core",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Des modules !",
+      "x": 15.75,
+      "y": -9.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "490662702864EBE1"
+      ],
+      "description": [
+        "Consultez les modules pour en savoir plus sur l'utilisation et la mise à niveau des éléments DE! Fonctionne comme une Bow normale fait en tirant des flèches. Chaque tir prend une quantité d'énergie de la Bow elle-même, donc oui vous aurez besoin de modules d'énergie au moins."
+      ],
+      "id": "32AB13319FDC7695",
+      "size": 1.0,
+      "tasks": [
+        {
+          "id": "66BDD4F216EC8029",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {},
+                  "provider_id": "[I;-777390198,-841727973,-1374736934,1612524732]"
+                }
+              }
+            },
+            "id": "draconicevolution:wyvern_bow"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "La Bow de Wyvern",
+      "x": 7.5,
+      "y": -4.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "702CF3DC93F91261"
+      ],
+      "description": [
+        "Version améliorée du Wyvern Bow."
+      ],
+      "id": "7013A3958664C64B",
+      "tasks": [
+        {
+          "id": "0E3BAE03283510B6",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {},
+                  "provider_id": "[I;184112862,1738818335,-1179981596,-964317728]"
+                }
+              }
+            },
+            "id": "draconicevolution:draconic_bow"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Bow draconienne",
+      "x": 7.5,
+      "y": -3.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "42276CAE1B9E1757"
+      ],
+      "description": [
+        "Meilleur Bow de Draconic Evolution, aussi avec plus de fentes de module!"
+      ],
+      "id": "5A1CBC687176F950",
+      "tasks": [
+        {
+          "id": "11CDAEA06E591C1F",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {},
+                  "provider_id": "[I;135971894,-1451604926,-1842117922,1883032151]"
+                }
+              }
+            },
+            "id": "draconicevolution:chaotic_bow"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Bow chaotique",
+      "x": 7.5,
+      "y": -1.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "33374986A8F5C154"
+      ],
+      "description": [
+        "Auto-Feed vous nourrira automatiquement n'importe quel aliment dans votre inventaire lorsque vous avez faim. Il a un stockage max Food Point cependant, chaque barre complète est 2 Points de nourriture. Donc, le Basic ne peut contenir que 8 Steaks valant."
+      ],
+      "id": "6C6860C5116023AF",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "07E75DE2DD55735A",
+          "item": "draconicevolution:item_draconium_auto_feed",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module d'alimentation automatique de base",
+      "x": 17.25,
+      "y": 2.25,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "33374986A8F5C154"
+      ],
+      "description": [
+        "Plutôt simple prémisse, Axes et Swords peuvent faire plus de dommages. Oui, il empile!"
+      ],
+      "id": "0436D993A3B7E0E7",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "559810B527390FDA",
+          "item": "draconicevolution:item_draconium_damage",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de dommages de base",
+      "x": 17.25,
+      "y": -4.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "0436D993A3B7E0E7"
+      ],
+      "id": "01EBA7488E150F6C",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "74FDB0AC6454A8D6",
+          "item": "draconicevolution:item_wyvern_damage",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de dommages Wyvern",
+      "x": 18.0,
+      "y": -4.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "01EBA7488E150F6C"
+      ],
+      "id": "6EAC72089817D8E6",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "3C143306B915E8DD",
+          "item": "draconicevolution:item_draconic_damage",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de dommages draconiens",
+      "x": 18.75,
+      "y": -4.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6EAC72089817D8E6"
+      ],
+      "id": "2963620EE4F53EA8",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "0205D0843D8D38A5",
+          "item": "draconicevolution:item_chaotic_damage",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module Dommages chaotiques",
+      "x": 19.5,
+      "y": -4.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "description": [
+        "Bienvenue à Draconic Evolution, un mod très amusant et OP! Pour commencer, vous aurez besoin de la mine Draconic Ore pour obtenir Draconic Dust. Il fraie dans toutes les (Vanilla) Dimensions mais le plus est dans la fin!"
+      ],
+      "icon": {
+        "Count": 1,
+        "ForgeCaps": {
+          "Parent": {
+            "energy": {
+              "energy": 0
+            },
+            "module_host": {
+              "modules": [],
+              "properties": {
+                "charge_armor": {
+                  "hud": 1
+                },
+                "charge_curios": {
+                  "hud": 1
+                },
+                "charge_held_item": {
+                  "hud": 1
+                },
+                "charge_hot_bar": {
+                  "hud": 1
+                },
+                "charge_main": {
+                  "hud": 1
+                }
+              },
+              "provider_id": "[I;-1545140134,1305168571,-1541896862,-1897389170]"
+            }
+          }
+        },
+        "id": "draconicevolution:wyvern_capacitor"
+      },
+      "id": "6BB711475950432A",
+      "rewards": [
+        {
+          "count": 12,
+          "id": "4F301CD24EB1E090",
+          "item": "draconicevolution:draconium_ingot",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "gear",
+      "size": 2.5,
+      "tasks": [
+        {
+          "count": 6,
+          "id": "3A7F28901C394609",
+          "item": {
+            "Count": 6,
+            "id": "draconicevolution:draconium_dust"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Draconic Evolution",
+      "x": 6.0,
+      "y": -12.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "6BB711475950432A"
+      ],
+      "description": [
+        "Les carottes de draconium sont un ingrédient vital dans de nombreuses recettes dans l'évolution draconienne. Surtout pour les éléments de base de niveau.",
+        "Ce jalon reprend un objectif déjà présent dans les parcours OLYCITY. Il complète le guide sans donner une seconde récompense."
+      ],
+      "id": "7F50C2D1B82756B0",
+      "rewards": [],
+      "tasks": [
+        {
+          "id": "1E30B7922185004A",
+          "item": "draconicevolution:draconium_core",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Base (Draconium)",
+      "x": 6.0,
+      "y": -9.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7F50C2D1B82756B0"
+      ],
+      "description": [
+        "Pour commencer, vous avez besoin d'un noyau de artisanat de fusion, placez-le sur un bloc au-dessus du sol. Le noyau est où les recettes peuvent être auto-placées à partir de JEI, où l'élément du milieu va, et où l'élément final sera mis. Il faudra que les Injecteurs mettent quelques blocs de loin de lui en regardant le noyau sur deux côtés. Vérifiez la prochaine quête pour en trouver plus sur ceux-ci. Les Injecteurs auront également besoin d'énergie qui sera expliqué plus dans la quête de liaison de cristal."
+      ],
+      "id": "27BF7D61270A5D2F",
+      "rewards": [
+        {
+          "count": 8,
+          "id": "09BF195D77656D4F",
+          "item": "draconicevolution:draconium_core",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "44725F0BE60D3675",
+          "item": "draconicevolution:crafting_core",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Artisanat Fusion",
+      "x": 6.0,
+      "y": -7.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "27BF7D61270A5D2F"
+      ],
+      "description": [
+        "Fusion Artisanat a Tiers qui est déterminé par les Injecteurs. Les Tiers vont dans l'ordre ascendant: Draconium (je le considère comme basique pour aider à différencier), Wyvern, Draconic, et Chaotic. Les Injecteurs doivent être placés sur la gauche et la droite du noyau de Fusion Artisanat, à quelques blocs de celui-ci. Ils peuvent être placés dans une forme de croix à un maximum de 5 de chaque côté du noyau de Artisanat. Pour leur donner de l'énergie mettre Relay IO Crystals connectés à eux fonctionnera, consultez Crystak Reliant pour en savoir plus."
+      ],
+      "id": "2581BE76A547F64D",
+      "shape": "rsquare",
+      "size": 1.25,
+      "tasks": [
+        {
+          "id": "0AE7453A869BA009",
+          "item": "draconicevolution:basic_crafting_injector",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Niveau de base",
+      "x": 6.0,
+      "y": -6.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2581BE76A547F64D"
+      ],
+      "description": [
+        "Afin de monter dans Draconic Evolution Fusion Artisanat, les Injecteurs nécessaires pour une recette doivent être au moins le Tier ou plus. Comme si vous voulez faire la Axe Wyvern vous avez besoin au moins 6 Injecteurs Wyvern, avec 3 de chaque côté. Ne vous inquiétez pas le noyau d'artisanat reste le même!"
+      ],
+      "id": "490662702864EBE1",
+      "shape": "rsquare",
+      "size": 1.25,
+      "tasks": [
+        {
+          "id": "0B007D62E996D6F1",
+          "item": "draconicevolution:wyvern_crafting_injector",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Niveau Wyvern",
+      "x": 6.0,
+      "y": -4.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "490662702864EBE1"
+      ],
+      "description": [
+        "C'est pour ça que sont les Draconic Cores."
+      ],
+      "id": "702CF3DC93F91261",
+      "shape": "rsquare",
+      "size": 1.25,
+      "tasks": [
+        {
+          "id": "17734E8B21A761EE",
+          "item": "draconicevolution:awakened_crafting_injector",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Niveau draconien",
+      "x": 6.0,
+      "y": -3.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "702CF3DC93F91261"
+      ],
+      "description": [
+        "Fin de la route pour Artisanat Infusions, Chaotic Tier. Tout peut être créé une fois que vous êtes ici. Pas seulement les Outils mais aussi tout ce dont vous aurez besoin pour le Réacteur."
+      ],
+      "id": "42276CAE1B9E1757",
+      "shape": "rsquare",
+      "size": 1.25,
+      "tasks": [
+        {
+          "id": "11D42D117460FFBB",
+          "item": "draconicevolution:chaotic_crafting_injector",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Niveau chaotique",
+      "x": 6.0,
+      "y": -1.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2581BE76A547F64D"
+      ],
+      "description": [
+        "1 des 2 Infusions de base de niveau, mais ne sous-estimez pas la poitrine draconienne. Il contient plus d'espace qu'une double poitrine, il peut émerger et artisanat, et surtout il peut changer de couleurs! Facilement ma poitrine préférée dans n'importe quel mod!"
+      ],
+      "id": "5997A1AD481EE33C",
+      "shape": "hexagon",
+      "tasks": [
+        {
+          "id": "4A8666056E6AEB8B",
+          "item": "draconicevolution:draconium_chest",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Poitrine de draconium",
+      "x": 7.5,
+      "y": -6.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "490662702864EBE1"
+      ],
+      "description": [
+        "Le draconium réveillé vient de Fusion Crafting les blocs. Les blocs peuvent être défabriqués en 9 lingots. Ce sont les deuxièmes lingots les plus importants dans l'évolution draconienne et très nécessaires pour les niveaux Wyvern et Draconic."
+      ],
+      "id": "595A2504B350A539",
+      "tasks": [
+        {
+          "id": "7960949BA49D5DC5",
+          "item": "draconicevolution:awakened_draconium_block",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Draconium réveillé",
+      "x": 2.5,
+      "y": -4.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "490662702864EBE1"
+      ],
+      "description": [
+        "Les condensateurs agissent comme les batteries pour l'évolution draconienne. Ils ont besoin de modules d'énergie pour tenir effectivement l'énergie et se rappeler, 'Plus le plus merrier!'."
+      ],
+      "id": "3F6FF3FB5176EFB4",
+      "tasks": [
+        {
+          "id": "5844441AB913B658",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {
+                    "charge_armor": {
+                      "hud": 1
+                    },
+                    "charge_curios": {
+                      "hud": 1
+                    },
+                    "charge_held_item": {
+                      "hud": 1
+                    },
+                    "charge_hot_bar": {
+                      "hud": 1
+                    },
+                    "charge_main": {
+                      "hud": 1
+                    }
+                  },
+                  "provider_id": "[I;-354770428,1791182415,-1927276924,810657246]"
+                }
+              }
+            },
+            "id": "draconicevolution:wyvern_capacitor"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Capacitateur Wyvern",
+      "x": 4.5,
+      "y": -4.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "490662702864EBE1"
+      ],
+      "description": [
+        "Draconic Evolution ne voit pas la nécessité de couvrir tout le corps dans une armure pathétique quand vous pouvez utiliser une seule plaque de poitrine avec des boucliers construits. Attendez, ils ne sont pas construits dans vous avez besoin de Modules pour eux... désolé."
+      ],
+      "id": "71C7AF9B9ED6656A",
+      "tasks": [
+        {
+          "id": "2415734C3434C7E4",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {},
+                  "provider_id": "[I;-395766992,-1657190728,-2121111316,-2118786347]"
+                }
+              }
+            },
+            "id": "draconicevolution:wyvern_chestpiece"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Plaquette Wyvern",
+      "x": 13.5,
+      "y": -4.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "490662702864EBE1"
+      ],
+      "description": [
+        "Je sais que c'est Wyvern Tier alors pourquoi est-ce un élément draconien ici? Pour arriver à Draconic Tier vous avez besoin d'injecteurs draconiens. Pour obtenir des injecteurs draconiques vous aurez besoin de noyaux draconiques."
+      ],
+      "id": "65B1DE13E545B366",
+      "tasks": [
+        {
+          "id": "2BED41E05B8B7651",
+          "item": "draconicevolution:awakened_core",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Noyau draconien",
+      "x": 3.5,
+      "y": -4.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "702CF3DC93F91261"
+      ],
+      "description": [
+        "Cela sera nécessaire pour le dernier Tier, Chaotic Tier. Espérons que vous avez suivi la branche des quêtes qui expliquent comment obtenir Chaos Shards!"
+      ],
+      "id": "0D5A0D9BDFA00C79",
+      "tasks": [
+        {
+          "id": "631E33C633EDCBBB",
+          "item": "draconicevolution:chaotic_core",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Noyau chaotique",
+      "x": 3.5,
+      "y": -3.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "702CF3DC93F91261"
+      ],
+      "description": [
+        "Version mise à jour de Wyvern Chestplate."
+      ],
+      "id": "3254018C6C66E6C6",
+      "tasks": [
+        {
+          "id": "01A12106288527B7",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {},
+                  "provider_id": "[I;1556118488,-144685975,-1806634623,-46833520]"
+                }
+              }
+            },
+            "id": "draconicevolution:draconic_chestpiece"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Plaque de poitrine draconienne",
+      "x": 14.5,
+      "y": -3.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "42276CAE1B9E1757"
+      ],
+      "description": [
+        "J'espère que ça devrait vous protéger."
+      ],
+      "id": "70C6D5D98EE24295",
+      "tasks": [
+        {
+          "id": "6B51BE79DBCD7B34",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {},
+                  "provider_id": "[I;865838435,-389592656,-1749303192,-801567611]"
+                }
+              }
+            },
+            "id": "draconicevolution:chaotic_chestpiece"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Plaque de poitrine chaotique",
+      "x": 14.5,
+      "y": -1.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "42276CAE1B9E1757"
+      ],
+      "description": [
+        "La meilleure batterie d'énergie de DE donnera."
+      ],
+      "id": "77DB68DCD389B611",
+      "tasks": [
+        {
+          "id": "393F030EDB81EC32",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {
+                    "charge_armor": {
+                      "hud": 1
+                    },
+                    "charge_curios": {
+                      "hud": 1
+                    },
+                    "charge_held_item": {
+                      "hud": 1
+                    },
+                    "charge_hot_bar": {
+                      "hud": 1
+                    },
+                    "charge_main": {
+                      "hud": 1
+                    }
+                  },
+                  "provider_id": "[I;1910068859,832194230,-1820982876,-538613212]"
+                }
+              }
+            },
+            "id": "draconicevolution:chaotic_capacitor"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Capacitateur chaotique",
+      "x": 4.5,
+      "y": -1.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "702CF3DC93F91261"
+      ],
+      "description": [
+        "Encore plus de potentiel d'opération!"
+      ],
+      "id": "256D00B0E06829B6",
+      "tasks": [
+        {
+          "id": "70931554E5B98DB9",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {
+                    "charge_armor": {
+                      "hud": 1
+                    },
+                    "charge_curios": {
+                      "hud": 1
+                    },
+                    "charge_held_item": {
+                      "hud": 1
+                    },
+                    "charge_hot_bar": {
+                      "hud": 1
+                    },
+                    "charge_main": {
+                      "hud": 1
+                    }
+                  },
+                  "provider_id": "[I;-475253622,-631421354,-1998118510,-1069114102]"
+                }
+              }
+            },
+            "id": "draconicevolution:draconic_capacitor"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Capaciteur draconien",
+      "x": 4.5,
+      "y": -3.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2581BE76A547F64D"
+      ],
+      "description": [
+        "Basic (Energy Relay) Crystal est le début du déplacement de l'énergie avec l'évolution draconienne !"
+      ],
+      "id": "37D6C5814282D2F6",
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "6A8745FE1C078F17",
+          "item": "draconicevolution:basic_relay_crystal",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Cristal de relais d'énergie de base",
+      "x": 4.5,
+      "y": -6.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "702CF3DC93F91261"
+      ],
+      "description": [
+        "Ceux-ci peuvent déplacer plus d'énergie et ont plus de liens."
+      ],
+      "id": "111D08B736BD1D14",
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "1E35B68DE259F14C",
+          "item": "draconicevolution:draconic_relay_crystal",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Cristal de relais d'énergie draconienne",
+      "x": 2.5,
+      "y": -3.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "490662702864EBE1"
+      ],
+      "description": [
+        "Wyvern (Relay énergétique) Crystal. Fait exactement la même chose que le cristal de base juste plus d'énergie et plus de liens."
+      ],
+      "id": "793039A0E3ED706C",
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "152B0FE95556413A",
+          "item": "draconicevolution:wyvern_relay_crystal",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Verre de relais d'énergie Wyvern",
+      "x": 1.5,
+      "y": -4.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7EEFFD5153EE3FEF"
+      ],
+      "id": "70A0F11AF8F767AA",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "7585B4D66AB77571",
+          "item": "draconicevolution:item_draconic_auto_feed",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module d'alimentation automatique draconienne",
+      "x": 18.75,
+      "y": 2.25,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6C6860C5116023AF"
+      ],
+      "id": "7EEFFD5153EE3FEF",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "2A277EEB7702A251",
+          "item": "draconicevolution:item_wyvern_auto_feed",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module d'alimentation automatique Wyvern",
+      "x": 18.0,
+      "y": 2.25,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "33374986A8F5C154"
+      ],
+      "description": [
+        "Legit vient de sauter Boost."
+      ],
+      "id": "77EE959CBF8A1B33",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "4FF63E2C71DA5E84",
+          "item": "draconicevolution:item_draconium_jump",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de saut de base",
+      "x": 17.25,
+      "y": 1.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "77EE959CBF8A1B33"
+      ],
+      "id": "644D2D6853EC8668",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "0FF1A192D5EFBAFF",
+          "item": "draconicevolution:item_wyvern_jump",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de saut Wyvern",
+      "x": 18.0,
+      "y": 1.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "644D2D6853EC8668"
+      ],
+      "id": "755B5A922BDC447F",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "4212FF4DEDEA24EF",
+          "item": "draconicevolution:item_draconic_jump",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de saut draconien",
+      "x": 18.75,
+      "y": 1.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "755B5A922BDC447F"
+      ],
+      "id": "4582B924964A850E",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "52DC4F024DBEF73E",
+          "item": "draconicevolution:item_chaotic_jump",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module saut chaotique",
+      "x": 19.5,
+      "y": 1.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "645759316BA8408A"
+      ],
+      "description": [
+        "Pour les 4 premiers niveaux de cœurs vous avez besoin de seulement 4 stabilisateurs autour. Vous pouvez accéder au GUI du noyau à travers les stabilisateurs aussi. S'ils sont placés trop près du noyau ou dans les mauvais endroits, il vous dira que c'est incorrect."
+      ],
+      "id": "21AADF3D513E59F2",
+      "rewards": [
+        {
+          "id": "1ECCE7194C44F6AB",
+          "item": "draconicevolution:draconium_block",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "tasks": [
+        {
+          "id": "46A305026A3B8945",
+          "item": "draconicevolution:energy_core_stabilizer",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Stabiliseurs de base pour l'énergie",
+      "x": 1.5,
+      "y": 1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "55BE83D00D6AFCD8"
+      ],
+      "description": [
+        "Pour Tier 5-8, vous aurez besoin de stabilisateurs avancés. Qu'est-ce qu'un stabilisateur avancé? C'est 9 stabilisateurs tous dans une zone 3x1x3. Une fois fait correctement, il se transformera en un cercle!"
+      ],
+      "id": "3E91FEF28D62823C",
+      "rewards": [
+        {
+          "count": 9,
+          "id": "36F84066506C2405",
+          "item": "draconicevolution:energy_core_stabilizer",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "tasks": [
+        {
+          "count": 9,
+          "id": "6B65326987F131C0",
+          "item": {
+            "Count": 9,
+            "id": "draconicevolution:energy_core_stabilizer"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Stabilisateurs avancés",
+      "x": 1.5,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "3E91FEF28D62823C"
+      ],
+      "description": [
+        "Techniquement c'est optionnel mais recommandé! Vous pouvez utiliser plus de Pylons pour prendre et sortir plus d'OP!"
+      ],
+      "id": "6D9B5E858128C4FB",
+      "optional": 1,
+      "rewards": [
+        {
+          "count": 8,
+          "id": "50F9E7D06CACB577",
+          "item": "minecraft:glass",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 2,
+          "id": "784CB0C5D86E5B6D",
+          "item": "draconicevolution:draconic_io_crystal",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "tasks": [
+        {
+          "count": 8,
+          "id": "2C4C342CD5C92D15",
+          "item": {
+            "Count": 8,
+            "id": "draconicevolution:energy_pylon"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Plus de pylônes {facultatif)",
+      "x": 0.5,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7F50C2D1B82756B0"
+      ],
+      "description": [
+        "Le potentiel opérationnel est la source d'énergie de l'évolution draconienne. La principale façon (pas la seule façon) de déplacer OP est avec les cristaux relais d'IO. Pour réellement obtenir OP dans les éléments, vous aurez besoin d'un transfert d'énergie."
+      ],
+      "id": "334E123A474FFF6F",
+      "shape": "gear",
+      "size": 2.0,
+      "tasks": [
+        {
+          "id": "501B12E67BB22B3E",
+          "item": "draconicevolution:crystal_binder",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Qu'est-ce que l'énergie ou comme nous l'appelons, OP?",
+      "x": 6.0,
+      "y": 1.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "16EBCD5FE55F754A",
+        "11F5AAAD727B14BB"
+      ],
+      "description": [
+        "Le réacteur Core est la partie la plus importante du réacteur, IE le noyau! Placez-le à 5 blocs ou plus de l'injecteur et des stabilisateurs, et vous pouvez le cliquer à droite pour voir qu'il est GUI ici vous trouverez quelques barres, une balle, des boutons et des fentes. Les barres vont de gauche à droite: chaleur, champ de confinement, saturation énergétique et conversion de carburant. Vous avez déjà appris sur le champ et l'énergie et vous allez apprendre sur le combustible dans une prochaine quête. Donc la chaleur est assez importante que lorsque le réchauffement il va monter à 2000C avant d'être prêt à activer. Assurez-vous qu'il ne devient pas trop élevé ou autrement... fondre! Le ballon est l'image de votre noyau, en ce moment j'ai un bug où le noyau n'a pas de texture donc je ne peux pas expliquer beaucoup."
+      ],
+      "icon_scale": 2.0,
+      "id": "0829BBBB077CEE66",
+      "min_width": 300,
+      "rewards": [
+        {
+          "count": 2,
+          "id": "5EFA7CB2AC5628FB",
+          "item": "draconicevolution:awakened_draconium_block",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "size": 1.5,
+      "subtitle": "POUVOIR NON LIMITÉE",
+      "tasks": [
+        {
+          "id": "0B68784592CFF384",
+          "item": "draconicevolution:reactor_core",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Construction du réacteur",
+      "x": 9.5,
+      "y": 2.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "42276CAE1B9E1757"
+      ],
+      "description": [
+        "Les stabilisateurs sont ce qui forme le champ de confinement (Force Shield autour du noyau du réacteur). Une fois le bouclier de confinement est jusqu'à 0 pendant que le réacteur est activé, il va commencer un Meltdown. Tous les 4 stabilisateurs doivent être à quelques pâtés de maisons (5 ou plus) du noyau et doivent être autour du même axe que le noyau pour travailler."
+      ],
+      "hide_dependency_lines": 1,
+      "icon_scale": 1.5,
+      "id": "11F5AAAD727B14BB",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "4EAC891F71B02825",
+          "item": "draconicevolution:awakened_draconium_block",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "tasks": [
+        {
+          "count": 4,
+          "id": "6FF97D0DFC639C1D",
+          "item": {
+            "Count": 4,
+            "id": "draconicevolution:reactor_stabilizer"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Stabilisateurs pour réacteurs",
+      "x": 9.5,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "42276CAE1B9E1757"
+      ],
+      "description": [
+        "L'injecteur doit être d'un autre côté de tous les stabilisateurs et doit partager le même axe que le noyau. C'est là qu'OP va devoir se lancer ! Pour activer et faire OP la saturation énergétique doit être un peu relevée. La saturation énergétique est l'énergie stockée et bientôt produite."
+      ],
+      "hide_dependency_lines": 1,
+      "icon_scale": 1.5,
+      "id": "16EBCD5FE55F754A",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "7E1DC0D8D4262782",
+          "item": "draconicevolution:awakened_draconium_block",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "10D590C3771B3FB9",
+          "item": "draconicevolution:reactor_injector",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Réacteur Injecteur d'énergie",
+      "x": 9.5,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "0829BBBB077CEE66"
+      ],
+      "description": [
+        "Le réacteur prend le draconium éveillé comme carburant, ne vous inquiétez pas de son efficacité! Conversion de carburant détermine quand le draconium réveillé va changer en Chaos. Il peut prendre seulement 8 BLocks à la fois et ne peut être alimenté ou ravitailler que lorsque le réacteur est éteint. mode SAS aide à rendre cela plus facile!"
+      ],
+      "id": "095AF20722860286",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "6B7E6E6756F2106F",
+          "item": "draconicevolution:awakened_draconium_block",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "count": 8,
+          "id": "2139C62863EBC36C",
+          "item": {
+            "Count": 8,
+            "id": "draconicevolution:awakened_draconium_block"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Carburant pour notre réacteur",
+      "x": 11.5,
+      "y": 1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "0829BBBB077CEE66"
+      ],
+      "description": [
+        "Le réacteur ne peut contenir que 1 milliard OP et bien que cela puisse sembler un nombre lointain, il ne sera pas pour longtemps. Lorsque la saturation énergétique atteint 100%%, il augmentera la chaleur d'une tonne qui peut conduire à Meltdown. Il faudra 500 000 000 OP pour activer et une porte Flux aidera à limiter la quantité d'OP entrant et sortant. (BTW 1 RF = 1 OP) Ils ont besoin de Redstone pour activer et peuvent être utilisés à la fois pour ajouter OP et sortir OP. Vous aurez besoin d'énergie pour ne pas Meltdown, essayez de mettre dans un noyau d'énergie!"
+      ],
+      "id": "61AC9988C262EDC3",
+      "rewards": [
+        {
+          "id": "64AF6ED68333838F",
+          "item": "minecraft:lever",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "1F15106F035AD6F8",
+          "item": "draconicevolution:flux_gate",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Un début de saut",
+      "x": 11.5,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "095AF20722860286",
+        "61AC9988C262EDC3"
+      ],
+      "description": [
+        "Prépare le cœur du réacteur et lis les explications de Draconic Evolution avant toute activation.",
+        "Le composant demandé valide la préparation, pas le fonctionnement du réacteur. Prévois un site éloigné des habitations, une alimentation de stabilisation et un moyen d’arrêt."
+      ],
+      "id": "4EC401CA4839B4FD",
+      "rewards": [
+        {
+          "id": "23A2095F8CAF2673",
+          "type": "xp_levels",
+          "xp_levels": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Maintenant nous prions et espérons...",
+      "tasks": [
+        {
+          "id": "35E35D1D83C6D397",
+          "type": "item",
+          "item": "draconicevolution:reactor_core",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Préparer l’activation du réacteur draconique",
+      "x": 13.5,
+      "y": 2.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "33374986A8F5C154"
+      ],
+      "description": [
+        "Avec cela sur votre Chestplate vous pouvez Glide! Comme si vous utilisiez un Elytra (Mais sans coût d'armor). Je n'aime pas l'appeler voler, plutôt « tomber avec style »."
+      ],
+      "id": "05C50766BF24B3A5",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "676D89EBBFDD904A",
+          "item": "draconicevolution:item_wyvern_flight",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de vol Wyvern",
+      "x": 18.0,
+      "y": 0.75,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "33374986A8F5C154"
+      ],
+      "description": [
+        "Avec quelque chose de si primitif qu'une Bow vous ne pouvez pas vous attendre à une exactitude parfaite. Eh bien, vous pouvez si vous utilisez ces modules. La flèche est beaucoup plus susceptible de frapper sa cible et ne pas aller hors de la course."
+      ],
+      "id": "2ED3BEBD92E49F65",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "7E34F1CA4157986C",
+          "item": "draconicevolution:item_wyvern_proj_accuracy",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module d'exactitude de la projection de Wyvern",
+      "x": 18.0,
+      "y": -7.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "33374986A8F5C154"
+      ],
+      "description": [
+        "Ces modules ne sont que pour les Bows DE, contrairement aux précédents. Le module de dommages projectiles augmente les dommages des flèches prises par la Bow. Certains modules se produisent pour avoir des effets négatifs avec elle, comme ceux-ci donnent un peu plus d'inexactitude à Bows. Tous ces peuvent empiler!"
+      ],
+      "id": "46FBBD9B8430D46C",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "2C7540B6C474B546",
+          "item": "draconicevolution:item_wyvern_proj_damage",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de dommages projectiles Wyvern",
+      "x": 18.0,
+      "y": -9.75,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "33374986A8F5C154"
+      ],
+      "description": [
+        "Si vous n'avez pas joué Minecraft depuis le 1.13, cela pourrait vous embrouiller, mais vous connaissez les arbalètes et les piercing. Ils ont un enchantement qui permet à leurs flèches de passer par de multiples cibles et de faire des dégâts en permanence."
+      ],
+      "id": "64CD15959295C07D",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "6D22F043C54E457B",
+          "item": "draconicevolution:item_wyvern_proj_penetration",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de pénétration de la projection Wyvern",
+      "x": 18.0,
+      "y": -8.25,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "33374986A8F5C154"
+      ],
+      "description": [
+        "La vélocité est la vitesse d'un élément à une certaine direction. Puisque notre flèche ne sont pas de Gardiens de la galaxie, cela signifie essentiellement la vitesse d'une flèche. Avec chaque mise à niveau, il faut moins de temps de la flèche pour passer de votre Bow à votre cible."
+      ],
+      "id": "4C69D0D67EB454FA",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "66F3031000D08B9D",
+          "item": "draconicevolution:item_wyvern_proj_velocity",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de vélocité de la projection Wyvern",
+      "x": 18.0,
+      "y": -9.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "33374986A8F5C154"
+      ],
+      "description": [
+        "Tous les arbres attachés à ce qui est coupé, viennent avec."
+      ],
+      "id": "1A207D59CCA24F6C",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "092D0399C46E1E87",
+          "item": "draconicevolution:item_wyvern_tree_harvest",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Pêcheur à l'arbre Wyvern",
+      "x": 18.0,
+      "y": -3.75,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "05C50766BF24B3A5"
+      ],
+      "description": [
+        "Ok maintenant ceux-ci donnent à la fois Gliding et vol réel, vol créatif pour être plus exact."
+      ],
+      "id": "03194E92CFD3A39A",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "68C73CA934ED53AC",
+          "item": "draconicevolution:item_draconic_flight",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de vol draconien",
+      "x": 18.75,
+      "y": 0.75,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2ED3BEBD92E49F65"
+      ],
+      "id": "1AC9EDF7E4C01496",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "0E7C856E77A15C30",
+          "item": "draconicevolution:item_draconic_proj_accuracy",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module d'exactitude des projectiles draconiens",
+      "x": 18.75,
+      "y": -7.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "46FBBD9B8430D46C"
+      ],
+      "id": "5B43AEFEFE5D9689",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "7FD793A6D7BCA15B",
+          "item": "draconicevolution:item_draconic_proj_damage",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de dommages projetés draconiens",
+      "x": 18.75,
+      "y": -9.75,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "64CD15959295C07D"
+      ],
+      "id": "3DC47A6CD7680C95",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "373433D27D46587B",
+          "item": "draconicevolution:item_draconic_proj_penetration",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de pénétration des projectiles draconiens",
+      "x": 18.75,
+      "y": -8.25,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "4C69D0D67EB454FA"
+      ],
+      "id": "00E331B305149065",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "44970FF17B8D1F1E",
+          "item": "draconicevolution:item_draconic_proj_velocity",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de vélocité de projection draconienne",
+      "x": 18.75,
+      "y": -9.0,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1A207D59CCA24F6C"
+      ],
+      "id": "3F3CC46EAADBC2AE",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "4F67D6059DD48AC2",
+          "item": "draconicevolution:item_draconic_tree_harvest",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Harvester draconien",
+      "x": 18.75,
+      "y": -3.75,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "03194E92CFD3A39A"
+      ],
+      "id": "5D8705C7B1DE69E8",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "20148CFE7FDA1155",
+          "item": "draconicevolution:item_chaotic_flight",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de vol chaotique",
+      "x": 19.5,
+      "y": 0.75,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1AC9EDF7E4C01496"
+      ],
+      "id": "5C1BAF065CF766D1",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "63D32BC45EDB9390",
+          "item": "draconicevolution:item_chaotic_proj_accuracy",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module d'exactitude des projections chaotiques",
+      "x": 19.5,
+      "y": -7.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "00E331B305149065"
+      ],
+      "id": "3C0FB6D793005396",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "1F839C2EEE52EA9F",
+          "item": "draconicevolution:item_chaotic_proj_velocity",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de vélocité projectile chaotique",
+      "x": 19.5,
+      "y": -9.0,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5B43AEFEFE5D9689"
+      ],
+      "id": "722255E196914826",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "5925B6AB934AD609",
+          "item": "draconicevolution:item_chaotic_proj_damage",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de dommages projectiles chaotiques",
+      "x": 19.5,
+      "y": -9.75,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "3DC47A6CD7680C95"
+      ],
+      "id": "7F0A81BF645861E9",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "3C93C4CCF72A89FF",
+          "item": "draconicevolution:item_chaotic_proj_penetration",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de pénétration des projectiles chaotiques",
+      "x": 19.5,
+      "y": -8.25,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "3F3CC46EAADBC2AE"
+      ],
+      "id": "5983532377601B53",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "65EF91AE4C4E33D7",
+          "item": "draconicevolution:item_chaotic_tree_harvest",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Moissonneuse-arbre chaotique",
+      "x": 19.5,
+      "y": -3.75,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "334E123A474FFF6F"
+      ],
+      "description": [
+        "Avant d'arriver ici d'abord, vous avez besoin d'un élément qui nécessite OP dedans: Wyvern Bow, Chaotic Capacitor, Staff of Power n'importe quoi. Ensuite, vous avez besoin d'un module d'énergie dans l'élément, qui détermine le stockage OP dans l'élément et c'est ce que l'élément va utiliser pour alimenter. Une fois que vous avez cela, faites et placez le Transfuser d'énergie, obtenez OP dedans, puis placez votre article dedans! Vous saurez que cela fonctionne lorsque l'OP dedans s'allume et bouge."
+      ],
+      "id": "4AE71FBC7633D86B",
+      "rewards": [
+        {
+          "id": "100D06C8C7175E7B",
+          "item": "draconicevolution:draconic_relay_crystal",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "pentagon",
+      "tasks": [
+        {
+          "id": "3E4668577A38A9F4",
+          "item": "draconicevolution:energy_transfuser",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Ajouter un OP aux points",
+      "x": 7.0,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "334E123A474FFF6F"
+      ],
+      "description": [
+        "Les cristaux IO fonctionnent comme des blocs qui peuvent se connecter les uns aux autres et déplacer la puissance les uns des autres. Pour les lier, Majer Droite Cliquez avec un Binder Cristal pour définir un et puis Droite Cliquez sur quel Crystal vous voulez connecté. Lorsque vous regardez le Crystal, il va dire soit Entrée de bloc ou Sortie à bloc. Input est celui que vous voulez prendre OP de et Sortie à l'endroit où vous voulez qu'il aille."
+      ],
+      "id": "590B3DC1EED163C2",
+      "rewards": [
+        {
+          "id": "5D7A6481752A75AB",
+          "item": "draconicevolution:crystal_binder",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "pentagon",
+      "tasks": [
+        {
+          "id": "512DEC02DF54425A",
+          "item": {
+            "Count": 1,
+            "id": "draconicevolution:basic_io_crystal"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Déplacement",
+      "x": 5.0,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "490662702864EBE1"
+      ],
+      "description": [
+        "Découvrez les modules pour en savoir plus sur l'utilisation et la mise à niveau des éléments DE! Il peut faire des terres agricoles ou prendre votre argent. Oh attendez Minecraft Hoe désolé je pensais à un autre."
+      ],
+      "id": "53CEFB51A7B1EF0E",
+      "tasks": [
+        {
+          "id": "346C436FC22570F7",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {},
+                  "provider_id": "[I;475754603,972900585,-1140658449,-718867576]"
+                }
+              }
+            },
+            "id": "draconicevolution:wyvern_hoe"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "La Commission européenne",
+      "x": 12.5,
+      "y": -4.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "490662702864EBE1"
+      ],
+      "description": [
+        "Découvrez les modules pour en savoir plus sur l'utilisation et la mise à jour des éléments DE! La Axe Wyvern est similaire à Minecraft Axes après les mises à jour de combat. Ils peuvent concevoir une arme pour tuer des ennemis, ou un outil pour couper les arbres."
+      ],
+      "id": "3605C4D7A0F3F451",
+      "tasks": [
+        {
+          "id": "160E4CF59EBF73B7",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {
+                    "mining_speed": {
+                      "hud": 1,
+                      "value": 1.0
+                    }
+                  },
+                  "provider_id": "[I;-639362057,-1111798919,-1262598324,-1993304556]"
+                }
+              }
+            },
+            "id": "draconicevolution:wyvern_axe"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Wyvern Axe",
+      "x": 10.5,
+      "y": -4.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "702CF3DC93F91261"
+      ],
+      "description": [
+        "Version améliorée de la hache Wyvern."
+      ],
+      "id": "127F2C2E54740EB9",
+      "tasks": [
+        {
+          "id": "5522B2664AC34547",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {
+                    "mining_speed": {
+                      "hud": 1,
+                      "value": 1.0
+                    }
+                  },
+                  "provider_id": "[I;751625970,667894999,-1723274391,-1629736842]"
+                }
+              }
+            },
+            "id": "draconicevolution:draconic_axe"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Axe draconienne",
+      "x": 10.5,
+      "y": -3.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "702CF3DC93F91261"
+      ],
+      "description": [
+        "Une houe améliorée, donc serait juste une bonne et gentille dame ?"
+      ],
+      "id": "25D3042F4B3B15C6",
+      "tasks": [
+        {
+          "id": "69051971523B3FC2",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {},
+                  "provider_id": "[I;-2070226973,182207722,-1354891355,-1368062951]"
+                }
+              }
+            },
+            "id": "draconicevolution:draconic_hoe"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Hoe draconienne",
+      "x": 12.5,
+      "y": -3.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "42276CAE1B9E1757"
+      ],
+      "description": [
+        "C'est là qu'il descend, aimez-vous blesser vos ennemis comme un camion, mais beaucoup plus lentement? Ou préférez-vous être une personne normale qui utilise une épée."
+      ],
+      "id": "13FCD02E6AF5F681",
+      "tasks": [
+        {
+          "id": "635CCEC1AA8D783C",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {
+                    "mining_speed": {
+                      "hud": 1,
+                      "value": 1.0
+                    }
+                  },
+                  "provider_id": "[I;952293489,-765310133,-1163111998,-1800614872]"
+                }
+              }
+            },
+            "id": "draconicevolution:chaotic_axe"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Axe chaotique",
+      "x": 10.5,
+      "y": -1.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "42276CAE1B9E1757"
+      ],
+      "description": [
+        "Une Hoe Chaotique, je suis sortie avec un de ces gars."
+      ],
+      "id": "67E3B44063E5CC9C",
+      "tasks": [
+        {
+          "id": "1A765D8A09D5F932",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {},
+                  "provider_id": "[I;-825978574,-1987951885,-1800519781,642985972]"
+                }
+              }
+            },
+            "id": "draconicevolution:chaotic_hoe"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Hoe chaotique",
+      "x": 12.5,
+      "y": -1.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "33374986A8F5C154"
+      ],
+      "description": [
+        "Wireless Energy Links aide à le faire pour que les cristaux sans fil puissent recharger vos objets. Plus les modules, plus il peut le prendre et à un meilleur taux."
+      ],
+      "id": "2EEF092C8DF3BA68",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "45DF450A6B3DD882",
+          "item": "draconicevolution:item_wyvern_energy_link",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Lien énergie sans fil",
+      "x": 18.0,
+      "y": -11.25,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2EEF092C8DF3BA68"
+      ],
+      "description": [
+        "Plus le lien énergétique ou tunnel est visiblement plus il peut transférer OP, mais vous avez peut-être aussi remarqué sonething manquant avec le lien énergétique. Cela ne fonctionne pas entre les dimensions! Heureusement, les meilleurs peuvent, juste s'assurer que l'autre côté est chargé."
+      ],
+      "id": "37DD2CA31799D7FA",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "329B31F476FF4368",
+          "item": "draconicevolution:item_draconic_energy_link",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Tunnel d'énergie quantique",
+      "x": 18.75,
+      "y": -11.25,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "37DD2CA31799D7FA"
+      ],
+      "id": "1F866D7E1CC67822",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "35841FB15E16EBBF",
+          "item": "draconicevolution:item_chaotic_energy_link",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Tunnel d'énergie quantique enchaîné au chaos",
+      "x": 19.5,
+      "y": -11.25,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "33374986A8F5C154"
+      ],
+      "description": [
+        "Qu'est-ce qui se passe avec Physique et De et les trahir? Gravity tire la flèche vers le bas au fil du temps qu'il est tourné. Compensation de gravité nous fait moins de soucis à ce sujet."
+      ],
+      "id": "01EDD412B979D891",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "281EB93613D00BCC",
+          "item": "draconicevolution:item_wyvern_proj_grav_comp",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de compensation de la gravité de la projection de Wyvern",
+      "x": 18.0,
+      "y": -6.75,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "01EDD412B979D891"
+      ],
+      "id": "0333254AAEFEE900",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "75228940AA2EF96F",
+          "item": "draconicevolution:item_draconic_proj_grav_comp",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de compensation de la gravité de la projection draconienne",
+      "x": 18.75,
+      "y": -6.75,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "0333254AAEFEE900"
+      ],
+      "id": "37BF25C326263D11",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "0C17DFEC3B1FBC7C",
+          "item": "draconicevolution:item_chaotic_proj_grav_comp",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de compensation de la gravité des projectiles chaotiques",
+      "x": 19.5,
+      "y": -6.75,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "33374986A8F5C154"
+      ],
+      "description": [
+        "Grâce à Newton nous savons pour chaque action il y a une réaction égale et opposée. Fondamentalement, quand une flèche frappe une mafia, la force de la mafia s'applique à la flèche qui va ralentir. Sauf si vous avez ce module. Il n'agit pas comme si chaque mafia était du papier, il agit comme si chaque mafia n'était pas dans le chemin. Flèches ne ralentira pas après avoir piraté une cible."
+      ],
+      "id": "60F711424A579835",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "3599F6440BC1FC94",
+          "item": "draconicevolution:item_draconic_proj_anti_immune",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module d'annulation de l'immunité projectile",
+      "x": 21.0,
+      "y": -9.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "33374986A8F5C154"
+      ],
+      "description": [
+        "La plupart des Bows sont semi-automatiques. Vous devez dessiner la chaîne, relâcher, et mettre une autre flèche dans l'arc, et répéter. Au lieu de sauter tout ce qui laisse la Bow automatiquement tirer à chaque fois qu'il est complètement dessiné."
+      ],
+      "id": "0A9F0B5C3880848D",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "09B532405CD0D351",
+          "item": "draconicevolution:item_wyvern_auto_fire",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module d'incendie automatique",
+      "x": 21.0,
+      "y": -7.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "33374986A8F5C154"
+      ],
+      "description": [
+        "Les éléments obtenus de l'outil qui est sur vont aller à votre poitrine Ender. Le Minecraft un pas en mouvement."
+      ],
+      "id": "157AB79DDE407485",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "080136E9F7682DB5",
+          "item": "draconicevolution:item_wyvern_ender_collection",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de collecte d'Ender",
+      "x": 18.0,
+      "y": -5.25,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "157AB79DDE407485"
+      ],
+      "description": [
+        "Même chose, mais avec des options de filtrage."
+      ],
+      "id": "3813359867A0FB39",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "1A8BC33EB53185BF",
+          "item": "draconicevolution:item_draconic_ender_collection",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de collecte des Enders filtrables",
+      "x": 18.75,
+      "y": -5.25,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "33374986A8F5C154"
+      ],
+      "description": [
+        "Le filtrage n'est pas suffisant?!?! Vous voulez détruire les objets?!?! Vous monstre!"
+      ],
+      "id": "5EB48273B350748C",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "0EC70F29CDBE0439",
+          "item": "draconicevolution:item_wyvern_junk_filter",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module d'incinération sélective",
+      "x": 21.0,
+      "y": -5.25,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "33374986A8F5C154"
+      ],
+      "description": [
+        "Quand votre exploitation minière est ralentie, cela inclut lorsque vous volez ou même que vous rebondissez dans l'eau. Heureusement, vous pouvez utiliser Air Affinty Enchantment pour ne pas le faire! Pas un Enchantement vanillé mais quand même utile! Oh attends, j'étais censé parler du Module... même chose!"
+      ],
+      "id": "14DE743AB28ED515",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "1C45969026D9AB5F",
+          "item": "draconicevolution:item_wyvern_mining_stability",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module de stabilisation minière",
+      "x": 21.0,
+      "y": 0.75,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "33374986A8F5C154"
+      ],
+      "description": [
+        "En gros, ça se met en marche. Personnellement, j'aime ça mais c'est à vous de l'utiliser !"
+      ],
+      "id": "3E1E494481CBFBD1",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "4B39B5166E65A344",
+          "item": "draconicevolution:item_wyvern_hill_step",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module Étape de la colline",
+      "x": 21.0,
+      "y": 1.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "33374986A8F5C154"
+      ],
+      "description": [
+        "L'eau est un peu visqueuse, ou au moins plus dense que l'air. En raison de cette Mining Underwater est plus lent. Vous pouvez utiliser l'Enchantement de Aqua Affinity, ou utiliser ce module. Votre choix!"
+      ],
+      "id": "69866E962225AC6D",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "1B5B381F6CC062AF",
+          "item": "draconicevolution:item_wyvern_aqua_adapt",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module Aqua Adapt",
+      "x": 21.0,
+      "y": 0.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "33374986A8F5C154"
+      ],
+      "description": [
+        "À moins que vous soyez un petit tricheur qui utilise Night Vision Texture Packs, vous pourriez trouver le noir un peu inquiet. Heureusement le module de vision nocturne dans un DE Chessplate aide à surmonter la peur de ne pas être en mesure de voir dans le noir. Pas la peur de ce qui est dans le noir..."
+      ],
+      "id": "426788478AFAD97A",
+      "shape": "square",
+      "size": 0.75,
+      "tasks": [
+        {
+          "id": "6F96072794C87AA7",
+          "item": "draconicevolution:item_wyvern_night_vision",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Module vision nocturne",
+      "x": 21.0,
+      "y": -0.75,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "can_repeat": 0,
+      "description": [
+        "Cette quête a été créée par AllTheMods Staff, ou un contributeur communautaire pour une utilisation dans AllTheMods Modpacks.",
+        "Comme tous les packs AllTheMods sont sous licence All Rights Reserved, cette Quest n'est pas autorisée à être utilisée dans les packs publics non publiés par l'équipe AllTheMods, sans autorisation explicite.",
+        "Cette quête est intentionnellement cachée, si vous voyez cela, vous êtes en mode édition.",
+        "Repère de lecture : obtiens le livre indiqué pour poursuivre. Cette étape ne donne aucune récompense."
+      ],
+      "disable_toast": 1,
+      "hide_details_until_startable": 1,
+      "hide_until_deps_visible": 1,
+      "icon": {
+        "Count": 1,
+        "id": "ftbquests:custom_icon",
+        "tag": {
+          "Icon": "minecraft:item/barrier"
+        }
+      },
+      "id": "3646F3DFC077BDB7",
+      "invisible": 1,
+      "optional": 1,
+      "shape": "octagon",
+      "tasks": [
+        {
+          "id": "6D4A9966D2A1BFF7",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "3A610B036D584BDF",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 8.0,
+      "y": -12.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Livre",
+      "dependencies": []
+    }
+  ],
+  "title": "Draconic Evolution",
+  "default_consume_items": false
+}

@@ -1,0 +1,1832 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_min_width": 200,
+  "default_quest_shape": "",
+  "filename": "atm9_mekanism_reactors",
+  "group": "3DA9E3931E28DB13",
+  "icon": "mekanism:supercharged_coil",
+  "id": "4B888F7902648E99",
+  "images": [
+    {
+      "height": 3.0,
+      "image": "ftbquests:tasks/input_only",
+      "rotation": 45.0,
+      "width": 3.0,
+      "x": 17.0,
+      "y": -7.0
+    },
+    {
+      "height": 3.0,
+      "image": "ftbquests:tasks/input_only",
+      "rotation": 0.0,
+      "width": 3.0,
+      "x": 17.0,
+      "y": -7.0
+    },
+    {
+      "height": 3.0,
+      "image": "ftbquests:block/barrier_open",
+      "rotation": 0.0,
+      "width": 3.0,
+      "x": 2.0,
+      "y": -7.0
+    },
+    {
+      "height": 3.0,
+      "image": "ftbquests:block/barrier_open",
+      "rotation": 45.0,
+      "width": 3.0,
+      "x": 2.0,
+      "y": -7.0
+    },
+    {
+      "height": 1.0,
+      "image": "mekanism:item/hazmat_mask",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": -1.0,
+      "y": 0.75
+    },
+    {
+      "height": 1.0,
+      "image": "mekanism:item/hazmat_gown",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": -1.0,
+      "y": 1.25
+    },
+    {
+      "height": 1.0,
+      "image": "mekanism:item/hazmat_pants",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": -1.0,
+      "y": 1.75
+    },
+    {
+      "height": 1.0,
+      "image": "mekanism:item/hazmat_boots",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": -1.0,
+      "y": 2.25
+    },
+    {
+      "height": 1.0,
+      "image": "mekanism:item/fluorite_gem",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 8.0,
+      "y": 1.5
+    },
+    {
+      "height": 1.0,
+      "image": "mekanism:item/yellow_cake_uranium",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 8.0,
+      "y": 3.5
+    },
+    {
+      "alpha": 150,
+      "height": 1.5,
+      "image": "ae2:block/controller_column_lights",
+      "rotation": 90.0,
+      "width": 1.5,
+      "x": 4.0,
+      "y": -1.0
+    },
+    {
+      "height": 1.0,
+      "image": "ftbquests:block/screen_side",
+      "order": -1,
+      "rotation": 0.0,
+      "width": 5.0,
+      "x": 12.5,
+      "y": -6.0
+    }
+  ],
+  "order_index": 8,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "dependencies": [
+        "49E58F3D460A8647"
+      ],
+      "description": [
+        "Le réacteur à fission de Mekanism produit de la chaleur, utilisée notamment pour alimenter une turbine industrielle. Il demande du combustible, un circuit de refroidissement et une gestion des déchets.",
+        "Les accidents et la radioactivité sont activés dans OLYCITY. Construis loin des habitations, vérifie chaque liaison et prévois un arrêt avant d’alimenter le réacteur.",
+        "Les composants demandés valident les préparatifs. Ils ne prouvent pas que ton réacteur est sûr."
+      ],
+      "id": "4DF1C58092E4D7AB",
+      "min_width": 350,
+      "rewards": [
+        {
+          "id": "68FD6AE65EAE81DD",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "gear",
+      "subtitle": "Orange = Radioprotection",
+      "tasks": [
+        {
+          "id": "0D4BE4B1E10CEFCD",
+          "item": "mekanism:hazmat_mask",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "3465E75E9799D773",
+          "item": "mekanism:hazmat_gown",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "53808A5945DAA2AE",
+          "item": "mekanism:hazmat_pants",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "44784645322CC2C5",
+          "item": "mekanism:hazmat_boots",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Préparer le chantier nucléaire",
+      "x": 0.0,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "4DF1C58092E4D7AB"
+      ],
+      "description": [
+        "Il est temps de rassembler les matériaux dont nous aurons besoin pour construire le réacteur.",
+        "Tout comme la plupart des multiblocs Mekanism, les réacteurs peuvent être une taille personnalisée selon vos besoins. Ils doivent être cuboïdes, avec la taille extérieure minimale étant 3 large, 4 haut, et 3 blocs de profondeur. La taille maximale est 18x18x18. Nous allons construire un 5x5 pour commencer.",
+        "Les bords de l'enveloppe extérieure doivent être faits de boîtiers de réacteur de fission, tandis que les faces peuvent être soit des boîtiers ou verre de réacteur, des ports de réacteur, ou des adaptateurs logiques de réacteur.",
+        "Pour l'instant, construisons un réacteur de fission 5x5x5 de base !",
+        "Vous avez besoin de plus d'aide pour le construire? La tenue de w tout en plantant sur la Fission Reactor Casing vous montrera le Ponder qui peut vous aider à le construire."
+      ],
+      "hide_until_deps_visible": 0,
+      "id": "649F32A87D16B7B9",
+      "min_width": 300,
+      "rewards": [
+        {
+          "id": "2139BD7DB754B477",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "subtitle": "Casiers et verre",
+      "tasks": [
+        {
+          "count": 44,
+          "id": "4E3480FC9B71A9C0",
+          "item": "mekanismgenerators:fission_reactor_casing",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 50,
+          "id": "4A8B70EDB59E5EA2",
+          "item": "mekanismgenerators:reactor_glass",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Bases du bâtiment des réacteurs de fission",
+      "x": 0.0,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "649F32A87D16B7B9"
+      ],
+      "description": [
+        "Pour que nous puissions prendre n'importe quoi dans ou hors du réacteur de fission, nous aurons besoin de ports de réacteur de fission. Ceux-ci peuvent être configurés en entrée ou sortie en utilisant le configurateur.",
+        "Chaque réacteur de fission a besoin d'un minimum de 4 ports :",
+        "1 Entrée du liquide de refroidissement",
+        "1 Sortie du liquide de refroidissement",
+        "1 Entrée de carburant fissile",
+        "1 Produit des déchets"
+      ],
+      "id": "775344589DB181F7",
+      "min_width": 400,
+      "rewards": [
+        {
+          "id": "586987CD2A91B477",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "count": 4,
+          "id": "7A7BD117B9A2F964",
+          "item": "mekanismgenerators:fission_reactor_port",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Interagir avec le réacteur de fission",
+      "x": 1.5,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "649F32A87D16B7B9"
+      ],
+      "description": [
+        "Peur de faire exploser votre réacteur de fission et de provoquer une fuite massive de rayonnement? Ne vous inquiétez pas, nous sommes tous. *insérez un terrible flashback ici*",
+        "Alors comment pouvons-nous prévenir une catastrophe aussi catastrophique? En créant un disjoncteur de pierre rouge utilisant des adaptateurs logiques de réacteur de fission. Maintenant, ce ne sont pas 100% garantis pour arrêter une explosion, mais ils sont absolument agréables à avoir.",
+        "Essentiellement, ces adaptateurs nous permettent de contrôler le réacteur à l'aide de Redstone. Avec un seul, vous pouvez utiliser un levier pour activer et désactiver le réacteur. Cependant, nous allons les utiliser pour le contrôle des dommages.",
+        "Vous pouvez également les régler pour émettre un signal Redstone en fonction d'une certaine condition dans le réacteur, comme les dommages critiques ou le carburant insuffisant. Ceci est utile pour mettre en place un disjoncteur pour arrêter le réacteur si jamais cela arrive."
+      ],
+      "id": "0CD2A03C8B482305",
+      "min_width": 300,
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "2D66D6FCC7F692AE",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "subtitle": "Parce qu'on a tout fait sauter un réacteur avant.",
+      "tasks": [
+        {
+          "id": "6A5CEA9E11026CCE",
+          "item": "mekanismgenerators:fission_reactor_logic_adapter",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Réacteur en échec en toute sécurité",
+      "x": 1.5,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "649F32A87D16B7B9"
+      ],
+      "description": [
+        "L'intérieur du réacteur est constitué de piliers utilisant plusieurs blocs d'assemblage de combustible de fission, avec un seul bloc d'assemblage de contrôle placé au sommet de chaque pilier. Ceux-ci peuvent être n'importe où de 1 à 15 blocs de hauteur, en fonction de la taille du réacteur.",
+        "Pour cette construction, nous mettrons 2 des assemblages de carburant de fission au centre de notre multibloc, puis nous mettrons l'assemblage de la barre de contrôle directement dessus."
+      ],
+      "id": "4D39B7CF5A260B98",
+      "min_width": 250,
+      "rewards": [
+        {
+          "id": "29DCA6968F7C1F01",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "count": 2,
+          "id": "11C9199F8035FA6E",
+          "item": "mekanismgenerators:fission_fuel_assembly",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "42B17B47B3628CA9",
+          "item": "mekanismgenerators:control_rod_assembly",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "À l'intérieur du réacteur : contrôle du carburant",
+      "x": 1.5,
+      "y": 1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "0CD2A03C8B482305"
+      ],
+      "description": [
+        "En utilisant quelques mécaniciens de vanille et 2 adaptateurs logiques de réacteur de fission, nous pouvons créer un simple disjoncteur pour faire le voyage et éteindre le réacteur au cas où les choses deviennent un peu folles.",
+        "Pour ce faire, nous aurons besoin d'un seul morceau de Redstone, d'un Piston, d'un bloc de sable ou de gravier et d'un Observateur.",
+        "Sur l'un des visages, nous allons mettre un adaptateur logique vers le bas, puis sauter un bloc au-dessus et placer un autre adaptateur. Régler l'adaptateur supérieur à \"Activation\", et l'adaptateur inférieur à \"Damage Critical\".",
+        "Ensuite, devant et sous le bas Adaptateur, placez tout bloc de construction et collez un morceau de Redstone sur lui menant de l'Adaptateur. Nous placerons ensuite un Piston face devant ce Redstone, puis placez notre morceau de sable ou de gravier sur ce Piston.",
+        "Pour la dernière partie de notre disjoncteur, placez l'observateur avec le visage orienté vers l'extérieur vers la configuration de Piston. C'est important !",
+        "Chaque fois que le réacteur a des dommages critiques, il active alors l'adaptateur inférieur, ce qui fait que la pierre rouge obtient un signal, qui active ensuite le piston et pousse vers le haut le gravier/sable. Cela active l'observateur, qui éteint ensuite le réacteur."
+      ],
+      "icon": "minecraft:observer",
+      "id": "0AD770FD1D80FADD",
+      "min_width": 500,
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "088AFBD699236828",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "subtitle": "Vous avez besoin d'un visuel ?",
+      "tasks": [
+        {
+          "count": 2,
+          "id": "73B46E7AA0E37697",
+          "item": "mekanismgenerators:fission_reactor_logic_adapter",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "3484368324DF5ED8",
+          "item": "minecraft:redstone",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "6E73BD553A090736",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:gravel"
+          },
+          "title": "Gravier ou sable",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "2D499A1E9930FC57",
+          "item": "minecraft:piston",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "186B0A150C88C971",
+          "item": "minecraft:observer",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Exemple Disjoncteur",
+      "x": 1.5,
+      "y": 4.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "775344589DB181F7",
+        "4D39B7CF5A260B98"
+      ],
+      "description": [
+        "Une fois que vous avez terminé de placer dans tous les blocs nécessaires pour construire le réacteur, il devrait donner des particules rouges pour montrer qu'il est complet.",
+        "Cliquer avec le bouton droit sur le Réacteur ouvrira l'interface. Ceci aura toutes les informations dont vous avez besoin pour exécuter le Réacteur correctement, ainsi que deux boutons pour activer et désactiver le Réacteur.",
+        "Sur la gauche, vous avez 2 réservoirs: Un pour le liquide de refroidissement et un pour le carburant fissile. Sur la droite, vous avez un pour les déchets nucléaires, et un pour le liquide de refroidissement chauffé, qui sera très probablement vapeur.",
+        "La barre de température vous montrera à quel point le réacteur est chaud. Après une certaine température, le réacteur commencera à prendre des dommages, ce qui finira par faire exploser le réacteur.",
+        "Pour ajuster le taux de combustion du carburant fissile et voir plus de statistiques, cliquez sur l'onglet (I) sur le côté gauche. Ici, vous pouvez ajuster la limite de débit, qui contrôle la quantité de carburant que le réacteur brûle par tique."
+      ],
+      "icon": "mekanism:geiger_counter",
+      "id": "31316B29DFEDA0CD",
+      "min_width": 500,
+      "progression_mode": "linear",
+      "rewards": [
+        {
+          "id": "3ABBEC3807A00E40",
+          "type": "xp",
+          "xp": 250,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "size": 1.5,
+      "subtitle": "Ce sont certainement des chiffres",
+      "tasks": [
+        {
+          "id": "119A323343D71032",
+          "item": "mekanismgenerators:fission_reactor_casing",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "L'interface du réacteur de fission",
+      "x": 3.0,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "4FF320982C289843"
+      ],
+      "description": [
+        "Chaque réacteur utilise de l'uranium quelque part pour le carburant, non ?",
+        "Pour commencer, ramassons des lingots d'uranium. Nous devrons les traiter dans une chambre d'enrichissement pour le transformer en Uranium de gâteau jaune."
+      ],
+      "icon": "mekanism:yellow_cake_uranium",
+      "id": "2D31F1233108285F",
+      "rewards": [
+        {
+          "id": "7C32F4FA3CDAB80F",
+          "type": "xp",
+          "xp": 25,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Bien sûr qu'il utilise l'uranium",
+      "tasks": [
+        {
+          "count": 2,
+          "id": "2FF0DF7DAE63E839",
+          "item": "mekanism:yellow_cake_uranium",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&aUranium",
+      "x": 5.5,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2D31F1233108285F"
+      ],
+      "description": [
+        "Le traitement de l’uranium fait partie de la préparation du combustible de fission. Consulte les recettes de Mekanism dans JEI.",
+        "Cette étape demande le matériau indiqué, plutôt qu’une validation à la main de l’interface d’une machine."
+      ],
+      "id": "034F1743020D12D6",
+      "progression_mode": "linear",
+      "rewards": [
+        {
+          "id": "6F2D3E2DA0DEAD34",
+          "type": "xp",
+          "xp": 25,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "1FDD53F79E6C234E",
+          "item": "mekanism:chemical_oxidizer",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "206682059F852AD2",
+          "type": "item",
+          "item": "mekanism:yellow_cake_uranium",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Préparer le combustible",
+      "x": 7.0,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2136DF6FA89074EE"
+      ],
+      "description": [
+        "En guise de récapitulation, nous avons mis en place une installation avancée de traitement des minerais utilisant plusieurs gaz, machines et plus encore.",
+        "Dans ce chapitre, nous utiliserons plus de ceux-ci pour créer des réacteurs multiblocs puissants, ainsi que des moyens avancés pour créer et stocker de la puissance. Cela conduira également à la fabrication de Pellets Antimatière, qui sont utilisés pour faire l'ATM Star, ainsi que certains des outils et des armes les plus forts dans le pack."
+      ],
+      "icon": "mekanism:antiprotonic_nucleosynthesizer",
+      "id": "49E58F3D460A8647",
+      "min_width": 300,
+      "rewards": [
+        {
+          "id": "557F720A306D307E",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 2.0,
+      "subtitle": "&cRequiert Quest \"Mekanism avancé\" Achèvement du chapitre du Mekanism",
+      "tasks": [
+        {
+          "id": "51208FCEEE7F9C87",
+          "type": "item",
+          "item": "mekanism:antiprotonic_nucleosynthesizer",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 1.5,
+      "y": -1.0,
+      "repeatable": false,
+      "title": "Nucléosynthétiseur antiprotonique"
+    },
+    {
+      "dependencies": [
+        "31316B29DFEDA0CD"
+      ],
+      "description": [
+        "Si vous regardez le carburant fissile en ce moment dans JEI, je parie que vous serez submergé par tout ce que vous avez besoin pour le faire.",
+        "Tout se résume à créer l'hexafluorure d'uranium. Pour ce faire, concentrons-nous sur la fabrication de ces deux gaz : l'acide fluorhydrique et l'oxyde d'uranium."
+      ],
+      "icon": "mekanism:reprocessed_fissile_fragment",
+      "id": "4FF320982C289843",
+      "rewards": [
+        {
+          "id": "649E495F6DA0E680",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "6F28DB2969846941",
+          "type": "item",
+          "item": "mekanism:reprocessed_fissile_fragment",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 4.5,
+      "y": 2.5,
+      "repeatable": false,
+      "title": "Fragment de Fissile Retraité"
+    },
+    {
+      "dependencies": [
+        "4FF320982C289843"
+      ],
+      "description": [
+        "Vous auriez déjà dû faire de l'acide sulfurique pour votre usine de traitement des minerais de niveau 4, mais voici un rappel sur la façon de l'obtenir.",
+        "Commencez par obtenir de la poussière de soufre soit en écrasant le soufre de Thermal, soit en mélangeant le chlorure d'hydrogène avec de la poudre à canon dans une chambre d'injection chimique.",
+        "Prenez la poussière de soufre et exécutez-la à travers un oxydant chimique pour obtenir le dioxyde de soufre. Combinez cela avec l'oxygène dans un infuseur chimique pour obtenir le trioxyde de soufre.",
+        "Ensuite, nous allons combiner la vapeur d'eau avec le trioxyde de soufre pour faire de l'acide sulfurique."
+      ],
+      "id": "269EF4F960D9CF38",
+      "progression_mode": "linear",
+      "rewards": [
+        {
+          "id": "573D2EE49163A7C2",
+          "type": "xp",
+          "xp": 25,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Une récapitulation rapide",
+      "tasks": [
+        {
+          "id": "52F1CAA204AE5AC4",
+          "type": "item",
+          "item": "mekanism:dust_sulfur",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "&2Acide sulfurique",
+      "x": 5.5,
+      "y": 1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "269EF4F960D9CF38"
+      ],
+      "description": [
+        "Prenons notre acide sulfurique et combinons-le avec du fluorite dans une chambre de dissolution chimique pour faire de l'acide fluorique.",
+        "On y est presque !"
+      ],
+      "id": "05E501D6C6815D69",
+      "progression_mode": "linear",
+      "rewards": [
+        {
+          "id": "5374528185289C2F",
+          "type": "xp",
+          "xp": 25,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "63D3870CE07264AA",
+          "type": "item",
+          "item": "mekanism:fluorite_gem",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "544635F432A05763",
+          "item": "mekanism:chemical_dissolution_chamber",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&bAcide fluorhydrique",
+      "x": 7.0,
+      "y": 1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "05E501D6C6815D69",
+        "034F1743020D12D6"
+      ],
+      "description": [
+        "En utilisant un autre Infuseur chimique, nous voulons combiner notre acide fluorhydrique avec l'oxyde d'uranium pour faire de l'hexafluorure d'uranium."
+      ],
+      "id": "04E8A4D2D576578A",
+      "progression_mode": "linear",
+      "rewards": [
+        {
+          "id": "1966556684292770",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "43836D47557E39FB",
+          "item": "mekanism:chemical_infuser",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&2Hexafluorure d'uranium",
+      "x": 8.0,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "04E8A4D2D576578A"
+      ],
+      "description": [
+        "Une fois qu'on a un Centrifuge isotopique, on peut faire fonctionner notre hexafluorure d'uranium et créer du Fissile Fuel !",
+        "Tu vois, ce n'était pas si mal ?"
+      ],
+      "icon": "mekanism:isotopic_centrifuge",
+      "id": "6A305C23EE3A7921",
+      "progression_mode": "linear",
+      "rewards": [
+        {
+          "id": "2F2AA8DCA0D3C507",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "1AA76C54F7B38685",
+          "item": "mekanism:isotopic_centrifuge",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&3Carburant de Fissile",
+      "x": 9.5,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6E8E2D007E14599D"
+      ],
+      "description": [
+        "Passons à la liste de contrôle une fois de plus pour nous assurer que nous avons tout prêt à aller avant de le démarrer :",
+        "1. Le costume Hazmat (d'abord la sécurité)",
+        "2. Eau/refroidisseur pompant dans un port d'entrée.",
+        "3. Le carburant fissile pompe dans un port d'entrée.",
+        "4. Un Port réglé pour produire le liquide de refroidissement chauffé, soit dans une poubelle ou une turbine industrielle.",
+        "5. Un port pour produire des déchets nucléaires menant à des barres de déchets radioactifs ou des machines pour le traiter, ou les deux!",
+        "Si vous êtes prêt à partir, appuyez sur le bouton Activer ! Vous pouvez également ajuster le taux de combustion pour produire plus de déchets nucléaires, mais démarrez lentement."
+      ],
+      "icon": "chipped:hazard_red_concrete",
+      "id": "1DDB96AF7990F2E1",
+      "min_width": 300,
+      "rewards": [
+        {
+          "id": "102AA561A7C76265",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "16213D32AB0A12E1",
+          "type": "item",
+          "item": "mekanismgenerators:fission_reactor_casing",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Le réacteur est en marche",
+      "x": 9.5,
+      "y": -1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6A305C23EE3A7921"
+      ],
+      "description": [
+        "Une fois qu'on aura commencé à brûler du combustible fissile dans le réacteur, on se fera chauffer le liquide de refroidissement et les déchets nucléaires.",
+        "C'est ici que le rayonnement s'installe. Tant qu'il restera en sécurité dans un conteneur ou une machine, vous n'aurez pas de déversements....c'est ça ?",
+        "La meilleure façon de stocker n'importe quelle substance radioactive est d'utiliser un Barrel de déchets radioactifs. Ceux-ci stockeront en toute sécurité les déchets, tout en se dégradant lentement le gaz sans causer un déversement de radiation. Vous ne voulez pas que votre déchet nucléaire soit assis dans votre réacteur car il provoque une production plus de chaleur, alors placez un port pour produire des déchets et expédiez-le dans un baril!",
+        "&9Remarque importante : le bris de toute machine, baril, tuyau ou tout autre élément qui contient un gaz radioactif à l'intérieur de celui-ci causera une fuite de rayonnement."
+      ],
+      "id": "6E8E2D007E14599D",
+      "min_width": 300,
+      "rewards": [
+        {
+          "id": "3D458482E5C4943B",
+          "type": "xp",
+          "xp": 25,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "count": 3,
+          "id": "3A6DDD6473D2F392",
+          "item": "mekanism:radioactive_waste_barrel",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Traitement des déchets nucléaires",
+      "x": 9.5,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1DDB96AF7990F2E1"
+      ],
+      "description": [
+        "&8Les déchets nucléaires peuvent être envoyés dans une centrifugeuse isotopique pour créer du plutonium.",
+        "Envoyer le Plutonium dans une chambre de réaction pressurisée avec un peu d'eau et de la poussière de fluorite vous donnera Plutonium Pellets. Ceux-ci sont utilisés pour faire des matériaux de jeu final!",
+        "Remarque : Cela créera également un sous-produit des déchets nucléaires usés, qui doit être pompé dans une barre de déchets pour l'entreposage."
+      ],
+      "id": "2A878D0A18D306B9",
+      "rewards": [
+        {
+          "id": "34626BF98BCF12E0",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "372E4C04FA9C04AB",
+          "item": "mekanism:pellet_plutonium",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 7.5,
+      "y": -1.5,
+      "repeatable": false,
+      "title": "Pastille de Plutonium"
+    },
+    {
+      "dependencies": [
+        "1DDB96AF7990F2E1"
+      ],
+      "description": [
+        "Pomper des déchets nucléaires dans un Activateur Neutron Solaire vous donnera du Polonium.",
+        "Exécutez le Polonium dans une chambre de réaction sous pression avec de la poussière de fluorite et vous obtiendrez des granulés de Polonium. Vous en aurez besoin pour l'avenir.",
+        "Remarque : Cela créera également un sous-produit des déchets nucléaires usés, qui doit être pompé dans une barre de déchets pour l'entreposage."
+      ],
+      "id": "0B3A816BFA2B327B",
+      "rewards": [
+        {
+          "id": "108311D93A5921CB",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "00D80C5587C3F4BF",
+          "item": "mekanism:pellet_polonium",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 8.5,
+      "y": -3.5,
+      "repeatable": false,
+      "title": "Pastille de Polonium"
+    },
+    {
+      "dependencies": [
+        "2A878D0A18D306B9",
+        "0B3A816BFA2B327B"
+      ],
+      "description": [
+        "Le Supercritical Phase Shifter (SPS for short) est une autre structure multiblocs utilisée pour infuser le polonium avec de grandes quantités de puissance pour créer du gaz antimatière, qui peut être cristallisé en granulés.",
+        "Pour construire le SPS, vous aurez besoin de faire un total de 72 SPS Casings (60 pour la construction, 12 pour faire les ports), 3 SPS Ports, 122 Structural Glass, et un autre article dont nous parlerons dans la prochaine quête."
+      ],
+      "id": "3422BFA73B18CF45",
+      "progression_mode": "linear",
+      "rewards": [
+        {
+          "id": "01C69808B43B8F30",
+          "item": "mekanism:sps_port",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "6BFD79880613C726",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.5,
+      "tasks": [
+        {
+          "count": 60,
+          "id": "1DEC6B3D98116699",
+          "item": "mekanism:sps_casing",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 122,
+          "id": "55630C5247D9C49D",
+          "item": "mekanism:structural_glass",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 3,
+          "id": "57906F6BBB1F91A6",
+          "item": "mekanism:sps_port",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&dChangeur de phase surpecritique",
+      "x": 6.0,
+      "y": -3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "0B3A816BFA2B327B"
+      ],
+      "description": [
+        "Vous avez probablement entendu des gens parler de la façon dont le réacteur de fusion est la meilleure source d'énergie du pack.",
+        "Une fois activé, le réacteur peut pousser jusqu'à 200MRF/t avec la bonne configuration. Il peut également être refroidi avec de l'eau pour produire de la vapeur, qui peut aller dans une turbine industrielle pour faire encore plus de puissance.",
+        "Pour construire le réacteur Fusion, nous devons suivre un modèle simple. Chaque visage ressemblera à ceci:",
+        "Pour le haut, nous voulons remplacer le bloc intermédiaire par le contrôleur de réacteur Fusion.",
+        "Pour les ports, vous pouvez remplacer n'importe lequel des Reactor Glass sur les côtés. Pour cette configuration, nous aurons besoin de deux ports pour entrer Deuterium et Tritium, puis d'un port pour la puissance de sortie."
+      ],
+      "id": "0BC38A30ED319ACF",
+      "min_width": 500,
+      "progression_mode": "linear",
+      "rewards": [
+        {
+          "id": "5A31EAC96264188C",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "size": 2.0,
+      "subtitle": "La meilleure source d'énergie dans le pack",
+      "tasks": [
+        {
+          "id": "051FEC9428A745C4",
+          "item": "mekanismgenerators:fusion_reactor_controller",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 36,
+          "id": "098CD19423A2C92E",
+          "item": "mekanismgenerators:fusion_reactor_frame",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 3,
+          "id": "624A782AB50680C5",
+          "item": "mekanismgenerators:fusion_reactor_port",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 25,
+          "id": "38E38565A700570A",
+          "item": "mekanismgenerators:reactor_glass",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Le réacteur de fusion",
+      "x": 8.5,
+      "y": -7.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "3422BFA73B18CF45"
+      ],
+      "description": [
+        "Pour produire 1mb d'Antimatière, vous avez besoin de 400MRF. Si vous n'avez pas commencé à faire un réacteur de fusion, c'est maintenant le bon moment pour le faire!"
+      ],
+      "id": "618AB4F2FF51CBF9",
+      "min_width": 300,
+      "rewards": [
+        {
+          "id": "5A004218303F28BF",
+          "item": "mekanism:supercharged_coil",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "44D528DCF04807FB",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "7E20302FD1DCAB63",
+          "item": "mekanism:supercharged_coil",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Les bobines surchargées",
+      "x": 6.0,
+      "y": -5.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "618AB4F2FF51CBF9"
+      ],
+      "description": [
+        "Avec tous les blocs rassemblés, il est temps de construire cette chose. Ci-dessous est un guide de texte, ou vous pouvez regarder le Ponder!",
+        "Chaque côté, y compris le bas et le haut, suivra ce modèle. Les bobines Supercharged devraient être placées l'une de l'autre au centre de leurs côtés respectifs, et les deux autres ports seront utilisés pour pomper en Polonium, et pomper le gaz antimatière.",
+        "Voici la structure complétée ci-dessous:"
+      ],
+      "id": "179101E3106D9F6D",
+      "min_width": 350,
+      "progression_mode": "linear",
+      "rewards": [
+        {
+          "id": "649699DB98233C1E",
+          "type": "xp",
+          "xp": 250,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "tasks": [
+        {
+          "id": "00190EEAABB5647A",
+          "item": "mekanism:sps_casing",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Construisez le SPS !",
+      "x": 6.0,
+      "y": -7.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "179101E3106D9F6D"
+      ],
+      "description": [
+        "Après avoir zappé des trillions de pouvoir dans le SPS, nous pouvons enfin créer des Pellets Antimatière.",
+        "Exécutez le gaz antimatière que vous obtenez du SPS dans un cristallisateur chimique et vous obtiendrez 1 Pellet antimatière pour chaque 1000mb que vous faites."
+      ],
+      "id": "050508F2C31CB58E",
+      "rewards": [
+        {
+          "id": "561B9A8049817873",
+          "type": "xp",
+          "xp": 1000,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "gear",
+      "size": 3.0,
+      "tasks": [
+        {
+          "id": "5C1ABF2B5557A0F1",
+          "item": "mekanism:pellet_antimatter",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 2.0,
+      "y": -7.0,
+      "repeatable": false,
+      "title": "Pastille d'antimatière"
+    },
+    {
+      "dependencies": [
+        "4D503E63E106A418"
+      ],
+      "description": [
+        "Pour voir un visuel, consultez le Ponder en tenant W tout en plantant sur la matrice de focalisation laser.",
+        "L'objectif est de viser chaque laser dans un amplificateur laser. L'utilisation d'un est assez lent, donc nous allons faire quelques-uns.",
+        "L'amplificateur laser a un point rouge sur l'un des visages. C'est ce que vous voulez pointer vers la matrice de focalisation laser.",
+        "Assurez-vous d'éteindre l'amplificateur laser (ou activez le contrôle Redstone) et attendez qu'il conserve au moins 400MRF, puis il sera prêt."
+      ],
+      "id": "09A54857F490B3F2",
+      "min_width": 400,
+      "rewards": [
+        {
+          "id": "495486FAD187A534",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "4520C6B0347415B8",
+          "item": "mekanism:laser_amplifier",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 3,
+          "id": "1377DD692F497448",
+          "item": "mekanism:laser",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Méthode de démarrage: Array laser Focus",
+      "x": 14.5,
+      "y": -6.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "04165F91FE1C957D"
+      ],
+      "description": [
+        "Vous faites déjà du lithium, puis vous le faites passer dans un Activateur Neutron Solaire pour créer du Tritium."
+      ],
+      "id": "49E7DE3EB99F49BB",
+      "rewards": [
+        {
+          "id": "7C59F59E265F8995",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "6B2F6EFE618A364C",
+          "item": "mekanism:solar_neutron_activator",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Carburant le réacteur de fusion: Tritium",
+      "x": 12.5,
+      "y": -7.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "04165F91FE1C957D"
+      ],
+      "description": [
+        "Pour alimenter notre réacteur de fusion, nous devrons créer deux gaz différents, celui-ci étant Deuterium.",
+        "Pour ce faire, nous devrons faire quelques pompes électriques et leur donner une mise à niveau du filtre. Placez-les sur un bloc d'eau source, donnez-leur de l'énergie, et ils vont pomper de l'eau lourde.",
+        "Pompez l'eau lourde dans un séparateur électrolytique pour obtenir Deuterium."
+      ],
+      "icon": "mekanism:electric_pump",
+      "id": "7BC5919B6FAA3798",
+      "rewards": [
+        {
+          "id": "0F5BBB8C1C118164",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "216087CD96D9F50D",
+          "item": "mekanism:electric_pump",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "4C609D49334F58B9",
+          "item": "mekanism:upgrade_filter",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Carburant du réacteur: Deuterium",
+      "x": 12.5,
+      "y": -8.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "49E7DE3EB99F49BB",
+        "7BC5919B6FAA3798"
+      ],
+      "description": [
+        "Pour lancer le réacteur Fusion, il nous faudra un petit coup de feu D-T. Ceci est fait en combinant Deuterium et Tritium dans un infuseur chimique.",
+        "Commencez par faire un Hohlraum et placez-le dans l'Infuser (où le symbole plus est) pour le remplir avec du carburant D-T. Maintenant, nous sommes prêts à démarrer le réacteur!"
+      ],
+      "id": "23AF6FCE875C33A5",
+      "rewards": [
+        {
+          "id": "5A9611636AE45C83",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "33847540FD525A72",
+          "item": "mekanismgenerators:hohlraum",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "L'injecteur de carburant",
+      "x": 14.5,
+      "y": -8.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "0BC38A30ED319ACF"
+      ],
+      "description": [
+        "Pour créer une réaction pour que le Réacteur s'allume, nous allons avoir besoin de l'injecter avec une tonne de puissance. Et je veux dire une tonne de puissance.",
+        "Cela vous oblige à configurer plusieurs lasers qui ont tous besoin d'être alimentés, puis à photographier 400MFE directement dans la matrice de focalisation laser.",
+        "La Matrix Laser Focus est placée au centre d'une face du réacteur Fusion. Nous allons construire les Lasers ensuite."
+      ],
+      "icon": "mekanism:laser",
+      "id": "4D503E63E106A418",
+      "min_width": 300,
+      "rewards": [
+        {
+          "id": "6681D18B2FB8299F",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "198A93A66BCC92E8",
+          "item": "mekanismgenerators:laser_focus_matrix",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Des faisceaux lasers",
+      "x": 10.5,
+      "y": -6.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "0BC38A30ED319ACF"
+      ],
+      "description": [
+        "Réacteurs de fusion ont besoin d'un carburant très spécial: D-T Carburant pour être exact.",
+        "Il y a deux façons d'alimenter le réacteur : soit en pompant le combustible D-T directement dans le réacteur à 1 000mb/t, soit en pompant chacun des deux combustibles séparément à des débits contrôlés.",
+        "Pour commencer, nous devons probablement savoir comment les fabriquer."
+      ],
+      "icon": "mekanismgenerators:fusion_fuel_bucket",
+      "id": "04165F91FE1C957D",
+      "rewards": [
+        {
+          "id": "1C37A951094D142E",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "4935D9AABEC76E13",
+          "type": "item",
+          "item": "mekanismgenerators:fusion_reactor_controller",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "L'alimentation du réacteur Fusion",
+      "x": 10.5,
+      "y": -8.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "09A54857F490B3F2",
+        "23AF6FCE875C33A5"
+      ],
+      "description": [
+        "Hohlraum rempli de carburant D-T ?",
+        "Deutérium et Tritium prêts à être pompés dans le réacteur ?",
+        "Un amplificateur laser avec au moins 400MRF prêt à tirer dans la matrice de focalisation laser? Vérifiez!",
+        "Une fois que vous êtes prêt, placez le Hohlraum dans le contrôleur de réacteur de fusion, pompez dans le carburant, puis activez votre amplificateur laser.",
+        "Si c'est bien fait, vous verrez le réacteur s'activer !"
+      ],
+      "icon": "mekanismgenerators:fusion_reactor_controller",
+      "id": "7A367C4F13D50786",
+      "min_width": 300,
+      "progression_mode": "linear",
+      "rewards": [
+        {
+          "id": "70B74286A127E9A9",
+          "type": "xp",
+          "xp": 500,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 3.0,
+      "tasks": [
+        {
+          "id": "4A0CE2A7E5568E9F",
+          "item": {
+            "Count": 1,
+            "id": "mekanismgenerators:hohlraum",
+            "tag": {
+              "mekData": {
+                "GasTanks": [
+                  {
+                    "Tank": 0,
+                    "stored": {
+                      "amount": 10,
+                      "gasName": "mekanismgenerators:fusion_fuel"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&dJe pense que nous sommes prêts",
+      "x": 17.0,
+      "y": -7.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7A367C4F13D50786"
+      ],
+      "description": [
+        "Prépare un contrôleur de réacteur à fusion Mekanism. Ce jalon valide le composant, pas la quantité d’énergie produite. Consulte le manuel avant de démarrer le réacteur."
+      ],
+      "id": "53B439DB1FFB9F1F",
+      "min_width": 300,
+      "rewards": [
+        {
+          "id": "69B84FE7340C6BAA",
+          "item": "mekanism:ultimate_induction_cell",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "637C783FB1862355",
+          "type": "xp",
+          "xp": 1000,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "06D17BF41F6F4367",
+          "type": "item",
+          "item": "mekanismgenerators:fusion_reactor_controller",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "&dLa source de puissance du jeu final",
+      "x": 20.0,
+      "y": -7.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6E8E2D007E14599D"
+      ],
+      "description": [
+        "La turbine industrielle est une structure massive multiblocs utilisée pour convertir le liquide de refroidissement chauffé en puissance. La taille minimale est 5x5x5, la taille maximale étant 17x17x18.",
+        "Pour construire la Turbine, nous aurons besoin de plusieurs blocs donc commençons par les bases.",
+        "Tout comme la plupart des multiblocs de Mekanism, le cadre doit être fait à partir de Turbine Casings. Cependant, au lieu de Reactor Glass, vous pouvez utiliser le verre structurel ou Casings pour chaque visage.",
+        "Nous allons construire cette Turbine, et la quête nécessite les matériaux exacts nécessaires."
+      ],
+      "id": "2F9FD4D57C534E5F",
+      "min_width": 300,
+      "rewards": [
+        {
+          "id": "0618A91DF76E01F1",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "gear",
+      "subtitle": "Bâtir le cadre",
+      "tasks": [
+        {
+          "count": 52,
+          "id": "28F0FB6A84630C05",
+          "item": "mekanismgenerators:turbine_casing",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 52,
+          "id": "620E14C6BC0AE622",
+          "item": "mekanism:structural_glass",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "La turbine industrielle",
+      "x": 12.5,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2F9FD4D57C534E5F"
+      ],
+      "description": [
+        "&9Les vannes à turbine sont utilisées pour pomper la vapeur, ainsi que pour pomper la puissance que la turbine crée.",
+        "&8Les turbines sont utilisées pour pomper l'excès d'eau lors de l'utilisation des condenseurs saturés. Sinon, elles permettent d'augmenter le débit global de vapeur à l'intérieur de la turbine. Le nombre total d'évents limite également le débit total de vapeur. Les évents peuvent également être utilisés sur la face supérieure de la turbine, mais pour cette construction, nous les utiliserons uniquement sur les faces extérieures.",
+        "&aLes condenseurs saturés sont utilisés pour convertir la vapeur en eau. Ils sont placés sur ou au-dessus de la couche contenant les bobines électromagnétiques."
+      ],
+      "id": "68B10DC9E42E33FC",
+      "min_width": 300,
+      "rewards": [
+        {
+          "id": "50A660DC87942439",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "count": 2,
+          "id": "1A7B0B3DFA622E04",
+          "item": "mekanismgenerators:turbine_valve",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 24,
+          "id": "2C20247698257C1E",
+          "item": "mekanismgenerators:turbine_vent",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 8,
+          "id": "329C1A81A2080470",
+          "item": "mekanismgenerators:saturating_condenser",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Les ports",
+      "x": 14.0,
+      "y": -0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2F9FD4D57C534E5F"
+      ],
+      "description": [
+        "Le rotor de turbine est placé au milieu de la turbine. Pour chaque rotor de turbine, vous aurez besoin de 2 lames de turbine.",
+        "En regardant le Rotor, le clic droit avec Turbine Blades les placera directement sur le Rotor. Plus le Rotor sera grand, plus les Blades deviendront longues. Pour cette construction, nous utilisons 6 Lames totales. Si vous prévoyez de construire une plus grande Turbine, vous devrez augmenter la largeur de la Turbine en fonction du nombre de Lames que vous prévoyez utiliser.",
+        "Le complexe rotatif doit être placé en haut du rotor de turbine. Il est alors entouré de disperseurs de pression.",
+        "Les Disperseurs doivent remplir toute la couche où se trouve le Complexe Rotationnel."
+      ],
+      "id": "499B47CC6A0B4E83",
+      "min_width": 300,
+      "rewards": [
+        {
+          "id": "6AC3E5B75F849844",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "count": 3,
+          "id": "01DC2997C8C252B3",
+          "item": "mekanismgenerators:turbine_rotor",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "108A366310CA6840",
+          "item": "mekanismgenerators:rotational_complex",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 8,
+          "id": "2FC2C873942CBFC6",
+          "item": "mekanism:pressure_disperser",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 6,
+          "id": "02F2742786E52FB9",
+          "item": "mekanismgenerators:turbine_blade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Le Rotor",
+      "x": 14.0,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2F9FD4D57C534E5F"
+      ],
+      "description": [
+        "La bobine électromagnétique est placée directement sur le dessus du complexe rotatif pour convertir l'énergie cinétique en puissance.",
+        "Vous pouvez utiliser plusieurs, avec 7 étant le maximum avec une turbine à 28 lames. Celles-ci doivent toucher une autre bobine, ou le complexe rotatif."
+      ],
+      "id": "66A973F05E255183",
+      "rewards": [
+        {
+          "id": "57E4E9C25C0B13D2",
+          "type": "xp",
+          "xp": 25,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "6B08FB53845B35C7",
+          "item": "mekanismgenerators:electromagnetic_coil",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 14.0,
+      "y": 1.5,
+      "repeatable": false,
+      "title": "Bobine électromagnétique"
+    },
+    {
+      "dependencies": [
+        "68B10DC9E42E33FC",
+        "66A973F05E255183",
+        "499B47CC6A0B4E83"
+      ],
+      "description": [
+        "Si vous avez construit la turbine correctement, vous verrez des particules rouges autour de la structure. Cliquer sur la turbine ouvrira l'interface.",
+        "Cela vous dira toutes les informations que vous devez connaître, y compris le débit total de vapeur, ainsi que la vapeur totale à l'intérieur de la turbine.",
+        "Sur la droite, vous aurez une barre qui vous montre la Puissance qui est stockée à l'intérieur de la Turbine. Si cela devient plein, la Turbine s'éteindra, à moins que vous la définisiez à Vent Overflow.",
+        "Allons-y !",
+        "Une fois que vous avez un réacteur de fission pleinement fonctionnel, pompez la vapeur directement dans une valve de turbine sur votre turbine. Puisque nous utilisons des condenseurs saturés dans cette construction, vous pouvez pomper de l'eau d'un ventilateur de turbine à nouveau dans votre réacteur si vous le souhaitez."
+      ],
+      "id": "099BF8ACAC539B34",
+      "min_width": 300,
+      "progression_mode": "linear",
+      "rewards": [
+        {
+          "id": "4A760BAB010CE464",
+          "type": "xp",
+          "xp": 250,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 2.0,
+      "tasks": [
+        {
+          "id": "716362A8050EC657",
+          "item": "mekanismgenerators:turbine_casing",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Create du Pouvoir avec la Turbine !",
+      "x": 15.5,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "49E58F3D460A8647"
+      ],
+      "description": [
+        "Prépare la poussière de lithium indiquée pour les composants du stockage avancé.",
+        "La matrice d’induction utilise une structure et des composants internes adaptés. Consulte le manuel de Mekanism avant de multiplier sa capacité."
+      ],
+      "icon": "mekanism:upgrade_energy",
+      "id": "5B385055764671D9",
+      "min_width": 250,
+      "rewards": [
+        {
+          "id": "17F36AE0BBF0F0D7",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "tasks": [
+        {
+          "id": "60BCE0E380C6F646",
+          "type": "item",
+          "item": "mekanism:dust_lithium",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Le stockage avancé d’énergie",
+      "x": 3.0,
+      "y": -1.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5B385055764671D9"
+      ],
+      "description": [
+        "Presque tous les multiblocs du Mekanism sont construits de la même manière.",
+        "Vous aurez besoin de faire une structure de prisme rectangulaire. Les bords doivent être faits de Casiers Induction. Les faces peuvent être faites de Casings, de Verre Structurel, ou de Ports Induction. Il est préférable d'avoir 2 Ports: un pour l'entrée, et un pour la sortie. Ceux-ci peuvent être modifiés à l'aide du Configurateur.",
+        "Pour cette construction, nous allons faire un 5x5x5. Cette quête nécessite la quantité exacte de matériaux nécessaires pour construire ceci. Besoin d'aide?"
+      ],
+      "hide_until_deps_visible": 0,
+      "id": "1041ABBCABFA0424",
+      "min_width": 300,
+      "rewards": [
+        {
+          "id": "7DFABCB365D3C6C0",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "subtitle": "Le Papa du Cube énergétique",
+      "tasks": [
+        {
+          "count": 44,
+          "id": "1D8782E2ACCB72E6",
+          "item": "mekanism:induction_casing",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 2,
+          "id": "48630061B904B308",
+          "item": "mekanism:induction_port",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 55,
+          "id": "239A1BE6300304AD",
+          "item": "mekanism:structural_glass",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Construire la matrice d'induction",
+      "x": 4.0,
+      "y": -1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5B385055764671D9"
+      ],
+      "description": [
+        "La matrice d'induction vous permet de personnaliser la puissance que vous pouvez stocker et transférer en ajoutant des cellules et des fournisseurs à l'intérieur de la structure multibloc.",
+        "Les cellules d'induction augmentent la quantité totale de puissance qui peut être stockée.",
+        "Les fournisseurs d'induction augmentent la vitesse totale de transfert à la fois à l'intérieur et à l'extérieur de la matrice.",
+        "Vous pouvez personnaliser combien vous voulez de chaque à l'intérieur du multibloc, mais vous aurez besoin au moins d'un de chaque. Ceux-ci ont également des niveaux plus élevés pour augmenter votre capacité de stockage et de transfert global."
+      ],
+      "hide_until_deps_visible": 0,
+      "id": "0BA5E5A95E29114B",
+      "min_width": 350,
+      "rewards": [
+        {
+          "id": "41D675566E26F03C",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "5BBC0374923FA76A",
+          "item": {
+            "Count": 1,
+            "id": "mekanism:basic_induction_cell"
+          },
+          "title": "Cellules d'induction",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "2C1DF1525FE9F109",
+          "item": {
+            "Count": 1,
+            "id": "mekanism:basic_induction_provider"
+          },
+          "title": "Fournisseurs d'initiation",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&aPersonnaliser nos limites de puissance",
+      "x": 4.0,
+      "y": -0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1041ABBCABFA0424",
+        "0BA5E5A95E29114B"
+      ],
+      "description": [
+        "Une fois que vous aurez fini de construire votre première matrice d'induction énergétique, vous verrez des particules rouges tout autour de la structure pour montrer qu'elle est complète.",
+        "N'ayez pas peur de mettre à niveau avec les cellules et les fournisseurs de niveau supérieur! Besoin de plus d'espace pour eux? La taille maximale de la matrice d'induction peut être 18x18x18."
+      ],
+      "icon": "mekanism:ultimate_induction_cell",
+      "id": "07E20132E9486AD5",
+      "progression_mode": "linear",
+      "rewards": [
+        {
+          "id": "648F88095A646355",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "52F4D8313BB3F00B",
+          "item": "mekanism:induction_casing",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&aRemplir la matrice",
+      "x": 5.0,
+      "y": -1.0,
+      "repeatable": false
+    },
+    {
+      "can_repeat": 0,
+      "description": [
+        "Cette quête a été créée par AllTheMods Staff, ou un contributeur communautaire pour une utilisation dans AllTheMods Modpacks.",
+        "Comme tous les packs AllTheMods sont sous licence All Rights Reserved, cette Quest n'est pas autorisée à être utilisée dans les packs publics non publiés par l'équipe AllTheMods, sans autorisation explicite.",
+        "Cette quête est intentionnellement cachée, si vous voyez cela, vous êtes en mode édition.",
+        "Repère de lecture : obtiens le livre indiqué pour poursuivre. Cette étape ne donne aucune récompense."
+      ],
+      "disable_toast": 1,
+      "hide_details_until_startable": 1,
+      "hide_until_deps_visible": 1,
+      "icon": {
+        "Count": 1,
+        "id": "ftbquests:custom_icon",
+        "tag": {
+          "Icon": "minecraft:item/barrier"
+        }
+      },
+      "id": "1E8E54D3A7936509",
+      "invisible": 1,
+      "optional": 1,
+      "shape": "octagon",
+      "tasks": [
+        {
+          "id": "34C0BB336BAF058D",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "1943E3E32631DA31",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 1.5,
+      "y": -2.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Livre",
+      "dependencies": []
+    }
+  ],
+  "title": "Mekanism : réacteurs et stockage avancé",
+  "default_consume_items": false
+}

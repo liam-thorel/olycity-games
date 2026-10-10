@@ -1,0 +1,1427 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "",
+  "filename": "atm9_occultism",
+  "group": "1F488C60EF77E6C0",
+  "icon": {
+    "Count": 1,
+    "id": "ftbquests:custom_icon",
+    "tag": {
+      "Icon": "occultism:item/ritual_dummy"
+    }
+  },
+  "id": "61E58A24D05860D5",
+  "images": [
+    {
+      "color": 15616811,
+      "height": 5.0,
+      "image": "occultism:textures/item/pentacle.png",
+      "order": -1,
+      "rotation": 0.0,
+      "width": 5.0,
+      "x": 12.5,
+      "y": 0.0
+    },
+    {
+      "color": 16711680,
+      "height": 1.0,
+      "image": "occultism:textures/gui/book/robe.png",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 11.0,
+      "y": 2.0
+    },
+    {
+      "color": 16711680,
+      "height": 1.0,
+      "image": "occultism:textures/gui/book/robe.png",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 13.95,
+      "y": 2.0
+    },
+    {
+      "color": 16711680,
+      "height": 1.0,
+      "image": "occultism:textures/gui/book/robe.png",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 15.0,
+      "y": -0.5
+    },
+    {
+      "color": 16711680,
+      "height": 1.0,
+      "image": "occultism:textures/gui/book/robe.png",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 10.0,
+      "y": -0.5
+    },
+    {
+      "color": 16711680,
+      "height": 1.0,
+      "image": "occultism:textures/gui/book/robe.png",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 12.5,
+      "y": -2.5
+    },
+    {
+      "color": 255,
+      "height": 2.0,
+      "image": "ftbquests:tasks/input_only",
+      "rotation": 45.0,
+      "width": 2.0,
+      "x": 12.5,
+      "y": 0.0
+    },
+    {
+      "color": 255,
+      "height": 2.0,
+      "image": "occultism:textures/gui/book/summoning.png",
+      "order": -1,
+      "rotation": -30.0,
+      "width": 2.0,
+      "x": 9.5,
+      "y": 5.5
+    },
+    {
+      "color": 16711680,
+      "height": 2.0,
+      "image": "occultism:textures/gui/book/summoning.png",
+      "order": -1,
+      "rotation": 90.0,
+      "width": 2.0,
+      "x": 15.5,
+      "y": 5.5
+    },
+    {
+      "height": 1.0,
+      "hover": [
+        "&5Shub Niggurath&r Familiar"
+      ],
+      "image": "occultism:textures/gui/book/familiar_shub_niggurath.png",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 13.5,
+      "y": 5.0
+    },
+    {
+      "height": 1.0,
+      "hover": [
+        "&2Drikwing&r Familiar"
+      ],
+      "image": "occultism:textures/gui/book/otherworld_bird.png",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 11.5,
+      "y": 5.0
+    },
+    {
+      "alpha": 150,
+      "height": 2.0,
+      "image": "occultism:block/stable_wormhole_frame",
+      "rotation": 0.0,
+      "width": 2.0,
+      "x": 12.5,
+      "y": 9.5
+    },
+    {
+      "height": 2.0,
+      "image": "occultism:item/divination_rod/divination_rod_animation",
+      "rotation": -45.0,
+      "width": 2.0,
+      "x": 12.5,
+      "y": 14.0
+    },
+    {
+      "height": 0.5,
+      "image": "occultism:block/chalk_glyph/0",
+      "rotation": 0.0,
+      "width": 0.5,
+      "x": 10.5,
+      "y": 1.0
+    },
+    {
+      "color": 6111187,
+      "height": 0.5,
+      "image": "occultism:block/chalk_glyph/11",
+      "rotation": 0.0,
+      "width": 0.5,
+      "x": 14.5,
+      "y": 1.0
+    },
+    {
+      "color": 16711680,
+      "height": 0.5,
+      "image": "occultism:block/chalk_glyph/12",
+      "rotation": 0.0,
+      "width": 0.5,
+      "x": 14.0,
+      "y": -1.5
+    },
+    {
+      "color": 16766720,
+      "height": 0.5,
+      "image": "occultism:block/chalk_glyph/4",
+      "rotation": 0.0,
+      "width": 0.5,
+      "x": 11.0,
+      "y": -1.5
+    },
+    {
+      "height": 3.0,
+      "hover": [
+        "&dBeholder&r Familiar"
+      ],
+      "image": "occultism:textures/gui/book/familiar_beholder.png",
+      "rotation": 0.0,
+      "width": 3.0,
+      "x": 16.5,
+      "y": 12.5
+    },
+    {
+      "height": 3.0,
+      "hover": [
+        "&aHeadless Ratman&r Familiar"
+      ],
+      "image": "occultism:textures/gui/book/familiar_headless_ratman.png",
+      "rotation": 0.0,
+      "width": 3.0,
+      "x": 8.5,
+      "y": 12.5
+    },
+    {
+      "height": 3.0,
+      "image": "occultism:textures/gui/book/infusion.png",
+      "rotation": 0.0,
+      "width": 3.0,
+      "x": 0.0,
+      "y": 0.0
+    },
+    {
+      "alpha": 100,
+      "height": 1.25,
+      "image": "occultism:block/iesnium_block",
+      "rotation": 45.0,
+      "width": 1.25,
+      "x": 8.0,
+      "y": 0.0
+    },
+    {
+      "alpha": 150,
+      "height": 1.5,
+      "image": "occultism:block/iesnium_block",
+      "order": -1,
+      "rotation": 45.0,
+      "width": 1.5,
+      "x": 8.0,
+      "y": 0.0
+    },
+    {
+      "color": 16766720,
+      "height": 0.5,
+      "image": "occultism:block/chalk_glyph/8",
+      "rotation": 0.0,
+      "width": 0.5,
+      "x": 12.5,
+      "y": 2.5
+    }
+  ],
+  "order_index": 10,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "description": [
+        "Occultism propose des rituels d’invocation et des esprits capables de travailler pour toi. Consulte le Dictionnaire des esprits pour les ingrédients, les cercles et les conditions.",
+        "Commence par un rituel simple avant de développer le stockage ou le traitement des minerais."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "ftbquests:custom_icon",
+        "tag": {
+          "Icon": "occultism:item/soul_gem"
+        }
+      },
+      "id": "085F53BB17638B43",
+      "rewards": [
+        {
+          "id": "69C83CCDE495E5EE",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 2.0,
+      "tasks": [
+        {
+          "id": "2BCE3AE117584CCF",
+          "item": "occultism:datura_seeds",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Les rêves et les démons",
+      "x": 0.0,
+      "y": 0.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "085F53BB17638B43"
+      ],
+      "description": [
+        "Le Dictionnaire des Esprits sert de Guide pour l'Occultisme. Vous aurez absolument besoin de le faire si vous voulez continuer avec le mod!",
+        "Le Dictionnaire a un guide de style quête à l'intérieur de celui-ci si vous préférez le lire au lieu de faire ces quêtes!",
+        "Vous aurez également besoin du livre pour fabriquer plusieurs choses dans le pack, donc vous devez le faire en quelque sorte. :)"
+      ],
+      "id": "3A50C58F503C888A",
+      "rewards": [
+        {
+          "id": "4D7CBC4BC3D5991D",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "11D2F5DCBBC4A96A",
+          "item": {
+            "Count": 1,
+            "id": "occultism:dictionary_of_spirits",
+            "tag": {
+              "modonomicon:book_id": "occultism:dictionary_of_spirits"
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Petit livre sur les démons",
+      "x": 2.0,
+      "y": 0.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "3A50C58F503C888A"
+      ],
+      "description": [
+        "&cLe fruit de rêve de Démon est parfaitement sain pour vous. Il pourrait y avoir quelques effets secondaires que vous devriez connaître.",
+        "Lorsque vous en consommez un, vous avez la chance d'obtenir l'effet du Troisième Oeil, vous permettant de voir dans l'Autre Monde. Certains objets dans le monde ne sont peut-être pas ce qu'ils semblent, et vous aurez besoin de cette \"vision\" pour trouver certains objets pour la progression.",
+        "Ou vous pouvez le mettre en feu et sauter de trouver la plupart d'entre eux."
+      ],
+      "id": "46C3CBAF53F8CEE8",
+      "rewards": [
+        {
+          "id": "29B8A5108FB44A5E",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Préparez-vous pour un voyage",
+      "tasks": [
+        {
+          "id": "654E8106AA71BBDE",
+          "item": "occultism:datura",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&cFruits démon",
+      "x": 4.0,
+      "y": 0.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "46C3CBAF53F8CEE8"
+      ],
+      "description": [
+        "Et si je vous disais que les fruits du Démon sont inflammables ?",
+        "Le fait de jeter le fruit du rêve de notre démon et de le mettre en feu créera un feu d'esprit. C'est ainsi que nous convertirons certains objets du monde entier en matériaux de l'Autre monde.",
+        "C'est aussi joli."
+      ],
+      "id": "789245F1F1190A1F",
+      "progression_mode": "linear",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "49777B6D931D4E75",
+          "item": "occultism:datura",
+          "random_bonus": 2,
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "6D6F281F4DB00BBC",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "ftbquests:custom_icon",
+            "tag": {
+              "Icon": "occultism:block/spirit_fire_1"
+            }
+          },
+          "id": "3C31E69A2C1DBE84",
+          "observe_type": 0,
+          "timer": 0,
+          "title": "Observez le feu d'esprit",
+          "to_observe": "occultism:spirit_fire",
+          "type": "observation"
+        }
+      ],
+      "title": "Les flammes de l'Autre Monde",
+      "x": 6.0,
+      "y": 0.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "789245F1F1190A1F"
+      ],
+      "dependency_requirement": "one_completed",
+      "description": [
+        "En utilisant Spiritfire, nous pouvons convertir plusieurs tapis Overworld en leurs variantes Overseasworld. Vous pouvez également trouver plusieurs tapis Overseasworld en allant sous les effets du Troisième oeil et en aventurant dans le monde. Vous pourriez être surpris ce que vous trouvez. Pour le rendre plus facile, il ya des recettes pour les matériaux de base en les jetant dans Spiritfire.",
+        "&bAndésite se convertit en Autre pierre, qui peut être utilisé pour allumer un feu d'Esprit permanent.",
+        "&aLes saplings de chêne convertis en saplings de chêne mais ils ne sont pas les mêmes. Quand ils seront cultivés, ils ressembleront exactement à un chêne ordinaire. Cependant, sous les effets du Troisième oeil, vous pourrez récolter la variante Overseasworld.",
+        "&eLes diamants se transformeront en gemmes spiritueuses qui sont utilisées dans plusieurs recettes dont nous aurons besoin plus tard sur la route."
+      ],
+      "hide_until_deps_visible": 0,
+      "id": "430BA4A86B0D13A7",
+      "min_width": 300,
+      "rewards": [
+        {
+          "id": "09A056F561A16B07",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "09FD5324518E6B84",
+          "item": "occultism:otherstone",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "6BB8E7CC1B55101D",
+          "item": {
+            "Count": 1,
+            "id": "occultism:otherworld_sapling_natural",
+            "tag": {
+              "isInventoryItem": 1
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "73763EBE0A924012",
+          "item": "occultism:spirit_attuned_gem",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&dConversions de feux d'Esprit",
+      "x": 8.0,
+      "y": 0.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "430BA4A86B0D13A7"
+      ],
+      "description": [
+        "Les démons aiment les bougies.",
+        "Pour presque tous les Rituels d'appeler nos amis, vous aurez besoin de bougies. Vous pouvez créer le couteau de boucher et tuer quelques porcs, vaches, moutons, chevaux, ou même le trader Lamas pour obtenir un peu de suif pour les faire. En fait, vous devriez certainement trouver le trader Lamas. J'ai entendu qu'ils font de bonnes bougies.",
+        "Sinon, les bougies Vanilla peuvent aussi fonctionner !",
+        "&9Spirit Attented Crystals sont également utilisés dans plusieurs Rituals, ainsi autant faire maintenant!"
+      ],
+      "hide_dependency_lines": 1,
+      "id": "6DB4DECE9E1C2458",
+      "shape": "diamond",
+      "tasks": [
+        {
+          "count": 4,
+          "id": "0EFA50EDEE6245EA",
+          "item": {
+            "Count": 1,
+            "id": "occultism:candle_white"
+          },
+          "title": "Candles",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 2,
+          "id": "3531023A5F86AE73",
+          "item": "occultism:spirit_attuned_crystal",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Préparation d'un rituel : Bougies",
+      "x": 13.5,
+      "y": -1.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "430BA4A86B0D13A7"
+      ],
+      "description": [
+        "Avant de commencer à faire appel à nos amis Démon, nous devrons créer l'élément le plus important nécessaire pour les Rituals : Chalk.",
+        "Il y a plusieurs couleurs de craie nécessaires, avec des Rituels de niveau supérieur nécessitant plusieurs à activer. Pour commencer, Chalk blanc est le plus facile à obtenir.",
+        "Commencez par jeter l'Autre pierre dans une fournaise, et jeter l'Autre Monde Logs dans Spiritfire. Avec les éléments que vous créez, vous serez en mesure de faire le Chalk Blanc Impure.",
+        "Pour purifier n'importe quel morceau de Chalk, il suffit de le jeter dans Spiritfire pour le nettoyer. L'utilisation de la Chalk purifiée sur le sol va dessiner de jolis symboles démoniaques sur le sol. Ce sont une douleur à enlever, à moins bien sûr, vous faites vous-même le pinceau de Chalk. Faites-le, cela en vaut la peine."
+      ],
+      "hide_dependency_lines": 1,
+      "id": "782D01D997A32751",
+      "min_width": 350,
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "7A0444ABB24FC81A",
+          "item": "occultism:chalk_white_impure",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "02ED98D475D1AEFB",
+          "item": {
+            "Count": 1,
+            "id": "occultism:chalk_white",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "match_nbt": 0,
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "0B6DBD7733C902F2",
+          "item": "occultism:brush",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Préparation d'un rituel: Chalk",
+      "x": 11.5,
+      "y": 1.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "430BA4A86B0D13A7"
+      ],
+      "description": [
+        "Qu'est-ce qu'un rituel démoniaque sans sacrifice ! :D",
+        "La plupart du temps, Démons tout comme les objets donc ne pas avoir trop peur encore. Cependant, si vous avez une vache préférée, vous pourriez avoir besoin d'être inquiet. Désolé Betsy.",
+        "&aLes bols sacrificaux sont utilisés pour placer les objets nécessaires pour les rituels. Ils peuvent être placés n'importe où dans le rituel, tant qu'il ne converge pas vers le haut de l'un des craies nécessaires.",
+        "Le Golden Sacrificial Bowl est utilisé au milieu du Ritual pour l'activer, et a également besoin d'un Livre de Reliure pour le Ritual en elle."
+      ],
+      "hide_dependency_lines": 1,
+      "id": "124181CC544ED4EB",
+      "shape": "diamond",
+      "tasks": [
+        {
+          "count": 4,
+          "id": "306DCB1E80E808DB",
+          "item": "occultism:sacrificial_bowl",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "0FABA2D9B768C717",
+          "item": "occultism:golden_sacrificial_bowl",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Se préparer à un rituel: Cristaux",
+      "x": 13.5,
+      "y": 1.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "430BA4A86B0D13A7"
+      ],
+      "description": [
+        "Pour que nous précisions quel Ami Démon nous voulons convoquer, nous aurons besoin de faire un Livre de Reliure spécifique.",
+        "Pour ce faire, vous aurez besoin de purifier un peu de colorant noir dans Spiritfire pour obtenir de l'encre purifiée. Avec cela, nous allons faire notre premier Livre de liaison qui convoquera un démon Foliot."
+      ],
+      "hide_dependency_lines": 1,
+      "id": "7D7B9CDC20B78A14",
+      "rewards": [
+        {
+          "id": "12248E50D2CA5D63",
+          "type": "xp",
+          "xp": 20,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "3C502A4D1C5E44E5",
+          "item": "occultism:purified_ink",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "3F9C2E54FE4D7BA0",
+          "item": "occultism:book_of_binding_foliot",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&bBooks of Binding",
+      "x": 11.5,
+      "y": -1.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6DB4DECE9E1C2458",
+        "7D7B9CDC20B78A14",
+        "124181CC544ED4EB",
+        "782D01D997A32751"
+      ],
+      "description": [
+        "Pour notre premier Rituel, nous voulons convoquer un Démon Foliot Crusher. Ce Démon va écraser des objets pour nous, ce qui est quelque chose que nous devrons faire des Chalks de niveau supérieur!",
+        "Pour commencer, combinez votre Livre Unbound avec votre Dictionnaire des Esprits dans une table d'artisanat. Cela liera un Démon au livre, ce qui est ce dont nous aurons besoin pour le rituel.",
+        "En parlant de votre Dictionnaire des Esprits, il est temps de l'ouvrir! Sur la gauche, cliquez sur l'onglet Pentacles et cliquez sur le cercle d'Aviar. Vous pourriez avoir à avancer à travers lui en lisant un peu. Il ya aussi un moyen de cliquer sur \"Marquer tous comme lire\" afin qu'il débloque tout dans le livre.",
+        "C'est ce que nous allons utiliser pour convoquer notre nouvel ami. Sur le côté droit, vous pouvez cliquer sur l'œil dans le coin inférieur gauche de l'image pour construire un contour du rituel pour vous dans le monde. C'est super utile!",
+        "Une fois que vous avez terminé le Ritual multi-blocs, placez 4 bols Sacrificial et utilisez les éléments requis sur eux. Une fois que vous placez votre livre Bound dans le Golden Sacrificial Bowl, le Ritual va commencer!",
+        "C'est à ça que ressemblera le Ritual."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "ftbquests:custom_icon",
+        "tag": {
+          "Icon": "occultism:block/chalk_glyph/7"
+        }
+      },
+      "id": "533DB6DCB0FD905D",
+      "min_width": 300,
+      "rewards": [
+        {
+          "id": "49D79520FDFEB296",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 2.0,
+      "tasks": [
+        {
+          "id": "1C4F75C556507B81",
+          "item": {
+            "Count": 1,
+            "id": "occultism:book_of_binding_bound_foliot",
+            "tag": {
+              "spiritName": "Krtimaeus"
+            }
+          },
+          "match_nbt": 0,
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "3C3D91A044666E51",
+          "item": "minecraft:raw_iron",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "6C9E640A9F77997A",
+          "item": "minecraft:raw_gold",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "291D578B92922FAC",
+          "item": "minecraft:raw_copper",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&bNotre premier rituel",
+      "x": 12.5,
+      "y": 0.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1AD67B33A1D2BB98"
+      ],
+      "description": [
+        "Maintenant que nous avons un Foliot Crusher, nous pouvons l'utiliser poliment pour écraser quelques End Stone et Obsidian pour nous. Nous allons les utiliser pour faire un nouveau Chalk!"
+      ],
+      "id": "5A73DB7BE26815B6",
+      "rewards": [
+        {
+          "id": "28BAEC7C9F4A1E47",
+          "type": "xp",
+          "xp": 25,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "gear",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "34FC9D4229B0E8D9",
+          "item": "occultism:chalk_gold_impure",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "3ED0C5CE29F1196D",
+          "item": "occultism:chalk_purple_impure",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&aC'est tout ce qu'il faut faire.",
+      "x": 12.5,
+      "y": 6.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "533DB6DCB0FD905D"
+      ],
+      "description": [
+        "Ils ne sont pas tous mauvais !",
+        "Si vous avez terminé le rituel correctement, vous aurez maintenant votre propre Démon Foliot Crusher. Ces démons sont excellents pour écraser des objets pour vous!",
+        "Pour lui donner un objet à écraser, il suffit de le jeter à proximité et il va ramasser l'article et l'écraser. Vous pouvez également cliquer à droite sur le démon pour ouvrir l'inventaire.",
+        "Il s'agit d'un Démon de démarrage, donc il ne durera pas très longtemps. Celui-ci peut également doubler votre sortie de minerai pour vous!"
+      ],
+      "hide_dependency_lines": 1,
+      "icon": {
+        "Count": 1,
+        "id": "ftbquests:custom_icon",
+        "tag": {
+          "Icon": "occultism:item/advancement/devil_icon"
+        }
+      },
+      "id": "1AD67B33A1D2BB98",
+      "progression_mode": "linear",
+      "shape": "rsquare",
+      "size": 1.25,
+      "tasks": [
+        {
+          "icon": {
+            "Count": 1,
+            "id": "ftbquests:custom_icon",
+            "tag": {
+              "Icon": "occultism:item/advancement/devil_icon"
+            }
+          },
+          "id": "343A5CCDCB34A351",
+          "observe_type": 5,
+          "timer": 0,
+          "title": "Observer un démon foliot",
+          "to_observe": "occultism:foliot",
+          "type": "observation"
+        }
+      ],
+      "title": "&aParler avec notre nouvel ami !",
+      "x": 12.5,
+      "y": 4.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5A73DB7BE26815B6"
+      ],
+      "description": [
+        "Bien qu'il y ait d'autres méthodes pour déplacer les démons, vous pouvez créer un Empty Soul Gem pour capturer un démon et le placer ailleurs. Ceci est également nécessaire pour l'ATM Star.",
+        "Pour ce faire, nous aurons besoin d'un rituel plus avancé appelé Strigeor's Higher Binding. Pour cela, vous aurez besoin de 8 bols Sacrifiques ainsi que les éléments nécessaires pour cette quête.",
+        "Rappelez-vous, vous pouvez toujours utiliser l'aperçu multi-blocs en trouvant le Pentacle dans le Dictionnaire des Esprits pour vous aider à construire la structure."
+      ],
+      "id": "00B2A8BDD923BDA3",
+      "rewards": [
+        {
+          "id": "3D22EFDD8C180161",
+          "type": "xp",
+          "xp": 25,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "count": 4,
+          "id": "7814C746DB247697",
+          "item": "minecraft:soul_sand",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "23565F4685052744",
+          "item": "minecraft:diamond",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "785641B35F1B6D8F",
+          "item": "minecraft:copper_ingot",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "3E2AF24B3ACB9860",
+          "item": "minecraft:gold_ingot",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "0F71008CF0AF7B71",
+          "item": {
+            "Count": 1,
+            "id": "occultism:book_of_binding_bound_djinni",
+            "tag": {
+              "spiritName": "Karnvires"
+            }
+          },
+          "match_nbt": 0,
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&bCapturer des démons",
+      "x": 9.5,
+      "y": 5.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5A73DB7BE26815B6"
+      ],
+      "description": [
+        "Non, pas ce genre-là.",
+        "&cAfrit Demons sont des démons de feu. Ils sont plus avancés Demons, que certains sont amis et certains ne le sont pas.",
+        "Si nous voulons rassembler tous les Chalks, nous devrons appeler un Ifrit pas si amical et le tuer.",
+        "Ce rituel spécifique aura besoin d'un sacrifice vivant. Une fois que vous avez placé tous les éléments nécessaires et le Livre de la liaison dans le Golden Sacrificial Bowl, le rituel ne commencera pas jusqu'à ce que vous sacrifiez la créature vivante à proximité. Dans ce cas, nous sacrifierons une vache. Désolé encore, Betsy."
+      ],
+      "icon": "occultism:afrit_essence",
+      "id": "0C87838993698C58",
+      "min_width": 300,
+      "rewards": [
+        {
+          "id": "2E1BFEC28CD674E8",
+          "type": "xp",
+          "xp": 25,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "R.I.P. Betsy",
+      "tasks": [
+        {
+          "id": "0B69739787DD31FF",
+          "item": "occultism:afrit_essence",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "26F98C335E67F23A",
+          "item": "occultism:chalk_red_impure",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&cDémons chauds",
+      "x": 14.0,
+      "y": 8.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "00B2A8BDD923BDA3"
+      ],
+      "description": [
+        "Cet article est utilisé pour capturer des Demons pour le transport ou le stockage. Il est également nécessaire pour l'ATM Star."
+      ],
+      "id": "3AACE039326D3DD5",
+      "rewards": [
+        {
+          "id": "412B66D67065FA88",
+          "type": "xp",
+          "xp": 25,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 2.0,
+      "tasks": [
+        {
+          "id": "6B9CA2FDAFF2C1C3",
+          "item": {
+            "Count": 1,
+            "id": "occultism:soul_gem",
+            "tag": {}
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&dGemme de l'âme vide",
+      "x": 7.0,
+      "y": 5.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5A73DB7BE26815B6"
+      ],
+      "description": [
+        "Il ya plus d'objets d'autres monde que vous aurez besoin de rassembler, et de manger le fruit de rêve de Démon chaque fois que vous avez besoin de l'effet Troisième oeil devient ennuyeux.",
+        "C'est ce que font les lunettes de l'Autre Monde ! Lorsqu'elles sont équipées (même dans votre fente Curios), elles donnent l'effet du Troisième Oeil !"
+      ],
+      "id": "542CBA4B23EFF7C8",
+      "rewards": [
+        {
+          "id": "1B8F348EDF330ADC",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "44EED8C200BC1F04",
+          "item": {
+            "Count": 1,
+            "id": "occultism:otherworld_goggles",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Arrête de manger ce fruit !",
+      "x": 11.0,
+      "y": 8.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "542CBA4B23EFF7C8"
+      ],
+      "description": [
+        "La plupart des objets dont nous avons besoin de l'Autremonde jusqu'à présent n'avaient besoin que d'un feu d'Esprit. Cependant, nous devrons utiliser l'aide du Troisième oeil pour trouver l'Ore de l'Autremonde.",
+        "Pour cela, il nous faudra infuser un démon dans une tête de pioche attachée à l'esprit pour créer un pioche qui peut briser ce nouveau minerai."
+      ],
+      "id": "797C551D57DC6FF1",
+      "rewards": [
+        {
+          "id": "547D6CFDA7DDAE50",
+          "type": "xp",
+          "xp": 25,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "size": 1.25,
+      "tasks": [
+        {
+          "id": "66EB96FD29E91077",
+          "item": {
+            "Count": 1,
+            "id": "occultism:infused_pickaxe",
+            "tag": {
+              "Damage": 0,
+              "spiritName": "Raymirivyne"
+            }
+          },
+          "match_nbt": 0,
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Nouveaux outils pour les nouveaux minerais",
+      "x": 9.5,
+      "y": 9.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "797C551D57DC6FF1"
+      ],
+      "description": [
+        "La prochaine étape de votre voyage sera de trouver Iesnium Ore dans la Nether.",
+        "Sans les effets du Troisième Oeil, cela ressemblera à Netherrack. Assurez-vous d'avoir vos lunettes Overseasworld équipées !",
+        "Pour localiser le minerai, essayez d'utiliser une tige de divination. Vous devrez l'attacher à Netherrack d'abord, puis maintenez le clic droit pour l'utiliser. Après quelques secondes, vous verrez une prise de particules dans la direction du minerai Iesnium le plus proche.",
+        "Comme vous ne pouvez pas décomposer ce minerai en double-poussières en utilisant les méthodes standard, essayez d'utiliser votre Foliot Crusher pour doubler vos lingots par minerai brut!",
+        "Remarque : Si vous ne voyez pas la particule, assurez-vous que vos paramètres de particule sont activés !"
+      ],
+      "icon": "occultism:iesnium_ore",
+      "id": "0C4F1ED99D1E4123",
+      "min_width": 450,
+      "rewards": [
+        {
+          "id": "5E975309B661A23B",
+          "type": "xp",
+          "xp": 25,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "06560F836ED9928F",
+          "item": "occultism:iesnium_ore",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&cIesnium: Or de l'Autre Monde",
+      "x": 11.0,
+      "y": 11.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "0C4F1ED99D1E4123"
+      ],
+      "description": [
+        "Une fois que vous aurez rassemblé quelques Ors crus de l'Iesnium, vous voudrez probablement utiliser les premiers lingots pour faire un Pickaxe de l'Iesnium. Cela non seulement mines Iesnium comme le Pickaxe infusé, mais dure beaucoup plus longtemps aussi.",
+        "Fais-toi plaisir et fais-en une !"
+      ],
+      "id": "739DDB3A075C49C8",
+      "rewards": [
+        {
+          "id": "213EAD9730CBE2D2",
+          "type": "xp",
+          "xp": 25,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "584E7250CE0C4365",
+          "item": {
+            "Count": 1,
+            "id": "occultism:iesnium_pickaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&aL'Autre Monde Pickaxe",
+      "x": 12.5,
+      "y": 12.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "739DDB3A075C49C8",
+        "0C87838993698C58"
+      ],
+      "description": [
+        "Ce premier Démon Foliot était cool, mais si je vous disais que vous pourriez appeler un démon qui vous donne 6 poussières par minerai brut qu'il écrase ?",
+        "Pour les appeler, vous devrez utiliser le pentacle d'attraction incitative de Fatma. C'est un rituel avancé, exigeant le craie rouge, blanc et or ainsi que beaucoup d'espace."
+      ],
+      "icon": "occultism:iesnium_block",
+      "id": "5EBA32E9259C3BBD",
+      "progression_mode": "linear",
+      "rewards": [
+        {
+          "id": "4783805FDE063DC7",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "size": 1.25,
+      "subtitle": "La plus rapide des écrasements de ce côté du Mississippi",
+      "tasks": [
+        {
+          "id": "3D60F7100F81E0CB",
+          "item": "occultism:iesnium_block",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "2727F7F45E167A57",
+          "item": {
+            "Count": 1,
+            "id": "occultism:book_of_binding_bound_marid",
+            "tag": {
+              "spiritName": "Holmurkyr"
+            }
+          },
+          "match_nbt": 0,
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "icon": {
+            "Count": 1,
+            "id": "ftbquests:custom_icon",
+            "tag": {
+              "Icon": "occultism:item/advancement/devil_icon"
+            }
+          },
+          "id": "15ECE718FC3B0DB7",
+          "observe_type": 5,
+          "timer": 0,
+          "title": "Observer un démon de la Marie",
+          "to_observe": "occultism:marid",
+          "type": "observation"
+        }
+      ],
+      "title": "La martre Crusher",
+      "x": 15.5,
+      "y": 9.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "739DDB3A075C49C8"
+      ],
+      "description": [
+        "Avec notre capacité à récolter de l'Iesnium, nous pouvons demander aux Démons de faire nos offres dans les mines... je veux dire... de nous aider à rassembler des minerais.",
+        "Pour cela, nous allons avoir besoin de créer un Mineshaft dimensionnel pour accéder au monde minier de Démon. Vous aurez également besoin d'un Démon minier confiné à une lampe, que vous placerez à l'intérieur du Mineshaft pour qu'il fonctionne.",
+        "Les Mineshafts ne sont pas auto-exportés par eux-mêmes. Vous aurez besoin d'extraire les objets en utilisant soit Hoppers, Transporting Demons, ou une autre méthode comme Item Pipes. Il annulera tout article au-delà de sa limite de stockage."
+      ],
+      "id": "3A88EFA9EB07DD91",
+      "min_width": 350,
+      "shape": "hexagon",
+      "size": 1.25,
+      "tasks": [
+        {
+          "id": "5CEB81D43CAC8142",
+          "item": "occultism:dimensional_mineshaft",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "5EB697D97B57AA60",
+          "item": {
+            "Count": 1,
+            "id": "occultism:miner_foliot_unspecialized",
+            "tag": {
+              "Damage": 0,
+              "maxMiningTime": 400,
+              "rollsPerOperation": 1,
+              "spiritName": "Alddeller"
+            }
+          },
+          "title": "Démons miniers",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&cL'exploitation minière du démon",
+      "x": 12.5,
+      "y": 9.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5A73DB7BE26815B6"
+      ],
+      "description": [
+        "Vous êtes obligé d'avoir trop d'éléments à jouer ce modpack. C'est juste que ça marche, et si vous n'avez pas encore compris votre situation de stockage, Dimensional Storage pourrait être juste pour vous!",
+        "Pour commencer avec cette solution de stockage magique, vous aurez besoin d'élaborer l'Activateur de stockage dimensionnel et de le placer dans le monde. Cela agit comme une boîte de Shulker, ce qui signifie que si vous la cassez, il ne perdra aucun des objets stockés à l'intérieur.",
+        "Par défaut, cela a 128 fentes de stockage avec chaque fente tenant jusqu'à 16 piles d'un article, sauf pour les éléments avec des données NBT. Ceux-ci ne seront pas empilés et prendront une fente entière, alors assurez-vous de laisser ces éléments dehors!",
+        "Si vous n'êtes pas sûr de quels éléments ont des données NBT sur eux, vous pouvez toujours consulter la quête \"NBT and You\" dans la ligne de quête de stockage pour plus d'informations sur NBT!"
+      ],
+      "id": "440C9C82B8CDD6CC",
+      "rewards": [
+        {
+          "id": "0856496E4FEB13AE",
+          "type": "xp",
+          "xp": 50,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "780AD2DDC88C4854",
+          "item": "occultism:storage_controller_base",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "54DFE6C8E0FFBFB0",
+          "item": {
+            "Count": 1,
+            "id": "occultism:dimensional_matrix",
+            "tag": {
+              "spiritName": "Geirmaracthorn"
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "6EE2E072C94984B1",
+          "item": "occultism:storage_controller",
+          "match_nbt": 0,
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&c&mStockage magique démoniaque !",
+      "x": 15.5,
+      "y": 5.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "440C9C82B8CDD6CC"
+      ],
+      "description": [
+        "Pour mettre à niveau la quantité de piles que votre stockage magique peut contenir, vous aurez besoin de faire des stabilisateurs de stockage.",
+        "Une fois faits, ceux-ci doivent pointer directement à la partie dimensionnelle de votre actuateur de stockage, pas la base. Ceux-ci peuvent être jusqu'à 5 blocs de distance, mais doivent avoir une ligne de vue claire à la matrice.",
+        "Chaque fois que vous voulez mettre à niveau un niveau plus élevé Stabilisateur, casser il ne détruira pas les éléments à l'intérieur. Cependant, vous ne serez pas en mesure d'ajouter d'autres éléments à votre stockage jusqu'à ce qu'il soit remplacé ou mis à jour.",
+        "Voici un exemple de configuration simple!"
+      ],
+      "id": "6295D871A1D2FB17",
+      "min_width": 300,
+      "rewards": [
+        {
+          "id": "3BDF5FF6DF8C3815",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 2.0,
+      "tasks": [
+        {
+          "id": "199C76CD32820145",
+          "item": {
+            "Count": 1,
+            "id": "occultism:storage_stabilizer_tier1"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&aModerniser notre stockage magique",
+      "x": 18.0,
+      "y": 5.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "789245F1F1190A1F"
+      ],
+      "description": [
+        "Alors que vous pouvez obtenir la plupart des matériaux de l'Autremonde en utilisant Spiritfire, vous pouvez également utiliser des barres de divination pour localiser ces matériaux.",
+        "Tout d'abord, vous aurez besoin d'attacher le Rod au matériel que vous recherchez. Par exemple, si vous êtes sur la chasse pour Otherstone, vous pouvez utiliser le Rod sur Andesite pour aider à localiser l'Otherstone dans le monde.",
+        "Une fois ajusté à un matériau, vous pouvez maintenir le clic droit avec le bâton à la main, et une particule va tirer dans la direction du matériau le plus proche auquel il est ajusté.",
+        "Vous aurez encore besoin d'être sous les effets du Troisième oeil pour être en mesure de récolter le bloc de l'Autre monde."
+      ],
+      "id": "0D517836D70AEDE9",
+      "tasks": [
+        {
+          "id": "50C86BA9D40D3EE6",
+          "item": {
+            "Count": 1,
+            "id": "occultism:divination_rod",
+            "tag": {}
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Chasse pour les autres matériaux du monde",
+      "x": 6.0,
+      "y": -1.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "440C9C82B8CDD6CC"
+      ],
+      "description": [
+        "Vous souhaitez accéder à votre stockage à distance? Ceci peut être fait avec le trou de stockage stable ou l'Accessoire de stockage.",
+        "Pour utiliser le Wormhole stable, cliquez sur un actuateur de stockage pour le lier. Vous pouvez alors placer le Wormhole pour agir comme un autre emplacement de stockage.",
+        "L'Accessoire de stockage est relié de la même manière, mais agit comme une télécommande sans fil qui peut même fonctionner à travers les dimensions!"
+      ],
+      "id": "7B6C3B5F10AF9DE2",
+      "rewards": [
+        {
+          "id": "344C85EB23588523",
+          "type": "xp",
+          "xp": 25,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "5C8A123C5885208E",
+          "item": {
+            "Count": 1,
+            "id": "occultism:stable_wormhole",
+            "tag": {}
+          },
+          "match_nbt": 0,
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "62CB69E26FFF4661",
+          "item": {
+            "Count": 1,
+            "id": "occultism:storage_remote",
+            "tag": {}
+          },
+          "match_nbt": 0,
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&aAccès à distance",
+      "x": 16.5,
+      "y": 7.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "00B2A8BDD923BDA3"
+      ],
+      "description": [
+        "L'occultisme fournit plus que des démons pour écraser vos minerais !",
+        "Il y a des démons qui peuvent bouger des choses pour vous, couper le bois, et plus encore!!",
+        "Il y a aussi des façons d'appeler des amis cools connus sous le nom de Familiars qui donnent des buffs spéciaux et même se battre pour vous! Assurez-vous de consulter les Rituals Familiar dans votre guide!"
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "ftbquests:custom_icon",
+        "tag": {
+          "Icon": "occultism:textures/gui/book/familiar_blacksmith.png"
+        }
+      },
+      "id": "209B43D95B9A1082",
+      "rewards": [
+        {
+          "id": "6B4D4DDBE0108957",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "0AB173EE7F88C16B",
+          "type": "item",
+          "item": "occultism:book_of_binding_bound_foliot",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "&dFamilles",
+      "x": 8.5,
+      "y": 7.0,
+      "repeatable": false
+    },
+    {
+      "can_repeat": 0,
+      "description": [
+        "Cette quête a été créée par AllTheMods Staff, ou un contributeur communautaire pour une utilisation dans AllTheMods Modpacks.",
+        "Comme tous les packs AllTheMods sont sous licence All Rights Reserved, cette Quest n'est pas autorisée à être utilisée dans les packs publics non publiés par l'équipe AllTheMods, sans autorisation explicite.",
+        "Cette quête est intentionnellement cachée, si vous voyez cela, vous êtes en mode édition.",
+        "Repère de lecture : obtiens le livre indiqué pour poursuivre. Cette étape ne donne aucune récompense."
+      ],
+      "disable_toast": 1,
+      "hide_details_until_startable": 1,
+      "hide_until_deps_visible": 1,
+      "icon": {
+        "Count": 1,
+        "id": "ftbquests:custom_icon",
+        "tag": {
+          "Icon": "minecraft:item/barrier"
+        }
+      },
+      "id": "334060601CB009DB",
+      "invisible": 1,
+      "optional": 1,
+      "shape": "octagon",
+      "tasks": [
+        {
+          "id": "2424A4A5FFB5B625",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "4F62C0A54F7EFFF9",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": -2.0,
+      "y": 0.0,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Livre",
+      "dependencies": []
+    }
+  ],
+  "title": "Occultism",
+  "default_consume_items": false
+}

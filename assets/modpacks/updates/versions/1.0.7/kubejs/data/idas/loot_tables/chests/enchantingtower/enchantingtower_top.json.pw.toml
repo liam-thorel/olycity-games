@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/enchantingtower/enchantingtower_top.json"
+filename = "enchantingtower_top.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/8e10aba1f4b076195d4fb6906fb877ae0ad4fd6850498ef3a180c5703243dc6b"
+hash-format = "sha256"
+hash = "8e10aba1f4b076195d4fb6906fb877ae0ad4fd6850498ef3a180c5703243dc6b"

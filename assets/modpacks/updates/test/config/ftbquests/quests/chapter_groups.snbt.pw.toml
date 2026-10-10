@@ -3,6 +3,6 @@ filename = "chapter_groups.snbt"
 side = "both"
 
 [download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/3ca53eb42a3c467e1742a157fea231611cffd94bea9cb33614847c8ee7a51b67"
 hash-format = "sha256"
-hash = "739539b4146abfddb28d18027abc040e62af3634552c3c8092d021545f0c08fe"
+hash = "3ca53eb42a3c467e1742a157fea231611cffd94bea9cb33614847c8ee7a51b67"

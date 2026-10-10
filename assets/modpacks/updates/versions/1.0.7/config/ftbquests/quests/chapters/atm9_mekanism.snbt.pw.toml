@@ -1,0 +1,8 @@
+name = "config/ftbquests/quests/chapters/atm9_mekanism.snbt"
+filename = "atm9_mekanism.snbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/6362b6ba6ef315fae1d90061ce4c719fdb13300dc9c1a09ac8d56a1f0bcacd1a"
+hash-format = "sha256"
+hash = "6362b6ba6ef315fae1d90061ce4c719fdb13300dc9c1a09ac8d56a1f0bcacd1a"

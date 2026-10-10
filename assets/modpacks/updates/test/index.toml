@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "OLYCITY-version.txt.pw.toml"
-hash = "c225801003898d213a0cc97bcd937ddf4b9172b47e183184a08d24dd0610cf60"
+hash = "b4431dd227406a3866a715c0d973a92d13f260d3c57b6448727cdf10723b4cc9"
 metafile = true
 
 [[files]]
@@ -641,6 +641,21 @@ hash = "d75d8090eaafc1a0737cb133a4714075c8e34f0d25d474c881308e8b0ae5fdf7"
 metafile = true
 
 [[files]]
+file = "config/apotheosis/apotheosis.cfg.pw.toml"
+hash = "a4c50d074722e9a54220707e6601a47cc0682708213c8d9fed1af7ee941c1ea4"
+metafile = true
+
+[[files]]
+file = "config/apotheosis/ench.cfg.pw.toml"
+hash = "ddc6d7d1f3b37f76a37e2e948d470f1e61c123d4dff36afd0a60c6bb36443e33"
+metafile = true
+
+[[files]]
+file = "config/apotheosis/enchantments.cfg.pw.toml"
+hash = "407748995da94193b2d6c2212c0681f596cac3a875b75e64b6c380e4d4a7a6c8"
+metafile = true
+
+[[files]]
 file = "config/artifacts/client.json5.pw.toml"
 hash = "20fb85239652c4e3a1ff14f3ea30828605aa9674edbd1e63a6281ea4d03f0a5f"
 metafile = true
@@ -696,13 +711,13 @@ hash = "bbb40295aadec830f775ebce031b4ccd627d50179e9b0fb3d0b8aecdde1bd2ab"
 metafile = true
 
 [[files]]
-file = "config/brandon3055/contributors.json.pw.toml"
-hash = "34704b09450aa00c5d4cfede360c4a4db5a0e794a933ecee86d6d0955ee8d161"
+file = "config/brandon3055/contributors.json.etag.pw.toml"
+hash = "15cb9f9c17df4ff02452fec3a026d93142634aaa8c1d9b52efa718ad1f44d5e5"
 metafile = true
 
 [[files]]
-file = "config/brandon3055/contributors.json.etag.pw.toml"
-hash = "15cb9f9c17df4ff02452fec3a026d93142634aaa8c1d9b52efa718ad1f44d5e5"
+file = "config/brandon3055/contributors.json.pw.toml"
+hash = "34704b09450aa00c5d4cfede360c4a4db5a0e794a933ecee86d6d0955ee8d161"
 metafile = true
 
 [[files]]
@@ -887,7 +902,7 @@ metafile = true
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt.pw.toml"
-hash = "ce1718a11360fd2c7e725e089c72fa516332a4e680293689bf1d35935fd7e453"
+hash = "6d498ae360c023936461b7489e59f6c351ec88d35f9639196b849b687f4d34dd"
 metafile = true
 
 [[files]]
@@ -948,6 +963,126 @@ metafile = true
 [[files]]
 file = "config/ftbquests/quests/chapters/12_projets.snbt.pw.toml"
 hash = "95ef6ada6274f9ed27b2ef2ad825dad90e97b549b94c355ec9dca2895c2623cb"
+metafile = true
+
+[[files]]
+file = "config/ftbquests/quests/chapters/atm9_applied_energistics_2.snbt.pw.toml"
+hash = "dfab5273c93a267d4392e01c852fa2c723ba1e5202d52cc0ad5e1944403c74ab"
+metafile = true
+
+[[files]]
+file = "config/ftbquests/quests/chapters/atm9_artifacts.snbt.pw.toml"
+hash = "58c32bbb3c6a3ce7f09a135bdf99f46e6c3ee077986106abc2376acd9b64847e"
+metafile = true
+
+[[files]]
+file = "config/ftbquests/quests/chapters/atm9_basic_logistics.snbt.pw.toml"
+hash = "7c6a4936e8f41d2c7d60f7c6c50f16ad268f9d355c97a650ad0b7e74e19eca65"
+metafile = true
+
+[[files]]
+file = "config/ftbquests/quests/chapters/atm9_basic_power.snbt.pw.toml"
+hash = "db3a8d997db099ea0b70ebb22340d7dec500780ce2f7dad0b088c977c38a2c11"
+metafile = true
+
+[[files]]
+file = "config/ftbquests/quests/chapters/atm9_basic_tools.snbt.pw.toml"
+hash = "f7dd2f117ce02e0927bd1c4015ee8bdd1f51eafb44a93ceb9801057845b68efd"
+metafile = true
+
+[[files]]
+file = "config/ftbquests/quests/chapters/atm9_blue_skies.snbt.pw.toml"
+hash = "1eb3999f65f08feb23a5fe715b907139270b2944aa42aaeca3e0ddae99c6154d"
+metafile = true
+
+[[files]]
+file = "config/ftbquests/quests/chapters/atm9_bounty_board.snbt.pw.toml"
+hash = "34e13288a8a2f396f3746a4927de89364b78b2dcde9259f8305b1a3d1f112167"
+metafile = true
+
+[[files]]
+file = "config/ftbquests/quests/chapters/atm9_cataclysm.snbt.pw.toml"
+hash = "190efe7de563582877655b7e409a5a751fce59aeb170531a754bb3c8d14c5cf7"
+metafile = true
+
+[[files]]
+file = "config/ftbquests/quests/chapters/atm9_create.snbt.pw.toml"
+hash = "aa6f5e3a8362210173b9e010c20c99be1b795a9b450a81f9b181deb743eb283c"
+metafile = true
+
+[[files]]
+file = "config/ftbquests/quests/chapters/atm9_draconic_evolution.snbt.pw.toml"
+hash = "159981516c68260dbe0beecaab6b6936febc4c540070749eaf0dd959edcf5b0c"
+metafile = true
+
+[[files]]
+file = "config/ftbquests/quests/chapters/atm9_food_and_farming.snbt.pw.toml"
+hash = "59d17915868123304f2a920aa77b1e3125d8de06fde334ce581760688e81e575"
+metafile = true
+
+[[files]]
+file = "config/ftbquests/quests/chapters/atm9_industrial_foregoing.snbt.pw.toml"
+hash = "0542732b6b7ce807ea981bc7b0bd24e29097587c850fb17358909fbf6449b515"
+metafile = true
+
+[[files]]
+file = "config/ftbquests/quests/chapters/atm9_iron_spells_and_spellbooks.snbt.pw.toml"
+hash = "7f7159f9a2f99265c9707c6d50f71dfbbccce0f568d47a098bf58f30d9197afc"
+metafile = true
+
+[[files]]
+file = "config/ftbquests/quests/chapters/atm9_mekanism.snbt.pw.toml"
+hash = "172525710e8d86152daaa3c44541235711f34ebbb32df7f7c292ac7c02e4719c"
+metafile = true
+
+[[files]]
+file = "config/ftbquests/quests/chapters/atm9_mekanism_reactors.snbt.pw.toml"
+hash = "941895d360a950b6c8e5cd8e57fd3d65b40f68135a60bd32ed32883d309f1ecc"
+metafile = true
+
+[[files]]
+file = "config/ftbquests/quests/chapters/atm9_occultism.snbt.pw.toml"
+hash = "e7ae98e8e5f9f977e138384ef08392c12e24ac839ff31affeea16c14ad1f6098"
+metafile = true
+
+[[files]]
+file = "config/ftbquests/quests/chapters/atm9_pneumaticcraft.snbt.pw.toml"
+hash = "78e4baa37b60b547622633e119e67ab2c9127908ae903be07ed2d903bf08137f"
+metafile = true
+
+[[files]]
+file = "config/ftbquests/quests/chapters/atm9_productive_bees.snbt.pw.toml"
+hash = "fffa778d6d8dbe5568fa43965685c8554a018bc6d4f5c4a355edded5bae93573"
+metafile = true
+
+[[files]]
+file = "config/ftbquests/quests/chapters/atm9_refined_storage.snbt.pw.toml"
+hash = "54da50c3171e48fb36ebae77e4bf26c16b28e62415619062a4856a7b8aeb1192"
+metafile = true
+
+[[files]]
+file = "config/ftbquests/quests/chapters/atm9_storage.snbt.pw.toml"
+hash = "cb80193463790ad257b39833ce9c72df9879c9e1c6ec9932e78b9b6fbe55c48c"
+metafile = true
+
+[[files]]
+file = "config/ftbquests/quests/chapters/atm9_thermal_expansion.snbt.pw.toml"
+hash = "d3fb8346b6c73041cb82ac751dfcd62f0a6f2cf88c36c43c430a1a8c2ca1c451"
+metafile = true
+
+[[files]]
+file = "config/ftbquests/quests/chapters/atm9_tips_and_tricks.snbt.pw.toml"
+hash = "31c98ea4fe3e785e4b29b8339b036acbb3ae35fcfc62c8f88e774cae0388ce6b"
+metafile = true
+
+[[files]]
+file = "config/ftbquests/quests/chapters/atm9_undergarden.snbt.pw.toml"
+hash = "28bc46c98365b40289a3d005b25ca77ee0f0e619ec32b79607fba16bd471c104"
+metafile = true
+
+[[files]]
+file = "config/ftbquests/quests/chapters/olycity_chaos_persists.snbt.pw.toml"
+hash = "854851e4873f2726c7dbd4d17831d3a2b604e61d1c805cd8edc7a5da30c85aa3"
 metafile = true
 
 [[files]]
@@ -1443,6 +1578,11 @@ metafile = true
 [[files]]
 file = "config/webdisplays_common.toml.pw.toml"
 hash = "8ebbe501fba063f2819775fd5ba0d6938708d4714b8c841c1447c05bf1e43af3"
+metafile = true
+
+[[files]]
+file = "config/xaero/minimap/default_radar_categories_client.json.pw.toml"
+hash = "8b6aff144491105c7aef774a154b1ab634333a6ddff1f2221de008154efa6a75"
 metafile = true
 
 [[files]]
@@ -4922,7 +5062,7 @@ metafile = true
 
 [[files]]
 file = "kubejs/server_scripts/olycity_relics.js.pw.toml"
-hash = "acd9e64752428595c24c454a9f02ef1c834c733618f9c6b8b879b7ab60ba1da0"
+hash = "151481dd21e8e3318fac5f0fdb6332f26833fd82f7a52c94f63345d12d7bfc2c"
 metafile = true
 
 [[files]]
@@ -4948,6 +5088,16 @@ metafile = true
 [[files]]
 file = "mods/AmbientSounds_FORGE_v6.3.9_mc1.20.1.jar.pw.toml"
 hash = "1223482014a7aee3b344d3519c887fba6492f915088000d2bb69d4c2bea46921"
+metafile = true
+
+[[files]]
+file = "mods/Apotheosis-1.20.1-7.4.8.jar.pw.toml"
+hash = "06217edc149ff0c0978bd12a4156e04e2554cb5f5647a7cc229ce51d8d51bd82"
+metafile = true
+
+[[files]]
+file = "mods/ApothicAttributes-1.20.1-1.3.7.jar.pw.toml"
+hash = "d0e871ee788a5a73c9352b52c204c4073cf2f054dfeb9d9a7dafbda57324015f"
 metafile = true
 
 [[files]]
@@ -5101,8 +5251,8 @@ hash = "32b8529e6773c46424c292c0719a75621a3d84639539aa7cc97e054a6ebb30a7"
 metafile = true
 
 [[files]]
-file = "mods/ModernChickens-1.20.1-2.6.1-Forge.jar.pw.toml"
-hash = "5d20443001835346f6cb5875019f7f545f103aa61734ab0ab4337125e4c19de6"
+file = "mods/ModernChickens-1.20.1-2.7.0-Forge.jar.pw.toml"
+hash = "98b5180420cab103de1d768d614ab82ae46948314659ff79ae03cdb4760f901b"
 metafile = true
 
 [[files]]
@@ -5123,6 +5273,11 @@ metafile = true
 [[files]]
 file = "mods/Patchouli-1.20.1-85-FORGE.jar.pw.toml"
 hash = "e591d210a5d75e2806c3e56d81c772e475d949c41be7adc14a84462a4706af62"
+metafile = true
+
+[[files]]
+file = "mods/Placebo-1.20.1-8.6.3.jar.pw.toml"
+hash = "1676ce7383bfb4d680be647d607dcbb427a851305fe9dcac00529304825e9d7e"
 metafile = true
 
 [[files]]
@@ -5227,7 +5382,7 @@ metafile = true
 
 [[files]]
 file = "mods/appleskin-forge-mc1.20.1-2.5.1.jar.pw.toml"
-hash = "483613bf75a96d9e3e2fd8699e550fb55fc78a2bdf081f8282d921fbe50732a5"
+hash = "3f980dac75bb3e5238781996afe3cfebb1c7f8fc88813e4c5b265a9e494b1c7c"
 metafile = true
 
 [[files]]
@@ -5273,6 +5428,11 @@ metafile = true
 [[files]]
 file = "mods/carryon-forge-1.20.1-2.1.2.7.jar.pw.toml"
 hash = "04e62e6db137400f9b57d1d4e72b27212ac11f3d0f616ecbd729c1a6a5dab86b"
+metafile = true
+
+[[files]]
+file = "mods/chaospersists-1.20.1-0.9.0.jar.pw.toml"
+hash = "957a80906672037af98b831a41b9b5b8b1a855a04076acf571361e68134aafe2"
 metafile = true
 
 [[files]]
@@ -5407,7 +5567,7 @@ metafile = true
 
 [[files]]
 file = "mods/findme-3.2.1-forge.jar.pw.toml"
-hash = "5be04386683ceb89bf750985c28b91b6bfb1569ae3311c72aa5f06f9151c1e2c"
+hash = "e55bef726979c39cd2171235cf858b67ec477038d3fb9298d0a6915ffe958290"
 metafile = true
 
 [[files]]
@@ -5557,7 +5717,7 @@ metafile = true
 
 [[files]]
 file = "mods/jei-1.20.1-forge-15.57.0.207.jar.pw.toml"
-hash = "4e3be5f7b22b53e0f58843583a2c2310fafbc008540d7e35f3a9030c9de5dca3"
+hash = "89e3817c912489dcff78457f0d3bf88e724cc9766d8e4613b397563025da5ffe"
 metafile = true
 
 [[files]]
@@ -5706,8 +5866,13 @@ hash = "3c0e95250573ee8f0e2176217c27be9255dccf4d75d66e14b64831650d1c3436"
 metafile = true
 
 [[files]]
-file = "mods/sophisticatedcore-1.20.1-1.5.6.2378.jar.pw.toml"
-hash = "a2a48c92375fce3557504404da47b1d35fd94bab6ece735ef4bda1eaafd1a6ca"
+file = "mods/sophisticatedcore-1.20.1-1.5.6.2383.jar.pw.toml"
+hash = "0b862cf691211a32d03e147511af82c538d3aa0457c827ffbff9dbde3b3653f0"
+metafile = true
+
+[[files]]
+file = "mods/sophisticatedstorage-1.20.1-1.5.1.2158.jar.pw.toml"
+hash = "ecebc186e4ef7cf982de53ef6f65513094b9dd3d77b764dd8efaa88aa0647f6e"
 metafile = true
 
 [[files]]
@@ -6198,9 +6363,4 @@ metafile = true
 [[files]]
 file = "patchouli_books/chroniques_olycity/fr_fr/entries/torchmaster.json.pw.toml"
 hash = "82aaa11d94022899a53f35bafd1114df705c4c492c8cc1d23e94febc8a4eaed0"
-metafile = true
-
-[[files]]
-file = "config/xaero/minimap/default_radar_categories_client.json.pw.toml"
-hash = "8b6aff144491105c7aef774a154b1ab634333a6ddff1f2221de008154efa6a75"
 metafile = true

@@ -1,0 +1,8 @@
+name = "mods/waystones-forge-1.20.1-14.1.21.jar"
+filename = "waystones-forge-1.20.1-14.1.21.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/fd6fe3c645328ea7be5bc6723d02c881e34650e0cbd4527ba59e42fa4cbe3c80.jar"
+hash-format = "sha256"
+hash = "fd6fe3c645328ea7be5bc6723d02c881e34650e0cbd4527ba59e42fa4cbe3c80"

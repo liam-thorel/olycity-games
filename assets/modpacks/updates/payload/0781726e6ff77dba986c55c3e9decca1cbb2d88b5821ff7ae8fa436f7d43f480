@@ -1,0 +1,1688 @@
+{
+  "autofocus_id": "6E8BE34855540320",
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "diamond",
+  "filename": "atm9_basic_tools",
+  "group": "39780E238024A574",
+  "icon": {
+    "Count": 1,
+    "id": "minecraft:diamond_pickaxe",
+    "tag": {
+      "Damage": 0
+    }
+  },
+  "id": "06B2718F51CAF5A7",
+  "images": [
+    {
+      "height": 0.5,
+      "image": "quark:textures/attribute/attack_damage.png",
+      "rotation": 0.0,
+      "width": 0.5,
+      "x": -3.0,
+      "y": 4.0
+    },
+    {
+      "height": 0.5,
+      "image": "quark:textures/attribute/attack_damage.png",
+      "rotation": 0.0,
+      "width": 0.5,
+      "x": -3.0,
+      "y": 5.0
+    },
+    {
+      "height": 0.5,
+      "image": "quark:textures/attribute/attack_damage.png",
+      "rotation": 0.0,
+      "width": 0.5,
+      "x": -3.0,
+      "y": 6.0
+    },
+    {
+      "height": 0.5,
+      "image": "quark:textures/attribute/attack_damage.png",
+      "rotation": 0.0,
+      "width": 0.5,
+      "x": -3.0,
+      "y": 7.0
+    },
+    {
+      "height": 0.5,
+      "image": "quark:textures/attribute/attack_damage.png",
+      "rotation": 0.0,
+      "width": 0.5,
+      "x": -3.0,
+      "y": 8.0
+    },
+    {
+      "height": 0.5,
+      "image": "quark:textures/attribute/attack_damage.png",
+      "rotation": 0.0,
+      "width": 0.5,
+      "x": -3.0,
+      "y": 11.0
+    },
+    {
+      "height": 1.0,
+      "image": "minecraft:item/wooden_pickaxe",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 5.0,
+      "y": 0.0
+    },
+    {
+      "height": 1.0,
+      "image": "minecraft:item/iron_pickaxe",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 5.0,
+      "y": -1.0
+    },
+    {
+      "height": 1.0,
+      "image": "minecraft:item/netherite_pickaxe",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 5.0,
+      "y": -2.0
+    },
+    {
+      "height": 1.0,
+      "image": "minecraft:item/stone_pickaxe",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 6.0,
+      "y": -0.5
+    },
+    {
+      "height": 1.0,
+      "image": "minecraft:item/diamond_pickaxe",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 6.0,
+      "y": -1.5
+    }
+  ],
+  "order_index": 1,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "description": [
+        "Les différents matériaux donnent accès à différents niveaux de minage. JEI indique les recettes et les infobulles précisent les capacités des outils.",
+        "Prépare les objets indiqués par chaque tâche. Pour les outils moddés, teste aussi leur mode d’utilisation loin des constructions."
+      ],
+      "id": "57225DDBD72B862C",
+      "rewards": [
+        {
+          "count": 32,
+          "id": "39B9EDB486B1827D",
+          "item": "minecraft:cobblestone",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "6F3343603B23C1DE",
+          "item": "minecraft:cobblestone",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Les premiers outils",
+      "x": -3.0,
+      "y": 0.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "57225DDBD72B862C"
+      ],
+      "description": [
+        "&fLe niveau 2 est le niveau de pickaxe de pierre. C'est presque seulement pour l'exploitation d'objets en fer."
+      ],
+      "icon": "minecraft:iron_ore",
+      "id": "392217DE61DC187A",
+      "rewards": [
+        {
+          "count": 5,
+          "id": "4AEB0CE959830CAA",
+          "item": "minecraft:raw_iron",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "49C0BF79A5BD393A",
+          "item": "minecraft:raw_iron",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&fExploitation Niveau 2",
+      "x": -2.5,
+      "y": -0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "392217DE61DC187A"
+      ],
+      "description": [
+        "&bLe niveau 3 est le niveau de Pickaxe de fer, il mine la plupart des minerais comme le diamant, l'émeraude et l'or."
+      ],
+      "icon": "minecraft:diamond_ore",
+      "id": "61006A93EDF98F29",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "52D7E4EEFF052EE3",
+          "item": "minecraft:diamond",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "2E1585BC2978B5AA",
+          "item": "minecraft:diamond",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&bExploitation Niveau 3",
+      "x": -3.0,
+      "y": -1.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "61006A93EDF98F29"
+      ],
+      "description": [
+        "&5Tier 4 est le niveau d'outil de diamant, utilisé pour obtenir Obsidian et Netherite. Aussi quelques minerais enrobés comme Uranium et Platinum."
+      ],
+      "id": "0D05669E67B1AE6E",
+      "rewards": [
+        {
+          "id": "0257C5DCB30E1C7E",
+          "item": "minecraft:ancient_debris",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "5B46810BAA27BE68",
+          "item": "minecraft:ancient_debris",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&5Exploitation Niveau 4",
+      "x": -2.5,
+      "y": -1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "7822AE968FD6F0BE",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "52DA999E52D0051D",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&9Niveau 1",
+      "tasks": [
+        {
+          "id": "56BFD9E2CDB4BDEB",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:wooden_pickaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -1.5,
+      "y": 0.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Pioche en bois"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "0DF669D5C7328BBA",
+      "optional": 1,
+      "rewards": [],
+      "subtitle": "&fNiveau 2",
+      "tasks": [
+        {
+          "id": "3FF00EFB4BC96B9B",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:stone_pickaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -1.0,
+      "y": -0.5,
+      "description": [
+        "Ce jalon reprend un objectif déjà présent dans les parcours OLYCITY. Il complète le guide sans donner une seconde récompense."
+      ],
+      "repeatable": false,
+      "title": "Pioche en pierre"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "7F59858CB5B162F8",
+      "optional": 1,
+      "rewards": [],
+      "subtitle": "&bNiveau 3",
+      "tasks": [
+        {
+          "id": "1DC6DC9792D76A97",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:iron_pickaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -1.5,
+      "y": -1.0,
+      "description": [
+        "Ce jalon reprend un objectif déjà présent dans les parcours OLYCITY. Il complète le guide sans donner une seconde récompense."
+      ],
+      "repeatable": false,
+      "title": "Pioche en fer"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "1A1E74E2AC56DFE8",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "6AF672E8498C504C",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&5Niveau 4",
+      "tasks": [
+        {
+          "id": "5BF82AECA425C384",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:diamond_pickaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -1.0,
+      "y": -1.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Pioche en diamant"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "5104F5079DABB0A9",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "6BB329AC18438CA6",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&eNiveau 5",
+      "tasks": [
+        {
+          "id": "679C68E323726CA3",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:netherite_pickaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -1.5,
+      "y": -2.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Pioche en netherite"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "649BEDEBA98420AA",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "0D079626FF4592A6",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&bNiveau 3",
+      "tasks": [
+        {
+          "id": "7E67E3C5157CE110",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:cloggrum_pickaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "title": "Mekanism et Pickaxes de Fer sous-gardiens",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -0.5,
+      "y": -1.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Cloggrum Pickaxe"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "2302028C3959EEA6",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "74FD919E92B4A8CA",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&dNiveau 6",
+      "tasks": [
+        {
+          "id": "20EC1C9642B1D7F5",
+          "item": {
+            "Count": 1,
+            "id": "aether:gravitite_pickaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "title": "Mod d'exploration Max Pickaxes",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 1.0,
+      "y": -2.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Gravitite Pickaxe"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "158C8E6CDDA68371",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "0F6EC9E9ED093520",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&fNiveau 2",
+      "tasks": [
+        {
+          "id": "5D8EAE8F99B75502",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:pyrope_pickaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 1.0,
+      "y": -0.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Pioche en pyrope"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "6076994BF32862D7",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "6CE57A79721C519B",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&bNiveau 3",
+      "tasks": [
+        {
+          "id": "74B7CEE6550C7F16",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:aquite_pickaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "title": "Ciel bleu et Pickaxes de fer Aéther",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 0.5,
+      "y": -1.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Pioche en aquite"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "247B68A37360ADC5",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "5C25A26C2456CADE",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&dNiveau 6",
+      "tasks": [
+        {
+          "id": "64FCEA7E4C35AE50",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:diopside_pickaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "title": "Ciel bleu Max Picks",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 2.0,
+      "y": -2.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Pioche en diopside"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "008092DD151FEF49",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "43AA43506CC4CA0E",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&eNiveau 5",
+      "tasks": [
+        {
+          "id": "390D431132A95ED2",
+          "item": {
+            "Count": 1,
+            "id": "cataclysm:void_forge",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 0.5,
+      "y": -2.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Void Forge"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "071F54EF412E5190",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "09CBADC14EBC8D93",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&eNiveau 5",
+      "tasks": [
+        {
+          "id": "1924AA6414534444",
+          "item": {
+            "Count": 1,
+            "id": "cataclysm:infernal_forge",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 1.5,
+      "y": -2.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Forge infernale"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "4E8E6CEA1B7D2C0F",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "5CF86CC62680B137",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&9Niveau 1",
+      "tasks": [
+        {
+          "id": "7C1EEB31EF6DA56A",
+          "item": {
+            "Count": 1,
+            "id": "aether:skyroot_pickaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 0.5,
+      "y": 0.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Skyroot Pickaxe"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "5B02CCFE91C29A7E",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "258C77BB13A404FB",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&fNiveau 2",
+      "tasks": [
+        {
+          "id": "1847A82F4E2C69F4",
+          "item": {
+            "Count": 1,
+            "id": "aether:holystone_pickaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 2.0,
+      "y": -0.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Holystone Pickaxe"
+    },
+    {
+      "description": [
+        "Bienvenue dans les outils de base! Vous n'avez jamais vu ou entendu parler d'un outil et vous voulez savoir où il se trouve parmi d'autres outils? Ensuite, cette quête est parfaite pour vous! (Les épées sont triées par des dommages de base, les épées qui peuvent être mises à niveau ou utilisées pour obtenir plus de dommages ne sont pas inclus) (S'il vous plaît ne pas utiliser ceci comme une liste de seaux, trouver tous les outils et les armes va 99%% vous rendre fou)."
+      ],
+      "hide_dependent_lines": 1,
+      "id": "6E8BE34855540320",
+      "rewards": [
+        {
+          "count": 16,
+          "id": "1E13E19F3B474C9B",
+          "item": "minecraft:stick",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "gear",
+      "size": 2.0,
+      "tasks": [
+        {
+          "id": "55F3A09901AB7F97",
+          "item": "minecraft:stick",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Des outils !",
+      "x": 0.0,
+      "y": 2.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "048558DDB52A8872",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "33EC8A717223A34D",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&f4 Dommages",
+      "tasks": [
+        {
+          "id": "519F280B60F7D467",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:wooden_sword",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -1.0,
+      "y": 4.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Épée en bois"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "2C1AF94094EF40DF",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "0A08FC4889B6E411",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&f5 Dommages",
+      "tasks": [
+        {
+          "id": "69EBC3DC83EACA44",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:stone_sword",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -1.0,
+      "y": 5.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Épée en pierre"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "475BBD47F7CBD917",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "22BA1953608681E1",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&f6 Dommages",
+      "tasks": [
+        {
+          "id": "4F7AE433A7183D84",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:iron_sword",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -1.0,
+      "y": 6.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Épée en fer"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "2E7C11BABA6A9230",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "7BC1ED33E14074E2",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&f7 Dommages",
+      "tasks": [
+        {
+          "id": "6C5E604BB5DB0F9E",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:diamond_sword",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -1.0,
+      "y": 7.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Épée en diamant"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "56C6D6B8068A4B86",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "75B5EE3C8D688E3D",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&f8 Dommages",
+      "tasks": [
+        {
+          "id": "0A296DD3154FDAF1",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:netherite_sword",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -1.0,
+      "y": 8.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Épée en netherite"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "4792CE2697ABA125",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "2A3098019A937513",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&fNiveau 2",
+      "tasks": [
+        {
+          "id": "5103D609D1FB7BCE",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:golden_pickaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 0.0,
+      "y": -0.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Pioche en or"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "7D164A94DC2F8D96",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "56DBB8EA44C29CFD",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&f4.5 Dommages",
+      "tasks": [
+        {
+          "id": "25D34533D64BD92A",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:comet_sword",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -0.5,
+      "y": 4.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Comet Wood Sword"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "3C694172133A282C",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "7D4E1E4F5497080B",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&f6.4 Dommages",
+      "tasks": [
+        {
+          "id": "05506CA98626B918",
+          "item": {
+            "Count": 1,
+            "id": "ae2:fluix_sword",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -0.5,
+      "y": 6.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Fluix Sword"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "555BA3E4E9238235",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "4930FBD4BCC5136F",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&f5.5 Dommages",
+      "tasks": [
+        {
+          "id": "3781C8DC9FC5FB51",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:pyrope_sword",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -0.5,
+      "y": 5.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Épée en pyrope"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "236C0621477F7EC8",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "4D0FC4EC8D328F5E",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&f5 Dommages",
+      "tasks": [
+        {
+          "id": "28D3126A67CEB566",
+          "item": {
+            "Count": 1,
+            "id": "aether:holystone_sword",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 1.0,
+      "y": 5.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Holystone Sword"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "3831E29D286E59B7",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "3F6619703F127E9A",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&f7.5 Dommages",
+      "tasks": [
+        {
+          "id": "628DEF2BCDEBBC59",
+          "item": {
+            "Count": 1,
+            "id": "undergarden:utherium_sword",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 0.5,
+      "y": 7.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Utherium Sword"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "5FE30B17C2D6578E",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "25952E859C41A874",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&f4 Dommages",
+      "tasks": [
+        {
+          "id": "18D91772DCE546D5",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:golden_sword",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 0.0,
+      "y": 4.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Épée en or"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "747409C4B73AA77D",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "36BC0979DEE6D057",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&9Niveau 1",
+      "tasks": [
+        {
+          "id": "127298C0658C7260",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:bluebright_pickaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "title": "Pickaxes en bois du ciel bleu",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -0.5,
+      "y": 0.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Pioche en bois de lumibleu"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "3FEFAC75D45F151A",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "477A596014A2AC7B",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&f4 Dommages",
+      "tasks": [
+        {
+          "id": "0A0463834764AAE4",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:bluebright_sword",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "title": "Ciel bleu Épées en bois",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 1.0,
+      "y": 4.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Épée en bois lumibleu"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "28280FA27E741DAF",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "10642F0417001A04",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&f5 Dommages",
+      "tasks": [
+        {
+          "id": "06C62E950C9B34D1",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:turquoise_stone_sword",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "title": "Ciel bleu Épées de pierre",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 2.0,
+      "y": 5.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Épée en pierre turquoise"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "133D4D2A996CF707",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "217BCCFBF56F54CF",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&f6 Dommages",
+      "tasks": [
+        {
+          "id": "3B7A2BFBA1B63FC4",
+          "item": {
+            "Count": 1,
+            "id": "ae2:certus_quartz_sword",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "title": "Mekanism et épées de fer AE2",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 0.0,
+      "y": 6.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Epée en Quartz Certus"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "593E415740C03931",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "244C14310DA6B25E",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&f6 Dommages",
+      "tasks": [
+        {
+          "id": "32F167E83A9A3EE7",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:aquite_sword",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "title": "Botania et ciel bleu Epées de fer",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 1.0,
+      "y": 6.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Épée en aquite"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "54FE594AE046307D",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "2650416939193937",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&f7 Dommages",
+      "tasks": [
+        {
+          "id": "5AEC0D75126D5D4A",
+          "item": {
+            "Count": 1,
+            "id": "aether:holy_sword",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "title": "Épées de diamant d'éther et de sous-gardiste",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 2.0,
+      "y": 7.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Holy Sword"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "66529C432414C210",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "5C553E70EE8E3D27",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&f9 Dommages",
+      "tasks": [
+        {
+          "id": "38BC48EDEB1E6542",
+          "item": {
+            "Count": 1,
+            "id": "blue_skies:diopside_sword",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "title": "Épées artisanales",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 0.0,
+      "y": 9.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Épée en diopside"
+    },
+    {
+      "can_repeat": 0,
+      "description": [
+        "Cette quête a été créée par AllTheMods Staff, ou un contributeur communautaire pour une utilisation dans AllTheMods Modpacks.",
+        "Comme tous les packs AllTheMods sont sous licence All Rights Reserved, cette Quest n'est pas autorisée à être utilisée dans les packs publics non publiés par l'équipe AllTheMods, sans autorisation explicite.",
+        "Cette quête est intentionnellement cachée, si vous voyez cela, vous êtes en mode édition.",
+        "Repère de lecture : obtiens le livre indiqué pour poursuivre. Cette étape ne donne aucune récompense."
+      ],
+      "disable_toast": 1,
+      "hide_details_until_startable": 1,
+      "hide_until_deps_visible": 1,
+      "icon": {
+        "Count": 1,
+        "id": "ftbquests:custom_icon",
+        "tag": {
+          "Icon": "minecraft:item/barrier"
+        }
+      },
+      "id": "5F7339E601C2F1BA",
+      "invisible": 1,
+      "optional": 1,
+      "shape": "octagon",
+      "tasks": [
+        {
+          "id": "43FA9F571EDBFDD4",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "7E8DC0C56ECD54D7",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": -1.5,
+      "y": 2.0,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Livre",
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "713431A0AD9F1F2C",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "68E0D46DB4DF3B96",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&f7.88 Dommage",
+      "tasks": [
+        {
+          "id": "69E568D800D10B6C",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {},
+                  "provider_id": "[I;-227329855,-169787229,-1869186989,1035806982]"
+                }
+              }
+            },
+            "id": "draconicevolution:draconic_sword"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 2.5,
+      "y": 7.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Épée draconienne"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "0276BA38FC147C5B",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "632BDB781D51427C",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&f17.5 Dommages",
+      "tasks": [
+        {
+          "id": "01DE62C59E7EF5D4",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {},
+                  "provider_id": "[I;-972130503,79448394,-1722806165,-282135181]"
+                }
+              }
+            },
+            "id": "draconicevolution:chaotic_sword"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -0.5,
+      "y": 12.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Épée chaotique"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "718B905E344B629D",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "10C5337F2D824876",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&f8.75 Dommages",
+      "tasks": [
+        {
+          "id": "4E8D892D6CCF83F3",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {},
+                  "provider_id": "[I;-1303579312,-1343271801,-1829037300,-1269632083]"
+                }
+              }
+            },
+            "id": "draconicevolution:wyvern_sword"
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -0.5,
+      "y": 8.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Épée de Wyvern"
+    },
+    {
+      "dependencies": [
+        "6E8BE34855540320"
+      ],
+      "id": "0416BCAE0DB1E3EA",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "46F7C0D63FE3B0E6",
+          "type": "xp",
+          "xp": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "&dNiveau 6",
+      "tasks": [
+        {
+          "id": "381A5DAE83685C3D",
+          "item": {
+            "Count": 1,
+            "ForgeCaps": {
+              "Parent": {
+                "energy": {
+                  "energy": 0
+                },
+                "module_host": {
+                  "modules": [],
+                  "properties": {
+                    "mining_speed": {
+                      "hud": 1,
+                      "value": 1.0
+                    }
+                  },
+                  "provider_id": "[I;-1398663822,1002719887,-1423459786,1652402099]"
+                }
+              }
+            },
+            "id": "draconicevolution:chaotic_pickaxe"
+          },
+          "title": "Pickaxes d'évolution draconienne",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 4.0,
+      "y": -2.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Pickaxe chaotique"
+    }
+  ],
+  "title": "Outils et préparation",
+  "default_consume_items": false
+}

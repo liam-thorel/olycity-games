@@ -1,0 +1,2491 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "",
+  "filename": "atm9_industrial_foregoing",
+  "group": "3DA9E3931E28DB13",
+  "icon": "industrialforegoing:common_black_hole_unit",
+  "id": "08E02D6BE9AAF464",
+  "images": [
+    {
+      "height": 1.0,
+      "hover": [
+        "atm9.quest.industrialForegoing.hover.mycelialReactorFeatures.1",
+        "atm9.quest.industrialForegoing.hover.mycelialReactorFeatures.2"
+      ],
+      "image": "industrialforegoing:block/reactor_front_mycelial",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 8.0,
+      "y": 17.0
+    },
+    {
+      "height": 1.0,
+      "hover": [
+        "atm9.quest.industrialForegoing.crimedMycelialGenerator"
+      ],
+      "image": "industrialforegoing:block/generators/generator_front_crimed",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 7.5,
+      "y": 14.5
+    },
+    {
+      "height": 1.0,
+      "hover": [
+        "atm9.quest.industrialForegoing.culinaryMycelialGenerator"
+      ],
+      "image": "industrialforegoing:block/generators/generator_front_culinary",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 8.5,
+      "y": 14.5
+    },
+    {
+      "height": 1.0,
+      "hover": [
+        "atm9.quest.industrialForegoing.deathMycelialGenerator"
+      ],
+      "image": "industrialforegoing:block/generators/generator_front_death",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 9.5,
+      "y": 14.5
+    },
+    {
+      "height": 1.0,
+      "hover": [
+        "atm9.quest.industrialForegoing.disenchantmentMycelialGenerator"
+      ],
+      "image": "industrialforegoing:block/generators/generator_front_disenchantment",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 6.5,
+      "y": 14.5
+    },
+    {
+      "height": 1.0,
+      "hover": [
+        "atm9.quest.industrialForegoing.enderMycelialGenerator"
+      ],
+      "image": "industrialforegoing:block/generators/generator_front_ender",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 10.5,
+      "y": 15.5
+    },
+    {
+      "height": 1.0,
+      "hover": [
+        "atm9.quest.industrialForegoing.explosiveMycelialGenerator"
+      ],
+      "image": "industrialforegoing:block/generators/generator_front_explosive",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 10.5,
+      "y": 16.5
+    },
+    {
+      "height": 1.0,
+      "hover": [
+        "atm9.quest.industrialForegoing.frostyMycelialGenerator"
+      ],
+      "image": "industrialforegoing:block/generators/generator_front_frosty",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 10.5,
+      "y": 17.5
+    },
+    {
+      "height": 1.0,
+      "hover": [
+        "atm9.quest.industrialForegoing.furnaceMycelialGenerator"
+      ],
+      "image": "industrialforegoing:block/generators/generator_front_furnace",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 10.5,
+      "y": 18.5
+    },
+    {
+      "height": 1.0,
+      "hover": [
+        "atm9.quest.industrialForegoing.halitosisMycelialGenerator"
+      ],
+      "image": "industrialforegoing:block/generators/generator_front_halitosis",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 9.5,
+      "y": 19.5
+    },
+    {
+      "height": 1.0,
+      "hover": [
+        "atm9.quest.industrialForegoing.magmaMycelialGenerator"
+      ],
+      "image": "industrialforegoing:block/generators/generator_front_magmatic",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 8.5,
+      "y": 19.5
+    },
+    {
+      "height": 1.0,
+      "hover": [
+        "atm9.quest.industrialForegoing.meatallurgicMycelialGenerator"
+      ],
+      "image": "industrialforegoing:block/generators/generator_front_meatallurgic",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 7.5,
+      "y": 19.5
+    },
+    {
+      "height": 1.0,
+      "hover": [
+        "atm9.quest.industrialForegoing.netherstarMycelialGenerator"
+      ],
+      "image": "industrialforegoing:block/generators/generator_front_netherstar",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 6.5,
+      "y": 19.5
+    },
+    {
+      "height": 1.0,
+      "hover": [
+        "atm9.quest.industrialForegoing.pinkMycelialGenerator"
+      ],
+      "image": "industrialforegoing:block/generators/generator_front_pink",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 5.5,
+      "y": 18.5
+    },
+    {
+      "height": 1.0,
+      "hover": [
+        "atm9.quest.industrialForegoing.potionMycelialGenerator"
+      ],
+      "image": "industrialforegoing:block/generators/generator_front_potion",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 5.5,
+      "y": 17.5
+    },
+    {
+      "height": 1.0,
+      "hover": [
+        "atm9.quest.industrialForegoing.rocketMycelialGenerator"
+      ],
+      "image": "industrialforegoing:block/generators/generator_front_rocket",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 5.5,
+      "y": 16.5
+    },
+    {
+      "height": 1.0,
+      "hover": [
+        "atm9.quest.industrialForegoing.slimeyMycelialGenerator"
+      ],
+      "image": "industrialforegoing:block/generators/generator_front_slimey",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 5.5,
+      "y": 15.5
+    },
+    {
+      "click": "#0EC2053B191C55C6",
+      "height": 1.0,
+      "hover": [
+        "atm9.quest.industrialForegoing.fluidExtractor"
+      ],
+      "image": "industrialforegoing:block/tree_fluid_extractor_back",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 1.3346938775509756,
+      "y": 2.910034013605461
+    },
+    {
+      "click": "#294C729B9EBD7A3C",
+      "height": 1.0,
+      "hover": [
+        "atm9.quest.industrialForegoing.blockPlacer"
+      ],
+      "image": "industrialforegoing:block/block_placer_back",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 0.4367346938775043,
+      "y": 2.01207482993199
+    },
+    {
+      "height": 1.0,
+      "hover": [
+        "atm9.quest.industrialForegoing.acaciaLogs"
+      ],
+      "image": "chipped:block/acacia_log/firewood_acacia_log",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 0.4399659863945189,
+      "y": 2.909523809523833
+    },
+    {
+      "click": "#0EC2053B191C55C6",
+      "height": 1.0,
+      "hover": [
+        "atm9.quest.industrialForegoing.fluidExtractor"
+      ],
+      "image": "industrialforegoing:block/tree_fluid_extractor_back",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 0.4367346938775043,
+      "y": 3.828401360544234
+    },
+    {
+      "click": "#0EC2053B191C55C6",
+      "height": 1.0,
+      "hover": [
+        "atm9.quest.industrialForegoing.fluidExtractor"
+      ],
+      "image": "industrialforegoing:block/tree_fluid_extractor_back",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": -0.461224489795967,
+      "y": 2.910034013605461
+    },
+    {
+      "click": "#6FF04DD735346BED",
+      "height": 1.0,
+      "hover": [
+        "atm9.quest.industrialForegoing.latexProcessingUnit"
+      ],
+      "image": "industrialforegoing:block/latex_processing_unit_front",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 3.1301020408163396,
+      "y": 2.9013605442176953
+    },
+    {
+      "height": 1.0,
+      "image": "jei:textures/jei/atlas/gui/icons/arrow_next.png",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 2.130612244897911,
+      "y": 2.8896258503401455
+    },
+    {
+      "height": 1.0,
+      "image": "minecraft:block/furnace_front_on",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 4.967346938775449,
+      "y": 2.8896258503401455
+    },
+    {
+      "height": 1.0,
+      "image": "jei:textures/jei/atlas/gui/icons/arrow_next.png",
+      "rotation": 0.0,
+      "width": 1.0,
+      "x": 4.028571428571368,
+      "y": 2.8896258503401455
+    }
+  ],
+  "order_index": 6,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "description": [
+        "Industrial Foregoing automatise notamment les cultures, l’élevage, la collecte et le traitement de ressources.",
+        "Commence par le guide du mod et la chaîne de fabrication du plastique. Une machine isolée ne suffit pas : prévois alimentation, ingrédients et rangement."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "patchouli:guide_book",
+        "tag": {
+          "patchouli:book": "industrialforegoing:industrial_foregoing"
+        }
+      },
+      "id": "01F7EA289F252192",
+      "rewards": [],
+      "shape": "gear",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "42824EA5CF5D27BD",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Découvrir Industrial Foregoing",
+      "x": 1.007653061224488,
+      "y": -3.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "06F4807F81DC171B"
+      ],
+      "description": [
+        "Extraits de latex de logs.",
+        "Vérifiez les quantités acceptables de logs et de latex dans JEI. Le meilleur journal à utiliser est Acacia.",
+        "Ce jalon reprend un objectif déjà présent dans les parcours OLYCITY. Il complète le guide sans donner une seconde récompense."
+      ],
+      "id": "03289D887F707CEF",
+      "rewards": [],
+      "tasks": [
+        {
+          "id": "2724DBF12843CB20",
+          "item": "industrialforegoing:fluid_extractor",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 0.9872448979591795,
+      "y": 0.0034013605442169137,
+      "repeatable": false,
+      "title": "Fluid Extractor"
+    },
+    {
+      "dependencies": [
+        "01F7EA289F252192"
+      ],
+      "id": "06F4807F81DC171B",
+      "rewards": [],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "19A107BAF7D3CDE1",
+          "item": "industrialforegoing:machine_frame_pity",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 1.0,
+      "y": -1.8299319727891188,
+      "description": [
+        "Ce jalon reprend un objectif déjà présent dans les parcours OLYCITY. Il complète le guide sans donner une seconde récompense."
+      ],
+      "repeatable": false,
+      "title": "Pity Machine Frame"
+    },
+    {
+      "dependencies": [
+        "06F4807F81DC171B"
+      ],
+      "id": "6C010EBEFEEDD19F",
+      "optional": 1,
+      "rewards": [
+        {
+          "count": 5,
+          "id": "167FC0C77AD4FDD6",
+          "item": "minecraft:coal",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "42E68AD03E5AEF59",
+          "item": "industrialforegoing:pitiful_generator",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 2.0,
+      "y": -1.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Pitiful Generator"
+    },
+    {
+      "dependencies": [
+        "6C9680052B22FD5D"
+      ],
+      "id": "47945F7BFBAC8EF1",
+      "rewards": [
+        {
+          "id": "5143DD49AA7155C0",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "4C06629DAC874CE9",
+          "item": "industrialforegoing:latex_processing_unit",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 3.5,
+      "y": 0.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Latex Processing Unit"
+    },
+    {
+      "dependencies": [
+        "06F4807F81DC171B"
+      ],
+      "id": "4B5AC580C0EA8199",
+      "rewards": [
+        {
+          "count": 5,
+          "id": "5589B97ED4799D73",
+          "item": "industrialforegoing:item_transporter_type",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "count": 5,
+          "id": "0C4855AAA6319123",
+          "item": "industrialforegoing:fluid_transporter_type",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "44B679C2253CB5A4",
+          "item": "industrialforegoing:item_transporter_type",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "1C76807E68A95E26",
+          "item": "industrialforegoing:fluid_transporter_type",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Point \\& Transport par fluide",
+      "x": 0.0,
+      "y": -1.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "03289D887F707CEF"
+      ],
+      "id": "6C9680052B22FD5D",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "018DDDB72D78B5B5",
+          "item": {
+            "Count": 1,
+            "id": "mekanism:basic_fluid_tank",
+            "tag": {
+              "BlockEntityTag": {
+                "FluidTanks": [
+                  {
+                    "Tank": 0,
+                    "stored": {
+                      "Amount": 14000,
+                      "FluidName": "industrialforegoing:latex"
+                    }
+                  }
+                ],
+                "ForgeCaps": {},
+                "Items": [],
+                "activeState": 0,
+                "currentRedstone": 15,
+                "editMode": 0,
+                "id": "mekanism:basic_fluid_tank",
+                "redstone": 0,
+                "updateDelay": 0
+              },
+              "display": {
+                "Lore": [
+                  "\"(+NBT)\""
+                ]
+              },
+              "mekData": {
+                "FluidTanks": [
+                  {
+                    "Tank": 0,
+                    "stored": {
+                      "Amount": 14000,
+                      "FluidName": "industrialforegoing:latex"
+                    }
+                  }
+                ],
+                "Items": [],
+                "securityMode": 0
+              }
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "0063EC2C2EEF4027",
+          "item": "industrialforegoing:latex_bucket",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 2.155102040816274,
+      "y": 0.007993197278921116,
+      "description": [],
+      "repeatable": false,
+      "title": "Latex Bucket"
+    },
+    {
+      "dependencies": [
+        "47945F7BFBAC8EF1"
+      ],
+      "description": [
+        "En cas de fusion, donne du plastique, qui est la principale ressource en prévision industrielle"
+      ],
+      "id": "413CE0FE14EC1993",
+      "rewards": [
+        {
+          "id": "7B6D01DE5272FB81",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "086CAF0C976B1490",
+          "item": "industrialforegoing:dryrubber",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 5.0,
+      "y": 0.0,
+      "repeatable": false,
+      "title": "Dry Rubber"
+    },
+    {
+      "dependencies": [
+        "413CE0FE14EC1993"
+      ],
+      "id": "7C7A064DD3FD9539",
+      "rewards": [
+        {
+          "count": 5,
+          "id": "749E411B687D24C0",
+          "item": "industrialforegoing:plastic",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "7AF7C648FD9935F7",
+          "item": "industrialforegoing:plastic",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 7.5,
+      "y": 0.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Plastic"
+    },
+    {
+      "dependencies": [
+        "7C7A064DD3FD9539"
+      ],
+      "id": "0AEBD8B2CC075B11",
+      "rewards": [
+        {
+          "id": "06C04FDACCEA8059",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "32FF5BB919FBEA81",
+          "item": "industrialforegoing:common_black_hole_unit",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "3C14ABDA9C5D69B9",
+          "item": "industrialforegoing:common_black_hole_tank",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Stockage des trous noirs communs",
+      "x": 9.5,
+      "y": -1.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7C7A064DD3FD9539"
+      ],
+      "id": "085D603C973F8731",
+      "tasks": [
+        {
+          "id": "1B9638CE9A5502DA",
+          "item": "industrialforegoing:dissolution_chamber",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 7.5,
+      "y": 2.0,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Dissolution Chamber"
+    },
+    {
+      "dependencies": [
+        "7C7A064DD3FD9539"
+      ],
+      "description": [
+        "Mobs passifs -> Slime plus rose",
+        "Mobs hostiles -> Plus de viande"
+      ],
+      "id": "06939216EAEFE92E",
+      "rewards": [
+        {
+          "id": "4C9F53CD53D4733C",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "436B035915F0696D",
+          "item": "industrialforegoing:mob_slaughter_factory",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 9.0,
+      "y": 0.0,
+      "repeatable": false,
+      "title": "Mob Slaughter Factory"
+    },
+    {
+      "dependencies": [
+        "06939216EAEFE92E"
+      ],
+      "id": "13B4EF2968226C5E",
+      "rewards": [
+        {
+          "id": "7A2A78F56844C746",
+          "item": {
+            "Count": 1,
+            "id": "mekanism:basic_fluid_tank",
+            "tag": {
+              "mekData": {
+                "FluidTanks": [
+                  {
+                    "Tank": 0,
+                    "stored": {
+                      "Amount": 14000,
+                      "FluidName": "industrialforegoing:pink_slime"
+                    }
+                  }
+                ],
+                "Items": [],
+                "securityMode": 0
+              }
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "4060B71649E9B2E7",
+          "item": {
+            "Count": 1,
+            "id": "mekanism:basic_fluid_tank",
+            "tag": {
+              "mekData": {
+                "FluidTanks": [
+                  {
+                    "Tank": 0,
+                    "stored": {
+                      "Amount": 14000,
+                      "FluidName": "industrialforegoing:meat"
+                    }
+                  }
+                ],
+                "Items": [],
+                "securityMode": 0
+              }
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "6339E8624D8A4DBA",
+          "item": "industrialforegoing:pink_slime_bucket",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "788B31C4A3B5C171",
+          "item": "industrialforegoing:meat_bucket",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Slime rose \\& Viande liquide",
+      "x": 11.5,
+      "y": 0.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7C7A064DD3FD9539"
+      ],
+      "id": "1766CF31406787CA",
+      "rewards": [
+        {
+          "count": 8,
+          "id": "402210C0D49345FF",
+          "item": "industrialforegoing:conveyor",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "04CC99D1C4537109",
+          "item": "industrialforegoing:conveyor",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 6.5,
+      "y": 1.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Conveyor Belt"
+    },
+    {
+      "dependencies": [
+        "1766CF31406787CA"
+      ],
+      "id": "7A2E8CF08671B10B",
+      "rewards": [
+        {
+          "count": 8,
+          "id": "1ABDC3C5FABAE337",
+          "item": "industrialforegoing:conveyor",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "165A42AE02365A0D",
+          "item": "industrialforegoing:conveyor_insertion_upgrade",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "68AA074335D88875",
+          "item": "industrialforegoing:conveyor_extraction_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Insertion du convoyeur \\& Extraction",
+      "x": 5.5,
+      "y": 1.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1766CF31406787CA"
+      ],
+      "id": "35595632890A6FC6",
+      "optional": 1,
+      "rewards": [
+        {
+          "count": 8,
+          "id": "58199B091B0C4B56",
+          "item": "industrialforegoing:conveyor",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "68FFB359E5C8813E",
+          "item": "industrialforegoing:conveyor_detection_upgrade",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "1C60A428F45DF75F",
+          "item": "industrialforegoing:conveyor_bouncing_upgrade",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "4B77BBF71DC87DA6",
+          "item": "industrialforegoing:conveyor_dropping_upgrade",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "209DB167E5161AAA",
+          "item": "industrialforegoing:conveyor_blinking_upgrade",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "3D525D3D340DABB3",
+          "item": "industrialforegoing:conveyor_splitting_upgrade",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Autres mises à niveau du moyen de transport",
+      "x": 6.5,
+      "y": 2.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7C7A064DD3FD9539"
+      ],
+      "id": "39FDC7D23C07ACAE",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "2297E50B4BE6E1A6",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "62ADC8EEDA448A42",
+          "item": "industrialforegoing:fluid_collector",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "314EBBF2F340241C",
+          "item": "industrialforegoing:fluid_placer",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Fluides",
+      "x": 9.0,
+      "y": -2.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7C7A064DD3FD9539"
+      ],
+      "description": [
+        "Automatiser la mise en place/la rupture en utilisant ces, particulièrement utile lors de l'automatisation du latex."
+      ],
+      "id": "2D07BA1475A26A7E",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "0FA470A33A9CC558",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "13960D9EF7CBE797",
+          "item": "industrialforegoing:block_breaker",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "5AD7070C078D87E4",
+          "item": "industrialforegoing:block_placer",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Blocs",
+      "x": 8.5,
+      "y": -3.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7C7A064DD3FD9539"
+      ],
+      "id": "277BB02342B2702E",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "07805C4DF3889638",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "7CBE8EE00DB010BE",
+          "item": "industrialforegoing:animal_feeder",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "31F253A5DE3FA12A",
+          "item": "industrialforegoing:animal_rancher",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "5246AB56D9E49912",
+          "item": "industrialforegoing:animal_baby_separator",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Animaux",
+      "x": 6.0,
+      "y": -2.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7C7A064DD3FD9539"
+      ],
+      "id": "713D8F3F68454AC1",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "2B7FB18A99452492",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "18C809F92E2FC709",
+          "item": "industrialforegoing:plant_gatherer",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "3BB73979AB9DEF9A",
+          "item": "industrialforegoing:plant_sower",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Plantes",
+      "x": 6.5,
+      "y": -3.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7C7A064DD3FD9539"
+      ],
+      "id": "70B6E9A02C0AF32C",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "692AD13A6D30F6CD",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "37751D6154F358BD",
+          "item": "industrialforegoing:bioreactor",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "4A02BED47B5A4742",
+          "item": "industrialforegoing:biofuel_generator",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Biopuissance",
+      "x": 5.5,
+      "y": -1.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7C7A064DD3FD9539"
+      ],
+      "id": "1E94B39BD812E489",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "550B6AC1B346495F",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "236589C4498105F3",
+          "item": "industrialforegoing:sewage_composter",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "23BC6F7E061D0A4F",
+          "item": "industrialforegoing:spores_recreator",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Autres machines",
+      "x": 7.5,
+      "y": -3.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7C7A064DD3FD9539",
+        "06939216EAEFE92E"
+      ],
+      "description": [
+        "La viande à travers un tube, délicieux"
+      ],
+      "id": "17DA0DF22505ED53",
+      "tasks": [
+        {
+          "id": "365CEDBC370021FB",
+          "item": "industrialforegoing:meat_feeder",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 9.0,
+      "y": 1.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Meat Feeder"
+    },
+    {
+      "dependencies": [
+        "085D603C973F8731"
+      ],
+      "id": "2DC809E38445C347",
+      "rewards": [
+        {
+          "id": "1624B1FE9017AB93",
+          "type": "xp_levels",
+          "xp_levels": 1,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "450D66190E0D4847",
+          "item": "industrialforegoing:machine_frame_simple",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 7.5,
+      "y": 3.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Simple Machine Frame"
+    },
+    {
+      "dependencies": [
+        "2DC809E38445C347",
+        "13B4EF2968226C5E"
+      ],
+      "id": "77626463ECF7930A",
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "7CAEBDB345175B37",
+          "item": "industrialforegoing:machine_frame_advanced",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 11.5,
+      "y": 3.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Advanced Machine Frame"
+    },
+    {
+      "dependencies": [
+        "2DC809E38445C347"
+      ],
+      "id": "11F2CFACAE7F110C",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "4E156E607229054A",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "3AFBF659CD7F1835",
+          "item": "industrialforegoing:hydroponic_bed",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 6.0,
+      "y": 5.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Hydroponic Bed"
+    },
+    {
+      "dependencies": [
+        "2DC809E38445C347"
+      ],
+      "id": "440CCE769185A3F5",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "6153DF7D60994687",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "5F7BD891D0FF8ABF",
+          "item": "industrialforegoing:plant_fertilizer",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 9.0,
+      "y": 6.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Plant Fertilizer"
+    },
+    {
+      "dependencies": [
+        "2DC809E38445C347"
+      ],
+      "id": "26EDFB00146F4BB7",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "7549D0C0EC2ED74B",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "2D3AB1811C681FC7",
+          "item": "industrialforegoing:mycelial_furnace",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 7.5,
+      "y": 6.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Furnace Mycelial Generator"
+    },
+    {
+      "dependencies": [
+        "2DC809E38445C347"
+      ],
+      "id": "7ED9CB9B266A3D7F",
+      "rewards": [
+        {
+          "id": "1B62D58923048D3F",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "044934A4F51E9B31",
+          "item": "industrialforegoing:marine_fisher",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 6.0,
+      "y": 4.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Marine Fisher"
+    },
+    {
+      "dependencies": [
+        "2DC809E38445C347"
+      ],
+      "id": "134F0B3EC4E78AB0",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "7349C91931ECC22B",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "6B1CBC754EBCB904",
+          "item": "industrialforegoing:mycelial_culinary",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 7.5,
+      "y": 7.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Culinary Mycelial Generator"
+    },
+    {
+      "dependencies": [
+        "2DC809E38445C347"
+      ],
+      "id": "1EF9036D3406A09E",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "4F25D5E68543CAD9",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "7F9563BA93718301",
+          "item": "industrialforegoing:mycelial_frosty",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 7.5,
+      "y": 9.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Frosty Mycelial Generator"
+    },
+    {
+      "dependencies": [
+        "2DC809E38445C347"
+      ],
+      "id": "4F2F2F679ABC4FFB",
+      "rewards": [
+        {
+          "id": "7ADF84F4C1DC1139",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "714B5AD744097525",
+          "item": "industrialforegoing:simple_black_hole_unit",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "39DCED79ECDDA116",
+          "item": "industrialforegoing:simple_black_hole_tank",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Stockage simple du trou noir",
+      "x": 9.0,
+      "y": 4.5,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2DC809E38445C347"
+      ],
+      "id": "3E2054A75D8B7F66",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "7A6BBD4822ADA1F3",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "0D351D787DF5F0CB",
+          "item": "industrialforegoing:fermentation_station",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 6.0,
+      "y": 6.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Fermentation Station"
+    },
+    {
+      "dependencies": [
+        "2DC809E38445C347"
+      ],
+      "id": "3E7590C95B70BF8A",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "2173BD294C8F703C",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "653B53AAA344F038",
+          "item": "industrialforegoing:mycelial_pink",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 7.5,
+      "y": 8.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Pink Mycelial Generator"
+    },
+    {
+      "dependencies": [
+        "2DC809E38445C347"
+      ],
+      "id": "1B72C868938EAD67",
+      "optional": 1,
+      "rewards": [
+        {
+          "id": "52B179C04A48B57C",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "128AF246C466104D",
+          "item": "industrialforegoing:mob_detector",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 9.0,
+      "y": 5.5,
+      "description": [],
+      "repeatable": false,
+      "title": "Mob Detector"
+    },
+    {
+      "dependencies": [
+        "13B4EF2968226C5E"
+      ],
+      "id": "764080ECD1077223",
+      "rewards": [
+        {
+          "id": "3655BBC1F50F7270",
+          "item": "industrialforegoing:pink_slime_ingot",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "4FDC6631E627AAB5",
+          "item": "industrialforegoing:pink_slime_ingot",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 14.5,
+      "y": 0.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Pink Slime Ingot"
+    },
+    {
+      "dependencies": [
+        "764080ECD1077223",
+        "77626463ECF7930A"
+      ],
+      "id": "1C66680D167C1893",
+      "tasks": [
+        {
+          "id": "61875041F989B6F4",
+          "item": "industrialforegoing:washing_factory",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 14.5,
+      "y": 2.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Washing Factory"
+    },
+    {
+      "dependencies": [
+        "77626463ECF7930A"
+      ],
+      "id": "77B151274CC59940",
+      "tasks": [
+        {
+          "id": "4967799503B02A77",
+          "item": "industrialforegoing:ore_laser_base",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "6CE6C60F902F61F8",
+          "item": "industrialforegoing:fluid_laser_base",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "count": 4,
+          "id": "0E8697C2987CDE65",
+          "item": "industrialforegoing:laser_drill",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Perceuses à laser (mineur de vaille)",
+      "x": 12.0,
+      "y": 5.0,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "77626463ECF7930A"
+      ],
+      "id": "02D5ED60A8E6887D",
+      "tasks": [
+        {
+          "id": "7942A1A142DE057F",
+          "item": "industrialforegoing:laser_lens10",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 11.0,
+      "y": 5.0,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "laser lens10"
+    },
+    {
+      "dependencies": [
+        "02D5ED60A8E6887D",
+        "77B151274CC59940"
+      ],
+      "description": [
+        "Suggestion :",
+        "Utilisez une sorte de verre à l'épreuve du flétrissement."
+      ],
+      "id": "59D84E7FCEE963CF",
+      "tasks": [
+        {
+          "id": "14CC107F5F5A7956",
+          "item": "industrialforegoing:ether_gas_bucket",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 11.5,
+      "y": 6.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Ether Gas Bucket"
+    },
+    {
+      "dependencies": [
+        "5DA64E5A0FF8FC75"
+      ],
+      "id": "20F3B3C23B7DC7E1",
+      "tasks": [
+        {
+          "id": "27321A4ECF9EE64F",
+          "item": "industrialforegoing:mycelial_reactor",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 11.5,
+      "y": 11.0,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Mycelial Reactor"
+    },
+    {
+      "dependencies": [
+        "59D84E7FCEE963CF"
+      ],
+      "id": "5DA64E5A0FF8FC75",
+      "tasks": [
+        {
+          "id": "00745C5FCC031040",
+          "item": "industrialforegoing:machine_frame_supreme",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 11.5,
+      "y": 8.0,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Supreme Machine Frame"
+    },
+    {
+      "dependencies": [
+        "77626463ECF7930A"
+      ],
+      "id": "1A90049737CC3DFD",
+      "tasks": [
+        {
+          "id": "5B87C090227CA2F7",
+          "item": "industrialforegoing:advanced_black_hole_unit",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "338480086FD7AAD2",
+          "item": "industrialforegoing:advanced_black_hole_tank",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 15.5,
+      "y": 2.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Advanced Black Hole Unit"
+    },
+    {
+      "dependencies": [
+        "77626463ECF7930A"
+      ],
+      "id": "05351C1BEBACF061",
+      "optional": 1,
+      "tasks": [
+        {
+          "id": "07D7DFB905B9FA26",
+          "item": "industrialforegoing:mycelial_death",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 18.5,
+      "y": 6.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Death Mycelial Generator"
+    },
+    {
+      "dependencies": [
+        "77626463ECF7930A"
+      ],
+      "id": "55F6C98D5427BB2B",
+      "optional": 1,
+      "tasks": [
+        {
+          "id": "31A9B3B0837374A1",
+          "item": "industrialforegoing:mycelial_slimey",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 14.5,
+      "y": 6.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Slimey Mycelial Generator"
+    },
+    {
+      "dependencies": [
+        "77626463ECF7930A"
+      ],
+      "id": "4EF46F16D62B6A5E",
+      "optional": 1,
+      "tasks": [
+        {
+          "id": "178643686AF2389F",
+          "item": "industrialforegoing:mycelial_rocket",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 22.5,
+      "y": 6.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Rocket Mycelial Generator"
+    },
+    {
+      "dependencies": [
+        "77626463ECF7930A"
+      ],
+      "id": "76D57464A200D702",
+      "optional": 1,
+      "tasks": [
+        {
+          "id": "6898B0CC40F60F9F",
+          "item": "industrialforegoing:mycelial_potion",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 15.5,
+      "y": 6.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Potion Mycelial Generator"
+    },
+    {
+      "dependencies": [
+        "77626463ECF7930A"
+      ],
+      "id": "0C83851053983395",
+      "optional": 1,
+      "tasks": [
+        {
+          "id": "157DDF45D56E59D2",
+          "item": "industrialforegoing:enchantment_factory",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 14.5,
+      "y": 4.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Enchantment Factory"
+    },
+    {
+      "dependencies": [
+        "77626463ECF7930A"
+      ],
+      "id": "28E37688C28FE28D",
+      "optional": 1,
+      "tasks": [
+        {
+          "id": "032C31DCCAA318AC",
+          "item": "industrialforegoing:mycelial_crimed",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 21.5,
+      "y": 6.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Crimed Mycelial Generator"
+    },
+    {
+      "dependencies": [
+        "77626463ECF7930A"
+      ],
+      "id": "3A512F7F7A453D61",
+      "optional": 1,
+      "tasks": [
+        {
+          "id": "743C6E80E5EB1BF6",
+          "item": "industrialforegoing:enchantment_applicator",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 15.5,
+      "y": 4.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Enchantment Applicator"
+    },
+    {
+      "dependencies": [
+        "77626463ECF7930A"
+      ],
+      "id": "31EE4183EB8A62EA",
+      "optional": 1,
+      "tasks": [
+        {
+          "id": "566927F42C3D83C2",
+          "item": "industrialforegoing:enchantment_sorter",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 16.5,
+      "y": 4.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Enchantment Sorter"
+    },
+    {
+      "dependencies": [
+        "77626463ECF7930A"
+      ],
+      "id": "3CB6F25BB5A281A0",
+      "optional": 1,
+      "tasks": [
+        {
+          "id": "1914B26E7BCE7AD3",
+          "item": "industrialforegoing:enchantment_extractor",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 17.5,
+      "y": 4.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Enchantment Extractor"
+    },
+    {
+      "dependencies": [
+        "77626463ECF7930A"
+      ],
+      "id": "237654B52556A73B",
+      "optional": 1,
+      "tasks": [
+        {
+          "id": "17412B5995E54ECE",
+          "item": "industrialforegoing:mycelial_ender",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 20.5,
+      "y": 6.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Ender Mycelial Generator"
+    },
+    {
+      "dependencies": [
+        "77626463ECF7930A"
+      ],
+      "id": "6380955AE759E26D",
+      "optional": 1,
+      "tasks": [
+        {
+          "id": "3B46BF3BADBB121D",
+          "item": "industrialforegoing:mob_crusher",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 16.5,
+      "y": 3.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Mob Crusher"
+    },
+    {
+      "dependencies": [
+        "77626463ECF7930A"
+      ],
+      "id": "213C165C61A8842E",
+      "optional": 1,
+      "tasks": [
+        {
+          "id": "516F0E8177BE7AA7",
+          "item": "industrialforegoing:mob_duplicator",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 15.5,
+      "y": 3.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Mob Duplicator"
+    },
+    {
+      "dependencies": [
+        "77626463ECF7930A"
+      ],
+      "id": "44500CED464CDE9F",
+      "optional": 1,
+      "tasks": [
+        {
+          "id": "411BFB0075727E27",
+          "item": "industrialforegoing:mycelial_disenchantment",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 16.5,
+      "y": 6.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Disenchantment Mycelial Generator"
+    },
+    {
+      "dependencies": [
+        "77626463ECF7930A"
+      ],
+      "id": "088E8F4276CA9C25",
+      "optional": 1,
+      "tasks": [
+        {
+          "id": "04ABDE2C76FA2B6F",
+          "item": "industrialforegoing:mycelial_magma",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 17.5,
+      "y": 6.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Magma Mycelial Generator"
+    },
+    {
+      "dependencies": [
+        "77626463ECF7930A"
+      ],
+      "id": "6F2BC7F308CA757B",
+      "optional": 1,
+      "tasks": [
+        {
+          "id": "5933F05B35CA677C",
+          "item": "industrialforegoing:mycelial_explosive",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 19.5,
+      "y": 6.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Explosive Mycelial Generator"
+    },
+    {
+      "dependencies": [
+        "77626463ECF7930A"
+      ],
+      "id": "45DEC29B1DEE2ED0",
+      "optional": 1,
+      "tasks": [
+        {
+          "id": "3B45BEBED1308AEE",
+          "item": "industrialforegoing:material_stonework_factory",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 16.5,
+      "y": 2.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Material StoneWork Factory"
+    },
+    {
+      "dependencies": [
+        "77626463ECF7930A"
+      ],
+      "id": "6B36AB9DDF74D37A",
+      "optional": 1,
+      "tasks": [
+        {
+          "id": "10657FC7CC137C4E",
+          "item": "industrialforegoing:stasis_chamber",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 17.5,
+      "y": 3.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Stasis Chamber"
+    },
+    {
+      "dependencies": [
+        "77626463ECF7930A"
+      ],
+      "id": "5250B8FCFAEE35EB",
+      "optional": 1,
+      "tasks": [
+        {
+          "id": "6FD23E83E84F4F11",
+          "item": "industrialforegoing:potion_brewer",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 14.5,
+      "y": 3.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Potion Brewer"
+    },
+    {
+      "dependencies": [
+        "77626463ECF7930A"
+      ],
+      "id": "451ED183A29A9147",
+      "optional": 1,
+      "tasks": [
+        {
+          "id": "5281AF475728D895",
+          "item": "industrialforegoing:fluid_sieving_machine",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 17.5,
+      "y": 2.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Fluid Sieving Machine"
+    },
+    {
+      "dependencies": [
+        "13B4EF2968226C5E"
+      ],
+      "id": "17D0C9A98D7CCD06",
+      "tasks": [
+        {
+          "id": "09822EF1D0454BE3",
+          "item": "industrialforegoing:infinity_charger",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 11.5,
+      "y": -1.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Infinity Charger"
+    },
+    {
+      "dependencies": [
+        "17D0C9A98D7CCD06"
+      ],
+      "id": "49842471556506DD",
+      "rewards": [
+        {
+          "id": "697AA1BF317F854A",
+          "type": "xp_levels",
+          "xp_levels": 2,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "1638550DD01C1EFF",
+          "item": {
+            "Count": 1,
+            "id": "industrialforegoing:infinity_trident",
+            "tag": {
+              "CanCharge": 1,
+              "Channeling": 0,
+              "Energy": 0,
+              "Fluid": {
+                "Amount": 0,
+                "FluidName": "biofuel"
+              },
+              "Loyalty": 0,
+              "Riptide": 0,
+              "Selected": "POOR",
+              "Special": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "3AACA5A170B62F79",
+          "item": {
+            "Count": 1,
+            "id": "industrialforegoing:infinity_drill",
+            "tag": {
+              "CanCharge": 1,
+              "Energy": 0,
+              "Fluid": {
+                "Amount": 0,
+                "FluidName": "biofuel"
+              },
+              "Selected": "POOR",
+              "Special": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "16D25D16767F6F4D",
+          "item": {
+            "Count": 1,
+            "id": "industrialforegoing:infinity_saw",
+            "tag": {
+              "CanCharge": 1,
+              "Energy": 0,
+              "Fluid": {
+                "Amount": 0,
+                "FluidName": "biofuel"
+              },
+              "Selected": "POOR",
+              "Special": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "465643AF3BE9AE04",
+          "item": {
+            "Count": 1,
+            "id": "industrialforegoing:infinity_hammer",
+            "tag": {
+              "Beheading": 0,
+              "CanCharge": 1,
+              "Energy": 0,
+              "Fluid": {
+                "Amount": 0,
+                "FluidName": "biofuel"
+              },
+              "Selected": "POOR",
+              "Special": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "66DF39E14A6173F7",
+          "item": {
+            "Count": 1,
+            "id": "industrialforegoing:infinity_backpack",
+            "tag": {
+              "CanCharge": 1,
+              "Energy": 0,
+              "Selected": "POOR",
+              "Special": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 11.5,
+      "y": -3.0,
+      "description": [],
+      "repeatable": false,
+      "title": "Infinity Trident"
+    },
+    {
+      "dependencies": [
+        "5DA64E5A0FF8FC75"
+      ],
+      "id": "1D437529E2A7697C",
+      "optional": 1,
+      "tasks": [
+        {
+          "id": "67BA9CCC90E24A4F",
+          "item": "industrialforegoing:mycelial_netherstar",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 12.5,
+      "y": 10.0,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Netherstar Mycelial Generator"
+    },
+    {
+      "dependencies": [
+        "5DA64E5A0FF8FC75"
+      ],
+      "id": "0FD4B56AB5E8117E",
+      "optional": 1,
+      "tasks": [
+        {
+          "id": "54C051553782A6A1",
+          "item": "industrialforegoing:mycelial_halitosis",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 10.5,
+      "y": 10.0,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Halitosis Mycelial Generator"
+    },
+    {
+      "dependencies": [
+        "5DA64E5A0FF8FC75"
+      ],
+      "id": "4673D101281938B3",
+      "optional": 1,
+      "tasks": [
+        {
+          "id": "2868A81C1CA5D063",
+          "item": "industrialforegoing:mycelial_meatallurgic",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 11.5,
+      "y": 10.0,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Meatallurgic Mycelial Generator"
+    },
+    {
+      "dependencies": [
+        "5DA64E5A0FF8FC75"
+      ],
+      "id": "6D037095B8D6F364",
+      "tasks": [
+        {
+          "id": "1A14D9CB861EE252",
+          "item": "industrialforegoing:wither_builder",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 12.5,
+      "y": 8.0,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Wither Builder"
+    },
+    {
+      "dependencies": [
+        "5DA64E5A0FF8FC75"
+      ],
+      "id": "14E81466144E540E",
+      "tasks": [
+        {
+          "id": "09E2B5BE99984021",
+          "item": "industrialforegoing:supreme_black_hole_unit",
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "1D15385D4B880BD2",
+          "item": "industrialforegoing:supreme_black_hole_tank",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 10.5,
+      "y": 8.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Supreme Black Hole Unit"
+    },
+    {
+      "dependencies": [
+        "5DA64E5A0FF8FC75"
+      ],
+      "id": "08DCD6AA71CD0281",
+      "tasks": [
+        {
+          "id": "74416713A8A9A313",
+          "item": "industrialforegoing:black_hole_controller",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 10.5,
+      "y": 7.5,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Black Hole Controller"
+    },
+    {
+      "dependencies": [
+        "28E37688C28FE28D",
+        "134F0B3EC4E78AB0",
+        "05351C1BEBACF061",
+        "44500CED464CDE9F",
+        "237654B52556A73B",
+        "6F2BC7F308CA757B",
+        "1EF9036D3406A09E",
+        "26EDFB00146F4BB7",
+        "0FD4B56AB5E8117E",
+        "088E8F4276CA9C25",
+        "4673D101281938B3",
+        "1D437529E2A7697C",
+        "3E7590C95B70BF8A",
+        "76D57464A200D702",
+        "4EF46F16D62B6A5E",
+        "55F6C98D5427BB2B",
+        "20F3B3C23B7DC7E1"
+      ],
+      "description": [
+        "Le réacteur Mycelial se compose de tous les générateurs Mycelial fonctionnant en même temps, près du bloc réacteur, et il produit un total de 25MFE/t.",
+        "Tout son bon, mais vous devez automatiser certaines choses pour qu'il fonctionne, voir ce que chaque générateur Mycelial consomme pour fonctionner, et automatiser, la plupart des choses sont simples, mais d'autres, pas beaucoup... en regardant Désenchanter le générateur Mycelial.",
+        "Mais après avoir tout automatisé, vous n'avez pas besoin de vous arrêter à un, vous pouvez faire plus de réacteurs."
+      ],
+      "id": "4AD2EB710E1A1A46",
+      "rewards": [
+        {
+          "id": "7DC6EC70A56AA8B2",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "383C74E9999BF7AF",
+          "type": "item",
+          "item": "industrialforegoing:mycelial_reactor",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Le réacteur de Mycelial ?",
+      "x": 11.5,
+      "y": 14.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6B36AB9DDF74D37A",
+        "77B151274CC59940",
+        "02D5ED60A8E6887D"
+      ],
+      "dependency_requirement": "one_started",
+      "description": [
+        "Obtenir votre premier Ether Gas va être effrayant.",
+        "&bEther Gas est fabriqué à partir du forage d'un Wither, à l'aide d'un perceur Fluid avec Lens Purple.",
+        "Mais ne vous inquiétez pas, Industrial Forewarding a une machine juste pour vous aider dans cette tâche: Stasis Chamber - cette machine gele en place tout ce qui est sur le dessus, dans une zone 3x3, donc frayer un garrot sur il est sûr.",
+        "&cJ'espère que vous n'êtes pas à court de pouvoir, parce que si vous le faites... bien... j'espère que vous êtes prêt à combattre le Wither."
+      ],
+      "id": "29D23165206A92DD",
+      "rewards": [
+        {
+          "id": "3999BB56C4618A93",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "59A0A6840B5AA726",
+          "type": "item",
+          "item": "industrialforegoing:fluid_laser_base",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 21.0,
+      "y": 5.0,
+      "repeatable": false,
+      "title": "Fluid Laser Base"
+    },
+    {
+      "description": [
+        "Bienvenue à Industrial Forewarding, l'une des principales ressources de ce mod, est Latex. Il a été utilisé pour l'artisanat des cadres de machines, nécessaire pour faire.. bien... machines, et des mises à niveau.",
+        "&oJEI est ton ami.",
+        "Faire du Latex est assez simple, Extraits d'extraction fluide Latex de Logs (Acacia donne le plus).",
+        "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------",
+        "Maintenant sur la fabrication du plastique: Le plastique résulte de la fusion du caoutchouc sec - qui est fabriqué dans l'unité de traitement du latex, qui transforme le latex en caoutchouc sec.",
+        "&bDonc fondamentalement Latex -> Caoutchouc sec -> Plastique."
+      ],
+      "id": "201627152AC5D334",
+      "tasks": [
+        {
+          "id": "6BCB0B575F366B7A",
+          "type": "item",
+          "item": "industrialforegoing:plastic",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Latex et plastique ?",
+      "x": 3.130612244897911,
+      "y": 1.603911564625868,
+      "rewards": [],
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "can_repeat": 0,
+      "description": [
+        "Cette quête a été créée par AllTheMods Staff, ou un contributeur communautaire pour une utilisation dans AllTheMods Modpacks.",
+        "Comme tous les packs AllTheMods sont sous licence All Rights Reserved, cette Quest n'est pas autorisée à être utilisée dans les packs publics non publiés par l'équipe AllTheMods, sans autorisation explicite.",
+        "Cette quête est intentionnellement cachée, si vous voyez cela, vous êtes en mode édition.",
+        "Repère de lecture : obtiens le livre indiqué pour poursuivre. Cette étape ne donne aucune récompense."
+      ],
+      "disable_toast": 1,
+      "hide_details_until_startable": 1,
+      "hide_until_deps_visible": 1,
+      "icon": {
+        "Count": 1,
+        "id": "ftbquests:custom_icon",
+        "tag": {
+          "Icon": "minecraft:item/barrier"
+        }
+      },
+      "id": "0EDA555645273A94",
+      "invisible": 1,
+      "optional": 1,
+      "shape": "octagon",
+      "tasks": [
+        {
+          "id": "6D820564B5CBB064",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "2B766E5F401B01B5",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 1.0,
+      "y": -4.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Livre",
+      "dependencies": []
+    }
+  ],
+  "title": "Industrial Foregoing",
+  "default_consume_items": false
+}

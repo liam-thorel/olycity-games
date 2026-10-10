@@ -1,0 +1,8 @@
+name = "config/alexsmobs/sugar_glider_spawns.json"
+filename = "sugar_glider_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/cec5208e2e9f12aa8ce13d0f6d34a18500a77d143441c9b511df21c623fe368f"
+hash-format = "sha256"
+hash = "cec5208e2e9f12aa8ce13d0f6d34a18500a77d143441c9b511df21c623fe368f"

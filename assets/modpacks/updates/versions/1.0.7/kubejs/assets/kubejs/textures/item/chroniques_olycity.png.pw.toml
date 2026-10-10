@@ -1,0 +1,8 @@
+name = "kubejs/assets/kubejs/textures/item/chroniques_olycity.png"
+filename = "chroniques_olycity.png"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/7fc7d2564b09aa85d5be8c7b4493f966a4ba655ad685a7bc5fe49dc95143633f"
+hash-format = "sha256"
+hash = "7fc7d2564b09aa85d5be8c7b4493f966a4ba655ad685a7bc5fe49dc95143633f"

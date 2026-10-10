@@ -1,0 +1,8 @@
+name = "config/alexsmobs/bald_eagle_spawns.json"
+filename = "bald_eagle_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/f8b51a798bfa4b51e0ee8fb78c860ca5b2677583db10584792a0e1548f17d396"
+hash-format = "sha256"
+hash = "f8b51a798bfa4b51e0ee8fb78c860ca5b2677583db10584792a0e1548f17d396"

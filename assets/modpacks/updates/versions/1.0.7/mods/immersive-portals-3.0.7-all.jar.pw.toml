@@ -1,0 +1,8 @@
+name = "mods/immersive-portals-3.0.7-all.jar"
+filename = "immersive-portals-3.0.7-all.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/deb233d1e530e5e208ba6f3529a3b90ad071a06a2dc8d7ea60f14b0d67912efc.jar"
+hash-format = "sha256"
+hash = "deb233d1e530e5e208ba6f3529a3b90ad071a06a2dc8d7ea60f14b0d67912efc"

@@ -1,0 +1,1408 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "diamond",
+  "filename": "atm9_artifacts",
+  "group": "1F488C60EF77E6C0",
+  "icon": "artifacts:umbrella",
+  "id": "765EBF6C84EA05BB",
+  "order_index": 2,
+  "quest_links": [],
+  "quests": [
+    {
+      "description": [
+        "Une paire qui se sent chez elle dans l’herbe ! Ces bottes régénèrent tes cœurs lorsque tu te tiens sur un bloc d’herbe. Manger dans cette position stimule aussi la végétation, comme de la poudre d’os."
+      ],
+      "id": "48018CC546CB1040",
+      "rewards": [
+        {
+          "id": "386A4D7BBA5A0BC6",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "subtitle": "Pieds",
+      "tasks": [
+        {
+          "id": "2A83EC6745A1136F",
+          "item": "artifacts:rooted_boots",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&aBottes à racines",
+      "x": 1.5,
+      "y": 3.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Ces palmes accélèrent tes déplacements dans l’eau, à la nage comme au fond. Pratiques pour visiter les structures immergées."
+      ],
+      "id": "326B74DD1AC2989E",
+      "rewards": [
+        {
+          "id": "2255A71FEC1EB330",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "subtitle": "Pieds",
+      "tasks": [
+        {
+          "id": "1AA509EA2190239F",
+          "item": "artifacts:flippers",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&9Palmes",
+      "x": 1.5,
+      "y": 2.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Ces bottes t’aident à garder les pieds sur terre : elles empêchent le recul des attaques et limitent la glissade sur la glace."
+      ],
+      "hide_details_until_startable": 0,
+      "id": "42F6B42123D506ED",
+      "rewards": [
+        {
+          "id": "0657FB47F318B06F",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "subtitle": "Pieds",
+      "tasks": [
+        {
+          "id": "1C7A222E9AFA36F3",
+          "item": "artifacts:steadfast_spikes",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&7Bottes d'arrêt",
+      "x": 0.5,
+      "y": 3.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Les raquettes permettent de marcher sur la neige poudreuse, comme des bottes en cuir. Elles améliorent aussi la vitesse de déplacement sur la neige."
+      ],
+      "id": "54B1DE7964BB597A",
+      "rewards": [
+        {
+          "id": "54D0AE5D4AA8BE8A",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "subtitle": "Pieds",
+      "tasks": [
+        {
+          "id": "4B848A324E98DEA8",
+          "item": "artifacts:snowshoes",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -0.5,
+      "y": 3.5,
+      "repeatable": false,
+      "title": "Snowshoes",
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Ces chaussures accélèrent le sprint et ajoutent un saut automatique pendant la course. Essaie-les avant de courir près d’un ravin !"
+      ],
+      "id": "2328A7BB165A8A8F",
+      "rewards": [
+        {
+          "id": "5626E4A67507A425",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "subtitle": "Pieds",
+      "tasks": [
+        {
+          "id": "2ECC101883DEBFB0",
+          "item": "artifacts:running_shoes",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&cChaussures de course",
+      "x": 3.5,
+      "y": 2.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Les creepers prennent ces chaussons pour de vrais chats et s’éloignent de toi. Ils produisent aussi un bruit de chat quand tu subis des dégâts ; aucune garantie sur la réception de tes sauts."
+      ],
+      "id": "129D4FEF042B6525",
+      "rewards": [
+        {
+          "id": "024772F709FCEAB4",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "subtitle": "Pieds",
+      "tasks": [
+        {
+          "id": "7DE4377547A1CCBF",
+          "item": "artifacts:kitty_slippers",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&7Pantoufles chaton",
+      "x": 4.5,
+      "y": 2.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Ces chaussures de lapin augmentent la hauteur des sauts et réduisent les dégâts de chute. Elles ne rendent pas les grandes chutes inoffensives."
+      ],
+      "id": "20618107F651E5C1",
+      "rewards": [
+        {
+          "id": "0D1F3ECE9267CA81",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "subtitle": "Pieds",
+      "tasks": [
+        {
+          "id": "5ACF3A0733474FEA",
+          "item": "artifacts:bunny_hoppers",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&dBunny Hoppers",
+      "x": 3.5,
+      "y": 3.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Courir sur l’eau ? Oui, tant que tu continues à sprinter. Avec ces chaussures, arrêter le sprint te fait recommencer à couler."
+      ],
+      "id": "5F289C97AC2702D6",
+      "rewards": [
+        {
+          "id": "3F0438936491254C",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "subtitle": "Pieds",
+      "tasks": [
+        {
+          "id": "2C8E32EC82EE2A66",
+          "item": "artifacts:aqua_dashers",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&bAqua-Dashers",
+      "x": 0.5,
+      "y": 2.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Cet accessoire cuit automatiquement les minerais que tu extrais. Déséquipe-le si tu souhaites conserver les minerais bruts pour une chaîne de traitement."
+      ],
+      "id": "41EFFE77DE399169",
+      "rewards": [
+        {
+          "id": "4BCF233DEF21CB66",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "subtitle": "Mains",
+      "tasks": [
+        {
+          "id": "16628028DDDD8BC3",
+          "item": "artifacts:pickaxe_heater",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&7Chauffe-pickaxe",
+      "x": -4.0,
+      "y": -4.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Un anneau d’oignon en accompagnement : les aliments consommés donnent un bref effet de Célérité lorsque cet anneau est équipé."
+      ],
+      "id": "49BCDA953CB6FFB5",
+      "rewards": [
+        {
+          "id": "06C6562BCBE2B449",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Mains",
+      "tasks": [
+        {
+          "id": "5892EE72E41F3ACF",
+          "item": "artifacts:onion_ring",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&6Anneau d'oignon",
+      "x": 9.0,
+      "y": -3.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Ce crochet doré augmente l’expérience obtenue sur les ennemis vaincus. À toi le butin du pirate !"
+      ],
+      "id": "6BADCFFA954F817C",
+      "rewards": [
+        {
+          "id": "50F094CAD1084FE9",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Mains",
+      "tasks": [
+        {
+          "id": "5BDCFD692B3F43A1",
+          "item": "artifacts:golden_hook",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&eCrochet d'or",
+      "x": 8.5,
+      "y": -5.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Ce gant vole de la vie aux ennemis que tu frappes. Dracula approuve probablement."
+      ],
+      "id": "6FB77A8F5D01F22D",
+      "rewards": [
+        {
+          "id": "16879555069BB11C",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Mains",
+      "tasks": [
+        {
+          "id": "4D807F8D4DD04C82",
+          "item": "artifacts:vampiric_glove",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&7Gants vampires",
+      "x": 8.0,
+      "y": -3.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Le piston de poche augmente le recul infligé par tes attaques. Prévois de la place derrière la cible."
+      ],
+      "id": "5BAAE0F90D5D7247",
+      "rewards": [
+        {
+          "id": "523072B7D916270E",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "subtitle": "Mains",
+      "tasks": [
+        {
+          "id": "449251B5E30AE3D5",
+          "item": "artifacts:pocket_piston",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&6Piston de poche",
+      "x": -3.5,
+      "y": -5.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Ce gantelet enflamme les adversaires que tu frappes. Un accessoire un peu moins discret que des gants de jardinage."
+      ],
+      "id": "3E6F75644ADD47B5",
+      "rewards": [
+        {
+          "id": "697185AE6D4757AB",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Mains",
+      "tasks": [
+        {
+          "id": "59E8757A050B61CF",
+          "item": "artifacts:fire_gauntlet",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&cGantelet de feu",
+      "x": 9.0,
+      "y": -4.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Le gant de puissance augmente les dégâts de tes attaques lorsqu’il est équipé."
+      ],
+      "id": "33B3F5932BF735D5",
+      "rewards": [
+        {
+          "id": "0397C7AAD5158A4B",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "subtitle": "Mains",
+      "tasks": [
+        {
+          "id": "2F2BEC8D89AFCB78",
+          "item": "artifacts:power_glove",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&eGant de puissance",
+      "x": -3.0,
+      "y": -3.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Ces griffes accélèrent les attaques avec tes armes ou tes poings. Elles complètent le gant de puissance, qui agit sur les dégâts."
+      ],
+      "id": "03029B4808F3DAA0",
+      "rewards": [
+        {
+          "id": "6579122658646D1D",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "subtitle": "Mains",
+      "tasks": [
+        {
+          "id": "1F88874B8C971F8B",
+          "item": "artifacts:feral_claws",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&aGriffes sauvages",
+      "x": -2.5,
+      "y": -5.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Ces griffes augmentent la vitesse de minage et permettent à tes poings de fonctionner comme une pioche de pierre. Tes machines n’auront pas le monopole des travaux."
+      ],
+      "id": "1676C5014F558DCF",
+      "rewards": [
+        {
+          "id": "52DD6F7C86696F3E",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Mains",
+      "tasks": [
+        {
+          "id": "1FC1AC0DA2FDC01F",
+          "item": "artifacts:digging_claws",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&9Griffes de mineur",
+      "x": 7.5,
+      "y": -5.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Cette ceinture de chorus peut te téléporter pour éviter un coup mortel. Elle n’est pas une permission de foncer sans regarder dans tous les dangers du pack."
+      ],
+      "id": "55F32187283C8271",
+      "rewards": [
+        {
+          "id": "1BD35358F24B9001",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Ceinture",
+      "tasks": [
+        {
+          "id": "0DCA436B8F580AB9",
+          "item": "artifacts:chorus_totem",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&5Ceinture de choeur",
+      "x": 2.0,
+      "y": -1.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Le flamant à hélium permet de nager dans les airs pendant son utilisation. Vérifie la touche de l’artefact dans les contrôles : elle peut avoir été réassignée. Une bouée de piscine avec des ambitions."
+      ],
+      "id": "6F2DFC76C905D764",
+      "rewards": [
+        {
+          "id": "4662BE7945BFC1B4",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Ceinture",
+      "tasks": [
+        {
+          "id": "05160CAC3E8441F0",
+          "item": "artifacts:helium_flamingo",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&dHelium Flamingo",
+      "x": 3.0,
+      "y": -1.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Équiper ce cœur de cristal augmente ta vie maximale. Consulte son infobulle pour la valeur appliquée dans la version du pack."
+      ],
+      "id": "0FB068F747B3C53D",
+      "rewards": [
+        {
+          "id": "34F80416A75B26C2",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Ceinture",
+      "tasks": [
+        {
+          "id": "044C36209AE2CBD0",
+          "item": "artifacts:crystal_heart",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&4Coeur de cristal",
+      "x": 1.5,
+      "y": 0.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Ce récipient raccourcit la durée des effets négatifs, comme le poison ou le Wither. Un bon compagnon pour les rencontres avec des sorcières."
+      ],
+      "id": "264F368934F68585",
+      "rewards": [
+        {
+          "id": "177545F82C0E4D6C",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Ceinture",
+      "tasks": [
+        {
+          "id": "6FF13F970A8CA2A8",
+          "item": "artifacts:antidote_vessel",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&6Flacon d'antidote",
+      "x": 2.5,
+      "y": 0.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Un aimant qui attire les objets au sol. Pense à tes amis lorsque vous partagez une zone de collecte."
+      ],
+      "id": "5A27E484057776B4",
+      "rewards": [
+        {
+          "id": "4F60CCE66641541D",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Ceinture",
+      "tasks": [
+        {
+          "id": "332545F1B6CBEB4F",
+          "item": "artifacts:universal_attractor",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&cAttracteur universel",
+      "x": 3.5,
+      "y": 0.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Après des dégâts de feu, ce crâne accorde temporairement une résistance au feu. Profite de ce délai pour sortir des flammes."
+      ],
+      "id": "374F0676982F292A",
+      "rewards": [
+        {
+          "id": "3A41B275382E1F06",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Ceinture",
+      "tasks": [
+        {
+          "id": "5D7C7B2A9E3B5010",
+          "item": "artifacts:obsidian_skull",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&5Crâne en obsidienne",
+      "x": 1.0,
+      "y": -0.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Le nuage en bouteille permet un double saut : appuie de nouveau sur la touche de saut lorsque tu es en l’air. Il améliore aussi la marge avant les dégâts de chute."
+      ],
+      "id": "7F0D9E4C1B969BCA",
+      "rewards": [
+        {
+          "id": "5641075803CA6D2A",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "subtitle": "Ceinture",
+      "tasks": [
+        {
+          "id": "377A23256CF86495",
+          "item": "artifacts:cloud_in_a_bottle",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&bNuage en bouteille",
+      "x": 4.0,
+      "y": -0.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Cet accessoire te laisse marcher sous l’eau comme sur terre. Il ne permet pas de respirer sous l’eau : surveille toujours ton air."
+      ],
+      "id": "75620EE4CB3B955F",
+      "rewards": [
+        {
+          "id": "1EE3DDD65EA5AD4F",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "circle",
+      "subtitle": "Collier",
+      "tasks": [
+        {
+          "id": "44842D8B301A9696",
+          "item": "artifacts:charm_of_sinking",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&3Charme de Sinking",
+      "x": 2.0,
+      "y": -6.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Ce pendentif renvoie des dégâts aux attaquants, à la manière de l’enchantement Épines. Cette fois, le pouvoir vient de l’accessoire."
+      ],
+      "id": "40072B42DC7663C6",
+      "rewards": [
+        {
+          "id": "7DB7D4789B7FD748",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "circle",
+      "subtitle": "Collier",
+      "tasks": [
+        {
+          "id": "395D863B20905BBC",
+          "item": "artifacts:thorn_pendant",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&aPendentif d'épines",
+      "x": 3.0,
+      "y": -6.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Ce pendentif peut enflammer les créatures qui t’attaquent. Son déclenchement accorde aussi une protection contre le feu."
+      ],
+      "id": "11B6146F89DCE8EA",
+      "rewards": [
+        {
+          "id": "3F0F90BD81C14173",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "circle",
+      "subtitle": "Collier",
+      "tasks": [
+        {
+          "id": "6C4EF4D5072BCDCB",
+          "item": "artifacts:flame_pendant",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&cPendentif de flammes",
+      "x": 1.0,
+      "y": -4.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Ce pendentif peut frapper les attaquants avec la foudre. Il protège également son porteur des dégâts de la foudre."
+      ],
+      "id": "2E921981CA74D166",
+      "rewards": [
+        {
+          "id": "613FC7D4FD554A0A",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "circle",
+      "subtitle": "Collier",
+      "tasks": [
+        {
+          "id": "2350A3C7965917BA",
+          "item": "artifacts:shock_pendant",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&bPendentif électrique",
+      "x": 2.0,
+      "y": -3.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Quand tu es touché, ce collier donne un bref bonus de vitesse. Parfois, le meilleur plan de bataille consiste à partir très vite."
+      ],
+      "id": "03C780710065CB0D",
+      "rewards": [
+        {
+          "id": "3EB596935345F312",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "circle",
+      "subtitle": "Collier",
+      "tasks": [
+        {
+          "id": "3BD1F35558AAC270",
+          "item": "artifacts:panic_necklace",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&4Collier de panique",
+      "x": 3.0,
+      "y": -3.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Ce collier allonge le bref délai d’invulnérabilité après une attaque reçue. Cela te laisse davantage de temps entre certains coups."
+      ],
+      "id": "51506E13F5A7D792",
+      "rewards": [
+        {
+          "id": "63CCC385B15C9732",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "circle",
+      "subtitle": "Collier",
+      "tasks": [
+        {
+          "id": "0C2D09DA4011D1A2",
+          "item": "artifacts:cross_necklace",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&eCollier en croix",
+      "x": 0.5,
+      "y": -5.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Cette écharpe améliore la Fortune appliquée à tes outils de minage. Consulte l’infobulle pour son bonus exact."
+      ],
+      "id": "2CE2EB3AC636116F",
+      "rewards": [
+        {
+          "id": "630C622B275A6D98",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "circle",
+      "subtitle": "Écharpe autour de ton cou",
+      "tasks": [
+        {
+          "id": "73319022AEA415D3",
+          "item": "artifacts:lucky_scarf",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&2Écharpe porte-bonheur",
+      "x": 4.0,
+      "y": -4.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Cette écharpe confère l’invisibilité à son porteur. Équipement visible et capacités particulières des ennemis peuvent encore te trahir."
+      ],
+      "id": "34559E85864ECA12",
+      "rewards": [
+        {
+          "id": "54326D80AC6174D8",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "circle",
+      "subtitle": "Écharpe autour de ton cou",
+      "tasks": [
+        {
+          "id": "33D43709A3D39ADB",
+          "item": "artifacts:scarf_of_invisibility",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&9Écharpe d'invisibilité",
+      "x": 4.5,
+      "y": -5.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Le chapeau de pêcheur améliore l’attraction des poissons et les chances d’obtenir un trésor en pêchant."
+      ],
+      "id": "7C435431270AFEF0",
+      "rewards": [
+        {
+          "id": "628F805E0251F041",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "subtitle": "Tête",
+      "tasks": [
+        {
+          "id": "46A124BBB7B03001",
+          "item": "artifacts:anglers_hat",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&cChapeau d'Angler",
+      "x": 1.0,
+      "y": -10.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Ce chapeau améliore la vitesse des montures. Il est aussi tout à fait présentable pour une balade entre amis."
+      ],
+      "id": "118DCDC7BFE56D35",
+      "rewards": [
+        {
+          "id": "6CE3BE1422C8012A",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "subtitle": "Tête",
+      "tasks": [
+        {
+          "id": "72F09F435B9F22BE",
+          "item": "artifacts:cowboy_hat",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&7Chapeau de cowboy",
+      "x": 4.0,
+      "y": -10.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Ce chapeau ajoute un bonus de Butin sur les créatures vaincues. Il peut se combiner aux enchantements de ton équipement."
+      ],
+      "id": "37C81D26C2483404",
+      "rewards": [
+        {
+          "id": "0751F0C38842E8E7",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "subtitle": "Tête",
+      "tasks": [
+        {
+          "id": "0C244DDFE59F032B",
+          "item": "artifacts:superstitious_hat",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&aChapeau de superstition",
+      "x": 2.0,
+      "y": -10.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Les villageois te trouvent soudain beaucoup plus sympathique : ce chapeau améliore les prix de leurs échanges."
+      ],
+      "id": "6C7DE453CA213D05",
+      "rewards": [
+        {
+          "id": "5A4EBF9C6CD2390E",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "subtitle": "Tête",
+      "tasks": [
+        {
+          "id": "7789615A950805C0",
+          "item": "artifacts:villager_hat",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&eChapeau de villageois",
+      "x": 3.0,
+      "y": -10.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Ces lunettes permettent de voir dans l’obscurité. Les donjons restent dangereux, même lorsque tu vois mieux ce qui s’y cache."
+      ],
+      "id": "1A31F0C8D61E7D24",
+      "rewards": [
+        {
+          "id": "4B1C5FA1DBBA8027",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "subtitle": "Tête",
+      "tasks": [
+        {
+          "id": "55A27277E5CBCF55",
+          "item": "artifacts:night_vision_goggles",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&2Lunettes de vision nocturne",
+      "x": 2.0,
+      "y": -12.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Le tuba offre un court délai de respiration sous l’eau. Comme avec un casque de tortue, cette réserve finit par s’épuiser."
+      ],
+      "id": "72AAC40A9334843C",
+      "rewards": [
+        {
+          "id": "577DC262DD4A9B75",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "subtitle": "Tête",
+      "tasks": [
+        {
+          "id": "5CF0D7001010BB79",
+          "item": "artifacts:snorkel",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&3Tuba",
+      "x": 2.0,
+      "y": -11.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Ce chapeau de boisson fantaisie permet de manger et boire plus rapidement, comme sa variante en plastique. Avec un peu plus de style."
+      ],
+      "id": "5A6778D167C07512",
+      "rewards": [
+        {
+          "id": "052B0B0F726EC929",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "subtitle": "Tête",
+      "tasks": [
+        {
+          "id": "66343FDA68527860",
+          "item": "artifacts:novelty_drinking_hat",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&9Nouveau casque à bière",
+      "x": 3.0,
+      "y": -12.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Ce chapeau accélère la consommation des aliments et des boissons. Ton repas maison mérite quand même une pause de temps en temps."
+      ],
+      "id": "153BF2BA464C2B29",
+      "rewards": [
+        {
+          "id": "7A0BDD6DB1FC5AAD",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "subtitle": "Tête",
+      "tasks": [
+        {
+          "id": "5B24E3F023F13657",
+          "item": "artifacts:plastic_drinking_hat",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&6Casque à bière en plastique",
+      "x": 3.0,
+      "y": -11.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "L’artefact le plus redoutable du pique-nique : le coussin péteur. Lorsqu’il est équipé, s’accroupir peut déclencher un bruit de pet. Vous avez été prévenus."
+      ],
+      "id": "615B965815A441B2",
+      "rewards": [
+        {
+          "id": "638132D45E6E3A66",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "gear",
+      "subtitle": "Unique",
+      "tasks": [
+        {
+          "id": "243FD61D98D05185",
+          "item": "artifacts:whoopee_cushion",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&dCoussin enroulé",
+      "x": 7.0,
+      "y": -4.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "2D65D7C55CA36653"
+      ],
+      "description": [
+        "Tu peux cuire le bœuf éternel pour obtenir son steak. Comme la viande crue, il est réutilisable, mais nourrit davantage."
+      ],
+      "id": "7D15E93DDEF9E405",
+      "rewards": [
+        {
+          "id": "3A490FB366C5306C",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "gear",
+      "subtitle": "Unique",
+      "tasks": [
+        {
+          "id": "475DED625501EB07",
+          "item": "artifacts:eternal_steak",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&4Stak éternel",
+      "x": -3.0,
+      "y": -4.0,
+      "repeatable": false
+    },
+    {
+      "description": [
+        "Cette viande rare ne disparaît pas après consommation. Elle possède toutefois un délai avant de pouvoir être mangée de nouveau. Sa rareté et ses règles sont celles du mod Artifacts."
+      ],
+      "id": "2D65D7C55CA36653",
+      "rewards": [
+        {
+          "id": "0815D7E87E085FB1",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "gear",
+      "subtitle": "Unique",
+      "tasks": [
+        {
+          "id": "20C212CE0B15F154",
+          "item": "artifacts:everlasting_beef",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&cBoeuf cru éternel",
+      "x": -2.0,
+      "y": -4.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Le parapluie peut servir de protection pendant son utilisation et ralentit les chutes lorsqu’il est tenu. Mary Poppins avait visiblement une bonne idée."
+      ],
+      "id": "6F68A1C44F7DCCF3",
+      "rewards": [
+        {
+          "id": "7F07F87FC9314EB1",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "gear",
+      "subtitle": "Unique",
+      "tasks": [
+        {
+          "id": "20312F60EB13318E",
+          "item": "artifacts:umbrella",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&4Parapluie",
+      "x": 8.0,
+      "y": -4.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Artifacts ajoute des accessoires à découvrir pendant l’exploration, notamment dans des coffres et sur des mimics. Équipe-les dans les emplacements adaptés pour profiter de leurs pouvoirs. Les mimics ressemblent à des coffres : approche avec prudence."
+      ],
+      "id": "37FE4287163A83BA",
+      "rewards": [
+        {
+          "id": "06384B9B6F059809",
+          "type": "xp",
+          "xp": 100,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "gear",
+      "size": 1.5,
+      "tasks": [
+        {
+          "entity": "artifacts:mimic",
+          "id": "6CE6A0DBCB624105",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&l&3Artifacts",
+      "x": 2.5,
+      "y": -7.75,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "can_repeat": 0,
+      "description": [
+        "Cette quête a été créée par AllTheMods Staff, ou un contributeur communautaire pour une utilisation dans AllTheMods Modpacks.",
+        "Comme tous les packs AllTheMods sont sous licence All Rights Reserved, cette Quest n'est pas autorisée à être utilisée dans les packs publics non publiés par l'équipe AllTheMods, sans autorisation explicite.",
+        "Cette quête est intentionnellement cachée, si vous voyez cela, vous êtes en mode édition.",
+        "Repère de lecture : obtiens le livre indiqué pour poursuivre. Cette étape ne donne aucune récompense."
+      ],
+      "disable_toast": 1,
+      "hide_details_until_startable": 1,
+      "hide_until_deps_visible": 1,
+      "icon": {
+        "Count": 1,
+        "id": "ftbquests:custom_icon",
+        "tag": {
+          "Icon": "minecraft:item/barrier"
+        }
+      },
+      "id": "408FED4A297AF68B",
+      "invisible": 1,
+      "optional": 1,
+      "shape": "octagon",
+      "tasks": [
+        {
+          "id": "45308069AE8C0725",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "143C959C002D50CD",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 2.5,
+      "y": -5.0,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Livre",
+      "dependencies": []
+    }
+  ],
+  "title": "Artefacts",
+  "default_consume_items": false,
+  "progression_mode": "flexible"
+}

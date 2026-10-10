@@ -1,0 +1,558 @@
+// Relative server tick counter: independent of KubeJS scheduler's first-use clock.
+var olyClockTicks=0,olyLaterJobs=[]
+function olyLater(server,ticks,callback){
+  olyLaterJobs.push({server:server,at:olyClockTicks+Math.max(1,Number(ticks)),callback:callback})
+}
+function olyProcessLater(server){
+  olyClockTicks++
+  var ready=[],pending=[]
+  olyLaterJobs.forEach(job=>{if(job.at<=olyClockTicks)ready.push(job);else pending.push(job)})
+  olyLaterJobs=pending
+  ready.forEach(job=>{try{job.callback()}catch(error){console.error('[OLYCITY] Animation différée : '+error)}})
+}
+ServerEvents.tick(event=>olyProcessLater(event.server))
+
+function olyToast(p) {
+  var players=p.server.players
+  for(var i=0;i<players.size();i++){
+    var other=players.get(i)
+    if(String(other.getUuid())===String(p.getUuid()) || !other.isAlive() || String(other.level.dimension)!==String(p.level.dimension))continue
+    if(!other.mainHandItem || other.mainHandItem.id!=='kubejs:verre_nico')continue
+    var dx=p.x-other.x,dy=p.y-other.y,dz=p.z-other.z
+    if(dx*dx+dy*dy+dz*dz>16)continue
+    if(olyNow()-olyRead(p,'toast_last')<30000 || olyNow()-olyRead(other,'toast_last')<30000)continue
+    olyWrite(p,'toast_last',olyNow());olyWrite(other,'toast_last',olyNow())
+    olyFx(p,'luck',20,0);olyFx(other,'luck',20,0)
+    olySound(p,'block.amethyst_block.chime',1.5);olySound(other,'block.amethyst_block.chime',1.5)
+    olyMessage(p,olyName(p)+' et '+olyName(other)+' trinquent : à OLYCITY !')
+    other.setStatusMessage('§6À OLYCITY ! Chance pendant 20 s.');return
+  }
+}
+function olyHangover(p) {
+  var souvenirs=[['minecraft:dead_bush','Personne ne sait pourquoi tu as ce buisson.'],['minecraft:feather','Tu te réveilles avec une plume. Le poulet refuse de témoigner.'],['minecraft:stick','Un bâton. Apparemment, tu l’avais nommé Gérard.']]
+  // Vanilla items only; no dependency on a decorative item registry.
+  var chosen=souvenirs[Math.floor(Math.random()*souvenirs.length)]
+  p.give(Item.of(chosen[0],{display:{Name:JSON.stringify({text:'Souvenir de soirée',italic:false,color:'gold'}),Lore:[JSON.stringify({text:chosen[1],italic:false,color:'gray'})]}}))
+  p.tell('§7'+chosen[1])
+}
+function olyBrokenPendant(p,event) {
+  var cause=String(event.getSource().getType()).slice(0,60)
+  p.give(Item.of('kubejs:pendentif_mathis_brise',{display:{Lore:[JSON.stringify({text:'Il a sauvé '+olyName(p)+'.',color:'gray',italic:false}),JSON.stringify({text:'Dernier coup : '+cause,color:'dark_gray',italic:false})]}}))
+
+}
+
+// OLYCITY relics v1. Persistent timers are keyed by player UUID in world server data.
+var OLY = { liam: 'ToasterLiam', mathis: 'NobxdyUwU', romain: 'ISEVEN_7' }
+var OlyCurios = Java.loadClass('top.theillusivec4.curios.api.CuriosApi')
+var OLY_ITEMS = ['ticket_romain','joint_rayhan','verre_nico','longue_vue_neron','cerveau_liam','pendentif_mathis','pasteque_solidarite','facture_impayee','baton_rh','poisson_chantier','patate_secours']
+var olyTicks = {},olyActiveTickets = {}
+var OLY_BRAIN_COOLDOWN_MS = 7200000
+var OLY_REWARDS = [["kubejs:baton_rh", {"knockback": 1}, 20], ["kubejs:poisson_chantier", {}, 20], ["kubejs:patate_secours", {}, 20], ["minecraft:wooden_pickaxe", {"efficiency": 3}, 10], ["minecraft:enchanted_book", {"domesticationinnovation:disc_jockey": 1}, 5], ["minecraft:enchanted_book", {"domesticationinnovation:herding": 1}, 5], ["minecraft:enchanted_book", {"domesticationinnovation:ore_scenting": 1}, 5], ["minecraft:enchanted_book", {"create:potato_recovery": 1}, 5], ["minecraft:iron_pickaxe", {"enderio:auto_smelt": 1, "unbreaking": 1}, 5], ["minecraft:iron_sword", {"sharpness": 2, "knockback": 1}, 5]]
+function olyPickReward(){var total=OLY_REWARDS.reduce((n,r)=>n+r[2],0),roll=Math.random()*total;for(var i=0;i<OLY_REWARDS.length;i++){roll-=OLY_REWARDS[i][2];if(roll<0)return OLY_REWARDS[i]}return OLY_REWARDS[0]}
+
+function olyKey(p,key) { return 'olycity_' + key + '_' + p.getUuid() }
+function olyNow() { return Date.now() }
+function olyRead(p,key) { return Number(p.server.persistentData.getLong(olyKey(p,key))) }
+function olyWrite(p,key,n) { p.server.persistentData.putLong(olyKey(p,key),n) }
+function olyName(p) { return String(p.profile.name) }
+function olyFind(server,name) { return server.getPlayer(name) }
+function olyMessage(p,text) { p.server.tell('§6[OLYCITY] §r' + text) }
+function olyFx(p,id,seconds,amplifier) { p.potionEffects.add('minecraft:'+id,seconds*20,amplifier || 0) }
+// Item feedback uses one compact card, never a second full-screen title.
+function olyTitle(p,text) {}
+var olyVisualTokens={},olyPendantEquipped={},olyVisualSerial=0,olyVisualPriority={}
+function olySound(p,id,pitch) {
+  p.runCommandSilent('playsound minecraft:'+id+' player @s ~ ~ ~ 0.65 '+(pitch || 1))
+}
+function olyClearVisual(p) {
+  delete olyVisualTokens[String(p.getUuid())]
+  delete olyVisualPriority[String(p.getUuid())]
+  p.paint({oly_fx_bg:{type:'rectangle',visible:false,w:0,h:0},oly_fx_icon:{type:'item',visible:false,w:0,h:0,item:'minecraft:air'},oly_fx_text:{type:'text',visible:false,w:0,h:0,text:''},oly_fx_bar:{type:'rectangle',visible:false,w:0,h:0}})
+}
+function olyVisual(p,item,label,color,particle,sound,pitch,ticks,priority) {
+  // No shared card: ordinary uses rely on the item's animation, sound and particles.
+  if(sound)olySound(p,sound,pitch)
+  if(particle)p.runCommandSilent('particle minecraft:'+particle+' ~ ~1.1 ~ 0.3 0.45 0.3 0.025 18 normal @a[distance=..24]')
+  p.sendData('olycity_relic_animation',{item:item,label:label,color:color,duration:Math.max(700,Math.min(3000,(ticks || 40)*50))})
+}
+var olyBrainFrames={}
+function olyBrainHide(p){p.paint({oly_brain_left:{type:'item',visible:false,w:0,h:0,item:'minecraft:air'},oly_brain_center:{type:'item',visible:false,w:0,h:0,item:'minecraft:air'},oly_brain_right:{type:'item',visible:false,w:0,h:0,item:'minecraft:air'},oly_brain_caption:{type:'text',visible:false,w:0,h:0,text:''}})}
+function olyBrainDraw(p) {}
+function olyBrainFrame(p,item,final){if(final)p.sendData('olycity_brain_animation',{phase:'reveal'})}
+function olyBrainEnd(p){delete olyBrainFrames[String(p.getUuid())];olyBrainHide(p);p.sendData('olycity_brain_animation',{phase:'stop'})}
+
+var OLY_TICKET_CATALOG=[{"key":"diamant","legacy":1,"aliases":["diamant","diamants","diamond","diamonds","remboursement","rembourser","rembourse","indemnisation"]},{"key":"saut","legacy":0,"aliases":["saut","sauter","saute","sauts","jump","jumping","bondir","bond"]},{"key":"place","legacy":5,"aliases":["place","espace","assis","asseoir","chaise","chaises","siege","tabouret"]},{"key":"lag","legacy":6,"aliases":["lag","lags","laguer","rame","ramer","fps","latence","ralentissement","lent","freeze"]},{"key":"mort","legacy":7,"aliases":["mort","morts","mourir","deces","tombe","funerailles","condoleances"]},{"key":"stockage","legacy":8,"aliases":["coffre","coffres","stockage","rangement","ranger","tonneau","baril","inventaire plein"]},{"key":"faim","aliases":["faim","manger","bouffe","nourriture","affame","affamee","repas","casse croute"],"rewards":[{"weight":15,"item":"minecraft:cooked_beef","count":8,"text":"Le dossier était creux. Le repas l’est moins."},{"weight":55,"item":"minecraft:bread","count":4,"text":"La cuisine a validé quatre pains."},{"weight":30,"item":"minecraft:rotten_flesh","count":1,"text":"Le sandwich est arrivé. La date aussi est passée."}]},{"key":"eau","aliases":["soif","boire","eau","hydratation","deshydrate","deshydratee"],"rewards":[{"weight":15,"item":"minecraft:water_bucket","count":1,"text":"Une vraie réserve d’eau, cette fois."},{"weight":55,"item":"minecraft:melon_slice","count":4,"text":"Hydratation par morceaux."},{"weight":30,"item":"minecraft:glass_bottle","count":1,"text":"La bouteille est fournie. L’eau est en option."}]},{"key":"fer","aliases":["fer","iron","lingot","lingots","metallurgie"],"rewards":[{"weight":15,"item":"minecraft:iron_ingot","count":8,"text":"Le service a retrouvé une caisse de fer."},{"weight":55,"item":"minecraft:iron_ingot","count":3,"text":"Petit dédommagement métallique."},{"weight":30,"item":"minecraft:iron_nugget","count":3,"text":"Le budget a été réduit en pépites."}]},{"key":"or","aliases":["or","gold","dore","dorure","fortune"],"rewards":[{"weight":15,"item":"minecraft:gold_ingot","count":4,"text":"Le service comptable a enfin débloqué l’or."},{"weight":55,"item":"minecraft:gold_ingot","count":1,"text":"Un lingot. Ne demande pas le deuxième."},{"weight":30,"item":"minecraft:yellow_dye","count":1,"text":"Couleur or. Valeur approximative."}]},{"key":"cuivre","aliases":["cuivre","copper","oxydation","oxyde","paratonnerre"],"rewards":[{"weight":15,"item":"minecraft:copper_ingot","count":12,"text":"La réserve de cuivre était bien cachée."},{"weight":55,"item":"minecraft:copper_ingot","count":4,"text":"Le service cuivre répond présent."},{"weight":30,"item":"minecraft:orange_dye","count":1,"text":"Le cuivre a été remplacé par sa couleur."}]},{"key":"charbon","aliases":["charbon","coal","combustible","carburant","fourneau"],"rewards":[{"weight":15,"item":"minecraft:coal","count":12,"text":"Le chauffage a livré du combustible."},{"weight":55,"item":"minecraft:charcoal","count":4,"text":"Solution artisanale approuvée."},{"weight":30,"item":"minecraft:black_dye","count":1,"text":"Ça ressemble à du charbon. Ne le mets pas au four."}]},{"key":"lumiere","aliases":["torche","torches","lumiere","eclairage","obscurite","noir","sombre"],"rewards":[{"weight":15,"item":"minecraft:lantern","count":3,"text":"Trois lanternes pour les coins inquiétants."},{"weight":55,"item":"minecraft:torch","count":16,"text":"Éclairage public, budget privé."},{"weight":30,"item":"minecraft:candle","count":1,"text":"Une bougie. Le service croit beaucoup en toi."}]},{"key":"pioche","aliases":["pioche","pioches","pickaxe","minage","miner","mineral","minerai"],"rewards":[{"weight":15,"item":"minecraft:iron_pickaxe","count":1,"text":"Une vraie pioche pour un vrai chantier."},{"weight":55,"item":"minecraft:stone_pickaxe","count":1,"text":"Le chantier peut reprendre."},{"weight":30,"item":"minecraft:wooden_pickaxe","count":1,"text":"Matériel haut de gamme, selon le stagiaire."}]},{"key":"pelle","aliases":["pelle","pelles","creuser","excavation","terrassement"],"rewards":[{"weight":15,"item":"minecraft:iron_shovel","count":1,"text":"Le terrassement a reçu son outil."},{"weight":55,"item":"minecraft:stone_shovel","count":1,"text":"Pelle standard, formulaire complet."},{"weight":30,"item":"minecraft:wooden_shovel","count":1,"text":"Le bois était moins cher que le devis."}]},{"key":"hache","aliases":["hache","haches","bucheron","bucheronnage","abattre"],"rewards":[{"weight":15,"item":"minecraft:iron_axe","count":1,"text":"Le service forestier a envoyé du solide."},{"weight":55,"item":"minecraft:stone_axe","count":1,"text":"Pour le bois, pas pour les collègues."},{"weight":30,"item":"minecraft:stick","count":2,"text":"L’outil est livré avant assemblage."}]},{"key":"arme","aliases":["epee","arme","armes","combat","combattre","attaque","attaquer"],"rewards":[{"weight":15,"item":"minecraft:iron_sword","count":1,"text":"Le service sécurité a retrouvé une épée."},{"weight":55,"item":"minecraft:stone_sword","count":1,"text":"Une lame, pas une solution diplomatique."},{"weight":30,"item":"minecraft:stick","count":1,"text":"La menace est désormais officielle."}]},{"key":"armure","aliases":["armure","armor","protection","casque","plastron","bottes"],"rewards":[{"weight":15,"item":"minecraft:iron_chestplate","count":1,"text":"La protection est enfin matérielle."},{"weight":55,"item":"minecraft:leather_helmet","count":1,"text":"Protection réglementaire de la tête."},{"weight":30,"item":"minecraft:leather","count":1,"text":"Ton armure est encore à plat."}]},{"key":"arc","aliases":["arc","fleche","fleches","archer","archerie","bow"],"rewards":[{"weight":15,"item":"minecraft:arrow","count":24,"text":"Le tir à distance a obtenu un budget."},{"weight":55,"item":"minecraft:arrow","count":8,"text":"Munitions standard."},{"weight":30,"item":"minecraft:feather","count":1,"text":"Livraison partielle : la partie qui ne pique pas."}]},{"key":"magie","aliases":["magie","sort","sorts","sorcier","sorciere","grimoire","mana"],"rewards":[{"weight":15,"item":"minecraft:amethyst_shard","count":8,"text":"Le dossier présente une résonance magique."},{"weight":55,"item":"minecraft:book","count":2,"text":"La magie commence par lire la notice."},{"weight":30,"item":"minecraft:paper","count":1,"text":"Grimoire vierge. Très vierge."}]},{"key":"enchantement","aliases":["enchantement","enchantements","enchanter","enchante","lapis","table enchantement"],"rewards":[{"weight":15,"item":"minecraft:lapis_lazuli","count":16,"text":"Le service enchantement a libéré du lapis."},{"weight":55,"item":"minecraft:lapis_lazuli","count":6,"text":"Quelques essais supplémentaires."},{"weight":30,"item":"minecraft:blue_dye","count":1,"text":"Bleu lapis, sans la fonction lapis."}]},{"key":"experience","aliases":["experience","xp","niveau","niveaux","level","levels"],"rewards":[{"weight":15,"item":"minecraft:experience_bottle","count":6,"text":"Expérience en bouteille, bouchon inclus."},{"weight":55,"item":"minecraft:experience_bottle","count":2,"text":"Un peu d’expérience de plus."},{"weight":30,"item":"minecraft:glass_bottle","count":1,"text":"La bouteille a plus d’expérience que son contenu."}]},{"key":"soin","aliases":["soin","soins","soigner","sante","blessure","blesse","coeur"],"rewards":[{"weight":15,"item":"minecraft:golden_apple","count":1,"text":"Le service médical a débloqué une pomme dorée."},{"weight":55,"item":"minecraft:cooked_chicken","count":4,"text":"Le repos et un repas sont prescrits."},{"weight":30,"item":"minecraft:apple","count":1,"text":"Une pomme par ticket. Garantie limitée."}]},{"key":"culture","aliases":["ferme","culture","cultures","recolte","recoltes","agriculture","champ"],"rewards":[{"weight":15,"item":"minecraft:carrot","count":12,"text":"Une réserve pour démarrer les cultures."},{"weight":55,"item":"minecraft:wheat_seeds","count":12,"text":"Le champ ne se plantera pas tout seul."},{"weight":30,"item":"minecraft:dead_bush","count":1,"text":"La récolte n’a pas apprécié le transport."}]},{"key":"peche","aliases":["peche","pecher","poisson","poissons","canne","fishing"],"rewards":[{"weight":15,"item":"minecraft:fishing_rod","count":1,"text":"La canne est prête. Le poisson reste libre."},{"weight":55,"item":"minecraft:cooked_cod","count":4,"text":"Le service a préféré livrer le repas."},{"weight":30,"item":"minecraft:pufferfish","count":1,"text":"Le stagiaire déconseille de goûter la récompense."}]},{"key":"poulet","aliases":["poule","poules","poulet","poulets","chicken","oeuf","oeufs"],"rewards":[{"weight":15,"item":"minecraft:egg","count":8,"text":"Le service élevage a envoyé une petite couvée."},{"weight":55,"item":"minecraft:wheat_seeds","count":8,"text":"Le syndicat des poulets accepte ce règlement."},{"weight":30,"item":"minecraft:feather","count":1,"text":"Le poulet était trop gros pour l’enveloppe."}]},{"key":"abeille","aliases":["abeille","abeilles","bees","ruche","miel","apiculture"],"rewards":[{"weight":15,"item":"minecraft:honey_bottle","count":4,"text":"Livraison de miel approuvée."},{"weight":55,"item":"minecraft:honeycomb","count":3,"text":"Le service apicole répond en alvéoles."},{"weight":30,"item":"minecraft:yellow_dye","count":1,"text":"L’abeille a été remplacée par sa couleur."}]},{"key":"animal","aliases":["vache","mouton","cochon","elevage","betail","animal","animaux"],"rewards":[{"weight":15,"item":"minecraft:lead","count":2,"text":"Pour encadrer les déplacements du troupeau."},{"weight":55,"item":"minecraft:wheat","count":8,"text":"Le service élevage livre le goûter."},{"weight":30,"item":"minecraft:leather","count":1,"text":"Le dossier a été traité par le mauvais département."}]},{"key":"redstone","aliases":["redstone","circuit","circuits","signal","signaux","repeater","comparateur"],"rewards":[{"weight":15,"item":"minecraft:redstone","count":16,"text":"L’électricien a retrouvé le sachet rouge."},{"weight":55,"item":"minecraft:redstone","count":6,"text":"Courant alternatif, dossier alternatif."},{"weight":30,"item":"minecraft:red_dye","count":1,"text":"Rouge garanti. Signal non garanti."}]},{"key":"machine","aliases":["machine","machines","usine","energie","electricite","generateur","reacteur"],"rewards":[{"weight":15,"item":"minecraft:iron_ingot","count":8,"text":"Pièces de maintenance : huit lingots."},{"weight":55,"item":"minecraft:redstone","count":8,"text":"Le service technique livre du câblage."},{"weight":30,"item":"minecraft:lever","count":1,"text":"Essaie d’éteindre et de rallumer."}]},{"key":"create","aliases":["create","engrenage","engrenages","rotation","rotations","convoyeur"],"rewards":[{"weight":15,"item":"minecraft:copper_ingot","count":12,"text":"Réserve de métal pour ton atelier."},{"weight":55,"item":"minecraft:iron_ingot","count":4,"text":"Le service mécanique a fourni des pièces brutes."},{"weight":30,"item":"minecraft:oak_button","count":1,"text":"Bouton de démarrage. La machine est vendue séparément."}]},{"key":"construction","aliases":["construction","construire","batiment","maison","base","chantier"],"rewards":[{"weight":15,"item":"minecraft:bricks","count":16,"text":"Une petite livraison pour un grand chantier."},{"weight":55,"item":"minecraft:stone_bricks","count":16,"text":"Le service matériaux a répondu."},{"weight":30,"item":"minecraft:dirt","count":8,"text":"Le devis précisait « matériaux locaux »."}]},{"key":"bois","aliases":["bois","buche","buches","planche","planches","wood"],"rewards":[{"weight":15,"item":"minecraft:oak_log","count":16,"text":"Le stock de bois arrive enfin."},{"weight":55,"item":"minecraft:oak_planks","count":16,"text":"Les planches étaient déjà découpées."},{"weight":30,"item":"minecraft:stick","count":4,"text":"Le bois a rétréci au lavage."}]},{"key":"verre","aliases":["vitre","vitres","glass","fenetre","fenetres","vitrage"],"rewards":[{"weight":15,"item":"minecraft:glass","count":16,"text":"Le dossier est désormais transparent."},{"weight":55,"item":"minecraft:glass_pane","count":12,"text":"Petite livraison de vitrage."},{"weight":30,"item":"minecraft:sand","count":4,"text":"Le verre est livré avant cuisson."}]},{"key":"lit","aliases":["lit","dormir","sommeil","fatigue","fatiguee","insomnie","repos"],"rewards":[{"weight":15,"item":"minecraft:white_bed","count":1,"text":"Le service repos a trouvé un lit."},{"weight":55,"item":"minecraft:white_wool","count":3,"text":"La partie moelleuse est arrivée."},{"weight":30,"item":"minecraft:feather","count":1,"text":"Oreiller en cours d’assemblage."}]},{"key":"voyage","aliases":["voyage","voyager","exploration","explorer","perdu","perdue","orientation"],"rewards":[{"weight":15,"item":"minecraft:compass","count":1,"text":"Le service orientation indique le nord."},{"weight":55,"item":"minecraft:map","count":1,"text":"Carte vierge : le monde reste à dessiner."},{"weight":30,"item":"minecraft:paper","count":1,"text":"La carte est partie sans l’impression."}]},{"key":"teleportation","aliases":["teleportation","teleporter","tp","ender","perle","perles"],"rewards":[{"weight":15,"item":"minecraft:ender_pearl","count":2,"text":"Deux perles. Vise un endroit raisonnable."},{"weight":55,"item":"minecraft:ender_pearl","count":1,"text":"Transport express, atterrissage à tes risques."},{"weight":30,"item":"minecraft:snowball","count":4,"text":"Même trajectoire. Destination différente."}]},{"key":"nether","aliases":["nether","enfer","blaze","ghast","lave","feu","brulure"],"rewards":[{"weight":15,"item":"minecraft:obsidian","count":4,"text":"Le service incendie a envoyé du solide."},{"weight":55,"item":"minecraft:flint_and_steel","count":1,"text":"Le service a peut-être mal lu « éviter le feu ». "},{"weight":30,"item":"minecraft:netherrack","count":8,"text":"Un échantillon du problème initial."}]},{"key":"froid","aliases":["froid","neige","glace","gele","gel","hiver"],"rewards":[{"weight":15,"item":"minecraft:packed_ice","count":8,"text":"Livraison froide, dossier tiède."},{"weight":55,"item":"minecraft:snow_block","count":4,"text":"Le service hiver a répondu."},{"weight":30,"item":"minecraft:snowball","count":1,"text":"Le chauffage a envoyé ceci par erreur."}]},{"key":"pluie","aliases":["pluie","orage","meteo","tempete","tornade","tornades","vent"],"rewards":[{"weight":15,"item":"minecraft:lightning_rod","count":1,"text":"Un paratonnerre contre la foudre. Pas contre les tornades."},{"weight":55,"item":"minecraft:copper_ingot","count":4,"text":"Matériaux de maintenance, pas un déflecteur."},{"weight":30,"item":"minecraft:oak_trapdoor","count":1,"text":"Le service météo recommande de fermer les fenêtres."}]},{"key":"donjon","aliases":["donjon","donjons","dungeon","boss","monstre","monstres","aventure"],"rewards":[{"weight":15,"item":"minecraft:golden_carrot","count":6,"text":"Provisions validées pour l’expédition."},{"weight":55,"item":"minecraft:torch","count":16,"text":"Éclaire avant de signer le prochain ticket."},{"weight":30,"item":"minecraft:bone","count":1,"text":"Un souvenir du précédent candidat."}]},{"key":"commerce","aliases":["commerce","marchand","vendre","acheter","argent","emeraude","emeraudes"],"rewards":[{"weight":15,"item":"minecraft:emerald","count":4,"text":"Le service comptable a payé en émeraudes."},{"weight":55,"item":"minecraft:emerald","count":1,"text":"Une émeraude. Reçu disponible sur demande."},{"weight":30,"item":"minecraft:paper","count":2,"text":"La facture a été livrée avant l’argent."}]},{"key":"musique","aliases":["musique","disque","jukebox","chanson","concert","danser"],"rewards":[{"weight":15,"item":"minecraft:jukebox","count":1,"text":"Le service culturel a envoyé le lecteur."},{"weight":55,"item":"minecraft:note_block","count":1,"text":"Concert solo, instrument inclus."},{"weight":30,"item":"minecraft:stick","count":2,"text":"Le service batterie ne fournit que les baguettes."}]},{"key":"livre","aliases":["livre","livres","lecture","lire","quete","quetes","carnet","guide"],"rewards":[{"weight":15,"item":"minecraft:bookshelf","count":2,"text":"La bibliothèque a validé deux étagères."},{"weight":55,"item":"minecraft:book","count":3,"text":"La documentation est disponible."},{"weight":30,"item":"minecraft:paper","count":2,"text":"Le guide attend encore son auteur."}]},{"key":"bateau","aliases":["bateau","barque","boat","mer","ocean","navigation"],"rewards":[{"weight":15,"item":"minecraft:oak_chest_boat","count":1,"text":"La navigation embarque aussi tes bagages."},{"weight":55,"item":"minecraft:oak_boat","count":1,"text":"Transport maritime, carburant humain."},{"weight":30,"item":"minecraft:bowl","count":1,"text":"C’était la plus petite coque disponible."}]},{"key":"bug","aliases":["bug","bugs","erreur","erreurs","crash","plante","plantage","probleme"],"rewards":[{"weight":15,"item":"minecraft:iron_ingot","count":4,"text":"Compensation technique validée."},{"weight":55,"item":"minecraft:slime_ball","count":3,"text":"Le correctif est un peu collant."},{"weight":30,"item":"minecraft:cobweb","count":1,"text":"Le service a trouvé un autre bug."}]}]
+function olyTicketNormalize(text){
+  return String(text).toLowerCase().replace(/[àâäáãå]/g,'a').replace(/[éèêë]/g,'e').replace(/[îïí]/g,'i').replace(/[ôöóõ]/g,'o').replace(/[ùûüú]/g,'u').replace(/ç/g,'c').replace(/œ/g,'oe').replace(/æ/g,'ae').replace(/[^a-z0-9]+/g,' ').trim()
+}
+function olyTicketMatch(text){
+  var input=' '+olyTicketNormalize(text)+' ',best=null,score=0
+  OLY_TICKET_CATALOG.forEach(topic=>topic.aliases.forEach(alias=>{
+    var a=olyTicketNormalize(alias),matched=input.indexOf(' '+a+' ')>=0
+    if(!matched && a.indexOf(' ')<0 && a.charAt(a.length-1)!=='s')matched=input.indexOf(' '+a+'s ')>=0
+    var rank=a.length+(topic.key==='bug'?0:1000)
+    if(matched && rank>score){best=topic;score=rank}
+  }))
+  return best
+}
+function olyTicketPick(topic){
+  var pool=topic.rewards,total=0;pool.forEach(r=>total+=r.weight)
+  var roll=Math.random()*total
+  for(var i=0;i<pool.length;i++){roll-=pool[i].weight;if(roll<0)return pool[i]}
+  return pool[pool.length-1]
+}
+function olyTicketRewardKey(item){return 'ticket_catalog_'+item.replace(/[^a-z0-9]/g,'_')}
+var OLY_TICKET_DELIVERIES={}
+OLY_TICKET_CATALOG.forEach(topic=>(topic.rewards || []).forEach(r=>{OLY_TICKET_DELIVERIES[olyTicketRewardKey(r.item)]=r.item}))
+
+// Resolve first, then queue compensation until the recipient is alive and online.
+function olyDeliverTicket(p) {
+  if(!p.isAlive())return
+  var rewards=[['ticket_dirt','minecraft:dirt'],['ticket_iron','minecraft:iron_ingot'],['ticket_slime','minecraft:slime_ball'],['ticket_chair','handcrafted:oak_chair'],['ticket_clock','minecraft:clock'],['ticket_flower','minecraft:poppy'],['ticket_barrel','minecraft:barrel']]
+  rewards.forEach(pair=>{
+    var count=olyRead(p,pair[0])
+    if(count>0){olyWrite(p,pair[0],0);p.give(Item.of(pair[1],count))}
+  })
+  Object.keys(OLY_TICKET_DELIVERIES).forEach(key=>{var count=olyRead(p,key);if(count>0){olyWrite(p,key,0);p.give(Item.of(OLY_TICKET_DELIVERIES[key],count))}})
+  var xp=olyRead(p,'ticket_xp');if(xp>0){olyWrite(p,'ticket_xp',0);p.addXP(xp)}
+  if(olyRead(p,'ticket_haste')>0){olyWrite(p,'ticket_haste',0);olyFx(p,'haste',60,0)}
+}
+
+function olyRecoverTickets(p){
+  if(!p.isAlive())return
+  var key=String(p.getUuid()),active=olyActiveTickets[key] || 0
+  var missing=olyRead(p,'ticket_unresolved')-active
+  if(missing>0){olyWrite(p,'ticket_unresolved',active);p.give(Item.of('kubejs:ticket_romain',missing));p.setStatusMessage('§7Ticket récupéré après une interruption.')}
+}
+function olyCooldown(p,key,seconds) {
+  if (olyRead(p,key)>olyNow()) { p.setStatusMessage('§7Cet objet est encore en recharge.'); return false }
+  olyWrite(p,key,olyNow()+seconds*1000); return true
+}
+function olyPending(p,key,time) { olyWrite(p,key,time) }
+function olyPendant(p) {
+  var inv = OlyCurios.getCuriosInventory(p).resolve()
+  if (!inv.isPresent()) return null
+  var slots=inv.get().getEquippedCurios()
+  for (var i=0;i<slots.getSlots();i++) {
+    var s=slots.getStackInSlot(i)
+    if (s.id==='kubejs:pendentif_mathis' && s.count>0) return s
+  }
+  return null
+}
+function olyMigrateBrain(p) {
+  if(olyRead(p,'brain_timer_version')>=2)return
+  var oldNext=olyRead(p,'brain_next')
+  if(oldNext>0)olyWrite(p,'brain_next',Math.max(0,oldNext-86400000+OLY_BRAIN_COOLDOWN_MS))
+  olyWrite(p,'brain_timer_version',2)
+}
+function olyDeliverBrain(p,reconnect) {
+  var raw=p.server.persistentData.getString(olyKey(p,'brain_prize'))
+  if(!raw || !p.isAlive())return false
+  if(olyRead(p,'brain_ready')!==1 && (!reconnect || olyNow()<olyRead(p,'brain_reveal_at')))return false
+  var prize=JSON.parse(String(raw))
+  p.server.persistentData.putString(olyKey(p,'brain_prize'),'')
+  olyWrite(p,'brain_ready',0)
+  p.give(Item.of(prize.id,prize.id==='minecraft:enchanted_book'?{StoredEnchantments:prize.enchantments}:{Enchantments:prize.enchantments}))
+  return true
+}
+global.olyBrain = p => {
+  olyMigrateBrain(p)
+  olyDeliverBrain(p,true)
+  if(p.server.persistentData.getString(olyKey(p,'brain_prize'))){p.setStatusMessage('§7Le cerveau réfléchit déjà.');return}
+  var remaining=olyRead(p,'brain_next')-olyNow()
+  if(remaining>0){p.setStatusMessage('§7Le cerveau se repose : '+Math.ceil(remaining/3600000)+' h restantes.');return}
+  olyWrite(p,'brain_next',olyNow()+OLY_BRAIN_COOLDOWN_MS)
+  var rollId=Math.max(olyNow(),olyRead(p,'brain_roll_id')+1)
+  olyWrite(p,'brain_roll_id',rollId)
+  var prize=olyPickReward()
+  var ench=Object.keys(prize[1]).map(k=>({id:k.indexOf(':')>=0?k:'minecraft:'+k,lvl:prize[1][k]}))
+  p.server.persistentData.putString(olyKey(p,'brain_prize'),JSON.stringify({id:prize[0],enchantments:ench}))
+  olyWrite(p,'brain_ready',0);olyWrite(p,'brain_reveal_at',olyNow()+5250)
+  p.sendData('olycity_brain_animation',{phase:'start',prize:prize[0]})
+  olyTitle(p,'LE GROS CERVEAU DE LIAM')
+  olyVisual(p,'kubejs:cerveau_liam','Le cerveau réfléchit…','#F3BD60','enchant','block.enchantment_table.use',0.8,105)
+  var times=[2,4,6,8,10,13,16,20,25,31,39,49,63,81,105]
+  var server=p.server,name=olyName(p),uuid=String(p.getUuid())
+  times.forEach((time,index)=>olyLater(server,time,()=>{
+    if(Number(server.persistentData.getLong('olycity_brain_roll_id_'+uuid))!==rollId)return
+    var current=olyFind(server,name)
+    if(index===times.length-1)server.persistentData.putLong('olycity_brain_ready_'+uuid,1)
+    if(!current || String(current.getUuid())!==uuid || !current.isAlive())return
+    var shown=index===times.length-1?prize:OLY_REWARDS[Math.floor(Math.random()*OLY_REWARDS.length)]
+    olyBrainFrame(current,shown[0],index===times.length-1)
+    if(index===times.length-1){
+      olyDeliverBrain(current,false)
+      olyVisual(current,prize[0],'Le verdict de Liam !','#F3BD60','enchanted_hit','entity.player.levelup',1.2,40,2)
+      // The card and item reveal already convey the result.
+    }else olySound(current,'block.note_block.hat',0.8+index*0.04)
+  }))
+  olyLater(server,155,()=>{var current=olyFind(server,name);if(current && String(current.getUuid())===uuid && Number(server.persistentData.getLong('olycity_brain_roll_id_'+uuid))===rollId)olyBrainEnd(current)})
+}
+
+global.olyTicketOpen = p => {
+  olySound(p,'item.book.page_turn',1)
+  p.tell('§eRédige ton faux rapport après /oly bug, puis envoie-le. Le ticket sera consommé à l’envoi.')
+  p.sendData('olycity_ticket',{})
+}
+function olyTicket(p,report) {
+  if(olyRead(p,'ticket_next')>olyNow()){p.setStatusMessage('§7Patiente avant d’envoyer un autre ticket.');return 0}
+  var main=p.mainHandItem,off=p.offHandItem
+  var stack=main.id==='kubejs:ticket_romain'?main:(off.id==='kubejs:ticket_romain'?off:null)
+  if(!stack || stack.count<1){p.setStatusMessage('§cTiens un ticket de Romain en main.');return 0}
+  var safe=String(report).replace(/[§\r\n\u0000-\u001f]/g,' ').slice(0,160)
+  if(!safe.trim())return 0
+  stack.shrink(1);olyWrite(p,'ticket_next',olyNow()+8000)
+  olyDecor(p,'Livraison express de Romain','minecraft:chest',7,false)
+  var ticketOwner=String(p.getUuid())
+  olyActiveTickets[ticketOwner]=(olyActiveTickets[ticketOwner] || 0)+1
+  olyWrite(p,'ticket_unresolved',olyRead(p,'ticket_unresolved')+1)
+  var server=p.server,author=olyName(p),authorUuid=String(p.getUuid())
+  var topic=olyTicketMatch(safe),ticketPlan=null
+  var result=Math.floor(Math.random()*5)
+  if(topic && topic.legacy!==undefined)result=topic.legacy
+  else if(topic){result=9;ticketPlan=olyTicketPick(topic)}
+  var recipient=result===1?(olyFind(server,OLY.mathis) || p):p
+  var recipientName=olyName(recipient),recipientUuid=String(recipient.getUuid())
+  function current(name,uuid){var online=olyFind(server,name);return online && String(online.getUuid())===uuid && online.isAlive()?online:null}
+  function announce(text){if(text.indexOf('Ticket signé')===0 || text.indexOf('Romain examine')===0 || text.indexOf('Rapport validé')===0)return;server.tell('§6[OLYCITY] §r'+text)}
+  announce('Ticket signé Romain — En cours d’analyse… « '+safe+' »')
+  olyTitle(p,'Analyse du ticket…')
+  olyVisual(p,'kubejs:ticket_romain','Analyse en cours…','#78CBE0','enchant','block.note_block.pling',0.7,60)
+  olyLater(server,30,()=>{
+    announce('Romain examine le dossier… ça a l’air sérieux.')
+    var online=current(author,authorUuid)
+    if(online)olySound(online,'block.note_block.hat',1.2)
+  })
+  olyLater(server,60,()=>{
+    var online=current(recipientName,recipientUuid)
+    if(result===1){
+      announce('Ticket accepté : '+recipientName+' va recevoir 64 diamants ! — Romain')
+      if(online){
+        olyTitle(online,'64 DIAMANTS !')
+        olyVisual(online,'minecraft:diamond','64 diamants arrivent !','#64E3DC','happy_villager','entity.player.levelup',1,60)
+      }
+    }else{
+      announce('Rapport validé. Romain prépare sa solution…')
+      if(online)olyVisual(online,'kubejs:ticket_romain','Rapport validé…','#8FDF91','happy_villager','block.note_block.pling',1.4,60)
+    }
+  })
+  // At six seconds from submission, reveal the result and only then deliver it.
+  olyLater(server,120,()=>{
+    var online=current(recipientName,recipientUuid),authorOnline=current(author,authorUuid)
+    var awardKey='',award=0
+    if(result===9){
+      awardKey=olyTicketRewardKey(ticketPlan.item);award=ticketPlan.count
+      announce(author+' : '+ticketPlan.text+' — Romain')
+      if(online)olyVisual(online,ticketPlan.item,'Livraison : '+award+' objet'+(award>1?'s':''),'#8FDF91','happy_villager','item.book.page_turn',1,45)
+    }else if(result===0){
+      var liamTarget=olyFind(server,OLY.liam)
+      if(liamTarget && liamTarget.isAlive() && olyRead(liamTarget,'ticket_jump_next')<=olyNow()){
+        olyWrite(liamTarget,'ticket_jump_next',olyNow()+60000)
+        olyPending(liamTarget,'no_jump_until',olyNow()+30000)
+        liamTarget.sendData('olycity_state',{noJumpMs:30000})
+        olyVisual(liamTarget,'kubejs:ticket_romain','Saut désactivé : 30 s','#E5C779','poof','entity.villager.no',0.9,40)
+        announce('Ticket résolu : Liam ne peut plus sauter pendant 30 secondes. — Romain')
+      }else{awardKey='ticket_slime';award=1;announce('Ticket résolu : Liam absent ou protégé par le service après-vente. Voici une consolation collante. — Romain')}
+    }else if(result===1){
+      awardKey='ticket_dirt';award=64
+      announce('Ah mince, je m’étais trompé : c’était 64 terres. — Romain')
+      if(online){
+        olyTitle(online,'… 64 TERRES.')
+        olyVisual(online,'minecraft:dirt','Erreur de remboursement…','#CDA07A','poof','entity.villager.no',0.7,45)
+      }
+    }else if(result===2){awardKey='ticket_iron';award=4;announce('Ticket résolu : compensation en fer. — Romain')}
+    else if(result===3){awardKey='ticket_xp';award=40;announce('Ticket résolu : compensation en expérience. — Romain')}
+    else if(result===5){awardKey='ticket_chair';award=1;announce('Tu manques de place ? Voilà une chaise, tu peux t’asseoir. — Romain')}
+    else if(result===6){awardKey='ticket_clock';award=1;announce('Pour le lag, voilà une horloge. Maintenant tu peux mesurer l’attente. — Romain')}
+    else if(result===7){awardKey='ticket_flower';award=1;announce('Pour les morts, voici mes condoléances. En fleur. — Romain')}
+    else if(result===8){awardKey='ticket_barrel';award=1;announce('Stockage réparé : un tonneau. Le cloud était complet. — Romain')}
+    else{awardKey='ticket_haste';award=1;announce('Ticket résolu : travail accéléré pour '+author+'. — Romain')}
+    if(awardKey){
+      var key='olycity_'+awardKey+'_'+recipientUuid
+      server.persistentData.putLong(key,Number(server.persistentData.getLong(key))+award)
+      if(online)olyDeliverTicket(online)
+    }
+    var pendingKey='olycity_ticket_unresolved_'+authorUuid
+    server.persistentData.putLong(pendingKey,Math.max(0,Number(server.persistentData.getLong(pendingKey))-1))
+    olyActiveTickets[authorUuid]=Math.max(0,(olyActiveTickets[authorUuid] || 0)-1)
+    if(result!==1 && result!==9 && authorOnline)olyVisual(authorOnline,'kubejs:ticket_romain','Ticket résolu !','#8FDF91','happy_villager','item.book.page_turn',1,35)
+  })
+  return 1
+}
+
+global.olyRayhan = p => {
+  if (!olyCooldown(p,'rayhan_next',75)) return false
+  var r=Math.random()
+  var phrases=r<0.03?['Rayhan a de bons fournisseurs.','Tout est sous contrôle.']:r<0.08?['Tu as entendu ça ?','Ce buisson te regarde.']:['Tu planes…','Le plafond respire.','Tu comprends les poulets.','Les blocs sont carrés…']
+  var personal=phrases[Math.floor(Math.random()*phrases.length)]
+  olyWrite(p,'animal_talk_until',olyNow()+35000)
+  olyVisual(p,'kubejs:joint_rayhan',personal,r<0.08?'#E07A96':'#BB93E4',r<0.03?'dust 1 0.8 0.2 1':r<0.08?'dust 0.55 0.1 0.15 1':'dust 0.6 0.35 0.8 1','block.campfire.crackle',0.8,45)
+  if (r<0.03) {olyFx(p,'resistance',60,1);olyFx(p,'regeneration',60,0);olyFx(p,'speed',60,0);olyTitle(p,'PERFECT HIGH')}
+  else if (r<0.08) {olyFx(p,'blindness',6,0);olyFx(p,'nausea',12,0);p.runCommandSilent('playsound minecraft:entity.enderman.stare player @s ~ ~ ~ 0.5 0.8');olyTitle(p,'BAD TRIP')}
+  else {var buff=['resistance','regeneration','speed'][Math.floor(Math.random()*3)];olyFx(p,buff,35,buff==='resistance'?1:0);olyFx(p,'nausea',12,0);olyFx(p,'slowness',8,0)}
+  if(r>=0.03 && r<0.08){var server=p.server,name=olyName(p),uuid=String(p.getUuid());[25,65].forEach(delay=>olyLater(server,delay,()=>{var current=olyFind(server,name);if(current && String(current.getUuid())===uuid && current.isAlive())olySound(current,'ambient.cave',0.7)}))}
+  var mathis=olyFind(p.server,OLY.mathis)
+  if (mathis && mathis!==p && String(mathis.level.dimension)===String(p.level.dimension)) {
+    var dx=mathis.x-p.x,dy=mathis.y-p.y,dz=mathis.z-p.z
+    if(dx*dx+dy*dy+dz*dz<=256) {olyFx(mathis,'weakness',20,0);olyMessage(p,olyName(p)+' est complètement défoncé. Mathis perd 20 RR.')}
+  }
+  return true
+}
+global.olyNico = p => {
+  if (!olyCooldown(p,'nico_next',90)) return false
+  olyToast(p)
+  var party=Math.random()<0.03, duration=party?70:45
+  olyVisual(p,'kubejs:verre_nico',party?'Roi de la soirée !':'Le verre de trop…','#F2BE65','splash','entity.generic.drink',0.8,40)
+  olyFx(p,'strength',duration,1);olyFx(p,'resistance',duration,1);olyFx(p,'speed',duration,0)
+  if (party) olyTitle(p,'ROI DE LA SOIRÉE')
+  else {olyFx(p,'nausea',15,0);if(Math.random()<0.20)olyPending(p,'coma_at',olyNow()+45000)}
+  return true
+}
+PlayerEvents.tick(event => {
+  var p=event.player
+  var key=String(p.getUuid())
+  var frame=olyBrainFrames[key]
+  if(frame){
+    var aiming=p.isUsingItem() && p.getUseItem().id==='kubejs:longue_vue_neron'
+    if(aiming && !frame.hidden){olyBrainHide(p);frame.hidden=true}
+    else if(!aiming && frame.hidden)olyBrainDraw(p)
+  }
+  if(olyRead(p,'no_jump_until')>olyNow() && p.motionY>0 && !p.isFallFlying() && !p.isInWater()) p.motionY=0
+  if(olyRead(p,'coma_until')>olyNow()) {p.motionX=0;p.motionZ=0;if(p.motionY>0)p.motionY=0}
+  olyTicks[key]=(olyTicks[key] || 0)+1
+  if(olyTicks[key]%100===0)olyAnimalTalk(p)
+  if(olyTicks[key]%200===0){p.runCommandSilent('kill @e[type=minecraft:armor_stand,tag=olycity_ephemeral,tag=!'+olyDecorSession+',distance=..64]');olyCleanBridges(p.server);olyCleanDecor(p.server)}
+  if(olyTicks[key]%10!==0)return
+  var pendant=olyPendant(p)
+  if(pendant && !olyPendantEquipped[key])olySound(p,'block.amethyst_block.chime',1.2)
+  olyPendantEquipped[key]=!!pendant
+  if(pendant) p.modifyAttribute('minecraft:generic.max_health','olycity_pendant',8,'addition')
+  else {p.removeAttribute('minecraft:generic.max_health','olycity_pendant');if(p.health>p.maxHealth)p.health=p.maxHealth}
+  if(!p.isAlive() || p.isSpectator()) {olyPending(p,'coma_at',0);olyPending(p,'no_jump_until',0);return}
+  olyRecoverTickets(p)
+  olyDeliverTicket(p)
+  olyDeliverBrain(p,false)
+  var coma=olyRead(p,'coma_at')
+  if(coma>0 && coma<=olyNow()) {
+    olyPending(p,'coma_at',0);olyPending(p,'coma_until',olyNow()+6000)
+    olyFx(p,'blindness',6,0);olyFx(p,'slowness',6,6);olyFx(p,'resistance',6,3)
+    p.sendData('olycity_state',{comaMs:6000})
+    p.sendData('olycity_dream',{})
+    olyVisual(p,'kubejs:verre_nico','Nico : verre de trop.','#D68A76','poof','entity.player.burp',0.6,40)
+    olyMessage(p,'Nico a encore pris le verre de trop ('+olyName(p)+').')
+  }
+  var until=olyRead(p,'coma_until')
+  if(until>0 && until<=olyNow()) {olyPending(p,'coma_until',0);olyHangover(p)}
+})
+PlayerEvents.loggedOut(event => {var key=String(event.player.getUuid());delete olyTicks[key];delete olyPendantEquipped[key];delete olyVisualTokens[key];delete olyVisualPriority[key];delete olyBrainFrames[key]})
+PlayerEvents.loggedIn(event => {
+  var p=event.player
+  olyClearVisual(p)
+  olyBrainEnd(p)
+  olyRecoverTickets(p)
+  olyDeliverTicket(p)
+  olyDeliverBrain(p,true)
+  p.paint({oly_roulette:{type:'item',visible:false,w:0,h:0,item:'minecraft:air'},oly_heart_crack:{type:'item',visible:false,w:0,h:0,item:'minecraft:air'}})
+  olyMigrateBrain(p)
+  var jump=Math.max(0,olyRead(p,'no_jump_until')-olyNow())
+  var coma=Math.max(0,olyRead(p,'coma_until')-olyNow())
+  if(jump || coma)p.sendData('olycity_state',{noJumpMs:jump,comaMs:coma})
+})
+EntityEvents.death('minecraft:player',event => {
+  var p=event.entity
+  olyClearVisual(p)
+  olyBrainEnd(p)
+  olyPending(p,'coma_at',0);olyPending(p,'coma_until',0);olyPending(p,'no_jump_until',0)
+  p.sendData('olycity_state',{clearMovement:1})
+  p.paint({oly_roulette:{type:'item',visible:false,w:0,h:0,item:'minecraft:air'},oly_heart_crack:{type:'item',visible:false,w:0,h:0,item:'minecraft:air'}})
+  // Never cancel a real player death. Let respawn, graves and other mods finish.
+})
+global.olyPendantDamage = event => {
+  var p=event.getEntity()
+  if(!p.player || p.level.clientSide || !p.isAlive() || p.health<=0)return
+  var amount=Number(event.getAmount())
+  if(!isFinite(amount) || amount<=0 || amount<p.health)return
+  var cause=String(event.getSource().getType())
+  if(cause==='outOfWorld' || cause==='genericKill')return
+  var pendant=olyPendant(p)
+  if(!pendant)return
+  pendant.shrink(1)
+  event.setAmount(0)
+  event.setCanceled(true)
+  p.health=Math.min(8,p.maxHealth)
+  p.removeAttribute('minecraft:generic.max_health','olycity_pendant')
+  olyVisual(p,'kubejs:pendentif_mathis_brise','Le pendentif se brise !','#F0A4C9','totem_of_undying','item.totem.use',1,55)
+  olyBrokenPendant(p,event)
+  olyDecor(p,olyName(p)+' : c’était du lag.','minecraft:air',8,true)
+  olyFx(p,'slowness',40,1);olyFx(p,'weakness',40,1)
+  olyPending(p,'coma_at',0)
+  var taunts=['est descendu Ascendant','s’est rendu compte qu’il ne peut pas carry en gold','a des pertes de fps']
+  olyMessage(p,olyName(p)+' '+taunts[Math.floor(Math.random()*taunts.length)]+'. Le pendentif s’est brisé.')
+}
+var OLY_CD_KEYS={cerveau:'brain_next',neron:'neron_next',joint:'rayhan_next',verre:'nico_next',ticket:'ticket_next',facture:'invoice_next',absurde:'junk_next'}
+function olyResetCD(source,p,item) {
+  if(!p){source.player.tell('§cJoueur connecté introuvable.');return 0}
+  var chosen=item || 'tous'
+  var keys=chosen==='tous'?Object.keys(OLY_CD_KEYS):[chosen]
+  if(chosen!=='tous' && !OLY_CD_KEYS[chosen]){
+    source.player.tell('§cObjets : cerveau, neron, joint, verre, ticket, facture, absurde ou tous.');return 0
+  }
+  keys.forEach(key=>{
+    olyWrite(p,OLY_CD_KEYS[key],0)
+    if(key==='cerveau')olyWrite(p,'brain_timer_version',2)
+    if(key==='neron' && typeof global.olyResetNeron==='function')global.olyResetNeron(p)
+  })
+  p.tell('§aOLYCITY : délai réinitialisé ('+chosen+').')
+  if(source.player!==p)source.player.tell('§aDélais réinitialisés pour '+olyName(p)+' ('+chosen+').')
+  return 1
+}
+var olyDemoTokens={},olyDemoSerial=0
+ServerEvents.commandRegistry(event=>{
+  var c=event.commands,a=event.arguments
+  var root=c.literal('oly').executes(ctx=>{
+    var p=ctx.source.player
+    p.tell('§6OLYCITY §7— /oly livre • /oly quetes • /oly bug <rapport>')
+    p.tell('§7Animation : /oly animation reduite ou complete')
+    if(ctx.source.hasPermission(2))p.tell('§cAdmin : /oly items • /oly cd reset [joueur] [objet] • /oly cd resetall • /oly animation test')
+    return 1
+  })
+  root.then(c.literal('livre').executes(ctx=>{global.olyGiveChronicles(ctx.source.player);return 1}))
+  root.then(c.literal('quetes').executes(ctx=>{global.olyGiveQuestBook(ctx.source.player);return 1}))
+  root.then(c.literal('bug').then(c.argument('rapport',a.GREEDY_STRING.create(event)).executes(ctx=>olyTicket(ctx.source.player,a.GREEDY_STRING.getResult(ctx,'rapport')))))
+  root.then(c.literal('items').requires(s=>s.hasPermission(2)).executes(ctx=>{OLY_ITEMS.forEach(id=>ctx.source.player.give('kubejs:'+id));return 1}))
+  root.then(c.literal('cd').requires(s=>s.hasPermission(2) && !!s.player)
+    .then(c.literal('reset').executes(ctx=>olyResetCD(ctx.source,ctx.source.player,'tous'))
+      .then(c.argument('joueur',a.STRING.create(event))
+        .executes(ctx=>olyResetCD(ctx.source,olyFind(ctx.source.player.server,a.STRING.getResult(ctx,'joueur')),'tous'))
+        .then(c.argument('objet',a.STRING.create(event))
+          .executes(ctx=>olyResetCD(ctx.source,olyFind(ctx.source.player.server,a.STRING.getResult(ctx,'joueur')),a.STRING.getResult(ctx,'objet'))))))
+    .then(c.literal('resetall').executes(ctx=>{
+      var players=ctx.source.player.server.players
+      for(var i=0;i<players.size();i++)olyResetCD(ctx.source,players.get(i),'tous')
+      return players.size()
+    })))
+  root.then(c.literal('animation')
+    .then(c.literal('reduite').executes(ctx=>{ctx.source.player.sendData('olycity_visual_options',{reduced:1});ctx.source.player.tell('§7Animation douce activée.');return 1}))
+    .then(c.literal('complete').executes(ctx=>{ctx.source.player.sendData('olycity_visual_options',{reduced:0});ctx.source.player.tell('§7Animation complète activée.');return 1}))
+    .then(c.literal('test').requires(s=>s.hasPermission(2)).executes(ctx=>{
+      var p=ctx.source.player,server=p.server,name=olyName(p),uuid=String(p.getUuid())
+      if(server.persistentData.getString(olyKey(p,'brain_prize'))){p.setStatusMessage('§7Termine le tirage en cours avant la démonstration.');return 0}
+      var token=++olyDemoSerial;olyDemoTokens[uuid]=token
+      p.sendData('olycity_brain_animation',{phase:'start',prize:'minecraft:diamond_pickaxe'})
+      olySound(p,'block.enchantment_table.use',0.8)
+      olyLater(server,105,()=>{var current=olyFind(server,name);if(current && String(current.getUuid())===uuid && olyDemoTokens[uuid]===token){current.sendData('olycity_brain_animation',{phase:'reveal'});olySound(current,'entity.player.levelup',1.2)}})
+      p.tell('§7Démonstration visuelle : aucun objet donné, aucune recharge modifiée.');return 1
+    })))
+  event.register(root)
+})
+
+
+global.olyNeronShotFx = p => {olyVisual(p,'kubejs:longue_vue_neron','Oh la longue vue !','#79EBC8','crit',null,1,18)}
+
+// Original OLYCITY interactions. No block destruction, no hostile summons.
+var OlyWtfBox=Java.loadClass('net.minecraft.world.phys.AABB')
+var olyDecorSerial=0,olyTalking={},olyPlatforms=[],olyDecorSession='olycity_session_'+Date.now()
+function olyNearby(p,r){return p.level.getEntitiesWithin(new OlyWtfBox(p.x-r,p.y-r,p.z-r,p.x+r,p.y+r,p.z+r))}
+function olyDecor(p,name,held,seconds,ghost){
+  var tag='olycity_decor_'+olyDecorSession+'_'+(++olyDecorSerial)
+  var text=JSON.stringify({text:name,color:ghost?'aqua':'gold'})
+  var nbt={Marker:1,Invisible:ghost?1:0,Glowing:ghost?1:0,NoGravity:1,Invulnerable:1,Silent:1,ShowArms:1,NoBasePlate:1,CustomName:text,CustomNameVisible:1,Tags:['olycity_ephemeral',olyDecorSession,tag],HandItems:[{id:held,Count:1},{}],ArmorItems:[{id:'minecraft:leather_boots',Count:1},{id:'minecraft:leather_leggings',Count:1},{id:'minecraft:leather_chestplate',Count:1},{id:'minecraft:player_head',Count:1,tag:{SkullOwner:ghost?olyName(p):'ISEVEN_7'}}],Pose:{RightArm:[-80,0,0],LeftArm:[-25,0,0]}}
+  p.runCommandSilent('summon minecraft:armor_stand ~ ~ ~ '+JSON.stringify(nbt).replace(JSON.stringify(nbt.Pose),'{RightArm:[-80f,0f,0f],LeftArm:[-25f,0f,0f]}'))
+  var dimension=String(p.level.dimension),server=p.server
+  var pending=JSON.parse(String(server.persistentData.getString('olycity_decor_pending') || '[]'));pending.push({tag:tag,dim:dimension,pos:[Math.floor(p.x),Math.floor(p.y),Math.floor(p.z)],at:olyNow()+seconds*1000});server.persistentData.putString('olycity_decor_pending',JSON.stringify(pending));olyLater(server,seconds*20,()=>olyCleanDecor(server))
+  return tag
+}
+function olyAnimalTalk(p){
+  if(olyRead(p,'animal_talk_until')<=olyNow())return
+  var hit=p.rayTrace(12,false),animal=hit.entity
+  if(!animal || !animal.living)return
+  var lines={
+    'minecraft:chicken':['Cet élevage est une société écran.','Apporte-moi trois graines. On ne se connaît pas.'],
+    'minecraft:pig':['Je ne parlerai qu’en présence de mon avocat.','Ton coffre de terre ? Très suspect.'],
+    'minecraft:cow':['Tu paies en herbe ou par virement ?','Le lait est gratuit. Le conseil est payant.'],
+    'minecraft:sheep':['On m’a encore tondu mon budget.','Bêêê. Traduction : je te juge.']
+  }
+  var choices=lines[String(animal.type)];if(!choices)return
+  var line=choices[Math.floor(Math.random()*choices.length)]
+  p.sendData('olycity_relic_animation',{item:'kubejs:joint_rayhan',label:line,color:'#BB93E4',duration:2800})
+  olySound(p,'entity.villager.ambient',1.5)
+}
+global.olyMelon=p=>{
+  var fed=0,players=p.server.players
+  for(var i=0;i<players.size();i++){
+    var friend=players.get(i)
+    if(!friend.isAlive() || friend.isSpectator() || String(friend.level.dimension)!==String(p.level.dimension))continue
+    var dx=friend.x-p.x,dy=friend.y-p.y,dz=friend.z-p.z
+    if(dx*dx+dy*dy+dz*dz>36)continue
+    friend.give(Item.of('minecraft:melon_slice',8))
+    fed++
+  }
+  olyVisual(p,'kubejs:pasteque_solidarite','Une tranche pour chacun !','#70D78B','happy_villager','entity.player.burp',1.2,40)
+  return true
+}
+global.olyInvoice=p=>{
+  if(!olyCooldown(p,'invoice_next',60))return false
+  olyDecor(p,'Huissier : une patate, s’il vous plaît.','minecraft:paper',10,false)
+  olyVisual(p,'kubejs:facture_impayee','Votre patate est en retard.','#E4CE83','poof','entity.villager.ambient',.8,45)
+  return true
+}
+global.olyJunk=(p,itemId)=>{
+  var id=String(itemId || p.mainHandItem.id)
+  if(!olyCooldown(p,'junk_next',20))return false
+  if(id==='kubejs:baton_rh'){
+    // A gentle radial shove, not damage or boss control.
+    var entities=olyNearby(p,4)
+    for(var i=0;i<entities.size();i++){
+      var e=entities.get(i)
+      if(!e.living || e.player || e.maxHealth>=80 || String(e.getUuid())===String(p.getUuid()))continue
+      var dx=e.x-p.x,dz=e.z-p.z,len=Math.max(.1,Math.sqrt(dx*dx+dz*dz))
+      e.motionX=dx/len*.7;e.motionZ=dz/len*.7;e.motionY=.15
+    }
+    olyVisual(p,id,'Merci de quitter mon bureau.','#E4CE83','poof','entity.villager.no',1,30)
+  }else if(id==='kubejs:poisson_chantier'){
+    // Temporary passage through air only; restores only our unchanged blocks.
+    var x=Math.floor(p.x),y=Math.floor(p.y)-1,z=Math.floor(p.z),placed=[],direction=((Math.round(Number(p.getYaw())/90)%4)+4)%4,stepX=[0,-1,0,1][direction],stepZ=[1,0,-1,0][direction]
+    for(var n=1;n<=4;n++){
+      var b=p.level.getBlock(x+n*stepX,y,z+n*stepZ)
+      if(String(b.id)!=='minecraft:air')continue
+      b.set('minecraft:barrier');placed.push([x+n*stepX,y,z+n*stepZ]);p.runCommandSilent('particle minecraft:end_rod '+(x+n*stepX+.5)+' '+(y+1)+' '+(z+n*stepZ+.5)+' 0.3 0.1 0.3 0 8 normal @a[distance=..24]')
+    }
+    var dimension=String(p.level.dimension),server=p.server
+    var key='olycity_bridges_pending',raw=String(server.persistentData.getString(key) || '[]'),pending=JSON.parse(raw)
+    placed.forEach(pos=>pending.push({dim:dimension,pos:pos,at:olyNow()+10000}))
+    server.persistentData.putString(key,JSON.stringify(pending));olyLater(server,200,()=>olyCleanBridges(server))
+    olyVisual(p,id,'Passage provisoire devant toi : 10 s.','#70C8D8','splash','block.wood.place',1,40)
+  }else if(id==='kubejs:patate_secours'){
+    olyWrite(p,'potato_bounce_until',olyNow()+30000)
+    olyVisual(p,id,'Prochaine chute : rebond !','#E4CE83','happy_villager','block.slime_block.place',1,40)
+  }
+  return true
+}
+// Works for a real fall only, never by cancelling unrelated damage/death.
+global.olyPotatoFall=event=>{
+  var p=event.getEntity();if(!p || !p.player || p.level.clientSide || !p.server || olyRead(p,'potato_bounce_until')<=olyNow() || event.getDistance()<3)return
+  olyWrite(p,'potato_bounce_until',0);event.setDamageMultiplier(0);p.motionY=.75
+  var name=olyName(p),uuid=String(p.getUuid()),server=p.server;olyLater(server,1,()=>{var current=olyFind(server,name);if(current && String(current.getUuid())===uuid && current.isAlive()){current.motionY=.75;current.sendData('olycity_bounce',{})}})
+  olyVisual(p,'kubejs:patate_secours','Patate amortissante !','#E4CE83','slime','block.slime_block.fall',1.2,30)
+}
+
+function olyCleanBridges(server){
+ var raw=String(server.persistentData.getString('olycity_bridges_pending') || '[]'),pending=JSON.parse(raw),keep=[]
+ pending.forEach(b=>{if(b.at>olyNow()){keep.push(b);return}var pos=b.pos.join(' ');if(server.runCommandSilent('execute in '+b.dim+' if loaded '+pos+' run time query gametime')===0){keep.push(b);return}server.runCommandSilent('execute in '+b.dim+' if block '+pos+' minecraft:barrier run setblock '+pos+' minecraft:air')})
+ server.persistentData.putString('olycity_bridges_pending',JSON.stringify(keep))
+}
+
+ItemEvents.entityInteracted(event=>{
+ var p=event.player,animal=event.target,stack=event.item
+ if(!p || p.level.clientSide || String(animal.type)!=='minecraft:chicken' || olyRead(p,'animal_talk_until')<=olyNow())return
+ if(String(stack.id)!=='minecraft:wheat_seeds' || stack.count<3 || olyRead(p,'chicken_mission_next')>olyNow())return
+ stack.shrink(3);olyWrite(p,'chicken_mission_next',olyNow()+180000)
+ p.give(Item.of('minecraft:paper',{display:{Name:JSON.stringify({text:'Badge du syndicat des poulets',color:'gold',italic:false}),Lore:[JSON.stringify({text:'Trois graines. Aucun témoin.',color:'gray',italic:false})]}}))
+ p.sendData('olycity_relic_animation',{item:'kubejs:joint_rayhan',label:'Merci. Cette conversation n’a jamais eu lieu.',color:'#BB93E4',duration:2800});event.cancel()
+})
+
+function olyCleanDecor(server){
+ var pending=JSON.parse(String(server.persistentData.getString('olycity_decor_pending') || '[]')),keep=[]
+ pending.forEach(d=>{if(d.at>olyNow()){keep.push(d);return}if(server.runCommandSilent('execute in '+d.dim+' if loaded '+d.pos.join(' ')+' run time query gametime')===0){keep.push(d);return}server.runCommandSilent('execute in '+d.dim+' run kill @e[type=minecraft:armor_stand,tag='+d.tag+']')})
+ server.persistentData.putString('olycity_decor_pending',JSON.stringify(keep))
+}

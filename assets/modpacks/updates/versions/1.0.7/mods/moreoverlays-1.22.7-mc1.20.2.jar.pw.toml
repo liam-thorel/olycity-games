@@ -1,0 +1,8 @@
+name = "mods/moreoverlays-1.22.7-mc1.20.2.jar"
+filename = "moreoverlays-1.22.7-mc1.20.2.jar"
+side = "client"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/1cf063baf7eed2f41066a00cb5520d0ceed4104118990d508591c8a4c9781980.jar"
+hash-format = "sha256"
+hash = "1cf063baf7eed2f41066a00cb5520d0ceed4104118990d508591c8a4c9781980"

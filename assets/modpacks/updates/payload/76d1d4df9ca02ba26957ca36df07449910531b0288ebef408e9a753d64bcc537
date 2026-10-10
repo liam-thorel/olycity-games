@@ -1,0 +1,2791 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "",
+  "filename": "atm9_iron_spells_and_spellbooks",
+  "group": "1F488C60EF77E6C0",
+  "icon": "irons_spellbooks:scroll",
+  "id": "3217EA25033E21A2",
+  "order_index": 8,
+  "quest_links": [],
+  "quests": [
+    {
+      "description": [
+        "Les grimoires accueillent les sorts appris à partir de parchemins. Utilise la table d’inscription pour préparer ton grimoire.",
+        "Lancer un sort consomme du mana. Consulte les capacités du grimoire, la rareté du parchemin et le coût du sort avant de partir au combat."
+      ],
+      "hide_dependent_lines": 1,
+      "id": "1E6E5B432DAFE588",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "754280A4F5F1B148",
+          "item": "minecraft:paper",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "tasks": [
+        {
+          "id": "77077496667974C0",
+          "item": "minecraft:paper",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Les grimoires et les sorts",
+      "x": 7.0,
+      "y": -6.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "1E6E5B432DAFE588"
+      ],
+      "description": [
+        "Un livre d'orthographe artisanal... ouais ce n'est pas facile à artisanat. Le plus difficile à obtenir serait le livre Ruiné, que vous pouvez trouver dans les coffres de la vieille ville. Les flacons de sang peuvent être obtenus soit en mettant un Mob (ou même vous-même) dans un chaudron au-dessus d'un feu de camp ou un chaudron alchimique."
+      ],
+      "id": "1B2C861A1F6DF312",
+      "rewards": [
+        {
+          "id": "0BCB1DD53D0EC7C9",
+          "item": "irons_spellbooks:legendary_ink",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "tasks": [
+        {
+          "id": "30008617966446BE",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:netherite_spell_book",
+            "tag": {
+              "ISB_Spells": {
+                "data": [],
+                "maxSpells": 12,
+                "mustEquip": 1,
+                "spellWheel": 1
+              }
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Codex Ancien",
+      "x": 2.0,
+      "y": -7.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1E6E5B432DAFE588"
+      ],
+      "description": [
+        "Le plus basique Spellbook, qui le rend aussi le moins cher! Il ne peut contenir qu'un total de 5 sorts."
+      ],
+      "id": "439019DC7F1935E0",
+      "rewards": [
+        {
+          "id": "059A4E3ECD290341",
+          "item": "irons_spellbooks:common_ink",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "tasks": [
+        {
+          "id": "0C9FAD17E1E815BC",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:copper_spell_book",
+            "tag": {
+              "ISB_Spells": {
+                "data": [],
+                "maxSpells": 5,
+                "mustEquip": 1,
+                "spellWheel": 1
+              }
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Journal Fragile",
+      "x": 6.0,
+      "y": -6.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1E6E5B432DAFE588"
+      ],
+      "description": [
+        "Pas beaucoup mieux que le Flimsy... Cela peut contenir un seul Spell plus que le Flimsy Journal! C'est un Spell de plus très puissant au prêt!"
+      ],
+      "id": "7C3F57603E0F04E1",
+      "rewards": [
+        {
+          "id": "283CB7D66203DC05",
+          "item": "irons_spellbooks:uncommon_ink",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "tasks": [
+        {
+          "id": "7C8C892CDAED0E33",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:iron_spell_book",
+            "tag": {
+              "ISB_Spells": {
+                "data": [],
+                "maxSpells": 6,
+                "mustEquip": 1,
+                "spellWheel": 1
+              }
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Journal de l'Union européenne",
+      "x": 5.0,
+      "y": -6.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1E6E5B432DAFE588"
+      ],
+      "description": [
+        "Un autre livre d'orfèvrerie, celui-ci est un peu plus cher ! Il faudra du Peau de Hogskin qui est une goutte de Hoglins. Celui-ci peut contenir 8 Pelles qui est techniquement encore sur le côté inférieur mais c'est mieux !"
+      ],
+      "id": "6041F5B04905394F",
+      "rewards": [
+        {
+          "id": "58FF133ECC7EF3B9",
+          "item": "irons_spellbooks:rare_ink",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "tasks": [
+        {
+          "id": "740D3D639C65689D",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:gold_spell_book",
+            "tag": {
+              "ISB_Spells": {
+                "data": [],
+                "maxSpells": 8,
+                "mustEquip": 1,
+                "spellWheel": 1
+              }
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Grimoire de l'Apprenti",
+      "x": 4.0,
+      "y": -6.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1E6E5B432DAFE588"
+      ],
+      "description": [
+        "Un autre livre d'or artisanal et suivant le modèle celui-ci est encore plus cher. Il nécessite des vêtements Arcane, de l'or, et un livre enchanté. Il n'est pas difficile sur lequel le livre a juste besoin d'être Enchanté! Il a 10 fentes d'or et accorde un énorme Mana Boost!"
+      ],
+      "id": "276DA9AE65A062D4",
+      "rewards": [
+        {
+          "id": "4E531356E33D6B6D",
+          "item": "irons_spellbooks:epic_ink",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "tasks": [
+        {
+          "id": "1D566ACDB7D49E42",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:diamond_spell_book",
+            "tag": {
+              "ISB_Spells": {
+                "data": [],
+                "maxSpells": 10,
+                "mustEquip": 1,
+                "spellWheel": 1
+              }
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Grimoire Enchanté",
+      "x": 3.0,
+      "y": -7.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1E6E5B432DAFE588"
+      ],
+      "description": [
+        "C'est là ! C'est partout et c'est pourri ! Vous pouvez les trouver dans la plupart des poitrines. Ils peuvent tenir 8 Spels mais vous donner moins de résistance à l'orthographe."
+      ],
+      "hide_dependent_lines": 1,
+      "id": "357BE4DCDB2AD916",
+      "rewards": [
+        {
+          "id": "6E53B4A0757A3C17",
+          "item": "irons_spellbooks:rare_ink",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "tasks": [
+        {
+          "id": "3665A9E48EA3CE52",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:rotten_spell_book",
+            "tag": {
+              "ISB_Spells": {
+                "data": [],
+                "maxSpells": 8,
+                "mustEquip": 1,
+                "spellWheel": 1
+              }
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Grimoire Pourri",
+      "x": 4.0,
+      "y": -7.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1E6E5B432DAFE588"
+      ],
+      "description": [
+        "&aEvokers sont connus comme étant un Miniboss puissant et mortel de Minecraft. Donc, bien sûr, Iron a ajouté une version encore plus puissante et mortelle! Et oui ce livre est une goutte rare des deux! Il a 10 fentes d'orthographe mais 3 sont occupés. Strike Fang, Ward Fang, et Vex Swarm tous viennent avec le livre et ne peuvent pas être déplacés."
+      ],
+      "id": "5652BB81EEF738ED",
+      "rewards": [
+        {
+          "id": "62D883069F533D07",
+          "item": "irons_spellbooks:epic_ink",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "tasks": [
+        {
+          "id": "105B75B3DDB3E9B6",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:evoker_spell_book",
+            "tag": {
+              "ISB_Spells": {
+                "data": [
+                  {
+                    "id": "irons_spellbooks:fang_strike",
+                    "index": 0,
+                    "level": 6,
+                    "locked": 1
+                  },
+                  {
+                    "id": "irons_spellbooks:fang_ward",
+                    "index": 1,
+                    "level": 4,
+                    "locked": 1
+                  },
+                  {
+                    "id": "irons_spellbooks:summon_vex",
+                    "index": 2,
+                    "level": 4,
+                    "locked": 1
+                  }
+                ],
+                "maxSpells": 10,
+                "mustEquip": 1,
+                "spellWheel": 1
+              }
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&aGrimore d'Evokation",
+      "x": 3.0,
+      "y": -8.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1E6E5B432DAFE588"
+      ],
+      "description": [
+        "Pour obtenir ce livre d'orthographe spécial, vous aurez besoin de tuer le Roi Mort! Il a 10 fentes d'orthographe mais 4 sont déjà pris. Blood Slash, Blood Step, Ray of Siphoning, et Blaze Storm viennent sur elle déjà et ne peuvent pas être enlevés."
+      ],
+      "id": "651E6B829017AA68",
+      "rewards": [
+        {
+          "id": "4CFFCC40FE7CBB52",
+          "item": "irons_spellbooks:epic_ink",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "tasks": [
+        {
+          "id": "3EC481FF806127CE",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:necronomicon_spell_book",
+            "tag": {
+              "ISB_Spells": {
+                "data": [
+                  {
+                    "id": "irons_spellbooks:blood_slash",
+                    "index": 0,
+                    "level": 5,
+                    "locked": 1
+                  },
+                  {
+                    "id": "irons_spellbooks:blood_step",
+                    "index": 1,
+                    "level": 5,
+                    "locked": 1
+                  },
+                  {
+                    "id": "irons_spellbooks:ray_of_siphoning",
+                    "index": 2,
+                    "level": 5,
+                    "locked": 1
+                  },
+                  {
+                    "id": "irons_spellbooks:blaze_storm",
+                    "index": 3,
+                    "level": 5,
+                    "locked": 1
+                  }
+                ],
+                "maxSpells": 10,
+                "mustEquip": 1,
+                "spellWheel": 1
+              }
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Nécronomyme",
+      "x": 3.0,
+      "y": -6.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1E6E5B432DAFE588"
+      ],
+      "description": [
+        "Ce livre d'orthographe est une goutte rare de Blazes. Je me souviens que parce que j'ai été confus quand j'ai obtenu 1 de ma ferme de Blaze. Il donne un boost aux Orthographes et a 10 Fentes d'orthographe."
+      ],
+      "id": "76B5A61E10F676DC",
+      "rewards": [
+        {
+          "id": "376BD938759C0D74",
+          "item": "irons_spellbooks:epic_ink",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "tasks": [
+        {
+          "id": "439CEAAE903ED502",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:blaze_spell_book",
+            "tag": {
+              "ISB_Spells": {
+                "data": [],
+                "maxSpells": 10,
+                "mustEquip": 1,
+                "spellWheel": 1
+              }
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&cManuel d'Instructions du Blaze",
+      "x": 3.0,
+      "y": -9.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1E6E5B432DAFE588"
+      ],
+      "description": [
+        "Celui-ci prend un certain temps pour expliquer ainsi avoir de la patience. D'abord, trouver un fort Evoker. Ensuite, trouver un livre de recherche caché dedans. Puis, avoir un commerçant qui est otage dans le fort le traduire. (Comme notre otage Quest Traducteurs!) Une fois, il est traduit l'apporter à un prêtre dans un village pour l'échanger contre le livre d'orthographe! Il donne un coup de pouce à Holy sorts et ne vous inquiétez pas les otages Traders sont très très rares, continuer à chercher!"
+      ],
+      "id": "1C7AB14BED5E9052",
+      "rewards": [
+        {
+          "id": "26C7F7A73F4572D0",
+          "item": "irons_spellbooks:epic_ink",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "tasks": [
+        {
+          "id": "3F241D61B682175E",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:villager_spell_book",
+            "tag": {
+              "ISB_Spells": {
+                "data": [],
+                "maxSpells": 10,
+                "mustEquip": 1,
+                "spellWheel": 1
+              }
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&6Bible du Villageois",
+      "x": 3.0,
+      "y": -5.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "357BE4DCDB2AD916"
+      ],
+      "description": [
+        "&2&lLivre d'orthographe de la nature. Il a 10 Orthographes et donne un coup de pouce à la Nature sorts! Vous avez besoin d'un Livre d'orthographe rotative pour..."
+      ],
+      "id": "5EDD947AE3BC70DE",
+      "rewards": [
+        {
+          "id": "66DD0533490A4524",
+          "item": "irons_spellbooks:epic_ink",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "tasks": [
+        {
+          "id": "1E97C7DFC497C964",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:druidic_spell_book",
+            "tag": {
+              "ISB_Spells": {
+                "data": [],
+                "maxSpells": 10,
+                "mustEquip": 1,
+                "spellWheel": 1
+              }
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&2Tome Druidique",
+      "x": 3.0,
+      "y": -4.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1E6E5B432DAFE588"
+      ],
+      "description": [
+        "Un autre qui a besoin du Livre Ruiné pour l'artisanat. Vous pouvez trouver les Livres Ruinés dans Ancient City Chests. Vous aurez également besoin de Dragon Skin qui tombe du Dragon Ender! Il aura 12 fentes d'orthographe et donner un coup de pouce à Ender sorts!"
+      ],
+      "id": "609493F2F32D086F",
+      "rewards": [
+        {
+          "id": "2CFE946F011EA999",
+          "item": "irons_spellbooks:legendary_ink",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "square",
+      "tasks": [
+        {
+          "id": "7BD2463C1B17BA5E",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:dragonskin_spell_book",
+            "tag": {
+              "ISB_Spells": {
+                "data": [],
+                "maxSpells": 12,
+                "mustEquip": 1,
+                "spellWheel": 1
+              }
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&dGrimoire en Peau de Dragon",
+      "x": 2.0,
+      "y": -6.0,
+      "repeatable": false
+    },
+    {
+      "description": [
+        "Un bloc très important et un très commun! Peut être conçu ou trouvé dans la plupart des structures d'orthographe. Ceux-ci sont utilisés pour ajouter et enlever des rouleaux de livres d'orthographe! Lancez le livre d'orthographe dans la fente du livre puis le défiler en dessous. Si vous voulez supprimer un défilement, cliquez dessus puis prenez-le de la droite et dans votre inventaire."
+      ],
+      "id": "153126E7CEBF4437",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "26BD62FCE5A8307C",
+          "item": "minecraft:paper",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "202235BB0230C5DF",
+          "item": "irons_spellbooks:inscription_table",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -2.75,
+      "y": 0.5,
+      "repeatable": false,
+      "title": "Table d'Inscription",
+      "dependencies": []
+    },
+    {
+      "description": [
+        "L'Anvil d'Arcane a le plus d'utilisations hors de n'importe quel bloc dans les sorts de fer. Vous pouvez combiner des sorts avec la même encre pour le nivellement. Il peut combiner des défilements en armes à utiliser avec eux, comme un Epée. Vous pouvez également définir une affinité aux anneaux en utilisant des Orbes de mise à niveau, ou ajouter des Orbes de mise à niveau aux armes et aux engins."
+      ],
+      "id": "74814E0E34F19CFF",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "6BDB662A64BED223",
+          "item": "irons_spellbooks:upgrade_orb",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "6459ED94DABAB412",
+          "item": "irons_spellbooks:arcane_anvil",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -2.0,
+      "y": -0.25,
+      "repeatable": false,
+      "title": "Enclume Arcanique",
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Faites défiler Forge, vous pouvez deviner ce qu'il fait! Il fait défiler! Ajoutez une encre pour définir la rareté. Papier pour le défilement réel. Puis l'élément de quel type d'orthographe vous voulez (Blaze Rod for Fire, Poisonous Potato for Nature, ETC). Enfin choisi l'orthographe que vous voulez et il sera créé!"
+      ],
+      "id": "701F25306DE522D1",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "29DD9E35D8A34A7A",
+          "item": "irons_spellbooks:rare_ink",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "6EB3D503389B6025",
+          "item": "irons_spellbooks:scroll_forge",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -1.25,
+      "y": 0.5,
+      "repeatable": false,
+      "title": "Forge à Parchemins",
+      "dependencies": []
+    },
+    {
+      "description": [
+        "L'alchimiste Cauldron peut : 1. être utilisé pour obtenir du sang en cuisinant des Mobs ou le joueur. 2. faire et mettre à niveau Potions. 3. avoir une demi-occasion d'obtenir de l'encre d'un défi. 4. combiner 4 Encre d'une rareté à une rareté plus élevée."
+      ],
+      "id": "7558D199D3AB7CC2",
+      "rewards": [
+        {
+          "id": "0E259B4DB5E80597",
+          "item": "irons_spellbooks:oakskin_elixir",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "7EDCF61D98725F50",
+          "item": "irons_spellbooks:invisibility_elixir",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "4DBF1B613CDB3A63",
+          "item": "irons_spellbooks:evasion_elixir",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "2E3CA8C8ACE4664A",
+          "item": "irons_spellbooks:alchemist_cauldron",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -2.0,
+      "y": 1.25,
+      "repeatable": false,
+      "title": "Chaudron d'Alchimiste",
+      "dependencies": []
+    },
+    {
+      "id": "12337747A5B4905C",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "63AE6AA553BF8B1B",
+          "item": "irons_spellbooks:common_ink",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "6BDBCF34AEF7CE06",
+          "item": "irons_spellbooks:common_ink",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&7Encre Commune",
+      "x": -3.0,
+      "y": 3.0,
+      "description": [],
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "id": "29E1BB83D0080425",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "39633103FF3FF95B",
+          "item": "irons_spellbooks:uncommon_ink",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "5C82B847A8C727CE",
+          "item": "irons_spellbooks:uncommon_ink",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&aEncre Peu Commune",
+      "x": -2.5,
+      "y": 2.5,
+      "description": [],
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "id": "7C257C3C38E3720C",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "10F5930911449C08",
+          "item": "irons_spellbooks:rare_ink",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "7919BC5E6B6C20E5",
+          "item": "irons_spellbooks:rare_ink",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&bEncre Rare",
+      "x": -2.0,
+      "y": 3.0,
+      "description": [],
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "id": "568446A59B136DF8",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "763E232BF340489B",
+          "item": "irons_spellbooks:epic_ink",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "381A51668850A6C6",
+          "item": "irons_spellbooks:epic_ink",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&bEncre Épique",
+      "x": -1.5,
+      "y": 2.5,
+      "description": [],
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "id": "06BEE6DD98017301",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "450E7863083059C6",
+          "item": "irons_spellbooks:legendary_ink",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "id": "56086863D5C3D0EA",
+          "item": "irons_spellbooks:legendary_ink",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&bEncre Légendaire",
+      "x": -1.0,
+      "y": 3.0,
+      "description": [],
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "1438F47CBA79004D"
+      ],
+      "description": [
+        "Ride the Lightning! Lightning est tout sur l'utilisation de l'électricité pour tuer et soutenir vous-même. Certaines attaques fonctionnent même comme la vraie foudre! Lightning's Focus Material est la bouteille 'O Lightning que vous obtenez de l'utilisation d'une bouteille vide sur un crieur chargé. Vous avez besoin de la foudre pour faire plus de foudre! Ses rouleaux sont gris avec le texte bleu clair."
+      ],
+      "id": "5F5A14AB45766FFE",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "539A7D2B7F34F237",
+          "item": "irons_spellbooks:lightning_rune",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "pentagon",
+      "size": 1.3,
+      "tasks": [
+        {
+          "id": "345CC8C08038F1B1",
+          "item": "irons_spellbooks:lightning_rune",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&5&lFoudre",
+      "x": -1.5,
+      "y": 6.0,
+      "repeatable": false
+    },
+    {
+      "description": [
+        "&7Pour obtenir une rune blanche, vous pouvez soit tuer le Roi Mort ou essuyer une rune inscrite avec une pierre raclée. Il y a 8 classes différentes (1 secrète) chacune ayant leurs propres parchemins, Focus Material, Upgrades et Outfits."
+      ],
+      "id": "1438F47CBA79004D",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "2B11E96047E5A694",
+          "item": "irons_spellbooks:blank_rune",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "octagon",
+      "size": 2.0,
+      "tasks": [
+        {
+          "id": "37A3E617CE05F2A3",
+          "item": "irons_spellbooks:blank_rune",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&lClasses",
+      "x": 3.0,
+      "y": 4.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "5F5A14AB45766FFE"
+      ],
+      "id": "5AC2A3C16E3A291D",
+      "rewards": [
+        {
+          "id": "3BBD2D3B806EAFB5",
+          "item": "irons_spellbooks:lightning_upgrade_orb",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "534A5D2C77E0524E",
+          "item": "irons_spellbooks:lightning_upgrade_orb",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&5Orbe d'Amélioration de Foudre",
+      "x": -2.0,
+      "y": 7.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1438F47CBA79004D"
+      ],
+      "description": [
+        "&c&lLe feu est évidemment lié au feu. La plupart des défilements sont avec l'utilisation du feu pour brûler et blesser des choses. Le matériau de foyer du feu est Blaze Rods. Vous pouvez artisanat des runes de feu ou les obtenir de tuer le pyromancer. Ses défilements sont rouge clair avec le texte gris."
+      ],
+      "id": "2E0C1A540829F895",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "737E8F58BB4E422A",
+          "item": "irons_spellbooks:fire_rune",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "pentagon",
+      "size": 1.3,
+      "tasks": [
+        {
+          "id": "6DD266E2F276646B",
+          "item": "irons_spellbooks:fire_rune",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&c&lFeu",
+      "x": -1.5,
+      "y": 9.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1438F47CBA79004D"
+      ],
+      "description": [
+        "&b&lLa glace est tout au sujet de l'hiver temps Spels. Utilisation de glace et de neige pour refroidir et nuire aux ennemis. Ice's Focus Material est le Bone Frozen qui sont gouttes de Strays. Vous pouvez utiliser ceux pour artisanat la rune de glace ou tuer le Cryomancer pour l'obtenir. Ses rouleaux sont bleu clair avec un texte bleu foncé."
+      ],
+      "id": "7D0D062A065F8160",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "28CB3CEE4FC17E21",
+          "item": "irons_spellbooks:ice_rune",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "pentagon",
+      "size": 1.3,
+      "tasks": [
+        {
+          "id": "7A28A4DDC7E1E8FD",
+          "item": "irons_spellbooks:ice_rune",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&b&lGlace",
+      "x": 1.5,
+      "y": 9.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1438F47CBA79004D"
+      ],
+      "description": [
+        "&d&lEnder est utilisé pour prendre tous les pouvoirs d'Endermen et du Dragon Ender, et bien sûr l'utiliser pour nous-mêmes. Teleporting, Fireballs, et Dragon's Breath sont seulement quelques-uns de ces! Ender's Focus Material est les Perles Ender. Et ses rouleaux sont violet avec du texte rose."
+      ],
+      "id": "6E49B45BE177EF73",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "4BB8CA024424413D",
+          "item": "irons_spellbooks:ender_rune",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "pentagon",
+      "size": 1.3,
+      "tasks": [
+        {
+          "id": "5250C0C595FCCE13",
+          "item": "irons_spellbooks:ender_rune",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&d&lEnder",
+      "x": 1.5,
+      "y": 6.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1438F47CBA79004D"
+      ],
+      "description": [
+        "&6&lSaint est pour tous les joueurs de Medic/Support. Il est principalement destiné à la guérison et à l'aide. Holy's Focus Material est Divine Pearls qui sont fabriqués. Vous pouvez faire des runes avec ceux-ci ou tuer le prêtre pour obtenir les runes saintes."
+      ],
+      "id": "35AEDE41A7623E48",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "7F2A1EF2AA5B1B2E",
+          "item": "irons_spellbooks:holy_rune",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "pentagon",
+      "size": 1.3,
+      "tasks": [
+        {
+          "id": "32A3D0C86807EF61",
+          "item": "irons_spellbooks:holy_rune",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&6&lSacré",
+      "x": 4.5,
+      "y": 6.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1438F47CBA79004D"
+      ],
+      "description": [
+        "Celui-ci nous emmène de E10 à la note des adolescents. Le sang est tout à propos de tuer des ennemis pour votre propre santé! La plupart des attaques vous guériront. Blood's Focus Material est des Vials de sang que vous obtenez de la cuisine d'un Mob ou joueur dans un chaudron. Ses rouleaux sont brun (il n'y a pas de couleur pour Brown) avec des textes rouge foncé."
+      ],
+      "id": "2F7FB2FC87C09F32",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "5B32D39D8098E910",
+          "item": "irons_spellbooks:blood_rune",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "pentagon",
+      "size": 1.3,
+      "tasks": [
+        {
+          "id": "760FD10243F51C1E",
+          "item": "irons_spellbooks:blood_rune",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&4&lSang",
+      "x": 4.5,
+      "y": 9.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1438F47CBA79004D"
+      ],
+      "description": [
+        "&n&aL'évocation est tout au sujet de ce que font les Evokers, principalement l'invocation. Que ce soit Fangs ou Vexes si elle est convoquée, c'est probablement une Évocation. Evokatation's Focus Material est Emeralds. Vous pouvez soit fabriquer la Rune ou l'obtenir de l'Archevoker. Evokaation parchemins sont blancs avec des textes noirs."
+      ],
+      "id": "14C69E94130761B5",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "3608F2CD86BF224E",
+          "item": "irons_spellbooks:evocation_rune",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "pentagon",
+      "size": 1.3,
+      "tasks": [
+        {
+          "id": "493C9418009FFB91",
+          "item": "irons_spellbooks:evocation_rune",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&a&lÉvocation",
+      "x": 7.5,
+      "y": 6.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1438F47CBA79004D"
+      ],
+      "description": [
+        "&2&lLa nature est faite pour utiliser la Terre à notre avantage en empoisonnant et en affaiblissant nos ennemis! Tout comme ce que les grandes corporations font à la Terre elle-même! Nature's Focus Material est Poisonous Potato. Les rouleaux sont vert clair avec le texte vert foncé."
+      ],
+      "id": "76B85EB33704A585",
+      "rewards": [
+        {
+          "count": 4,
+          "id": "7A56643FE9068E5A",
+          "item": "irons_spellbooks:nature_rune",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "pentagon",
+      "size": 1.3,
+      "tasks": [
+        {
+          "id": "3B3EBC8A21DFAD7D",
+          "item": "irons_spellbooks:nature_rune",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&2&lNature",
+      "x": 7.5,
+      "y": 9.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E0C1A540829F895"
+      ],
+      "id": "5E2E49E8708F1BE1",
+      "rewards": [
+        {
+          "id": "461A6B78E83CE8DF",
+          "item": "irons_spellbooks:fire_upgrade_orb",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "721B9DD2A25DD705",
+          "item": "irons_spellbooks:fire_upgrade_orb",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&cOrbe d'Amélioration de Feu",
+      "x": -2.0,
+      "y": 10.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7D0D062A065F8160"
+      ],
+      "id": "053393B761BE4305",
+      "rewards": [
+        {
+          "id": "4331214A16320EFF",
+          "item": "irons_spellbooks:ice_upgrade_orb",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "4AA5B73208AE46D3",
+          "item": "irons_spellbooks:ice_upgrade_orb",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&bOrbe d'Amélioration de Glace",
+      "x": 1.0,
+      "y": 10.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6E49B45BE177EF73"
+      ],
+      "description": [
+        "C'était dans un lac ?"
+      ],
+      "id": "4DFFD37E308045F8",
+      "rewards": [
+        {
+          "id": "4B44C418A3FC1B15",
+          "item": "irons_spellbooks:ender_upgrade_orb",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "7BE1E3051EF8B301",
+          "item": "irons_spellbooks:ender_upgrade_orb",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&dOrbe d'Amélioration de l'End",
+      "x": 1.0,
+      "y": 7.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "35AEDE41A7623E48"
+      ],
+      "id": "3C5366EFA74BEEE1",
+      "rewards": [
+        {
+          "id": "50B5C22168ADA77D",
+          "item": "irons_spellbooks:holy_upgrade_orb",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "2005B5EF4EFC8EC5",
+          "item": "irons_spellbooks:holy_upgrade_orb",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&6Orbe d'Amélioration Sacrée",
+      "x": 4.0,
+      "y": 7.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2F7FB2FC87C09F32"
+      ],
+      "id": "6350ECD6D9545757",
+      "rewards": [
+        {
+          "id": "48DF0826796E6DB4",
+          "item": "irons_spellbooks:blood_upgrade_orb",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "26BD58233FFA0637",
+          "item": "irons_spellbooks:blood_upgrade_orb",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&4Orbe d'Amélioration de Sang",
+      "x": 4.0,
+      "y": 10.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "14C69E94130761B5"
+      ],
+      "id": "672F3569B392964C",
+      "rewards": [
+        {
+          "id": "0C74D8905516EC0C",
+          "item": "irons_spellbooks:evocation_upgrade_orb",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "368C9AB77A09A40E",
+          "item": "irons_spellbooks:evocation_upgrade_orb",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&aOrbe d'Amélioration d'Évocation",
+      "x": 7.0,
+      "y": 7.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "76B85EB33704A585"
+      ],
+      "id": "686096B7AF6F33B7",
+      "rewards": [
+        {
+          "id": "378966D7B360A41E",
+          "item": "irons_spellbooks:nature_upgrade_orb",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "0AE4EF2EA3229885",
+          "item": "irons_spellbooks:nature_upgrade_orb",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&2Orbe d'Amélioration de Nature",
+      "x": 7.0,
+      "y": 10.0,
+      "description": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E0C1A540829F895"
+      ],
+      "description": [
+        "J'espère que vous n'avez pas volé ça au Pyromancer, c'est le gentil !"
+      ],
+      "id": "64127ECEF513F592",
+      "rewards": [
+        {
+          "count": 10,
+          "id": "68C7DD69AED20EFC",
+          "item": "irons_spellbooks:arcane_essence",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "32C31054F6445835",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:pyromancer_helmet",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "568E5B9D4037A581",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:pyromancer_chestplate",
+            "tag": {
+              "Damage": 0,
+              "ISB_Spells": {
+                "data": [],
+                "maxSpells": 1,
+                "mustEquip": 1,
+                "spellWheel": 1
+              }
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "45D271ECDB8798CE",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:pyromancer_leggings",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "6ECBCE5CEFA256BB",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:pyromancer_boots",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&cPyromancer Outfit",
+      "x": -1.0,
+      "y": 10.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7D0D062A065F8160"
+      ],
+      "description": [
+        "Il voulait dire que tu peux le voler. Je m'en fiche."
+      ],
+      "id": "413658F28E1D531F",
+      "rewards": [
+        {
+          "count": 10,
+          "id": "6DB46974B2013BE5",
+          "item": "irons_spellbooks:arcane_essence",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "6D777CA0C0F3D567",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:cryomancer_helmet",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "70D36EA042671D3A",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:cryomancer_chestplate",
+            "tag": {
+              "Damage": 0,
+              "ISB_Spells": {
+                "data": [],
+                "maxSpells": 1,
+                "mustEquip": 1,
+                "spellWheel": 1
+              }
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "698C91FF3F4341A3",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:cryomancer_leggings",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "7DCE4991F2FE160A",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:cryomancer_boots",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&bCryomancecr Outfit",
+      "x": 2.0,
+      "y": 10.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5F5A14AB45766FFE"
+      ],
+      "description": [
+        "Quand celui-ci va-t-il venir au Mod ?"
+      ],
+      "id": "134B404A4D20518D",
+      "rewards": [
+        {
+          "count": 10,
+          "id": "56EB506650B591F1",
+          "item": "irons_spellbooks:arcane_essence",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "190855A9B8D2FD23",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:electromancer_helmet",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "0773031004C7CB9A",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:electromancer_chestplate",
+            "tag": {
+              "Damage": 0,
+              "ISB_Spells": {
+                "data": [],
+                "maxSpells": 1,
+                "mustEquip": 1,
+                "spellWheel": 1
+              }
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "138CBDDF029E48BA",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:electromancer_leggings",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "287B4F4FE7A4EF8F",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:electromancer_boots",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&5Électromancer Outfit",
+      "x": -1.0,
+      "y": 7.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6E49B45BE177EF73"
+      ],
+      "description": [],
+      "id": "3160B46F42B0130C",
+      "rewards": [
+        {
+          "count": 10,
+          "id": "1B10118369027B75",
+          "item": "irons_spellbooks:arcane_essence",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "57A47200DF6117F0",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:shadowwalker_helmet",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "22A51D14EB26F8CA",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:shadowwalker_chestplate",
+            "tag": {
+              "Damage": 0,
+              "ISB_Spells": {
+                "data": [],
+                "maxSpells": 1,
+                "mustEquip": 1,
+                "spellWheel": 1
+              }
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "5BA7DDDD65DA3835",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:shadowwalker_leggings",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "2C477F0BBB741CE6",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:shadowwalker_boots",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&dOutfit pour les bateaux de pêche à la baleine",
+      "x": 2.0,
+      "y": 7.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "35AEDE41A7623E48"
+      ],
+      "description": [
+        "J'ai entendu dire que vous pouvez juste prendre des cours en ligne pour en devenir un maintenant."
+      ],
+      "id": "19F59C8A728B7554",
+      "rewards": [
+        {
+          "count": 10,
+          "id": "1039E9A351C9250F",
+          "item": "irons_spellbooks:arcane_essence",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "1C0BE83AFE4C70AD",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:priest_helmet",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "1D15583F57C23C6C",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:priest_chestplate",
+            "tag": {
+              "Damage": 0,
+              "ISB_Spells": {
+                "data": [],
+                "maxSpells": 1,
+                "mustEquip": 1,
+                "spellWheel": 1
+              }
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "29F0785F5E316A47",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:priest_leggings",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "5549C64E944C7DC7",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:priest_boots",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&6Prêtre hors-tout",
+      "x": 5.0,
+      "y": 7.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2F7FB2FC87C09F32"
+      ],
+      "description": [],
+      "id": "2386D5AB06588B96",
+      "rewards": [
+        {
+          "count": 10,
+          "id": "0C82EB0CB8CC0385",
+          "item": "irons_spellbooks:arcane_essence",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "480821FD281E8354",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:cultist_helmet",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "56949B1A4D3D391C",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:cultist_chestplate",
+            "tag": {
+              "Damage": 0,
+              "ISB_Spells": {
+                "data": [],
+                "maxSpells": 1,
+                "mustEquip": 1,
+                "spellWheel": 1
+              }
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "77470989D71637CC",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:cultist_leggings",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "77DCD0A4598BDD0A",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:cultist_boots",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&4Cultiste Outfit",
+      "x": 5.0,
+      "y": 10.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "14C69E94130761B5"
+      ],
+      "description": [
+        "Il est peut-être mauvais, mais il est toujours à la mode."
+      ],
+      "id": "55AD3439C5A8642C",
+      "rewards": [
+        {
+          "count": 10,
+          "id": "785632DD12E8ED0C",
+          "item": "irons_spellbooks:arcane_essence",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "24EA796979F61238",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:archevoker_helmet",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "1EB419E9D6B8AD6F",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:archevoker_chestplate",
+            "tag": {
+              "Damage": 0,
+              "ISB_Spells": {
+                "data": [],
+                "maxSpells": 1,
+                "mustEquip": 1,
+                "spellWheel": 1
+              }
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "7A6C53A6F2838192",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:archevoker_leggings",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "71DF4D700E04CFEB",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:archevoker_boots",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&aHorst de l'archevoker",
+      "x": 8.0,
+      "y": 7.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "76B85EB33704A585"
+      ],
+      "description": [
+        "Très populaire autour d'Halloween!"
+      ],
+      "id": "7F6B13376C53DC66",
+      "rewards": [
+        {
+          "count": 10,
+          "id": "5A897575FD0AA3E6",
+          "item": "irons_spellbooks:arcane_essence",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "30DAC015F5509E6C",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:plagued_helmet",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "590B676800E41226",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:plagued_chestplate",
+            "tag": {
+              "Damage": 0,
+              "ISB_Spells": {
+                "data": [],
+                "maxSpells": 1,
+                "mustEquip": 1,
+                "spellWheel": 1
+              }
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "65087FA04FAF0F4A",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:plagued_leggings",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        },
+        {
+          "id": "4A013548BA75AB06",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:plagued_boots",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&2Étoffe enduite",
+      "x": 8.0,
+      "y": 10.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7888D6D8C0B6AF35"
+      ],
+      "description": [
+        "La structure la plus grande et la plus dure de Iron's sorts. Ce sont des structures souterraines profondes semblables aux Chambres de première instance. Vous pouvez également utiliser Wayward Compasses pour aider à le trouver! En elle sont beaucoup de Spawners, Trial Spawners, et bien sûr Loot. La chambre la plus importante est la salle du Trône, une fois que vous arrivez là, le squelette du Roi Mort va réanimer! (Si ce n'est pas vous pourriez avoir besoin de le cliquer)."
+      ],
+      "icon": "minecraft:stone_bricks",
+      "id": "3A3A569173D0F3AB",
+      "rewards": [
+        {
+          "count": 8,
+          "id": "6822EAF298302FC4",
+          "item": "irons_spellbooks:arcane_essence",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.2,
+      "tasks": [
+        {
+          "id": "43A89C75A9F84ED3",
+          "structure": "irons_spellbooks:catacombs",
+          "type": "structure"
+        }
+      ],
+      "title": "&4Catacombes",
+      "x": 9.0,
+      "y": -0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "3A3A569173D0F3AB"
+      ],
+      "description": [
+        "Si vous êtes assis sur le trône, vous trouverez les restes d'un roi passé. Mais une fois que vous vous approchez, et que vous les touchez, vous les verrez réanimées; le roi n'est plus mort! Mais seul le meurtre le gardera en vie... et bien vous êtes le plus proche vivant. Le roi mort est le plus dur patron, il a 400 Cœurs et est le seul à avoir un véritable bar Boss (et de la musique). Il peut utiliser une variété d'orthographes de n'importe quelle classe, Poison Arrow de la Nature à Blight de Saint à même Fangs de Evokation! Il peut également téléporter, convoquer les morts, et vous frapper avec le personnel du sang."
+      ],
+      "icon": "minecraft:wither_skeleton_skull",
+      "id": "208294EADAB16395",
+      "rewards": [
+        {
+          "count": 5,
+          "id": "7E174B59048DAD3E",
+          "item": "irons_spellbooks:blank_rune",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 1.2,
+      "tasks": [
+        {
+          "entity": "irons_spellbooks:dead_king",
+          "id": "3C629152B17DF050",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&4&lLe Roi Mort",
+      "x": 8.5,
+      "y": -1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7888D6D8C0B6AF35"
+      ],
+      "description": [
+        "La Forteresse très gardée abrite l'Archevoker et ses disciples. Vous le verrez par ses énormes murs d'épinette et la forteresse de pierre géante à l'intérieur d'eux. Illagers, Vindicators, Evokers, et Ravagers peuvent être trouvés à l'intérieur des murs et de la forteresse. Une fois que vous les avez dépassés, vous pouvez trouver votre chemin en haut des escaliers, parcourez jusqu'au toit, et rencontrer le chef du fort au sommet. Avec elle étant fortement gardée bien sûr il ya une tonne de butin dans le fort."
+      ],
+      "icon": "minecraft:dark_oak_log",
+      "id": "5BE425609E1B77D4",
+      "rewards": [
+        {
+          "count": 8,
+          "id": "0A3088BCA30DBC23",
+          "item": "irons_spellbooks:arcane_essence",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.2,
+      "tasks": [
+        {
+          "id": "57C6A7664BA67129",
+          "structure": "irons_spellbooks:evoker_fort",
+          "type": "structure"
+        }
+      ],
+      "title": "&aFort Evoker",
+      "x": 8.5,
+      "y": 1.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5BE425609E1B77D4"
+      ],
+      "description": [
+        "Au sommet du fort se trouve l'Archevik. L'hostilité à seulement le Joueur et celui qui l'attaque. Il a 60 Cœurs, et attaque comme un Evoker normal plus plus encore! Feux d'artifice, Bouclier, et le souffle du vent! Une fois tué, il va déposer Arcane Essence, Encres, Runes d'Evokation, parchemins d'Evokation, et rare goutte du Grimoore d'Evokation!"
+      ],
+      "icon": "minecraft:totem_of_undying",
+      "id": "3CAF2E351843B18F",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "2E7CA4D07978C464",
+          "item": "irons_spellbooks:evocation_rune",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 1.2,
+      "tasks": [
+        {
+          "entity": "irons_spellbooks:archevoker",
+          "id": "01FC8164FD405010",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&a&lArchévocateur",
+      "x": 7.5,
+      "y": 1.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7888D6D8C0B6AF35"
+      ],
+      "description": [
+        "Au plus profond des marais de mangrove boueux se trouve le refuge de l'ermite comme Mob appelé l'apothéocariste. Avec personne près, et seulement ce qu'il a besoin pour ses Potions est autour. Vous pouvez trouver l'apothéocariste dans son hutte. Là vous pouvez également trouver les chaudrons et les stands de brassage avec des Potions!"
+      ],
+      "icon": "minecraft:mangrove_log",
+      "id": "6393906CFFD155DC",
+      "rewards": [
+        {
+          "count": 8,
+          "id": "2A69E14F173BD9AD",
+          "item": "irons_spellbooks:arcane_essence",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.2,
+      "tasks": [
+        {
+          "id": "7043FA8E4A796A41",
+          "structure": "irons_spellbooks:mangrove_hut",
+          "type": "structure"
+        }
+      ],
+      "title": "&2Hutte de mangrove",
+      "x": 11.5,
+      "y": 1.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6393906CFFD155DC"
+      ],
+      "description": [
+        "Tout comme les Piglins l'Apothéocariste ressemble, il est aussi Neutre. Il ne se soucie pas de l'or comme ses compagnons Piglins, juste des gens qui l'attaquent. Vous pouvez échanger avec lui: lui donner soit des Emeralds ou des Ingrédiants de Potion pour les Potions, les Ingrédiants de Potion, et les parchemins de Nature. Si vous voulez le tuer, il a 60 Cœurs. Il vous attaquera avec Potions et des sorts de Nature. Quand blessé, il essaiera de guérir avec des Potions, (je pense qu'il aime vraiment les Potions)."
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "minecraft:potion",
+        "tag": {
+          "Potion": "healing"
+        }
+      },
+      "id": "55D9F643CC656439",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "2BE22D7217CB1F29",
+          "item": "irons_spellbooks:nature_rune",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 1.2,
+      "tasks": [
+        {
+          "entity": "irons_spellbooks:apothecarist",
+          "id": "0CA4841C807AC299",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&2&lApothicaire",
+      "x": 12.5,
+      "y": 1.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7888D6D8C0B6AF35"
+      ],
+      "description": [
+        "La Tour brûlée du Pyromancer. Certains disent que si vous êtes assez près pour voir la Tour, alors vous êtes assez près pour sentir la chaleur de celle-ci. La Tour du Pyromancer est une tour brûlée de types principalement Pierre avec l'intérieur étant fait de Spruce et de Chêne. Il ya aussi un deuxième bâtiment près de la Tour qui fait partie de la structure ainsi. Au sommet, vous trouverez ce qui cause la fumée ainsi qu'un Pile d'Armor. Si vous souhaitez trouver le Pyromancer vous aurez besoin de vous aventurer dans le sous-sol!"
+      ],
+      "icon": "minecraft:blackstone",
+      "id": "53DA9CE53D4ABE00",
+      "rewards": [
+        {
+          "count": 8,
+          "id": "4972D811ED6CA3E4",
+          "item": "irons_spellbooks:arcane_essence",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.2,
+      "tasks": [
+        {
+          "id": "536A6FF3AE23655F",
+          "structure": "irons_spellbooks:pyromancer_tower",
+          "type": "structure"
+        }
+      ],
+      "title": "&cTour du pyromane",
+      "x": 11.0,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "53DA9CE53D4ABE00"
+      ],
+      "description": [
+        "Le Pyromancer (différent du Pie Romancer) est un autre Mob Neutre ajouté par Iron's sorts. Il mettra peut-être les Mobs qui sont proches de lui en feu bien que... Vous pouvez lui échanger toutes choses Feu, Encre, et même les défilements de feu. Si vous voulez risquer tous les cheveux sur votre corps en le combattant, il a 60 Coeurs. Il vous mettra en feu avec des Oreilles de Feu, pas même une question."
+      ],
+      "icon": "minecraft:fire_charge",
+      "id": "670144533E457FE0",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "3DFF88A8754DACA3",
+          "item": "irons_spellbooks:fire_rune",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 1.2,
+      "tasks": [
+        {
+          "entity": "irons_spellbooks:pyromancer",
+          "id": "02C91AFEE34D9584",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&c&lPyromancien",
+      "x": 11.5,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7888D6D8C0B6AF35"
+      ],
+      "description": [
+        "Haut au-dessus des montagnes, haut au-dessus des nuages repose une autre tour. Celui-ci vous donne frissons en bas de votre colonne vertébrale. La tour est faite de pierre, chêne foncé et de l'ardoise. Il y a une deuxième tour qui s'y ramifie. Il y a un escalier à l'extérieur qui mène au premier étage. De là, vous pouvez monter l'escalier intérieur pour monter à la chambre ou à la deuxième tour. Ou vous pouvez vous aventurer derrière cet escalier en bas de l'échelle au sous-sol, où le Cryomanter sera le plus probable."
+      ],
+      "icon": "minecraft:packed_ice",
+      "id": "42E562805023495B",
+      "rewards": [
+        {
+          "count": 8,
+          "id": "695FF7BC4CB272DF",
+          "item": "irons_spellbooks:arcane_essence",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.2,
+      "tasks": [
+        {
+          "id": "4A2C1F627DC96AA7",
+          "structure": "irons_spellbooks:mountain_tower",
+          "type": "structure"
+        }
+      ],
+      "title": "&bTour de montagne",
+      "x": 9.0,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "42E562805023495B"
+      ],
+      "description": [
+        "Le Cryomancer ne devrait pas être entré dans la Tour, le Cryomancer n'aime pas les joueurs, ils sont hostiles pour vous. Le Cryomancer va immédiatement commencer à vous attaquer avec des sorts de glace. Peut-être même utiliser des animaux contre vous! Sacrificants animaux pour gagner une bataille, il est vraiment froid-coeur! Une fois tué, il va tomber Arcane Essence, Encres, Runes de glace, et parchemins de glace."
+      ],
+      "icon": "minecraft:snowball",
+      "id": "429365875AA94A32",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "56DC509DA9CF6A48",
+          "item": "irons_spellbooks:ice_rune",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 1.2,
+      "tasks": [
+        {
+          "entity": "irons_spellbooks:cryomancer",
+          "id": "3248E91C56F3EE43",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&b&lCryomancien",
+      "x": 8.5,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "34199C9F4245965B"
+      ],
+      "description": [
+        "&5Les anciens champs de bataille ne sont qu'un fragment du passé. Qui sait ce qui s'est passé. Qui sait qui s'est battu qui. Tout ce que nous avons maintenant sont des parties des murs et ces Piles d'Armure."
+      ],
+      "icon": "minecraft:deepslate_tiles",
+      "id": "6F39E8092C984735",
+      "rewards": [
+        {
+          "id": "0E3182DF10A08DBE",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:diamond_pickaxe",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.2,
+      "tasks": [
+        {
+          "id": "6C7A42C51258D1F2",
+          "structure": "irons_spellbooks:ancient_battleground",
+          "type": "structure"
+        }
+      ],
+      "title": "&5Ancien champ de bataille",
+      "x": 14.0,
+      "y": 1.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6F39E8092C984735"
+      ],
+      "description": [
+        "Après avoir essayé de récolter les Piles de l'Armure, ils semblent revenir à la vie comme s'il y avait un corps qui l'utilisait. Ils ont 60 Cœurs et ils sont différents des autres patrons car ils n'utilisent pas de magie, plutôt je crois qu'ils sont quelque chose de magique. Ils attaqueront en utilisant leur épée soit en l'osant ou en vous chargeant avec elle. De ce que j'ai vu ils attaqueront tout ce qu'ils voient à part d'autres chevaliers! Une fois tués, ils ont largué des Scraps de Néthérite et Cinder Essence, qui devrait certainement être bon usage!"
+      ],
+      "icon": "irons_spellbooks:armor_pile",
+      "id": "3E4A59A348BCBB66",
+      "rewards": [
+        {
+          "count": 5,
+          "id": "36707CF498A6B783",
+          "item": "irons_spellbooks:cinder_essence",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 1.2,
+      "tasks": [
+        {
+          "entity": "irons_spellbooks:citadel_keeper",
+          "id": "215B6C3C35ED60BD",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&5&lChevalier Ancien",
+      "x": 14.0,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "description": [
+        "&lIron nous a apporté un merveilleux et très amusant Magic Mod! sorts de Iron 'N grimoires! Iron's Spels est tout sur la fabrication et l'utilisation de sorts! Chaque Spel a une rareté, niveau et classe! Et chacun d'eux peut être utilisé dans un grimoire. Vous ne serez pas en mesure de faire tout ce que vous voulez avec Iron et Redstone, vous aurez besoin de sortir de votre cul, Aventure, et Fight!"
+      ],
+      "id": "0747CF06AAFF3B68",
+      "rewards": [
+        {
+          "count": 10,
+          "id": "157243D58121E277",
+          "item": "irons_spellbooks:arcane_essence",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "gear",
+      "size": 3.0,
+      "tasks": [
+        {
+          "id": "2C081B73959F7150",
+          "item": "irons_spellbooks:arcane_essence",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&lLes sorts de fer 'N Les carnets de sort",
+      "x": 3.0,
+      "y": 1.5,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "7888D6D8C0B6AF35"
+      ],
+      "description": [
+        "A peu près tous les villages peuvent avoir des prêtres en eux. Cela inclut les villages enrobés. Habituellement, ils sont accrochés au milieu du village comme par les marchés. Pas tous les villages en auront.",
+        "Cette étape vérifie un village de plaine ; les autres villages restent utiles pour explorer."
+      ],
+      "icon": "minecraft:oak_log",
+      "id": "1FFFF81CA86D4675",
+      "rewards": [
+        {
+          "count": 8,
+          "id": "06A426E5B1D769A7",
+          "item": "irons_spellbooks:arcane_essence",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "hexagon",
+      "size": 1.2,
+      "tasks": [
+        {
+          "id": "4AA5B7A397CC05D5",
+          "structure": "minecraft:village_plains",
+          "tags": [
+            "village"
+          ],
+          "type": "structure"
+        }
+      ],
+      "title": "&6Village",
+      "x": 11.0,
+      "y": -0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1FFFF81CA86D4675"
+      ],
+      "description": [
+        "Le Protecteur Neutre du Village. Il attaquera tous les Hostile Mobs à proximité. Comme un Golem de Fer mais il semble familier pour une raison quelconque? Est-ce quelqu'un que nous connaissons en costume? Vous pouvez échanger les potions de guérison avec lui et Emeraudes pour une carte Furled qui sera bientôt faite pour aider contre les Forts Evoker! Si vous voulez le tuer, il vous attaquera à plusieurs reprises avec les Saints Oreilles. Il se guérira lui-même quand il sera bas. Une fois tué, il déposera Arcane Essence, Encres, Runes Saintes, et Saint parchemins."
+      ],
+      "icon": "minecraft:golden_apple",
+      "id": "58A651F42FA4C082",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "5428F4E56AE10DF7",
+          "item": "irons_spellbooks:holy_rune",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 1.2,
+      "tasks": [
+        {
+          "entity": "irons_spellbooks:priest",
+          "id": "1FC7BC459F6BE548",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&6&lPrêtre",
+      "x": 11.5,
+      "y": -1.5,
+      "repeatable": false
+    },
+    {
+      "description": [
+        "Il y a 6 Structures dans le monde entier où les Boss peuvent frayer ! (Il y a un 7ème mais pas de Boss là-dedans (encore))."
+      ],
+      "icon": "minecraft:grass_block",
+      "id": "7888D6D8C0B6AF35",
+      "rewards": [
+        {
+          "id": "55B1FB311E4B09FE",
+          "item": "minecraft:map",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "octagon",
+      "size": 2.0,
+      "tasks": [
+        {
+          "dimension": "minecraft:overworld",
+          "id": "437F3AEC224DC2BB",
+          "type": "dimension"
+        }
+      ],
+      "title": "&lL'heure de l'aventure !",
+      "x": 10.0,
+      "y": 1.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "&cLa Nether !"
+      ],
+      "icon": "minecraft:netherrack",
+      "id": "34199C9F4245965B",
+      "shape": "octagon",
+      "size": 1.2,
+      "tasks": [
+        {
+          "dimension": "minecraft:the_nether",
+          "id": "466419DAF35D46C4",
+          "type": "dimension"
+        }
+      ],
+      "title": "Sur une route pour...",
+      "x": 14.0,
+      "y": -0.5,
+      "rewards": [],
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Ceux-ci peuvent frayer presque partout Vanilla Hostile Mobs frayer dedans. Ils ne sont pas patrons, juste plus ennemis! Ils ont 25 Points de santé et ont des attaques mulitples: Fangs du sol comme ce que les Evokers font et une boule de neige ils peuvent vous tirer dessus avec. Ils peuvent également appeler Zombies et Skeletons pour vous aider à combattre. Ceux-ci ne laisseront rien tomber et frayer avec Armor du sol. Ils laisseront Arcane Essence sur la mort avec parfois un défi!"
+      ],
+      "icon": {
+        "Count": 1,
+        "id": "irons_spellbooks:tarnished_helmet",
+        "tag": {
+          "Damage": 0
+        }
+      },
+      "id": "25991561DE872959",
+      "rewards": [
+        {
+          "id": "1129C6A65247882E",
+          "item": {
+            "Count": 1,
+            "id": "irons_spellbooks:tarnished_helmet",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "tasks": [
+        {
+          "entity": "irons_spellbooks:necromancer",
+          "id": "50B735A8F07EF11F",
+          "type": "kill",
+          "value": 5
+        }
+      ],
+      "title": "Nécromants",
+      "x": 15.5,
+      "y": 1.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "description": [
+        "Il y a une dernière classe de sorts que j'ai oublié de mentionner. Eh bien, toute connaissance de ces sorts ont été oubliées, donc ce n'est pas seulement moi. Afin de retrouver des souvenirs, nous devons marcher, tranquillement, en bas de la voie de la mémoire."
+      ],
+      "icon": "minecraft:sculk_sensor",
+      "id": "21C37EA1BAE222FF",
+      "rewards": [
+        {
+          "id": "637DA7A302AD9763",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:enchanted_book",
+            "tag": {
+              "StoredEnchantments": [
+                {
+                  "id": "minecraft:swift_sneak",
+                  "lvl": 3
+                }
+              ]
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "octagon",
+      "size": 1.5,
+      "tasks": [
+        {
+          "biome": "minecraft:deep_dark",
+          "id": "7AEBB679555010E2",
+          "type": "biome"
+        }
+      ],
+      "title": "La dernière classe...",
+      "x": 10.0,
+      "y": 6.0,
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "21C37EA1BAE222FF"
+      ],
+      "description": [
+        "Vous pouvez trouver les fragments de la connaissance ancienne répandus dans les poitrines de la ville antique. Vous aurez également besoin d'Echo Shards à 1. Combiner les fragments pour apprendre des Oreilles et 2. En fait faire les Oreilles."
+      ],
+      "hide_details_until_startable": 1,
+      "id": "4EB741286A5C2ECA",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "6CAA484461B618DB",
+          "item": "irons_spellbooks:ancient_knowledge_fragment",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "diamond",
+      "size": 1.2,
+      "tasks": [
+        {
+          "id": "5518E3AE50903034",
+          "item": "irons_spellbooks:ancient_knowledge_fragment",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Dans l'ancienne ville",
+      "x": 10.0,
+      "y": 8.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "4EB741286A5C2ECA"
+      ],
+      "description": [
+        "Lorsque vous combinez enfin les Fragments de la Connaissance Ancienne vous obtiendrez le... Manuscrit Eldritch! C'est ce que la dernière classe est! Eldritch est la dernière classe, le plus puissant de tous les sorts. Ils sont fabriqués avec Echo Shards et doivent être appris du Manuscrit pour les utiliser. Chaque Manuscrit n'est qu'un usage."
+      ],
+      "hide_details_until_startable": 1,
+      "id": "2242DE090B71E056",
+      "rewards": [
+        {
+          "id": "3D525ECB149CD903",
+          "item": "minecraft:echo_shard",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "shape": "rsquare",
+      "tasks": [
+        {
+          "id": "52016D0BEBFB2A3E",
+          "item": "irons_spellbooks:eldritch_manuscript",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&9&lIndicible",
+      "x": 10.0,
+      "y": 10.0,
+      "repeatable": false
+    },
+    {
+      "can_repeat": 0,
+      "description": [
+        "Cette quête a été créée par AllTheMods Staff, ou un contributeur communautaire pour une utilisation dans AllTheMods Modpacks.",
+        "Comme tous les packs AllTheMods sont sous licence All Rights Reserved, cette Quest n'est pas autorisée à être utilisée dans les packs publics non publiés par l'équipe AllTheMods, sans autorisation explicite.",
+        "Cette quête est intentionnellement cachée, si vous voyez cela, vous êtes en mode édition.",
+        "Repère de lecture : obtiens le livre indiqué pour poursuivre. Cette étape ne donne aucune récompense."
+      ],
+      "disable_toast": 1,
+      "hide_details_until_startable": 1,
+      "hide_until_deps_visible": 1,
+      "icon": {
+        "Count": 1,
+        "id": "ftbquests:custom_icon",
+        "tag": {
+          "Icon": "minecraft:item/barrier"
+        }
+      },
+      "id": "3CB090E42E9D97D0",
+      "invisible": 1,
+      "optional": 1,
+      "shape": "octagon",
+      "tasks": [
+        {
+          "id": "402E09833FDECA70",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "6E2731C6F0A22F50",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 5.5,
+      "y": 3.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Livre",
+      "dependencies": []
+    }
+  ],
+  "title": "Iron’s Spells : grimoires et sorts",
+  "default_consume_items": false,
+  "progression_mode": "flexible"
+}

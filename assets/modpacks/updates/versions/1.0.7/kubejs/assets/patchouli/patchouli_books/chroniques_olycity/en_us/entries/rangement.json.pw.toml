@@ -1,0 +1,8 @@
+name = "kubejs/assets/patchouli/patchouli_books/chroniques_olycity/en_us/entries/rangement.json"
+filename = "rangement.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/9a5027fe2605144e320c98505e60602e032847c6f3963e401dbe933b67c01b2b"
+hash-format = "sha256"
+hash = "9a5027fe2605144e320c98505e60602e032847c6f3963e401dbe933b67c01b2b"

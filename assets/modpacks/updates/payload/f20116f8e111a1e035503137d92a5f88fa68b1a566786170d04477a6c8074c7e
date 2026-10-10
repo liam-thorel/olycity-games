@@ -1,0 +1,1383 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "",
+  "filename": "atm9_create",
+  "group": "3DA9E3931E28DB13",
+  "icon": "create:large_cogwheel",
+  "id": "1D0050E0248F105A",
+  "order_index": 1,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "description": [
+        "Create utilise la rotation pour entraîner des machines et transporter des ressources. Choisis une petite production utile au groupe.",
+        "Survole un objet Create et maintiens la touche indiquée dans son infobulle pour ouvrir sa démonstration animée. Cette touche peut changer avec tes réglages.",
+        "Ce premier repère de lecture n’offre pas de récompense ; les étapes suivantes demandent des composants."
+      ],
+      "id": "4FADD0646461D634",
+      "rewards": [],
+      "shape": "hexagon",
+      "size": 1.5,
+      "tasks": [
+        {
+          "id": "4391653DBC31F431",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 0.0,
+      "y": 0.0,
+      "repeatable": false,
+      "title": "Découvrir Create",
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "4FADD0646461D634"
+      ],
+      "description": [
+        "Ce sera l'ingrédient principal pour la plupart des objets et des blocs de ce mod."
+      ],
+      "id": "0095CF20E4E2A018",
+      "rewards": [
+        {
+          "count": 32,
+          "id": "5849EF6D396092FD",
+          "item": "minecraft:andesite",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "count": 32,
+          "id": "15F82E2F86149924",
+          "item": "create:andesite_alloy",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 0.0,
+      "y": -3.5,
+      "repeatable": false,
+      "title": "Alliage d'andésite"
+    },
+    {
+      "dependencies": [
+        "0095CF20E4E2A018"
+      ],
+      "description": [
+        "&n&5Les arbres transfèrent la puissance de rotation sans changer la vitesse des rapports."
+      ],
+      "id": "1D50D5E8FE32E149",
+      "tasks": [
+        {
+          "count": 16,
+          "id": "1CD60652B325A7CF",
+          "item": "create:shaft",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -1.0,
+      "y": -5.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Rotor"
+    },
+    {
+      "dependencies": [
+        "0095CF20E4E2A018"
+      ],
+      "description": [
+        "Le Cogwheel transfère la puissance de rotation mais double ou double la vitesse.",
+        "La vitesse de doublement doublera également le stress dans le système."
+      ],
+      "id": "6D37C8D3965E5888",
+      "rewards": [
+        {
+          "count": 8,
+          "id": "6E4925D6E5DBFDBF",
+          "item": "create:cogwheel",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "count": 8,
+          "id": "029A89ADBE285CDC",
+          "item": "create:cogwheel",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 1.0,
+      "y": -5.5,
+      "repeatable": false,
+      "title": "Roue dentée"
+    },
+    {
+      "dependencies": [
+        "0095CF20E4E2A018"
+      ],
+      "description": [
+        "Le Cogwheel transfère la puissance de rotation mais double ou double la vitesse.",
+        "La vitesse de doublement doublera également le stress dans le système."
+      ],
+      "id": "5C05B24CBF5CACA5",
+      "rewards": [
+        {
+          "count": 8,
+          "id": "63EFF94552836A13",
+          "item": "create:large_cogwheel",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "count": 8,
+          "id": "5ACAEDF092F2CFD2",
+          "item": "create:large_cogwheel",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 0.0,
+      "y": -6.0,
+      "repeatable": false,
+      "title": "Grande roue dentée"
+    },
+    {
+      "dependencies": [
+        "5C05B24CBF5CACA5"
+      ],
+      "description": [
+        "La roue d'eau est l'une des façons les plus basiques de générer la force rotationnelle. Vous pouvez brancher plusieurs roues en les plaçant à côté l'un de l'autre.",
+        "Vous pouvez également changer l'apparence en utilisant différents Logs en bois sur eux!"
+      ],
+      "id": "2BFAC11EEC2F1697",
+      "rewards": [
+        {
+          "id": "78A285178ADBAE56",
+          "item": "create:water_wheel",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "count": 3,
+          "id": "271BA2B75C61320B",
+          "item": "create:water_wheel",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 0.0,
+      "y": -7.5,
+      "repeatable": false,
+      "title": "Roue à eau"
+    },
+    {
+      "dependencies": [
+        "11614186E56040DE"
+      ],
+      "description": [
+        "Le ventilateur Encased est utilisé pour tirer/pousser des éléments et des entités si vous le faites tourner. La flèche vous montrera la direction qu'il fait face et la direction de rotation déterminera si elle pousse ou tire."
+      ],
+      "id": "34811809605027E5",
+      "tasks": [
+        {
+          "id": "20DC808075E113B4",
+          "item": "create:encased_fan",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 7.0,
+      "y": 1.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Ventilateur enchâssé"
+    },
+    {
+      "dependencies": [
+        "11614186E56040DE"
+      ],
+      "description": [
+        "La boîte de vitesses peut faire tourner la direction de la rotation de 90 degrés dans n'importe quelle direction."
+      ],
+      "id": "240BA6CC1A5179EE",
+      "tasks": [
+        {
+          "id": "231D80DCD93E3A44",
+          "item": "create:gearbox",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 6.5,
+      "y": 2.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Boîte à roues dentées"
+    },
+    {
+      "dependencies": [
+        "11614186E56040DE"
+      ],
+      "description": [
+        "L'embrayage arrêtera toute rotation si un signal de pierre rouge est appliqué."
+      ],
+      "id": "65DDBF79B9548382",
+      "tasks": [
+        {
+          "id": "4F951077B33EA53F",
+          "item": "create:clutch",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 6.0,
+      "y": 3.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Embrayage"
+    },
+    {
+      "dependencies": [
+        "11614186E56040DE"
+      ],
+      "description": [
+        "Le changement de vitesse inversera la direction de rotation si un signal de pierre rouge est appliqué."
+      ],
+      "id": "0119C774274E93D6",
+      "tasks": [
+        {
+          "id": "640B6D47AF9DA1F4",
+          "item": "create:gearshift",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 5.5,
+      "y": 4.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Inverseur de rotation"
+    },
+    {
+      "dependencies": [
+        "11614186E56040DE"
+      ],
+      "description": [
+        "Le Chain Drive peut être relié à d'autres dans n'importe quelle direction aussi longtemps qu'ils sont touchants. Ils relayeront la rotation latéralement."
+      ],
+      "id": "6F423CCCF2614839",
+      "tasks": [
+        {
+          "id": "362DD3DF98981908",
+          "item": "create:encased_chain_drive",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 4.5,
+      "y": 5.0,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Chaine de transmission"
+    },
+    {
+      "dependencies": [
+        "6F423CCCF2614839"
+      ],
+      "description": [
+        "Le Chain Drive réglable fonctionne comme le Chain Drive normal lorsqu'il n'a pas de signal rouge.",
+        "Lorsque vous appliquez un signal de pierre rouge et que c'est le bloc recevant la force de rotation, il doublera la vitesse pour les entraînements en chaîne connectés.",
+        "Lorsque vous appliquez un signal de pierre rouge et que ce n'est pas le bloc recevant la force de rotation, il sera la moitié de la vitesse pour les entraînements de chaîne connectés."
+      ],
+      "id": "01CDE6FDB4F1F673",
+      "tasks": [
+        {
+          "id": "6990C6EE54F10DA5",
+          "item": "create:adjustable_chain_gearshift",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 4.5,
+      "y": 6.0,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Chaine de transmission ajustable"
+    },
+    {
+      "dependencies": [
+        "11614186E56040DE"
+      ],
+      "description": [
+        "La presse peut être utilisée pour créer des plaques ou des blocs métalliques."
+      ],
+      "id": "067C01B7F5ADFAA2",
+      "tasks": [
+        {
+          "id": "11C31AB0D802BF26",
+          "item": "create:mechanical_press",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 9.5,
+      "y": 0.0,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Presse mécanique"
+    },
+    {
+      "dependencies": [
+        "067C01B7F5ADFAA2"
+      ],
+      "description": [
+        "Le mélangeur peut être utilisé en combinaison avec le bassin pour l'artisanat."
+      ],
+      "id": "64BAB5CCFDAEE70F",
+      "tasks": [
+        {
+          "id": "4861E46ABDE74B38",
+          "item": "create:mechanical_mixer",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 10.0,
+      "y": 1.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Mixeur mécanique"
+    },
+    {
+      "dependencies": [
+        "0095CF20E4E2A018"
+      ],
+      "description": [
+        "Le bassin est utilisé pour les recettes, notamment la presse mécanique et le mélangeur mécanique."
+      ],
+      "id": "71CF491174B8A011",
+      "tasks": [
+        {
+          "id": "2D26ADAC7D5DEAAC",
+          "item": "create:basin",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 2.5,
+      "y": -3.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Bassin"
+    },
+    {
+      "dependencies": [
+        "067C01B7F5ADFAA2"
+      ],
+      "description": [
+        "Pour obtenir le brûleur de Blaze, vous devez faire un brûleur de Blaze vide et R-Cliquez dessus sur un Blaze.",
+        "Ceci est utilisé sous un bassin pour le chauffer ou le surchauffer pour différentes recettes."
+      ],
+      "id": "4BE4CEB32689F5CA",
+      "tasks": [
+        {
+          "id": "217CA614245474C8",
+          "item": "create:blaze_burner",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 8.0,
+      "y": 1.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Brûleur à Blaze"
+    },
+    {
+      "dependencies": [
+        "69AE87146EF9732E"
+      ],
+      "description": [
+        "Le Piston mécanique est similaire au Piston, il peut pousser des blocs, mais vous pouvez ajouter autant de pôles d'extension que vous le souhaitez."
+      ],
+      "id": "1C3AA0ABF96DF24E",
+      "tasks": [
+        {
+          "id": "3CD53F065CA59008",
+          "item": {
+            "Count": 1,
+            "id": "create:mechanical_piston"
+          },
+          "title": "Pistons mécaniques",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Pistons mécaniques",
+      "x": 3.5,
+      "y": -2.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "0CBF236EC71860F7"
+      ],
+      "description": [
+        "Le Speedomètre vous montrera la vitesse de l'engrenage actuellement connecté."
+      ],
+      "id": "2971A8B05BD78C2E",
+      "tasks": [
+        {
+          "id": "7A9DB38651179841",
+          "item": "create:speedometer",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -0.5,
+      "y": 3.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Compteur de vitesse"
+    },
+    {
+      "dependencies": [
+        "0CBF236EC71860F7"
+      ],
+      "description": [
+        "Le Stressomètre vous montrera à quel point le système est stressé lorsque vous le connectez."
+      ],
+      "id": "1457F1A60FE7857F",
+      "tasks": [
+        {
+          "id": "37A10F1D970234AD",
+          "item": "create:stressometer",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 0.5,
+      "y": 3.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Stressomètre"
+    },
+    {
+      "dependencies": [
+        "0095CF20E4E2A018"
+      ],
+      "description": [
+        "L'assemblage de paniers peut être placé sur des pistes. Tout ce que vous construisez sur le dessus sera capté par un Minecart si l'assemblage a un signal de pierre rouge.",
+        "Les blocs doivent être collés ensemble et tous les blocs nécessitant une force de rotation fonctionneront automatiquement.",
+        "Pour \"démonter\" les blocs de la Minecart, il suffit d'éteindre le signal de la pierre rouge et de laisser passer la Minecart."
+      ],
+      "id": "5AB9879C1EFA4D65",
+      "tasks": [
+        {
+          "id": "115E3A8CA7B209D1",
+          "item": "create:cart_assembler",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -2.5,
+      "y": -3.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Assembleur de wagonnet"
+    },
+    {
+      "dependencies": [
+        "0095CF20E4E2A018"
+      ],
+      "description": [
+        "Le châssis linéaire peut être utilisé similaire à la colle Super. Il reliera les blocs dans une ligne sans avoir besoin de colle."
+      ],
+      "id": "7E14405916D156EC",
+      "tasks": [
+        {
+          "id": "22223BBB3B5B63E7",
+          "item": "create:linear_chassis",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 1.0,
+      "y": -1.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Châssis linéaire"
+    },
+    {
+      "dependencies": [
+        "0095CF20E4E2A018"
+      ],
+      "description": [
+        "Le châssis radial peut être utilisé comme la colle Super. Il reliera les blocs dans une ligne, sur les côtés, sans avoir besoin de colle."
+      ],
+      "id": "6742399AF39519D1",
+      "tasks": [
+        {
+          "id": "1EED1BAE9D69500C",
+          "item": "create:radial_chassis",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -1.0,
+      "y": -1.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Châssis radial"
+    },
+    {
+      "dependencies": [
+        "0095CF20E4E2A018"
+      ],
+      "description": [
+        "Combinez avec le châssis radial pour créer un moulin à vent très puissant qui a une capacité de stress élevée."
+      ],
+      "id": "54C003046F4591BB",
+      "tasks": [
+        {
+          "id": "61D4BC717B8F8FC3",
+          "item": "create:white_sail",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 2.0,
+      "y": -4.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Voile de moulin à vent"
+    },
+    {
+      "dependencies": [
+        "11614186E56040DE"
+      ],
+      "description": [
+        "Le forage brisera n'importe quel bloc devant lui. S'il a un inventaire connecté, les objets seront stockés dedans."
+      ],
+      "id": "0DEA131BFD2D4FCD",
+      "tasks": [
+        {
+          "id": "2EA2ACB397FC30C5",
+          "item": "create:mechanical_drill",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 3.0,
+      "y": 3.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Perceuse mécanique"
+    },
+    {
+      "dependencies": [
+        "11614186E56040DE"
+      ],
+      "description": [
+        "La scie récoltera des arbres devant elle. Elle peut également être utilisée comme scierie. Si elle a un inventaire connecté, les objets seront stockés dans elle."
+      ],
+      "id": "20D055F0C52783D5",
+      "tasks": [
+        {
+          "id": "7E0306C5E220483A",
+          "item": "create:mechanical_saw",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 2.5,
+      "y": 2.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Scie mécanique"
+    },
+    {
+      "dependencies": [
+        "11614186E56040DE"
+      ],
+      "description": [
+        "Le Déploieur peut être utilisé pour placer des éléments/blocs ou pour utiliser des éléments comme Swords."
+      ],
+      "id": "3387905933B0A65C",
+      "tasks": [
+        {
+          "id": "18E1A46241163776",
+          "item": "create:deployer",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 3.5,
+      "y": 4.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Déployeur"
+    },
+    {
+      "dependencies": [
+        "4A01D8BB47AA41EE"
+      ],
+      "description": [
+        "L'interface portable fonctionne par paire. Vous devez avoir un placé dans le monde et un autre sur une entité mobile, comme un Minecart.",
+        "Lorsque les deux interfaces se font face l'une à l'autre, elles lient et transfèrent des éléments entre elles."
+      ],
+      "id": "56C354FFFE44EE4B",
+      "tasks": [
+        {
+          "id": "165E23A5CB142E8D",
+          "item": "create:portable_storage_interface",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 13.5,
+      "y": 4.0,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Interface de stockage portable"
+    },
+    {
+      "dependencies": [
+        "11614186E56040DE"
+      ],
+      "description": [
+        "La moissonneuse récolte toutes les récoltes qu'elle passe. Si elle a un inventaire connecté, les objets seront stockés dans elle."
+      ],
+      "id": "002330DAF4834662",
+      "tasks": [
+        {
+          "id": "313BD839601F5ED3",
+          "item": "create:mechanical_harvester",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 1.5,
+      "y": 0.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Récolteur mécanique"
+    },
+    {
+      "dependencies": [
+        "11614186E56040DE"
+      ],
+      "description": [
+        "Le Plough détruira tout bloc non solide, transformera la saleté en terres agricoles et les entités de lancement sans endommager. S'il a un inventaire connecté, les objets y seront stockés."
+      ],
+      "id": "3FEA8158329199CB",
+      "tasks": [
+        {
+          "id": "403D46024DBE2F0D",
+          "item": "create:mechanical_plough",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 2.0,
+      "y": 1.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Charrue mécanique"
+    },
+    {
+      "dependencies": [
+        "4FADD0646461D634"
+      ],
+      "description": [
+        "&n&5Les caissons sont utilisés comme ingrédient d'artisanat pour la plupart des blocs."
+      ],
+      "id": "11614186E56040DE",
+      "tasks": [
+        {
+          "id": "4F8DC1CACEF0753F",
+          "item": "create:andesite_casing",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 4.5,
+      "y": 0.0,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Boitier d'andésite"
+    },
+    {
+      "dependencies": [
+        "734BD7CBECD7F511"
+      ],
+      "description": [
+        "&n&5Les caissons sont utilisés comme ingrédient d'artisanat pour la plupart des blocs."
+      ],
+      "id": "4A01D8BB47AA41EE",
+      "tasks": [
+        {
+          "id": "6344340645C227FB",
+          "item": "create:brass_casing",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 12.0,
+      "y": 4.0,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Boitier de laiton"
+    },
+    {
+      "dependencies": [
+        "067C01B7F5ADFAA2"
+      ],
+      "description": [
+        "&n&5Les caissons sont utilisés comme ingrédient d'artisanat pour la plupart des blocs."
+      ],
+      "id": "3762F52397571F8D",
+      "tasks": [
+        {
+          "id": "42C099E5047651A0",
+          "item": "create:copper_casing",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 11.0,
+      "y": 0.0,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Boitier de cuivre"
+    },
+    {
+      "dependencies": [
+        "484A22F98B0EEC8E"
+      ],
+      "description": [
+        "Le bras est une machine qui peut prendre des objets d'un Dépôt ou d'une Ceinture et les placer dans un Dépôt, une Ceinture ou un Artisan.",
+        "Pour sélectionner l'entrée/sortie, maintenez le bras dans votre main et cliquez sur les blocs que vous voulez attribuer.",
+        "Pour désélectionner un bloc, cliquez-le avec le bras dans la main."
+      ],
+      "id": "4176F427D3B1A5A9",
+      "tasks": [
+        {
+          "id": "73F4345A178E94C5",
+          "item": "create:mechanical_arm",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 13.5,
+      "y": 2.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Bras mécanique"
+    },
+    {
+      "dependencies": [
+        "0095CF20E4E2A018"
+      ],
+      "description": [
+        "L'entonnoir peut importer ou exporter des objets à partir d'inventaires connectés."
+      ],
+      "id": "5D81DC67B45AEB0A",
+      "tasks": [
+        {
+          "id": "4381A92596C9F1B5",
+          "item": "create:andesite_funnel",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 2.0,
+      "y": -2.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Entonnoir d'andésite"
+    },
+    {
+      "dependencies": [
+        "734BD7CBECD7F511"
+      ],
+      "description": [
+        "L'entonnoir peut importer ou exporter des objets à partir d'inventaires connectés."
+      ],
+      "id": "6FEC8DA82F5B0B0A",
+      "tasks": [
+        {
+          "id": "55B3ED6FF209B71B",
+          "item": "create:brass_funnel",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 9.0,
+      "y": 3.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Entonnoir de laiton"
+    },
+    {
+      "dependencies": [
+        "0095CF20E4E2A018"
+      ],
+      "description": [
+        "Les tunnels peuvent être placés sur des ceintures et ils filtreront les objets qui les traversent. Vous pouvez relier plusieurs tunnels en les plaçant à côté les uns des autres."
+      ],
+      "id": "24D31A7A83144C49",
+      "tasks": [
+        {
+          "id": "5AB095B72AE6F60D",
+          "item": "create:andesite_tunnel",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -2.0,
+      "y": -2.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Tunnel d'andésite"
+    },
+    {
+      "dependencies": [
+        "734BD7CBECD7F511"
+      ],
+      "description": [
+        "Les tunnels peuvent être placés sur des ceintures et ils filtreront les objets qui les traversent. Vous pouvez relier plusieurs tunnels en les plaçant à côté les uns des autres."
+      ],
+      "id": "353C3EA1F00F9C85",
+      "tasks": [
+        {
+          "id": "59E6DE7AD0501E39",
+          "item": "create:brass_tunnel",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 10.5,
+      "y": 5.0,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Tunnel de laiton"
+    },
+    {
+      "dependencies": [
+        "11614186E56040DE"
+      ],
+      "description": [
+        "Le Dépôt est utilisé pour stocker des objets, principalement pour le Spout."
+      ],
+      "id": "02751B7C4F192ACC",
+      "tasks": [
+        {
+          "id": "2B24CF4D7306974A",
+          "item": "create:depot",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 5.5,
+      "y": -1.0,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Dépôt"
+    },
+    {
+      "dependencies": [
+        "067C01B7F5ADFAA2"
+      ],
+      "description": [
+        "Le chute sert à insérer ou à extraire des stocks, ou à placer ou à prélever des objets d'une ceinture."
+      ],
+      "id": "05C5A87AECD56FBB",
+      "tasks": [
+        {
+          "id": "283BE7179E323F4A",
+          "item": "create:chute",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 9.5,
+      "y": -1.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Chute"
+    },
+    {
+      "dependencies": [
+        "4FADD0646461D634"
+      ],
+      "description": [
+        "Ces lunettes vous permettront de voir vos contraptions plus en détail.",
+        "Il montrera les choses comme vitesse de rotation et le stress."
+      ],
+      "id": "0CBF236EC71860F7",
+      "tasks": [
+        {
+          "id": "53CF94C25F2EEE2F",
+          "item": "create:goggles",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 0.0,
+      "y": 2.0,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Lunettes d'ingénieur"
+    },
+    {
+      "dependencies": [
+        "4FADD0646461D634"
+      ],
+      "description": [
+        "Vous pouvez créer cela en faisant des cristaux de rose et du papier de sable.",
+        "Vous pouvez soit tenir les cristaux dans votre main, soit les jeter au sol, puis R-Click tout en tenant le papier de sable."
+      ],
+      "id": "24414E5C663431C8",
+      "rewards": [
+        {
+          "id": "4C5E32BFD474DF81",
+          "item": {
+            "Count": 1,
+            "id": "create:sand_paper",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "count": 8,
+          "id": "23262C8FD034803B",
+          "item": "create:polished_rose_quartz",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -2.5,
+      "y": 0.0,
+      "repeatable": false,
+      "title": "Quartz rose poli"
+    },
+    {
+      "dependencies": [
+        "131085198E3D9289"
+      ],
+      "description": [
+        "Le cake Blaze est utilisé pour la surchauffe du brûleur Blaze pour l'élaboration du composé chromatique."
+      ],
+      "id": "17DEF636EA301F1F",
+      "tasks": [
+        {
+          "id": "0DAC9C1A0AF9A61B",
+          "item": "create:blaze_cake",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 14.0,
+      "y": 0.0,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Cake pour Blaze"
+    },
+    {
+      "dependencies": [
+        "734BD7CBECD7F511"
+      ],
+      "description": [
+        "Les artisans peuvent être connectés entre eux pour former une grande table d'artisanat dans le monde.",
+        "Les flèches sur les Artisans doivent éventuellement converger sur le même Artisan pour finir la recette. Vous pouvez tourner les flèches en la cliquant avec la clé."
+      ],
+      "id": "484A22F98B0EEC8E",
+      "tasks": [
+        {
+          "id": "23AD5747B0C56ED8",
+          "item": "create:mechanical_crafter",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 12.0,
+      "y": 2.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Établi mécanique"
+    },
+    {
+      "dependencies": [
+        "11614186E56040DE"
+      ],
+      "description": [
+        "Le Chariot de Gantry peut être fixé aux arbres de Gantry et si l'arbre est en rotation, il déplacera le Chariot le long de celui-ci."
+      ],
+      "id": "4EB75A05B1421153",
+      "tasks": [
+        {
+          "id": "280BE4E144548864",
+          "item": "create:gantry_carriage",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 7.5,
+      "y": 0.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Chariot de portique"
+    },
+    {
+      "dependencies": [
+        "02751B7C4F192ACC"
+      ],
+      "description": [
+        "L'éjecteur pondéré peut lancer des éléments ou des entités à un endroit sélectionné."
+      ],
+      "id": "4D54C429FF16E8EB",
+      "tasks": [
+        {
+          "id": "70FF3583C8C8236D",
+          "item": "create:weighted_ejector",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 5.5,
+      "y": -2.0,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Éjecteur"
+    },
+    {
+      "dependencies": [
+        "05C5A87AECD56FBB"
+      ],
+      "description": [
+        "Le Smart Chute est le même que le Chute mais avec des fonctionnalités supplémentaires, telles que la taille de la pile et les filtres."
+      ],
+      "id": "5214EF46F8910650",
+      "tasks": [
+        {
+          "id": "2C60724BDBA8C2F6",
+          "item": "create:smart_chute",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 9.5,
+      "y": -3.0,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Chute intelligente"
+    },
+    {
+      "dependencies": [
+        "4FADD0646461D634"
+      ],
+      "description": [
+        "La table schématique lira et écrira des structures vers/à partir de vos schémas.",
+        "Vous pouvez l'utiliser pour copier des bâtiments ou les partager avec d'autres!"
+      ],
+      "id": "42B2CF7B023848C2",
+      "rewards": [
+        {
+          "id": "11CBEEDA3B77A184",
+          "item": "create:schematic_and_quill",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "7715A7597D0C3CB8",
+          "item": "create:schematic_table",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -1.5,
+      "y": 1.5,
+      "repeatable": false,
+      "title": "Table à schéma"
+    },
+    {
+      "dependencies": [
+        "42B2CF7B023848C2"
+      ],
+      "description": [
+        "Le Cannon va construire les structures à partir de Schematics, en prenant les matériaux des coffres voisins et en utilisant la poudre à canon comme carburant."
+      ],
+      "id": "5111F5533E081A90",
+      "tasks": [
+        {
+          "id": "181E348C98D5E10C",
+          "item": "create:schematicannon",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -2.5,
+      "y": 2.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Schémacanon"
+    },
+    {
+      "dependencies": [
+        "11614186E56040DE"
+      ],
+      "description": [
+        "La poulie à corde peut déplacer des blocs vers le haut ou vers le bas, ils peuvent être collés ensemble."
+      ],
+      "id": "462395B051C4ABAD",
+      "tasks": [
+        {
+          "id": "1BF2B9FCEE084D23",
+          "item": "create:rope_pulley",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 4.5,
+      "y": -1.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Poulie à corde"
+    },
+    {
+      "dependencies": [
+        "3762F52397571F8D"
+      ],
+      "description": [
+        "Le Spout est utilisé pour remplir les objets avec du liquide. Il est préférable d'utiliser un Dépôt sous lui pour tenir les objets."
+      ],
+      "id": "131085198E3D9289",
+      "tasks": [
+        {
+          "id": "34C484F9BD4ADA03",
+          "item": "create:spout",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 12.5,
+      "y": 0.0,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Bec verseur"
+    },
+    {
+      "dependencies": [
+        "3762F52397571F8D"
+      ],
+      "description": [
+        "La poulie de tuyau est une pompe qui peut extraire des liquides ou placer des liquides dans le monde."
+      ],
+      "id": "01DA119300F46896",
+      "tasks": [
+        {
+          "id": "3BCDE4B6046F85AD",
+          "item": "create:hose_pulley",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 12.0,
+      "y": 1.0,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Poulie à tuyau"
+    },
+    {
+      "dependencies": [
+        "11614186E56040DE"
+      ],
+      "id": "69AE87146EF9732E",
+      "tasks": [
+        {
+          "id": "1B5F100282B66FF9",
+          "item": "create:piston_extension_pole",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 3.5,
+      "y": -1.0,
+      "description": [],
+      "rewards": [],
+      "repeatable": false,
+      "title": "Barre d'extension de piston"
+    },
+    {
+      "dependencies": [
+        "3762F52397571F8D"
+      ],
+      "description": [
+        "L'interface portable fonctionne par paire. Vous devez avoir un placé dans le monde et un autre sur une entité mobile, comme un Minecart.",
+        "Lorsque les deux interfaces se font face l'une à l'autre, elles relient et transfèrent des liquides entre elles."
+      ],
+      "id": "1E29CEF1C7A1AF7F",
+      "tasks": [
+        {
+          "id": "2CE3E066B40342E5",
+          "item": "create:portable_fluid_interface",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 12.0,
+      "y": -1.0,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Interface de fluide portable"
+    },
+    {
+      "dependencies": [
+        "64BAB5CCFDAEE70F"
+      ],
+      "id": "734BD7CBECD7F511",
+      "tasks": [
+        {
+          "id": "4BCB0B5738FA28AE",
+          "type": "item",
+          "item": "create:brass_ingot",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Laiton",
+      "x": 10.5,
+      "y": 3.0,
+      "description": [],
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "067C01B7F5ADFAA2"
+      ],
+      "description": [
+        "&n&5Super Glue peut être utilisé pour fixer des blocs l'un à l'autre pour les déplacer avec des pistons ou d'autres moyens."
+      ],
+      "id": "7EB7FF3ED5B82882",
+      "tasks": [
+        {
+          "id": "5E661CCCE1374EE4",
+          "item": {
+            "Count": 1,
+            "id": "create:super_glue",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": 8.0,
+      "y": -1.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Colle extra-forte"
+    },
+    {
+      "dependencies": [
+        "0095CF20E4E2A018"
+      ],
+      "description": [
+        "&n&5Les ceintures peuvent être placées entre deux arbres pour transférer des maghes/objets ou simplement transférer l'énergie de rotation d'un point à l'autre.",
+        "Les arbres doivent être à 45, 90 ou 180 degrés l'un de l'autre."
+      ],
+      "id": "5E267CD9FD65F154",
+      "tasks": [
+        {
+          "count": 4,
+          "id": "71D74DAF45C222C2",
+          "item": "create:belt_connector",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "x": -2.0,
+      "y": -4.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Tapis roulant"
+    },
+    {
+      "can_repeat": 0,
+      "description": [
+        "Cette quête a été créée par AllTheMods Staff, ou un contributeur communautaire pour une utilisation dans AllTheMods Modpacks.",
+        "Comme tous les packs AllTheMods sont sous licence All Rights Reserved, cette Quest n'est pas autorisée à être utilisée dans les packs publics non publiés par l'équipe AllTheMods, sans autorisation explicite.",
+        "Cette quête est intentionnellement cachée, si vous voyez cela, vous êtes en mode édition.",
+        "Repère de lecture : obtiens le livre indiqué pour poursuivre. Cette étape ne donne aucune récompense."
+      ],
+      "disable_toast": 1,
+      "hide_details_until_startable": 1,
+      "hide_until_deps_visible": 1,
+      "icon": {
+        "Count": 1,
+        "id": "ftbquests:custom_icon",
+        "tag": {
+          "Icon": "minecraft:item/barrier"
+        }
+      },
+      "id": "285BB546CE490198",
+      "invisible": 1,
+      "optional": 1,
+      "shape": "octagon",
+      "tasks": [
+        {
+          "id": "712BF68BD3C74516",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "61140CE49C86E0E6",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 0.0,
+      "y": 5.0,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Livre",
+      "dependencies": []
+    }
+  ],
+  "title": "Create",
+  "default_consume_items": false
+}

@@ -1,8 +1,0 @@
-name = "mods/sophisticatedcore-1.20.1-1.5.6.2378.jar"
-filename = "sophisticatedcore-1.20.1-1.5.6.2378.jar"
-side = "both"
-
-[download]
-url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/5a4826f73f3dd2a62c24ccda6784a6da756b001737d2e2f7805253dedb8408b9.jar"
-hash-format = "sha256"
-hash = "5a4826f73f3dd2a62c24ccda6784a6da756b001737d2e2f7805253dedb8408b9"

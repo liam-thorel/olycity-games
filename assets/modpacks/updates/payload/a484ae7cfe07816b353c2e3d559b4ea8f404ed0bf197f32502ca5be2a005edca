@@ -1,0 +1,1841 @@
+{
+  "default_hide_dependency_lines": 0,
+  "default_quest_shape": "",
+  "filename": "atm9_cataclysm",
+  "group": "3B2BC36F39863788",
+  "icon": "cataclysm:the_incinerator",
+  "id": "791010408337983A",
+  "order_index": 2,
+  "progression_mode": "flexible",
+  "quest_links": [],
+  "quests": [
+    {
+      "dependencies": [
+        "13EEBEACEFB307CA"
+      ],
+      "description": [
+        "Tous les Donjons Cataclysme ne sont pas aussi faciles à trouver que les Pyramides, donc un œil spécial pourrait vous aider à les trouver. Chacun des différents Yeux vous mènera à sa structure de jeu, et ne les inquiétez pas rupture est très rare."
+      ],
+      "id": "47E210A920CFFAD4",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "17A4618D02BAB9EE",
+          "item": "minecraft:ender_eye",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "125E0E7D46AA4E1F",
+          "item": "minecraft:ender_eye",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Regarde-toi !",
+      "x": -2.0,
+      "y": -3.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "47E210A920CFFAD4"
+      ],
+      "description": [
+        "&4L'œil de Mech vous emmènera à l'ancienne usine pour combattre le Harbinger"
+      ],
+      "id": "6872D28AFAC87B78",
+      "rewards": [
+        {
+          "id": "664516BFB8F10867",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:potion",
+            "tag": {
+              "Potion": "minecraft:long_regeneration"
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "272200C3A8EF4CA4",
+          "item": "cataclysm:mech_eye",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&4Oeil de Mech",
+      "x": -2.0,
+      "y": -4.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "47E210A920CFFAD4"
+      ],
+      "description": [
+        "&bL'œil de Flame vous emmènera à l'aréna Burning pour combattre les Ignis"
+      ],
+      "id": "035BA1D258C7CA6F",
+      "rewards": [
+        {
+          "id": "62D832156B2ED7B9",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:potion",
+            "tag": {
+              "Potion": "minecraft:long_strength"
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "3E25B1086ADE10C4",
+          "item": "cataclysm:flame_eye",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&bOeil de flamme",
+      "x": -1.0,
+      "y": -2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "47E210A920CFFAD4"
+      ],
+      "description": [
+        "&dL'œil de Void vous emmènera à la Citadelle Ruined pour combattre le Gardien Ender"
+      ],
+      "id": "0D19AF34F0A101D0",
+      "rewards": [
+        {
+          "id": "4660A77313DFAC50",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:potion",
+            "tag": {
+              "Potion": "minecraft:long_slow_falling"
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "2316BF1016CA1D98",
+          "item": "cataclysm:void_eye",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&dL'œil du vide",
+      "x": -1.0,
+      "y": -3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "47E210A920CFFAD4"
+      ],
+      "description": [
+        "&cL'œil de Monstre vous emmènera à l'âme BlackSmith pour combattre la monstruosité Néthérite"
+      ],
+      "id": "0A0C475AF367C768",
+      "rewards": [
+        {
+          "id": "758C9E4E45D7507A",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:potion",
+            "tag": {
+              "Potion": "minecraft:long_fire_resistance"
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "6C3A948C3C5E9F71",
+          "item": "cataclysm:monstrous_eye",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&cOeil de Monstre",
+      "x": -2.0,
+      "y": -2.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "47E210A920CFFAD4"
+      ],
+      "description": [
+        "&5L'œil d'Abysse vous emmènera à la Cité Sunken pour combattre le Léviathan"
+      ],
+      "id": "2455C3BE57EE2EE9",
+      "rewards": [
+        {
+          "id": "00D63E022FD7FF2F",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:potion",
+            "tag": {
+              "Potion": "minecraft:long_water_breathing"
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "008FB4C83927D233",
+          "item": "cataclysm:abyss_eye",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&5L'œil de l'abîme",
+      "x": -3.0,
+      "y": -2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "47E210A920CFFAD4"
+      ],
+      "description": [
+        "&eL'œil du désert vous emmènera à la pyramide maudite pour combattre l'Ancien Remnant"
+      ],
+      "id": "543DE5A91F96E9D8",
+      "rewards": [
+        {
+          "id": "561BF6BE9F8F68B7",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:potion",
+            "tag": {
+              "Potion": "minecraft:long_swiftness"
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "3897CAE47BFD7EAE",
+          "item": "cataclysm:desert_eye",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "&eL'œil du désert",
+      "x": -3.0,
+      "y": -3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "13EEBEACEFB307CA"
+      ],
+      "description": [
+        "La dimension connue pour abriter les porchins et les embruns et les squelettes de plus, abrite aujourd'hui 2 autres patrons pour se battre !",
+        "Ce jalon reprend un objectif déjà présent dans les parcours OLYCITY. Il complète le guide sans donner une seconde récompense."
+      ],
+      "icon": "minecraft:netherrack",
+      "id": "23A0E50EB33F6D27",
+      "rewards": [],
+      "tasks": [
+        {
+          "dimension": "minecraft:the_nether",
+          "id": "470F287E14E6F50F",
+          "type": "dimension"
+        }
+      ],
+      "title": "&4Nether: Pays de 2 patrons",
+      "x": 2.0,
+      "y": -0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "13EEBEACEFB307CA"
+      ],
+      "description": [
+        "Est-ce que je dois vraiment t'expliquer l'Overworld ?"
+      ],
+      "icon": "minecraft:grass_block",
+      "id": "63A7DD847411225E",
+      "rewards": [
+        {
+          "id": "0137F40B355C3609",
+          "type": "xp",
+          "xp": 1,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "dimension": "minecraft:overworld",
+          "id": "07AF81762F62DC2F",
+          "type": "dimension"
+        }
+      ],
+      "title": "&2Overworld: Terre de 3 patrons",
+      "x": -3.0,
+      "y": -0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "13EEBEACEFB307CA"
+      ],
+      "description": [
+        "Le Barren Wasteland de la fin a maintenant 1 résident de plus. En plus du Dragon Ender cependant."
+      ],
+      "icon": "minecraft:end_stone",
+      "id": "17FC3B255E062290",
+      "rewards": [
+        {
+          "id": "217132C3E714696F",
+          "type": "xp_levels",
+          "xp_levels": 3,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "dimension": "minecraft:the_end",
+          "id": "391115933D969802",
+          "type": "dimension"
+        }
+      ],
+      "title": "&5Fin: Terre de 1 patron solitaire",
+      "x": 5.0,
+      "y": -0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "0FA7704759B77172"
+      ],
+      "description": [
+        "&5Le Léviathan est la raison pour laquelle les gens craignent l'Océan. Il a 12000 Cœurs, dents pointues et tentacules forts. Il peut vous chomper, vous frapper avec ses tentacules, ou peut vous tenir immobile et tirer un Godzilla comme poutre sur vous. Lorsqu'il est amené sous la moitié de la santé, ses poutres deviennent beaucoup plus utilisées et beaucoup plus dangereuses. Il fera feu des poutres tout autour et les tirera aléatoirement de sa bouche sur vous."
+      ],
+      "icon": "cataclysm:music_disc_the_leviathan",
+      "id": "00C8E31B9674584E",
+      "rewards": [
+        {
+          "id": "2D6FD5F50EFC7FD8",
+          "item": "cataclysm:music_disc_the_leviathan",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "cataclysm:the_leviathan",
+          "id": "7BBCFC440CB6747B",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&5Le Léviathan",
+      "x": -5.0,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "5E0D36DDDFE37CE5"
+      ],
+      "description": [
+        "&4Le Harbinger s'inspire beaucoup de ce qui le pousse, l'Etoile Nether. Il vole autour de vous et tire sur Wither Missiles qui peut vous donner un effet de dépérissement. Il a aussi des lasers avec lesquels il peut vous tirer, des gattes laser et un grand faisceau de bouche. Il a 7800 Coeurs et une grande faiblesse, les EMPs. Quand alimentés avec Redstone ils endommageront toutes les machines à proximité. Une fois vaincu, il laissera tomber un bloc de Witherite et peut-être un disque de musique: Monster Fight."
+      ],
+      "icon": "cataclysm:music_disc_the_harbinger",
+      "id": "63B04E7F66D96A00",
+      "rewards": [
+        {
+          "id": "60C7B9D05B1E2004",
+          "item": "cataclysm:music_disc_the_harbinger",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "cataclysm:the_harbinger",
+          "id": "1DE9101A6B62F27E",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&4L'harbinger",
+      "x": -1.0,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "7D40B0BB22AA215D"
+      ],
+      "description": [
+        "Il a 4000 Cœurs et plusieurs attaques comme vous frapper avec ses griffes, claquer le sol, et faire des tempêtes de sable qui vous soulèveront haut en l'air. Il vous frappera également et balancera son poids complet sur vous. Ses attaques restent les mêmes à travers toute la lutte et la prudence des Kobolètes ils ont obtenu des mains collantes. Une fois remis à la tombe, il déposera son Skull, Sandstorm dans une bouteille, et à une occasion son disque de musique: Sands of Dominion."
+      ],
+      "icon": "cataclysm:music_disc_ancient_remnant",
+      "id": "0B58B48DC6620334",
+      "rewards": [
+        {
+          "id": "6E0B0C8526521971",
+          "item": "cataclysm:music_disc_ancient_remnant",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "cataclysm:ancient_remnant",
+          "id": "5C872635F849596B",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&eAncien Reste",
+      "x": -3.0,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6A10D5C983E850FC"
+      ],
+      "description": [
+        "La Monstrosité de Néthérite vit à sa hauteur, il est une bête de Néthérite et de lave et a 15000 Cœurs. Il a des attaques très basiques, si vous vous rapprochez il vous frappera, si vous êtes plus loin il tirera lave sur vous qui crée des blocs de source de lave. Il n'a qu'une scène, un peu ennuyeux. Quand tué, il laissera tomber la Forge Infernale, Monstrous Horn, et peut-être un disque de musique: vs Titans.",
+        "Ce jalon reprend un objectif déjà présent dans les parcours OLYCITY. Il complète le guide sans donner une seconde récompense."
+      ],
+      "icon": "cataclysm:music_disc_netherite_monstrosity",
+      "id": "1AC4D9477DA8F53E",
+      "rewards": [],
+      "tasks": [
+        {
+          "entity": "cataclysm:netherite_monstrosity",
+          "id": "6211DB51E3B9D7AF",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&cMonstrosité de Néthérite",
+      "x": 1.0,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "057216B56BAD8CE5"
+      ],
+      "description": [
+        "Une fois que vous utilisez les cendres brûlantes sur l'Alter de Flamme vous obtiendrez l'Ignis. Il a 6750 Coeurs et a une épée et un bouclier massifs. Le bouclier bloquera les dommages que vous donnez et l'épée peut être utilisée pour vous poignarder. Une fois poignardé, vous ne pouvez pas bouger vous pouvez seulement attaquer. Il peut également vous lancer des boules de feu et de lancer sur vous. Une fois que vous battez sa santé à mi-chemin, il commencera l'étape 2. À l'étape 2, il changera de couleurs en bleu clair et obtiendra beaucoup plus d'attaques avec son épée et bouclier."
+      ],
+      "icon": "cataclysm:music_disc_ignis",
+      "id": "47BE8811F0004C89",
+      "rewards": [
+        {
+          "id": "3CC282A778473F3C",
+          "item": "cataclysm:music_disc_ignis",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "cataclysm:ignis",
+          "id": "7CA87395BE17EF23",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&bIgnores",
+      "x": 3.0,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "6D24CD514B9E68F9"
+      ],
+      "description": [
+        "Il a 4995 Cœurs et 2 étapes. Dans la première étape, il aura des attaques très basiques de vous frapper, en pointant, en utilisant des orbes de shulker, vous frapper avec les runes de Void, et peut vous étouffer. Une fois que vous battez la moitié de la façon dont il est cassant, il va casser la tête réelle et commencer la 2ème étape. Pour commencer, il va casser le sol de l'arène exposant le sol ci-dessous, puis il utilisera les mêmes mouvements tout en vous tirant plus près. (Il est également immunisé contre les flèches donc j'espère que vous avez une bonne épée!) Une fois tué, il va tomber un Gantlet de Garde et a une chance de laisser tomber son disque de musique: Éternel."
+      ],
+      "icon": "cataclysm:music_disc_ender_guardian",
+      "id": "2E0552EF8BBE3E4D",
+      "rewards": [
+        {
+          "id": "344BA747434556AA",
+          "item": "cataclysm:music_disc_ender_guardian",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "cataclysm:ender_guardian",
+          "id": "242E4D6A691370A5",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&dEnder Guardian",
+      "x": 5.0,
+      "y": 2.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "23A0E50EB33F6D27"
+      ],
+      "description": [
+        "&cL'âme BlackSmith réside dans la Nether. Ne l'ignorez pas en pensant que c'est un bastion, c'est bien pire. Vous pouvez trouver Netherite et la Monstrosité Netherite. Vous n'aurez pas besoin de quoi que ce soit pour l'activer, juste votre présence."
+      ],
+      "icon": "minecraft:polished_blackstone_bricks",
+      "id": "6A10D5C983E850FC",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "0C831158A43E8BE3",
+          "item": "minecraft:golden_apple",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "71F57BE6B71F81D0",
+          "structure": "cataclysm:soul_black_smith",
+          "type": "structure"
+        }
+      ],
+      "title": "&cSoul BlackSmith: La maison de la monstrosité néthérite",
+      "x": 1.0,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "23A0E50EB33F6D27"
+      ],
+      "description": [
+        "Ne vous inquiétez pas, vous ne vous tromperez pas celui-ci pour un bastion. L'aréna Burning est tout à fait vide en dehors des Reveneurs Incendiés et l'autel de Flame. Tuez le Revenant Incendié pour obtenir le..."
+      ],
+      "icon": "minecraft:nether_bricks",
+      "id": "39BAEC8013AC781C",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "25AA774763F08596",
+          "item": "minecraft:golden_apple",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "646FF7278D60D0F4",
+          "structure": "cataclysm:burning_arena",
+          "type": "structure"
+        }
+      ],
+      "title": "&bL'aréna de la gravure : la maison des Ignis",
+      "x": 3.0,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "17FC3B255E062290"
+      ],
+      "description": [
+        "Une autre structure pour couvrir l'extrémité stérile, la Citadelle Ruined. Ne vous inquiétez pas sur le terrain! Dans elle, vous trouverez Endmaptera, Ender Golem, et l'autel de Void. Heureusement, vous n'avez pas besoin de sacrifier quoi que ce soit pour appeler le gardien Ender, il suffit d'aller à l'autel de Void."
+      ],
+      "icon": "minecraft:purpur_block",
+      "id": "6D24CD514B9E68F9",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "209AD2CC7F73EEDF",
+          "item": "minecraft:golden_apple",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "1C3FA199EDE72942",
+          "structure": "cataclysm:ruined_citadel",
+          "type": "structure"
+        }
+      ],
+      "title": "&dCitadelle Ruined: Maison de l'Ender Gardien",
+      "x": 5.0,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "63A7DD847411225E"
+      ],
+      "description": [
+        "&eLa pyramide maudite fraye dans les déserts et il est très difficile à rater. Une pyramide massive avec d'énormes piliers près de l'entrée. Dans elle vous trouverez beaucoup de pièges, de défenses, et de butin! Une fois que vous arrivez au fond, vous trouverez beaucoup de Koboletons et un géant endormi...."
+      ],
+      "icon": "minecraft:sandstone",
+      "id": "3754EA267090E1A2",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "021D6C1E0A5E80B5",
+          "item": "minecraft:golden_apple",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "011E5FD79FCB4CCD",
+          "structure": "cataclysm:cursed_pyramid",
+          "type": "structure"
+        }
+      ],
+      "title": "&ePyramide maudite : la maison de l'ancien résident",
+      "x": -3.0,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "63A7DD847411225E"
+      ],
+      "description": [
+        "&5La Sunken City est le Dungeon qui abrite les Deeplings, le Coralsus et le Léviathan. Il fraie... bien dans les océans. Il est grand et fait de briques de pierre. Une fois que vous obtenez à travers ses défenses, vous trouverez l'autel d'Abyss qui nous amène à..."
+      ],
+      "icon": "minecraft:stone_bricks",
+      "id": "314EC13FC732FA15",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "4127A0D35569188A",
+          "item": "minecraft:golden_apple",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "6BAB026B46431932",
+          "structure": "cataclysm:sunken_city",
+          "type": "structure"
+        }
+      ],
+      "title": "&5Sunken City: La maison du Léviathan",
+      "x": -5.0,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "63A7DD847411225E"
+      ],
+      "description": [
+        "&4L'ancienne usine est située dans le fond du monde. Avec de nombreuses machines en pierre rouge, dont The Watchers, The Prowler et The Harbinger. Vous trouverez également des EMP qui, lorsqu'ils sont alimentés en pierre rouge, endommageront les choses autour."
+      ],
+      "icon": "minecraft:redstone_block",
+      "id": "54B398B1602C7D92",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "2F8577E65B65F8C5",
+          "item": "minecraft:golden_apple",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "7D951CFF658893B9",
+          "structure": "cataclysm:ancient_factory",
+          "type": "structure"
+        }
+      ],
+      "title": "&4Ancient Factory: Maison de l'Harbinger",
+      "x": -1.0,
+      "y": 0.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "3754EA267090E1A2"
+      ],
+      "description": [
+        "Une fois que vous arrivez au fond de la pyramide maudite, vous remarquerez que l'Ancienne Remnant ne bouge pas beaucoup. C'est parce que vous aurez besoin d'un collier du désert pour retrouver la bête. Pour la trouver, vous aurez besoin de brosser le sable de sus dans la pyramide maudite. (Hope vous lisez ceci avant de vous diriger vers le bas)."
+      ],
+      "id": "7D40B0BB22AA215D",
+      "subtitle": "La résurrection d'un ancien rentier",
+      "tasks": [
+        {
+          "id": "5935F0683052735B",
+          "item": "cataclysm:necklace_of_the_desert",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Collier du désert",
+      "x": -3.0,
+      "y": 1.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "39BAEC8013AC781C"
+      ],
+      "description": [
+        "Parce que combattre les Ignis n'est pas assez difficile, vous devrez combattre les Ignited Revenant d'abord pour obtenir Burning Ashes. Une fois que vous les avez utiliser sur l'autel du feu pour appeler les Ignis."
+      ],
+      "id": "057216B56BAD8CE5",
+      "subtitle": "L'éclairage des Ignis",
+      "tasks": [
+        {
+          "id": "79B65C209DEC905C",
+          "item": "cataclysm:burning_ashes",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Brûlures de cendres",
+      "x": 3.0,
+      "y": 1.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "314EC13FC732FA15"
+      ],
+      "description": [
+        "Pour combattre le Léviathan, vous aurez besoin d'un sacrifice. Sacrifice abyssal pour être spécifique. Vous aurez besoin d'un Nautil Shell, Cœur de la mer, Athame, et Coral cristallisé. Tous ceux-ci peuvent être obtenus de la ville Sunken. Les autres blocs probablement pas. Il suffit de prendre votre sacrifice et de le mettre dans l'autel de l'Abysse et boum Léviathan!"
+      ],
+      "id": "0FA7704759B77172",
+      "subtitle": "Se réveiller Le Léviathan",
+      "tasks": [
+        {
+          "id": "4E7F12B245BF38B1",
+          "item": "cataclysm:abyssal_sacrifice",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Sacrifice abyssal",
+      "x": -5.0,
+      "y": 1.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "54B398B1602C7D92"
+      ],
+      "description": [
+        "Pour alimenter le Harbinger, il vous faut une étoile Nether, que vous obtenez de tuer le Wither."
+      ],
+      "id": "5E0D36DDDFE37CE5",
+      "subtitle": "L'alimentation du Harbringer",
+      "tasks": [
+        {
+          "id": "71E8C9BB5E657FB9",
+          "item": "minecraft:nether_star",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "L'Étoile Nether",
+      "x": -1.0,
+      "y": 1.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1AC4D9477DA8F53E"
+      ],
+      "description": [
+        "La Forge Infernale est une goutte de la Monstrosité Néthérite et n'est techniquement pas une arme, c'est un pickaxe! Il peut être utilisé pour le mien jusqu'au niveau netherite, de sorte qu'il peut le minerai Allthemodium. Quand clic droit il attaquera dans un mode AOE. Plonger le sol frappant tout près. (Peut être enchanté par l'épée et les enchantements de pickaxe)"
+      ],
+      "hide_dependent_lines": 1,
+      "id": "07281E3470FC9C41",
+      "rewards": [
+        {
+          "id": "713CFC2F32023CBA",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:enchanted_book",
+            "tag": {
+              "StoredEnchantments": [
+                {
+                  "id": "minecraft:efficiency",
+                  "lvl": 3
+                }
+              ]
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "25E23A32A5AF3BFD",
+          "item": {
+            "Count": 1,
+            "id": "cataclysm:infernal_forge",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Forge infernale",
+      "x": 0.5,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "00C8E31B9674584E"
+      ],
+      "description": [
+        "Les griffes de marée sont une goutte confirmée du Léviathan. Il a deux modes, l'attaque et le grappin. L'attaque est avec clic gauche, le grappin est avec clic droit. Lorsque vous utilisez son attaque, il lancera la griffe et traversera jusqu'à 5 mafieux. Réalisez des dégâts et donner la malédiction abyssale qui continuera à les endommager. Le grappin fait similaire mais se verrouillera à tout ce qui est dans la portée et vous tirer vers elle. Il n'y a pas de durabilité ainsi profiter pour toujours!"
+      ],
+      "id": "33FBA49C32527EE0",
+      "tasks": [
+        {
+          "id": "6011FA28FB02A9A9",
+          "item": "cataclysm:tidal_claws",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Griffes de marée",
+      "x": -5.5,
+      "y": 3.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "63B04E7F66D96A00"
+      ],
+      "description": [
+        "Witherite est une goutte de The Harbinger, il tombera toujours 1 bloc qui peut être fait en 9 lingots. Witherite est utilisé pour artisanat 3 armes et la fusion mécanique Anvil."
+      ],
+      "id": "3C60A7BD1A32C75E",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "306CE333E036473E",
+          "item": "minecraft:redstone_block",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "= avec du dénutrition",
+      "tasks": [
+        {
+          "count": 9,
+          "id": "4A04DC3DE59E7271",
+          "item": "cataclysm:witherite_ingot",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Wither plus Netherite = ...?",
+      "x": -1.0,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "1AC4D9477DA8F53E"
+      ],
+      "description": [
+        "En combinant un modèle de mise à niveau de Netherite, un casque de Netherite et une corne monstrueuse pour faire la Helm monstrueuse. Il a de meilleures statistiques et quand vous êtes à la moitié de la santé, il fera knockback tout près de vous et augmenter les statistiques de défense."
+      ],
+      "id": "52A81D0C67C1A4A2",
+      "rewards": [
+        {
+          "id": "7373F07C4AB4D2E3",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:enchanted_book",
+            "tag": {
+              "StoredEnchantments": [
+                {
+                  "id": "minecraft:protection",
+                  "lvl": 3
+                }
+              ]
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "4245A6EC60CB6B63",
+          "item": {
+            "Count": 1,
+            "id": "cataclysm:monstrous_helm",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Monstrueux Helm",
+      "x": 1.5,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "00C8E31B9674584E"
+      ],
+      "description": [
+        "L'œuf abyssal est aussi une goutte du Léviathan, parce que apparemment vous avez tué une enceinte. Placez l'oeuf et attendez un peu et vous aurez votre propre bébé Leviathan. Comme sa mère, il attaquera d'autres créatures marines. Contrairement à sa mère, il ne vous attaquera pas d'abord."
+      ],
+      "id": "6C865FE5E0D8FF63",
+      "rewards": [
+        {
+          "id": "0B70F9F6AA7B70F6",
+          "item": "minecraft:bucket",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "1ADD7BF357FF1CB1",
+          "item": "cataclysm:abyssal_egg",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Oeufs abyssaux",
+      "x": -4.5,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "3C60A7BD1A32C75E"
+      ],
+      "description": [
+        "Le laser Gatling est une arme que vous pouvez fabriquer à partir de Witherite. En utilisant Redstone dans votre inventaire, vous pouvez tirer des lasers qui déclenchent des incendies et font des dommages. Il tire 50 lasers par 1 pierre rouge qui, je pense, est une bonne affaire."
+      ],
+      "id": "55A11F660FAE8491",
+      "rewards": [
+        {
+          "count": 10,
+          "id": "6BDBCAE4B67E3B8F",
+          "item": "minecraft:redstone",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Tout droit sur Fallout",
+      "tasks": [
+        {
+          "id": "562E72C763878471",
+          "item": {
+            "Count": 1,
+            "id": "cataclysm:laser_gatling",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Laser Gatling",
+      "x": -2.0,
+      "y": 4.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "3C60A7BD1A32C75E"
+      ],
+      "description": [
+        "Le Shredder de viande est une arme Melee que vous pouvez faire à partir de Witherite. Il a deux attaques, tapotant le clic gauche et le tenant. Lorsque vous appuyez sur le clic gauche, il utilisera le Shredder de viande comme une hache, les frapper une fois d'une plage décente. Lorsque vous le tenez bien qu'il les déchiqueter avec il est vu faire beaucoup plus rapidement les dommages de plus près."
+      ],
+      "id": "01CA2DE109C8FCC2",
+      "rewards": [
+        {
+          "id": "7809A7EF0C485385",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:enchanted_book",
+            "tag": {
+              "StoredEnchantments": [
+                {
+                  "id": "minecraft:smite",
+                  "lvl": 3
+                }
+              ]
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Tout droit sur Fallout 3 DLC Le Pitt",
+      "tasks": [
+        {
+          "id": "59C88E684764B79E",
+          "item": "cataclysm:meat_shredder",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Détruire la viande",
+      "x": -1.0,
+      "y": 4.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "3C60A7BD1A32C75E"
+      ],
+      "description": [
+        "L'arme à épaule de Wither Assault (W.A.S.W.) est la dernière arme que vous pouvez fabriquer à partir de Witherite. Il a 2 projectiles différents qu'il peut tirer: Wither Missiles et Wither Howitzers. Le Wither Missiles tire à partir de juste tenir le clic droit, et endommagera tout ce qui les a frappés avec un faible refroidissement."
+      ],
+      "hide_dependent_lines": 1,
+      "id": "6FF30FB2A180ACBF",
+      "rewards": [
+        {
+          "id": "7C06DB19D0460030",
+          "item": "minecraft:milk_bucket",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "4B411D48BEE489E0",
+          "item": "cataclysm:wither_assault_shoulder_weapon",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "W.A.S.W. (Arme contre l'épaule pour voies de fait)",
+      "x": 0.0,
+      "y": 4.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "3C60A7BD1A32C75E"
+      ],
+      "description": [
+        "L'Enclume de fusion mécanique sera nécessaire pour faire le vide et les armes fondues. Il place comme une enclume normale mais n'a pas de durabilité."
+      ],
+      "id": "12835383A9027087",
+      "rewards": [
+        {
+          "id": "0A8544D25ED98B6F",
+          "type": "xp_levels",
+          "xp_levels": 5,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "53153AA1F06DC868",
+          "item": "cataclysm:mechanical_fusion_anvil",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Enclume de fusion mécanique",
+      "x": 0.0,
+      "y": 5.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "12835383A9027087",
+        "07281E3470FC9C41"
+      ],
+      "description": [
+        "La Forge Void n'est pas très différente de la Forge Infernale. Mêmes dommages et vitesse d'attaque, même niveau de pioche, appelle les Runes Void en attaquant. Peut être conçu en combinant une Forge Infernale et un Core Void dans un Enclume de Fusion Mécanique."
+      ],
+      "id": "1676E88424AEFF86",
+      "tasks": [
+        {
+          "id": "5EEE48D8C6989BF1",
+          "item": {
+            "Count": 1,
+            "id": "cataclysm:void_forge",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Void Forge",
+      "x": 0.0,
+      "y": 6.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "12835383A9027087",
+        "6FF30FB2A180ACBF"
+      ],
+      "description": [
+        "La Void Assault Epaule Arme (V.A.S.W.) est tout comme la version Wither mais mieux. Maintenant, elle ne tire que Void Howitzers qui fera plus de dégâts et fera sortir les runes vides du sol dans la zone que le Howitzer a touché. Juste au prix du long délai de refroidissement, mais nous avons le temps d'attendre."
+      ],
+      "id": "28AAB2E8C2B6E958",
+      "rewards": [
+        {
+          "id": "29CC97BB8F424660",
+          "type": "xp_levels",
+          "xp_levels": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "75EBE7B28B68B821",
+          "item": "cataclysm:void_assault_shoulder_weapon",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "V.A.S.W. (Arme à épaule pour voies de fait)",
+      "x": -1.0,
+      "y": 6.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "12835383A9027087",
+        "7B2AA79247E2D052",
+        "501E2891DCB801E5"
+      ],
+      "description": [
+        "Au lieu d'amener les foules plus près, il les pousse loin, en tenant le clic droit, et leur donne Blazing Brand. Ensuite, lorsque vous relâchez le clic droit, vous ferez la charge normale. Il est fait en fusionnant le gant de garde avec un Bulwark de Flamme dans l'Anvil de fusion mécanique."
+      ],
+      "id": "2293DD85712F46B3",
+      "rewards": [
+        {
+          "id": "05994D2FBF5CC2BD",
+          "type": "xp_levels",
+          "xp_levels": 10,
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "157B9506BE683CF9",
+          "item": "cataclysm:gauntlet_of_bulwark",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Gantelet de Bulwark",
+      "x": 1.0,
+      "y": 6.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "47BE8811F0004C89"
+      ],
+      "description": [
+        "Ignitium est comme Netherite, mais prend de l'habileté réelle pour l'obtenir. L'Ignis ne tombera que 1 donc obtenir une bonne utilisation de celui-ci. Vous pouvez l'utiliser pour mettre à niveau votre armure netherite ou l'utiliser pour faire 2 armes."
+      ],
+      "id": "125189771BFF7974",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "21B6BE5453D50F4A",
+          "item": "cataclysm:ignitium_ingot",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "subtitle": "Mieux que Netherite?!?!?!",
+      "tasks": [
+        {
+          "id": "2A48656674A6D942",
+          "item": "cataclysm:ignitium_ingot",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Ignitium",
+      "x": 3.0,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "125189771BFF7974"
+      ],
+      "description": [
+        "Vous aimez le bouclier d'Ignis? Eh bien, vous pouvez faire 1 de votre propre avec Ignitium. Le rempart de la Flamme peut être utilisé comme un bouclier normal mais a aussi un effet spécial. Lorsque vous tenez le clic droit et le changement, laisser aller vous laissera charger à tout ce qui est en face de vous, comme les chèvres font."
+      ],
+      "hide_dependent_lines": 1,
+      "id": "7B2AA79247E2D052",
+      "tasks": [
+        {
+          "id": "120F50814E6A9594",
+          "item": "cataclysm:bulwark_of_the_flame",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Le rempart de la flamme",
+      "x": 2.5,
+      "y": 4.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "125189771BFF7974"
+      ],
+      "description": [
+        "Mon préféré personnel et l'un des plus puissants. L'incinérateur peut être utilisé comme une épée normale et enchanté comme une. Mais en tenant le clic droit, il fait quelque chose qu'aucune épée normale ne fait. Lorsque vous tenez et laissez aller le clic droit pendant quelques secondes, des flammes massives vont sortir du sol dans la direction que vous regardez alors exploser."
+      ],
+      "id": "3A78EF4CB54E4925",
+      "rewards": [
+        {
+          "id": "34BCB45775A0BD43",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:enchanted_book",
+            "tag": {
+              "StoredEnchantments": [
+                {
+                  "id": "minecraft:sharpness",
+                  "lvl": 3
+                }
+              ]
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "1CD8A7A1B8E7CA3E",
+          "item": "cataclysm:the_incinerator",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "L'incinérateur",
+      "x": 3.5,
+      "y": 4.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "2E0552EF8BBE3E4D"
+      ],
+      "description": [
+        "Le Gauntlet de Garde est plus d'un outil qu'une arme, il amène les mafia plus près lorsque vous tenez le clic droit avec elle. Ensuite, vous pouvez frapper les ennemis avec elle pour faire un peu de dommages."
+      ],
+      "hide_dependent_lines": 1,
+      "id": "501E2891DCB801E5",
+      "tasks": [
+        {
+          "id": "565812CB16E13F6C",
+          "item": "cataclysm:gauntlet_of_guard",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Gantelet de Garde",
+      "x": 5.0,
+      "y": 3.5,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "13EEBEACEFB307CA"
+      ],
+      "description": [
+        "Le cataclysme n'est pas seulement une question de patrons, il y a beaucoup de minibosses et de mafia qui aident les patrons aussi bien ! Ok, peut-être c'est juste une question de patrons."
+      ],
+      "id": "71BE7BD248CE0FED",
+      "tasks": [
+        {
+          "id": "1D837C3A8A0925EB",
+          "type": "item",
+          "item": "minecraft:shield",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Autres ennemis",
+      "x": 2.5,
+      "y": -3.0,
+      "rewards": [],
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "71BE7BD248CE0FED"
+      ],
+      "description": [
+        "&4Le Prowler est un miniboss qui garde l'ancienne usine. Il peut regarder en bas mais une fois que vous êtes trop près vous apprendrez que c'est très faux. Il a 1500 Coeurs et a 2 attaques: Missiles d'épaules similaires à la WAW et une scie qu'il utilise pour le combat rapproché."
+      ],
+      "icon": "cataclysm:the_prowler_spawn_egg",
+      "id": "6C8E13850953E77E",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "621CA1687CF6A8F7",
+          "item": "minecraft:iron_block",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "cataclysm:the_prowler",
+          "id": "00C2CC9065C02337",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&4Le prowler",
+      "x": 2.5,
+      "y": -1.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "71BE7BD248CE0FED"
+      ],
+      "description": [
+        "&5Le Coralsus fonctionne comme une garde et Steed pour la Sunken City. Ils sont utilisés avec les Deeplings mais il est différent donc il obtient sa propre quête! Ils ont seulement 110 Cœurs et des attaques de base mais les Deeplings avec eux le rendent beaucoup plus dangereux. Ses attaques sont juste frapper et vous jeter. Quand tué, il tombera Coral cristallisé qui est nécessaire pour faire le Sacrifice Abyssal."
+      ],
+      "id": "6E61D224ABB04C1F",
+      "rewards": [
+        {
+          "count": 2,
+          "id": "2CAE4E1FFD95382C",
+          "item": "cataclysm:crystallized_coral_fragments",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "cataclysm:coralssus",
+          "id": "363DA6B8B144D1E8",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&5Coralssus",
+      "x": 4.0,
+      "y": -3.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "71BE7BD248CE0FED"
+      ],
+      "description": [
+        "Le Crabe d'Améthyste vit dans les grottes de Lush avec les Axolotls. Il a 2000 cœurs et est initialement neutre. Cela signifie qu'il n'attaquera pas d'abord mais il vous frappera. Il a quelques attaques que l'on vous a juste frappé avec ses griffes. Il peut également jeter Améthystes sur vous et terrier sous le sol. Sur la mort il tombera sa viande et coquilles. Sa viande peut être bénie dans un autel d'Améthyste pour être mieux. Les Shells peuvent être fabriqués ensemble pour faire Bloom Stone Pauldrons qui ont des statistiques similaires à Netherite Armor mais peuvent faire des capacités similaires que le Crabe lui-même."
+      ],
+      "icon": "minecraft:amethyst_cluster",
+      "id": "3D150344FC84E299",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "3456FDC1315EEB94",
+          "item": "cataclysm:blessed_amethyst_crab_meat",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "cataclysm:amethyst_crab",
+          "id": "1D8D414B73AD23A2",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&2Crabe d'améthyste",
+      "x": 4.0,
+      "y": -4.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "71BE7BD248CE0FED"
+      ],
+      "description": [
+        "Pour lutter contre les Ignis, vous aurez besoin de faire votre chemin à travers le Reveneur d'Ignite pour qu'il brûle des cendres. Ne laissez pas les simples 800 Coeurs vous tromper, ce ne sera pas une promenade dans le parc. Ce sont des boucliers vous empêcheront de l'attaquer ainsi éviter ceux. Une fois que vous le tuez, vous pouvez aller à l'Ignis."
+      ],
+      "icon": "cataclysm:ignited_revenant_spawn_egg",
+      "id": "2450DFCD078EE01F",
+      "rewards": [
+        {
+          "count": 10,
+          "id": "3CBBDFB2FF711AE9",
+          "item": "minecraft:fire_charge",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "cataclysm:ignited_revenant",
+          "id": "4C9C705E3AD93757",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&bRevendication incendiaire",
+      "x": 1.0,
+      "y": -3.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "0B58B48DC6620334"
+      ],
+      "description": [
+        "Le gâchis dans une bouteille est un objet que vous portez pour un effet spécial. Il va dans la fente de ceinture et lorsque vous appuyez sur par défaut X vous allez vous transformer en gâchis. C'est uniquement pour le mouvement, comme vous pouvez voler pendant un peu, il ne cause pas de dommages ou de réfléchir, juste le mouvement."
+      ],
+      "id": "7D0590E120E7A237",
+      "rewards": [
+        {
+          "id": "17896897C7DEF0D6",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:potion",
+            "tag": {
+              "Potion": "minecraft:long_slow_falling"
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "1FEA7C1DB4CF77C8",
+          "item": "cataclysm:sandstorm_in_a_bottle",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Bouteille O' Sandstorm",
+      "x": -2.5,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "71BE7BD248CE0FED"
+      ],
+      "description": [
+        "Techniquement, vous n'avez pas besoin de les combattre pour combattre l'Ender Guardian mais vous devriez certainement. L'Ender Golem a 3000 Cœurs et quelques attaques. Il attaque comme un Golem de Fer normal mais a également Void Core attaques. Le Void Core fonctionne comme les mâchoires Evoker avec des choses qui sortent du sol pour causer des dommages."
+      ],
+      "icon": "cataclysm:ender_golem_spawn_egg",
+      "id": "32B3594A0FD9EB58",
+      "rewards": [
+        {
+          "id": "0FEA0E6436EA0F6D",
+          "item": "cataclysm:void_core",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "cataclysm:ender_golem",
+          "id": "741D4F214D053E30",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&dEnder Golem",
+      "x": 2.0,
+      "y": -4.5,
+      "repeatable": false
+    },
+    {
+      "description": [
+        "Cataclsym est un mod qui ajoute de nouveaux patrons, donjons, et bien sûr le butin! Il n'y a pas certains patrons pour tuer d'abord mais certains sont plus forts que d'autres et certains donnent le butin qui aidera contre les autres. Ce mod a également deux éléments nécessaires pour construire l'ATM Star!"
+      ],
+      "id": "13EEBEACEFB307CA",
+      "tasks": [
+        {
+          "id": "30D53FBF2F1F5F04",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "title": "Cataclysm",
+      "x": 0.0,
+      "y": -0.5,
+      "rewards": [],
+      "repeatable": false,
+      "dependencies": []
+    },
+    {
+      "dependencies": [
+        "0B58B48DC6620334"
+      ],
+      "description": [
+        "Vous voulez un autre animal de compagnie de Cataclysm? Ensuite, le Crâne Remnant est ce dont vous avez besoin. C'est une goutte confirmée de l'Ancienne Remnant et quand utilisé va frayer un Modern Revenant. Celui-ci est beaucoup plus petit et plus agréable que l'Ancien cependant. Vous pouvez le dompter en lui donnant un Oeuf Sniffer puis il agira comme un chien. Attaquer ce qui vous attaque ou ce que vous attaquez. Il a également 3 modes: suivre, errer et rester. Suivez-le... bien vous. Wander va le faire marcher autour d'un certain secteur. Et rester aura couché dans un seul endroit. Profitez de votre nouveau dino!"
+      ],
+      "id": "3B37BDE84DDCD2FE",
+      "rewards": [
+        {
+          "id": "0607857490C4C4A8",
+          "item": {
+            "Count": 1,
+            "id": "minecraft:brush",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "id": "2455E5FB9678450C",
+          "item": "cataclysm:remnant_skull",
+          "type": "item",
+          "consume_items": false
+        }
+      ],
+      "title": "Ce qui ne sera pas nommé pour mes raisons d'écrasement",
+      "x": -3.5,
+      "y": 3.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "71BE7BD248CE0FED"
+      ],
+      "description": [
+        "&dEndermaptera sont les cafards de la fin. Ils vivent à l'intérieur et autour de la citadelle. Ils ont le moins de santé de toute mafia cataclysme à 8 Cœurs et seulement 1 attaque. Ils vont déposer les mâchoires de Void qui peuvent être utilisés pour artisanat Void Scatter Flèches. Vous pouvez tester ce qu'ils font vous-même."
+      ],
+      "icon": "cataclysm:endermaptera_spawn_egg",
+      "id": "77D31FD3A5678317",
+      "rewards": [
+        {
+          "count": 3,
+          "id": "66AF52B6D85CF146",
+          "item": "cataclysm:void_jaw",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "cataclysm:endermaptera",
+          "id": "23D2C9320EBE8D3A",
+          "type": "kill",
+          "value": 3
+        }
+      ],
+      "title": "&dEndermaptera aka Fin des cafards",
+      "x": 3.0,
+      "y": -4.5,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "71BE7BD248CE0FED"
+      ],
+      "description": [
+        "&eLes Koboletons sont des mini-Skeletons Dino qui servent l'Ancienne Remnant. Ils n'ont que 12 cœurs et demi et 1 attaque. Ils tombent aussi leurs os mais ils ne font que des farines osseuses. Ils sont aussi assez mignons quand ils ne vous attaquent pas!"
+      ],
+      "icon": "cataclysm:koboleton_spawn_egg",
+      "id": "0FE46D6E9E4782E0",
+      "rewards": [
+        {
+          "id": "65B78E2EDD59604F",
+          "item": {
+            "Count": 1,
+            "id": "cataclysm:khopesh",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "cataclysm:koboleton",
+          "id": "775214C4A6B6FE6F",
+          "type": "kill",
+          "value": 3
+        }
+      ],
+      "title": "&eKoboletons aka Mini Dinos",
+      "x": 1.0,
+      "y": -4.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "71BE7BD248CE0FED"
+      ],
+      "description": [
+        "&4Les Observateurs... et bien ils regardent l'ancienne usine. Ils attaqueront tout ce qu'ils voient avec leurs « rayons lasers de briques! ». Ils ont 12 cœurs et demi, peuvent voler, et sont faibles aux attaques EMP aussi. Comme le Prowler, ils déposent la pierre rouge et le fer sur la mort."
+      ],
+      "icon": "cataclysm:the_watcher_spawn_egg",
+      "id": "50CF6E406F87D542",
+      "rewards": [
+        {
+          "count": 5,
+          "id": "1603E7779F0502D4",
+          "item": "minecraft:redstone_block",
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "cataclysm:the_watcher",
+          "id": "724ED1F86EE25C57",
+          "type": "kill",
+          "value": 3
+        }
+      ],
+      "title": "&4Les observateurs",
+      "x": 1.5,
+      "y": -2.0,
+      "repeatable": false
+    },
+    {
+      "dependencies": [
+        "71BE7BD248CE0FED"
+      ],
+      "description": [
+        "Les Deeplings sont une ancienne race de monstres marins qui vivent et gardent la Cité Sunken. Ils ont leur propre classement: Anglers, Brutes, Prêtres, et Warlocks. Chacun porte différentes armes qu'ils peuvent déposer. Le Prêtre Deepling lâche l'Athame dont nous avons besoin pour le Sacrifice Abyssal."
+      ],
+      "icon": "cataclysm:deepling_brute_spawn_egg",
+      "id": "020BF213B62832A9",
+      "rewards": [
+        {
+          "id": "5019C2F19B2EEC16",
+          "item": {
+            "Count": 1,
+            "id": "cataclysm:coral_spear",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "28BD981D6E3E124F",
+          "item": {
+            "Count": 1,
+            "id": "cataclysm:coral_bardiche",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        },
+        {
+          "id": "40C3A1084F700BAC",
+          "item": {
+            "Count": 1,
+            "id": "cataclysm:athame",
+            "tag": {
+              "Damage": 0
+            }
+          },
+          "type": "item",
+          "team_reward": true,
+          "auto": "disabled"
+        }
+      ],
+      "tasks": [
+        {
+          "entity": "cataclysm:deepling",
+          "id": "5E2A977C5DD4BAE5",
+          "type": "kill",
+          "value": 1
+        },
+        {
+          "entity": "cataclysm:deepling_angler",
+          "id": "280C7A0376143FE4",
+          "type": "kill",
+          "value": 1
+        },
+        {
+          "entity": "cataclysm:deepling_brute",
+          "id": "43D5C93A807ED8AF",
+          "type": "kill",
+          "value": 1
+        },
+        {
+          "entity": "cataclysm:deepling_priest",
+          "id": "740FA4D16FBDBD46",
+          "type": "kill",
+          "value": 1
+        },
+        {
+          "entity": "cataclysm:deepling_warlock",
+          "id": "576EB8C019E20075",
+          "type": "kill",
+          "value": 1
+        }
+      ],
+      "title": "&5Profondeurs",
+      "x": 3.5,
+      "y": -2.0,
+      "repeatable": false
+    },
+    {
+      "can_repeat": 0,
+      "description": [
+        "Cette quête a été créée par AllTheMods Staff, ou un contributeur communautaire pour une utilisation dans AllTheMods Modpacks.",
+        "Comme tous les packs AllTheMods sont sous licence All Rights Reserved, cette Quest n'est pas autorisée à être utilisée dans les packs publics non publiés par l'équipe AllTheMods, sans autorisation explicite.",
+        "Cette quête est intentionnellement cachée, si vous voyez cela, vous êtes en mode édition.",
+        "Repère de lecture : obtiens le livre indiqué pour poursuivre. Cette étape ne donne aucune récompense."
+      ],
+      "disable_toast": 1,
+      "hide_details_until_startable": 1,
+      "hide_until_deps_visible": 1,
+      "icon": {
+        "Count": 1,
+        "id": "ftbquests:custom_icon",
+        "tag": {
+          "Icon": "minecraft:item/barrier"
+        }
+      },
+      "id": "6D1D1F9BA9A4487C",
+      "invisible": 1,
+      "optional": 1,
+      "shape": "octagon",
+      "tasks": [
+        {
+          "id": "7E142237E779FFD8",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        },
+        {
+          "id": "7B7BF8E9FFAE6B64",
+          "type": "item",
+          "item": "minecraft:book",
+          "count": 1,
+          "consume_items": false
+        }
+      ],
+      "x": 0.0,
+      "y": 0.5,
+      "rewards": [],
+      "repeatable": false,
+      "title": "Livre",
+      "dependencies": []
+    }
+  ],
+  "title": "Cataclysm",
+  "default_consume_items": false
+}

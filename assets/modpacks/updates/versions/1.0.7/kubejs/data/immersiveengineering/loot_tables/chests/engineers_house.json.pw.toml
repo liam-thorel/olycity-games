@@ -1,0 +1,8 @@
+name = "kubejs/data/immersiveengineering/loot_tables/chests/engineers_house.json"
+filename = "engineers_house.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/10ec4db08c37964005727b45fee8fe0c751f9d6eeca0e6717ac5df26eb318fce"
+hash-format = "sha256"
+hash = "10ec4db08c37964005727b45fee8fe0c751f9d6eeca0e6717ac5df26eb318fce"

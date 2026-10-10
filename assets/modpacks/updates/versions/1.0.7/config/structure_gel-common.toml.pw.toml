@@ -1,0 +1,8 @@
+name = "config/structure_gel-common.toml"
+filename = "structure_gel-common.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/888d2904bd7dd577f72d901603912a440540eba21212b004cf6abe41f1cde23b"
+hash-format = "sha256"
+hash = "888d2904bd7dd577f72d901603912a440540eba21212b004cf6abe41f1cde23b"

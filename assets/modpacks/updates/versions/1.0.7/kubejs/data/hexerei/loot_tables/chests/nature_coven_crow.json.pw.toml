@@ -1,0 +1,8 @@
+name = "kubejs/data/hexerei/loot_tables/chests/nature_coven_crow.json"
+filename = "nature_coven_crow.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/1201b90bb026d14776a8e5747634924a955aac1410a395224835c3702dfb1b39"
+hash-format = "sha256"
+hash = "1201b90bb026d14776a8e5747634924a955aac1410a395224835c3702dfb1b39"

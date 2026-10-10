@@ -1,0 +1,8 @@
+name = "config/ftbquests/quests/chapters/atm9_applied_energistics_2.snbt"
+filename = "atm9_applied_energistics_2.snbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/e354a417f55c5aecbd607dfd256f401fd17fd9db51d7bf75189d08090492697b"
+hash-format = "sha256"
+hash = "e354a417f55c5aecbd607dfd256f401fd17fd9db51d7bf75189d08090492697b"

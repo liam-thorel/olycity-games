@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/village/profession/everdawn/armorer.json"
+filename = "armorer.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/d5615815e72798eae6faa691d5bce63a45380b8607998193390fe7bc5ac5b833"
+hash-format = "sha256"
+hash = "d5615815e72798eae6faa691d5bce63a45380b8607998193390fe7bc5ac5b833"

@@ -1,0 +1,8 @@
+name = "mods/sophisticatedcore-1.20.1-1.5.6.2383.jar"
+filename = "sophisticatedcore-1.20.1-1.5.6.2383.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1.0.7-20261011/71c6b10b97f9e8314a8e9011a1663311a9dbd344efef6b66fa9e19b2e1e01b45.jar"
+hash-format = "sha256"
+hash = "71c6b10b97f9e8314a8e9011a1663311a9dbd344efef6b66fa9e19b2e1e01b45"
