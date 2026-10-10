@@ -18,7 +18,7 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = resolve(fileURLToPath(import.meta.url), '../..');
 const OUT = join(ROOT, '_site');
-const STATIC = ['index.html', '404.html', 'CNAME', '.nojekyll', 'manifest.webmanifest', 'config.js', 'assets', 'css', 'js', 'sdk'];
+const STATIC = ['index.html', '404.html', 'CNAME', '.nojekyll', 'manifest.webmanifest', 'config.js', 'assets', 'css', 'js', 'sdk', 'docs'];
 const SKIP_IN_GAMES = new Set(['node_modules', '.angular', '.vite', 'dist']);
 
 export function readRegistry(root = ROOT) {
