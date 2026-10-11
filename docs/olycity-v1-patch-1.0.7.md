@@ -22,3 +22,7 @@ Romain : suivre le [guide de mise à jour 1.0.7](olycity-v1-update-1.0.7.md), se
 Joueurs : après la mise à jour du serveur, fermer Minecraft puis relancer la même instance Prism OLYCITY. Packwiz récupère les changements au lancement.
 
 Les ZIP complets existants restent ceux de 1.0.3. L’instance Prism se synchronise vers la version actuelle ; pour un serveur installé depuis l’ancien ZIP, appliquer la mise à jour avant le premier lancement. Il n’est pas nécessaire de retélécharger ces ZIP pour ce patch.
+
+## Ajout client, sans changement de version
+
+Extreme Sound Muffler 3.51 distribué via Packwiz : couper ou atténuer chaque son individuellement. Fermer Minecraft puis relancer la même instance Prism pour le charger. Aucun ajout au serveur ni redémarrage serveur nécessaire pour ce mod.
