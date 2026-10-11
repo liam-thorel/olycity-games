@@ -1,0 +1,8 @@
+name = "config/legendarytooltips-client.toml"
+filename = "legendarytooltips-client.toml"
+side = "client"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/stable/files/config/legendarytooltips-client.toml"
+hash-format = "sha256"
+hash = "3ae4a6b6463cbf73c794f48d67f77cdc6c47ae33b781aa68698002aa56d2bf3a"

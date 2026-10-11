@@ -26,3 +26,7 @@ Les ZIP complets existants restent ceux de 1.0.3. L’instance Prism se synchron
 ## Ajout client, sans changement de version
 
 Extreme Sound Muffler 3.51 distribué via Packwiz : couper ou atténuer chaque son individuellement. Fermer Minecraft puis relancer la même instance Prism pour le charger. Aucun ajout au serveur ni redémarrage serveur nécessaire pour ce mod.
+
+## Ajouts visuels client, sans changement de version
+
+Chat Heads 0.15.7, Not Enough Animations 1.12.6 et Legendary Tooltips 1.4.5, avec Iceberg 1.1.25 et Prism 1.0.5. Distribués uniquement aux clients via Packwiz ; aucun changement serveur requis. Fermer Minecraft et relancer la même instance Prism. Aperçu 3D de Legendary désactivé pour éviter les doublons avec Simply Tooltips.

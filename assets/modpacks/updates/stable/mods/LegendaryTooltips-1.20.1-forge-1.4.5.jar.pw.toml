@@ -1,0 +1,8 @@
+name = "1.4.5 Forge (1.20.x)"
+filename = "LegendaryTooltips-1.20.1-forge-1.4.5.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/atHH8NyV/versions/JhxD2e6J/LegendaryTooltips-1.20.1-forge-1.4.5.jar"
+hash-format = "sha256"
+hash = "15521ab414b92f60e75bdd49724eb65bb6aa8b3d6f72c157cc261011d58d625e"

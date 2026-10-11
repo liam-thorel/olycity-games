@@ -1221,6 +1221,11 @@ hash = "f33283c7c861be65912a7ae37ae67146e7bec8f3301805cb0710d1f2058306a2"
 metafile = true
 
 [[files]]
+file = "config/legendarytooltips-client.toml.pw.toml"
+hash = "70754a56de18b6285a715bbdaf72a318ef067d0ecdbfde26a4a10e89954a6c6c"
+metafile = true
+
+[[files]]
 file = "config/lightmanscurrency-common.txt.pw.toml"
 hash = "b9dc14a775e7d1d07e9b4878d6049c4417d3f72784fc8c2c89b95a382f40e1ce"
 metafile = true
@@ -5216,6 +5221,11 @@ hash = "c1ec38ab7646d69f88f188a5fd448426872a94444dabc286b91e951602eef3ca"
 metafile = true
 
 [[files]]
+file = "mods/Iceberg-1.20.1-forge-1.1.25.jar.pw.toml"
+hash = "46502d7774ad4ad7c206f10c2e0aa2eeb920223bd34fa9134227eb04ab9fabf5"
+metafile = true
+
+[[files]]
 file = "mods/ImmediatelyFast-Forge-1.5.5+1.20.4.jar.pw.toml"
 hash = "f3b558f3c3ba090fab618477ff159b3376836dd7aeecac4b23d3d3ed13b48667"
 metafile = true
@@ -5243,6 +5253,11 @@ metafile = true
 [[files]]
 file = "mods/L_Enders_Cataclysm-3.31.jar.pw.toml"
 hash = "780f55cb312e846251c8f4ca064b369fc4fe165a06c86a1a2bb490d099dc56be"
+metafile = true
+
+[[files]]
+file = "mods/LegendaryTooltips-1.20.1-forge-1.4.5.jar.pw.toml"
+hash = "967d9d34d1d6a1268eff6c465e29b2073ff6da4aa16ac7b6da6437ea0953be3d"
 metafile = true
 
 [[files]]
@@ -5283,6 +5298,11 @@ metafile = true
 [[files]]
 file = "mods/Placebo-1.20.1-8.6.3.jar.pw.toml"
 hash = "1676ce7383bfb4d680be647d607dcbb427a851305fe9dcac00529304825e9d7e"
+metafile = true
+
+[[files]]
+file = "mods/Prism-1.20.1-forge-1.0.5.jar.pw.toml"
+hash = "336be93c6e5d03a2a4c7c64f234e16a4c2576c25ac7ddd4d44d47731c853edc6"
 metafile = true
 
 [[files]]
@@ -5438,6 +5458,11 @@ metafile = true
 [[files]]
 file = "mods/chaospersists-1.20.1-0.9.0.jar.pw.toml"
 hash = "957a80906672037af98b831a41b9b5b8b1a855a04076acf571361e68134aafe2"
+metafile = true
+
+[[files]]
+file = "mods/chat_heads-0.15.7-forge-1.20.jar.pw.toml"
+hash = "f6c480b9c56e0d64636f7e307fcb23d83dd0345a58e5c5c0aa57830a70ec40aa"
 metafile = true
 
 [[files]]
@@ -5783,6 +5808,11 @@ metafile = true
 [[files]]
 file = "mods/moreoverlays-1.22.7-mc1.20.2.jar.pw.toml"
 hash = "0559f6084247afe62b0aac41477ca8660f96002e59462ec0227d8dcff804187d"
+metafile = true
+
+[[files]]
+file = "mods/notenoughanimations-forge-1.12.6-mc1.20.1.jar.pw.toml"
+hash = "59920de3c71d366b9e13a1d267f64c72200d309fa220761c0b412b021b04c4e3"
 metafile = true
 
 [[files]]

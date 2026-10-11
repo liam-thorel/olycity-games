@@ -1,0 +1,8 @@
+name = "0.15.7"
+filename = "chat_heads-0.15.7-forge-1.20.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/Wb5oqrBJ/versions/UJALMfLK/chat_heads-0.15.7-forge-1.20.jar"
+hash-format = "sha256"
+hash = "1cfed5826ca81787618dde3d8e52fdf06068a76712d45327ec36046229f955e7"

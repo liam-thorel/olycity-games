@@ -1,0 +1,3 @@
+# OLYCITY: avoid duplicate 3D previews with Simply Tooltips.
+[client.visual_options]
+render_item_model = "NONE"
