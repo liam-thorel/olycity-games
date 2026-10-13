@@ -1,0 +1,13 @@
+name = "OLYCITY V1"
+author = "OLYCITY"
+version = "1.0.8"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "c47f2ed4494b2c2749c4a0b6730924312fdf3a3b6cc7ca4c89fb823037f6a35e"
+
+[versions]
+minecraft = "1.20.1"
+forge = "47.4.10"

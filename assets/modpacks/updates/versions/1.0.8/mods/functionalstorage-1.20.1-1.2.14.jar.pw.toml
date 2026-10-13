@@ -1,0 +1,8 @@
+name = "mods/functionalstorage-1.20.1-1.2.14.jar"
+filename = "functionalstorage-1.20.1-1.2.14.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/b627f558ae16352ca4988834c5397d10b9de8541188ff0d99121fff0f5ecf5f7.jar"
+hash-format = "sha256"
+hash = "b627f558ae16352ca4988834c5397d10b9de8541188ff0d99121fff0f5ecf5f7"

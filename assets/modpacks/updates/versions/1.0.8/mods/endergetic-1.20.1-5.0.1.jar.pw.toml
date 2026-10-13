@@ -1,0 +1,8 @@
+name = "mods/endergetic-1.20.1-5.0.1.jar"
+filename = "endergetic-1.20.1-5.0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/cPle5Z8G/versions/En1Ihw7Y/endergetic-1.20.1-5.0.1.jar"
+hash-format = "sha256"
+hash = "e6afa76562e32e8b31d320095c9c27eff5557f8048723add835ba011057e14c2"

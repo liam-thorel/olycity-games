@@ -1,0 +1,8 @@
+name = "config/sereneseasons/seasons.toml"
+filename = "seasons.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/0b475e4599e51624ea74ce213ac5c86801e83906bcbc850619d4f76cc16e45eb"
+hash-format = "sha256"
+hash = "0b475e4599e51624ea74ce213ac5c86801e83906bcbc850619d4f76cc16e45eb"

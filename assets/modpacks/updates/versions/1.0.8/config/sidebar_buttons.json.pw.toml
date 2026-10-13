@@ -1,0 +1,8 @@
+name = "config/sidebar_buttons.json"
+filename = "sidebar_buttons.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/33c7071e289295153b0457303c2d903f24d538ab9d10fdcf959e2a1cccd819ed"
+hash-format = "sha256"
+hash = "33c7071e289295153b0457303c2d903f24d538ab9d10fdcf959e2a1cccd819ed"

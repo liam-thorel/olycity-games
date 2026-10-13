@@ -1,0 +1,8 @@
+name = "kubejs/assets/foolish/textures/block/new_piskel-108.png"
+filename = "new_piskel-108.png"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/72ba84755466e5598b5360d281aa76933742adace5320f09339d3766bd200438"
+hash-format = "sha256"
+hash = "72ba84755466e5598b5360d281aa76933742adace5320f09339d3766bd200438"

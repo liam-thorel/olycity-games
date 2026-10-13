@@ -1,3 +1,7 @@
+> Après une nouvelle importation du ZIP serveur, appliquer le [patch 1.0.8](https://games.olycity.fr/docs/olycity-v1-update-1.0.8.md) avant d’accueillir les joueurs. Le ZIP d’installation comprend les outils de mise à jour.
+
+> Après une nouvelle importation du ZIP serveur, appliquer le [patch 1.0.8](https://games.olycity.fr/docs/olycity-v1-update-1.0.8.md) avant d’accueillir les joueurs. Le ZIP d’installation comprend les outils de mise à jour.
+
 # OLYCITY V1 — installation du serveur
 
 Version **1.0.3** · Minecraft **1.20.1** · Forge **47.4.10** · Java **17**

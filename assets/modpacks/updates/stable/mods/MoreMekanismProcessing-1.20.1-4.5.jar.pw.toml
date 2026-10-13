@@ -1,0 +1,8 @@
+name = "mods/MoreMekanismProcessing-1.20.1-4.5.jar"
+filename = "MoreMekanismProcessing-1.20.1-4.5.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/7609/582/MoreMekanismProcessing-1.20.1-4.5.jar"
+hash-format = "sha256"
+hash = "bf8cdaa1a19c89576fef18c80948893abfb23d55bb04a844e4ad8474e8dfbe43"

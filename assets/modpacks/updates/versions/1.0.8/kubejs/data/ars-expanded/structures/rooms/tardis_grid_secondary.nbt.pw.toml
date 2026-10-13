@@ -1,0 +1,8 @@
+name = "kubejs/data/ars-expanded/structures/rooms/tardis_grid_secondary.nbt"
+filename = "tardis_grid_secondary.nbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/15bb3f66c75fafdebf714391ad851855c619729fbd9b8bca2d6fbb3becff9beb"
+hash-format = "sha256"
+hash = "15bb3f66c75fafdebf714391ad851855c619729fbd9b8bca2d6fbb3becff9beb"

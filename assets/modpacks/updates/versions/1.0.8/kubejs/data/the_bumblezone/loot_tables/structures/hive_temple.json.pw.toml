@@ -1,0 +1,8 @@
+name = "kubejs/data/the_bumblezone/loot_tables/structures/hive_temple.json"
+filename = "hive_temple.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/1acd8cc4f36e57396bca750e2df91002408397e3e220a00d25dcf0f147e8ec6f"
+hash-format = "sha256"
+hash = "1acd8cc4f36e57396bca750e2df91002408397e3e220a00d25dcf0f147e8ec6f"

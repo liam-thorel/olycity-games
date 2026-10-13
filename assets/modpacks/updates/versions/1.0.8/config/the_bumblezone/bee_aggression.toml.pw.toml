@@ -1,0 +1,8 @@
+name = "config/the_bumblezone/bee_aggression.toml"
+filename = "bee_aggression.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/edff4600619b1efb2b6438db1cd684fef4c45006ddc04e2ef33d7ce3b1a7ce47"
+hash-format = "sha256"
+hash = "edff4600619b1efb2b6438db1cd684fef4c45006ddc04e2ef33d7ce3b1a7ce47"

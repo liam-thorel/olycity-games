@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/village/village_savanna_house.json"
+filename = "village_savanna_house.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/703e742ccd970b4a1addad4fe52c5ff7afb440c8291e18ce826054f40a42bfe8"
+hash-format = "sha256"
+hash = "703e742ccd970b4a1addad4fe52c5ff7afb440c8291e18ce826054f40a42bfe8"

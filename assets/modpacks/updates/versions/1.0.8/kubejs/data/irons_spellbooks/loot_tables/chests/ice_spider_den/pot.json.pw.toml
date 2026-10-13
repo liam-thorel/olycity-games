@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/ice_spider_den/pot.json"
+filename = "pot.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/d35bc608cf47ff8b439606594102764b1418fc6948d352f7c59e56e3078ed98d"
+hash-format = "sha256"
+hash = "d35bc608cf47ff8b439606594102764b1418fc6948d352f7c59e56e3078ed98d"

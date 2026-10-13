@@ -1,0 +1,5 @@
+// Galena Iron Ore smelts to vanilla iron but lacks the standard iron ore tag.
+// Existing Mekanism processing recipes use this tag. No new metal is invented.
+ServerEvents.tags('item', function (event) {
+  event.add('forge:ores/iron', 'alexscaves:galena_iron_ore');
+});

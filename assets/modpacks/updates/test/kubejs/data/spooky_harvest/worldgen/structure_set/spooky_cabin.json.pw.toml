@@ -1,0 +1,8 @@
+name = "kubejs/data/spooky_harvest/worldgen/structure_set/spooky_cabin.json"
+filename = "spooky_cabin.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/f2c92be9336567ddefe655fecc05515df07fbca907fe5bd71c3245d08fce8e73"
+hash-format = "sha256"
+hash = "f2c92be9336567ddefe655fecc05515df07fbca907fe5bd71c3245d08fce8e73"

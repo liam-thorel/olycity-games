@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/catacombs/crypt_loot.json"
+filename = "crypt_loot.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/a51a41bb281fb671d3a4acb85956854e7efdf672729e5359546ee2b5f18e4c88"
+hash-format = "sha256"
+hash = "a51a41bb281fb671d3a4acb85956854e7efdf672729e5359546ee2b5f18e4c88"

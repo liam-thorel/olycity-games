@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/collectors_museum/museum_jail.json"
+filename = "museum_jail.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/5810ef35335041e2643ce9d6ad9aaceb58719739a437490e6cd9e82f9c2767d5"
+hash-format = "sha256"
+hash = "5810ef35335041e2643ce9d6ad9aaceb58719739a437490e6cd9e82f9c2767d5"

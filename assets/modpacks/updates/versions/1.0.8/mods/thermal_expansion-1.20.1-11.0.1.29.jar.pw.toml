@@ -1,0 +1,8 @@
+name = "mods/thermal_expansion-1.20.1-11.0.1.29.jar"
+filename = "thermal_expansion-1.20.1-11.0.1.29.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/f44d9e2476deb0ce2700c3837aa6e99c6a6bc95bc2d89d69ebe34b6c3a612633.jar"
+hash-format = "sha256"
+hash = "f44d9e2476deb0ce2700c3837aa6e99c6a6bc95bc2d89d69ebe34b6c3a612633"

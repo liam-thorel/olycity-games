@@ -1,0 +1,8 @@
+name = "kubejs/assets/kubejs/models/item/cerveau_liam.json"
+filename = "cerveau_liam.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/0d41b5892e21b54d42d6a7ef294d4b9f3975214f36458becdb99ebed34d3a671"
+hash-format = "sha256"
+hash = "0d41b5892e21b54d42d6a7ef294d4b9f3975214f36458becdb99ebed34d3a671"

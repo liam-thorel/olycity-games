@@ -1,0 +1,19 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 5193657,
+    "separation": 16,
+    "spacing": 32,
+    "spread_type": "triangular",
+    "exclusion_zone": {
+      "other_set": "cataclysm:ruined_citadel",
+      "chunk_count": 10
+    }
+  },
+  "structures": [
+    {
+      "structure": "endergetic:eetle_nest",
+      "weight": 1
+    }
+  ]
+}

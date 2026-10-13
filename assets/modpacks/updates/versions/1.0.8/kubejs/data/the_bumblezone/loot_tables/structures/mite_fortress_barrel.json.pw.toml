@@ -1,0 +1,8 @@
+name = "kubejs/data/the_bumblezone/loot_tables/structures/mite_fortress_barrel.json"
+filename = "mite_fortress_barrel.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/1f4c6a0a529b6a8cdf6f6fa698f7730558cdaf3b2c41895c956b4bd13525dcc1"
+hash-format = "sha256"
+hash = "1f4c6a0a529b6a8cdf6f6fa698f7730558cdaf3b2c41895c956b4bd13525dcc1"

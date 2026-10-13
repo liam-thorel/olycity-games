@@ -1,0 +1,8 @@
+name = "config/alexsmobs/hummingbird_spawns.json"
+filename = "hummingbird_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/6aa305d47ca32364d445c04c8a20da36a7ccef97955c27e834d4114604d2785d"
+hash-format = "sha256"
+hash = "6aa305d47ca32364d445c04c8a20da36a7ccef97955c27e834d4114604d2785d"

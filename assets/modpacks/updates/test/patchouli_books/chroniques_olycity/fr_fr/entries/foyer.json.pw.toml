@@ -1,8 +1,0 @@
-name = "patchouli_books/chroniques_olycity/fr_fr/entries/foyer.json"
-filename = "foyer.json"
-side = "both"
-
-[download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/4013512f950d727bb864e5ba72b766c276d3ea19787b04d423542434b322fd71"
-hash-format = "sha256"
-hash = "4013512f950d727bb864e5ba72b766c276d3ea19787b04d423542434b322fd71"

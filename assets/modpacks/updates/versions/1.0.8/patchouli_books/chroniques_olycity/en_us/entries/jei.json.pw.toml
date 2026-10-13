@@ -1,0 +1,8 @@
+name = "patchouli_books/chroniques_olycity/en_us/entries/jei.json"
+filename = "jei.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/e5e49027d8e69f1ada334d84e49846a80aed44b3c7f0c6b1e93947e78bcac8e4"
+hash-format = "sha256"
+hash = "e5e49027d8e69f1ada334d84e49846a80aed44b3c7f0c6b1e93947e78bcac8e4"

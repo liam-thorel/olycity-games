@@ -1,0 +1,8 @@
+name = "mods/forge-runiclib-1.20.1-4.3.11.jar"
+filename = "forge-runiclib-1.20.1-4.3.11.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/5e4c5d299b2beb746e7aa48add747654f617bd78da1e38996b29695d7698b260.jar"
+hash-format = "sha256"
+hash = "5e4c5d299b2beb746e7aa48add747654f617bd78da1e38996b29695d7698b260"

@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/trial_chambers/additional_ominous_vault_loot.json"
+filename = "additional_ominous_vault_loot.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/9a6ae64a9fedefd938c3b5a11158c166c673e892091fb217742c4ae8b8165ada"
+hash-format = "sha256"
+hash = "9a6ae64a9fedefd938c3b5a11158c166c673e892091fb217742c4ae8b8165ada"

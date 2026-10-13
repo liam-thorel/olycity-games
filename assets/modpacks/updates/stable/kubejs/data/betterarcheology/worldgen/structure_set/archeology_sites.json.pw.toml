@@ -1,0 +1,8 @@
+name = "kubejs/data/betterarcheology/worldgen/structure_set/archeology_sites.json"
+filename = "archeology_sites.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/3ed2fc81afc1dd91cc5e103d33d7e7b322cdf12fa021e2bcfbea9209bbe17c16"
+hash-format = "sha256"
+hash = "3ed2fc81afc1dd91cc5e103d33d7e7b322cdf12fa021e2bcfbea9209bbe17c16"

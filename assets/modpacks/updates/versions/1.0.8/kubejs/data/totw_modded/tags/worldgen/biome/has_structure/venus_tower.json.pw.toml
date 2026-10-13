@@ -1,0 +1,8 @@
+name = "kubejs/data/totw_modded/tags/worldgen/biome/has_structure/venus_tower.json"
+filename = "venus_tower.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/cfab4df5468ab2c95aaa185c098296083d517d63f6a1cf67e3b6b6455c1c647d"
+hash-format = "sha256"
+hash = "cfab4df5468ab2c95aaa185c098296083d517d63f6a1cf67e3b6b6455c1c647d"

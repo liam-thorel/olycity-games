@@ -1,0 +1,8 @@
+name = "kubejs/data/olycity/advancements/sleep.json"
+filename = "sleep.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/d843ad1d3a6d2682cd6520ba765f5abe286349ced2de8bdb8ed8639280c2a460"
+hash-format = "sha256"
+hash = "d843ad1d3a6d2682cd6520ba765f5abe286349ced2de8bdb8ed8639280c2a460"

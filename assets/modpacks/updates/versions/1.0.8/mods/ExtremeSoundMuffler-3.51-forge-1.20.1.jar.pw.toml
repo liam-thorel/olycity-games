@@ -1,0 +1,8 @@
+name = "mods/ExtremeSoundMuffler-3.51-forge-1.20.1.jar"
+filename = "ExtremeSoundMuffler-3.51-forge-1.20.1.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/5IIKsxiL/versions/drxm9tKI/ExtremeSoundMuffler-3.51-forge-1.20.1.jar"
+hash-format = "sha256"
+hash = "7f0a5d7f8bdcabb630c3a9034f815628831e7779475a5e707533fa454cfae83c"

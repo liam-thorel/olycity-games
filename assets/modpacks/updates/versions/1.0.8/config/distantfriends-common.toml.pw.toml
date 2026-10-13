@@ -1,0 +1,8 @@
+name = "config/distantfriends-common.toml"
+filename = "distantfriends-common.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/556eb7b8706d92662bababd89e7ade09b19625efe6e3ea25900084aee83195c8"
+hash-format = "sha256"
+hash = "556eb7b8706d92662bababd89e7ade09b19625efe6e3ea25900084aee83195c8"

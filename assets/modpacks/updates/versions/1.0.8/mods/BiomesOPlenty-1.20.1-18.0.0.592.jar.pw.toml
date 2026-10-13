@@ -1,0 +1,8 @@
+name = "mods/BiomesOPlenty-1.20.1-18.0.0.592.jar"
+filename = "BiomesOPlenty-1.20.1-18.0.0.592.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/c587b49931e62f89c2673936a5e7269c6daabb713dbcc30813cb0f76da37e01d.jar"
+hash-format = "sha256"
+hash = "c587b49931e62f89c2673936a5e7269c6daabb713dbcc30813cb0f76da37e01d"

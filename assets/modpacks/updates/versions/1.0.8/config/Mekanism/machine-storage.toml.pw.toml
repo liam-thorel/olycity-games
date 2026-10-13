@@ -1,0 +1,8 @@
+name = "config/Mekanism/machine-storage.toml"
+filename = "machine-storage.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/ade378e93c7dd046ee9317c424a3675784034ef23602b9d25a57c8a048face5f"
+hash-format = "sha256"
+hash = "ade378e93c7dd046ee9317c424a3675784034ef23602b9d25a57c8a048face5f"

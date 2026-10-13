@@ -1,0 +1,8 @@
+name = "mods/Bookshelf-Forge-1.20.1-20.2.15.jar"
+filename = "Bookshelf-Forge-1.20.1-20.2.15.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/7980d4a0beed1dcd2c283cf65f3c93f6b0085833f3ac490014979c95f1dfaf67.jar"
+hash-format = "sha256"
+hash = "7980d4a0beed1dcd2c283cf65f3c93f6b0085833f3ac490014979c95f1dfaf67"

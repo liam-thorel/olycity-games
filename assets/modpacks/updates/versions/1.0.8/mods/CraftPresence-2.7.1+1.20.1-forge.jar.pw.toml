@@ -1,0 +1,8 @@
+name = "mods/CraftPresence-2.7.1+1.20.1-forge.jar"
+filename = "CraftPresence-2.7.1+1.20.1-forge.jar"
+side = "client"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/ace7656dcf8878cf05e02b2691eccb5163fe9de94424fe83008901a9cd0679a7.jar"
+hash-format = "sha256"
+hash = "ace7656dcf8878cf05e02b2691eccb5163fe9de94424fe83008901a9cd0679a7"

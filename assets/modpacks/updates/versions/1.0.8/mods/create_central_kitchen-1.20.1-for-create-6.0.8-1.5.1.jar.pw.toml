@@ -1,0 +1,8 @@
+name = "mods/create_central_kitchen-1.20.1-for-create-6.0.8-1.5.1.jar"
+filename = "create_central_kitchen-1.20.1-for-create-6.0.8-1.5.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/133492121aaf465c3ac965ecbf22586f6f6056a7ff066a54f74b68bff9b5bff4.jar"
+hash-format = "sha256"
+hash = "133492121aaf465c3ac965ecbf22586f6f6056a7ff066a54f74b68bff9b5bff4"

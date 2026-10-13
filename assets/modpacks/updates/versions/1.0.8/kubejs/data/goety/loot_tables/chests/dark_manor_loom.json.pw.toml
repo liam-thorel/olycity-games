@@ -1,0 +1,8 @@
+name = "kubejs/data/goety/loot_tables/chests/dark_manor_loom.json"
+filename = "dark_manor_loom.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/af09affd1cad1325a33d8fb45ada164edc0325ddf2541be0a7020a148ccbf31b"
+hash-format = "sha256"
+hash = "af09affd1cad1325a33d8fb45ada164edc0325ddf2541be0a7020a148ccbf31b"

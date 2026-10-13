@@ -1,0 +1,8 @@
+name = "kubejs/server_scripts/olycity_mekanism_ore_compat.js"
+filename = "olycity_mekanism_ore_compat.js"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/e653c9c9f956e9a49ccc61241dadeef60142b6e10b6aaf243482c7e37da15608"
+hash-format = "sha256"
+hash = "e653c9c9f956e9a49ccc61241dadeef60142b6e10b6aaf243482c7e37da15608"

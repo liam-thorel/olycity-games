@@ -1,0 +1,8 @@
+name = "config/zeta-common.toml"
+filename = "zeta-common.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/684816927033626b990f8e277a43c0e24f6ef650cb38f9fee935f974fffd7392"
+hash-format = "sha256"
+hash = "684816927033626b990f8e277a43c0e24f6ef650cb38f9fee935f974fffd7392"

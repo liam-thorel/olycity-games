@@ -1,0 +1,8 @@
+name = "kubejs/data/the_bumblezone/loot_tables/structures/hive_voyager.json"
+filename = "hive_voyager.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/f26d0904c38ab0cde4665fb7cbf8e43f131474772729704db7ba2b6cab84a17c"
+hash-format = "sha256"
+hash = "f26d0904c38ab0cde4665fb7cbf8e43f131474772729704db7ba2b6cab84a17c"

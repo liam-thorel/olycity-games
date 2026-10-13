@@ -1,0 +1,8 @@
+name = "kubejs/data/goety/loot_tables/chests/shack_treasure.json"
+filename = "shack_treasure.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/6af0a1e6610b3debf867598a7b06ea1e9404db99760d9977e68787e1456cddc0"
+hash-format = "sha256"
+hash = "6af0a1e6610b3debf867598a7b06ea1e9404db99760d9977e68787e1456cddc0"

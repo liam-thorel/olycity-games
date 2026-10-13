@@ -1,8 +1,0 @@
-name = "kubejs/assets/kubejs/patchouli_books/chroniques_olycity/fr_fr/entries/premier_projet.json"
-filename = "premier_projet.json"
-side = "both"
-
-[download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/f9f5d8798434a463b4ac596276418dc26196f1f2bdcb4b1fcad7fa896f8fa74e"
-hash-format = "sha256"
-hash = "f9f5d8798434a463b4ac596276418dc26196f1f2bdcb4b1fcad7fa896f8fa74e"

@@ -1,0 +1,8 @@
+name = "kubejs/assets/patchouli/patchouli_books/chroniques_olycity/fr_fr/entries/liam_stockage.json"
+filename = "liam_stockage.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/c2ab56ca6e8f454be4f59791c9553a93cb9de812f023b0c9cacff467b0857d12"
+hash-format = "sha256"
+hash = "c2ab56ca6e8f454be4f59791c9553a93cb9de812f023b0c9cacff467b0857d12"

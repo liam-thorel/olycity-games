@@ -1,0 +1,8 @@
+name = "mods/meed-1.20.1-8.1.0.jar"
+filename = "meed-1.20.1-8.1.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/1dxbxzCg/versions/AC6PrsIF/meed-1.20.1-8.1.0.jar"
+hash-format = "sha256"
+hash = "899c40c9d8173262379038876be22433b715bd40296af94403f577e8da79204d"

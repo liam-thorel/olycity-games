@@ -1,0 +1,119 @@
+[general]
+showOreNotExistRecipes = false
+
+[ores.aluminum]
+processingLevel = 5
+
+[ores.amethyst]
+processingLevel = 0
+
+[ores.apatite]
+processingLevel = 0
+
+[ores.azure_silver]
+processingLevel = 0
+
+[ores.bismuth]
+processingLevel = 0
+
+[ores.boron]
+processingLevel = 0
+
+[ores.bort]
+processingLevel = 0
+
+[ores.cinnabar]
+processingLevel = 0
+
+[ores.cobalt]
+processingLevel = 0
+
+[ores.crimson_iron]
+processingLevel = 0
+
+[ores.desh]
+processingLevel = 0
+
+[ores.dilithium]
+processingLevel = 0
+
+[ores.draconium]
+processingLevel = 0
+
+[ores.electrotine]
+processingLevel = 0
+
+[ores.green_sapphire]
+processingLevel = 0
+
+[ores.iridium]
+processingLevel = 0
+
+[ores.lithium]
+processingLevel = 0
+
+[ores.magnesium]
+processingLevel = 0
+
+[ores.nickel]
+processingLevel = 5
+
+[ores.niter]
+processingLevel = 0
+
+[ores.peridot]
+processingLevel = 0
+
+[ores.platinum]
+processingLevel = 0
+
+[ores.ruby]
+processingLevel = 0
+
+[ores.sapphire]
+processingLevel = 0
+
+[ores.ostrum]
+processingLevel = 0
+
+[ores.calorite]
+processingLevel = 0
+
+[ores.silver]
+processingLevel = 5
+
+[ores.sulfur]
+processingLevel = 0
+
+[ores.titanium]
+processingLevel = 0
+
+[ores.tungsten]
+processingLevel = 0
+
+[ores.thorium]
+processingLevel = 0
+
+[ores.zinc]
+processingLevel = 5
+
+[ores.palladium]
+processingLevel = 0
+
+[ores.coal]
+processingLevel = 0
+
+[ores.lapis]
+processingLevel = 0
+
+[ores.diamond]
+processingLevel = 0
+
+[ores.redstone]
+processingLevel = 0
+
+[ores.emerald]
+processingLevel = 0
+
+[ores.quartz]
+processingLevel = 0

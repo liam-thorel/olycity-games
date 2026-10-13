@@ -1,0 +1,8 @@
+name = "kubejs/data/hexerei/loot_tables/chests/nature_coven_coffer.json"
+filename = "nature_coven_coffer.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/a42a10d59992d73f0d73cbebeb59e7301d351a2b4bf5caec529dc1212b861c93"
+hash-format = "sha256"
+hash = "a42a10d59992d73f0d73cbebeb59e7301d351a2b4bf5caec529dc1212b861c93"

@@ -1,8 +1,0 @@
-name = "kubejs/assets/kubejs/patchouli_books/chroniques_olycity/en_us/entries/machines.json"
-filename = "machines.json"
-side = "both"
-
-[download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/67c766d4381d1656ba94957dbeca1255145b905783eb8fcdfff381e3fc7ce9a9"
-hash-format = "sha256"
-hash = "67c766d4381d1656ba94957dbeca1255145b905783eb8fcdfff381e3fc7ce9a9"

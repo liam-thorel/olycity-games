@@ -1,0 +1,8 @@
+name = "kubejs/data/betterdungeons/worldgen/structure_set/small_dungeons.json"
+filename = "small_dungeons.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/5ae6cd3dad08f133bdd0af5c67a635511e4723f98afe44c3773865edf196403f"
+hash-format = "sha256"
+hash = "5ae6cd3dad08f133bdd0af5c67a635511e4723f98afe44c3773865edf196403f"

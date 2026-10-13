@@ -1,0 +1,8 @@
+name = "kubejs/data/tardis/structures/rooms/tardis_grid_arstree.nbt"
+filename = "tardis_grid_arstree.nbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/37d6960dcfb61f045e721d8c0710778b66210547a197424e09f075c3a35e099b"
+hash-format = "sha256"
+hash = "37d6960dcfb61f045e721d8c0710778b66210547a197424e09f075c3a35e099b"

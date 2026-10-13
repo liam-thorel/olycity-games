@@ -1,0 +1,8 @@
+name = "kubejs/data/meed/recipes/block_factorys_bosses/poison.json"
+filename = "poison.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/482b47a06c694646f88bf2dde67af2803f5a15d337369d291ce75718559e00fc"
+hash-format = "sha256"
+hash = "482b47a06c694646f88bf2dde67af2803f5a15d337369d291ce75718559e00fc"

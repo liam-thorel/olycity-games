@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/village/crystal_dunes.json"
+filename = "crystal_dunes.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/42c5e5232d556a69318e6038f5af3dfb3ea3f42152b56de081f10e0565cf915d"
+hash-format = "sha256"
+hash = "42c5e5232d556a69318e6038f5af3dfb3ea3f42152b56de081f10e0565cf915d"

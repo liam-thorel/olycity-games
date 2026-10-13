@@ -1,0 +1,8 @@
+name = "kubejs/data/ars-expanded/tardis/ars_room/rooms/tardis_grid_secondary_abandoned.json"
+filename = "tardis_grid_secondary_abandoned.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/7f5b3ae56cc66005bb62f52bada689c55a8ac21014c348d803a3ae71728d2b08"
+hash-format = "sha256"
+hash = "7f5b3ae56cc66005bb62f52bada689c55a8ac21014c348d803a3ae71728d2b08"

@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/archmages_tower/archmages_tower_library.json"
+filename = "archmages_tower_library.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/264a478829222a3753a148ea30d8759d8e96dfb73baa294f7b5ef1c0928598fa"
+hash-format = "sha256"
+hash = "264a478829222a3753a148ea30d8759d8e96dfb73baa294f7b5ef1c0928598fa"

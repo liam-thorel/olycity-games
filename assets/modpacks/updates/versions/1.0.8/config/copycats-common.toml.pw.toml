@@ -1,0 +1,8 @@
+name = "config/copycats-common.toml"
+filename = "copycats-common.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/6eae5e6f03453087e9493c578bce1f1a8d33d13191a8827651e52d37797555af"
+hash-format = "sha256"
+hash = "6eae5e6f03453087e9493c578bce1f1a8d33d13191a8827651e52d37797555af"

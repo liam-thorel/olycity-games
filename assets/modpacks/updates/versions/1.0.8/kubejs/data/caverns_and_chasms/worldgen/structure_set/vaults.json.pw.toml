@@ -1,0 +1,8 @@
+name = "kubejs/data/caverns_and_chasms/worldgen/structure_set/vaults.json"
+filename = "vaults.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/18d199690484b2c301dba45886831c8b948d3ad391ac8ff8e696a3c8e2e9f6a2"
+hash-format = "sha256"
+hash = "18d199690484b2c301dba45886831c8b948d3ad391ac8ff8e696a3c8e2e9f6a2"

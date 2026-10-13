@@ -1,8 +1,0 @@
-name = "kubejs/assets/kubejs/patchouli_books/chroniques_olycity/fr_fr/entries/donjons.json"
-filename = "donjons.json"
-side = "both"
-
-[download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/b3c9b255461290ac78b6b660e15ceb690c0ddd5c4811c32c67d52bac07bd9cd4"
-hash-format = "sha256"
-hash = "b3c9b255461290ac78b6b660e15ceb690c0ddd5c4811c32c67d52bac07bd9cd4"

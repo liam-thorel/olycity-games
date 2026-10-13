@@ -1,0 +1,8 @@
+name = "defaultconfigs/ftbchunks/ftbchunks-world.snbt"
+filename = "ftbchunks-world.snbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/9d5b4c3b4b3497fe769f5d6bcc3a619526104a099abff6e596eee6bcd27893df"
+hash-format = "sha256"
+hash = "9d5b4c3b4b3497fe769f5d6bcc3a619526104a099abff6e596eee6bcd27893df"

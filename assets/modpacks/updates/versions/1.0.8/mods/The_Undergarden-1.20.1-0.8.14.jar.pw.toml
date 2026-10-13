@@ -1,0 +1,8 @@
+name = "mods/The_Undergarden-1.20.1-0.8.14.jar"
+filename = "The_Undergarden-1.20.1-0.8.14.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/43029e388ab455f8c9bcfc8653b9a57a3eb1ff6b435cf6e58722d2d4c50d2444.jar"
+hash-format = "sha256"
+hash = "43029e388ab455f8c9bcfc8653b9a57a3eb1ff6b435cf6e58722d2d4c50d2444"

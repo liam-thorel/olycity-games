@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/village/shaded_woodlands.json"
+filename = "shaded_woodlands.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/d512beb9badabd4de067b71aee5ae06384334daf8d8e9077d590f9c31168ac3d"
+hash-format = "sha256"
+hash = "d512beb9badabd4de067b71aee5ae06384334daf8d8e9077d590f9c31168ac3d"

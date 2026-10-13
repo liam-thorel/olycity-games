@@ -1,0 +1,8 @@
+name = "config/brandon3055/contributors.json"
+filename = "contributors.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/f8ea9acca35ec7a715a2926c048e57522d4e18e4cfc6d1c5106271f8f0f80005"
+hash-format = "sha256"
+hash = "f8ea9acca35ec7a715a2926c048e57522d4e18e4cfc6d1c5106271f8f0f80005"

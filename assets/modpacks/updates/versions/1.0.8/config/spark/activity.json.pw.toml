@@ -1,0 +1,8 @@
+name = "config/spark/activity.json"
+filename = "activity.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/8bbdfb74a2e2b8361c954034b178cf2628386cffed1c38f0195b11a26580731e"
+hash-format = "sha256"
+hash = "8bbdfb74a2e2b8361c954034b178cf2628386cffed1c38f0195b11a26580731e"

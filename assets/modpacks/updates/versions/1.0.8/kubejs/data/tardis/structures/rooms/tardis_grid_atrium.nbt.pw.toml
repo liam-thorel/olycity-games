@@ -1,0 +1,8 @@
+name = "kubejs/data/tardis/structures/rooms/tardis_grid_atrium.nbt"
+filename = "tardis_grid_atrium.nbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/740793d7e62fcf228feded11281501730f9490e37c03e15020101dcd0fb56612"
+hash-format = "sha256"
+hash = "740793d7e62fcf228feded11281501730f9490e37c03e15020101dcd0fb56612"

@@ -1,0 +1,8 @@
+name = "mods/balm-forge-1.20.1-7.3.44.jar"
+filename = "balm-forge-1.20.1-7.3.44.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/c9dc421214fa3eccdcd5ad4d8974a422acef09396f5ee0f6250ae44cf5902810.jar"
+hash-format = "sha256"
+hash = "c9dc421214fa3eccdcd5ad4d8974a422acef09396f5ee0f6250ae44cf5902810"

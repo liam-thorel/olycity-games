@@ -1,0 +1,8 @@
+name = "kubejs/data/betterarcheology/worldgen/structure_set/fossil_sites.json"
+filename = "fossil_sites.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/3e3263aa9f7707dbdd057f7ac65dda40e93d33c25fa1be13750686f5dcf2960a"
+hash-format = "sha256"
+hash = "3e3263aa9f7707dbdd057f7ac65dda40e93d33c25fa1be13750686f5dcf2960a"

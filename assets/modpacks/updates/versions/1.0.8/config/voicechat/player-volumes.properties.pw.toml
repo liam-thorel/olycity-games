@@ -1,0 +1,8 @@
+name = "config/voicechat/player-volumes.properties"
+filename = "player-volumes.properties"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/0332261861a5ace96f503e85b0d48a8df74ea6c2f3545cd229543a6afb55ad96"
+hash-format = "sha256"
+hash = "0332261861a5ace96f503e85b0d48a8df74ea6c2f3545cd229543a6afb55ad96"

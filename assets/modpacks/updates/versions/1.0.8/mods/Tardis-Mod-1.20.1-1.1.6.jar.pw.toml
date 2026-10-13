@@ -1,0 +1,8 @@
+name = "mods/Tardis-Mod-1.20.1-1.1.6.jar"
+filename = "Tardis-Mod-1.20.1-1.1.6.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/2e070b9e5ab9295fb515719ce8bb0be591675e77fe519e7667369e8732a99e61.jar"
+hash-format = "sha256"
+hash = "2e070b9e5ab9295fb515719ce8bb0be591675e77fe519e7667369e8732a99e61"

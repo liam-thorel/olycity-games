@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/village/sunset_maple_forest.json"
+filename = "sunset_maple_forest.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/b5e03d28e34bf066e18d49933966d93269daadfe34c230be3d32633f7644e129"
+hash-format = "sha256"
+hash = "b5e03d28e34bf066e18d49933966d93269daadfe34c230be3d32633f7644e129"

@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 5123513,
+    "separation": 16,
+    "spacing": 40,
+    "exclusion_zone": {
+      "other_set": "dungeoncrawl:dungeons",
+      "chunk_count": 8
+    }
+  },
+  "structures": [
+    {
+      "structure": "caverns_and_chasms:vault",
+      "weight": 1
+    }
+  ]
+}

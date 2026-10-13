@@ -3,6 +3,6 @@ filename = "place_deflector.json"
 side = "both"
 
 [download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/5546e8b9d781da674f24bb2c050cc09196334b4c8491fc32cb652ce88e4e6353"
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/05015d7fe570b1b2a5763115f16d5cba795aafc3636b326522a90edfd9c33677"
 hash-format = "sha256"
-hash = "5546e8b9d781da674f24bb2c050cc09196334b4c8491fc32cb652ce88e4e6353"
+hash = "05015d7fe570b1b2a5763115f16d5cba795aafc3636b326522a90edfd9c33677"

@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/dread_citadel/dread_citadel_library.json"
+filename = "dread_citadel_library.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/84a362fe6efa7409b95b03074ab0ef5c29af8e63c138449cf0cc594920d00d81"
+hash-format = "sha256"
+hash = "84a362fe6efa7409b95b03074ab0ef5c29af8e63c138449cf0cc594920d00d81"

@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/dig_site/dig_site_desert.json"
+filename = "dig_site_desert.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/a6341947be44fc54bf0b1d1b99615748a6f9b5d22ea6e48695cc76d8af4ce94f"
+hash-format = "sha256"
+hash = "a6341947be44fc54bf0b1d1b99615748a6f9b5d22ea6e48695cc76d8af4ce94f"

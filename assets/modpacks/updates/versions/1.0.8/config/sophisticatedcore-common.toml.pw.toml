@@ -1,0 +1,8 @@
+name = "config/sophisticatedcore-common.toml"
+filename = "sophisticatedcore-common.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/29c6c6a839d141267aadfed66e45ed64011e20e30bb6094e824e49ba64be6fdc"
+hash-format = "sha256"
+hash = "29c6c6a839d141267aadfed66e45ed64011e20e30bb6094e824e49ba64be6fdc"

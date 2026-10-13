@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/priest_house.json"
+filename = "priest_house.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/62d1a888fe98597b2ec6050234b7b58bc26078f45380096cad0d55291ccbb5c7"
+hash-format = "sha256"
+hash = "62d1a888fe98597b2ec6050234b7b58bc26078f45380096cad0d55291ccbb5c7"

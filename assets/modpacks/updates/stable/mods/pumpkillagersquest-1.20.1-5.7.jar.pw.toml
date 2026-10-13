@@ -1,0 +1,8 @@
+name = "mods/pumpkillagersquest-1.20.1-5.7.jar"
+filename = "pumpkillagersquest-1.20.1-5.7.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/KhJx1K92/versions/sC2Q5f36/pumpkillagersquest-1.20.1-5.7.jar"
+hash-format = "sha256"
+hash = "f8be9041e8466973e4166a1eafc0bac943e01a240efe48861995ddfe92fc41b2"

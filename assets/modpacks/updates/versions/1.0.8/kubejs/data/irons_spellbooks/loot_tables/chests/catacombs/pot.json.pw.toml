@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/catacombs/pot.json"
+filename = "pot.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/c8d282c88caeb1dc1931968689dd4b2b4e73d1c9f687baa429c3a58b35a1d231"
+hash-format = "sha256"
+hash = "c8d282c88caeb1dc1931968689dd4b2b4e73d1c9f687baa429c3a58b35a1d231"

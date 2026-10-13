@@ -1,0 +1,8 @@
+name = "kubejs/assets/foolish/models/displaysettings/immortalartillery.json"
+filename = "immortalartillery.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/be8d59a24fb2cc55ddb18149a0ed9165e9059992e0060ec58a725a70bfdc59a9"
+hash-format = "sha256"
+hash = "be8d59a24fb2cc55ddb18149a0ed9165e9059992e0060ec58a725a70bfdc59a9"

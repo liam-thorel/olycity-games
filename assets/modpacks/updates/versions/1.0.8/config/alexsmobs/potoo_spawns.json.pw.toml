@@ -1,0 +1,8 @@
+name = "config/alexsmobs/potoo_spawns.json"
+filename = "potoo_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/59c5832a40ef0e7212a4d499862f931a5dfcd3ff6d68598153f1274191b0939d"
+hash-format = "sha256"
+hash = "59c5832a40ef0e7212a4d499862f931a5dfcd3ff6d68598153f1274191b0939d"

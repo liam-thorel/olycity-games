@@ -1,0 +1,8 @@
+name = "mods/champions-forge-1.20.1-2.1.12.7.jar"
+filename = "champions-forge-1.20.1-2.1.12.7.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/8005/960/champions-forge-1.20.1-2.1.12.7.jar"
+hash-format = "sha256"
+hash = "b5f36bd89dc6876d5a6bdc0ee16c097146fd1470d3d6803ea8789bd3bea4a651"

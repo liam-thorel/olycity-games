@@ -1,0 +1,8 @@
+name = "mods/caverns_and_chasms-1.20.1-2.1.3.jar"
+filename = "caverns_and_chasms-1.20.1-2.1.3.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/tfjmPSbI/versions/TWaOFuHm/caverns_and_chasms-1.20.1-2.1.3.jar"
+hash-format = "sha256"
+hash = "27c08a8d0b146b8e20c1ff87b26d7264db20531e680bc1395978f267b6e3b69f"

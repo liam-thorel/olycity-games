@@ -1,0 +1,8 @@
+name = "config/torchmaster.toml"
+filename = "torchmaster.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/8e6a91f152a24b60d2d03ebecb980527249f009382d2548af84e973f1d59c220"
+hash-format = "sha256"
+hash = "8e6a91f152a24b60d2d03ebecb980527249f009382d2548af84e973f1d59c220"

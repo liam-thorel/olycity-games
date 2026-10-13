@@ -1,0 +1,8 @@
+name = "kubejs/data/champions/tags/entity_types/allow_champions.json"
+filename = "allow_champions.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/0303af4da8ea17900bdca5351412a09cda54d61ffee46f148e9f2ad3619cc290"
+hash-format = "sha256"
+hash = "0303af4da8ea17900bdca5351412a09cda54d61ffee46f148e9f2ad3619cc290"

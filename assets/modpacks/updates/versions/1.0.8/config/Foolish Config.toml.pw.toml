@@ -1,0 +1,8 @@
+name = "config/Foolish Config.toml"
+filename = "Foolish Config.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/974c0daaacd98f31783f39ae52e1bcdc3706f47d9d77348ea2497ff1338923c0"
+hash-format = "sha256"
+hash = "974c0daaacd98f31783f39ae52e1bcdc3706f47d9d77348ea2497ff1338923c0"

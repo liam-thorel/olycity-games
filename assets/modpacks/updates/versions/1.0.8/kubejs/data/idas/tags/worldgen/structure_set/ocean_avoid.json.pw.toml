@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/tags/worldgen/structure_set/ocean_avoid.json"
+filename = "ocean_avoid.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/de04fe6f4e24ebd849e8c3ae310bdf9f10ec873a15469e74b08a2cc1934c1cd0"
+hash-format = "sha256"
+hash = "de04fe6f4e24ebd849e8c3ae310bdf9f10ec873a15469e74b08a2cc1934c1cd0"

@@ -1,0 +1,8 @@
+name = "kubejs/assets/kubejs/models/item/pasteque_solidarite.json"
+filename = "pasteque_solidarite.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/cde98c3c0dc8f054d076f8f5f2e3ffa75bc3376fcc46adbac96632a4e3c11055"
+hash-format = "sha256"
+hash = "cde98c3c0dc8f054d076f8f5f2e3ffa75bc3376fcc46adbac96632a4e3c11055"

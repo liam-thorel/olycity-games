@@ -1,0 +1,8 @@
+name = "mods/libIPN-forge-1.20-4.0.2.jar"
+filename = "libIPN-forge-1.20-4.0.2.jar"
+side = "client"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/cb96fa15eddc74c243677f7f5b6e3ecaa87bb33f4854ae0353646f304058add6.jar"
+hash-format = "sha256"
+hash = "cb96fa15eddc74c243677f7f5b6e3ecaa87bb33f4854ae0353646f304058add6"

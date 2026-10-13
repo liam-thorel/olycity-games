@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/abandonedhouse/abandonedhouse_library.json"
+filename = "abandonedhouse_library.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/80078c3aaa25e8b45bc843391abf283fa0228b4312e5a17239d6375edcef90aa"
+hash-format = "sha256"
+hash = "80078c3aaa25e8b45bc843391abf283fa0228b4312e5a17239d6375edcef90aa"

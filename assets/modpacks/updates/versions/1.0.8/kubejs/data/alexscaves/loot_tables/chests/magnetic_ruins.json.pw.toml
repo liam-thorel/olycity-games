@@ -1,0 +1,8 @@
+name = "kubejs/data/alexscaves/loot_tables/chests/magnetic_ruins.json"
+filename = "magnetic_ruins.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/c73158f0b10d8154b9fb662d9de31f119b78e092c8ed26e86dd98a5db7f70012"
+hash-format = "sha256"
+hash = "c73158f0b10d8154b9fb662d9de31f119b78e092c8ed26e86dd98a5db7f70012"

@@ -1,0 +1,8 @@
+name = "kubejs/data/rats/loot_tables/chest/plague_doctor_hut.json"
+filename = "plague_doctor_hut.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/4c45bc80d484f45f40010c526f81512be281cb8da5e53b298e99914d77baabc6"
+hash-format = "sha256"
+hash = "4c45bc80d484f45f40010c526f81512be281cb8da5e53b298e99914d77baabc6"

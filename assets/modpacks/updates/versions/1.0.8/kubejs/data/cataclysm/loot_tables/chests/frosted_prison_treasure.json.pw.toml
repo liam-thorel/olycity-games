@@ -1,0 +1,8 @@
+name = "kubejs/data/cataclysm/loot_tables/chests/frosted_prison_treasure.json"
+filename = "frosted_prison_treasure.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/b0362fbb131d7f7d407eae0487a715a25ecc76d2fb4d9e4387771a73f93a226f"
+hash-format = "sha256"
+hash = "b0362fbb131d7f7d407eae0487a715a25ecc76d2fb4d9e4387771a73f93a226f"

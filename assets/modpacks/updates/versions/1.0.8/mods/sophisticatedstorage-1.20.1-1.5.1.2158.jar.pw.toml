@@ -1,0 +1,8 @@
+name = "mods/sophisticatedstorage-1.20.1-1.5.1.2158.jar"
+filename = "sophisticatedstorage-1.20.1-1.5.1.2158.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1.0.7-20261011/52539640420de37680dce6850545723a2fd6bd3ccdfb633dbb179a075576ed7f.jar"
+hash-format = "sha256"
+hash = "52539640420de37680dce6850545723a2fd6bd3ccdfb633dbb179a075576ed7f"

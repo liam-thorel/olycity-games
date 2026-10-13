@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/blinding_dungeon/study_chest.json"
+filename = "study_chest.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/1c4cebca3fc9685d8cc373be1917a914f50c9294bd80d4b2e07ad618dc6343d5"
+hash-format = "sha256"
+hash = "1c4cebca3fc9685d8cc373be1917a914f50c9294bd80d4b2e07ad618dc6343d5"

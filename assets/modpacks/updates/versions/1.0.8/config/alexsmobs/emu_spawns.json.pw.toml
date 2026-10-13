@@ -1,0 +1,8 @@
+name = "config/alexsmobs/emu_spawns.json"
+filename = "emu_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/70e30e058709266e665eb6642df126eeee744d05e63d77344501e78cb4a37851"
+hash-format = "sha256"
+hash = "70e30e058709266e665eb6642df126eeee744d05e63d77344501e78cb4a37851"

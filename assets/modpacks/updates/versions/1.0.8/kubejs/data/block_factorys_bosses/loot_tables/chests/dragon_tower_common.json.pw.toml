@@ -1,0 +1,8 @@
+name = "kubejs/data/block_factorys_bosses/loot_tables/chests/dragon_tower_common.json"
+filename = "dragon_tower_common.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/71f176b4e17df49ebad66de2ed1beb116c7bf8300d02f563ea25d3a0a4fd200d"
+hash-format = "sha256"
+hash = "71f176b4e17df49ebad66de2ed1beb116c7bf8300d02f563ea25d3a0a4fd200d"

@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/treetop_tavern/treetop_tavern_bedroom.json"
+filename = "treetop_tavern_bedroom.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/9f7e752ff6933fd3af4394174a6b8e2fd8bea0f30cbaacccfac1e7bf201f00de"
+hash-format = "sha256"
+hash = "9f7e752ff6933fd3af4394174a6b8e2fd8bea0f30cbaacccfac1e7bf201f00de"

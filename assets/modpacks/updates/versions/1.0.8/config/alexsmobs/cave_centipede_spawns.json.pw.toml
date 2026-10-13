@@ -1,0 +1,8 @@
+name = "config/alexsmobs/cave_centipede_spawns.json"
+filename = "cave_centipede_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/973b8ebc19fa04e02b050f28359ee6bffbae93367f49ecac10892f4a2c1dad7d"
+hash-format = "sha256"
+hash = "973b8ebc19fa04e02b050f28359ee6bffbae93367f49ecac10892f4a2c1dad7d"

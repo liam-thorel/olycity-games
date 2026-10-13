@@ -1,0 +1,8 @@
+name = "kubejs/data/totw_modded/tags/worldgen/biome/has_structure/tw_mangrove_tower.json"
+filename = "tw_mangrove_tower.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/e4482bd82aadfa61dffd889fdf86a88a65932854e93cafb18e5d96dc7e1a552a"
+hash-format = "sha256"
+hash = "e4482bd82aadfa61dffd889fdf86a88a65932854e93cafb18e5d96dc7e1a552a"

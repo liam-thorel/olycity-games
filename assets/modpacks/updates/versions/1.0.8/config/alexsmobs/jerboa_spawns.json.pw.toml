@@ -1,0 +1,8 @@
+name = "config/alexsmobs/jerboa_spawns.json"
+filename = "jerboa_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/c4b2ef89d9ad5c4dffcebb51209837da430b166c5767c1a38d90911c4445b124"
+hash-format = "sha256"
+hash = "c4b2ef89d9ad5c4dffcebb51209837da430b166c5767c1a38d90911c4445b124"

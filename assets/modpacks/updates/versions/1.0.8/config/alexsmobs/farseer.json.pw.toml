@@ -1,0 +1,8 @@
+name = "config/alexsmobs/farseer.json"
+filename = "farseer.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/c245528d844458d8ac416572ee0df7575bb23d58beb07367d4cd55c66fec9000"
+hash-format = "sha256"
+hash = "c245528d844458d8ac416572ee0df7575bb23d58beb07367d4cd55c66fec9000"

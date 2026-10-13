@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/worldgen/structure_set/idas_common.json"
+filename = "idas_common.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/a82307e8d243a9d97aaef5889ac99e4916dc9436818d7bea54b808921387effd"
+hash-format = "sha256"
+hash = "a82307e8d243a9d97aaef5889ac99e4916dc9436818d7bea54b808921387effd"

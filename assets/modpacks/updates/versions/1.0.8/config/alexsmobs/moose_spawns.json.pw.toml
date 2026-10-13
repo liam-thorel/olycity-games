@@ -1,0 +1,8 @@
+name = "config/alexsmobs/moose_spawns.json"
+filename = "moose_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/abac051da2458ec848604b66a6d7889f7c715060bb9706c1d1822155127d096c"
+hash-format = "sha256"
+hash = "abac051da2458ec848604b66a6d7889f7c715060bb9706c1d1822155127d096c"

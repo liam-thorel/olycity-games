@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "placed": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "weather2:weather_deflector"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

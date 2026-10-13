@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/village/village_fisher.json"
+filename = "village_fisher.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/809975971c287c60d256670df3c5939854b61f084a824399469e6da55ac808c9"
+hash-format = "sha256"
+hash = "809975971c287c60d256670df3c5939854b61f084a824399469e6da55ac808c9"

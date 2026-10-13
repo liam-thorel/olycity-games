@@ -1,0 +1,8 @@
+name = "mods/hexerei-0.4.2.2.jar"
+filename = "hexerei-0.4.2.2.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/45eb8b93b2efed9f3a8edab0b997f2c72e638be776e2d01d562cca42f2eb9602.jar"
+hash-format = "sha256"
+hash = "45eb8b93b2efed9f3a8edab0b997f2c72e638be776e2d01d562cca42f2eb9602"

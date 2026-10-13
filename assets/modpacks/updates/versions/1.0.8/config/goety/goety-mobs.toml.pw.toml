@@ -1,0 +1,8 @@
+name = "config/goety/goety-mobs.toml"
+filename = "goety-mobs.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/01f99f91db520dc046cfa4c5b8b7907de2a08c3051e35c35c1dd231bae9b9e97"
+hash-format = "sha256"
+hash = "01f99f91db520dc046cfa4c5b8b7907de2a08c3051e35c35c1dd231bae9b9e97"

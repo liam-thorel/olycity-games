@@ -1,0 +1,8 @@
+name = "kubejs/assets/industrialforegoing/blockstates/machine_frame_pity.json"
+filename = "machine_frame_pity.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/cef4a95121585b8dc004f7a32736dd3eef86840301a6331fa21d9c429036d7ba"
+hash-format = "sha256"
+hash = "cef4a95121585b8dc004f7a32736dd3eef86840301a6331fa21d9c429036d7ba"

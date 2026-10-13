@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/citadel/rampart_chest.json"
+filename = "rampart_chest.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/18fd9985de0936a4bbb2ff7713e52f940d42f5e6af68d9b41a1032f8fa18e39b"
+hash-format = "sha256"
+hash = "18fd9985de0936a4bbb2ff7713e52f940d42f5e6af68d9b41a1032f8fa18e39b"

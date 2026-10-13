@@ -1,0 +1,8 @@
+name = "config/pneumaticcraft-common.toml"
+filename = "pneumaticcraft-common.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/72a800d878606ae8438c06ccd174ebf8e745fd3c386a6dfa349cca7c6bfb3f1c"
+hash-format = "sha256"
+hash = "72a800d878606ae8438c06ccd174ebf8e745fd3c386a6dfa349cca7c6bfb3f1c"

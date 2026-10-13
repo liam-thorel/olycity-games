@@ -1,0 +1,8 @@
+name = "mods/the_bumblezone-7.14.0+1.20.1-forge.jar"
+filename = "the_bumblezone-7.14.0+1.20.1-forge.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/f5a1b33bd8c342f1ec2940f352caea241cec133abb510ccb8eb53379483e4509.jar"
+hash-format = "sha256"
+hash = "f5a1b33bd8c342f1ec2940f352caea241cec133abb510ccb8eb53379483e4509"

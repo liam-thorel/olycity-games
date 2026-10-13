@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/fishermans_lodge/fishermans_lodge.json"
+filename = "fishermans_lodge.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/827645b4766b1acf8fcc0e19bc5685b498f87b1c68f4eaa85b68c0931206e183"
+hash-format = "sha256"
+hash = "827645b4766b1acf8fcc0e19bc5685b498f87b1c68f4eaa85b68c0931206e183"

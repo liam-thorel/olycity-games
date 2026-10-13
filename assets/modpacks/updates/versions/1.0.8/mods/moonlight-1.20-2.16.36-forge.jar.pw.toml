@@ -1,0 +1,8 @@
+name = "mods/moonlight-1.20-2.16.36-forge.jar"
+filename = "moonlight-1.20-2.16.36-forge.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/45281b40263924fc2da20552b0dda873cdd3d8db6acf6425f2a4d5fda63e74c2.jar"
+hash-format = "sha256"
+hash = "45281b40263924fc2da20552b0dda873cdd3d8db6acf6425f2a4d5fda63e74c2"

@@ -1,0 +1,8 @@
+name = "config/ftbquests/quests/chapters/02_aventure.snbt"
+filename = "02_aventure.snbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/238ce1cac6d2dbd5b412be474705b7fe0c4293d03ff60b53308c197b65c07f54"
+hash-format = "sha256"
+hash = "238ce1cac6d2dbd5b412be474705b7fe0c4293d03ff60b53308c197b65c07f54"

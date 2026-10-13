@@ -1,0 +1,8 @@
+name = "mods/CreativeCore_FORGE_v2.12.40_mc1.20.1.jar"
+filename = "CreativeCore_FORGE_v2.12.40_mc1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/936de62489c0d6fbe74202486cbe2b191b8629b02bab1d480acfdb03690f33f4.jar"
+hash-format = "sha256"
+hash = "936de62489c0d6fbe74202486cbe2b191b8629b02bab1d480acfdb03690f33f4"

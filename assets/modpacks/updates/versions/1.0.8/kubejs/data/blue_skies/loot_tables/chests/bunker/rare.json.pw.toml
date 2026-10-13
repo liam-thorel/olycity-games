@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/bunker/rare.json"
+filename = "rare.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/878c2d20b4429e58ce674c8dc512cf48068521cef61a7449a5033300ad15e161"
+hash-format = "sha256"
+hash = "878c2d20b4429e58ce674c8dc512cf48068521cef61a7449a5033300ad15e161"

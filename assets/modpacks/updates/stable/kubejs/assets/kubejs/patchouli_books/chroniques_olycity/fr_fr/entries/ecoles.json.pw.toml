@@ -1,8 +1,0 @@
-name = "kubejs/assets/kubejs/patchouli_books/chroniques_olycity/fr_fr/entries/ecoles.json"
-filename = "ecoles.json"
-side = "both"
-
-[download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/ee3e57b22b5938efca450f83c18a1551824dede97c0f97a9c67c4224cc8b89de"
-hash-format = "sha256"
-hash = "ee3e57b22b5938efca450f83c18a1551824dede97c0f97a9c67c4224cc8b89de"

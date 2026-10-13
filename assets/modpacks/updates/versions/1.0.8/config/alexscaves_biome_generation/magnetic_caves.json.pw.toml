@@ -1,0 +1,8 @@
+name = "config/alexscaves_biome_generation/magnetic_caves.json"
+filename = "magnetic_caves.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/cf811ff0e46881d7993eb4910d9891ff6472554b613d3b3940deb0c6f1e0a779"
+hash-format = "sha256"
+hash = "cf811ff0e46881d7993eb4910d9891ff6472554b613d3b3940deb0c6f1e0a779"

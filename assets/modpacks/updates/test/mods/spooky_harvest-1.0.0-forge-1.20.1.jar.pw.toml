@@ -1,0 +1,8 @@
+name = "mods/spooky_harvest-1.0.0-forge-1.20.1.jar"
+filename = "spooky_harvest-1.0.0-forge-1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://edge.forgecdn.net/files/7102/315/spooky_harvest-1.0.0-forge-1.20.1.jar"
+hash-format = "sha256"
+hash = "0559f4d25895205a35c16c160976eca82b1de948483ad3e11da7a460d55ee803"

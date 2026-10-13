@@ -1,8 +1,0 @@
-name = "kubejs/assets/kubejs/patchouli_books/chroniques_olycity/fr_fr/entries/dimensions.json"
-filename = "dimensions.json"
-side = "both"
-
-[download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/778cea99a44a5cceb9432bfcafac8a3ffc0cee9a77e119a9d49199a4f76cbb22"
-hash-format = "sha256"
-hash = "778cea99a44a5cceb9432bfcafac8a3ffc0cee9a77e119a9d49199a4f76cbb22"

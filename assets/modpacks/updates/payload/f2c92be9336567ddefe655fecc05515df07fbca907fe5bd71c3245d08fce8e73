@@ -1,0 +1,18 @@
+{
+  "structures": [
+    {
+      "structure": "spooky_harvest:spooky_cabin",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 32,
+    "separation": 16,
+    "salt": 524085908,
+    "exclusion_zone": {
+      "other_set": "autumnity:maple_huts",
+      "chunk_count": 6
+    }
+  }
+}

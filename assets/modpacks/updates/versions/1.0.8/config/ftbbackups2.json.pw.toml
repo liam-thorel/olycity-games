@@ -1,0 +1,8 @@
+name = "config/ftbbackups2.json"
+filename = "ftbbackups2.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/047e568dac74578214e9f711e8d8c5360bcd6995377fe81ece7cd6042e4f3656"
+hash-format = "sha256"
+hash = "047e568dac74578214e9f711e8d8c5360bcd6995377fe81ece7cd6042e4f3656"

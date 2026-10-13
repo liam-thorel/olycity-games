@@ -1,0 +1,8 @@
+name = "mods/modonomicon-1.20.1-forge-1.79.3.jar"
+filename = "modonomicon-1.20.1-forge-1.79.3.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/6a95475102948bff7046b53bc3882ebfdfcf8f0d7a5d14fe612e63680cfe18a3.jar"
+hash-format = "sha256"
+hash = "6a95475102948bff7046b53bc3882ebfdfcf8f0d7a5d14fe612e63680cfe18a3"

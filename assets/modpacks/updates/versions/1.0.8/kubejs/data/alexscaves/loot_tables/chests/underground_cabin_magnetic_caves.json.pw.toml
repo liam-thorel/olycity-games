@@ -1,0 +1,8 @@
+name = "kubejs/data/alexscaves/loot_tables/chests/underground_cabin_magnetic_caves.json"
+filename = "underground_cabin_magnetic_caves.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/ca77945a069fcad6cb622c390881d602b253899f033feffa7fe843f521b49873"
+hash-format = "sha256"
+hash = "ca77945a069fcad6cb622c390881d602b253899f033feffa7fe843f521b49873"

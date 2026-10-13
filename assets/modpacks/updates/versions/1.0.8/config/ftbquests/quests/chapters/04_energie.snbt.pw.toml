@@ -1,0 +1,8 @@
+name = "config/ftbquests/quests/chapters/04_energie.snbt"
+filename = "04_energie.snbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/c5fc985d2455af9fffce6af8f8449d04e52bbbae31f57173930e2edec69e5a97"
+hash-format = "sha256"
+hash = "c5fc985d2455af9fffce6af8f8449d04e52bbbae31f57173930e2edec69e5a97"

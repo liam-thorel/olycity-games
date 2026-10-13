@@ -1,0 +1,8 @@
+name = "mods/modernfix-forge-5.27.85+mc1.20.1.jar"
+filename = "modernfix-forge-5.27.85+mc1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/12b76f627e34ddf9211766ad7a1d5f2bb3de8d0807935d2d20f357b907f481b8.jar"
+hash-format = "sha256"
+hash = "12b76f627e34ddf9211766ad7a1d5f2bb3de8d0807935d2d20f357b907f481b8"

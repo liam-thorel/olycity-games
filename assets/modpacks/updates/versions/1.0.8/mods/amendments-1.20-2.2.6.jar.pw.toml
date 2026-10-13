@@ -1,0 +1,8 @@
+name = "mods/amendments-1.20-2.2.6.jar"
+filename = "amendments-1.20-2.2.6.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/46c7e1276bc77a0843267a6aeee381af61f16bedc7949447fff49eeb7aeb7917.jar"
+hash-format = "sha256"
+hash = "46c7e1276bc77a0843267a6aeee381af61f16bedc7949447fff49eeb7aeb7917"

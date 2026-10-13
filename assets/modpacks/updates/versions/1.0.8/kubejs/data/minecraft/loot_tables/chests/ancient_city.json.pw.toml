@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/ancient_city.json"
+filename = "ancient_city.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/a7e5c131b32d631db53e325d2ca4827dbac9f361708164e397c6f24f5a1a6d7b"
+hash-format = "sha256"
+hash = "a7e5c131b32d631db53e325d2ca4827dbac9f361708164e397c6f24f5a1a6d7b"

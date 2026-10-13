@@ -1,0 +1,8 @@
+name = "kubejs/data/aether/loot_tables/chests/dungeon/silver/silver_dungeon.json"
+filename = "silver_dungeon.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/acc89697a88af7664f6c7cac814f97bc580365d0b177109d06ecd2cfbe374571"
+hash-format = "sha256"
+hash = "acc89697a88af7664f6c7cac814f97bc580365d0b177109d06ecd2cfbe374571"

@@ -1,0 +1,8 @@
+name = "config/alexscaves_biome_generation/candy_cavity.json"
+filename = "candy_cavity.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/02120d68d535ce346b1d66d42a039a0683ee4432b8537d70fbb2f1bf59c4d364"
+hash-format = "sha256"
+hash = "02120d68d535ce346b1d66d42a039a0683ee4432b8537d70fbb2f1bf59c4d364"

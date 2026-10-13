@@ -1,0 +1,8 @@
+name = "mods/abnormals_delight-1.20.1-5.0.1.jar"
+filename = "abnormals_delight-1.20.1-5.0.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ts3qjo5t/versions/vvM8zPPK/abnormals_delight-1.20.1-5.0.1.jar"
+hash-format = "sha256"
+hash = "e839316b3919b32a9915d4c4b8ed6df96052550f7f5f19165310777200252a13"
