@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/jungle_temple.json"
+filename = "jungle_temple.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/c1c473fb21d33b0adeb0d9103ea9c6144de43e3cf0e9bcc929c296329c7f3b48"
+hash-format = "sha256"
+hash = "c1c473fb21d33b0adeb0d9103ea9c6144de43e3cf0e9bcc929c296329c7f3b48"

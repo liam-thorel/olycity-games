@@ -1,0 +1,8 @@
+name = "mods/FastLeafDecay-31.jar"
+filename = "FastLeafDecay-31.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/82d05b4e92d68a38a1648c82dbdc1e69be59b0eddafc7f1024a43d18fc2e60b3.jar"
+hash-format = "sha256"
+hash = "82d05b4e92d68a38a1648c82dbdc1e69be59b0eddafc7f1024a43d18fc2e60b3"

@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/battleground/piglin_camp.json"
+filename = "piglin_camp.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/d6bc81048d4d791c337c11446dd488bdcbe311e1f72c99578c347c17d489501e"
+hash-format = "sha256"
+hash = "d6bc81048d4d791c337c11446dd488bdcbe311e1f72c99578c347c17d489501e"

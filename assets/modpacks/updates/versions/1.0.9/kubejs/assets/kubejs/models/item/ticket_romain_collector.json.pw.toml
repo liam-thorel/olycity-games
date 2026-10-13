@@ -1,0 +1,8 @@
+name = "kubejs/assets/kubejs/models/item/ticket_romain_collector.json"
+filename = "ticket_romain_collector.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/09f293cfaaa0bd07de7a498a6c819a88f1c060a6d804abd9f2c3c80ba7e7b456"
+hash-format = "sha256"
+hash = "09f293cfaaa0bd07de7a498a6c819a88f1c060a6d804abd9f2c3c80ba7e7b456"

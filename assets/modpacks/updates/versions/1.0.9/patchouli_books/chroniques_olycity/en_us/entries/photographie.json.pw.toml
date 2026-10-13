@@ -1,0 +1,8 @@
+name = "patchouli_books/chroniques_olycity/en_us/entries/photographie.json"
+filename = "photographie.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/34de76827fe0fb3da218963d3911bbd521df262ae24b1d9fce70863152e4a1d3"
+hash-format = "sha256"
+hash = "34de76827fe0fb3da218963d3911bbd521df262ae24b1d9fce70863152e4a1d3"

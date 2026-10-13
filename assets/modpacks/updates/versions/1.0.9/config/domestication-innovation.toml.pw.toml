@@ -1,0 +1,8 @@
+name = "config/domestication-innovation.toml"
+filename = "domestication-innovation.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/8df5ed720b6f4e65dde564ca501ac9a4ba095684361ea90aff6110a905561d00"
+hash-format = "sha256"
+hash = "8df5ed720b6f4e65dde564ca501ac9a4ba095684361ea90aff6110a905561d00"

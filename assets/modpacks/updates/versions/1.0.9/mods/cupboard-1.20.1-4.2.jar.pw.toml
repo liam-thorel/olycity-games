@@ -1,0 +1,8 @@
+name = "mods/cupboard-1.20.1-4.2.jar"
+filename = "cupboard-1.20.1-4.2.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/6a384b880c2429e017f83657438e1fc00d091592cc2860d6d2986094bac5d48f.jar"
+hash-format = "sha256"
+hash = "6a384b880c2429e017f83657438e1fc00d091592cc2860d6d2986094bac5d48f"

@@ -1,0 +1,8 @@
+name = "mods/industrial-foregoing-1.20.1-3.5.22.jar"
+filename = "industrial-foregoing-1.20.1-3.5.22.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/9220ddde2c259c8dfa5c05ad23b26650dc9b2f3048c4aca3b1d9d6f4cd211f3d.jar"
+hash-format = "sha256"
+hash = "9220ddde2c259c8dfa5c05ad23b26650dc9b2f3048c4aca3b1d9d6f4cd211f3d"

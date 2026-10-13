@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/integrated_structure_spawners/archmages_tower.json"
+filename = "archmages_tower.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/fef6fd024e9b2cc504a2be007c679f09939ea6699feee5ff3749d218b0057bff"
+hash-format = "sha256"
+hash = "fef6fd024e9b2cc504a2be007c679f09939ea6699feee5ff3749d218b0057bff"

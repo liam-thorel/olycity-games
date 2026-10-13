@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/desert_pyramid/desert_pyramid_treasure.json"
+filename = "desert_pyramid_treasure.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/bcb3a9600e554670291ef2b71dec00815d898433845d7e37dcb050b0571cdb0b"
+hash-format = "sha256"
+hash = "bcb3a9600e554670291ef2b71dec00815d898433845d7e37dcb050b0571cdb0b"

@@ -1,0 +1,8 @@
+name = "config/Weather2/Misc.toml"
+filename = "Misc.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/1aa0491d199ce1ed1c9f8e4b887a73e5ceb949a5a846777638841e8d510ee99c"
+hash-format = "sha256"
+hash = "1aa0491d199ce1ed1c9f8e4b887a73e5ceb949a5a846777638841e8d510ee99c"

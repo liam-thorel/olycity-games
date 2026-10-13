@@ -1,0 +1,8 @@
+name = "mods/supermartijn642configlib-1.1.8-forge-mc1.20.jar"
+filename = "supermartijn642configlib-1.1.8-forge-mc1.20.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1.0.2-20261008/bea425ef7e9cd27a7fc0f4b89e00cbd0a1ee050f071ecaa9f28f7238f400f0a3.jar"
+hash-format = "sha256"
+hash = "bea425ef7e9cd27a7fc0f4b89e00cbd0a1ee050f071ecaa9f28f7238f400f0a3"

@@ -1,0 +1,8 @@
+name = "mods/exposure-1.20.1-1.7.16-forge.jar"
+filename = "exposure-1.20.1-1.7.16-forge.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1.0.2-20261008/55a8351bffc41b0d4a520d004c05561d4d76c1a1128f364bd4a44251c00f1de9.jar"
+hash-format = "sha256"
+hash = "55a8351bffc41b0d4a520d004c05561d4d76c1a1128f364bd4a44251c00f1de9"

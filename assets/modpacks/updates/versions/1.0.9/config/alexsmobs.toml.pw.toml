@@ -1,0 +1,8 @@
+name = "config/alexsmobs.toml"
+filename = "alexsmobs.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/7c01df704a66653df7793e4c6a856815be283106df03765f196c89bd962d463c"
+hash-format = "sha256"
+hash = "7c01df704a66653df7793e4c6a856815be283106df03765f196c89bd962d463c"

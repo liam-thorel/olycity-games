@@ -1,0 +1,8 @@
+name = "config/ftbquests/quests/chapters/atm9_undergarden.snbt"
+filename = "atm9_undergarden.snbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/50e488004fdd93eb619efec63319bbb2b0fb32ef8501a1c683cf96ba37803bde"
+hash-format = "sha256"
+hash = "50e488004fdd93eb619efec63319bbb2b0fb32ef8501a1c683cf96ba37803bde"

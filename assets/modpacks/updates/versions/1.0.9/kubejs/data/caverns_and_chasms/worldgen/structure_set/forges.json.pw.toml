@@ -1,0 +1,8 @@
+name = "kubejs/data/caverns_and_chasms/worldgen/structure_set/forges.json"
+filename = "forges.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/b5f91cc74d57725d33657d50083f01763d86e74576caebe5c0d8f86e701e96d1"
+hash-format = "sha256"
+hash = "b5f91cc74d57725d33657d50083f01763d86e74576caebe5c0d8f86e701e96d1"

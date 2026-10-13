@@ -1,0 +1,8 @@
+name = "kubejs/data/the_bumblezone/loot_tables/structures/battle_cubes.json"
+filename = "battle_cubes.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/881a02b5dd177df08ffebb61c37b433c5a238dc0fbb47efbe5ab0332317b7a0f"
+hash-format = "sha256"
+hash = "881a02b5dd177df08ffebb61c37b433c5a238dc0fbb47efbe5ab0332317b7a0f"

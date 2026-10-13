@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/abandonedhouse/abandonedhouse_create.json"
+filename = "abandonedhouse_create.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/6030f69075ce6161fafee741f99b207be104a88a43c9efc06d3d25b0cf6d4e63"
+hash-format = "sha256"
+hash = "6030f69075ce6161fafee741f99b207be104a88a43c9efc06d3d25b0cf6d4e63"

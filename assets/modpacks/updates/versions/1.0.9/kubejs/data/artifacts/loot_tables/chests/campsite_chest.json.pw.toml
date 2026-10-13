@@ -1,0 +1,8 @@
+name = "kubejs/data/artifacts/loot_tables/chests/campsite_chest.json"
+filename = "campsite_chest.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/0d79d302bf77fe06a53b8a6b703fbe8aaa95bc635fdeadc43ec9c467ad2c0a43"
+hash-format = "sha256"
+hash = "0d79d302bf77fe06a53b8a6b703fbe8aaa95bc635fdeadc43ec9c467ad2c0a43"

@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/worldgen/structure_set/idas_ocean.json"
+filename = "idas_ocean.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/3674f46af14d153dd83b1437a5084af38577ce157ad92254560b31234ad1243f"
+hash-format = "sha256"
+hash = "3674f46af14d153dd83b1437a5084af38577ce157ad92254560b31234ad1243f"

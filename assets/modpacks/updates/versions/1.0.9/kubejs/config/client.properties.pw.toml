@@ -1,0 +1,8 @@
+name = "kubejs/config/client.properties"
+filename = "client.properties"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/008611c5ce7826ab6350660915aa8e2ae97b6cb4728717edee357f864b886ab4"
+hash-format = "sha256"
+hash = "008611c5ce7826ab6350660915aa8e2ae97b6cb4728717edee357f864b886ab4"

@@ -1,0 +1,8 @@
+name = "kubejs/data/artifacts/loot_tables/chests/campsite_barrel.json"
+filename = "campsite_barrel.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/ca8caa113ac76b9ca03c2c8576e20e2dbba23ad0e8d757675f051df7e85cf3fd"
+hash-format = "sha256"
+hash = "ca8caa113ac76b9ca03c2c8576e20e2dbba23ad0e8d757675f051df7e85cf3fd"

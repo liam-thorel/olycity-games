@@ -1,0 +1,8 @@
+name = "defaultconfigs/ftbessentials-server.snbt"
+filename = "ftbessentials-server.snbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/5536a42c464907a6be4540f136b6f0ca46d38bfdf9bc6e243b8e5b20482b4148"
+hash-format = "sha256"
+hash = "5536a42c464907a6be4540f136b6f0ca46d38bfdf9bc6e243b8e5b20482b4148"

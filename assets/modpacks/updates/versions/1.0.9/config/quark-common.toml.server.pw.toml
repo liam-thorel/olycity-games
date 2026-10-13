@@ -1,0 +1,8 @@
+name = "config/quark-common.toml"
+filename = "quark-common.toml"
+side = "server"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/6f2ce4a8bda6be8594d2f5d7369a767ed58eb2ed9aac6a1dd6b43449d4471c9b"
+hash-format = "sha256"
+hash = "6f2ce4a8bda6be8594d2f5d7369a767ed58eb2ed9aac6a1dd6b43449d4471c9b"

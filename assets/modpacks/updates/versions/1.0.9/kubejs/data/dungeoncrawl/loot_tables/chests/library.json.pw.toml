@@ -1,0 +1,8 @@
+name = "kubejs/data/dungeoncrawl/loot_tables/chests/library.json"
+filename = "library.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/0edf20325310a0c94ce75a1ba3eca269ed8ed713f089cb2de044e63decba6f2b"
+hash-format = "sha256"
+hash = "0edf20325310a0c94ce75a1ba3eca269ed8ed713f089cb2de044e63decba6f2b"

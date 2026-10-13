@@ -1,0 +1,8 @@
+name = "mods/GlitchCore-forge-1.20.1-0.0.1.1.jar"
+filename = "GlitchCore-forge-1.20.1-0.0.1.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/dedd857b1ee356f002471ec97a2174c7d193d6d1aede60782d0bbe2c241b2a7f.jar"
+hash-format = "sha256"
+hash = "dedd857b1ee356f002471ec97a2174c7d193d6d1aede60782d0bbe2c241b2a7f"

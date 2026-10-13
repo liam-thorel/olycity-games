@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/village/profession/everdawn/toolsmith.json"
+filename = "toolsmith.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/c18ab040fb5cd78fd8e2d3ac7a82ae1b37929d7bcc491fcc52d409527d02385e"
+hash-format = "sha256"
+hash = "c18ab040fb5cd78fd8e2d3ac7a82ae1b37929d7bcc491fcc52d409527d02385e"

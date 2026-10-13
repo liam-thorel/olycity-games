@@ -1,0 +1,8 @@
+name = "mods/immersive_melodies-0.8.0+1.20.1-forge.jar"
+filename = "immersive_melodies-0.8.0+1.20.1-forge.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1.0.2-20261008/bf330d4204723f824e6adddce95e02bed13270095dd6f0e28dbea39da5bfdf9e.jar"
+hash-format = "sha256"
+hash = "bf330d4204723f824e6adddce95e02bed13270095dd6f0e28dbea39da5bfdf9e"

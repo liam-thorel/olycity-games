@@ -1,0 +1,8 @@
+name = "kubejs/data/goety/loot_tables/chests/sorcerous_keep_barrel.json"
+filename = "sorcerous_keep_barrel.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/c1a9132bbcf6e3ca49a6c1dc47f3777dc96c92dd23dde0c6e9090575dab02f84"
+hash-format = "sha256"
+hash = "c1a9132bbcf6e3ca49a6c1dc47f3777dc96c92dd23dde0c6e9090575dab02f84"

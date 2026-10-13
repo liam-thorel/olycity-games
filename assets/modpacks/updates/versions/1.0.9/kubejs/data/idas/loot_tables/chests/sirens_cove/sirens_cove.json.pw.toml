@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/sirens_cove/sirens_cove.json"
+filename = "sirens_cove.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/401ae59bb30efc64b137256d67d68f265b8232102fd26de1e04adf1b91d31db2"
+hash-format = "sha256"
+hash = "401ae59bb30efc64b137256d67d68f265b8232102fd26de1e04adf1b91d31db2"

@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/village/profession/everdawn/library.json"
+filename = "library.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/e2b4fd3e8fde52b9190e0385597d6a818a95cb6d22b7741494fd5f9716d2d212"
+hash-format = "sha256"
+hash = "e2b4fd3e8fde52b9190e0385597d6a818a95cb6d22b7741494fd5f9716d2d212"

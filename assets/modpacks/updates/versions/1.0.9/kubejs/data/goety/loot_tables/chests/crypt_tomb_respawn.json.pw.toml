@@ -1,0 +1,8 @@
+name = "kubejs/data/goety/loot_tables/chests/crypt_tomb_respawn.json"
+filename = "crypt_tomb_respawn.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/815ffb7c7a9475568666346eae3381777d44c2581a64a15c57be4b38d9acccd4"
+hash-format = "sha256"
+hash = "815ffb7c7a9475568666346eae3381777d44c2581a64a15c57be4b38d9acccd4"

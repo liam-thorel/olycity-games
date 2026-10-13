@@ -1,0 +1,8 @@
+name = "config/bettermineshafts-forge-1_20.toml"
+filename = "bettermineshafts-forge-1_20.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/016afc8af06af822bdaa07681699b3c068ec26274116b30b359d5ff03ef9ce11"
+hash-format = "sha256"
+hash = "016afc8af06af822bdaa07681699b3c068ec26274116b30b359d5ff03ef9ce11"

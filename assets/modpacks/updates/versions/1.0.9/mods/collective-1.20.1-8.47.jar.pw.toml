@@ -1,0 +1,8 @@
+name = "mods/collective-1.20.1-8.47.jar"
+filename = "collective-1.20.1-8.47.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/e0M1UDsY/versions/o2ddiXpo/collective-1.20.1-8.47.jar"
+hash-format = "sha256"
+hash = "c29888c45207bfc4bc40ef85264f4d7db3a21ee4f20a5af4b9ec79da05d0e7d2"

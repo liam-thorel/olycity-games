@@ -1,0 +1,8 @@
+name = "kubejs/data/block_factorys_bosses/loot_tables/chests/underworld_arena_vault.json"
+filename = "underworld_arena_vault.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/30f42dce6bedc84039284bf8aee37a43cc518abe4cdf86bf330cee32b2f2ca00"
+hash-format = "sha256"
+hash = "30f42dce6bedc84039284bf8aee37a43cc518abe4cdf86bf330cee32b2f2ca00"

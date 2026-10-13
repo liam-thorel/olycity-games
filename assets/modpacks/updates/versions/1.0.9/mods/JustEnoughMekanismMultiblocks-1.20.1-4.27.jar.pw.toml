@@ -1,0 +1,8 @@
+name = "mods/JustEnoughMekanismMultiblocks-1.20.1-4.27.jar"
+filename = "JustEnoughMekanismMultiblocks-1.20.1-4.27.jar"
+side = "client"
+
+[download]
+url = "https://edge.forgecdn.net/files/9068/209/JustEnoughMekanismMultiblocks-1.20.1-4.27.jar"
+hash-format = "sha256"
+hash = "d4b228fb6da4e6b75dae68719b1b3fd3926561b6394e2ecc0643e93895d6b5b3"

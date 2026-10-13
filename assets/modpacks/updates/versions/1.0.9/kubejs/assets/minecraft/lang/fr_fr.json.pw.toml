@@ -1,0 +1,8 @@
+name = "kubejs/assets/minecraft/lang/fr_fr.json"
+filename = "fr_fr.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/8f804430f088c96ca63a6e5fd8ea16582a20c2e115384f06cd9e26a51303689b"
+hash-format = "sha256"
+hash = "8f804430f088c96ca63a6e5fd8ea16582a20c2e115384f06cd9e26a51303689b"

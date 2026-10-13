@@ -1,0 +1,8 @@
+name = "kubejs/data/goety/loot_tables/chests/blacksmith_loot.json"
+filename = "blacksmith_loot.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/cea83b4732829dc0f7f5f28d91a6bb19403612693c246305c1887cae9ac02687"
+hash-format = "sha256"
+hash = "cea83b4732829dc0f7f5f28d91a6bb19403612693c246305c1887cae9ac02687"

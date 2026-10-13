@@ -1,0 +1,8 @@
+name = "config/titanium/titanium.toml"
+filename = "titanium.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/565e7782790d656fd31350ef9d90cb8ff8b4f38d1fb2418072829fb404195e58"
+hash-format = "sha256"
+hash = "565e7782790d656fd31350ef9d90cb8ff8b4f38d1fb2418072829fb404195e58"

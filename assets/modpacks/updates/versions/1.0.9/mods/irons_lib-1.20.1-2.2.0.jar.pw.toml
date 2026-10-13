@@ -1,0 +1,8 @@
+name = "mods/irons_lib-1.20.1-2.2.0.jar"
+filename = "irons_lib-1.20.1-2.2.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/48f1c1d80fa85b0ddea59465bef9ac86fc1e46c58caaea839c8e8f89f29b9ebb.jar"
+hash-format = "sha256"
+hash = "48f1c1d80fa85b0ddea59465bef9ac86fc1e46c58caaea839c8e8f89f29b9ebb"

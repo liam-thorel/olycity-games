@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/winter_wagon/winter_wagon.json"
+filename = "winter_wagon.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/dfc16dbf4a2cc1cc5b1951f270fcdf83e55027f42f9e7bd0615d4632587063c3"
+hash-format = "sha256"
+hash = "dfc16dbf4a2cc1cc5b1951f270fcdf83e55027f42f9e7bd0615d4632587063c3"

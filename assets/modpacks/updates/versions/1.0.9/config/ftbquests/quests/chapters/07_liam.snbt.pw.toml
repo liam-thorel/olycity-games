@@ -1,0 +1,8 @@
+name = "config/ftbquests/quests/chapters/07_liam.snbt"
+filename = "07_liam.snbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/0954a3619605d1f695710e57a8b102812e9c632e3a1c7611f2556a8c440b9c07"
+hash-format = "sha256"
+hash = "0954a3619605d1f695710e57a8b102812e9c632e3a1c7611f2556a8c440b9c07"

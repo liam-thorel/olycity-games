@@ -1,0 +1,8 @@
+name = "1.1.25 Forge (1.20.1)"
+filename = "Iceberg-1.20.1-forge-1.1.25.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/5faXoLqX/versions/BQ8rJPXV/Iceberg-1.20.1-forge-1.1.25.jar"
+hash-format = "sha256"
+hash = "91ad6b459e0c7a16a9f3dc90230248a696600ceec6646aa23263559b8648dbc3"

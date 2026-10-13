@@ -1,0 +1,8 @@
+name = "kubejs/assets/patchouli/patchouli_books/chroniques_olycity/en_us/entries/objectifs.json"
+filename = "objectifs.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/8c6e334bb8ec1de050268c42a33a78af7b8f82518ad27bd41570583f4db5e6c7"
+hash-format = "sha256"
+hash = "8c6e334bb8ec1de050268c42a33a78af7b8f82518ad27bd41570583f4db5e6c7"

@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/shipwreck_treasure.json"
+filename = "shipwreck_treasure.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/3a8e1680bb3cb49a468c8c72c481787f9e109fe3a8c5b7af8fdbe56b05c0c53a"
+hash-format = "sha256"
+hash = "3a8e1680bb3cb49a468c8c72c481787f9e109fe3a8c5b7af8fdbe56b05c0c53a"

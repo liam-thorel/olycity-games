@@ -1,0 +1,8 @@
+name = "patchouli_books/chroniques_olycity/fr_fr/entries/romain_sortie.json"
+filename = "romain_sortie.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/920f67aa74a75cdf097c907b586d868e2ea70961f649748d450ddebd6d3e56eb"
+hash-format = "sha256"
+hash = "920f67aa74a75cdf097c907b586d868e2ea70961f649748d450ddebd6d3e56eb"

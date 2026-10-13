@@ -1,0 +1,8 @@
+name = "kubejs/data/dungeoncrawl/worldgen/structure_set/dungeons.json"
+filename = "dungeons.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/3270b81879ed28f01918315a9393ab9051a1d6ae4269bd87300e6bc15f4e0cfd"
+hash-format = "sha256"
+hash = "3270b81879ed28f01918315a9393ab9051a1d6ae4269bd87300e6bc15f4e0cfd"

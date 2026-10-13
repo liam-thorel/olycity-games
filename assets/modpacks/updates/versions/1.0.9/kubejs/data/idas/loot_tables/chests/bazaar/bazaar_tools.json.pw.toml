@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/bazaar/bazaar_tools.json"
+filename = "bazaar_tools.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/ceb8c7734867d235b767e6944e917ad96a2fad275d1ba14eced3eb1d4bdb5a4e"
+hash-format = "sha256"
+hash = "ceb8c7734867d235b767e6944e917ad96a2fad275d1ba14eced3eb1d4bdb5a4e"

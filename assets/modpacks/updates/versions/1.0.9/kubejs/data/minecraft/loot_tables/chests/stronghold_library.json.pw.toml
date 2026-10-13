@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/stronghold_library.json"
+filename = "stronghold_library.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/182db604ecf8d17bff2e00e41bc05c6a88cb026888ea3bd1b94a26b176fd1b49"
+hash-format = "sha256"
+hash = "182db604ecf8d17bff2e00e41bc05c6a88cb026888ea3bd1b94a26b176fd1b49"

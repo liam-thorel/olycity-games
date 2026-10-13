@@ -1,0 +1,8 @@
+name = "config/webdisplays_common.toml"
+filename = "webdisplays_common.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/deea092db92ef67d2026653e46ead6e0a61fb384bdb2e16514c27f9c1e06acbf"
+hash-format = "sha256"
+hash = "deea092db92ef67d2026653e46ead6e0a61fb384bdb2e16514c27f9c1e06acbf"

@@ -1,0 +1,8 @@
+name = "config/ftbquests/quests/chapters/atm9_create.snbt"
+filename = "atm9_create.snbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/f20116f8e111a1e035503137d92a5f88fa68b1a566786170d04477a6c8074c7e"
+hash-format = "sha256"
+hash = "f20116f8e111a1e035503137d92a5f88fa68b1a566786170d04477a6c8074c7e"

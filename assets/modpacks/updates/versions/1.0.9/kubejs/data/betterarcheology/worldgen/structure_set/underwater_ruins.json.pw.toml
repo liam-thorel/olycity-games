@@ -1,0 +1,8 @@
+name = "kubejs/data/betterarcheology/worldgen/structure_set/underwater_ruins.json"
+filename = "underwater_ruins.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/f64b16878309381c43b6d8952fcd18e15983620d521bca63af4a10fd310b2fb9"
+hash-format = "sha256"
+hash = "f64b16878309381c43b6d8952fcd18e15983620d521bca63af4a10fd310b2fb9"

@@ -1,0 +1,8 @@
+name = "kubejs/assets/kubejs/textures/item/ticket_romain.png"
+filename = "ticket_romain.png"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/e7e60dc7f297b6252c7fed189244ed2623620086dd7122f054ce51c0cc204f89"
+hash-format = "sha256"
+hash = "e7e60dc7f297b6252c7fed189244ed2623620086dd7122f054ce51c0cc204f89"

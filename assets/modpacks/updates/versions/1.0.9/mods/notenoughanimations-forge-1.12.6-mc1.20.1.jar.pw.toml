@@ -1,0 +1,8 @@
+name = "1.12.6-1.20.1 - Forge"
+filename = "notenoughanimations-forge-1.12.6-mc1.20.1.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/MPCX6s5C/versions/kGjMleOz/notenoughanimations-forge-1.12.6-mc1.20.1.jar"
+hash-format = "sha256"
+hash = "66f1f6d61102dd03a4afafe4c9f1d39be9e55dabc8d0821cb46acca1328b525d"

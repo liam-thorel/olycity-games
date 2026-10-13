@@ -1,0 +1,8 @@
+name = "kubejs/data/watching/loot_tables/events/dreadful_donation/english.json"
+filename = "english.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/bd79acf057c72ae79c6d1690c4f8c863265531e59e9bf8e4a78c96b25c0cf050"
+hash-format = "sha256"
+hash = "bd79acf057c72ae79c6d1690c4f8c863265531e59e9bf8e4a78c96b25c0cf050"

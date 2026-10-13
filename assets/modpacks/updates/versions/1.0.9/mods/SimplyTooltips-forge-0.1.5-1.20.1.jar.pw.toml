@@ -1,0 +1,8 @@
+name = "mods/SimplyTooltips-forge-0.1.5-1.20.1.jar"
+filename = "SimplyTooltips-forge-0.1.5-1.20.1.jar"
+side = "client"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/a50357b4982132522f48afc6fa625c453359390f8180e4c72f6288ecd46dee3c.jar"
+hash-format = "sha256"
+hash = "a50357b4982132522f48afc6fa625c453359390f8180e4c72f6288ecd46dee3c"

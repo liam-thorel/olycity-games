@@ -1,0 +1,8 @@
+name = "config/Weather2/Storm.toml"
+filename = "Storm.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/c756e8c13e16d8e162dab46091b437dfad0d41d3f648dfa293a9fd8ea8e5e419"
+hash-format = "sha256"
+hash = "c756e8c13e16d8e162dab46091b437dfad0d41d3f648dfa293a9fd8ea8e5e419"

@@ -1,0 +1,8 @@
+name = "config/ae2/common.json"
+filename = "common.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/f390a5328244fa4f300041b581369bd17fbb6194824574a7cae47523ed01b046"
+hash-format = "sha256"
+hash = "f390a5328244fa4f300041b581369bd17fbb6194824574a7cae47523ed01b046"

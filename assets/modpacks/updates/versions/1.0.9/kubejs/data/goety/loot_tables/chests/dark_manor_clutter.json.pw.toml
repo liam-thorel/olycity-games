@@ -1,0 +1,8 @@
+name = "kubejs/data/goety/loot_tables/chests/dark_manor_clutter.json"
+filename = "dark_manor_clutter.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/a734c2baf0cc16cd0bca6b9c86d3858c8e38b8d000160bf26ed4a7d4339b8563"
+hash-format = "sha256"
+hash = "a734c2baf0cc16cd0bca6b9c86d3858c8e38b8d000160bf26ed4a7d4339b8563"

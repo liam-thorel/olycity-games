@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/abandoned_mineshaft.json"
+filename = "abandoned_mineshaft.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/792c3ce398ff747094ba6763195b09f6b5b5d06096cbb8dffad6803803d6d050"
+hash-format = "sha256"
+hash = "792c3ce398ff747094ba6763195b09f6b5b5d06096cbb8dffad6803803d6d050"

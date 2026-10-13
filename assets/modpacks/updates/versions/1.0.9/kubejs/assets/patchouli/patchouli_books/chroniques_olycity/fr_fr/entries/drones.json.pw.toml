@@ -1,0 +1,8 @@
+name = "kubejs/assets/patchouli/patchouli_books/chroniques_olycity/fr_fr/entries/drones.json"
+filename = "drones.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/2617c3d11e6fae1a792ac7af21c249a5baf9976abef152de45ed581f346cf9db"
+hash-format = "sha256"
+hash = "2617c3d11e6fae1a792ac7af21c249a5baf9976abef152de45ed581f346cf9db"

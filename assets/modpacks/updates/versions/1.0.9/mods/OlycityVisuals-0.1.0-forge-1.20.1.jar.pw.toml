@@ -1,0 +1,8 @@
+name = "mods/OlycityVisuals-0.1.0-forge-1.20.1.jar"
+filename = "OlycityVisuals-0.1.0-forge-1.20.1.jar"
+side = "client"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/7270fb365b254fb9e810a5971720103b76a0639549626ba0b388956244a7cad1.jar"
+hash-format = "sha256"
+hash = "7270fb365b254fb9e810a5971720103b76a0639549626ba0b388956244a7cad1"

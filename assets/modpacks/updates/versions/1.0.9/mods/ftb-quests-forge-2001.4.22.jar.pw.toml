@@ -1,0 +1,8 @@
+name = "mods/ftb-quests-forge-2001.4.22.jar"
+filename = "ftb-quests-forge-2001.4.22.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/9ea9d159a78a2724cfe0457b024680fdb52a2126eff9cfa5280a30578f647a68.jar"
+hash-format = "sha256"
+hash = "9ea9d159a78a2724cfe0457b024680fdb52a2126eff9cfa5280a30578f647a68"

@@ -1,0 +1,8 @@
+name = "kubejs/data/ars-expanded/tardis/ars_room/rooms/tardis_grid_gallivanter.json"
+filename = "tardis_grid_gallivanter.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/887fe1ed0d24961679d500d78aff269d24d738f922509b3f9a00704717ffa387"
+hash-format = "sha256"
+hash = "887fe1ed0d24961679d500d78aff269d24d738f922509b3f9a00704717ffa387"

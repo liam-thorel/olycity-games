@@ -1,0 +1,8 @@
+name = "config/voicechat/voicechat-server.properties"
+filename = "voicechat-server.properties"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/03ea425e453ced0bc5bd983e2094818d5a2f639e9a995cb6458d9c00d77af561"
+hash-format = "sha256"
+hash = "03ea425e453ced0bc5bd983e2094818d5a2f639e9a995cb6458d9c00d77af561"

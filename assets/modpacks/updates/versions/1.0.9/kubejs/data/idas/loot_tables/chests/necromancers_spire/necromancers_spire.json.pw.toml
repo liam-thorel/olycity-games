@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/necromancers_spire/necromancers_spire.json"
+filename = "necromancers_spire.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/03db9ecff1e01f0eb364fc597583f2a0d3ce361ebd71f0afb345a8749d5d54ad"
+hash-format = "sha256"
+hash = "03db9ecff1e01f0eb364fc597583f2a0d3ce361ebd71f0afb345a8749d5d54ad"

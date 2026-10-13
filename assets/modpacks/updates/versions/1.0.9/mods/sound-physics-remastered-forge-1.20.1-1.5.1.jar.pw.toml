@@ -1,0 +1,8 @@
+name = "mods/sound-physics-remastered-forge-1.20.1-1.5.1.jar"
+filename = "sound-physics-remastered-forge-1.20.1-1.5.1.jar"
+side = "client"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/1d7a0d4cdbdee61532dd23ddbc2833292e945d8ec2d20f3271af86b02b0fc108.jar"
+hash-format = "sha256"
+hash = "1d7a0d4cdbdee61532dd23ddbc2833292e945d8ec2d20f3271af86b02b0fc108"

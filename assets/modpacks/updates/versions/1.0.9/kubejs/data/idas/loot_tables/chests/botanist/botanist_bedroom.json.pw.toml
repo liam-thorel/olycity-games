@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/botanist/botanist_bedroom.json"
+filename = "botanist_bedroom.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/f6d2ff7d5d7ebc34825c3d5ff00d87e1d6c3e4b398cc6b7cb3980f58c567424d"
+hash-format = "sha256"
+hash = "f6d2ff7d5d7ebc34825c3d5ff00d87e1d6c3e4b398cc6b7cb3980f58c567424d"

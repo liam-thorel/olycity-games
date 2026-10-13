@@ -1,0 +1,8 @@
+name = "mods/Apotheosis-1.20.1-7.4.8.jar"
+filename = "Apotheosis-1.20.1-7.4.8.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1.0.7-20261011/5ed8c17cf62837bb649d1054e3e4fe93c4d9bdec98fe9f332e2637a260da30da.jar"
+hash-format = "sha256"
+hash = "5ed8c17cf62837bb649d1054e3e4fe93c4d9bdec98fe9f332e2637a260da30da"

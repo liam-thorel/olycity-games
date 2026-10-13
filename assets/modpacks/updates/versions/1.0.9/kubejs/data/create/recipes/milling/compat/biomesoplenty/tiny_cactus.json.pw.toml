@@ -1,0 +1,8 @@
+name = "kubejs/data/create/recipes/milling/compat/biomesoplenty/tiny_cactus.json"
+filename = "tiny_cactus.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/709ccc3cec53b234dc92bf14690c45ddbf611c79652b13ffe5668b129b8efb9d"
+hash-format = "sha256"
+hash = "709ccc3cec53b234dc92bf14690c45ddbf611c79652b13ffe5668b129b8efb9d"

@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/gatekeeper_house/plains.json"
+filename = "plains.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/68e47a9ea1e57599f1e25e1bf5f433913f1da15894c62df344215b07c8d7495a"
+hash-format = "sha256"
+hash = "68e47a9ea1e57599f1e25e1bf5f433913f1da15894c62df344215b07c8d7495a"

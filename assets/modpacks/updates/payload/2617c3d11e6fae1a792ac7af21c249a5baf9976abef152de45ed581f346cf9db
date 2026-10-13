@@ -1,0 +1,24 @@
+{
+  "name": "Livraisons et assistants",
+  "category": "patchouli:liam",
+  "icon": "pneumaticcraft:drone",
+  "sortnum": 13,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "pneumaticcraft:drone",
+      "title": "PneumaticCraft",
+      "text": "Les drones peuvent suivre des programmes. Commence par un trajet entre deux dépôts simples et contrôle le résultat."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:bone",
+      "title": "Des compagnons",
+      "text": "Domestication Innovation enrichit les animaux apprivoisés compatibles. Les drones restent les assistants de transport et d’automatisation de l’atelier."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Pour garder un atelier chargé en votre absence, les règles de chargement des chunks comptent. Dans ce pack, FTB Chunks garde les zones choisies actives tant qu’un membre de l’équipe est connecté."
+    }
+  ]
+}

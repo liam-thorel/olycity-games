@@ -1,0 +1,8 @@
+name = "kubejs/data/the_bumblezone/loot_tables/structures/bee_house.json"
+filename = "bee_house.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/9576917f8fe8eece97db573cfdd8f6ff0fd7088851814b8564ef3f7abd6c8637"
+hash-format = "sha256"
+hash = "9576917f8fe8eece97db573cfdd8f6ff0fd7088851814b8564ef3f7abd6c8637"

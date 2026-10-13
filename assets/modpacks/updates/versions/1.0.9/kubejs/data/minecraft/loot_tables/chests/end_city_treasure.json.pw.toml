@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/end_city_treasure.json"
+filename = "end_city_treasure.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/713f559d86bcf65199403c726f5fea2e977805a801390cf844ba2009432e5ad2"
+hash-format = "sha256"
+hash = "713f559d86bcf65199403c726f5fea2e977805a801390cf844ba2009432e5ad2"

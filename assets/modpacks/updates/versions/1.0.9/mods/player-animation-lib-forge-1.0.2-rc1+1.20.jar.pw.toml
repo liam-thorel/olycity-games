@@ -1,0 +1,8 @@
+name = "mods/player-animation-lib-forge-1.0.2-rc1+1.20.jar"
+filename = "player-animation-lib-forge-1.0.2-rc1+1.20.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/90d9965cb9efdbda29fdc5610be3914cf7008bf5c392ff34f7ab25f96a852691.jar"
+hash-format = "sha256"
+hash = "90d9965cb9efdbda29fdc5610be3914cf7008bf5c392ff34f7ab25f96a852691"

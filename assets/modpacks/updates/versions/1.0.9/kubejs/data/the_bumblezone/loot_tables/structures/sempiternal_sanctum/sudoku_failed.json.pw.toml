@@ -1,0 +1,8 @@
+name = "kubejs/data/the_bumblezone/loot_tables/structures/sempiternal_sanctum/sudoku_failed.json"
+filename = "sudoku_failed.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/8da8f1fee9e7b457752f66cdae63ded0b8080c16caa3307293cc9c92ffa534b1"
+hash-format = "sha256"
+hash = "8da8f1fee9e7b457752f66cdae63ded0b8080c16caa3307293cc9c92ffa534b1"

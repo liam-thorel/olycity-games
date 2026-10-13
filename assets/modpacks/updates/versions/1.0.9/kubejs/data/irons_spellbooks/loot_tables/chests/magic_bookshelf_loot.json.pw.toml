@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/magic_bookshelf_loot.json"
+filename = "magic_bookshelf_loot.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/1200f37cc3ec1dc538b4a30e18146d1b4013cec0ca7b77291cffddc0dd59a90f"
+hash-format = "sha256"
+hash = "1200f37cc3ec1dc538b4a30e18146d1b4013cec0ca7b77291cffddc0dd59a90f"

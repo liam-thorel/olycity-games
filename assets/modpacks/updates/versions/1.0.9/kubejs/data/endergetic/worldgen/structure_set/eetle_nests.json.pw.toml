@@ -1,0 +1,8 @@
+name = "kubejs/data/endergetic/worldgen/structure_set/eetle_nests.json"
+filename = "eetle_nests.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/b5ed05514e719273257b815cc931a16754d5209830e7b3e850d0ce0a5c7c5a0c"
+hash-format = "sha256"
+hash = "b5ed05514e719273257b815cc931a16754d5209830e7b3e850d0ce0a5c7c5a0c"

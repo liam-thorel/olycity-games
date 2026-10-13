@@ -1,0 +1,8 @@
+name = "mods/hazennstuff-watered-down-edition-1.1.2.jar"
+filename = "hazennstuff-watered-down-edition-1.1.2.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/cce49aa74707634ac78e955442eb6a75e2122338db7f7b91da0286f375014f90.jar"
+hash-format = "sha256"
+hash = "cce49aa74707634ac78e955442eb6a75e2122338db7f7b91da0286f375014f90"

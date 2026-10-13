@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/tinkers_workshop/tinkers_workshop_bedroom.json"
+filename = "tinkers_workshop_bedroom.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/965cf698676bdc1d131aa0e2cdb0da42643f21e9b93ad451a720f59d0ca06b48"
+hash-format = "sha256"
+hash = "965cf698676bdc1d131aa0e2cdb0da42643f21e9b93ad451a720f59d0ca06b48"

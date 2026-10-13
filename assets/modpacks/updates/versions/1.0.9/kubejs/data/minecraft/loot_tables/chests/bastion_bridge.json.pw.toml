@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/bastion_bridge.json"
+filename = "bastion_bridge.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/7ff4e9023302a834f86faf50f919d44074c6a1d0c4f60d75186ebc0860ceb49e"
+hash-format = "sha256"
+hash = "7ff4e9023302a834f86faf50f919d44074c6a1d0c4f60d75186ebc0860ceb49e"

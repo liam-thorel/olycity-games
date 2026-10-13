@@ -1,0 +1,8 @@
+name = "kubejs/assets/kubejs/models/item/facture_impayee.json"
+filename = "facture_impayee.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/6553bafe6cd3a9237827070f1957f4bfd09edbc00e74eba234233a831a09448d"
+hash-format = "sha256"
+hash = "6553bafe6cd3a9237827070f1957f4bfd09edbc00e74eba234233a831a09448d"

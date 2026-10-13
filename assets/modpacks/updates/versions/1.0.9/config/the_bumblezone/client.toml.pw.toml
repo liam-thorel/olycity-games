@@ -1,0 +1,8 @@
+name = "config/the_bumblezone/client.toml"
+filename = "client.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/cf8e3435c5908d0391ba398ebb3e5462cd730d3d6587bd28b97928eba597095d"
+hash-format = "sha256"
+hash = "cf8e3435c5908d0391ba398ebb3e5462cd730d3d6587bd28b97928eba597095d"

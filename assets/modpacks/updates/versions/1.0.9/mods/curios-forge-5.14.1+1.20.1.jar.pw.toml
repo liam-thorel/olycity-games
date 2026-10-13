@@ -1,0 +1,8 @@
+name = "mods/curios-forge-5.14.1+1.20.1.jar"
+filename = "curios-forge-5.14.1+1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/1e817919a35b37cf30524aaec73f0ca5130452f23f168f844854df282eb8e51f.jar"
+hash-format = "sha256"
+hash = "1e817919a35b37cf30524aaec73f0ca5130452f23f168f844854df282eb8e51f"

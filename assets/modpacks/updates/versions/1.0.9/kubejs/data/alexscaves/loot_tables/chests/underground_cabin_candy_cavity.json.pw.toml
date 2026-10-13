@@ -1,0 +1,8 @@
+name = "kubejs/data/alexscaves/loot_tables/chests/underground_cabin_candy_cavity.json"
+filename = "underground_cabin_candy_cavity.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/233584e2653c228e4c37cf5d978ebcca995772b5913143159380e743cb1ebefd"
+hash-format = "sha256"
+hash = "233584e2653c228e4c37cf5d978ebcca995772b5913143159380e743cb1ebefd"

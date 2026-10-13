@@ -1,0 +1,8 @@
+name = "kubejs/data/the_bumblezone/loot_tables/structures/tree_dungeon.json"
+filename = "tree_dungeon.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/5a5edd95bfbdbc29326c6bb400f88149eb9aa4a6235083dd92ced018da0e2f3d"
+hash-format = "sha256"
+hash = "5a5edd95bfbdbc29326c6bb400f88149eb9aa4a6235083dd92ced018da0e2f3d"

@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/village/village_butcher.json"
+filename = "village_butcher.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/9ae88b2f3db49f352f10b19d869857e3f68e135a02e5ed29825e355f4747acee"
+hash-format = "sha256"
+hash = "9ae88b2f3db49f352f10b19d869857e3f68e135a02e5ed29825e355f4747acee"

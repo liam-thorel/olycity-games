@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "OLYCITY-version.txt.pw.toml"
-hash = "1785eda42f86c7e68d5e19e340d02134e9e80835d553b6fce27cb10d969825dd"
+hash = "354212fec6b1745eb04e4b23e6ce17517930e322cf1e82f0b8f8ed26022cba98"
 metafile = true
 
 [[files]]
@@ -932,7 +932,7 @@ metafile = true
 
 [[files]]
 file = "config/ftbquests/quests/chapters/05_vie.snbt.pw.toml"
-hash = "279a929ed00af3ac3eddb91b43c29bd76559093a2e8b0f02d5bc2adc0eb798e8"
+hash = "a65c895100de5e56b6598c7f8bd8c0d4b21022627d2ce3c6d8f10a4548784892"
 metafile = true
 
 [[files]]
@@ -942,7 +942,7 @@ metafile = true
 
 [[files]]
 file = "config/ftbquests/quests/chapters/07_liam.snbt.pw.toml"
-hash = "a402ddef3d577fda4dafc0f824b7166ef98cef3c0c2e3161fb6e5268fe1c85e2"
+hash = "16ac30b9690d37a4c1a95636aa42aaa1d3269ec37779085c248b967e6c1e6a47"
 metafile = true
 
 [[files]]
@@ -1348,11 +1348,6 @@ metafile = true
 [[files]]
 file = "config/quark-common.toml.server.pw.toml"
 hash = "0f118d5a86b0e42c6572555e0edb45979a59b27016588dbe6186a8ebfa0fb568"
-metafile = true
-
-[[files]]
-file = "config/rats-common.toml.pw.toml"
-hash = "ce07491e06dd25a37f1c7c0855a75bec895483a8ff8fa27f447f6b6781225322"
 metafile = true
 
 [[files]]
@@ -2152,7 +2147,7 @@ metafile = true
 
 [[files]]
 file = "kubejs/assets/patchouli/patchouli_books/chroniques_olycity/en_us/entries/drones.json.pw.toml"
-hash = "976dbb19571737f0353850a0858560a085a4faa5e8e0a59e01c48d7e36ed8aed"
+hash = "671936fe36f9e545c3ab67a3215e7cac2bdaa73467f74149d66a0545f0053087"
 metafile = true
 
 [[files]]
@@ -2332,7 +2327,7 @@ metafile = true
 
 [[files]]
 file = "kubejs/assets/patchouli/patchouli_books/chroniques_olycity/fr_fr/entries/drones.json.pw.toml"
-hash = "69febbf40aeeaac7754d5e0f2c1bdf5596cbb5d3301c35de7ce53837f7fe965d"
+hash = "b8cdf2b433a644ea5c1e1c0487ddefff0fe0246f3cda283d45a850d4acedb844"
 metafile = true
 
 [[files]]
@@ -4771,21 +4766,6 @@ hash = "79f90193547b5dbfad2af3e7929f7188767bc168c572c31bf2a3780cff0eb1b6"
 metafile = true
 
 [[files]]
-file = "kubejs/data/rats/loot_tables/chest/pet_shop.json.pw.toml"
-hash = "235bd86595e8fad75311341128467621a2878ce7e3e2b4c2d18ed6706bbc7cd5"
-metafile = true
-
-[[files]]
-file = "kubejs/data/rats/loot_tables/chest/pet_shop_upstairs.json.pw.toml"
-hash = "a280aa5305a1474721627ca901cb007bd5ade4ef7d9d2229eb759fc3dbc7c2dc"
-metafile = true
-
-[[files]]
-file = "kubejs/data/rats/loot_tables/chest/plague_doctor_hut.json.pw.toml"
-hash = "67a915a9e9751fa2e8eaa3501fac63e0e8aa91c53622d895776ff925b94cd192"
-metafile = true
-
-[[files]]
 file = "kubejs/data/spooky_harvest/worldgen/structure_set/spooky_cabin.json.pw.toml"
 hash = "f16860369f160498defcbc5e3104abbe396c1c55144eac0c19bd0216a6cbbb5a"
 metafile = true
@@ -5077,7 +5057,7 @@ metafile = true
 
 [[files]]
 file = "kubejs/data/totw_modded/tags/worldgen/biome/has_structure/ratlantis_tower.json.pw.toml"
-hash = "36ae6dcd1e8cd04b8581c6cff47d4abf15b49986907e70c364977b8ab3884712"
+hash = "b9d2f62abf72e310fcd6acc5d99ce46a6ac7e25e53f553ea9185f995cce61aa4"
 metafile = true
 
 [[files]]
@@ -5393,11 +5373,6 @@ metafile = true
 [[files]]
 file = "mods/Quark-4.0-462.jar.pw.toml"
 hash = "598eccbef40d0218fafe70cddeafccd24c6c1d354ee6c7a5e5acd6ad0dfd3c34"
-metafile = true
-
-[[files]]
-file = "mods/Rats-1.20.1-8.1.3.jar.pw.toml"
-hash = "4265235c2986a88a7224fb2d298310d2d568d8211b8fe3d2b23d24a4f297745a"
 metafile = true
 
 [[files]]
@@ -6292,7 +6267,7 @@ metafile = true
 
 [[files]]
 file = "patchouli_books/chroniques_olycity/en_us/entries/drones.json.pw.toml"
-hash = "e338f5e10d8bf711078975cad43c04aa76143c0f838f7fc7d569b97fe43b1e10"
+hash = "c1668211e03da2ba0ebd05486578b6e30a1d920866980fe1b598b238de62393f"
 metafile = true
 
 [[files]]
@@ -6472,7 +6447,7 @@ metafile = true
 
 [[files]]
 file = "patchouli_books/chroniques_olycity/fr_fr/entries/drones.json.pw.toml"
-hash = "107af009020c5843bda968f81afcabdcaefc27a216285a88248e5386de881314"
+hash = "1c5a40fd582541d6de13801ca18b866d75fbb41cf48db86655c432083f27b9d8"
 metafile = true
 
 [[files]]

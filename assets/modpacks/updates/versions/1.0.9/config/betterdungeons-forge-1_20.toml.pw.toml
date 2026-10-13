@@ -1,0 +1,8 @@
+name = "config/betterdungeons-forge-1_20.toml"
+filename = "betterdungeons-forge-1_20.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/946ce267d09bcedf40defb277de8b64ee72b37118230d47b20eabf55aa32f91a"
+hash-format = "sha256"
+hash = "946ce267d09bcedf40defb277de8b64ee72b37118230d47b20eabf55aa32f91a"

@@ -1,0 +1,8 @@
+name = "kubejs/assets/kubejs/textures/book/depart.png"
+filename = "depart.png"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/00b239c6952e9ed1457a1b41cb84b24fbe7ee27da1d784f3d866f494bbce9c05"
+hash-format = "sha256"
+hash = "00b239c6952e9ed1457a1b41cb84b24fbe7ee27da1d784f3d866f494bbce9c05"

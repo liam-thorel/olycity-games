@@ -1,0 +1,8 @@
+name = "patchouli_books/chroniques_olycity/fr_fr/entries/meteo.json"
+filename = "meteo.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/0bf8ad7cfa4a1f861ba1a0207e0020c158236bdbbb8634670b64d66979ba7f3e"
+hash-format = "sha256"
+hash = "0bf8ad7cfa4a1f861ba1a0207e0020c158236bdbbb8634670b64d66979ba7f3e"

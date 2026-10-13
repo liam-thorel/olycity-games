@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/citadel/citadel_vault.json"
+filename = "citadel_vault.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/19105d88efd51ab9dffeb16afb17a4e09c8a0a3bbbcb3e810f0afd82c359d38f"
+hash-format = "sha256"
+hash = "19105d88efd51ab9dffeb16afb17a4e09c8a0a3bbbcb3e810f0afd82c359d38f"

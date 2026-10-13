@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/ancient_city_ice_box.json"
+filename = "ancient_city_ice_box.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/9e45354f4a8d7b9427e92ddb776b1129a6c8e8caebcf7a310c88affa1d607104"
+hash-format = "sha256"
+hash = "9e45354f4a8d7b9427e92ddb776b1129a6c8e8caebcf7a310c88affa1d607104"

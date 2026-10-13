@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/village/profession/everbright/cartographer.json"
+filename = "cartographer.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/85e00f21fc3c748d3ae6ee6b128e2f58421a79cdd80b4761bdb7a134eddd7342"
+hash-format = "sha256"
+hash = "85e00f21fc3c748d3ae6ee6b128e2f58421a79cdd80b4761bdb7a134eddd7342"

@@ -1,0 +1,8 @@
+name = "kubejs/client_scripts/olycity_items.js"
+filename = "olycity_items.js"
+side = "client"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/16297c1249becf057b312b39a03e70ff0b66f8e80c28e9ec1469d94e5e57fa00"
+hash-format = "sha256"
+hash = "16297c1249becf057b312b39a03e70ff0b66f8e80c28e9ec1469d94e5e57fa00"

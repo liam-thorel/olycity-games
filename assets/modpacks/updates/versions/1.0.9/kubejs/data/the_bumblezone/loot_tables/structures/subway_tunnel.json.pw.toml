@@ -1,0 +1,8 @@
+name = "kubejs/data/the_bumblezone/loot_tables/structures/subway_tunnel.json"
+filename = "subway_tunnel.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/620e694524c03002942ac2845d908906d6eab3d4243a0b23c7ed3183ad547a6b"
+hash-format = "sha256"
+hash = "620e694524c03002942ac2845d908906d6eab3d4243a0b23c7ed3183ad547a6b"

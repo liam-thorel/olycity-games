@@ -1,0 +1,8 @@
+name = "kubejs/data/the_bumblezone/loot_tables/structures/sempiternal_sanctum/puzzle_treasure.json"
+filename = "puzzle_treasure.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/802f78ec811827c15fef6f7889826d54a8efd4d01802f5ab34a033b8d0c7d296"
+hash-format = "sha256"
+hash = "802f78ec811827c15fef6f7889826d54a8efd4d01802f5ab34a033b8d0c7d296"

@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/village/profession/everdawn/farm.json"
+filename = "farm.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/1bf91bc8cb80527c0d88cc66527ee51832b1984557968af5ff488e3257fcc56d"
+hash-format = "sha256"
+hash = "1bf91bc8cb80527c0d88cc66527ee51832b1984557968af5ff488e3257fcc56d"

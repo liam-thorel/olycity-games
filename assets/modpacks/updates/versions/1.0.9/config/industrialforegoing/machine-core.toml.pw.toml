@@ -1,0 +1,8 @@
+name = "config/industrialforegoing/machine-core.toml"
+filename = "machine-core.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/99793f055a9ada10ee5867d6adfa2d94d167a32715ed021afa9c4d0ed0d43f4a"
+hash-format = "sha256"
+hash = "99793f055a9ada10ee5867d6adfa2d94d167a32715ed021afa9c4d0ed0d43f4a"

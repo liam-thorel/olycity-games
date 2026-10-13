@@ -1,0 +1,8 @@
+name = "config/the_bumblezone/general.toml"
+filename = "general.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/3ba6e9570d03c40f2162af8defe34b73eb60cc3fe7ca93743693ad804cec047d"
+hash-format = "sha256"
+hash = "3ba6e9570d03c40f2162af8defe34b73eb60cc3fe7ca93743693ad804cec047d"

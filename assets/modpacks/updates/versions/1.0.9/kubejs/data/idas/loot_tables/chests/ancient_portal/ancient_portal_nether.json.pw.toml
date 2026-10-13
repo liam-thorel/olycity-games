@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/ancient_portal/ancient_portal_nether.json"
+filename = "ancient_portal_nether.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/7bc2daab7a5abbf2303611e313d35c4388c19b4b97d43653d0b6994f33396278"
+hash-format = "sha256"
+hash = "7bc2daab7a5abbf2303611e313d35c4388c19b4b97d43653d0b6994f33396278"

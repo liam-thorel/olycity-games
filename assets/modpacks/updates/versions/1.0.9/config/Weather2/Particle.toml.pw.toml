@@ -1,0 +1,8 @@
+name = "config/Weather2/Particle.toml"
+filename = "Particle.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/9ca0609a55e25e119a825890d4718d0fa464da28484b377e067d6c0c199b16a1"
+hash-format = "sha256"
+hash = "9ca0609a55e25e119a825890d4718d0fa464da28484b377e067d6c0c199b16a1"

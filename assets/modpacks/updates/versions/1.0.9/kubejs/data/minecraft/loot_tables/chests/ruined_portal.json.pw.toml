@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/ruined_portal.json"
+filename = "ruined_portal.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/381fb450455b252de3be7e03a2d69504c3b8971d083ae634e5694a8fd0eda885"
+hash-format = "sha256"
+hash = "381fb450455b252de3be7e03a2d69504c3b8971d083ae634e5694a8fd0eda885"

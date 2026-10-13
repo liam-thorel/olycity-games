@@ -1,0 +1,8 @@
+name = "mods/domesticationinnovation-1.7.2-1.20.1.jar"
+filename = "domesticationinnovation-1.7.2-1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/3415f1f6288f49cdbe25c4d116603cdc1b70aba0aa0b90f459847f9b987d63eb.jar"
+hash-format = "sha256"
+hash = "3415f1f6288f49cdbe25c4d116603cdc1b70aba0aa0b90f459847f9b987d63eb"

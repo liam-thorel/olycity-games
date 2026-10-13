@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/village/profession/everbright/stargazer.json"
+filename = "stargazer.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/1029ae5196ff669d7244c5ecc3f4de8ff44922aefa831e692833235b30ad9555"
+hash-format = "sha256"
+hash = "1029ae5196ff669d7244c5ecc3f4de8ff44922aefa831e692833235b30ad9555"

@@ -1,0 +1,8 @@
+name = "config/ftbquests/quests/chapters/atm9_basic_tools.snbt"
+filename = "atm9_basic_tools.snbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/0781726e6ff77dba986c55c3e9decca1cbb2d88b5821ff7ae8fa436f7d43f480"
+hash-format = "sha256"
+hash = "0781726e6ff77dba986c55c3e9decca1cbb2d88b5821ff7ae8fa436f7d43f480"

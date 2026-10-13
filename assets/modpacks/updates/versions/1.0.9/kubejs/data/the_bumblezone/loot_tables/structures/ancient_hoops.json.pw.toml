@@ -1,0 +1,8 @@
+name = "kubejs/data/the_bumblezone/loot_tables/structures/ancient_hoops.json"
+filename = "ancient_hoops.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/f5132a33dd28452fa1c717e05a59b08b147d70ae1c98344f2099135fa79a5db3"
+hash-format = "sha256"
+hash = "f5132a33dd28452fa1c717e05a59b08b147d70ae1c98344f2099135fa79a5db3"

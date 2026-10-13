@@ -1,0 +1,8 @@
+name = "kubejs/data/olycity/advancements/find_brain.json"
+filename = "find_brain.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/e6b6f1ca0ba933e0ca4e68bccbb1719f4d07caff831dd44d459f58339f2169d5"
+hash-format = "sha256"
+hash = "e6b6f1ca0ba933e0ca4e68bccbb1719f4d07caff831dd44d459f58339f2169d5"

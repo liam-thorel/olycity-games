@@ -1,0 +1,8 @@
+name = "kubejs/data/the_bumblezone/loot_tables/structures/cell_maze/common.json"
+filename = "common.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/98b4b396488551cc66b3c6bef8cc0775e11038447319d6c253a3444a98b173ac"
+hash-format = "sha256"
+hash = "98b4b396488551cc66b3c6bef8cc0775e11038447319d6c253a3444a98b173ac"

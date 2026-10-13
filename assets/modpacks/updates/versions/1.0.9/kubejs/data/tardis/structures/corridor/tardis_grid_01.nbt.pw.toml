@@ -1,0 +1,8 @@
+name = "kubejs/data/tardis/structures/corridor/tardis_grid_01.nbt"
+filename = "tardis_grid_01.nbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/81d8ca733012617b2c31e3e3657412ce6e7a9243a54f21bfa880bb002ec4bdb3"
+hash-format = "sha256"
+hash = "81d8ca733012617b2c31e3e3657412ce6e7a9243a54f21bfa880bb002ec4bdb3"

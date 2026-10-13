@@ -1,0 +1,8 @@
+name = "mods/simplyswords-forge-neoforge-1.70.2-1.20.1.jar"
+filename = "simplyswords-forge-neoforge-1.70.2-1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/642e385ffda914f1b9411f0a457fe5fb5e05aa160dc44392dec9a549c2bcec21.jar"
+hash-format = "sha256"
+hash = "642e385ffda914f1b9411f0a457fe5fb5e05aa160dc44392dec9a549c2bcec21"

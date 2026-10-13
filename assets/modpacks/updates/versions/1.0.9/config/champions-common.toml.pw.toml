@@ -1,0 +1,8 @@
+name = "config/champions-common.toml"
+filename = "champions-common.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/2570387e46c33e5dbd62578c3e70829cd8f025e8053207ac9ed37ed6c33d4e89"
+hash-format = "sha256"
+hash = "2570387e46c33e5dbd62578c3e70829cd8f025e8053207ac9ed37ed6c33d4e89"

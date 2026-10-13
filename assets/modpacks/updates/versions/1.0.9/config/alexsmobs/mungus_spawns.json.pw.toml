@@ -1,0 +1,8 @@
+name = "config/alexsmobs/mungus_spawns.json"
+filename = "mungus_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/5d5a9d2039b6df546b788f62cb376cc29312a7115a5553541652aad7259436a6"
+hash-format = "sha256"
+hash = "5d5a9d2039b6df546b788f62cb376cc29312a7115a5553541652aad7259436a6"

@@ -1,0 +1,8 @@
+name = "kubejs/data/ars-expanded/structures/rooms/tardis_grid_zero.nbt"
+filename = "tardis_grid_zero.nbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/00a70742d73e1203594733402082ec9593134bad74640a6d0c078c789a992f4f"
+hash-format = "sha256"
+hash = "00a70742d73e1203594733402082ec9593134bad74640a6d0c078c789a992f4f"

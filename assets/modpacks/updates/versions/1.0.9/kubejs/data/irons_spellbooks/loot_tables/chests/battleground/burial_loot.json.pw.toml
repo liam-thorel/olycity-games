@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/battleground/burial_loot.json"
+filename = "burial_loot.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/0fc2c2f705528969120631ecdb833f3737a55541146c97f4f1504852ddfd6508"
+hash-format = "sha256"
+hash = "0fc2c2f705528969120631ecdb833f3737a55541146c97f4f1504852ddfd6508"

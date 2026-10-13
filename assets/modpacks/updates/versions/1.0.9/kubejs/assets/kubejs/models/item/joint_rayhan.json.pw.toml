@@ -1,0 +1,8 @@
+name = "kubejs/assets/kubejs/models/item/joint_rayhan.json"
+filename = "joint_rayhan.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/25a728fcaf1ea43ef9553692b2897a7b34becbb03baed1a14e4031bbc74bb32f"
+hash-format = "sha256"
+hash = "25a728fcaf1ea43ef9553692b2897a7b34becbb03baed1a14e4031bbc74bb32f"

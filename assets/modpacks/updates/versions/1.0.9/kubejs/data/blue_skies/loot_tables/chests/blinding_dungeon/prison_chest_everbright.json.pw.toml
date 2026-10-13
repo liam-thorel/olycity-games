@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/blinding_dungeon/prison_chest_everbright.json"
+filename = "prison_chest_everbright.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/fb3a615a69b89131ffc1628aa3768a34b67d6f5dca370d9315f3caae828010ec"
+hash-format = "sha256"
+hash = "fb3a615a69b89131ffc1628aa3768a34b67d6f5dca370d9315f3caae828010ec"

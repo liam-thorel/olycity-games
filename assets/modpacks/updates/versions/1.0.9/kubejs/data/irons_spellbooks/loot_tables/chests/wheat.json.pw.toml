@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/wheat.json"
+filename = "wheat.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/01bb5c1e0ba0f3bf7aab1ba18f40a3863806a38f47ae09c82724eefd23448573"
+hash-format = "sha256"
+hash = "01bb5c1e0ba0f3bf7aab1ba18f40a3863806a38f47ae09c82724eefd23448573"

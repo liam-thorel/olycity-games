@@ -1,0 +1,8 @@
+name = "mods/AmbientSounds_FORGE_v6.3.9_mc1.20.1.jar"
+filename = "AmbientSounds_FORGE_v6.3.9_mc1.20.1.jar"
+side = "client"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/206689da1152bd781032553be6632e8091e0cb046a7a56ba12d1068a63766671.jar"
+hash-format = "sha256"
+hash = "206689da1152bd781032553be6632e8091e0cb046a7a56ba12d1068a63766671"
