@@ -1,0 +1,8 @@
+name = "kubejs/assets/kubejs/textures/item/verre_nico.png"
+filename = "verre_nico.png"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/549de5cefb4f3771ec81308e9359054fcc22b43dac611a286a13d21749ed719a"
+hash-format = "sha256"
+hash = "549de5cefb4f3771ec81308e9359054fcc22b43dac611a286a13d21749ed719a"

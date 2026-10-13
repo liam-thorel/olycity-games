@@ -1,0 +1,8 @@
+name = "config/alexsmobs/rattlesnake_spawns.json"
+filename = "rattlesnake_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/b8662bb3de9e2e5cc4af3773700fe6446c389980a80f6350f99d51f3fa2cef39"
+hash-format = "sha256"
+hash = "b8662bb3de9e2e5cc4af3773700fe6446c389980a80f6350f99d51f3fa2cef39"

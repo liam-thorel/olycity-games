@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/gatekeeper_house/snowy.json"
+filename = "snowy.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/154f31bd2ff4ca4f7e10d7eaae3d8e0f944a6b15daca8f389c040740c42a733e"
+hash-format = "sha256"
+hash = "154f31bd2ff4ca4f7e10d7eaae3d8e0f944a6b15daca8f389c040740c42a733e"

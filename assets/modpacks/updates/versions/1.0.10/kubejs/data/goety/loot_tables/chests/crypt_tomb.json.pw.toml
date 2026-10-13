@@ -1,0 +1,8 @@
+name = "kubejs/data/goety/loot_tables/chests/crypt_tomb.json"
+filename = "crypt_tomb.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/00f5d684b10c687209e55362ff82e088a9b68fe5d07f73b68178f2c2b8255e5d"
+hash-format = "sha256"
+hash = "00f5d684b10c687209e55362ff82e088a9b68fe5d07f73b68178f2c2b8255e5d"

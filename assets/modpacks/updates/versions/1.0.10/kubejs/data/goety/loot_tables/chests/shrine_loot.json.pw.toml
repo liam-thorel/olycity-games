@@ -1,0 +1,8 @@
+name = "kubejs/data/goety/loot_tables/chests/shrine_loot.json"
+filename = "shrine_loot.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/b73a4b7cd31ac2a19d986004927a203cb3e1b4da4befc5275c6993db38391122"
+hash-format = "sha256"
+hash = "b73a4b7cd31ac2a19d986004927a203cb3e1b4da4befc5275c6993db38391122"

@@ -3,6 +3,6 @@ filename = "OLYCITY-version.txt"
 side = "both"
 
 [download]
-url = "https://games.olycity.fr/assets/modpacks/updates/payload/fec650c1350a353edffe2093c94f9a63dc72cdaaf82136531c6f2a3df92557a7"
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/eb5c90cfa81a2b0982c86f908f85a14c8c48e2b20652911edf798a4c89a86d0b"
 hash-format = "sha256"
-hash = "fec650c1350a353edffe2093c94f9a63dc72cdaaf82136531c6f2a3df92557a7"
+hash = "eb5c90cfa81a2b0982c86f908f85a14c8c48e2b20652911edf798a4c89a86d0b"

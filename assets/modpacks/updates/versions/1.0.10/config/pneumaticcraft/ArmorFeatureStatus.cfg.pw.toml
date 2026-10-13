@@ -1,0 +1,8 @@
+name = "config/pneumaticcraft/ArmorFeatureStatus.cfg"
+filename = "ArmorFeatureStatus.cfg"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/3260c358de448f81835cefd85f2da6a53e4bdcd2be2451c04c0a163e2c0e20be"
+hash-format = "sha256"
+hash = "3260c358de448f81835cefd85f2da6a53e4bdcd2be2451c04c0a163e2c0e20be"

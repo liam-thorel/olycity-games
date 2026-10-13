@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "OLYCITY-version.txt.pw.toml"
-hash = "354212fec6b1745eb04e4b23e6ce17517930e322cf1e82f0b8f8ed26022cba98"
+hash = "a26117d25a735ba938cf17eb862bc9850c0e7b691f4351520ebb32c2dfaa827b"
 metafile = true
 
 [[files]]
@@ -5947,7 +5947,7 @@ metafile = true
 
 [[files]]
 file = "mods/olycity-halloween-compat-1.0.0.jar.pw.toml"
-hash = "af501f5d0ea09fa3f623975aa2d9641c0dd2079e31d43d580ca943e31d2dfcdc"
+hash = "e549e3f23ad9082195d38eb1ead0169214c309f275579601a83682cfa3ff7220"
 metafile = true
 
 [[files]]

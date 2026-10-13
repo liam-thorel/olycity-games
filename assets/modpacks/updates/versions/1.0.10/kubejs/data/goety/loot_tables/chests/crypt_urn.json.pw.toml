@@ -1,0 +1,8 @@
+name = "kubejs/data/goety/loot_tables/chests/crypt_urn.json"
+filename = "crypt_urn.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/04e1a3d5fc34a711328016787c8bed206e04736206580b5a5475ed40da1020b8"
+hash-format = "sha256"
+hash = "04e1a3d5fc34a711328016787c8bed206e04736206580b5a5475ed40da1020b8"

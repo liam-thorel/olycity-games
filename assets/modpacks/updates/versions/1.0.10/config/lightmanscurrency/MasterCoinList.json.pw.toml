@@ -1,0 +1,8 @@
+name = "config/lightmanscurrency/MasterCoinList.json"
+filename = "MasterCoinList.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/ee31f783c6c8ae53e7a56bd6b0ae8568b820f8373e4bba76d630b1937d398948"
+hash-format = "sha256"
+hash = "ee31f783c6c8ae53e7a56bd6b0ae8568b820f8373e4bba76d630b1937d398948"

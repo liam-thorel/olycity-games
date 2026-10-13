@@ -1,0 +1,8 @@
+name = "config/spark/profile-2026-10-07_13.24.34.sparkprofile"
+filename = "profile-2026-10-07_13.24.34.sparkprofile"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/17c9f490f9471da7b5b0fadf1c9c746fcc05cdd40bbce8e1eb0bd5c9c4123ae2"
+hash-format = "sha256"
+hash = "17c9f490f9471da7b5b0fadf1c9c746fcc05cdd40bbce8e1eb0bd5c9c4123ae2"

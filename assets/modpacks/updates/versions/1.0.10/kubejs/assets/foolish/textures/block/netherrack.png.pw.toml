@@ -1,0 +1,8 @@
+name = "kubejs/assets/foolish/textures/block/netherrack.png"
+filename = "netherrack.png"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/adf031aeec21f70f92b8e4fdd333816ba6d5e7565cbf788bf656c249aefecca0"
+hash-format = "sha256"
+hash = "adf031aeec21f70f92b8e4fdd333816ba6d5e7565cbf788bf656c249aefecca0"

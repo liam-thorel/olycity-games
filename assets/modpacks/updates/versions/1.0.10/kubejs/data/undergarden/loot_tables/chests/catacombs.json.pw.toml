@@ -1,0 +1,8 @@
+name = "kubejs/data/undergarden/loot_tables/chests/catacombs.json"
+filename = "catacombs.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/d87d2cd95a70cd86d0ee3855d6fff74e9a9cc05a4abf56fe198c1f34793c43f9"
+hash-format = "sha256"
+hash = "d87d2cd95a70cd86d0ee3855d6fff74e9a9cc05a4abf56fe198c1f34793c43f9"

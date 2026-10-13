@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/dig_site/dig_site_tools.json"
+filename = "dig_site_tools.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/b36c065fbaacbb80eda1a01f300edcfed04da3658ce530f3d878efa12436ee41"
+hash-format = "sha256"
+hash = "b36c065fbaacbb80eda1a01f300edcfed04da3658ce530f3d878efa12436ee41"

@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/desert_pyramid/desert_pyramid_surface.json"
+filename = "desert_pyramid_surface.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/5d7f0ee0873c5969bc95c0bd98be9ad53b95cdbc71fa136b80f69673e97b482d"
+hash-format = "sha256"
+hash = "5d7f0ee0873c5969bc95c0bd98be9ad53b95cdbc71fa136b80f69673e97b482d"

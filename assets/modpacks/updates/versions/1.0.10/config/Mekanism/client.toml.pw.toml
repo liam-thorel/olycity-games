@@ -1,0 +1,8 @@
+name = "config/Mekanism/client.toml"
+filename = "client.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/76132360abda99a40eccbead1433ccb688f5cca9b39cae1f568eb823947b576c"
+hash-format = "sha256"
+hash = "76132360abda99a40eccbead1433ccb688f5cca9b39cae1f568eb823947b576c"

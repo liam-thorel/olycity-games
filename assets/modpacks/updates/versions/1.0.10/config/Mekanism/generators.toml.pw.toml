@@ -1,0 +1,8 @@
+name = "config/Mekanism/generators.toml"
+filename = "generators.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/c861d7b1b9438b6950d503a80e9e16cf64b010bf2688d2c3e003410590682560"
+hash-format = "sha256"
+hash = "c861d7b1b9438b6950d503a80e9e16cf64b010bf2688d2c3e003410590682560"

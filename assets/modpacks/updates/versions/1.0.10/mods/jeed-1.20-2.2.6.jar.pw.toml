@@ -1,0 +1,8 @@
+name = "mods/jeed-1.20-2.2.6.jar"
+filename = "jeed-1.20-2.2.6.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1.0.8-20261013/a8612a231e8e8372ad1868460b157374f1f4a9e818cad44b722cd9c48c9fc537.jar"
+hash-format = "sha256"
+hash = "a8612a231e8e8372ad1868460b157374f1f4a9e818cad44b722cd9c48c9fc537"

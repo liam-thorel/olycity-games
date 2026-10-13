@@ -1,0 +1,8 @@
+name = "config/create_connected-common.toml"
+filename = "create_connected-common.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/da6272e94f2fff7127bf4807028b6b6f3f34f2eabf031c3e789c5ca1679c58ad"
+hash-format = "sha256"
+hash = "da6272e94f2fff7127bf4807028b6b6f3f34f2eabf031c3e789c5ca1679c58ad"

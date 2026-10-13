@@ -1,0 +1,8 @@
+name = "config/artifacts/common.json5"
+filename = "common.json5"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/736bec8c910558091bb749ac7adb013822a253a02f1f70637eb193952768d2b1"
+hash-format = "sha256"
+hash = "736bec8c910558091bb749ac7adb013822a253a02f1f70637eb193952768d2b1"

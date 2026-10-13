@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/buried_treasure.json"
+filename = "buried_treasure.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/de58e9ac3f2d59bfcdeb817c80beca6613ce4938aa194f8ea2070ba7499310c3"
+hash-format = "sha256"
+hash = "de58e9ac3f2d59bfcdeb817c80beca6613ce4938aa194f8ea2070ba7499310c3"

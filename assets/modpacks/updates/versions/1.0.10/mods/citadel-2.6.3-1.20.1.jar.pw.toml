@@ -1,0 +1,8 @@
+name = "mods/citadel-2.6.3-1.20.1.jar"
+filename = "citadel-2.6.3-1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/56c7ab87348a5292583aac787b6cf11b5193e77f02af1d17ea75a96f8640b3ce.jar"
+hash-format = "sha256"
+hash = "56c7ab87348a5292583aac787b6cf11b5193e77f02af1d17ea75a96f8640b3ce"

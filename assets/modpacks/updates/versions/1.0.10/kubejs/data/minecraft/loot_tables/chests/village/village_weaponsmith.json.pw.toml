@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/village/village_weaponsmith.json"
+filename = "village_weaponsmith.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/c85ae01d83323e698b267ca14c7f77e3d77649a343e5b45ff93ad0844877c252"
+hash-format = "sha256"
+hash = "c85ae01d83323e698b267ca14c7f77e3d77649a343e5b45ff93ad0844877c252"

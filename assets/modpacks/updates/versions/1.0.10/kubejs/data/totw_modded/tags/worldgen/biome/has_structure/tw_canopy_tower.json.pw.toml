@@ -1,0 +1,8 @@
+name = "kubejs/data/totw_modded/tags/worldgen/biome/has_structure/tw_canopy_tower.json"
+filename = "tw_canopy_tower.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/abdfbec59a189df63bc6be8e71526aa0b31ad522b5d0ea9db5076eb5436a27aa"
+hash-format = "sha256"
+hash = "abdfbec59a189df63bc6be8e71526aa0b31ad522b5d0ea9db5076eb5436a27aa"

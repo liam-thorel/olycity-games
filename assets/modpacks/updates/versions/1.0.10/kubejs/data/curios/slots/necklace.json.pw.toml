@@ -1,0 +1,8 @@
+name = "kubejs/data/curios/slots/necklace.json"
+filename = "necklace.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/227e8c746bc91e49ae471e6d8a74c94dbce35444e73bdba7bed5ec42d55fe994"
+hash-format = "sha256"
+hash = "227e8c746bc91e49ae471e6d8a74c94dbce35444e73bdba7bed5ec42d55fe994"

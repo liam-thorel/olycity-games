@@ -1,0 +1,8 @@
+name = "mods/littlejoys-forge-1.20.1-20.1.20.jar"
+filename = "littlejoys-forge-1.20.1-20.1.20.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/9a72afcd601119ea746660fd1b495566ff6a2519f8ce708bd54e8ff05e82c6e3.jar"
+hash-format = "sha256"
+hash = "9a72afcd601119ea746660fd1b495566ff6a2519f8ce708bd54e8ff05e82c6e3"

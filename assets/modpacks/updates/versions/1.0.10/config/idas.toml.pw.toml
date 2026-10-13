@@ -1,0 +1,8 @@
+name = "config/idas.toml"
+filename = "idas.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/e183689f333c024b2afe504dcff455faa214bd05b62d14ca21216fd916c5099b"
+hash-format = "sha256"
+hash = "e183689f333c024b2afe504dcff455faa214bd05b62d14ca21216fd916c5099b"

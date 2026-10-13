@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/tudor_pub/tudor_pub_bedroom.json"
+filename = "tudor_pub_bedroom.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/2003e553f7ffba3f57543675177694e48fe64cc29e4633a26852b5fba51d5b13"
+hash-format = "sha256"
+hash = "2003e553f7ffba3f57543675177694e48fe64cc29e4633a26852b5fba51d5b13"

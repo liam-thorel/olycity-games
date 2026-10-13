@@ -1,0 +1,8 @@
+name = "kubejs/data/alexscaves/loot_tables/chests/caveman_house.json"
+filename = "caveman_house.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/74a52b7d007656665355c45fa5c7be10cfa120f7a15c7ee940dae06de05a3cdd"
+hash-format = "sha256"
+hash = "74a52b7d007656665355c45fa5c7be10cfa120f7a15c7ee940dae06de05a3cdd"

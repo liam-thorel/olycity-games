@@ -1,0 +1,8 @@
+name = "config/ftbquests/quests/chapter_groups.snbt"
+filename = "chapter_groups.snbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/3ca53eb42a3c467e1742a157fea231611cffd94bea9cb33614847c8ee7a51b67"
+hash-format = "sha256"
+hash = "3ca53eb42a3c467e1742a157fea231611cffd94bea9cb33614847c8ee7a51b67"

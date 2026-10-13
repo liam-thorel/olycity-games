@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/village/village_plains_house.json"
+filename = "village_plains_house.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/ff311c0b8ec04d1de87e81971b2ed62ca1bcd2a6522556d945c736965776bb29"
+hash-format = "sha256"
+hash = "ff311c0b8ec04d1de87e81971b2ed62ca1bcd2a6522556d945c736965776bb29"

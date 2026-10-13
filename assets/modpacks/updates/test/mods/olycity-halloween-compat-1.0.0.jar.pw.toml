@@ -1,8 +1,8 @@
-name = "mods/olycity-halloween-compat-1.0.0.jar"
-filename = "olycity-halloween-compat-1.0.0.jar"
+name = "mods/olycity-halloween-compat-1.0.1.jar"
+filename = "olycity-halloween-compat-1.0.1.jar"
 side = "both"
 
 [download]
-url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-v1.0.8-20261013/361f1a834ff4ce4384dba1b2b9d7dd056ee5e774e9551ae4c4e7675b1e7f4c13.jar"
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/76b2b0429c66a2d985c3a37b34b18659a1e24ed69b91d378be2f06ab5de5982f"
 hash-format = "sha256"
-hash = "361f1a834ff4ce4384dba1b2b9d7dd056ee5e774e9551ae4c4e7675b1e7f4c13"
+hash = "76b2b0429c66a2d985c3a37b34b18659a1e24ed69b91d378be2f06ab5de5982f"

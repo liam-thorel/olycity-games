@@ -1,12 +1,12 @@
 name = "OLYCITY V1"
 author = "OLYCITY"
-version = "1.0.9"
+version = "1.0.10"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "995828ae84f532b2b8d702ea539719ddbec214337b3fc55a807b55b6f3b884d9"
+hash = "19f5c0d54074ae6d11d5c303383374e2a4f0c54e2e2eae4bc08f899cab11f843"
 
 [versions]
 minecraft = "1.20.1"

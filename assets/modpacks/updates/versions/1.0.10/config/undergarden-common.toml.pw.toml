@@ -1,0 +1,8 @@
+name = "config/undergarden-common.toml"
+filename = "undergarden-common.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/b95da66dfc4bf280a6cab22d1456479c2ebee05a5ef7ffc196740ec25b23cc01"
+hash-format = "sha256"
+hash = "b95da66dfc4bf280a6cab22d1456479c2ebee05a5ef7ffc196740ec25b23cc01"

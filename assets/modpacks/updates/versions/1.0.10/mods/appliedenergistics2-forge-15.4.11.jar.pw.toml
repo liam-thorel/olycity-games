@@ -1,0 +1,8 @@
+name = "mods/appliedenergistics2-forge-15.4.11.jar"
+filename = "appliedenergistics2-forge-15.4.11.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/f2ff9ee5122b037d4e93537425ab9fbe49860fc9c3977db13b20a50ca7d30f9e.jar"
+hash-format = "sha256"
+hash = "f2ff9ee5122b037d4e93537425ab9fbe49860fc9c3977db13b20a50ca7d30f9e"

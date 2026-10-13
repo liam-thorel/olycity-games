@@ -1,0 +1,8 @@
+name = "config/simplyswords/unique_effects.toml"
+filename = "unique_effects.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/7bc78411abd8406bf6ffd41b4e93adb2b4d2922e71e6c99357b8d0ef666e6792"
+hash-format = "sha256"
+hash = "7bc78411abd8406bf6ffd41b4e93adb2b4d2922e71e6c99357b8d0ef666e6792"

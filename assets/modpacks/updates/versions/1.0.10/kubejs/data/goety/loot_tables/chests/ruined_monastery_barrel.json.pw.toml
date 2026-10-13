@@ -1,0 +1,8 @@
+name = "kubejs/data/goety/loot_tables/chests/ruined_monastery_barrel.json"
+filename = "ruined_monastery_barrel.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/a691456e02ec54ed361aca3f4280f1026712e4ce4d86285734d91cfe27d8b7d4"
+hash-format = "sha256"
+hash = "a691456e02ec54ed361aca3f4280f1026712e4ce4d86285734d91cfe27d8b7d4"

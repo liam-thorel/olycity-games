@@ -1,0 +1,8 @@
+name = "config/ftbquests/quests/chapters/05_vie.snbt"
+filename = "05_vie.snbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/a2c73fe8533bf3064999c9c5a51452ef2ac4dcf53a7cc6e6dab96c085e09d9f2"
+hash-format = "sha256"
+hash = "a2c73fe8533bf3064999c9c5a51452ef2ac4dcf53a7cc6e6dab96c085e09d9f2"

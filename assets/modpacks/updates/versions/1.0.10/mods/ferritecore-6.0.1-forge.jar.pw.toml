@@ -1,0 +1,8 @@
+name = "mods/ferritecore-6.0.1-forge.jar"
+filename = "ferritecore-6.0.1-forge.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/9c2c9396a49e796d88497758caa4637d2bcbb433c318e2dd9cebcffbaf0f6c54.jar"
+hash-format = "sha256"
+hash = "9c2c9396a49e796d88497758caa4637d2bcbb433c318e2dd9cebcffbaf0f6c54"

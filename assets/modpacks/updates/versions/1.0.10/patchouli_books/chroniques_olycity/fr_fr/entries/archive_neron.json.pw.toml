@@ -1,0 +1,8 @@
+name = "patchouli_books/chroniques_olycity/fr_fr/entries/archive_neron.json"
+filename = "archive_neron.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/bcbe16c49b769bcdadd39fd7d65bd71d838dc334eff9ad2590176389d489afdd"
+hash-format = "sha256"
+hash = "bcbe16c49b769bcdadd39fd7d65bd71d838dc334eff9ad2590176389d489afdd"

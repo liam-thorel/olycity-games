@@ -1,0 +1,8 @@
+name = "patchouli_books/chroniques_olycity/en_us/entries/mysteres.json"
+filename = "mysteres.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/6280a9897041d109deaf98e170fb8e9ad19ebb57e7c47c5b90eac61f5b0d8205"
+hash-format = "sha256"
+hash = "6280a9897041d109deaf98e170fb8e9ad19ebb57e7c47c5b90eac61f5b0d8205"

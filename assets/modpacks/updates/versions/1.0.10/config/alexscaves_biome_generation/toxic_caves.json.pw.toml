@@ -1,0 +1,8 @@
+name = "config/alexscaves_biome_generation/toxic_caves.json"
+filename = "toxic_caves.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/d6d7d5becfd20cca48dabcb838021694740bd874fba80a259b05d37bcc720a43"
+hash-format = "sha256"
+hash = "d6d7d5becfd20cca48dabcb838021694740bd874fba80a259b05d37bcc720a43"

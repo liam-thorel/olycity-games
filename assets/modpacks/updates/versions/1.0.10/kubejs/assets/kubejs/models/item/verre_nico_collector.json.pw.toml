@@ -1,0 +1,8 @@
+name = "kubejs/assets/kubejs/models/item/verre_nico_collector.json"
+filename = "verre_nico_collector.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/69f2f9769e517f9951fc086c89c1f0ed782b1a36e4accd1a9219549a930c119b"
+hash-format = "sha256"
+hash = "69f2f9769e517f9951fc086c89c1f0ed782b1a36e4accd1a9219549a930c119b"

@@ -1,0 +1,8 @@
+name = "mods/From-The-Fog-1.20-v1.9.2-Forge-Fabric.jar"
+filename = "From-The-Fog-1.20-v1.9.2-Forge-Fabric.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/385bddf654c6edefd35cd7f47ce7dffff0610d29ed9efd49927f488dec919fb1.jar"
+hash-format = "sha256"
+hash = "385bddf654c6edefd35cd7f47ce7dffff0610d29ed9efd49927f488dec919fb1"

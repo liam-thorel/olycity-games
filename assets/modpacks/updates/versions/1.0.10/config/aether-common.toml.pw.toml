@@ -1,0 +1,8 @@
+name = "config/aether-common.toml"
+filename = "aether-common.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/c48fcf909782f15a5e7da5b1adf223bb23b19d335b03dbc20eafaf6fdc33e763"
+hash-format = "sha256"
+hash = "c48fcf909782f15a5e7da5b1adf223bb23b19d335b03dbc20eafaf6fdc33e763"

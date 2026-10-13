@@ -1,0 +1,8 @@
+name = "config/blue_skies-common.toml"
+filename = "blue_skies-common.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/2f7939a0f248dac38bc613b05992d9dfa73fd6e8e2150d328d2bd10d3706394c"
+hash-format = "sha256"
+hash = "2f7939a0f248dac38bc613b05992d9dfa73fd6e8e2150d328d2bd10d3706394c"

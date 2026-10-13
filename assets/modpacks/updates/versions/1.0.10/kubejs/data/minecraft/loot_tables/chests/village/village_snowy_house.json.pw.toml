@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/village/village_snowy_house.json"
+filename = "village_snowy_house.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/3a6e72ccd9341c21f14d37de14a7cd182aa7deae93f685a6704b5c55e57b7c6f"
+hash-format = "sha256"
+hash = "3a6e72ccd9341c21f14d37de14a7cd182aa7deae93f685a6704b5c55e57b7c6f"

@@ -1,0 +1,8 @@
+name = "mods/corpse-forge-1.20.1-1.0.23.jar"
+filename = "corpse-forge-1.20.1-1.0.23.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/9f639204588512abe767bb5c2ff97d41f50352af916de939ac8029c95d57ae7b.jar"
+hash-format = "sha256"
+hash = "9f639204588512abe767bb5c2ff97d41f50352af916de939ac8029c95d57ae7b"

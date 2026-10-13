@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/dig_site/dig_site_treasure.json"
+filename = "dig_site_treasure.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/15b370c5d6b85926a3c4a6206fa55e0f99716bf28d66a4cdd93d0d6f6253825b"
+hash-format = "sha256"
+hash = "15b370c5d6b85926a3c4a6206fa55e0f99716bf28d66a4cdd93d0d6f6253825b"

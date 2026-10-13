@@ -1,0 +1,8 @@
+name = "config/littlejoys-common.toml"
+filename = "littlejoys-common.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/65f85dc28f868e961b67cc14c8863765b52def4410b372cb7f4e8a5c5d8f73bd"
+hash-format = "sha256"
+hash = "65f85dc28f868e961b67cc14c8863765b52def4410b372cb7f4e8a5c5d8f73bd"

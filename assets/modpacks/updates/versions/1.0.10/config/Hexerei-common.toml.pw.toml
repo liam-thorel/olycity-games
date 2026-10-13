@@ -1,0 +1,8 @@
+name = "config/Hexerei-common.toml"
+filename = "Hexerei-common.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/3c02f6c557fe221194e526bb26dda5c00887e935ae78520fd9b49c2c49020a6d"
+hash-format = "sha256"
+hash = "3c02f6c557fe221194e526bb26dda5c00887e935ae78520fd9b49c2c49020a6d"

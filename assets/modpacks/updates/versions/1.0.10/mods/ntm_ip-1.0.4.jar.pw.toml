@@ -1,0 +1,8 @@
+name = "mods/ntm_ip-1.0.4.jar"
+filename = "ntm_ip-1.0.4.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/70a746e984f266350943ee7d7c0a41ee7554bdce7b51130f2978a3dbdbb76073.jar"
+hash-format = "sha256"
+hash = "70a746e984f266350943ee7d7c0a41ee7554bdce7b51130f2978a3dbdbb76073"

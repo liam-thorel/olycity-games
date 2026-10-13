@@ -1,0 +1,8 @@
+name = "kubejs/data/hexerei/loot_tables/chests/courier_package.json"
+filename = "courier_package.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/e0ce77719aee86939d49699fb6a37559715e273ac8a346ec55bd35001c18a9d5"
+hash-format = "sha256"
+hash = "e0ce77719aee86939d49699fb6a37559715e273ac8a346ec55bd35001c18a9d5"

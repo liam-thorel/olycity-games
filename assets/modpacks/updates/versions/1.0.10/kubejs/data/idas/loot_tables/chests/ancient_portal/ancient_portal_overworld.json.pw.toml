@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/ancient_portal/ancient_portal_overworld.json"
+filename = "ancient_portal_overworld.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/a65dddad4ed274cedf86c9a796b0856e0fe8bab80dce26c585007b2d1556c568"
+hash-format = "sha256"
+hash = "a65dddad4ed274cedf86c9a796b0856e0fe8bab80dce26c585007b2d1556c568"

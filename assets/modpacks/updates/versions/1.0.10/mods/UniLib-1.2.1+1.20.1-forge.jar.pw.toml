@@ -1,0 +1,8 @@
+name = "mods/UniLib-1.2.1+1.20.1-forge.jar"
+filename = "UniLib-1.2.1+1.20.1-forge.jar"
+side = "client"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/10a239c60c12e7df14d10d23911b240249d3692ccc8db268ef8d7d9f93390b8a.jar"
+hash-format = "sha256"
+hash = "10a239c60c12e7df14d10d23911b240249d3692ccc8db268ef8d7d9f93390b8a"

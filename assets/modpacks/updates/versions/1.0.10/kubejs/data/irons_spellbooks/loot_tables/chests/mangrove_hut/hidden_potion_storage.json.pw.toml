@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/mangrove_hut/hidden_potion_storage.json"
+filename = "hidden_potion_storage.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/b638f1e3b8c925ced273489bfeec8eb901289ed067cde3d2b58549bc2e9d7b32"
+hash-format = "sha256"
+hash = "b638f1e3b8c925ced273489bfeec8eb901289ed067cde3d2b58549bc2e9d7b32"

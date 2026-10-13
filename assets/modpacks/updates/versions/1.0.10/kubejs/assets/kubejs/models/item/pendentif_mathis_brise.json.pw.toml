@@ -1,0 +1,8 @@
+name = "kubejs/assets/kubejs/models/item/pendentif_mathis_brise.json"
+filename = "pendentif_mathis_brise.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/2854e9d5489806b43ec9199796d8e8ddd154140ab200a17d9f35bb01e41f8e58"
+hash-format = "sha256"
+hash = "2854e9d5489806b43ec9199796d8e8ddd154140ab200a17d9f35bb01e41f8e58"

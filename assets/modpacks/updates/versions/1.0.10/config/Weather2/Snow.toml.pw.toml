@@ -1,0 +1,8 @@
+name = "config/Weather2/Snow.toml"
+filename = "Snow.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/8e8b8134b6e946c6ae726f5d3af7e8aeb1d2cfa946dba5b3f00fb7248d2651df"
+hash-format = "sha256"
+hash = "8e8b8134b6e946c6ae726f5d3af7e8aeb1d2cfa946dba5b3f00fb7248d2651df"

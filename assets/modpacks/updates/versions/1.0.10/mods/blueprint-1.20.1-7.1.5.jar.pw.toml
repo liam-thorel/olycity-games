@@ -1,0 +1,8 @@
+name = "mods/blueprint-1.20.1-7.1.5.jar"
+filename = "blueprint-1.20.1-7.1.5.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/VsM5EDoI/versions/ZQKDh6gd/blueprint-1.20.1-7.1.5.jar"
+hash-format = "sha256"
+hash = "ab6782901ffb7b08b86325897fb3a2194e0fb1a346af316d74707101c36afb9f"

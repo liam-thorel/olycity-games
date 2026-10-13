@@ -1,0 +1,8 @@
+name = "mods/interiors-1.20.1-forge-0.6.0.jar"
+filename = "interiors-1.20.1-forge-0.6.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/22d256df6dc6249e3421c0cffd1aa4454434fe840401171d288baa2da7dfd441.jar"
+hash-format = "sha256"
+hash = "22d256df6dc6249e3421c0cffd1aa4454434fe840401171d288baa2da7dfd441"

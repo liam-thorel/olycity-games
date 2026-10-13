@@ -1,0 +1,8 @@
+name = "mods/craftingtweaks-forge-1.20.1-18.2.9.jar"
+filename = "craftingtweaks-forge-1.20.1-18.2.9.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/2f5e753a9b528015fbaabdc3d04c5ca768831033f05fba67e2ab1db166a955a8.jar"
+hash-format = "sha256"
+hash = "2f5e753a9b528015fbaabdc3d04c5ca768831033f05fba67e2ab1db166a955a8"

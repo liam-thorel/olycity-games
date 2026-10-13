@@ -1,0 +1,8 @@
+name = "kubejs/assets/patchouli/patchouli_books/chroniques_olycity/fr_fr/entries/torchmaster.json"
+filename = "torchmaster.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/53d3198e6d4836a1ddde19e385b1fd3e541e421d4f602bc0c8100cc842381ea1"
+hash-format = "sha256"
+hash = "53d3198e6d4836a1ddde19e385b1fd3e541e421d4f602bc0c8100cc842381ea1"

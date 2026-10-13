@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/castle/castle.json"
+filename = "castle.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/12f650ccb0682a4505a7e6fdc00078122f56dd6b5ea4c0edb39a3ee6c5d5a060"
+hash-format = "sha256"
+hash = "12f650ccb0682a4505a7e6fdc00078122f56dd6b5ea4c0edb39a3ee6c5d5a060"

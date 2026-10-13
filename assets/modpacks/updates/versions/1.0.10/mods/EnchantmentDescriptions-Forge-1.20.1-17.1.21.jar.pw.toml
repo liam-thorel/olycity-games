@@ -1,0 +1,8 @@
+name = "mods/EnchantmentDescriptions-Forge-1.20.1-17.1.21.jar"
+filename = "EnchantmentDescriptions-Forge-1.20.1-17.1.21.jar"
+side = "client"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/909d1941d4ef6e4b7336738ee31380d6e1117c3c22feb70b64fed47f1cba2b07.jar"
+hash-format = "sha256"
+hash = "909d1941d4ef6e4b7336738ee31380d6e1117c3c22feb70b64fed47f1cba2b07"

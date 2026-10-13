@@ -1,0 +1,8 @@
+name = "kubejs/data/the_bumblezone/loot_tables/structures/pirate_ship/storage_compass.json"
+filename = "storage_compass.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/969ae4cc87d6a161f2af6d257736f6a6feebea8fae4f32fc9323dffdc328e927"
+hash-format = "sha256"
+hash = "969ae4cc87d6a161f2af6d257736f6a6feebea8fae4f32fc9323dffdc328e927"

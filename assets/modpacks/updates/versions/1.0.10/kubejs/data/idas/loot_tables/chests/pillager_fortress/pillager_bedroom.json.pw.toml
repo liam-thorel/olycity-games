@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/pillager_fortress/pillager_bedroom.json"
+filename = "pillager_bedroom.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/653011d911ae6e9b9dbd5a8185bc117021bece76b54663dba546ac6938241ebe"
+hash-format = "sha256"
+hash = "653011d911ae6e9b9dbd5a8185bc117021bece76b54663dba546ac6938241ebe"

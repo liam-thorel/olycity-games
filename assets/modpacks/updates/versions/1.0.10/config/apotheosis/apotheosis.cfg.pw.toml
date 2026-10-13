@@ -1,0 +1,8 @@
+name = "config/apotheosis/apotheosis.cfg"
+filename = "apotheosis.cfg"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/8870b856dfbd6b6dab90687dfad32dd60b296c03f739951ceb012496aa3d05eb"
+hash-format = "sha256"
+hash = "8870b856dfbd6b6dab90687dfad32dd60b296c03f739951ceb012496aa3d05eb"

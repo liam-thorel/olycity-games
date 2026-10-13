@@ -1,0 +1,8 @@
+name = "kubejs/data/alexscaves/loot_tables/chests/underground_cabin_primordial_caves.json"
+filename = "underground_cabin_primordial_caves.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/73503838f3c6b311f3cbd5fbe709f9b6568561dd1992fe31f6226b38747980d5"
+hash-format = "sha256"
+hash = "73503838f3c6b311f3cbd5fbe709f9b6568561dd1992fe31f6226b38747980d5"

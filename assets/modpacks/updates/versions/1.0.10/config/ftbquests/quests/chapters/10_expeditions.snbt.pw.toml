@@ -1,0 +1,8 @@
+name = "config/ftbquests/quests/chapters/10_expeditions.snbt"
+filename = "10_expeditions.snbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/f5da8034a9e2211b0abd0cfdc8d620d04a60fd2d8d0857e57c51f292fe583889"
+hash-format = "sha256"
+hash = "f5da8034a9e2211b0abd0cfdc8d620d04a60fd2d8d0857e57c51f292fe583889"

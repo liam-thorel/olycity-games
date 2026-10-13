@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/catacombs/armory_loot.json"
+filename = "armory_loot.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/e10bdcb20b85d47478bce8c3ad53b7624d29a59514e9d203fc20033b3eb6fb54"
+hash-format = "sha256"
+hash = "e10bdcb20b85d47478bce8c3ad53b7624d29a59514e9d203fc20033b3eb6fb54"

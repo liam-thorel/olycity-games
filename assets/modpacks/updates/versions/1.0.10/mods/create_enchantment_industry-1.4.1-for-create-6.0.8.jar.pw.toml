@@ -1,0 +1,8 @@
+name = "mods/create_enchantment_industry-1.4.1-for-create-6.0.8.jar"
+filename = "create_enchantment_industry-1.4.1-for-create-6.0.8.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/7f7889ba19518e16221b410ae4e1e9fba4c4ee1acaae85c5a3c4b866c97e6198.jar"
+hash-format = "sha256"
+hash = "7f7889ba19518e16221b410ae4e1e9fba4c4ee1acaae85c5a3c4b866c97e6198"

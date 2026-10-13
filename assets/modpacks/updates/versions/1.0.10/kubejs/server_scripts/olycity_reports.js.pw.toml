@@ -1,0 +1,8 @@
+name = "kubejs/server_scripts/olycity_reports.js"
+filename = "olycity_reports.js"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/e9f4eca8b1cd2c337ef1fa44383102ac5909a61a7607f1e5977a506af7698d64"
+hash-format = "sha256"
+hash = "e9f4eca8b1cd2c337ef1fa44383102ac5909a61a7607f1e5977a506af7698d64"

@@ -1,0 +1,8 @@
+name = "kubejs/data/goety/loot_tables/chests/shack_potion.json"
+filename = "shack_potion.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/f8126a40716b49203da9960e528c9975bff2c4dc02468dd9475e9e704d0ccc79"
+hash-format = "sha256"
+hash = "f8126a40716b49203da9960e528c9975bff2c4dc02468dd9475e9e704d0ccc79"

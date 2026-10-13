@@ -1,0 +1,8 @@
+name = "mods/create_hypertube-0.6.0-FORGE.jar"
+filename = "create_hypertube-0.6.0-FORGE.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/1cc0a11d0b78538c15b248ea029d58f1f3bffa6ea8a876fb114da8821a648dc3.jar"
+hash-format = "sha256"
+hash = "1cc0a11d0b78538c15b248ea029d58f1f3bffa6ea8a876fb114da8821a648dc3"

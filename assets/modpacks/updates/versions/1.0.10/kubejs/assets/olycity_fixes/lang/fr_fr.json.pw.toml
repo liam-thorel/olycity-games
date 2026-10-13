@@ -1,0 +1,8 @@
+name = "kubejs/assets/olycity_fixes/lang/fr_fr.json"
+filename = "fr_fr.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/d8b2647236285f6a83f32c58ee44614b5fc0aaee0359eca7e53397f54cf78398"
+hash-format = "sha256"
+hash = "d8b2647236285f6a83f32c58ee44614b5fc0aaee0359eca7e53397f54cf78398"

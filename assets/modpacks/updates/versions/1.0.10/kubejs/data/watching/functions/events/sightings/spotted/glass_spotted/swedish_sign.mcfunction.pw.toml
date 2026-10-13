@@ -1,0 +1,8 @@
+name = "kubejs/data/watching/functions/events/sightings/spotted/glass_spotted/swedish_sign.mcfunction"
+filename = "swedish_sign.mcfunction"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/001de3c57fb307d29e311b4a0360948f48c9d32e26a594179985a14a24511f40"
+hash-format = "sha256"
+hash = "001de3c57fb307d29e311b4a0360948f48c9d32e26a594179985a14a24511f40"

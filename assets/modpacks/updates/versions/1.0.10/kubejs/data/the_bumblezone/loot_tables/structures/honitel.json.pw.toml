@@ -1,0 +1,8 @@
+name = "kubejs/data/the_bumblezone/loot_tables/structures/honitel.json"
+filename = "honitel.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/46155342ce2985f4ab8bdfbdb74bdabe5e0ce51584ba047c40ad153b3999a06d"
+hash-format = "sha256"
+hash = "46155342ce2985f4ab8bdfbdb74bdabe5e0ce51584ba047c40ad153b3999a06d"

@@ -1,0 +1,8 @@
+name = "config/the_bumblezone/dimension.toml"
+filename = "dimension.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/615c4e4a51c89790a9d3cb86b07c1e2fbaacffce47658e290423b52cd46dcf35"
+hash-format = "sha256"
+hash = "615c4e4a51c89790a9d3cb86b07c1e2fbaacffce47658e290423b52cd46dcf35"

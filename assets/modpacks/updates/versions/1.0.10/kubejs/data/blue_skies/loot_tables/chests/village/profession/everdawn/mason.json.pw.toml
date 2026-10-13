@@ -1,0 +1,8 @@
+name = "kubejs/data/blue_skies/loot_tables/chests/village/profession/everdawn/mason.json"
+filename = "mason.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/cd7e51d3890429fd0004893df11934df6a34cc6d2a798e0afb9373fb9110ee72"
+hash-format = "sha256"
+hash = "cd7e51d3890429fd0004893df11934df6a34cc6d2a798e0afb9373fb9110ee72"

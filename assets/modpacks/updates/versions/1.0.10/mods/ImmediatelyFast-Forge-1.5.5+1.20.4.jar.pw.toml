@@ -1,0 +1,8 @@
+name = "mods/ImmediatelyFast-Forge-1.5.5+1.20.4.jar"
+filename = "ImmediatelyFast-Forge-1.5.5+1.20.4.jar"
+side = "client"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/82db19cc65b5c11a444498fb4b8cbcb0393c043e794cb5bf368631a0af765035.jar"
+hash-format = "sha256"
+hash = "82db19cc65b5c11a444498fb4b8cbcb0393c043e794cb5bf368631a0af765035"

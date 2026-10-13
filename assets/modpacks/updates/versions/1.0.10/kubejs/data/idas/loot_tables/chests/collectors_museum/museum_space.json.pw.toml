@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/collectors_museum/museum_space.json"
+filename = "museum_space.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/2baad3366b50d1aba71bb5c69634e47bb998fb03f54fadefdc889c1b487df45e"
+hash-format = "sha256"
+hash = "2baad3366b50d1aba71bb5c69634e47bb998fb03f54fadefdc889c1b487df45e"

@@ -1,0 +1,8 @@
+name = "mods/Clumps-forge-1.20.1-12.0.0.4.jar"
+filename = "Clumps-forge-1.20.1-12.0.0.4.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/8af01712c0dc32cebaff31795ca6d223fddff2ea9b1f5efbd9c3a586a0dacbc0.jar"
+hash-format = "sha256"
+hash = "8af01712c0dc32cebaff31795ca6d223fddff2ea9b1f5efbd9c3a586a0dacbc0"

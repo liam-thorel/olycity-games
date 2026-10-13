@@ -1,0 +1,8 @@
+name = "kubejs/data/foolish/loot_tables/chests/ashenchests.json"
+filename = "ashenchests.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/76f71c9c37d043e1979621a084bb400fcf864938e919c1f7c79a64be2276d0f9"
+hash-format = "sha256"
+hash = "76f71c9c37d043e1979621a084bb400fcf864938e919c1f7c79a64be2276d0f9"

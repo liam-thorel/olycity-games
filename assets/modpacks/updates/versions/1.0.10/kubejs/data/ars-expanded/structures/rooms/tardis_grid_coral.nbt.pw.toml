@@ -1,0 +1,8 @@
+name = "kubejs/data/ars-expanded/structures/rooms/tardis_grid_coral.nbt"
+filename = "tardis_grid_coral.nbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/c6b882ba9e6a3f5ac2bd605c009d84653e43a876e06cc57542120c075768ed19"
+hash-format = "sha256"
+hash = "c6b882ba9e6a3f5ac2bd605c009d84653e43a876e06cc57542120c075768ed19"

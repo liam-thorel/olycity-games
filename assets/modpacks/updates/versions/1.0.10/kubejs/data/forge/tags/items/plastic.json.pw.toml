@@ -1,0 +1,8 @@
+name = "kubejs/data/forge/tags/items/plastic.json"
+filename = "plastic.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/c2987aaf15526a31fe7939492931999d7200d0221f43c69c7987a61f6ad8b09f"
+hash-format = "sha256"
+hash = "c2987aaf15526a31fe7939492931999d7200d0221f43c69c7987a61f6ad8b09f"

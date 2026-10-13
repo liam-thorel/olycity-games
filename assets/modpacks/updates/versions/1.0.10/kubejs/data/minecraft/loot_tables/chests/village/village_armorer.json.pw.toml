@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/village/village_armorer.json"
+filename = "village_armorer.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/c147f94d8a2187740441796d24dffb8684c93f697f47104d936724d92513cee1"
+hash-format = "sha256"
+hash = "c147f94d8a2187740441796d24dffb8684c93f697f47104d936724d92513cee1"

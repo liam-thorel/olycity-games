@@ -1,0 +1,8 @@
+name = "mods/pet_cemetery-1.20.1-2.0.0.jar"
+filename = "pet_cemetery-1.20.1-2.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/M6tSWZ4N/versions/yjuFG8ni/pet_cemetery-1.20.1-2.0.0.jar"
+hash-format = "sha256"
+hash = "a6d619eebc93976af85aef788978ab4f20f2b777e77c9925e348cdc6ebac5d38"

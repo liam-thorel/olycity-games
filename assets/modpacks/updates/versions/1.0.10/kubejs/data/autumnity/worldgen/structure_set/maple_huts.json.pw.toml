@@ -1,0 +1,8 @@
+name = "kubejs/data/autumnity/worldgen/structure_set/maple_huts.json"
+filename = "maple_huts.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/efb2403576c56fe878f892035594ec143ebbcdd7f9bbce4f6b38c67399d64409"
+hash-format = "sha256"
+hash = "efb2403576c56fe878f892035594ec143ebbcdd7f9bbce4f6b38c67399d64409"

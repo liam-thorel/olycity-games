@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/windswept_shrine/windswept_shrine.json"
+filename = "windswept_shrine.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/64fe71869d4e31520fe27a2d8256dad52eb2ed6e8e22bd468ef1cb3688e2db14"
+hash-format = "sha256"
+hash = "64fe71869d4e31520fe27a2d8256dad52eb2ed6e8e22bd468ef1cb3688e2db14"

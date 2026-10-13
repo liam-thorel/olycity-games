@@ -1,0 +1,8 @@
+name = "kubejs/data/foolish/loot_tables/chests/kappa_chests.json"
+filename = "kappa_chests.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/eef7e3fb767ec0fe09c08293bdc316aa0b8aa1cb3cfe9263ec5f0ded3dbe474e"
+hash-format = "sha256"
+hash = "eef7e3fb767ec0fe09c08293bdc316aa0b8aa1cb3cfe9263ec5f0ded3dbe474e"

@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/simple_dungeon.json"
+filename = "simple_dungeon.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/884d9caddb8a1f62bbafb7a2817347d582133d7219a7560e9fd76da81882eade"
+hash-format = "sha256"
+hash = "884d9caddb8a1f62bbafb7a2817347d582133d7219a7560e9fd76da81882eade"

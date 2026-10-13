@@ -1,0 +1,8 @@
+name = "defaultconfigs/ftbultimine/ftbultimine-client.snbt"
+filename = "ftbultimine-client.snbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/0af4a5c9c743c56273b8594f9bf1f57a4adab850c4ac1356b615750b8bb649c6"
+hash-format = "sha256"
+hash = "0af4a5c9c743c56273b8594f9bf1f57a4adab850c4ac1356b615750b8bb649c6"

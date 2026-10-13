@@ -1,0 +1,8 @@
+name = "mods/ftb-teams-forge-2001.3.2.jar"
+filename = "ftb-teams-forge-2001.3.2.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/b1cb4d82ea9f137a87e12a7aaf3329619294b56f7d70337dfd557a76e10b6e07.jar"
+hash-format = "sha256"
+hash = "b1cb4d82ea9f137a87e12a7aaf3329619294b56f7d70337dfd557a76e10b6e07"

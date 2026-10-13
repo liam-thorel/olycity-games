@@ -1,0 +1,8 @@
+name = "config/alexsmobs/straddler_spawns.json"
+filename = "straddler_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/5ee746cf50b358048a0243e4c45997285cf4a9b736758d388ad730d4ed493900"
+hash-format = "sha256"
+hash = "5ee746cf50b358048a0243e4c45997285cf4a9b736758d388ad730d4ed493900"

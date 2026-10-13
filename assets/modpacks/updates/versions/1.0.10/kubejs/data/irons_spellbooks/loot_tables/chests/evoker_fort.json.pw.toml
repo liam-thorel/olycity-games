@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/evoker_fort.json"
+filename = "evoker_fort.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/58da6a57610502d59ac73101b2f1ba838019e409f6dd4ca2e79d2be6e82b8972"
+hash-format = "sha256"
+hash = "58da6a57610502d59ac73101b2f1ba838019e409f6dd4ca2e79d2be6e82b8972"

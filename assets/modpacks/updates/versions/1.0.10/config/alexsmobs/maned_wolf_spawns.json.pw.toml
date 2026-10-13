@@ -1,0 +1,8 @@
+name = "config/alexsmobs/maned_wolf_spawns.json"
+filename = "maned_wolf_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/8483d96341369b430ff2ebfebd7562b0c58c40b96be541cc88189fc696606a0d"
+hash-format = "sha256"
+hash = "8483d96341369b430ff2ebfebd7562b0c58c40b96be541cc88189fc696606a0d"

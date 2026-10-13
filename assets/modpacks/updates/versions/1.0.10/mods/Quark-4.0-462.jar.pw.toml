@@ -1,0 +1,8 @@
+name = "mods/Quark-4.0-462.jar"
+filename = "Quark-4.0-462.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/c90b96f049d92825c4a103721988c80d72e5ad380d17be46a0f53e114874c478.jar"
+hash-format = "sha256"
+hash = "c90b96f049d92825c4a103721988c80d72e5ad380d17be46a0f53e114874c478"

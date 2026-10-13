@@ -1,0 +1,8 @@
+name = "config/alexsmobs/skelewag_spawns.json"
+filename = "skelewag_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/86aad88d05c283679e85900cab1bf3977d496849005ac068a14e40b93db35aa2"
+hash-format = "sha256"
+hash = "86aad88d05c283679e85900cab1bf3977d496849005ac068a14e40b93db35aa2"

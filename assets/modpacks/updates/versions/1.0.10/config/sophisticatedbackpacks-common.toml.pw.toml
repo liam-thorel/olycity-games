@@ -1,0 +1,8 @@
+name = "config/sophisticatedbackpacks-common.toml"
+filename = "sophisticatedbackpacks-common.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/6674ec92f625296aa8accc93d71fdf1eecfc8050111c5ae7b6d9a94b4fe14506"
+hash-format = "sha256"
+hash = "6674ec92f625296aa8accc93d71fdf1eecfc8050111c5ae7b6d9a94b4fe14506"

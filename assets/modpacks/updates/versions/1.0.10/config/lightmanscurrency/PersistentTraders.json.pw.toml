@@ -1,0 +1,8 @@
+name = "config/lightmanscurrency/PersistentTraders.json"
+filename = "PersistentTraders.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/95e8f6a7f8690592aef9cd84ce5d9b10ccd245ccf8e8e8ed5701c3aff7ca9fb8"
+hash-format = "sha256"
+hash = "95e8f6a7f8690592aef9cd84ce5d9b10ccd245ccf8e8e8ed5701c3aff7ca9fb8"

@@ -1,0 +1,8 @@
+name = "kubejs/assets/kubejs/textures/book/village.png"
+filename = "village.png"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/100785725dfff3f5dc6c7e25e3a1f3ad39b82708bdebf6c304fc30191331fe24"
+hash-format = "sha256"
+hash = "100785725dfff3f5dc6c7e25e3a1f3ad39b82708bdebf6c304fc30191331fe24"

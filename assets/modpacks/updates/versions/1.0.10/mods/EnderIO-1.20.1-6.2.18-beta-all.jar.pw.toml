@@ -1,0 +1,8 @@
+name = "mods/EnderIO-1.20.1-6.2.18-beta-all.jar"
+filename = "EnderIO-1.20.1-6.2.18-beta-all.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/9d1471e6d4562d0a50f0564bc46573b87fd738bd440fe19397d31847da20f172.jar"
+hash-format = "sha256"
+hash = "9d1471e6d4562d0a50f0564bc46573b87fd738bd440fe19397d31847da20f172"

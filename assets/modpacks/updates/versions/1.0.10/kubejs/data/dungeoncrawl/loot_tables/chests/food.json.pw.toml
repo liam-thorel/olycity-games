@@ -1,0 +1,8 @@
+name = "kubejs/data/dungeoncrawl/loot_tables/chests/food.json"
+filename = "food.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/9a368677db921ac404b562f2b4f08c917e35f9576bc1eb538a150c3ce8a40627"
+hash-format = "sha256"
+hash = "9a368677db921ac404b562f2b4f08c917e35f9576bc1eb538a150c3ce8a40627"

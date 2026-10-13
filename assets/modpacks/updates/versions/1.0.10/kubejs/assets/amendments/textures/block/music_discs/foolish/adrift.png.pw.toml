@@ -1,0 +1,8 @@
+name = "kubejs/assets/amendments/textures/block/music_discs/foolish/adrift.png"
+filename = "adrift.png"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/ad60e7ef2c536e1202803d3f6b29bd75fcb0374e65f0986c7483f2ad6377e47f"
+hash-format = "sha256"
+hash = "ad60e7ef2c536e1202803d3f6b29bd75fcb0374e65f0986c7483f2ad6377e47f"

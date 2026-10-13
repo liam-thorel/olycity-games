@@ -1,0 +1,8 @@
+name = "kubejs/data/alexscaves/loot_tables/chests/witch_hut.json"
+filename = "witch_hut.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/7513f5e2f23581c43deb3a6dee15778617b5228aac03148a0cd91cf4bfc56ecb"
+hash-format = "sha256"
+hash = "7513f5e2f23581c43deb3a6dee15778617b5228aac03148a0cd91cf4bfc56ecb"

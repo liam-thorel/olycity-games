@@ -1,0 +1,8 @@
+name = "config/citadel-common.toml"
+filename = "citadel-common.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/3fcd8013137a86c00953d4be1e56945b84b87594be722bbf3b3be8d752e2577f"
+hash-format = "sha256"
+hash = "3fcd8013137a86c00953d4be1e56945b84b87594be722bbf3b3be8d752e2577f"

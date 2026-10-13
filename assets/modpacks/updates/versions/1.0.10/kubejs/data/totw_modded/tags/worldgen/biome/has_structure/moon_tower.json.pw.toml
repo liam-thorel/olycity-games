@@ -1,0 +1,8 @@
+name = "kubejs/data/totw_modded/tags/worldgen/biome/has_structure/moon_tower.json"
+filename = "moon_tower.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/cbeef20871f1c6bf8b76c8e3becd577cd5fe658443eec01a0b47cb9f4502950a"
+hash-format = "sha256"
+hash = "cbeef20871f1c6bf8b76c8e3becd577cd5fe658443eec01a0b47cb9f4502950a"

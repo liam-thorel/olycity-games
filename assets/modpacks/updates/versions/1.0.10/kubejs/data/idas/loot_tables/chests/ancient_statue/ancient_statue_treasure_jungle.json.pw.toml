@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/loot_tables/chests/ancient_statue/ancient_statue_treasure_jungle.json"
+filename = "ancient_statue_treasure_jungle.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/de5ba38029414d4e854db06404d75c25750f150de14fb210bb5856039867d67b"
+hash-format = "sha256"
+hash = "de5ba38029414d4e854db06404d75c25750f150de14fb210bb5856039867d67b"

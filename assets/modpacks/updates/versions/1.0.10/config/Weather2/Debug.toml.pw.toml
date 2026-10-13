@@ -1,0 +1,8 @@
+name = "config/Weather2/Debug.toml"
+filename = "Debug.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/0c456214161e2f212f3363fa35b04734a96c2e916e519b0b3720ab7c4d4c8f4f"
+hash-format = "sha256"
+hash = "0c456214161e2f212f3363fa35b04734a96c2e916e519b0b3720ab7c4d4c8f4f"

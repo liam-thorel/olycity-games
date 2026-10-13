@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/underwater_ruin_small.json"
+filename = "underwater_ruin_small.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/2120422a00f932b36eb80681a61bd05bc81519204df0dd39ac3aac8a45b35a3f"
+hash-format = "sha256"
+hash = "2120422a00f932b36eb80681a61bd05bc81519204df0dd39ac3aac8a45b35a3f"

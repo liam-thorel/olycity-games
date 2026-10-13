@@ -1,0 +1,8 @@
+name = "kubejs/assets/brewinandchewin/models/block/quiche_slice3.json"
+filename = "quiche_slice3.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/f897c7c5b828c1f91ea159dac6c52775b503f5fa99a9e554c1c0caac18496794"
+hash-format = "sha256"
+hash = "f897c7c5b828c1f91ea159dac6c52775b503f5fa99a9e554c1c0caac18496794"

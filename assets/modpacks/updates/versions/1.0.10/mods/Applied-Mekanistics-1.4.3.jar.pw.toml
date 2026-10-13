@@ -1,0 +1,8 @@
+name = "mods/Applied-Mekanistics-1.4.3.jar"
+filename = "Applied-Mekanistics-1.4.3.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/e1aafd9c2ae1cab7bb6905ec61718aed41b9f07c05148c9a033e4bb886173d2c.jar"
+hash-format = "sha256"
+hash = "e1aafd9c2ae1cab7bb6905ec61718aed41b9f07c05148c9a033e4bb886173d2c"

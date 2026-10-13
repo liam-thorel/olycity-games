@@ -1,0 +1,8 @@
+name = "kubejs/data/foolish/recipes/ad_astra_key_jei.json"
+filename = "ad_astra_key_jei.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/5af0d70d4a2c6ac91228bee81f283771b83714bdcee7b9c1b9f757cc90ad17db"
+hash-format = "sha256"
+hash = "5af0d70d4a2c6ac91228bee81f283771b83714bdcee7b9c1b9f757cc90ad17db"

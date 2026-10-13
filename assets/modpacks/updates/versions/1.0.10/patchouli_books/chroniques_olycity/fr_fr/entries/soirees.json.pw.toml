@@ -1,0 +1,8 @@
+name = "patchouli_books/chroniques_olycity/fr_fr/entries/soirees.json"
+filename = "soirees.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/6a31d16521fca85ca99a70ff691181841ea8e691c4ac0a7250257118de44a8e4"
+hash-format = "sha256"
+hash = "6a31d16521fca85ca99a70ff691181841ea8e691c4ac0a7250257118de44a8e4"

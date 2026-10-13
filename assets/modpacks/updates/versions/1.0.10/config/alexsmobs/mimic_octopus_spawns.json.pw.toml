@@ -1,0 +1,8 @@
+name = "config/alexsmobs/mimic_octopus_spawns.json"
+filename = "mimic_octopus_spawns.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/9c68a433ab6f75ff9e8d46868480158e4c1f46949779cb0b0d973f7759dbfc2d"
+hash-format = "sha256"
+hash = "9c68a433ab6f75ff9e8d46868480158e4c1f46949779cb0b0d973f7759dbfc2d"

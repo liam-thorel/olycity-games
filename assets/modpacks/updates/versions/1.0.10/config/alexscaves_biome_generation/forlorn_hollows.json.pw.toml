@@ -1,0 +1,8 @@
+name = "config/alexscaves_biome_generation/forlorn_hollows.json"
+filename = "forlorn_hollows.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/5eea375f709ff5d7096b51fdc32b671952e1d2aed9f48c9bd9bc8e50ec2cb7f7"
+hash-format = "sha256"
+hash = "5eea375f709ff5d7096b51fdc32b671952e1d2aed9f48c9bd9bc8e50ec2cb7f7"

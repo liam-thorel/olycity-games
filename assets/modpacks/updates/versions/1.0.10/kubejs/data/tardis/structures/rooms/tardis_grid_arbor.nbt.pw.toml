@@ -1,0 +1,8 @@
+name = "kubejs/data/tardis/structures/rooms/tardis_grid_arbor.nbt"
+filename = "tardis_grid_arbor.nbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/df263842ab3803d6003ca0ee387a66ceff8b05f3266b49206fb23ec3797f1090"
+hash-format = "sha256"
+hash = "df263842ab3803d6003ca0ee387a66ceff8b05f3266b49206fb23ec3797f1090"

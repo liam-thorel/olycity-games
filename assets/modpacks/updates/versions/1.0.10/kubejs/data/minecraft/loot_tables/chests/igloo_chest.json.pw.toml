@@ -1,0 +1,8 @@
+name = "kubejs/data/minecraft/loot_tables/chests/igloo_chest.json"
+filename = "igloo_chest.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/00a22fdb8a06d31866e9c042f9c9469e469a2f8f725cceec948f7025e798129c"
+hash-format = "sha256"
+hash = "00a22fdb8a06d31866e9c042f9c9469e469a2f8f725cceec948f7025e798129c"

@@ -1,0 +1,8 @@
+name = "kubejs/assets/kubejs/textures/item/neron_black_model.png"
+filename = "neron_black_model.png"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/fe980bbe5750272f1d938383a7a173883a35babf49c96b62acc05a02fa8c9178"
+hash-format = "sha256"
+hash = "fe980bbe5750272f1d938383a7a173883a35babf49c96b62acc05a02fa8c9178"

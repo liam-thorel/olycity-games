@@ -1,0 +1,8 @@
+name = "kubejs/assets/kubejs/textures/book/deflecteur.png"
+filename = "deflecteur.png"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/cfdf9aff992d05dc6d7ffd515a18d4ae876069f5858f0305f25ef9fa23b359f3"
+hash-format = "sha256"
+hash = "cfdf9aff992d05dc6d7ffd515a18d4ae876069f5858f0305f25ef9fa23b359f3"

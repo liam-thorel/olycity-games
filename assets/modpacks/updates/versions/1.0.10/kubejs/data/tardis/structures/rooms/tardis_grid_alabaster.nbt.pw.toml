@@ -1,0 +1,8 @@
+name = "kubejs/data/tardis/structures/rooms/tardis_grid_alabaster.nbt"
+filename = "tardis_grid_alabaster.nbt"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/c41d14a30da57ea014022cb4c32339f516707c61c5efb4133359d9bc8d36f39e"
+hash-format = "sha256"
+hash = "c41d14a30da57ea014022cb4c32339f516707c61c5efb4133359d9bc8d36f39e"

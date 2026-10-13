@@ -1,0 +1,8 @@
+name = "kubejs/data/idas/integrated_structure_spawners/dread_citadel.json"
+filename = "dread_citadel.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/a69b975ab454d3e9d0b8883d26baeba59731b281c85b8ed4853555d988d030c1"
+hash-format = "sha256"
+hash = "a69b975ab454d3e9d0b8883d26baeba59731b281c85b8ed4853555d988d030c1"

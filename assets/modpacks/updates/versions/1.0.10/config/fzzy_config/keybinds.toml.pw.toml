@@ -1,0 +1,8 @@
+name = "config/fzzy_config/keybinds.toml"
+filename = "keybinds.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"
+hash-format = "sha256"
+hash = "26ac5810c9b5dc5c1968827357f0a58c58ac2b6f7b082630960228e16585062f"

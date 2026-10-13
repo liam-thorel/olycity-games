@@ -1,0 +1,8 @@
+name = "kubejs/data/irons_spellbooks/loot_tables/chests/additional_end_city_loot.json"
+filename = "additional_end_city_loot.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/a08ee3d3ebd347e86ad07d7140a2304036a199384190854776c003ce7d8d0c67"
+hash-format = "sha256"
+hash = "a08ee3d3ebd347e86ad07d7140a2304036a199384190854776c003ce7d8d0c67"

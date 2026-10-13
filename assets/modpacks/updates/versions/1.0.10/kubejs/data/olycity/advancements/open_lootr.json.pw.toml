@@ -1,0 +1,8 @@
+name = "kubejs/data/olycity/advancements/open_lootr.json"
+filename = "open_lootr.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/e90d16828f5d9b36e10589b3927f236c134bc984d74c518f81479af7a7321cef"
+hash-format = "sha256"
+hash = "e90d16828f5d9b36e10589b3927f236c134bc984d74c518f81479af7a7321cef"

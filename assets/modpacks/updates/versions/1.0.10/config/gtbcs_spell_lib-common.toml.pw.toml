@@ -1,0 +1,8 @@
+name = "config/gtbcs_spell_lib-common.toml"
+filename = "gtbcs_spell_lib-common.toml"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/3d29f1312d2c893a7938e977f3ca03ddeffd1c787e7405459601f252dc2c6f24"
+hash-format = "sha256"
+hash = "3d29f1312d2c893a7938e977f3ca03ddeffd1c787e7405459601f252dc2c6f24"

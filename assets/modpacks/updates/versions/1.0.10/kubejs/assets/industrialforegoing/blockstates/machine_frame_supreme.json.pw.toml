@@ -1,0 +1,8 @@
+name = "kubejs/assets/industrialforegoing/blockstates/machine_frame_supreme.json"
+filename = "machine_frame_supreme.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/8d2f95a6661d6596ad2e7bd0ad91ad03794e9068817043741af46403f4fa7c52"
+hash-format = "sha256"
+hash = "8d2f95a6661d6596ad2e7bd0ad91ad03794e9068817043741af46403f4fa7c52"

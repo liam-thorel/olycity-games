@@ -1,0 +1,8 @@
+name = "mods/MekanismGenerators-1.20.1-10.4.16.80.jar"
+filename = "MekanismGenerators-1.20.1-10.4.16.80.jar"
+side = "both"
+
+[download]
+url = "https://github.com/liam-thorel/olycity-games/releases/download/olycity-packwiz-v1-20261008/be2d5b8553f8638cfabf491002f95cef6acef210f627addb391f5af713502512.jar"
+hash-format = "sha256"
+hash = "be2d5b8553f8638cfabf491002f95cef6acef210f627addb391f5af713502512"

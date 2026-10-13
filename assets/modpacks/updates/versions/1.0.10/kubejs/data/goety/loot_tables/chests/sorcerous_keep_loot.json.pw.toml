@@ -1,0 +1,8 @@
+name = "kubejs/data/goety/loot_tables/chests/sorcerous_keep_loot.json"
+filename = "sorcerous_keep_loot.json"
+side = "both"
+
+[download]
+url = "https://games.olycity.fr/assets/modpacks/updates/payload/5811c77fb39c9701c19b0fefec59a9d85fd8a2f252d04923a4ea44ecaea01ec9"
+hash-format = "sha256"
+hash = "5811c77fb39c9701c19b0fefec59a9d85fd8a2f252d04923a4ea44ecaea01ec9"
