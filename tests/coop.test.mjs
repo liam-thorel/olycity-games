@@ -11,8 +11,9 @@ import {
   normalizeCoopGame,
   profileKey,
   rankCatalogResults,
+  steamRating,
 } from '../js/coop/coop-games-utils.mjs';
-import { fetchSteamReviewSummaries, searchGameCatalog } from '../js/coop/coop-game-catalog.mjs';
+import { fetchSteamDetails, fetchSteamReviewSummaries, searchGameCatalog } from '../js/coop/coop-game-catalog.mjs';
 
 test('Steam links and raw app ids resolve to one stable id', () => {
   assert.equal(extractSteamAppId('https://store.steampowered.com/app/1245620/ELDEN_RING/'), '1245620');
@@ -149,6 +150,57 @@ test('the async submit keeps its form reference after Firebase resolves', () => 
   assert.match(source, /data-action="set-status"/);
   assert.match(source, /data-action="delete"/);
   assert.match(source, /db\.remove\(`coopGames\/\$\{game\.id\}`\)/);
-  assert.match(source, /sort: 'recent'/);
-  assert.match(source, /fetchSteamReviewSummaries/);
+  assert.match(source, /sort: 'popular'/);
+  assert.match(source, /fetchSteamDetails/);
+});
+
+test('popular sort breaks vote ties with a review-weighted Steam rating, then recency', () => {
+  const games = [
+    normalizeCoopGame('new', { title:'Nouveau', steamAppId:'1', interests:{ nico:{} }, submittedAt:30 }),
+    normalizeCoopGame('loved', { title:'Adoré', steamAppId:'2', interests:{ nico:{} }, submittedAt:10 }),
+    normalizeCoopGame('hot', { title:'Chaud', steamAppId:'3', interests:{ nico:{}, liam:{}, noe:{} }, submittedAt:1 }),
+    normalizeCoopGame('tiny', { title:'Confidentiel', steamAppId:'4', interests:{ nico:{} }, submittedAt:20 }),
+  ];
+  const details = new Map([
+    ['1', { reviews:{ available:true, totalReviews:0, positivePercent:0 } }],
+    ['2', { reviews:{ available:true, totalReviews:300_000, positivePercent:94 } }],
+    ['4', { reviews:{ available:true, totalReviews:12, positivePercent:100 } }],
+  ]);
+  assert.ok(steamRating(details.get('2')) > steamRating(details.get('4')), '94 % sur 300 000 avis passe devant 100 % sur 12');
+  assert.deepEqual(filterCoopGames(games, { status:'all', details }).map(game => game.id), ['hot', 'loved', 'tiny', 'new']);
+  assert.deepEqual(filterCoopGames(games, { status:'all', sort:'steam', details }).map(game => game.id), ['loved', 'tiny', 'hot', 'new']);
+  assert.deepEqual(filterCoopGames(games, { status:'all', sort:'recent', details }).map(game => game.id), ['new', 'tiny', 'loved', 'hot']);
+});
+
+test('the demo filter keeps only games with a playable Steam demo', () => {
+  const games = [
+    normalizeCoopGame('a', { title:'Avec démo', steamAppId:'1' }),
+    normalizeCoopGame('b', { title:'Sans démo', steamAppId:'2' }),
+  ];
+  const details = new Map([['1', { demo:{ steamAppId:'9', url:'https://store.steampowered.com/app/9/' } }], ['2', { demo:null }]]);
+  assert.deepEqual(filterCoopGames(games, { status:'all', demo:true, details }).map(game => game.id), ['a']);
+});
+
+test('Steam details load every game, in batches of 100, from the Worker /details route', async () => {
+  const requested = [];
+  const ids = Array.from({ length:150 }, (_, index) => String(1000 + index));
+  const items = await fetchSteamDetails([...ids, ids[0], 'invalid'], {
+    endpoint:'https://catalog.example.test/',
+    fetchImpl:async url => {
+      requested.push(new URL(String(url)));
+      const batch = new URL(String(url)).searchParams.get('ids').split(',');
+      return new Response(JSON.stringify({ items:batch.map(steamAppId => ({ steamAppId })) }));
+    },
+  });
+  assert.deepEqual(requested.map(url => url.pathname), ['/details', '/details']);
+  assert.equal(requested[0].searchParams.get('ids').split(',').length, 100);
+  assert.equal(items.length, 150);
+});
+
+test('the page shows the member text first, else the Steam store summary', () => {
+  const source = readFileSync(new URL('../js/coop/coop-page.mjs', import.meta.url), 'utf8');
+  assert.match(source, /if \(game\.note\) \{/);
+  assert.match(source, /game\.note\.length < 30 \? own \+ store : own/);
+  assert.match(source, /Résumé Steam/);
+  assert.match(source, /Démo jouable/);
 });

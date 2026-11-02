@@ -31,6 +31,28 @@ export async function searchGameCatalog(value, { endpoint, fetchImpl = fetch, si
   return Array.isArray(payload.results) ? payload.results : [];
 }
 
+/**
+ * Avis, résumé du store, sortie et démo de chaque jeu Steam (route /details du
+ * Worker). Par paquets de 100 : la liste du groupe dépasse vite 20 jeux, et
+ * l'ancienne limite laissait les suivants bloqués sur « Avis en cours… ».
+ */
+export async function fetchSteamDetails(appIds = [], { endpoint, fetchImpl = fetch, signal } = {}) {
+  const ids = [...new Set(appIds.map(String).filter(id => /^\d{2,10}$/.test(id)))];
+  if (!ids.length) return [];
+  const base = String(endpoint ?? await gameCatalogEndpoint()).replace(/\/$/, '');
+  if (!base) return [];
+  const items = [];
+  for (let start = 0; start < ids.length; start += 100) {
+    const url = new URL(`${base}/details`);
+    url.searchParams.set('ids', ids.slice(start, start + 100).join(','));
+    const response = await fetchImpl(url, { headers: { Accept: 'application/json' }, signal });
+    const payload = await response.json().catch(() => ({}));
+    if (!response.ok) throw new Error(payload.error || `Détails Steam HTTP ${response.status}`);
+    if (Array.isArray(payload.items)) items.push(...payload.items);
+  }
+  return items;
+}
+
 export async function fetchSteamReviewSummaries(appIds = [], { endpoint, fetchImpl = fetch, signal } = {}) {
   const ids = [...new Set(appIds.map(String).filter(id => /^\d{2,10}$/.test(id)))].slice(0, 20);
   if (!ids.length) return [];

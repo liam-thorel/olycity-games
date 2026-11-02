@@ -91,10 +91,28 @@
           </div>
           <button class="coop-add-btn" id="coop-add-btn" type="button">+ Proposer un jeu</button>
         </header>
+        <div class="coop-controls">
+          <nav class="coop-status-tabs" aria-label="Catégories de jeux">
+            <button type="button" class="active" data-coop-status="all" aria-pressed="true"><span>Tous</span><strong data-status-count="all">0</strong></button>
+            <button type="button" data-coop-status="open" aria-pressed="false"><span>À découvrir</span><strong data-status-count="open">0</strong></button>
+            <button type="button" data-coop-status="planned" aria-pressed="false"><span>Planifiés</span><strong data-status-count="planned">0</strong></button>
+            <button type="button" data-coop-status="replay" aria-pressed="false"><span>À rejouer</span><strong data-status-count="replay">0</strong></button>
+            <button type="button" data-coop-status="played" aria-pressed="false"><span>Terminés</span><strong data-status-count="played">0</strong></button>
+          </nav>
+          <label class="coop-sort-field" for="coop-sort"><span class="sr-only">Trier par</span>
+            <select id="coop-sort">
+              <option value="popular" selected>Populaires</option>
+              <option value="steam">Mieux notés sur Steam</option>
+              <option value="recent">Derniers proposés</option>
+              <option value="release">Sorties récentes</option>
+              <option value="alpha">Nom A–Z</option>
+            </select>
+          </label>
+        </div>
         <div class="coop-toolbar">
           <div class="coop-search-field">
             <span aria-hidden="true">⌕</span>
-            <input id="coop-search" type="search" placeholder="Rechercher un jeu, un genre…" aria-label="Rechercher un jeu" autocomplete="off">
+            <input id="coop-search" type="search" placeholder="Chercher si un jeu a déjà été proposé…" aria-label="Rechercher un jeu" autocomplete="off">
           </div>
           <label class="coop-filter-field" for="coop-players"><span>On est combien ?</span>
             <select id="coop-players"><option value="0">Peu importe</option><option value="2">2 joueurs</option><option value="3">3 joueurs</option>
@@ -103,18 +121,9 @@
           <label class="coop-filter-field" for="coop-genre"><span>Genre</span>
             <select id="coop-genre"><option value="all">Tous les genres</option></select>
           </label>
-          <label for="coop-tonight" style="display:flex;align-items:center;gap:8px;min-height:44px;font-size:13px"><input id="coop-tonight" type="checkbox" disabled><span id="coop-tonight-label">Ce soir : aucune présence confirmée</span></label>
-          <label class="coop-filter-field" for="coop-sort"><span>Trier par</span>
-            <select id="coop-sort"><option value="recent" selected>Les derniers ajoutés</option><option value="popular">Les plus populaires</option><option value="alpha">Nom A–Z</option></select>
-          </label>
+          <label class="coop-check" for="coop-demo"><input id="coop-demo" type="checkbox"><span>Avec démo</span></label>
+          <label class="coop-check" for="coop-tonight"><input id="coop-tonight" type="checkbox" disabled><span id="coop-tonight-label">Ce soir : aucune présence confirmée</span></label>
         </div>
-        <nav class="coop-status-tabs" aria-label="Catégories de jeux">
-          <button type="button" class="active" data-coop-status="all" aria-pressed="true"><span>Tous</span><strong data-status-count="all">0</strong></button>
-          <button type="button" data-coop-status="open" aria-pressed="false"><span>À découvrir</span><strong data-status-count="open">0</strong></button>
-          <button type="button" data-coop-status="planned" aria-pressed="false"><span>Planifiés</span><strong data-status-count="planned">0</strong></button>
-          <button type="button" data-coop-status="replay" aria-pressed="false"><span>À rejouer</span><strong data-status-count="replay">0</strong></button>
-          <button type="button" data-coop-status="played" aria-pressed="false"><span>Terminés</span><strong data-status-count="played">0</strong></button>
-        </nav>
         <div class="coop-summary"><span id="coop-current-profile">Choisis d’abord ton profil</span><span id="coop-result-count">0 jeu</span></div>
         <div class="coop-games-list" id="coop-games-grid"></div>
       </div>

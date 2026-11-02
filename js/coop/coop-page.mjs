@@ -10,7 +10,7 @@ import {
   rankCatalogResults,
   steamCover,
 } from './coop-games-utils.mjs';
-import { fetchSteamReviewSummaries, searchGameCatalog } from './coop-game-catalog.mjs';
+import { fetchSteamDetails, searchGameCatalog } from './coop-game-catalog.mjs';
 import { FIREBASE_ROOT, db, escapeHTML, mergeRealtimeEvent, pickProfile, safeHttpsUrl } from '../../sdk/olycity.mjs';
 
 const COOP_GAMES_CACHE_KEY = 'olycity-coop-games-cache-v1';
@@ -37,16 +37,59 @@ let catalogSearchTimer = null;
 let catalogSearchSequence = 0;
 let catalogAbortController = null;
 let selectedCatalogGame = null;
-let steamReviews = new Map();
-let steamReviewIds = '';
+let steamDetails = new Map();
+let steamDetailIds = '';
+let steamDetailsState = 'idle';
 let syncNotice = null;
 let recoveryAttempts = 0;
 let recoveryTimer = null;
-const filters = { search: '', players: 0, genre:'all', status: 'all', sort: 'recent' };
+const DEFAULT_FILTERS = Object.freeze({ search: '', players: 0, genre:'all', status: 'all', sort: 'popular', demo:false });
+const filters = { ...DEFAULT_FILTERS };
 let compatibleTonight = false;
 function effectiveFilters() {
   const count = tonightParticipantCount();
-  return compatibleTonight && count ? { ...filters, players:count } : filters;
+  const base = { ...filters, details:steamDetails };
+  return compatibleTonight && count ? { ...base, players:count } : base;
+}
+
+function detailOf(game) {
+  return steamDetails.get(String(game.steamAppId || '')) || null;
+}
+
+const shortDate = new Intl.DateTimeFormat('fr-FR', { day:'numeric', month:'short', year:'numeric' });
+const monthDate = new Intl.DateTimeFormat('fr-FR', { month:'long', year:'numeric' });
+
+function timeAgo(timestamp) {
+  if (!timestamp) return '';
+  const days = Math.floor((Date.now() - timestamp) / 86_400_000);
+  if (days < 1) return 'aujourd’hui';
+  if (days === 1) return 'hier';
+  if (days < 30) return `il y a ${days} j`;
+  const months = Math.floor(days / 30);
+  return months < 12 ? `il y a ${months} mois` : `il y a ${Math.floor(months / 12)} an${months >= 24 ? 's' : ''}`;
+}
+
+/** « Sort le 4 nov. 2026 », « Prévu en février 2027 », « Accès anticipé »… */
+function releaseFact(detail) {
+  const release = detail?.release;
+  if (!release) return '';
+  const time = release.date ? Date.parse(`${release.date}T12:00:00Z`) : NaN;
+  if (release.comingSoon) {
+    if (!Number.isFinite(time)) return `<span class="coop-fact is-upcoming">${escapeHTML(release.message || 'Bientôt disponible')}</span>`;
+    const label = release.precision === 'date_month' ? `Prévu en ${monthDate.format(time)}`
+      : /quarter|year/.test(release.precision) ? `Prévu en ${new Date(time).getUTCFullYear()}`
+        : `Sort le ${shortDate.format(time)}`;
+    return `<span class="coop-fact is-upcoming">${escapeHTML(label)}</span>`;
+  }
+  if (release.earlyAccess) return '<span class="coop-fact">Accès anticipé</span>';
+  if (Number.isFinite(time) && Date.now() - time < 30 * 86_400_000) return `<span class="coop-fact is-new">Sorti ${escapeHTML(timeAgo(time))}</span>`;
+  return '';
+}
+
+function demoFact(detail, compact = false) {
+  const url = safeHttpsUrl(detail?.demo?.url || '', ['steampowered.com']);
+  if (!url) return '';
+  return `<a class="coop-fact is-demo" href="${escapeHTML(url)}" target="_blank" rel="noopener">${compact ? 'Démo' : 'Démo jouable'}<span aria-hidden="true">↗</span></a>`;
 }
 
 function readGamesCache() {
@@ -105,63 +148,115 @@ function formatReviewCount(value) {
 
 function steamReviewMarkup(game) {
   if (!game.steamAppId) return '';
-  const review = steamReviews.get(game.steamAppId);
-  if (!review) return '<div class="coop-steam-review is-loading"><span>Steam</span><small>Avis en cours…</small></div>';
-  if (review.available === false) return '<div class="coop-steam-review is-empty"><span>Steam</span><small>Avis indisponibles</small></div>';
-  if (!review.totalReviews) return '<div class="coop-steam-review is-empty"><span>Steam</span><small>Pas encore d’avis</small></div>';
+  const review = detailOf(game)?.reviews;
+  if (!review) {
+    return steamDetailsState === 'error'
+      ? '<span class="coop-review is-empty">Avis Steam indisponibles</span>'
+      : '<span class="coop-review is-loading">Avis Steam…</span>';
+  }
+  if (!review.available || !review.totalReviews) return '<span class="coop-review is-empty">Pas encore d’avis</span>';
   const percent = Math.max(0, Math.min(100, Number(review.positivePercent) || 0));
   const tone = percent >= 80 ? 'positive' : percent >= 60 ? 'mixed' : 'negative';
-  return `<div class="coop-steam-review is-${tone}" title="${escapeHTML(`${review.totalPositive} avis positifs sur ${review.totalReviews}`)}">
-    <span>Steam</span><strong>${percent} % positifs</strong><small>${formatReviewCount(review.totalReviews)} avis</small>
+  const label = review.label ? review.label.charAt(0).toUpperCase() + review.label.slice(1) : `${percent} % positifs`;
+  return `<span class="coop-review is-${tone}" title="${escapeHTML(`${percent} % d’avis positifs sur ${review.totalReviews}`)}">
+    <strong>${percent} %</strong><span>${escapeHTML(label)}</span><small>${formatReviewCount(review.totalReviews)} avis</small>
+  </span>`;
+}
+
+/** Le texte du membre d'abord ; sinon le résumé du store, signalé comme tel. */
+function descriptionMarkup(game) {
+  const summary = detailOf(game)?.description;
+  const store = summary ? `<p class="coop-note is-store"><span>Résumé Steam</span>${escapeHTML(summary)}</p>` : '';
+  if (game.note) {
+    // « Nouveau jeu », « Nouvelle maj » : trop court pour se faire une idée,
+    // le résumé du store reste affiché en dessous.
+    const own = `<p class="coop-note">${escapeHTML(game.note)}</p>`;
+    return game.note.length < 30 ? own + store : own;
+  }
+  return store;
+}
+
+function statusControl(game, canDelete) {
+  const statusOptions = STATUS_ORDER.map(status => `<button type="button" data-action="set-status" data-status="${status}" role="menuitemradio" aria-checked="${game.status === status}">
+    <span class="coop-status-option-dot coop-status-${status}"></span><span><strong>${STATUS_META[status].label}</strong><small>${STATUS_META[status].description}</small></span>${game.status === status ? '<b>✓</b>' : ''}
+  </button>`).join('');
+  return `<div class="coop-status-control">
+    <button class="coop-status coop-status-${game.status}" type="button" data-action="status-menu" aria-expanded="false" aria-haspopup="menu">${STATUS_LABELS[game.status]}<span aria-hidden="true">⌄</span></button>
+    <div class="coop-status-menu" role="menu" hidden>
+      <div>Changer de catégorie</div>${statusOptions}
+      ${canDelete ? `<button class="coop-delete-option" type="button" data-action="delete" role="menuitem">
+        <span aria-hidden="true">×</span><span><strong>Supprimer le jeu</strong><small>Retire aussi ses votes</small></span>
+      </button>` : ''}
+    </div>
   </div>`;
 }
 
 function gameCard(game) {
   const profile = selectedProfile();
   const canDelete = canDeleteCoopGame(profile);
-  const interested = profile && game.interests?.[profileKey(profile.name)];
+  const interested = Boolean(profile && game.interests?.[profileKey(profile.name)]);
+  const detail = detailOf(game);
   const cover = safeHttpsUrl(game.coverUrl || steamCover(game.steamAppId));
   const steamUrl = safeHttpsUrl(game.steamUrl, ['steampowered.com']);
   const sourceUrl = steamUrl || safeHttpsUrl(game.sourceUrl, ['igdb.com']);
-  const sourceLabel = steamUrl ? 'Steam ↗' : sourceUrl ? 'IGDB ↗' : '';
-  const tags = game.tags.filter(visibleGenre).map(tag => `<span>${escapeHTML(genreLabel(tag))}</span>`).join('');
-  const statusOptions = STATUS_ORDER.map(status => `<button type="button" data-action="set-status" data-status="${status}" role="menuitemradio" aria-checked="${game.status === status}">
-    <span class="coop-status-option-dot coop-status-${status}"></span><span><strong>${STATUS_META[status].label}</strong><small>${STATUS_META[status].description}</small></span>${game.status === status ? '<b>✓</b>' : ''}
-  </button>`).join('');
-  return `<article class="coop-game-card" data-game-id="${escapeHTML(game.id)}">
-    <div class="coop-cover">
-      ${cover ? `<img src="${escapeHTML(cover)}" alt="Jaquette de ${escapeHTML(game.title)}" loading="lazy" onerror="this.hidden=true">` : ''}
-      <div class="coop-status-control">
-        <button class="coop-status coop-status-${game.status}" type="button" data-action="status-menu" aria-expanded="false">${STATUS_LABELS[game.status]}<span aria-hidden="true">⌄</span></button>
-        <div class="coop-status-menu" role="menu" hidden>
-          <div>Changer de catégorie</div>${statusOptions}
-          ${canDelete ? `<button class="coop-delete-option" type="button" data-action="delete" role="menuitem">
-            <span aria-hidden="true">×</span><span><strong>Supprimer le jeu</strong><small>Retire aussi ses votes</small></span>
-          </button>` : ''}
-        </div>
-      </div>
-    </div>
+  const sourceLabel = steamUrl ? 'Steam' : sourceUrl ? 'IGDB' : '';
+  const genres = game.tags.filter(visibleGenre).slice(0, 2).map(genreLabel).join(', ');
+  const facts = [demoFact(detail), releaseFact(detail), steamReviewMarkup(game)].filter(Boolean).join('');
+  const coverMarkup = cover
+    ? `<img src="${escapeHTML(cover)}" alt="" loading="lazy" onerror="this.hidden=true">`
+    : `<span class="coop-cover-fallback" aria-hidden="true">${escapeHTML(game.title.slice(0, 1))}</span>`;
+  const when = timeAgo(game.submittedAt);
+  return `<article class="coop-game-card${game.status === 'played' ? ' is-played' : ''}" data-game-id="${escapeHTML(game.id)}">
+    <button type="button" class="coop-vote-btn${interested ? ' active' : ''}" data-action="vote" aria-pressed="${interested}"
+      aria-label="${interested ? 'Retirer mon vote pour' : 'Je suis chaud pour'} ${escapeHTML(game.title)}" title="${interested ? 'Tu es chaud · cliquer pour retirer' : 'Je suis chaud'}">
+      <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 10 8 5.5l4.5 4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <strong>${game.interestCount}</strong><span>${game.interestCount > 1 ? 'chauds' : 'chaud'}</span>
+    </button>
+    ${sourceUrl
+      ? `<a class="coop-cover" href="${escapeHTML(sourceUrl)}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">${coverMarkup}</a>`
+      : `<div class="coop-cover">${coverMarkup}</div>`}
     <div class="coop-card-body">
-      <div class="coop-card-meta"><span>${playerRange(game)}</span><span>${SESSION_LABELS[game.session]}</span></div>
-      <h3>${escapeHTML(game.title)}</h3>
-      ${tags ? `<div class="coop-tags">${tags}</div>` : ''}
-      ${steamReviewMarkup(game)}
-      ${game.replayNote ? `<div class="coop-replay-note"><strong>Nouveau contenu${game.statusBy ? ` · ${escapeHTML(game.statusBy)}` : ''}</strong>${escapeHTML(game.replayNote)}</div>` : ''}
-      ${game.note ? `<p>${escapeHTML(game.note)}</p>` : ''}
-      <div class="coop-submitter">Proposé par ${escapeHTML(game.submittedBy)}</div>
-      <div class="coop-interest-row">
-        <div class="coop-interest-list">${interestAvatars(game)}</div>
-        <span class="coop-interest-count">${game.interestCount}</span>
+      <div class="coop-card-head">
+        <h3>${sourceUrl ? `<a href="${escapeHTML(sourceUrl)}" target="_blank" rel="noopener">${escapeHTML(game.title)}</a>` : escapeHTML(game.title)}</h3>
+        ${statusControl(game, canDelete)}
       </div>
-      <div class="coop-card-actions">
-        <button type="button" class="coop-vote-btn${interested ? ' active' : ''}" data-action="vote">
-          ${interested ? '✓ Je suis chaud' : '+ Je suis chaud'}
-        </button>
+      <div class="coop-card-meta">
+        <span>${playerRange(game)}</span><span>${SESSION_LABELS[game.session]}</span>${genres ? `<span>${escapeHTML(genres)}</span>` : ''}${sourceUrl ? `<a href="${escapeHTML(sourceUrl)}" target="_blank" rel="noopener">${sourceLabel}<span aria-hidden="true"> ↗</span></a>` : ''}
+      </div>
+      ${facts ? `<div class="coop-facts">${facts}</div>` : ''}
+      ${game.replayNote ? `<div class="coop-replay-note"><strong>Ce qui a changé${game.statusBy ? ` · ${escapeHTML(game.statusBy)}` : ''}</strong>${escapeHTML(game.replayNote)}</div>` : ''}
+      ${descriptionMarkup(game)}
+      <div class="coop-card-foot">
+        <div class="coop-interest-list" aria-label="Partants">${interestAvatars(game)}</div>
+        <span class="coop-submitter">${escapeHTML(game.submittedBy)}${when ? ` · ${when}` : ''}</span>
         ${game.status === 'played' ? '<button type="button" class="coop-replay-btn" data-action="replay">Signaler du nouveau</button>' : ''}
-        ${sourceUrl ? `<a href="${escapeHTML(sourceUrl)}" target="_blank" rel="noopener">${sourceLabel}</a>` : ''}
       </div>
     </div>
   </article>`;
+}
+
+/** Bandeau « Démos à essayer », comme les sorties récentes de Suggo. */
+function demoStripMarkup() {
+  if (filters.search || filters.demo || !['all', 'open'].includes(filters.status)) return '';
+  const withDemo = filterCoopGames(games, { ...effectiveFilters(), status:'all', sort:'popular' })
+    .filter(game => game.status !== 'played' && detailOf(game)?.demo);
+  if (!withDemo.length) return '';
+  const items = withDemo.slice(0, 8).map(game => {
+    const detail = detailOf(game);
+    const cover = safeHttpsUrl(game.coverUrl || steamCover(game.steamAppId));
+    const url = safeHttpsUrl(detail.demo.url, ['steampowered.com']);
+    const release = detail.release?.comingSoon ? 'Pas encore sorti' : detail.release?.earlyAccess ? 'Accès anticipé' : 'Disponible';
+    return `<li><a href="${escapeHTML(url)}" target="_blank" rel="noopener">
+      <span class="coop-demo-cover">${cover ? `<img src="${escapeHTML(cover)}" alt="" loading="lazy" onerror="this.hidden=true">` : ''}</span>
+      <strong>${escapeHTML(game.title)}</strong>
+      <small>${game.interestCount} ${game.interestCount > 1 ? 'chauds' : 'chaud'} · ${release}</small>
+    </a></li>`;
+  }).join('');
+  return `<section class="coop-demo-strip" aria-labelledby="coop-demo-title">
+    <header><div><h3 id="coop-demo-title">Démos à essayer</h3><p>Jouables gratuitement sur Steam avant de se décider.</p></div>
+      ${withDemo.length > 1 ? `<button type="button" data-coop-demo-only>Voir les ${withDemo.length}</button>` : ''}</header>
+    <ul>${items}</ul>
+  </section>`;
 }
 
 function statusCounts(filteredGames) {
@@ -238,7 +333,9 @@ function render() {
       'Retire un filtre pour retrouver toute la liste.',
       '<button type="button" class="btn btn-primary" data-coop-reset>Réinitialiser</button>',
     );
-  root.innerHTML = syncNoticeMarkup() + content;
+  root.innerHTML = syncNoticeMarkup() + (visible.length ? demoStripMarkup() : '') + content;
+  const demoToggle = document.getElementById('coop-demo');
+  if (demoToggle) demoToggle.checked = filters.demo;
 }
 
 async function loadGames({ quiet = false } = {}) {
@@ -261,7 +358,7 @@ async function loadGames({ quiet = false } = {}) {
     writeGamesCache();
     syncGenreOptions();
     render();
-    void loadSteamReviews();
+    void loadSteamDetails();
   } catch (error) {
     if (sequence !== loadSequence || revision !== realtimeRevision) return;
     if (games.length) {
@@ -289,23 +386,25 @@ async function loadGames({ quiet = false } = {}) {
   }
 }
 
-async function loadSteamReviews() {
+async function loadSteamDetails() {
   const ids = [...new Set(games.map(game => game.steamAppId).filter(Boolean))].sort();
   const key = ids.join(',');
-  if (!key) { steamReviews = new Map(); steamReviewIds = ''; return; }
-  if (key === steamReviewIds) return;
-  steamReviewIds = key;
+  if (!key) { steamDetails = new Map(); steamDetailIds = ''; steamDetailsState = 'idle'; return; }
+  if (key === steamDetailIds) return;
+  steamDetailIds = key;
+  if (steamDetailsState !== 'ready') steamDetailsState = 'loading';
   try {
-    const summaries = await fetchSteamReviewSummaries(ids);
-    if (steamReviewIds !== key) return;
-    steamReviews = new Map(summaries.map(review => [String(review.steamAppId), review]));
+    const items = await fetchSteamDetails(ids);
+    if (steamDetailIds !== key) return;
+    steamDetails = new Map(items.filter(item => item?.found !== false).map(item => [String(item.steamAppId), item]));
+    steamDetailsState = 'ready';
     render();
-  } catch (reviewError) {
-    if (steamReviewIds === key) {
-      steamReviews = new Map(ids.map(steamAppId => [steamAppId, { steamAppId, available:false, totalReviews:0 }]));
-      render();
-    }
-    console.warn('[OLYCITY] Avis Steam indisponibles', reviewError);
+  } catch (detailError) {
+    if (steamDetailIds !== key) return;
+    steamDetailIds = '';
+    steamDetailsState = 'error';
+    render();
+    console.warn('[OLYCITY] Détails Steam indisponibles', detailError);
   }
 }
 
@@ -325,7 +424,7 @@ function applyRealtimeGames(event) {
     writeGamesCache();
     syncGenreOptions();
     render();
-    void loadSteamReviews();
+    void loadSteamDetails();
   } catch (error) {
     console.warn('[OLYCITY] Mise à jour Jeux illisible', error);
     scheduleReload();
@@ -641,13 +740,19 @@ function bindControls() {
   });
   document.getElementById('coop-games-grid')?.addEventListener('click', handleCardAction);
   document.getElementById('coop-games-grid')?.addEventListener('click', event => {
+    if (event.target.closest('[data-coop-demo-only]')) {
+      filters.demo = true;
+      render();
+      document.getElementById('coop-games-grid')?.scrollIntoView({ behavior:'smooth', block:'start' });
+      return;
+    }
     if (event.target.closest('[data-coop-retry]')) {
       restartRealtime();
       loadGames();
       return;
     }
     if (!event.target.closest('[data-coop-reset]')) return;
-    Object.assign(filters, { search:'', players:0, genre:'all', status:'all', sort:'recent' });
+    Object.assign(filters, DEFAULT_FILTERS);
     compatibleTonight = false;
     document.getElementById('coop-tonight').checked = false;
     const search = document.getElementById('coop-search');
@@ -657,7 +762,7 @@ function bindControls() {
     if (search) search.value = '';
     if (players) players.value = '0';
     if (genre) genre.value = 'all';
-    if (sort) sort.value = 'recent';
+    if (sort) sort.value = DEFAULT_FILTERS.sort;
     render();
   });
   document.addEventListener('click', event => {
@@ -672,6 +777,7 @@ function bindControls() {
   document.getElementById('coop-genre')?.addEventListener('change', event => { filters.genre = event.target.value; render(); });
   document.querySelectorAll('[data-coop-status]').forEach(button => button.addEventListener('click', () => { filters.status = button.dataset.coopStatus; render(); }));
   document.getElementById('coop-sort')?.addEventListener('change', event => { filters.sort = event.target.value; render(); });
+  document.getElementById('coop-demo')?.addEventListener('change', event => { filters.demo = event.target.checked; render(); });
 }
 
 export function initCoopPage(nextRoster = [], nextProfile = null) {
@@ -690,7 +796,7 @@ export function initCoopPage(nextRoster = [], nextProfile = null) {
   if (games.length) {
     syncGenreOptions();
     render();
-    void loadSteamReviews();
+    void loadSteamDetails();
     void loadGames({ quiet:true });
   } else {
     void loadGames();

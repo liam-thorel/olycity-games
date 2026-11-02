@@ -141,21 +141,61 @@ export function rankCatalogResults(results = [], query = '') {
   }).slice(0, 8);
 }
 
+/**
+ * Note Steam pondérée par le nombre d'avis : 100 % sur 12 avis ne doit pas
+ * passer devant 94 % sur 300 000. Moyenne bayésienne autour de 70 %.
+ */
+export function steamRating(detail = null) {
+  const reviews = detail?.reviews;
+  const count = Math.max(0, Number(reviews?.totalReviews) || 0);
+  if (!reviews?.available || !count) return -1;
+  const percent = Math.max(0, Math.min(100, Number(reviews.positivePercent) || 0));
+  return (percent * count + 70 * 200) / (count + 200);
+}
+
+export function steamReleaseTime(game = {}, detail = null) {
+  const date = detail?.release?.date || game.releaseDate || '';
+  const time = date ? Date.parse(`${date}T12:00:00Z`) : NaN;
+  return Number.isFinite(time) ? time : 0;
+}
+
+export const COOP_SORTS = ['popular', 'steam', 'recent', 'release', 'alpha'];
+
 export function filterCoopGames(games = [], filters = {}) {
   const search = String(filters.search || '').trim();
   const players = Math.max(0, Number(filters.players) || 0);
   const status = filters.status || 'open';
   const genre = normalizeCoopSearch(filters.genre || 'all');
+  const details = filters.details instanceof Map ? filters.details : new Map();
+  const detailOf = game => details.get(String(game.steamAppId || '')) || null;
   const scored = games.map(game => ({ game, searchScore:coopSearchScore(game, search) })).filter(({ game, searchScore }) => {
     if (status !== 'all' && game.status !== status) return false;
     if (players && !(game.minPlayers <= players && game.maxPlayers >= players)) return false;
     if (genre !== 'all' && !(game.tags || []).some(tag => normalizeCoopSearch(tag) === genre)) return false;
+    if (filters.demo && !detailOf(game)?.demo) return false;
     return searchScore > 0;
   });
+  const byVotes = (left, right) => right.interestCount - left.interestCount;
+  const bySteam = (left, right) => steamRating(detailOf(right)) - steamRating(detailOf(left));
+  const byRecent = (left, right) => right.submittedAt - left.submittedAt;
+  const byTitle = (left, right) => left.title.localeCompare(right.title, 'fr', { sensitivity:'base' });
+  const byRelease = (left, right) => steamReleaseTime(right, detailOf(right)) - steamReleaseTime(left, detailOf(left));
+  const sorts = {
+    // Populaire : les votes d'abord, puis la note Steam pour départager les
+    // nombreuses égalités (tout le monde a 1 à 3 votes), puis les plus récents.
+    popular: [byVotes, bySteam, byRecent, byTitle],
+    steam: [bySteam, byVotes, byTitle],
+    recent: [byRecent, byVotes, byTitle],
+    release: [byRelease, byVotes, byTitle],
+    alpha: [byTitle],
+  };
+  const chain = sorts[filters.sort] || sorts.popular;
   return scored.sort((left, right) => {
     if (search && right.searchScore !== left.searchScore) return right.searchScore - left.searchScore;
-    if (filters.sort === 'recent') return right.game.submittedAt - left.game.submittedAt;
-    if (filters.sort === 'alpha') return left.game.title.localeCompare(right.game.title, 'fr', { sensitivity:'base' });
-    return right.game.interestCount - left.game.interestCount || right.game.submittedAt - left.game.submittedAt;
+    for (const compare of chain) {
+      const result = compare(left.game, right.game);
+      if (result) return result;
+    }
+    return 0;
   }).map(entry => entry.game);
 }
