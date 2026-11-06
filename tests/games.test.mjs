@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { gameBuilds, readRegistry, validateRegistry } from '../scripts/build.mjs';
-import { visibleGames } from '../js/registry.mjs';
+import { gameCard, visibleGames } from '../js/registry.mjs';
 import { everyoneAnswered, randomDelay, resolveRound } from '../games/reflexe/rules.mjs';
 import * as lost from '../games/lost-in-translation/rules.mjs';
 
@@ -64,6 +64,19 @@ test('registry validation catches dead links and bad entries', () => {
     { slug:'x', name:'X', tagline:'t', status:'wip' },
   ], [{ slug:'x' }]);
   assert.equal(errors.length, 3);
+});
+
+test('a game hosted elsewhere needs no folder but a valid https link', () => {
+  assert.deepEqual(validateRegistry([
+    { slug:'trollpicks', name:'T', tagline:'t', status:'beta', url:'https://skybreacoeur.github.io/trollpicks-plus/' },
+  ], []), []);
+  assert.equal(validateRegistry([{ slug:'bad', name:'B', tagline:'t', status:'beta', url:'javascript:alert(1)' }], []).length, 1);
+});
+
+test('an external game card opens its own site in a new tab', () => {
+  const card = gameCard({ slug:'trollpicks', name:'TrollPicks+', tagline:'Roue', status:'beta', players:[1, 10], url:'https://skybreacoeur.github.io/trollpicks-plus/' });
+  assert.match(card, /href="https:\/\/skybreacoeur\.github\.io\/trollpicks-plus\/" target="_blank" rel="noopener"/);
+  assert.doesNotMatch(gameCard({ slug:'reflexe', name:'R', tagline:'t', status:'beta', players:[2, 10] }), /target="_blank"/);
 });
 
 test('games in development stay hidden from the public portal', () => {

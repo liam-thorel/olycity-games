@@ -47,7 +47,9 @@ export function validateRegistry(registry, builds) {
     if (seen.has(game.slug)) errors.push(`slug en double : ${game.slug}`);
     seen.add(game.slug);
     if (!['live', 'beta', 'soon', 'dev'].includes(game.status)) errors.push(`${game.slug} : statut inconnu ${game.status}`);
-    if (game.status !== 'soon' && !slugs.has(game.slug)) errors.push(`${game.slug} : dossier games/${game.slug}/ introuvable`);
+    // Un jeu hébergé ailleurs (champ url) n'a pas de dossier ici.
+    if (game.url !== undefined && !/^https:\/\/[^\s"<>]+$/.test(game.url)) errors.push(`${game.slug} : url externe invalide`);
+    if (game.status !== 'soon' && !game.url && !slugs.has(game.slug)) errors.push(`${game.slug} : dossier games/${game.slug}/ introuvable`);
     if (!game.name || !game.tagline) errors.push(`${game.slug} : name et tagline sont obligatoires`);
   }
   return errors;

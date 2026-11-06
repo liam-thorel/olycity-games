@@ -25,5 +25,15 @@
     "status": "beta",
     "accent": "#a87fff",
     "tags": ["Micro", "Vidéo", "Votes"]
+  },
+  {
+    "slug": "trollpicks",
+    "name": "TrollPicks+",
+    "tagline": "La roue des troll picks LoL, et une Partie truquée à rôles secrets.",
+    "players": [1, 10],
+    "status": "beta",
+    "accent": "#cf2f2a",
+    "tags": ["League of Legends", "Lobby", "Rôles secrets"],
+    "url": "https://skybreacoeur.github.io/trollpicks-plus/"
   }
 ]
