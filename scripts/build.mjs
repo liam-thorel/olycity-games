@@ -50,6 +50,7 @@ export function validateRegistry(registry, builds) {
     // Un jeu hébergé ailleurs (champ url) n'a pas de dossier ici.
     if (game.url !== undefined && !/^https:\/\/[^\s"<>]+$/.test(game.url)) errors.push(`${game.slug} : url externe invalide`);
     if (game.status !== 'soon' && !game.url && !slugs.has(game.slug)) errors.push(`${game.slug} : dossier games/${game.slug}/ introuvable`);
+    if (game.image !== undefined && (!/^assets\/games\/[a-z0-9-]+\.(webp|png|jpg)$/.test(game.image) || !existsSync(join(ROOT, game.image)))) errors.push(`${game.slug} : image ${game.image} introuvable`);
     if (!game.name || !game.tagline) errors.push(`${game.slug} : name et tagline sont obligatoires`);
   }
   return errors;

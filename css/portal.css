@@ -135,3 +135,7 @@ footer a:hover { color:var(--text); }
   .night-vote-slots article { flex-direction:column; align-items:flex-start; }
   .sheet-card > footer .btn { flex:1; }
 }
+.game-card-art.has-image { padding:0; background:var(--surf2); overflow:hidden; }
+.game-card-art.has-image img { width:100%; height:100%; display:block; object-fit:cover; object-position:center 40%; transition:transform .3s ease; }
+.game-card:hover .game-card-art.has-image img { transform:scale(1.03); }
+@media (prefers-reduced-motion:reduce) { .game-card:hover .game-card-art.has-image img { transform:none; } }

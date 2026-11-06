@@ -32,7 +32,7 @@ export function gameCard(game) {
     : external ? ` href="${escapeHTML(external)}" target="_blank" rel="noopener"`
       : ` href="games/${encodeURIComponent(game.slug)}/"`;
   return `<${tag} class="game-card is-${escapeHTML(game.status)}"${href} style="--accent:${accent}">
-    <div class="game-card-art" aria-hidden="true">${gameIllustration(game.slug)}</div>
+    ${gameArt(game)}
     <div class="game-card-body">
       <div class="game-card-top"><h3>${escapeHTML(game.name)}${external ? '<span class="game-card-external" aria-label=" (nouvel onglet)"> ↗</span>' : ''}</h3><span class="badge" data-state="${escapeHTML(game.status)}">${status.label}</span></div>
       <p>${escapeHTML(game.tagline)}</p>
@@ -50,6 +50,13 @@ export async function renderRegistry(root) {
   } catch {
     root.innerHTML = '<p class="empty">Impossible de charger la liste des jeux.</p>';
   }
+}
+
+/** Image d'aperçu du jeu (ex. celle de son lien partagé), sinon le dessin SVG. */
+function gameArt(game) {
+  const image = /^assets\/games\/[a-z0-9-]+\.(webp|png|jpg)$/.test(game.image || '') ? game.image : '';
+  if (image) return `<div class="game-card-art has-image" aria-hidden="true"><img src="${escapeHTML(image)}" alt="" loading="lazy" decoding="async"></div>`;
+  return `<div class="game-card-art" aria-hidden="true">${gameIllustration(game.slug)}</div>`;
 }
 
 function gameIllustration(slug) {

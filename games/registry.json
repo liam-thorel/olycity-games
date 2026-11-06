@@ -34,6 +34,7 @@
     "status": "beta",
     "accent": "#cf2f2a",
     "tags": ["League of Legends", "Lobby", "Rôles secrets"],
-    "url": "https://skybreacoeur.github.io/trollpicks-plus/"
+    "url": "https://skybreacoeur.github.io/trollpicks-plus/",
+    "image": "assets/games/trollpicks.webp"
   }
 ]
